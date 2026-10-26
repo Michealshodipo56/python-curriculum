@@ -1,0 +1,12 @@
+[submodule "python-curriculum"]
+	path = python-curriculum
+	url = https://github.com/exercism/python.git
+[submodule "30-Days-Of-Python"]
+	path = 30-Days-Of-Python
+	url = https://github.com/Michealshodipo56/30-Days-Of-Python.git
+[submodule "C1-Code-Crunch-Convos"]
+	path = C1-Code-Crunch-Convos
+	url = https://github.com/Michealshodipo56/C1-Code-Crunch-Convos.git
+[submodule "learn.python"]
+	path = learn.python
+	url = https://github.com/Michealshodipo56/learn.python.git

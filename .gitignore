@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+review/files.json
+review/candidates.json
+review/packet_log.jsonl
+review/.cache/
