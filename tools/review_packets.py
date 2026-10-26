@@ -11,6 +11,8 @@ from pathlib import Path
 import re
 import sys
 
+sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = Path(__file__).resolve().parents[1]
 
 def brief(text: str, source: str) -> str:
@@ -28,8 +30,27 @@ def brief(text: str, source: str) -> str:
 
 def contract(path: Path) -> str:
     text = path.read_text(encoding="utf-8-sig")
+    if "python-curriculum/exercises/" in path.as_posix() and not (path.name.startswith("test_") or path.name.endswith("_test.py")):
+        return text
     try: tree = ast.parse(text)
     except SyntaxError: return "SYNTAX ERROR\n" + text
+    if path.name.startswith("test_") or path.name.endswith("_test.py") or "tests" in path.parts:
+        # Preserve executable test bodies and parametrization values. Printing
+        # assertion names alone would hide the actual edge-case expectations.
+        class RemoveDiagnosticBoilerplate(ast.NodeTransformer):
+            def visit_Assign(self, node):
+                if all(isinstance(t, ast.Name) and t.id in {"error_message", "error_msg", "failure_message", "failure_msg"} for t in node.targets): return None
+                return self.generic_visit(node)
+            def visit_Expr(self, node):
+                if isinstance(node.value, ast.Constant) and isinstance(node.value.value, str): return None
+                return self.generic_visit(node)
+            def visit_Call(self, node):
+                node = self.generic_visit(node)
+                if isinstance(node.func, ast.Attribute) and node.func.attr.startswith("assert"):
+                    node.keywords = [kw for kw in node.keywords if kw.arg != "msg"]
+                    node.args = [arg for arg in node.args if not isinstance(arg, ast.Name) or arg.id not in {"error_message", "error_msg", "failure_message", "failure_msg"}]
+                return node
+        return ast.unparse(RemoveDiagnosticBoilerplate().visit(tree))
     lines = []
     doc = ast.get_docstring(tree)
     if doc: lines.append("MODULE DOC: " + doc)
@@ -61,7 +82,7 @@ def show(unit):
     else: print("MISSING PRIMARY FILE")
     viewed = [unit["path"]]
     folder = ROOT / unit.get("folder", str(path.parent.relative_to(ROOT)))
-    if source == "python-curriculum":
+    if source == "python-curriculum" and (unit["kind"] == "exercism-practice" or "--introductions" in sys.argv):
         for extra in sorted((folder / ".docs").glob("*.md")):
             if extra != path and extra.name != "hints.md":
                 print(f"\nSUPPORT {extra.relative_to(ROOT).as_posix()}\n{extra.read_text(encoding='utf-8-sig')}")
@@ -90,6 +111,7 @@ if __name__ == "__main__":
     start, count = int(start), int(count)
     print(f"PACKET {source}/{kind}: {start}:{start+count} of {len(selected)}")
     logs = [show(u) for u in selected[start:start+count]]
-    log_path = ROOT / "review/packet_log.jsonl"
-    with log_path.open("a", encoding="utf-8") as stream:
-        for row in logs: stream.write(json.dumps(row, ensure_ascii=False) + "\n")
+    packet_dir = ROOT / "review/.cache/packets"
+    packet_dir.mkdir(parents=True, exist_ok=True)
+    log_path = packet_dir / f"{source.replace('*', 'all')}-{kind.replace('*', 'all')}-{start}-{count}.json"
+    log_path.write_text(json.dumps(logs, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

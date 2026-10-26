@@ -1,0 +1,1143 @@
+[
+  {
+    "path": "python-curriculum/exercises/concept/guidos-gorgeous-lasagna/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                             [100%]\n5 passed, 23 subtests passed in 1.27s\n",
+    "stderr": "",
+    "duration_seconds": 11.34
+  },
+  {
+    "path": "python-curriculum/exercises/concept/ghost-gobble-arcade-game/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.22s\n",
+    "stderr": "",
+    "duration_seconds": 7.06
+  },
+  {
+    "path": "python-curriculum/exercises/concept/electric-bill/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                           [100%]\n5 passed, 25 subtests passed in 0.30s\n",
+    "stderr": "",
+    "duration_seconds": 3.81
+  },
+  {
+    "path": "python-curriculum/exercises/concept/currency-exchange/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                 [100%]\n6 passed, 18 subtests passed in 0.22s\n",
+    "stderr": "",
+    "duration_seconds": 5.8
+  },
+  {
+    "path": "python-curriculum/exercises/concept/meltdown-mitigation/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...                             [100%]\n3 passed, 41 subtests passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 5.03
+  },
+  {
+    "path": "python-curriculum/exercises/concept/black-jack/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                    [100%]\n6 passed, 47 subtests passed in 0.27s\n",
+    "stderr": "",
+    "duration_seconds": 3.91
+  },
+  {
+    "path": "python-curriculum/exercises/concept/little-sisters-essay/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.22s\n",
+    "stderr": "",
+    "duration_seconds": 4.53
+  },
+  {
+    "path": "python-curriculum/exercises/concept/little-sisters-vocab/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                            [100%]\n7 passed, 22 subtests passed in 0.23s\n",
+    "stderr": "",
+    "duration_seconds": 3.44
+  },
+  {
+    "path": "python-curriculum/exercises/concept/pretty-leaflet/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.16s\n",
+    "stderr": "",
+    "duration_seconds": 4.24
+  },
+  {
+    "path": "python-curriculum/exercises/concept/card-games/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                          [100%]\n7 passed, 40 subtests passed in 0.19s\n",
+    "stderr": "",
+    "duration_seconds": 3.11
+  },
+  {
+    "path": "python-curriculum/exercises/concept/chaitanas-colossal-coaster/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                           [100%]\n11 passed, 35 subtests passed in 0.24s\n",
+    "stderr": "",
+    "duration_seconds": 3.08
+  },
+  {
+    "path": "python-curriculum/exercises/concept/making-the-grade/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                          [100%]\n6 passed, 25 subtests passed in 0.22s\n",
+    "stderr": "",
+    "duration_seconds": 3.45
+  },
+  {
+    "path": "python-curriculum/exercises/concept/tisbury-treasure-hunt/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                      [100%]\n5 passed, 46 subtests passed in 0.25s\n",
+    "stderr": "",
+    "duration_seconds": 2.94
+  },
+  {
+    "path": "python-curriculum/exercises/concept/inventory-management/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.30s\n",
+    "stderr": "",
+    "duration_seconds": 3.83
+  },
+  {
+    "path": "python-curriculum/exercises/concept/mecha-munch-management/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                              [100%]\n6 passed, 21 subtests passed in 0.22s\n",
+    "stderr": "",
+    "duration_seconds": 3.62
+  },
+  {
+    "path": "python-curriculum/exercises/concept/locomotive-engineer/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                                [100%]\n5 passed, 20 subtests passed in 0.21s\n",
+    "stderr": "",
+    "duration_seconds": 3.17
+  },
+  {
+    "path": "python-curriculum/exercises/concept/cater-waiter/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                       [100%]\n7 passed, 83 subtests passed in 0.59s\n",
+    "stderr": "",
+    "duration_seconds": 3.78
+  },
+  {
+    "path": "python-curriculum/exercises/concept/ellens-alien-game/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                        [100%]\n11 passed, 6 subtests passed in 0.20s\n",
+    "stderr": "",
+    "duration_seconds": 3.39
+  },
+  {
+    "path": "python-curriculum/exercises/concept/plane-tickets/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                  [100%]\n8 passed, 15 subtests passed in 0.17s\n",
+    "stderr": "",
+    "duration_seconds": 3.62
+  },
+  {
+    "path": "python-curriculum/exercises/concept/log-levels/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.26s\n",
+    "stderr": "",
+    "duration_seconds": 3.25
+  },
+  {
+    "path": "python-curriculum/exercises/concept/restaurant-rozalynn/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.40s\n",
+    "stderr": "",
+    "duration_seconds": 4.24
+  },
+  {
+    "path": "python-curriculum/exercises/practice/hello-world/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".                                                                        [100%]\n1 passed in 2.38s\n",
+    "stderr": "",
+    "duration_seconds": 6.42
+  },
+  {
+    "path": "python-curriculum/exercises/practice/leap/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.62s\n",
+    "stderr": "",
+    "duration_seconds": 5.39
+  },
+  {
+    "path": "python-curriculum/exercises/practice/triangle/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....................                                                    [100%]\n21 passed in 0.84s\n",
+    "stderr": "",
+    "duration_seconds": 4.88
+  },
+  {
+    "path": "python-curriculum/exercises/practice/grains/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.73s\n",
+    "stderr": "",
+    "duration_seconds": 4.69
+  },
+  {
+    "path": "python-curriculum/exercises/practice/armstrong-numbers/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.67s\n",
+    "stderr": "",
+    "duration_seconds": 4.72
+  },
+  {
+    "path": "python-curriculum/exercises/practice/collatz-conjecture/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.64s\n",
+    "stderr": "",
+    "duration_seconds": 7.25
+  },
+  {
+    "path": "python-curriculum/exercises/practice/bob/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........................                                               [100%]\n26 passed in 0.88s\n",
+    "stderr": "",
+    "duration_seconds": 6.02
+  },
+  {
+    "path": "python-curriculum/exercises/practice/raindrops/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..................                                                       [100%]\n18 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 3.45
+  },
+  {
+    "path": "python-curriculum/exercises/practice/darts/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.77s\n",
+    "stderr": "",
+    "duration_seconds": 3.86
+  },
+  {
+    "path": "python-curriculum/exercises/practice/perfect-numbers/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.74s\n",
+    "stderr": "",
+    "duration_seconds": 3.75
+  },
+  {
+    "path": "python-curriculum/exercises/practice/reverse-string/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.75s\n",
+    "stderr": "",
+    "duration_seconds": 3.94
+  },
+  {
+    "path": "python-curriculum/exercises/practice/pangram/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.53s\n",
+    "stderr": "",
+    "duration_seconds": 3.55
+  },
+  {
+    "path": "python-curriculum/exercises/practice/isogram/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.69s\n",
+    "stderr": "",
+    "duration_seconds": 4.12
+  },
+  {
+    "path": "python-curriculum/exercises/practice/isbn-verifier/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....................                                                    [100%]\n21 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 3.98
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rotational-cipher/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 3.55
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rna-transcription/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.71s\n",
+    "stderr": "",
+    "duration_seconds": 4.12
+  },
+  {
+    "path": "python-curriculum/exercises/practice/resistor-color/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....                                                                     [100%]\n4 passed in 0.54s\n",
+    "stderr": "",
+    "duration_seconds": 4.75
+  },
+  {
+    "path": "python-curriculum/exercises/practice/resistor-color-duo/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.73s\n",
+    "stderr": "",
+    "duration_seconds": 5.94
+  },
+  {
+    "path": "python-curriculum/exercises/practice/resistor-color-trio/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.74s\n",
+    "stderr": "",
+    "duration_seconds": 3.81
+  },
+  {
+    "path": "python-curriculum/exercises/practice/resistor-color-expert/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.52s\n",
+    "stderr": "",
+    "duration_seconds": 3.89
+  },
+  {
+    "path": "python-curriculum/exercises/practice/secret-handshake/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.65s\n",
+    "stderr": "",
+    "duration_seconds": 2.8
+  },
+  {
+    "path": "python-curriculum/exercises/practice/anagram/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..................                                                       [100%]\n18 passed in 0.63s\n",
+    "stderr": "",
+    "duration_seconds": 3.5
+  },
+  {
+    "path": "python-curriculum/exercises/practice/house/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 3.42
+  },
+  {
+    "path": "python-curriculum/exercises/practice/binary-search/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.74s\n",
+    "stderr": "",
+    "duration_seconds": 3.28
+  },
+  {
+    "path": "python-curriculum/exercises/practice/hamming/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.64s\n",
+    "stderr": "",
+    "duration_seconds": 2.78
+  },
+  {
+    "path": "python-curriculum/exercises/practice/flatten-array/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.54s\n",
+    "stderr": "",
+    "duration_seconds": 2.66
+  },
+  {
+    "path": "python-curriculum/exercises/practice/line-up/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........................                                                [100%]\n25 passed in 1.91s\n",
+    "stderr": "",
+    "duration_seconds": 8.61
+  },
+  {
+    "path": "python-curriculum/exercises/practice/difference-of-squares/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 5.72
+  },
+  {
+    "path": "python-curriculum/exercises/practice/list-ops/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........................                                                [100%]\n25 passed in 0.88s\n",
+    "stderr": "",
+    "duration_seconds": 4.8
+  },
+  {
+    "path": "python-curriculum/exercises/practice/etl/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....                                                                     [100%]\n4 passed in 0.33s\n",
+    "stderr": "",
+    "duration_seconds": 2.64
+  },
+  {
+    "path": "python-curriculum/exercises/practice/space-age/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.60s\n",
+    "stderr": "",
+    "duration_seconds": 3.28
+  },
+  {
+    "path": "python-curriculum/exercises/practice/sum-of-multiples/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "................                                                         [100%]\n16 passed in 0.90s\n",
+    "stderr": "",
+    "duration_seconds": 3.59
+  },
+  {
+    "path": "python-curriculum/exercises/practice/gigasecond/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                                                    [100%]\n5 passed in 0.60s\n",
+    "stderr": "",
+    "duration_seconds": 4.64
+  },
+  {
+    "path": "python-curriculum/exercises/practice/two-fer/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...                                                                      [100%]\n3 passed in 0.96s\n",
+    "stderr": "",
+    "duration_seconds": 3.83
+  },
+  {
+    "path": "python-curriculum/exercises/practice/square-root/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.55s\n",
+    "stderr": "",
+    "duration_seconds": 4.47
+  },
+  {
+    "path": "python-curriculum/exercises/practice/pig-latin/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......................                                                  [100%]\n23 passed in 0.64s\n",
+    "stderr": "",
+    "duration_seconds": 4.81
+  },
+  {
+    "path": "python-curriculum/exercises/practice/matching-brackets/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....................                                                     [100%]\n20 passed in 0.52s\n",
+    "stderr": "",
+    "duration_seconds": 4.16
+  },
+  {
+    "path": "python-curriculum/exercises/practice/sublist/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......................                                                   [100%]\n22 passed in 0.91s\n",
+    "stderr": "",
+    "duration_seconds": 5.3
+  },
+  {
+    "path": "python-curriculum/exercises/practice/atbash-cipher/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.68s\n",
+    "stderr": "",
+    "duration_seconds": 5.44
+  },
+  {
+    "path": "python-curriculum/exercises/practice/diamond/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                                                    [100%]\n5 passed in 0.59s\n",
+    "stderr": "",
+    "duration_seconds": 5.56
+  },
+  {
+    "path": "python-curriculum/exercises/practice/eliuds-eggs/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....                                                                     [100%]\n4 passed in 0.67s\n",
+    "stderr": "",
+    "duration_seconds": 4.72
+  },
+  {
+    "path": "python-curriculum/exercises/practice/protein-translation/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........................                                               [100%]\n26 passed in 0.60s\n",
+    "stderr": "",
+    "duration_seconds": 4.09
+  },
+  {
+    "path": "python-curriculum/exercises/practice/prime-factors/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 1.06s\n",
+    "stderr": "",
+    "duration_seconds": 4.7
+  },
+  {
+    "path": "python-curriculum/exercises/practice/say/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....................                                                     [100%]\n20 passed in 0.67s\n",
+    "stderr": "",
+    "duration_seconds": 4.78
+  },
+  {
+    "path": "python-curriculum/exercises/practice/acronym/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 4.44
+  },
+  {
+    "path": "python-curriculum/exercises/practice/series/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.63s\n",
+    "stderr": "",
+    "duration_seconds": 4.86
+  },
+  {
+    "path": "python-curriculum/exercises/practice/run-length-encoding/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.69s\n",
+    "stderr": "",
+    "duration_seconds": 5.42
+  },
+  {
+    "path": "python-curriculum/exercises/practice/nth-prime/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 1.24s\n",
+    "stderr": "",
+    "duration_seconds": 4.36
+  },
+  {
+    "path": "python-curriculum/exercises/practice/twelve-days/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............                                                          [100%]\n15 passed in 0.47s\n",
+    "stderr": "",
+    "duration_seconds": 3.12
+  },
+  {
+    "path": "python-curriculum/exercises/practice/roman-numerals/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........................                                              [100%]\n27 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 2.81
+  },
+  {
+    "path": "python-curriculum/exercises/practice/word-count/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".................                                                        [100%]\n17 passed in 0.70s\n",
+    "stderr": "",
+    "duration_seconds": 3.99
+  },
+  {
+    "path": "python-curriculum/exercises/practice/scrabble-score/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 3.17
+  },
+  {
+    "path": "python-curriculum/exercises/practice/proverb/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.52s\n",
+    "stderr": "",
+    "duration_seconds": 2.69
+  },
+  {
+    "path": "python-curriculum/exercises/practice/luhn/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......................                                                  [100%]\n23 passed in 0.47s\n",
+    "stderr": "",
+    "duration_seconds": 2.97
+  },
+  {
+    "path": "python-curriculum/exercises/practice/dnd-character/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...................                                                      [100%]\n19 passed in 0.53s\n",
+    "stderr": "",
+    "duration_seconds": 16.2
+  },
+  {
+    "path": "python-curriculum/exercises/practice/robot-name/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....                                                                     [100%]\n4 passed in 0.66s\n",
+    "stderr": "",
+    "duration_seconds": 4.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/phone-number/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....................                                                    [100%]\n21 passed in 0.78s\n",
+    "stderr": "",
+    "duration_seconds": 4.95
+  },
+  {
+    "path": "python-curriculum/exercises/practice/queen-attack/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 1.52s\n",
+    "stderr": "",
+    "duration_seconds": 5.28
+  },
+  {
+    "path": "python-curriculum/exercises/practice/transpose/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.53s\n",
+    "stderr": "",
+    "duration_seconds": 5.08
+  },
+  {
+    "path": "python-curriculum/exercises/practice/yacht/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............................                                            [100%]\n29 passed in 0.61s\n",
+    "stderr": "",
+    "duration_seconds": 4.0
+  },
+  {
+    "path": "python-curriculum/exercises/practice/game-of-life/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.42s\n",
+    "stderr": "",
+    "duration_seconds": 2.56
+  },
+  {
+    "path": "python-curriculum/exercises/practice/state-of-tic-tac-toe/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............................                                            [100%]\n29 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 2.51
+  },
+  {
+    "path": "python-curriculum/exercises/practice/saddle-points/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/ocr-numbers/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".................                                                        [100%]\n17 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 2.41
+  },
+  {
+    "path": "python-curriculum/exercises/practice/robot-simulator/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..................                                                       [100%]\n18 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 2.48
+  },
+  {
+    "path": "python-curriculum/exercises/practice/grade-school/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....................                                                     [100%]\n20 passed in 0.50s\n",
+    "stderr": "",
+    "duration_seconds": 2.28
+  },
+  {
+    "path": "python-curriculum/exercises/practice/sieve/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                                                    [100%]\n5 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 2.64
+  },
+  {
+    "path": "python-curriculum/exercises/practice/pythagorean-triplet/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.76s\n",
+    "stderr": "",
+    "duration_seconds": 3.92
+  },
+  {
+    "path": "python-curriculum/exercises/practice/circular-buffer/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 4.3
+  },
+  {
+    "path": "python-curriculum/exercises/practice/matrix/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 3.64
+  },
+  {
+    "path": "python-curriculum/exercises/practice/high-scores/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.47s\n",
+    "stderr": "",
+    "duration_seconds": 2.28
+  },
+  {
+    "path": "python-curriculum/exercises/practice/kindergarten-garden/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...................                                                      [100%]\n19 passed in 0.44s\n",
+    "stderr": "",
+    "duration_seconds": 2.09
+  },
+  {
+    "path": "python-curriculum/exercises/practice/bottle-song/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.34s\n",
+    "stderr": "",
+    "duration_seconds": 1.94
+  },
+  {
+    "path": "python-curriculum/exercises/practice/allergies/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..................................................                       [100%]\n50 passed in 0.51s\n",
+    "stderr": "",
+    "duration_seconds": 2.23
+  },
+  {
+    "path": "python-curriculum/exercises/practice/simple-cipher/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.37s\n",
+    "stderr": "",
+    "duration_seconds": 2.16
+  },
+  {
+    "path": "python-curriculum/exercises/practice/poker/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....................................                                    [100%]\n37 passed in 0.45s\n",
+    "stderr": "",
+    "duration_seconds": 2.08
+  },
+  {
+    "path": "python-curriculum/exercises/practice/wordy/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............................                                          [100%]\n31 passed in 0.57s\n",
+    "stderr": "",
+    "duration_seconds": 2.22
+  },
+  {
+    "path": "python-curriculum/exercises/practice/crypto-square/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.39s\n",
+    "stderr": "",
+    "duration_seconds": 2.06
+  },
+  {
+    "path": "python-curriculum/exercises/practice/clock/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......................................................                  [100%]\n55 passed in 0.55s\n",
+    "stderr": "",
+    "duration_seconds": 2.39
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rectangles/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.62s\n",
+    "stderr": "",
+    "duration_seconds": 2.5
+  },
+  {
+    "path": "python-curriculum/exercises/practice/simple-linked-list/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....................                                                     [100%]\n20 passed in 0.42s\n",
+    "stderr": "",
+    "duration_seconds": 2.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/tree-building/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.36s\n",
+    "stderr": "",
+    "duration_seconds": 2.44
+  },
+  {
+    "path": "python-curriculum/exercises/practice/connect/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.37s\n",
+    "stderr": "",
+    "duration_seconds": 1.97
+  },
+  {
+    "path": "python-curriculum/exercises/practice/all-your-base/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....................                                                    [100%]\n21 passed in 0.45s\n",
+    "stderr": "",
+    "duration_seconds": 2.58
+  },
+  {
+    "path": "python-curriculum/exercises/practice/swift-scheduling/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".................                                                        [100%]\n17 passed in 0.44s\n",
+    "stderr": "",
+    "duration_seconds": 2.16
+  },
+  {
+    "path": "python-curriculum/exercises/practice/spiral-matrix/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.37s\n",
+    "stderr": "",
+    "duration_seconds": 2.17
+  },
+  {
+    "path": "python-curriculum/exercises/practice/variable-length-quantity/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............................                                          [100%]\n31 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 2.17
+  },
+  {
+    "path": "python-curriculum/exercises/practice/change/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.38s\n",
+    "stderr": "",
+    "duration_seconds": 2.03
+  },
+  {
+    "path": "python-curriculum/exercises/practice/killer-sudoku-helper/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 10.09s\n",
+    "stderr": "",
+    "duration_seconds": 12.0
+  },
+  {
+    "path": "python-curriculum/exercises/practice/flower-field/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "................                                                         [100%]\n16 passed in 0.47s\n",
+    "stderr": "",
+    "duration_seconds": 3.34
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rail-fence-cipher/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.34s\n",
+    "stderr": "",
+    "duration_seconds": 2.3
+  },
+  {
+    "path": "python-curriculum/exercises/practice/palindrome-products/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 2.34
+  },
+  {
+    "path": "python-curriculum/exercises/practice/tournament/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.60s\n",
+    "stderr": "",
+    "duration_seconds": 2.42
+  },
+  {
+    "path": "python-curriculum/exercises/practice/food-chain/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.54s\n",
+    "stderr": "",
+    "duration_seconds": 2.89
+  },
+  {
+    "path": "python-curriculum/exercises/practice/scale-generator/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".................                                                        [100%]\n17 passed in 0.47s\n",
+    "stderr": "",
+    "duration_seconds": 2.34
+  },
+  {
+    "path": "python-curriculum/exercises/practice/largest-series-product/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.48s\n",
+    "stderr": "",
+    "duration_seconds": 2.5
+  },
+  {
+    "path": "python-curriculum/exercises/practice/markdown/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".................                                                        [100%]\n17 passed in 0.70s\n",
+    "stderr": "",
+    "duration_seconds": 5.09
+  },
+  {
+    "path": "python-curriculum/exercises/practice/meetup/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........................................................................ [ 69%]\n...............................                                          [100%]\n103 passed in 1.14s\n",
+    "stderr": "",
+    "duration_seconds": 4.73
+  },
+  {
+    "path": "python-curriculum/exercises/practice/pascals-triangle/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.83s\n",
+    "stderr": "",
+    "duration_seconds": 3.56
+  },
+  {
+    "path": "python-curriculum/exercises/practice/grep/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........................                                                [100%]\n25 passed in 4.01s\n",
+    "stderr": "",
+    "duration_seconds": 6.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/linked-list/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........................                                                 [100%]\n24 passed in 0.64s\n",
+    "stderr": "",
+    "duration_seconds": 4.5
+  },
+  {
+    "path": "python-curriculum/exercises/practice/complex-numbers/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........................................                              [100%]\n43 passed in 0.69s\n",
+    "stderr": "",
+    "duration_seconds": 3.86
+  },
+  {
+    "path": "python-curriculum/exercises/practice/ledger/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.46s\n",
+    "stderr": "",
+    "duration_seconds": 2.69
+  },
+  {
+    "path": "python-curriculum/exercises/practice/hangman/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 1.00s\n",
+    "stderr": "",
+    "duration_seconds": 4.7
+  },
+  {
+    "path": "python-curriculum/exercises/practice/go-counting/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.95
+  },
+  {
+    "path": "python-curriculum/exercises/practice/forth/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......................................................                   [100%]\n54 passed in 0.91s\n",
+    "stderr": "",
+    "duration_seconds": 2.97
+  },
+  {
+    "path": "python-curriculum/exercises/practice/binary-search-tree/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.44s\n",
+    "stderr": "",
+    "duration_seconds": 2.39
+  },
+  {
+    "path": "python-curriculum/exercises/practice/camicia/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............................                                             [100%]\n28 passed in 0.73s\n",
+    "stderr": "",
+    "duration_seconds": 2.53
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rational-numbers/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........................................                              [100%]\n43 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 2.22
+  },
+  {
+    "path": "python-curriculum/exercises/practice/bowling/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............................                                          [100%]\n31 passed in 0.85s\n",
+    "stderr": "",
+    "duration_seconds": 2.67
+  },
+  {
+    "path": "python-curriculum/exercises/practice/knapsack/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/relative-distance/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.2
+  },
+  {
+    "path": "python-curriculum/exercises/practice/dot-dsl/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "............                                                             [100%]\n12 passed in 0.51s\n",
+    "stderr": "",
+    "duration_seconds": 2.26
+  },
+  {
+    "path": "python-curriculum/exercises/practice/custom-set/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........................................                                 [100%]\n40 passed in 0.45s\n",
+    "stderr": "",
+    "duration_seconds": 2.17
+  },
+  {
+    "path": "python-curriculum/exercises/practice/zebra-puzzle/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..                                                                       [100%]\n2 passed in 0.33s\n",
+    "stderr": "",
+    "duration_seconds": 2.19
+  },
+  {
+    "path": "python-curriculum/exercises/practice/affine-cipher/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "................                                                         [100%]\n16 passed in 0.38s\n",
+    "stderr": "",
+    "duration_seconds": 2.12
+  },
+  {
+    "path": "python-curriculum/exercises/practice/word-search/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........................                                                 [100%]\n24 passed in 0.56s\n",
+    "stderr": "",
+    "duration_seconds": 2.67
+  },
+  {
+    "path": "python-curriculum/exercises/practice/alphametics/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......s...                                                               [100%]\n9 passed, 1 skipped in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.25
+  },
+  {
+    "path": "python-curriculum/exercises/practice/bank-account/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "................                                                         [100%]\n16 passed in 0.48s\n",
+    "stderr": "",
+    "duration_seconds": 2.2
+  },
+  {
+    "path": "python-curriculum/exercises/practice/react/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.77s\n",
+    "stderr": "",
+    "duration_seconds": 2.8
+  },
+  {
+    "path": "python-curriculum/exercises/practice/zipper/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..............                                                           [100%]\n14 passed in 0.62s\n",
+    "stderr": "",
+    "duration_seconds": 2.52
+  },
+  {
+    "path": "python-curriculum/exercises/practice/two-bucket/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.48s\n",
+    "stderr": "",
+    "duration_seconds": 3.2
+  },
+  {
+    "path": "python-curriculum/exercises/practice/dominoes/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".............                                                            [100%]\n13 passed in 0.42s\n",
+    "stderr": "",
+    "duration_seconds": 2.03
+  },
+  {
+    "path": "python-curriculum/exercises/practice/satellite/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.34s\n",
+    "stderr": "",
+    "duration_seconds": 2.02
+  },
+  {
+    "path": "python-curriculum/exercises/practice/book-store/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "....................                                                     [100%]\n20 passed in 0.78s\n",
+    "stderr": "",
+    "duration_seconds": 2.7
+  },
+  {
+    "path": "python-curriculum/exercises/practice/sgf-parsing/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......................                                                  [100%]\n23 passed in 0.46s\n",
+    "stderr": "",
+    "duration_seconds": 2.11
+  },
+  {
+    "path": "python-curriculum/exercises/practice/paasio/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........................                                                [100%]\n25 passed in 3.55s\n",
+    "stderr": "",
+    "duration_seconds": 5.14
+  },
+  {
+    "path": "python-curriculum/exercises/practice/rest-api/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".........                                                                [100%]\n9 passed in 0.48s\n",
+    "stderr": "",
+    "duration_seconds": 2.12
+  },
+  {
+    "path": "python-curriculum/exercises/practice/pov/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............                                                          [100%]\n15 passed in 0.44s\n",
+    "stderr": "",
+    "duration_seconds": 2.39
+  },
+  {
+    "path": "python-curriculum/exercises/practice/accumulate/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                                   [100%]\n6 passed in 0.40s\n",
+    "stderr": "",
+    "duration_seconds": 2.39
+  },
+  {
+    "path": "python-curriculum/exercises/practice/binary/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...........                                                              [100%]\n11 passed in 0.45s\n",
+    "stderr": "",
+    "duration_seconds": 2.42
+  },
+  {
+    "path": "python-curriculum/exercises/practice/error-handling/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".....                                                                    [100%]\n5 passed in 0.53s\n",
+    "stderr": "",
+    "duration_seconds": 2.56
+  },
+  {
+    "path": "python-curriculum/exercises/practice/hexadecimal/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.38s\n",
+    "stderr": "",
+    "duration_seconds": 2.61
+  },
+  {
+    "path": "python-curriculum/exercises/practice/octal/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "..........                                                               [100%]\n10 passed in 0.46s\n",
+    "stderr": "",
+    "duration_seconds": 2.44
+  },
+  {
+    "path": "python-curriculum/exercises/practice/point-mutations/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.60s\n",
+    "stderr": "",
+    "duration_seconds": 4.83
+  },
+  {
+    "path": "python-curriculum/exercises/practice/strain/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.95s\n",
+    "stderr": "",
+    "duration_seconds": 5.22
+  },
+  {
+    "path": "python-curriculum/exercises/practice/beer-song/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "........                                                                 [100%]\n8 passed in 0.55s\n",
+    "stderr": "",
+    "duration_seconds": 5.02
+  },
+  {
+    "path": "python-curriculum/exercises/practice/diffie-hellman/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "......                                                      [100%]\n6 passed, 13 subtests passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 4.66
+  },
+  {
+    "path": "python-curriculum/exercises/practice/trinary/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.49s\n",
+    "stderr": "",
+    "duration_seconds": 2.22
+  },
+  {
+    "path": "python-curriculum/exercises/practice/minesweeper/.docs/instructions.md",
+    "exit_code": 0,
+    "result": "...............                                                          [100%]\n15 passed in 0.48s\n",
+    "stderr": "",
+    "duration_seconds": 2.41
+  },
+  {
+    "path": "python-curriculum/exercises/practice/nucleotide-count/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 0.43s\n",
+    "stderr": "",
+    "duration_seconds": 2.19
+  },
+  {
+    "path": "python-curriculum/exercises/practice/parallel-letter-frequency/.docs/instructions.md",
+    "exit_code": 0,
+    "result": ".......                                                                  [100%]\n7 passed in 29.66s\n",
+    "stderr": "",
+    "duration_seconds": 31.62
+  }
+]

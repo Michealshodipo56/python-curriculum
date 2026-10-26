@@ -36,7 +36,9 @@ Work is in progress. Nothing in this log is a completion claim.
 
 ## Tooling and pending checks
 
-- Runtime: bundled CPython 3.12.14. `pytest` is not currently installed in this interpreter; Pillow, pandas, numpy, and pypdf are available.
+- Runtime: bundled CPython 3.12.14. A repository-local ignored `.venv` contains pytest 9.1.1. Pillow, pandas, numpy, and pypdf are available in the bundled interpreter.
+- Original Exercism reference implementations pass all 163 supplied suites (2,377 test methods). These checks do not establish that prose and tests agree; semantic defects remain separately recorded.
+- Semantic task decisions are accumulating in `review/task_notes.tsv`: all 21 Exercism concept units, practice units 0 through 47, and 15 learn.python level-00 activities have been reviewed through content-bearing views. Packet logs record views, not a guarantee that every source line was manually reviewed. Remaining source work is still pending.
 - `tools/curriculum_inventory.py`: full byte/text/AST inventory, Git internals pruned.
 - `tools/discover_curriculum.py`: candidate discovery only; no sequencing decisions.
 - `tools/review_packets.py`: content-bearing brief and AST-contract views; logs views, not a claim of complete manual line-by-line review.
