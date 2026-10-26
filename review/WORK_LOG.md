@@ -38,7 +38,9 @@ Work is in progress. Nothing in this log is a completion claim.
 
 - Runtime: bundled CPython 3.12.14. A repository-local ignored `.venv` contains pytest 9.1.1. Pillow, pandas, numpy, and pypdf are available in the bundled interpreter.
 - Original Exercism reference implementations pass all 163 supplied suites (2,377 test methods). These checks do not establish that prose and tests agree; semantic defects remain separately recorded.
-- Semantic task decisions are accumulating in `review/task_notes.tsv`: all 21 Exercism concept units, practice units 0 through 47, and 15 learn.python level-00 activities have been reviewed through content-bearing views. Packet logs record views, not a guarantee that every source line was manually reviewed. Remaining source work is still pending.
+- Semantic task decisions are accumulating in `review/task_notes.tsv`: all 21 Exercism concept units, all 142 practice units, and 15 learn.python level-00 activities have been reviewed through content-bearing views. Packet logs record views, not a guarantee that every source line was manually reviewed. Remaining source work is still pending.
+- Separate refactoring-baseline check: Markdown and Ledger supplied baselines pass their local tests; Tree Building has six failures caused by legacy vague exception messages (35 passing, six failing across these three suites). This is distinct from the all-passing instructor references. Assign Tree Building with an explicit baseline/error-contract warning.
+- Additional exclusions identified through contents: Octal contradicts its invalid-input tests; Point Mutations is an explicitly replaced Hamming variant with contradictory unequal-length cases. Minesweeper is a near-identical Flower Field predecessor and should become an alternate link on that assignment rather than another numbered task.
 - `tools/curriculum_inventory.py`: full byte/text/AST inventory, Git internals pruned.
 - `tools/discover_curriculum.py`: candidate discovery only; no sequencing decisions.
 - `tools/review_packets.py`: content-bearing brief and AST-contract views; logs views, not a claim of complete manual line-by-line review.
