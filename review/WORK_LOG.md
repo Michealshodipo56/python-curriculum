@@ -82,3 +82,9 @@ Work is in progress. Nothing in this log is a completion claim.
 - Concrete sequence decisions: manual dictionary word-counting precedes Counter-based text analysis; explicit comprehension translation precedes projects requiring comprehensions; namedtuple ranking comes after record attributes/callbacks rather than first-list introduction. Optional advanced stretches retain separate prerequisite unlocks.
 - Additional defects recorded per task: fractional-cent cap rounding, non-invoked predicates in a password-rule extension, float-root primality regression, ineffective randomness acceptance, strict-public-interface/import conflict, shallow versus deep copying, and toy sequential exception guarantees described too broadly as atomic.
 - All source material remains unchanged. Remaining C1 assignments/teaching/support, learn.python projects/challenges/concepts, source-resource inspection, unified prerequisite graph, final Markdown, coverage/exclusions report and final delivery remain outstanding.
+
+### Week5 homework checkpoint
+
+- All six full student briefs and stretch sections reviewed and recorded: matrix transpose, dict inversion, Two-Sum, sorted duplicate detection, first-letter grouping and dictionary intersection. C1 total62, TSV total240. Next assignment index62 starts week6 challenges.
+- Source defects include hyphenated learner filename versus underscore imports, zero-column transpose round-trip claim, ordered-dict acceptance conflicting with unordered set-key alternative, and reconciliation partition with overlapping intersection/changed keys. Existing tasks retained with clear domain/contract annotations; no invented replacement tasks.
+- Review and anchor validation tooling commit5e66567 pushed successfully before this six-task batch. Final curriculum still unfinished.
