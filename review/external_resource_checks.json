@@ -1,0 +1,56 @@
+[
+  {
+    "url": "http://www.gutenberg.org/files/1112/1112.txt",
+    "checked_at": "2026-10-27T06:28:06.772669+00:00",
+    "status": null,
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://api.thecatapi.com/v1/breeds",
+    "checked_at": "2026-10-27T06:28:06.777332+00:00",
+    "status": 403,
+    "final_url": "https://api.thecatapi.com/v1/breeds",
+    "error": "Forbidden"
+  },
+  {
+    "url": "https://restcountries.eu/rest/v2/all",
+    "checked_at": "2026-10-27T06:28:06.779394+00:00",
+    "status": null,
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://archive.ics.uci.edu/ml/datasets.php",
+    "checked_at": "2026-10-27T06:28:06.781394+00:00",
+    "status": 404,
+    "final_url": "https://archive.ics.uci.edu/datasets.php",
+    "error": "Not Found"
+  },
+  {
+    "url": "http://www.bu.edu/president/boston-university-facts-stats/",
+    "checked_at": "2026-10-27T06:28:07.655915+00:00",
+    "status": null,
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get issuer certificate (_ssl.c:1010)>"
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States",
+    "checked_at": "2026-10-27T06:28:08.068091+00:00",
+    "status": 200,
+    "final_url": "https://en.wikipedia.org/wiki/List_of_presidents_of_the_United_States",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes_sampled": 771911,
+    "sample_truncated": false,
+    "legacy_uci_selector_present": null
+  },
+  {
+    "url": "https://thirtydaysofpython-v1-final.herokuapp.com/",
+    "checked_at": "2026-10-27T06:28:08.322660+00:00",
+    "status": null,
+    "error": "RemoteDisconnected: Remote end closed connection without response"
+  },
+  {
+    "url": "https://thirtydayofpython-api.herokuapp.com/",
+    "checked_at": "2026-10-27T06:28:08.357211+00:00",
+    "status": null,
+    "error": "RemoteDisconnected: Remote end closed connection without response"
+  }
+]

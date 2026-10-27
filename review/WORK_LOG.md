@@ -45,3 +45,11 @@ Work is in progress. Nothing in this log is a completion claim.
 - `tools/discover_curriculum.py`: candidate discovery only; no sequencing decisions.
 - `tools/review_packets.py`: content-bearing brief and AST-contract views; logs views, not a claim of complete manual line-by-line review.
 - Pending: full semantic review, duplicate and defect decisions, task-level prerequisite graph, final Markdown generation, per-source coverage/exclusion report, validation, commit and push.
+
+## 30 Days question-review checkpoint
+
+- Full numbered exercise blocks reviewed:286 parent questions across29 files (days1-26,28-29 and root numpy.md). Nested subrequirements stay with parent questions. Days27 and30 have no numbered questions; both full chapters were read, and Day27 contains guided database work that still needs its own retained learning unit.
+- Per-question decisions are reproducibly materialized by `tools/record_30days_review.py` into `review/30days_decisions.json`. Shared skill defaults are provisional and need finer final prerequisite sequencing; they are not a completed learning graph.
+- Several full teaching chapters were read as recorded in `SOURCE_QUALITY_NOTES.md`; early lesson gaps and generated output-table limits remain explicitly listed. Numbered prompts being reviewed does not mean the entire source repository has completed semantic review.
+- Read-only external-resource results are in `review/external_resource_checks.json`. UCI original listing redirects to404; Wikipedia table returned200. Cat API returned403 in this environment; other failures include certificate verification and disconnected demos. No insecure certificate bypass or silent URL replacement was used.
+- Inventory rerun reads5655 source files:5565 text and90 binary. Russian README is UTF16; remaining binary resources still need resource-specific validation.
