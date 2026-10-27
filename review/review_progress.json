@@ -1,0 +1,14 @@
+{
+  "tsv_reviewed_units": 234,
+  "by_source": {
+    "C1-Code-Crunch-Convos": 56,
+    "learn.python": 15,
+    "python-curriculum": 163
+  },
+  "separate_30days_reviewed_parent_questions": 286,
+  "question_line_anchors_match_source": true,
+  "source_paths_exist": true,
+  "decision_paths_unique": true,
+  "c1_contiguous_reviewed_assignment_prefix": 56,
+  "final_curriculum_validated": false
+}
