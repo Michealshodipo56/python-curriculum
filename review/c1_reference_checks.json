@@ -1,0 +1,31 @@
+[
+  {
+    "task": "exercise-02-string-formatter",
+    "reference": "C1-Code-Crunch-Convos/curriculum/week-02-data-types-operators/exercises/exercise-02-string-formatter-solution.py",
+    "expected_matches_actual": true,
+    "differences": [],
+    "expected_line_count": 8,
+    "actual_line_count": 8,
+    "oversized_name_row_length": 45
+  },
+  {
+    "task": "exercise-03-temperature-converter",
+    "reference": "C1-Code-Crunch-Convos/curriculum/week-02-data-types-operators/exercises/exercise-03-temperature-converter-solution.py",
+    "expected_matches_actual": true,
+    "differences": [],
+    "expected_line_count": 11,
+    "actual_line_count": 11
+  },
+  {
+    "task": "exercise-04-input-parsing",
+    "reference": "C1-Code-Crunch-Convos/curriculum/week-02-data-types-operators/exercises/exercise-04-input-parsing-solution.py",
+    "expected_matches_actual": true,
+    "differences": [],
+    "expected_line_count": 7,
+    "actual_line_count": 7,
+    "zero_negative_exponent": {
+      "exception": "ZeroDivisionError",
+      "message": "0.0 cannot be raised to a negative power"
+    }
+  }
+]
