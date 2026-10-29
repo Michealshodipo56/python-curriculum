@@ -1,21 +1,31 @@
 # Gauntlex Python Piscine — work in progress
 
-This directory contains original problem-first Gauntlex tasks. The source submodules and prior review files are preserved. This is not yet the full curriculum.
+Original problem-first Gauntlex assignments live here. The original four source submodules and review files remain intact.
 
 ## Foundations sequence
 
-1. [hello](01-foundations/001-hello/README.md) — exact string output
-2. [displaynumber](01-foundations/002-displaynumber/README.md) — integer output
-3. [twolines](01-foundations/003-two-lines/README.md) — newline formatting
-4. [sumtwo](01-foundations/004-addition/README.md) — numeric input and addition
-5. [greet](01-foundations/005-greeting/README.md) — string input and formatting
+| # | Task | Main concept |
+|---|---|---|
+| 001 | [hello](01-foundations/001-hello/README.md) | String output |
+| 002 | [displaynumber](01-foundations/002-displaynumber/README.md) | Numeric output |
+| 003 | [twolines](01-foundations/003-two-lines/README.md) | Newlines |
+| 004 | [sumtwo](01-foundations/004-addition/README.md) | Integer input and addition |
+| 005 | [greet](01-foundations/005-greeting/README.md) | String input |
+| 006 | [namecard](01-foundations/006-name-card/README.md) | Variables |
+| 007 | [rectangle](01-foundations/007-rectangle/README.md) | Arithmetic |
+| 008 | [remainder](01-foundations/008-remainder/README.md) | Integer division and modulo |
+| 009 | [initials](01-foundations/009-initials/README.md) | String indexing |
+| 010 | [shout](01-foundations/010-shout/README.md) | String normalization |
+| 011 | [nextyear](01-foundations/011-next-year/README.md) | Numeric conversion |
+| 012 | [parity](01-foundations/012-even-or-odd/README.md) | Conditionals |
+| 013 | [larger](01-foundations/013-larger/README.md) | Comparison |
 
-Each task contains a README, metadata, blank starter, and pytest checks. The starter is intentionally unsolved, so its tests should fail until a learner implements it. These tests have not been executed in a Gauntlex runner yet. Production use requires separating tests from learner-accessible material and validating the sandbox.
+Every task contains a learner-facing README, JSON metadata, an intentionally incomplete starter file, and pytest checks. The tests are designed to fail until the learner solves the task. They have **not been executed against the Gauntlex runtime**. In production, hide authoritative tests from learners.
 
 ## Source provenance
 
-These tasks were newly written around common beginner Python concepts found in the combined source curricula and inspired by the 01-edu problem-first format. Existing source material remains in its submodules. Preserve original license and attribution obligations when redistributing any source content.
+Tasks are newly worded around common Python concepts from the source curricula, using 01-edu's problem-first philosophy as an educational reference. Preserve source license and attribution obligations when reusing any original source content.
 
-## Remaining work
+## Scope and completion
 
-The 693 assigned source activities in the existing order are **not** yet transformed. They need individual review, original task design, prerequisite validation, tests, and integration checks. No claim of full completion is made.
+**13 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
