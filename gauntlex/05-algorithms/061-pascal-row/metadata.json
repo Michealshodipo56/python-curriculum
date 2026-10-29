@@ -1,0 +1,31 @@
+{
+  "id": "061-pascal-row",
+  "name": "pascal_row",
+  "module": "05-algorithms",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "060-move-zeros"
+  ],
+  "concepts": [
+    "algorithms",
+    "data structures",
+    "edge cases"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Give questions and conceptual hints only; do not provide solution code.",
+    "questions": [
+      "Which invariant should stay true as you process the input?",
+      "Which edge cases might invalidate your approach?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your algorithm's complexity.",
+      "Explain how an edge case is handled."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
