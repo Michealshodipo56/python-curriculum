@@ -1,0 +1,31 @@
+{
+  "id": "080-csv-column-total",
+  "name": "csv_column_total",
+  "module": "06-text-files",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "079-read-json-file"
+  ],
+  "concepts": [
+    "file I/O",
+    "data formats",
+    "context managers"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Provide hints, not solutions.",
+    "questions": [
+      "How can you open and close files safely?",
+      "Which parser should be used?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain encoding and file closure.",
+      "Describe the expected input format."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
