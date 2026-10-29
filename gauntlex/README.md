@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**285 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**310 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -348,3 +348,31 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [wheel_name](16-packaging/283-artifact-name/README.md)
 - [build_metadata](16-packaging/284-build-metadata/README.md)
 - [release_checklist](16-packaging/285-release-checklist/README.md)
+
+## Architecture, security, and reliability (286–310)
+
+- [dependency order](17-architecture/286-dependency-order/README.md)
+- [dependency cycles](17-architecture/287-dependency-cycles/README.md)
+- [reachable services](17-architecture/288-reachable-services/README.md)
+- [reverse dependencies](17-architecture/289-reverse-dependencies/README.md)
+- [service layers](17-architecture/290-service-layers/README.md)
+- [feature flags](17-architecture/291-feature-flags/README.md)
+- [route match](17-architecture/292-route-match/README.md)
+- [route priority](17-architecture/293-route-priority/README.md)
+- [rate limit window](17-architecture/294-rate-limit-window/README.md)
+- [circuit state](17-architecture/295-circuit-state/README.md)
+- [cache expiry](17-architecture/296-cache-expiry/README.md)
+- [cache eviction](17-architecture/297-cache-eviction/README.md)
+- [health rollup](17-architecture/298-health-rollup/README.md)
+- [retry budget](17-architecture/299-retry-budget/README.md)
+- [idempotency key](17-architecture/300-idempotency-key/README.md)
+- [partition key](17-architecture/301-partition-key/README.md)
+- [event dedup](17-architecture/302-event-dedup/README.md)
+- [event projection](17-architecture/303-event-projection/README.md)
+- [replay dedup](17-architecture/304-replay-dedup/README.md)
+- [config diff](17-architecture/305-config-diff/README.md)
+- [permission check](17-architecture/306-permission-check/README.md)
+- [permission inherit](17-architecture/307-permission-inherit/README.md)
+- [audit record](17-architecture/308-audit-record/README.md)
+- [error envelope](17-architecture/309-error-envelope/README.md)
+- [pagination token](17-architecture/310-pagination-token/README.md)
