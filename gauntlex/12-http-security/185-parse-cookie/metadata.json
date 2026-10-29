@@ -1,0 +1,32 @@
+{
+  "id": "185-parse-cookie",
+  "name": "parse_cookie",
+  "module": "12-http-security",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "184-normalize-headers"
+  ],
+  "concepts": [
+    "HTTP",
+    "web protocols",
+    "security",
+    "standard library"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask conceptual questions, never provide full code.",
+    "questions": [
+      "What parts of the protocol must be validated?",
+      "How can the standard library avoid fragile parsing?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain malformed input handling.",
+      "Describe a security pitfall this task prevents."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
