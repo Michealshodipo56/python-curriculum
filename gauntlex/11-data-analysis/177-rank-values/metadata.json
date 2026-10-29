@@ -1,0 +1,31 @@
+{
+  "id": "177-rank-values",
+  "name": "dense_ranks",
+  "module": "11-data-analysis",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "176-weighted-mean"
+  ],
+  "concepts": [
+    "statistics",
+    "numerical methods",
+    "data analysis"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Never provide solution code.",
+    "questions": [
+      "What formula defines the requested statistic?",
+      "How will you handle empty or constant inputs?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the numerical method.",
+      "Discuss a boundary or degenerate input."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
