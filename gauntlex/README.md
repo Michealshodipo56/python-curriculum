@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**80 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**115 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -113,3 +113,44 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [count_file_lines](06-text-files/078-count-file-lines/README.md)
 - [read_json_file](06-text-files/079-read-json-file/README.md)
 - [csv_column_total](06-text-files/080-csv-column-total/README.md)
+
+## Object-oriented programming (081–095)
+
+- [Stack](07-objects/081-stack/README.md)
+- [Queue](07-objects/082-queue/README.md)
+- [CounterMap](07-objects/083-counter/README.md)
+- [BankAccount](07-objects/084-bank-account/README.md)
+- [Temperature](07-objects/085-temperature/README.md)
+- [Rectangle](07-objects/086-rectangle-class/README.md)
+- [TodoList](07-objects/087-todo-list/README.md)
+- [Point](07-objects/088-point/README.md)
+- [Inventory](07-objects/089-inventory/README.md)
+- [Gradebook](07-objects/090-gradebook/README.md)
+- [EventEmitter](07-objects/091-event-emitter/README.md)
+- [LRUCache](07-objects/092-lru-cache/README.md)
+- [UndoHistory](07-objects/093-undo-history/README.md)
+- [ShoppingCart](07-objects/094-shopping-cart/README.md)
+- [PriorityTasks](07-objects/095-task-priority/README.md)
+
+## Algorithmic problem solving (096–115)
+
+- [two_sum](08-problem-solving/096-two-sum/README.md)
+- [prefix_sums](08-problem-solving/097-prefix-sums/README.md)
+- [max_subarray](08-problem-solving/098-max-subarray/README.md)
+- [product_except_self](08-problem-solving/099-product-except-self/README.md)
+- [rotate_matrix](08-problem-solving/100-rotate-matrix/README.md)
+- [spiral_order](08-problem-solving/101-spiral-order/README.md)
+- [to_binary](08-problem-solving/102-binary-conversion/README.md)
+- [to_roman](08-problem-solving/103-roman-numerals/README.md)
+- [roman_to_int](08-problem-solving/104-roman-to-int/README.md)
+- [longest_unique_substring](08-problem-solving/105-longest-unique-substring/README.md)
+- [min_subarray_len](08-problem-solving/106-min-window-sum/README.md)
+- [group_anagrams](08-problem-solving/107-group-anagrams/README.md)
+- [top_k_frequent](08-problem-solving/108-top-k-frequent/README.md)
+- [merge_intervals](08-problem-solving/109-interval-merge/README.md)
+- [insert_interval](08-problem-solving/110-interval-insert/README.md)
+- [valid_sudoku](08-problem-solving/111-valid-sudoku/README.md)
+- [flood_fill](08-problem-solving/112-flood-fill/README.md)
+- [count_islands](08-problem-solving/113-islands/README.md)
+- [shortest_path](08-problem-solving/114-bfs-shortest-path/README.md)
+- [has_cycle](08-problem-solving/115-cycle-detection/README.md)
