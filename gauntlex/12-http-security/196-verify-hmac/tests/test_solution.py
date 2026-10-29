@@ -9,5 +9,9 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
+    import hmac
+    import hashlib
+    valid = hmac.new(b"key", b"abc", hashlib.sha256).hexdigest()
+    assert module.verify_hmac("key", "abc", valid) is True
     assert module.verify_hmac("key", "abc", "wrong") == False
     assert module.verify_hmac("key", "abc", "") == False
