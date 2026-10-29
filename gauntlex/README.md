@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**245 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**285 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -302,3 +302,49 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [locked_increment](14-async/243-async-lock/README.md)
 - [async_filter](14-async/244-async-filter/README.md)
 - [async_batches](14-async/245-async-batch/README.md)
+
+## Testing and debugging (246–270)
+
+- [assert_equal](15-testing/246-assert-equal/README.md)
+- [assert_raises](15-testing/247-assert-raises/README.md)
+- [approx_equal](15-testing/248-approx-equal/README.md)
+- [first_difference](15-testing/249-first-difference/README.md)
+- [diff_dicts](15-testing/250-diff-dicts/README.md)
+- [run_cases](15-testing/251-run-cases/README.md)
+- [capture_output](15-testing/252-capture-output/README.md)
+- [is_sorted](15-testing/253-is-sorted/README.md)
+- [validate_sorted](15-testing/254-validate-sorted/README.md)
+- [is_permutation](15-testing/255-check-permutation/README.md)
+- [check_nonnegative](15-testing/256-invariant-check/README.md)
+- [parse_test_report](15-testing/257-parse-test-report/README.md)
+- [failure_rate](15-testing/258-flaky-detector/README.md)
+- [select_tests](15-testing/259-test-selection/README.md)
+- [test_summary](15-testing/260-test-summary/README.md)
+- [pytest_nodeid](15-testing/261-pytest-nodeid/README.md)
+- [normalize_test_name](15-testing/262-test-name-normalize/README.md)
+- [coverage_percent](15-testing/263-coverage-percent/README.md)
+- [regressions](15-testing/264-regression-check/README.md)
+- [test_matrix](15-testing/265-test-matrix/README.md)
+- [surviving_mutants](15-testing/266-mutation-survivors/README.md)
+- [case_ids](15-testing/267-test-case-ids/README.md)
+- [snapshot_matches](15-testing/268-snapshot-compare/README.md)
+- [slow_tests](15-testing/269-test-duration/README.md)
+- [assert_subset](15-testing/270-assert-subset/README.md)
+
+## Packaging, configuration, and releases (271–285)
+
+- [parse_version](16-packaging/271-semver-parse/README.md)
+- [compare_version](16-packaging/272-semver-compare/README.md)
+- [parse_requirement](16-packaging/273-dependency-parse/README.md)
+- [sort_requirements](16-packaging/274-requirements-sort/README.md)
+- [dedupe_requirements](16-packaging/275-requirements-dedupe/README.md)
+- [read_config](16-packaging/276-env-config/README.md)
+- [merge_config](16-packaging/277-config-merge/README.md)
+- [file_manifest](16-packaging/278-file-manifest/README.md)
+- [release_notes](16-packaging/279-release-notes/README.md)
+- [group_changes](16-packaging/280-changelog-groups/README.md)
+- [entrypoint_name](16-packaging/281-python-entrypoint/README.md)
+- [module_to_path](16-packaging/282-module-path/README.md)
+- [wheel_name](16-packaging/283-artifact-name/README.md)
+- [build_metadata](16-packaging/284-build-metadata/README.md)
+- [release_checklist](16-packaging/285-release-checklist/README.md)
