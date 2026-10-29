@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**22 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**46 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -43,3 +43,33 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 | 020 | [times](02-control-flow/020-multiplication-table/README.md) | Repetition and multiplication |
 | 021 | [digitcount](02-control-flow/021-digit-count/README.md) | Iterative division |
 | 022 | [guess](02-control-flow/022-number-guess/README.md) | Loop termination |
+
+## Collections sequence (023–034)
+
+- [listlength](03-collections/023-list-length/README.md)
+- [listends](03-collections/024-list-ends/README.md)
+- [listtotal](03-collections/025-list-total/README.md)
+- [listmaximum](03-collections/026-list-maximum/README.md)
+- [reversewords](03-collections/027-reverse-words/README.md)
+- [filtereven](03-collections/028-filter-even/README.md)
+- [uniqueorder](03-collections/029-unique-order/README.md)
+- [wordfrequency](03-collections/030-word-frequency/README.md)
+- [sortnumbers](03-collections/031-sort-numbers/README.md)
+- [middleslice](03-collections/032-middle-slice/README.md)
+- [setoverlap](03-collections/033-set-overlap/README.md)
+- [paircount](03-collections/034-pair-count/README.md)
+
+## Functions sequence (035–046)
+
+- [sumfunction](04-functions/035-sum-function/README.md)
+- [absolute](04-functions/036-absolute-function/README.md)
+- [factorial](04-functions/037-factorial/README.md)
+- [palindrome](04-functions/038-palindrome/README.md)
+- [vowelcount](04-functions/039-vowel-count/README.md)
+- [prime](04-functions/040-prime-check/README.md)
+- [fibonacci](04-functions/041-fibonacci/README.md)
+- [anagram](04-functions/042-anagram/README.md)
+- [flattenonce](04-functions/043-flatten-once/README.md)
+- [firstunique](04-functions/044-first-unique/README.md)
+- [chunklist](04-functions/045-chunk-list/README.md)
+- [gcd](04-functions/046-gcd/README.md)
