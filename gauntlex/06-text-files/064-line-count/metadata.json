@@ -1,0 +1,31 @@
+{
+  "id": "064-line-count",
+  "name": "line_count",
+  "module": "06-text-files",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "063-normalize-spaces"
+  ],
+  "concepts": [
+    "text processing",
+    "validation",
+    "standard library"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask conceptual questions; never provide code.",
+    "questions": [
+      "Which standard library feature can help?",
+      "What are the boundary inputs?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the contract and edge cases.",
+      "Describe the time complexity."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
