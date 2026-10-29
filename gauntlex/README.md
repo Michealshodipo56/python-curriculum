@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**140 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**180 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -182,3 +182,49 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [invert_mapping](09-validation/138-invert-mapping/README.md)
 - [set_diff](09-validation/139-diff-sets/README.md)
 - [top_words](09-validation/140-top-words/README.md)
+
+## CLI and stream processing (141–160)
+
+- [echolines](10-cli-tools/141-echo-lines/README.md)
+- [numberlines](10-cli-tools/142-number-lines/README.md)
+- [grep](10-cli-tools/143-grep-literal/README.md)
+- [headlines](10-cli-tools/144-head-lines/README.md)
+- [taillines](10-cli-tools/145-tail-lines/README.md)
+- [sortlines](10-cli-tools/146-sort-lines/README.md)
+- [uniqadjacent](10-cli-tools/147-unique-adjacent/README.md)
+- [countoccurrences](10-cli-tools/148-count-occurrences/README.md)
+- [sumcolumns](10-cli-tools/149-sum-columns/README.md)
+- [csvtotsv](10-cli-tools/150-csv-to-tsv/README.md)
+- [jsonpretty](10-cli-tools/151-json-pretty/README.md)
+- [jsonlines](10-cli-tools/152-json-lines/README.md)
+- [jsonlcount](10-cli-tools/153-jsonl-count/README.md)
+- [jsonlselect](10-cli-tools/154-jsonl-select/README.md)
+- [csvrowcount](10-cli-tools/155-csv-row-count/README.md)
+- [csvselect](10-cli-tools/156-csv-select-column/README.md)
+- [csvfilter](10-cli-tools/157-csv-filter-equal/README.md)
+- [wordcountcli](10-cli-tools/158-word-count-cli/README.md)
+- [histogram](10-cli-tools/159-histogram/README.md)
+- [statscli](10-cli-tools/160-stats-cli/README.md)
+
+## Numerical computing and statistics (161–180)
+
+- [median](11-data-analysis/161-median/README.md)
+- [mode](11-data-analysis/162-mode/README.md)
+- [population_variance](11-data-analysis/163-variance/README.md)
+- [population_stddev](11-data-analysis/164-standard-deviation/README.md)
+- [nearest_rank_percentile](11-data-analysis/165-percentile-nearest/README.md)
+- [moving_average](11-data-analysis/166-moving-average/README.md)
+- [minmax_normalize](11-data-analysis/167-normalize-minmax/README.md)
+- [dot_product](11-data-analysis/168-dot-product/README.md)
+- [euclidean_distance](11-data-analysis/169-euclidean-distance/README.md)
+- [matrix_add](11-data-analysis/170-matrix-add/README.md)
+- [matrix_multiply](11-data-analysis/171-matrix-multiply/README.md)
+- [bucket_count](11-data-analysis/172-bucket-count/README.md)
+- [pearson_correlation](11-data-analysis/173-pearson-correlation/README.md)
+- [cumulative_product](11-data-analysis/174-cumulative-product/README.md)
+- [frequency_table](11-data-analysis/175-frequency-table/README.md)
+- [weighted_mean](11-data-analysis/176-weighted-mean/README.md)
+- [dense_ranks](11-data-analysis/177-rank-values/README.md)
+- [quantize](11-data-analysis/178-quantize/README.md)
+- [iqr_outliers](11-data-analysis/179-outlier-iqr/README.md)
+- [linear_regression](11-data-analysis/180-linear-regression/README.md)
