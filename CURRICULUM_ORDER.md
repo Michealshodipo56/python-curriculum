@@ -4,7 +4,7 @@
 
 ## Audit basis
 
-- **702 primary task files inspected**; **694 assigned** and **8 explicitly withheld/merged**.
+- **702 primary task files inspected**; **693 assigned** and **9 explicitly withheld/merged**.
 - **2606 local starter, support, and test-contract files read** alongside the primary task files.
 - Sources: 30 Days 29, C1 194, learn.python 313, Exercism 158.
 - Each primary source path appears once. Source-native order is retained where tasks build cumulatively; cross-source placement follows prerequisites rather than repository folder order.
@@ -13,7 +13,7 @@
 
 ## Difficulty ladder
 
-- **01. Start here: terminal, REPL and first programs** — 8 tasks. Run Python, read tracebacks, print values, and save a script before introducing abstractions.
+- **01. Start here: terminal, REPL and first programs** — 7 tasks. Run Python, read tracebacks, print values, and save a script before introducing abstractions.
 - **02. Values, input and expressions** — 8 tasks. Variables, numeric operations, strings, booleans, conversion and user input.
 - **03. Decisions and repetition** — 38 tasks. Comparisons, conditionals, loops and small stateful programs.
 - **04. Collections and data shaping** — 42 tasks. Lists, tuples, dictionaries, sets, comprehensions and nested data.
@@ -40,20 +40,19 @@ Run Python, read tracebacks, print values, and save a script before introducing 
 
 ### learn.python
 
-1. **First Steps** · beginner exercise · Absolute beginner — [learn.python/projects/level-00-absolute-beginner/01-first-steps/exercise.py](learn.python/projects/level-00-absolute-beginner/01-first-steps/exercise.py)
-2. **Hello World** · beginner exercise · Absolute beginner — [learn.python/projects/level-00-absolute-beginner/02-hello-world/exercise.py](learn.python/projects/level-00-absolute-beginner/02-hello-world/exercise.py)
-3. **Your First Script** · beginner exercise · Absolute beginner — [learn.python/projects/level-00-absolute-beginner/03-your-first-script/exercise.py](learn.python/projects/level-00-absolute-beginner/03-your-first-script/exercise.py)
+1. **Hello World** · beginner exercise · Absolute beginner — [learn.python/projects/level-00-absolute-beginner/02-hello-world/exercise.py](learn.python/projects/level-00-absolute-beginner/02-hello-world/exercise.py)
+2. **Your First Script** · beginner exercise · Absolute beginner — [learn.python/projects/level-00-absolute-beginner/03-your-first-script/exercise.py](learn.python/projects/level-00-absolute-beginner/03-your-first-script/exercise.py)
 
 ### 30 Days
 
-4. **🐍 30 Days Of Python** · day lesson and exercises · lesson + exercises — [30-Days-Of-Python/readme.md](30-Days-Of-Python/readme.md)
+3. **🐍 30 Days Of Python** · day lesson and exercises · lesson + exercises — [30-Days-Of-Python/readme.md](30-Days-Of-Python/readme.md)
 
 ### C1
 
-5. **Homework Problem 1 — Verify Your Install** · assignment · Beginner — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-01-verify-your-install.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-01-verify-your-install.md)
-6. **Homework Problem 2 — Project Skeleton with a venv** · assignment · Beginner — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-02-project-skeleton-with-a-venv.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-02-project-skeleton-with-a-venv.md)
-7. **Homework Problem 4 — Install and Freeze a Package** · assignment · Beginner plus — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-04-install-and-freeze-a-package.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-04-install-and-freeze-a-package.md)
-8. **Homework Problem 5 — Publish Your Repo to GitHub** · assignment · Beginner plus — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-05-publish-your-repo-to-github.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-05-publish-your-repo-to-github.md)
+4. **Homework Problem 1 — Verify Your Install** · assignment · Beginner — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-01-verify-your-install.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-01-verify-your-install.md)
+5. **Homework Problem 2 — Project Skeleton with a venv** · assignment · Beginner — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-02-project-skeleton-with-a-venv.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-02-project-skeleton-with-a-venv.md)
+6. **Homework Problem 4 — Install and Freeze a Package** · assignment · Beginner plus — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-04-install-and-freeze-a-package.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-04-install-and-freeze-a-package.md)
+7. **Homework Problem 5 — Publish Your Repo to GitHub** · assignment · Beginner plus — [C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-05-publish-your-repo-to-github.md](C1-Code-Crunch-Convos/curriculum/week-01-python-foundations/homework/problem-05-publish-your-repo-to-github.md)
 
 ## 02 · Values, input and expressions
 
