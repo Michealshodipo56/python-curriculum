@@ -9,4 +9,10 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert callable(module.request_id)
+    import uuid
+    first = module.request_id()
+    second = module.request_id()
+    assert isinstance(first, str)
+    assert str(uuid.UUID(first, version=4)) == first
+    assert uuid.UUID(first).version == 4
+    assert first != second
