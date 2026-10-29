@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**180 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**205 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -228,3 +228,31 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [quantize](11-data-analysis/178-quantize/README.md)
 - [iqr_outliers](11-data-analysis/179-outlier-iqr/README.md)
 - [linear_regression](11-data-analysis/180-linear-regression/README.md)
+
+## HTTP, APIs, and security (181–205)
+
+- [url_host](12-http-security/181-url-host/README.md)
+- [resolve_url](12-http-security/182-url-join/README.md)
+- [parse_status_line](12-http-security/183-parse-http-status/README.md)
+- [normalize_headers](12-http-security/184-normalize-headers/README.md)
+- [parse_cookie](12-http-security/185-parse-cookie/README.md)
+- [build_cookie](12-http-security/186-build-cookie/README.md)
+- [retry_delay](12-http-security/187-http-retry-delay/README.md)
+- [pagination_offset](12-http-security/188-pagination-offset/README.md)
+- [paginate](12-http-security/189-pagination-slice/README.md)
+- [filter_records](12-http-security/190-query-filter/README.md)
+- [json_response](12-http-security/191-json-response/README.md)
+- [parse_bearer](12-http-security/192-parse-bearer/README.md)
+- [constant_time_compare](12-http-security/193-constant-time-compare/README.md)
+- [sha256_hex](12-http-security/194-sha256-hex/README.md)
+- [hmac_signature](12-http-security/195-hmac-signature/README.md)
+- [verify_hmac](12-http-security/196-verify-hmac/README.md)
+- [allowed_origin](12-http-security/197-cors-origin/README.md)
+- [normalize_method](12-http-security/198-http-method/README.md)
+- [media_type](12-http-security/199-parse-content-type/README.md)
+- [cache_key](12-http-security/200-http-cache-key/README.md)
+- [request_id](12-http-security/201-request-id/README.md)
+- [encode_component](12-http-security/202-url-encode-component/README.md)
+- [decode_component](12-http-security/203-url-decode-component/README.md)
+- [parse_basic_auth](12-http-security/204-parse-basic-auth/README.md)
+- [header_get](12-http-security/205-header-get/README.md)
