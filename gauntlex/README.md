@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**310 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**314 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -376,3 +376,12 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [audit record](17-architecture/308-audit-record/README.md)
 - [error envelope](17-architecture/309-error-envelope/README.md)
 - [pagination token](17-architecture/310-pagination-token/README.md)
+
+## Integrated capstone projects (311–314)
+
+- [Task Tracker CLI](18-capstones/311-task-tracker/README.md)
+- [Log Analyzer CLI](18-capstones/312-log-analyzer/README.md)
+- [Expense Ledger CLI](18-capstones/313-expense-ledger/README.md)
+- [HTTP JSON API Server](18-capstones/314-http-api-server/README.md)
+
+These four capstones require complete working applications and include end-to-end acceptance tests. The starter applications are intentionally unfinished. Automated test execution and full source-task coverage remain outstanding.
