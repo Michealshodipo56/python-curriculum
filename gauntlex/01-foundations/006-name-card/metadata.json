@@ -1,0 +1,36 @@
+{
+  "id": "006-name-card",
+  "name": "namecard",
+  "title": "Build a two-line name card",
+  "module": "01-foundations",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "005-greeting"
+  ],
+  "concepts": [
+    "variables",
+    "input",
+    "output"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Explain concepts and ask questions without writing a solution.",
+    "questions": [
+      "How might variables help with this problem?",
+      "How might input help with this problem?",
+      "How might output help with this problem?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your implementation and the result.",
+      "What happens on an edge case from the requirements?"
+    ]
+  },
+  "source_inspiration": [
+    "learn.python beginner exercises"
+  ],
+  "status": "draft-tests-not-run"
+}
