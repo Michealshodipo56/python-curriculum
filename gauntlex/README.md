@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**205 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**245 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -256,3 +256,49 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [decode_component](12-http-security/203-url-decode-component/README.md)
 - [parse_basic_auth](12-http-security/204-parse-basic-auth/README.md)
 - [header_get](12-http-security/205-header-get/README.md)
+
+## SQLite databases (206–230)
+
+- [create_users](13-sqlite/206-create-users/README.md)
+- [insert_user](13-sqlite/207-insert-user/README.md)
+- [find_user](13-sqlite/208-find-user/README.md)
+- [list_users](13-sqlite/209-list-users/README.md)
+- [update_email](13-sqlite/210-update-email/README.md)
+- [delete_user](13-sqlite/211-delete-user/README.md)
+- [search_users](13-sqlite/212-search-users/README.md)
+- [count_users](13-sqlite/213-count-users/README.md)
+- [users_page](13-sqlite/214-users-page/README.md)
+- [create_orders](13-sqlite/215-create-orders/README.md)
+- [order_total](13-sqlite/216-order-total/README.md)
+- [top_customers](13-sqlite/217-top-customers/README.md)
+- [orders_with_users](13-sqlite/218-join-orders/README.md)
+- [insert_email_once](13-sqlite/219-insert-ignore/README.md)
+- [upsert_score](13-sqlite/220-upsert-score/README.md)
+- [transfer](13-sqlite/221-transaction-transfer/README.md)
+- [insert_batch_atomic](13-sqlite/222-transaction-batch/README.md)
+- [sorted_users](13-sqlite/223-safe-sort/README.md)
+- [group_counts](13-sqlite/224-group-counts/README.md)
+- [events_on_or_after](13-sqlite/225-date-filter/README.md)
+- [table_exists](13-sqlite/226-db-schema-check/README.md)
+- [ensure_email_index](13-sqlite/227-db-index/README.md)
+- [store_json](13-sqlite/228-db-json/README.md)
+- [load_json](13-sqlite/229-db-json-read/README.md)
+- [revenue_report](13-sqlite/230-db-report/README.md)
+
+## Async Python and concurrency (231–245)
+
+- [greet_async](14-async/231-async-greeting/README.md)
+- [double_async](14-async/232-async-double/README.md)
+- [gather_results](14-async/233-async-gather/README.md)
+- [async_map](14-async/234-async-map/README.md)
+- [with_timeout](14-async/235-async-timeout/README.md)
+- [retry_async](14-async/236-async-retry/README.md)
+- [limited_map](14-async/237-async-semaphore/README.md)
+- [first_completed](14-async/238-async-first/README.md)
+- [queue_drain](14-async/239-async-queue/README.md)
+- [produce_items](14-async/240-async-producer/README.md)
+- [consume_n](14-async/241-async-consumer/README.md)
+- [wait_for_event](14-async/242-async-event/README.md)
+- [locked_increment](14-async/243-async-lock/README.md)
+- [async_filter](14-async/244-async-filter/README.md)
+- [async_batches](14-async/245-async-batch/README.md)
