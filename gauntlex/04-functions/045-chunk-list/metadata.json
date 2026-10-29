@@ -1,0 +1,31 @@
+{
+  "id": "045-chunk-list",
+  "name": "chunklist",
+  "module": "04-functions",
+  "difficulty": "beginner-intermediate",
+  "prerequisites": [
+    "044-first-unique"
+  ],
+  "concepts": [
+    "functions",
+    "return values",
+    "edge cases"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Explain the relevant concepts without revealing code.",
+    "questions": [
+      "What should the function return for the simplest input?",
+      "How can you break the problem into smaller operations?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the function's contract.",
+      "Describe an edge case and your handling of it."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
