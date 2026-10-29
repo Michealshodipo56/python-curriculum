@@ -1,0 +1,35 @@
+{
+  "id": "313-expense-ledger",
+  "name": "Expense Ledger CLI",
+  "module": "18-capstones",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "312-log-analyzer"
+  ],
+  "concepts": [
+    "integration",
+    "CLI",
+    "persistence",
+    "testing",
+    "reliability"
+  ],
+  "task_type": "capstone",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Never give the full solution. Ask architectural and debugging questions.",
+    "questions": [
+      "How will you divide the project into smaller testable components?",
+      "What happens on invalid input or a restart?",
+      "How can you verify persistent behavior?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Demonstrate the complete end-to-end workflow.",
+      "Explain input validation and data persistence.",
+      "Explain a failure mode and your test strategy."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
