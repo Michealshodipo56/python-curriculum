@@ -1,0 +1,35 @@
+{
+  "id": "003-two-lines",
+  "name": "twolines",
+  "module": "01-foundations",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "002-displaynumber"
+  ],
+  "concepts": [
+    "newlines",
+    "output"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask guiding questions, explain concepts, never reveal the solution.",
+    "prompts": [
+      "What do you understand about newlines in this task?",
+      "What do you understand about output in this task?"
+    ]
+  },
+  "auditor": {
+    "requires_tests": true,
+    "questions": [
+      "Explain how your program meets the output requirements.",
+      "What happens if the input or expected output changes?"
+    ]
+  },
+  "source_inspiration": [
+    "learn.python beginner exercises",
+    "01-edu problem-first format"
+  ],
+  "status": "draft-tests-not-run"
+}
