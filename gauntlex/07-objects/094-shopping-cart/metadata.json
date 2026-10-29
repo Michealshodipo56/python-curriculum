@@ -1,0 +1,32 @@
+{
+  "id": "094-shopping-cart",
+  "name": "ShoppingCart",
+  "module": "07-objects",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "093-undo-history"
+  ],
+  "concepts": [
+    "classes",
+    "encapsulation",
+    "state",
+    "exceptions"
+  ],
+  "task_type": "class",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask guiding questions, do not reveal implementation.",
+    "questions": [
+      "What state must each instance remember?",
+      "What invariants should its methods preserve?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain how you protect object invariants.",
+      "Explain one exceptional case and its handling."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
