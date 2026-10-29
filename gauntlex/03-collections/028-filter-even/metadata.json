@@ -1,0 +1,30 @@
+{
+  "id": "028-filter-even",
+  "name": "filtereven",
+  "module": "03-collections",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "027-reverse-words"
+  ],
+  "concepts": [
+    "collections",
+    "iteration"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Provide conceptual hints, not a solution.",
+    "questions": [
+      "Which collection type fits this data?",
+      "How would you handle an empty collection?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your choice of collection.",
+      "What happens with repeated or empty input?"
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
