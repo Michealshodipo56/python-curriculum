@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**115 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**140 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -154,3 +154,31 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [count_islands](08-problem-solving/113-islands/README.md)
 - [shortest_path](08-problem-solving/114-bfs-shortest-path/README.md)
 - [has_cycle](08-problem-solving/115-cycle-detection/README.md)
+
+## Data validation and parsing (116–140)
+
+- [dedupe_normalized](09-validation/116-dedupe-normalized/README.md)
+- [parse_boolean](09-validation/117-parse-boolean/README.md)
+- [clamp](09-validation/118-clamp/README.md)
+- [normalize_phone](09-validation/119-normalize-phone/README.md)
+- [validate_password](09-validation/120-validate-password/README.md)
+- [parse_query](09-validation/121-parse-query/README.md)
+- [build_query](09-validation/122-build-query/README.md)
+- [valid_ipv4](09-validation/123-validate-ipv4/README.md)
+- [parse_log_line](09-validation/124-parse-log-line/README.md)
+- [count_log_levels](09-validation/125-count-log-levels/README.md)
+- [chunk_text](09-validation/126-chunk-text/README.md)
+- [parse_env](09-validation/127-parse-env/README.md)
+- [redact_secrets](09-validation/128-redact-secrets/README.md)
+- [normalize_url_path](09-validation/129-normalize-url-path/README.md)
+- [safe_filename](09-validation/130-safe-filename/README.md)
+- [parse_duration](09-validation/131-parse-duration/README.md)
+- [format_duration](09-validation/132-format-duration/README.md)
+- [parse_hex_color](09-validation/133-parse-hex-color/README.md)
+- [format_hex_color](09-validation/134-format-hex-color/README.md)
+- [normalize_tags](09-validation/135-normalize-tags/README.md)
+- [email_domain](09-validation/136-email-domain/README.md)
+- [common_keys](09-validation/137-common-keys/README.md)
+- [invert_mapping](09-validation/138-invert-mapping/README.md)
+- [set_diff](09-validation/139-diff-sets/README.md)
+- [top_words](09-validation/140-top-words/README.md)
