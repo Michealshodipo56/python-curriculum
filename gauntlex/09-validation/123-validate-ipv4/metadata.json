@@ -1,0 +1,32 @@
+{
+  "id": "123-validate-ipv4",
+  "name": "valid_ipv4",
+  "module": "09-validation",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "122-build-query"
+  ],
+  "concepts": [
+    "validation",
+    "text processing",
+    "data normalization",
+    "edge cases"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Do not reveal implementation; guide with questions.",
+    "questions": [
+      "Which inputs should be rejected?",
+      "How will you make the output deterministic?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the input contract and failure behavior.",
+      "Explain one tricky edge case."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
