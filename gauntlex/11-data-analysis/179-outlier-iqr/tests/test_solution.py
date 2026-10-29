@@ -8,5 +8,5 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.iqr_outliers([1, 2, 2, 3, 100]) == [100]
+    assert module.iqr_outliers([1, 2, 2, 3, 3, 4, 5, 6, 100]) == [100]
     assert module.iqr_outliers([1, 2, 3]) == []
