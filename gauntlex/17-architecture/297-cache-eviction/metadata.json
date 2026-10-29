@@ -1,0 +1,32 @@
+{
+  "id": "297-cache-eviction",
+  "name": "eviction_candidates",
+  "module": "17-architecture",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "296-cache-expiry"
+  ],
+  "concepts": [
+    "architecture",
+    "reliability",
+    "security",
+    "distributed systems"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask guiding questions, never reveal implementation.",
+    "questions": [
+      "What invariant must hold?",
+      "How would the design behave under failure or duplicate input?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the architectural trade-off.",
+      "Explain a failure mode and how your design handles it."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
