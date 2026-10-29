@@ -28,4 +28,18 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**13 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**22 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+
+## Control flow sequence
+
+| # | Task | Concept |
+|---|---|---|
+| 014 | [grade](02-control-flow/014-grade/README.md) | Branches and ranges |
+| 015 | [access](02-control-flow/015-access/README.md) | Boolean logic |
+| 016 | [countto](02-control-flow/016-count/README.md) | For loops |
+| 017 | [sumrange](02-control-flow/017-sum-range/README.md) | Accumulators |
+| 018 | [countdown](02-control-flow/018-countdown/README.md) | While loops |
+| 019 | [evensum](02-control-flow/019-even-sum/README.md) | Filtering with conditions |
+| 020 | [times](02-control-flow/020-multiplication-table/README.md) | Repetition and multiplication |
+| 021 | [digitcount](02-control-flow/021-digit-count/README.md) | Iterative division |
+| 022 | [guess](02-control-flow/022-number-guess/README.md) | Loop termination |
