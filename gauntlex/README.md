@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**46 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**80 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -73,3 +73,43 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [firstunique](04-functions/044-first-unique/README.md)
 - [chunklist](04-functions/045-chunk-list/README.md)
 - [gcd](04-functions/046-gcd/README.md)
+
+## Algorithms (047–062)
+
+- [word_count](05-algorithms/047-word-count/README.md)
+- [longest_word](05-algorithms/048-longest-word/README.md)
+- [rotate_right](05-algorithms/049-rotate-list/README.md)
+- [merge_sorted](05-algorithms/050-merge-sorted/README.md)
+- [balanced_brackets](05-algorithms/051-balanced-brackets/README.md)
+- [run_length](05-algorithms/052-run-length/README.md)
+- [caesar](05-algorithms/053-caesar/README.md)
+- [common_prefix](05-algorithms/054-common-prefix/README.md)
+- [transpose](05-algorithms/055-matrix-transpose/README.md)
+- [binary_search](05-algorithms/056-binary-search/README.md)
+- [second_largest](05-algorithms/057-second-largest/README.md)
+- [group_by_length](05-algorithms/058-group-by-length/README.md)
+- [valid_parentheses](05-algorithms/059-valid-parentheses/README.md)
+- [move_zeros](05-algorithms/060-move-zeros/README.md)
+- [pascal_row](05-algorithms/061-pascal-row/README.md)
+- [flatten_recursive](05-algorithms/062-flatten-recursive/README.md)
+
+## Text, dates, and files (063–080)
+
+- [normalize_spaces](06-text-files/063-normalize-spaces/README.md)
+- [line_count](06-text-files/064-line-count/README.md)
+- [parse_integer](06-text-files/065-safe-integer/README.md)
+- [extract_numbers](06-text-files/066-extract-numbers/README.md)
+- [mask_email](06-text-files/067-mask-email/README.md)
+- [slugify](06-text-files/068-slugify/README.md)
+- [parse_csv_row](06-text-files/069-csv-row/README.md)
+- [json_value](06-text-files/070-json-value/README.md)
+- [compact_json](06-text-files/071-json-compact/README.md)
+- [path_extension](06-text-files/072-path-extension/README.md)
+- [safe_divide](06-text-files/073-safe-divide/README.md)
+- [parse_date](06-text-files/074-parse-date/README.md)
+- [days_between](06-text-files/075-days-between/README.md)
+- [iso_weekday](06-text-files/076-iso-weekday/README.md)
+- [clean_records](06-text-files/077-clean-records/README.md)
+- [count_file_lines](06-text-files/078-count-file-lines/README.md)
+- [read_json_file](06-text-files/079-read-json-file/README.md)
+- [csv_column_total](06-text-files/080-csv-column-total/README.md)
