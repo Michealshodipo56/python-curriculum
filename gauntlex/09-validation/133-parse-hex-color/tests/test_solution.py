@@ -9,7 +9,7 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.parse_hex_color("#FF8000") == [255, 128, 0]
-    assert module.parse_hex_color("#000000") == [0, 0, 0]
+    assert module.parse_hex_color("#FF8000") == (255, 128, 0)
+    assert module.parse_hex_color("#000000") == (0, 0, 0)
     with pytest.raises(ValueError):
         module.parse_hex_color("#FFF")
