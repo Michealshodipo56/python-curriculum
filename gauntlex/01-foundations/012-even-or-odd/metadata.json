@@ -1,0 +1,30 @@
+{
+  "id": "012-even-or-odd",
+  "name": "parity",
+  "module": "01-foundations",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "011-next-year"
+  ],
+  "concepts": [
+    "modulo",
+    "conditionals"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask questions and explain concepts without providing code.",
+    "questions": [
+      "How might modulo help?",
+      "How might conditionals help?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the decision your code makes.",
+      "What happens with equal or boundary values?"
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
