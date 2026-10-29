@@ -10,7 +10,7 @@ Return values strictly outside the fences Q1-1.5*IQR and Q3+1.5*IQR, preserving 
 - Use only the Python standard library.
 
 ## Examples
-`iqr_outliers([1, 2, 2, 3, 100])` → `[100]`
+`iqr_outliers([1, 2, 2, 3, 3, 4, 5, 6, 100])` → `[100]`
 
 `iqr_outliers([1, 2, 3])` → `[]`
 
