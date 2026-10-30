@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**404 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**409 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -494,3 +494,13 @@ The repository includes a [static audit](../scripts/audit_gauntlex.py) and [GitH
 - [query param filter](23-security-crypto/402-query-param-filter/README.md)
 - [security event counts](23-security-crypto/403-security-event-counts/README.md)
 - [constant time match](23-security-crypto/404-constant-time-match/README.md)
+
+## Additional integrated capstones (405–409)
+
+- [Inventory Manager](18-capstones/405-inventory-manager/README.md)
+- [Contact Book](18-capstones/406-contact-book/README.md)
+- [CSV ETL Pipeline](18-capstones/407-csv-etl-pipeline/README.md)
+- [Event-Sourced Wallet](18-capstones/408-event-sourced-wallet/README.md)
+- [Markdown Link Checker](18-capstones/409-markdown-link-checker/README.md)
+
+All capstones require working multi-step programs. The starter files are intentionally incomplete, and the acceptance tests have not yet been run against verified reference implementations.
