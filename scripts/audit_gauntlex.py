@@ -10,6 +10,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1] / "gauntlex"
 REQUIRED = ("README.md", "metadata.json", "starter/solution.py", "tests/test_solution.py")
 CAPSTONE = ("README.md", "metadata.json", "starter/main.py", "tests/test_acceptance.py")
+PROGRAM = ("README.md", "metadata.json", "starter/main.py", "tests/test_main.py")
 
 
 def main():
@@ -38,7 +39,8 @@ def main():
             errors.append(f"{task}: module mismatch")
         if not isinstance(meta.get("prerequisites"), list):
             errors.append(f"{task}: prerequisites must be a list")
-        files = CAPSTONE if meta.get("task_type") == "capstone" else REQUIRED
+        task_type = meta.get("task_type")
+        files = CAPSTONE if task_type == "capstone" else PROGRAM if task_type == "program" else REQUIRED
         for rel in files:
             path = task / rel
             if not path.is_file():
