@@ -38,6 +38,12 @@ TASKS = [
     "026-list-maximum",
     "027-reverse-words",
     "028-filter-even",
+    "029-unique-order",
+    "030-word-frequency",
+    "031-sort-numbers",
+    "032-middle-slice",
+    "033-set-overlap",
+    "034-pair-count",
 ]
 
 
@@ -57,7 +63,7 @@ def main():
             print(output[-2500:])
             return 1
         print(f"{task}: starter correctly rejected")
-    print("Twenty-eight introductory starter-negative checks passed.")
+    print("Thirty-four introductory starter-negative checks passed.")
     return 0
 
 
