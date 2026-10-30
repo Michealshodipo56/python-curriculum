@@ -22,6 +22,9 @@ TASKS = {
     "008-remainder": "n=int(input())\ng=int(input())\nprint(f'Groups: {n//g}')\nprint(f'Leftover: {n%g}')\n",
     "009-initials": "first=input()\nlast=input()\nprint(f'{first[0].upper()}.{last[0].upper()}.')\n",
     "010-shout": "print(input().strip().upper())\n",
+    "011-next-year": "name=input()\\nage=int(input())\\nprint(f'{name} will be {age+1} next year.')\\n",
+    "012-even-or-odd": "n=int(input())\\nprint('even' if n%2==0 else 'odd')\\n",
+    "013-larger": "a=int(input())\\nb=int(input())\\nprint(max(a,b))\\n",
 }
 
 
@@ -42,7 +45,7 @@ def main():
                 print((result.stdout + result.stderr)[-3000:])
                 return 1
             print(f"PASS {task}: reference accepted")
-    print("Ten foundational contracts passed private reference verification.")
+    print("Thirteen foundational contracts passed private reference verification.")
     return 0
 
 
