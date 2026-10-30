@@ -9,6 +9,8 @@ on:
       - "scripts/check_foundations_starters.py"
       - "scripts/verify_foundation_contracts.py"
       - "scripts/audit_function_apis.py"
+      - "scripts/verify_function_contracts.py"
+      - "scripts/check_function_starters.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
@@ -19,6 +21,8 @@ on:
       - "scripts/check_foundations_starters.py"
       - "scripts/verify_foundation_contracts.py"
       - "scripts/audit_function_apis.py"
+      - "scripts/verify_function_contracts.py"
+      - "scripts/check_function_starters.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   workflow_dispatch:
@@ -43,3 +47,7 @@ jobs:
         run: python scripts/verify_foundation_contracts.py
       - name: Verify documented function APIs
         run: python scripts/audit_function_apis.py
+      - name: Verify function assignment reference implementations
+        run: python scripts/verify_function_contracts.py
+      - name: Verify function starters are rejected
+        run: python scripts/check_function_starters.py
