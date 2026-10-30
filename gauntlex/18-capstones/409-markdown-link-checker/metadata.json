@@ -1,0 +1,26 @@
+{
+  "id": "409-markdown-link-checker",
+  "name": "Markdown Link Checker",
+  "module": "18-capstones",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "408-event-sourced-wallet"
+  ],
+  "task_type": "capstone",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Never give complete solutions.",
+    "questions": [
+      "What are the persistence and validation invariants?",
+      "How can you test failure recovery?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Demonstrate persistence across processes.",
+      "Explain edge cases and failure handling."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
