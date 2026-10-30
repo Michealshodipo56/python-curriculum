@@ -16,6 +16,8 @@ def main():
     errors = []
     count = 0
     ids = set()
+    metadata_by_id = {}
+    task_numbers = set()
     for meta_path in sorted(ROOT.glob("*/[0-9][0-9][0-9]-*/metadata.json")):
         task = meta_path.parent
         count += 1
@@ -30,6 +32,12 @@ def main():
         if expected_id in ids:
             errors.append(f"{task}: duplicate id")
         ids.add(expected_id)
+        metadata_by_id[expected_id] = meta
+        task_numbers.add(int(expected_id[:3]))
+        if meta.get("module") != task.parent.name:
+            errors.append(f"{task}: module mismatch")
+        if not isinstance(meta.get("prerequisites"), list):
+            errors.append(f"{task}: prerequisites must be a list")
         files = CAPSTONE if meta.get("task_type") == "capstone" else REQUIRED
         for rel in files:
             path = task / rel
@@ -48,6 +56,17 @@ def main():
     for path in ROOT.glob("*/[0-9][0-9][0-9]-*/"):
         if not (path / "metadata.json").exists():
             errors.append(f"{path}: missing metadata.json")
+    if task_numbers:
+        expected_numbers = set(range(1, max(task_numbers) + 1))
+        missing = sorted(expected_numbers - task_numbers)
+        if missing:
+            errors.append(f"missing task numbers: {missing}")
+    for task_id, meta in metadata_by_id.items():
+        for prerequisite in meta.get("prerequisites", []):
+            if prerequisite not in ids:
+                errors.append(f"{task_id}: missing prerequisite {prerequisite}")
+            elif int(prerequisite[:3]) >= int(task_id[:3]):
+                errors.append(f"{task_id}: prerequisite must precede task: {prerequisite}")
     print(f"Static audit: {count} task packages, {len(errors)} issue(s)")
     for error in errors:
         print(error, file=sys.stderr)
