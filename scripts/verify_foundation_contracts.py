@@ -25,13 +25,19 @@ TASKS = {
     "011-next-year": "name=input()\\nage=int(input())\\nprint(f'{name} will be {age+1} next year.')\\n",
     "012-even-or-odd": "n=int(input())\\nprint('even' if n%2==0 else 'odd')\\n",
     "013-larger": "a=int(input())\\nb=int(input())\\nprint(max(a,b))\\n",
+    "014-grade": "n=int(input())\nprint('Grade: '+('A' if n>=90 else 'B' if n>=80 else 'C' if n>=70 else 'D' if n>=60 else 'F'))\n",
+    "015-access": "age=int(input())\nstatus=input()\nprint('allowed' if age>=16 and status=='yes' else 'denied')\n",
+    "016-count": "n=int(input())\nfor i in range(1,n+1): print(i)\n",
+    "017-sum-range": "n=int(input())\nprint(sum(range(1,n+1)))\n",
+    "018-countdown": "n=int(input())\nwhile n>0:\n print(n)\n n-=1\nprint('Go!')\n",
 }
 
 
 def main():
     with tempfile.TemporaryDirectory(prefix="gauntlex-contracts-") as tmp:
         for task, reference in TASKS.items():
-            original = ROOT / "gauntlex" / "01-foundations" / task
+            module = "01-foundations" if int(task[:3]) <= 13 else "02-control-flow"
+            original = ROOT / "gauntlex" / module / task
             sandbox = Path(tmp) / task
             (sandbox / "starter").mkdir(parents=True)
             shutil.copytree(original / "tests", sandbox / "tests")
@@ -45,7 +51,7 @@ def main():
                 print((result.stdout + result.stderr)[-3000:])
                 return 1
             print(f"PASS {task}: reference accepted")
-    print("Thirteen foundational contracts passed private reference verification.")
+    print("Eighteen introductory contracts passed private reference verification.")
     return 0
 
 
