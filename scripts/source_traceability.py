@@ -14,8 +14,8 @@ SOURCE = ROOT / "CURRICULUM_ORDER.md"
 MAPPING = ROOT / "gauntlex" / "source_traceability.json"
 TASKS = ROOT / "gauntlex"
 
-ITEM = re.compile(r"^(\\d+)\\. \\*\\*(.+?)\\*\\*.*?— \\[([^]]+)\\]\\(([^)]+)\\)")
-PHASE = re.compile(r"^## (\\d{2}) · (.+)$")
+ITEM = re.compile(r"^(\d+)\. \*\*(.+?)\*\*.*?— \[([^]]+)\]\(([^)]+)\)")
+PHASE = re.compile(r"^## (\d{2}) · (.+)$")
 
 
 def read_source():
