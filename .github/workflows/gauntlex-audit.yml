@@ -11,6 +11,7 @@ on:
       - "scripts/audit_function_apis.py"
       - "scripts/verify_function_contracts.py"
       - "scripts/check_function_starters.py"
+      - "scripts/verify_algorithm_contracts.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
@@ -23,6 +24,7 @@ on:
       - "scripts/audit_function_apis.py"
       - "scripts/verify_function_contracts.py"
       - "scripts/check_function_starters.py"
+      - "scripts/verify_algorithm_contracts.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   workflow_dispatch:
@@ -51,3 +53,5 @@ jobs:
         run: python scripts/verify_function_contracts.py
       - name: Verify function starters are rejected
         run: python scripts/check_function_starters.py
+      - name: Verify algorithm contracts and unfinished starters
+        run: python scripts/verify_algorithm_contracts.py
