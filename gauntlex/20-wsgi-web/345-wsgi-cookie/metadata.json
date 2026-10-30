@@ -1,0 +1,32 @@
+{
+  "id": "345-wsgi-cookie",
+  "name": "application",
+  "module": "20-wsgi-web",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "344-wsgi-redirect"
+  ],
+  "concepts": [
+    "WSGI",
+    "HTTP",
+    "web services",
+    "middleware"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Only conceptual hints and questions; never working implementation.",
+    "questions": [
+      "What does the WSGI interface require?",
+      "How should invalid input or missing routes be handled?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain status and response headers.",
+      "Explain how the request data reaches your handler."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
