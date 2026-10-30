@@ -1,0 +1,25 @@
+name: Gauntlex curriculum static audit
+
+on:
+  push:
+    paths:
+      - "gauntlex/**"
+      - "scripts/audit_gauntlex.py"
+      - ".github/workflows/gauntlex-audit.yml"
+  pull_request:
+    paths:
+      - "gauntlex/**"
+      - "scripts/audit_gauntlex.py"
+      - ".github/workflows/gauntlex-audit.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check task metadata, structure, and Python syntax
+        run: python scripts/audit_gauntlex.py
