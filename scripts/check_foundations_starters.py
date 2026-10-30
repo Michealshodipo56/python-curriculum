@@ -28,6 +28,10 @@ TASKS = [
     "016-count",
     "017-sum-range",
     "018-countdown",
+    "019-even-sum",
+    "020-multiplication-table",
+    "021-digit-count",
+    "022-number-guess",
 ]
 
 
@@ -46,7 +50,7 @@ def main():
             print(output[-2500:])
             return 1
         print(f"{task}: starter correctly rejected")
-    print("Eighteen introductory starter-negative checks passed.")
+    print("Twenty-two introductory starter-negative checks passed.")
     return 0
 
 

@@ -30,6 +30,10 @@ TASKS = {
     "016-count": "n=int(input())\nfor i in range(1,n+1): print(i)\n",
     "017-sum-range": "n=int(input())\nprint(sum(range(1,n+1)))\n",
     "018-countdown": "n=int(input())\nwhile n>0:\n print(n)\n n-=1\nprint('Go!')\n",
+    "019-even-sum": "n=int(input())\nprint(sum(i for i in range(1,n+1) if i%2==0))\n",
+    "020-multiplication-table": "n=int(input())\nfor i in range(1,11): print(f'{n} x {i} = {n*i}')\n",
+    "021-digit-count": "n=int(input())\nprint(len(str(abs(n))))\n",
+    "022-number-guess": "while True:\n n=int(input())\n if n==7:\n  print('correct')\n  break\n print('low' if n<7 else 'high')\n",
 }
 
 
@@ -51,7 +55,7 @@ def main():
                 print((result.stdout + result.stderr)[-3000:])
                 return 1
             print(f"PASS {task}: reference accepted")
-    print("Eighteen introductory contracts passed private reference verification.")
+    print("Twenty-two introductory contracts passed private reference verification.")
     return 0
 
 
