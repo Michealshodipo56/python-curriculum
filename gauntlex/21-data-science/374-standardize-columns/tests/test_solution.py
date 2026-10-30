@@ -9,6 +9,8 @@ spec.loader.exec_module(module)
 
 
 def test_contract():
-        assert module.standardize_columns([[1,5],[2,5],[3,5]]) == pytest.approx([[-1.224744871391589,0],[0,0],[1.224744871391589,0]])
+        result = module.standardize_columns([[1,5],[2,5],[3,5]])
+    for row, expected in zip(result, [[-1.224744871391589,0],[0,0],[1.224744871391589,0]]):
+        assert row == pytest.approx(expected)
         assert module.standardize_columns([]) == []
         with pytest.raises(ValueError): module.standardize_columns([[1,2],[3]])
