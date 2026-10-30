@@ -8,5 +8,5 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.frequency_table([1, 2, 1]) == {"1": 2, "2": 1}
+    assert module.frequency_table([1, 2, 1]) == {1: 2, 2: 1}
     assert module.frequency_table([]) == {}
