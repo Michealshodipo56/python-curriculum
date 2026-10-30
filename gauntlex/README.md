@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**354 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**374 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -431,3 +431,26 @@ These four capstones require complete working applications and include end-to-en
 - [wsgi form](20-wsgi-web/352-wsgi-form/README.md)
 - [wsgi not found json](20-wsgi-web/353-wsgi-not-found-json/README.md)
 - [wsgi middleware](20-wsgi-web/354-wsgi-middleware/README.md)
+
+## Statistics and machine-learning fundamentals (355–374)
+
+- [min max scale](21-data-science/355-min-max-scale/README.md)
+- [z score scale](21-data-science/356-z-score-scale/README.md)
+- [moving average](21-data-science/357-moving-average/README.md)
+- [exponential smoothing](21-data-science/358-exponential-smoothing/README.md)
+- [weighted mean](21-data-science/359-weighted-mean/README.md)
+- [covariance](21-data-science/360-covariance/README.md)
+- [quantile linear](21-data-science/361-quantile-linear/README.md)
+- [confusion matrix](21-data-science/362-confusion-matrix/README.md)
+- [classification metrics](21-data-science/363-classification-metrics/README.md)
+- [mean absolute error](21-data-science/364-mean-absolute-error/README.md)
+- [root mean square error](21-data-science/365-root-mean-square-error/README.md)
+- [r squared](21-data-science/366-r-squared/README.md)
+- [euclidean distance](21-data-science/367-euclidean-distance/README.md)
+- [cosine similarity](21-data-science/368-cosine-similarity/README.md)
+- [manhattan distance](21-data-science/369-manhattan-distance/README.md)
+- [k nearest neighbors](21-data-science/370-k-nearest-neighbors/README.md)
+- [train test split](21-data-science/371-train-test-split/README.md)
+- [minibatches](21-data-science/372-minibatches/README.md)
+- [one hot encode](21-data-science/373-one-hot-encode/README.md)
+- [standardize columns](21-data-science/374-standardize-columns/README.md)
