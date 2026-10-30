@@ -19,6 +19,7 @@ def main():
     ids = set()
     metadata_by_id = {}
     task_numbers = set()
+    number_to_path = {}
     for meta_path in sorted(ROOT.glob("*/[0-9][0-9][0-9]-*/metadata.json")):
         task = meta_path.parent
         count += 1
@@ -34,21 +35,37 @@ def main():
             errors.append(f"{task}: duplicate id")
         ids.add(expected_id)
         metadata_by_id[expected_id] = meta
-        task_numbers.add(int(expected_id[:3]))
+        number = int(expected_id[:3])
+        if number in number_to_path:
+            errors.append(f"{task}: duplicate task number {number:03d} (also {number_to_path[number]})")
+        number_to_path[number] = task
+        task_numbers.add(number)
         if meta.get("module") != task.parent.name:
             errors.append(f"{task}: module mismatch")
         if not isinstance(meta.get("prerequisites"), list):
             errors.append(f"{task}: prerequisites must be a list")
         task_type = meta.get("task_type")
         files = CAPSTONE if task_type == "capstone" else PROGRAM if task_type == "program" else REQUIRED
+        entrypoint = meta.get("entrypoint")
+        if entrypoint != files[2]:
+            errors.append(f"{task}: entrypoint {entrypoint!r} does not match {files[2]!r}")
+        if meta.get("test_command") != "python -m pytest tests -q":
+            errors.append(f"{task}: unsupported test command")
         for rel in files:
             path = task / rel
             if not path.is_file():
                 errors.append(f"{task}: missing {rel}")
                 continue
+            if rel == "README.md" and len(path.read_text(encoding="utf-8").strip()) < 50:
+                errors.append(f"{path}: assignment description is too short")
             if path.suffix == ".py":
                 try:
-                    ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+                    parsed = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+                    if rel.startswith("tests/") and not any(
+                        isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)) and node.name.startswith("test_")
+                        for node in ast.walk(parsed)
+                    ):
+                        errors.append(f"{path}: no pytest test functions found")
                 except (SyntaxError, UnicodeError) as exc:
                     errors.append(f"{path}: syntax/encoding error: {exc}")
         if meta.get("status") != "draft-tests-not-run":
