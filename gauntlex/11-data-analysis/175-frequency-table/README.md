@@ -10,7 +10,7 @@ Return a dictionary mapping each integer in the input to its count.
 - Use only the Python standard library.
 
 ## Examples
-`frequency_table([1, 2, 1])` → `{"1": 2, "2": 1}`
+`frequency_table([1, 2, 1])` → `{1: 2, 2: 1}`
 
 `frequency_table([])` → `{}`
 
