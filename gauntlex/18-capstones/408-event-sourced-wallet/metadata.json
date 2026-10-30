@@ -1,0 +1,26 @@
+{
+  "id": "408-event-sourced-wallet",
+  "name": "Event-Sourced Wallet",
+  "module": "18-capstones",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "407-csv-etl-pipeline"
+  ],
+  "task_type": "capstone",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Never give complete solutions.",
+    "questions": [
+      "What are the persistence and validation invariants?",
+      "How can you test failure recovery?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Demonstrate persistence across processes.",
+      "Explain edge cases and failure handling."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
