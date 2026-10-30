@@ -41,7 +41,7 @@ def main():
             sandbox = Path(tmp) / task
             (sandbox / "starter").mkdir(parents=True)
             shutil.copytree(original / "tests", sandbox / "tests")
-            (sandbox / "starter" / "main.py").write_text(reference, encoding="utf-8")
+            (sandbox / "starter" / "main.py").write_text(reference.replace("\\n", "\n"), encoding="utf-8")
             result = subprocess.run(
                 [sys.executable, "-m", "pytest", str(sandbox / "tests"), "-q", "--tb=short"],
                 capture_output=True, text=True, timeout=45, cwd=sandbox,
