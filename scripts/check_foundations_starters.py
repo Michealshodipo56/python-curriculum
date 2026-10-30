@@ -23,12 +23,18 @@ TASKS = [
     "011-next-year",
     "012-even-or-odd",
     "013-larger",
+    "014-grade",
+    "015-access",
+    "016-count",
+    "017-sum-range",
+    "018-countdown",
 ]
 
 
 def main():
     for task in TASKS:
-        tests = ROOT / "gauntlex" / "01-foundations" / task / "tests"
+        module = "01-foundations" if int(task[:3]) <= 13 else "02-control-flow"
+        tests = ROOT / "gauntlex" / module / task / "tests"
         result = subprocess.run(
             [sys.executable, "-m", "pytest", str(tests), "-q", "--tb=short"],
             capture_output=True, text=True, timeout=45,
@@ -40,7 +46,7 @@ def main():
             print(output[-2500:])
             return 1
         print(f"{task}: starter correctly rejected")
-    print("Thirteen foundational starter-negative checks passed.")
+    print("Eighteen introductory starter-negative checks passed.")
     return 0
 
 
