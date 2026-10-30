@@ -15,6 +15,11 @@ TASKS = [
     "003-two-lines",
     "004-addition",
     "005-greeting",
+    "006-name-card",
+    "007-rectangle",
+    "008-remainder",
+    "009-initials",
+    "010-shout",
 ]
 
 
@@ -32,7 +37,7 @@ def main():
             print(output[-2500:])
             return 1
         print(f"{task}: starter correctly rejected")
-    print("Five foundational starter-negative checks passed.")
+    print("Ten foundational starter-negative checks passed.")
     return 0
 
 
