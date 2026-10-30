@@ -8,6 +8,6 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.anagram("listen", "silent") == True
-    assert module.anagram("aab", "abb") == False
-    assert module.anagram("", "") == True
+    assert module.are_anagrams("listen", "silent") == True
+    assert module.are_anagrams("aab", "abb") == False
+    assert module.are_anagrams("", "") == True

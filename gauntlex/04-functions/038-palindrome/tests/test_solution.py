@@ -8,6 +8,6 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.palindrome("level") == True
-    assert module.palindrome("Level") == False
-    assert module.palindrome("") == True
+    assert module.is_palindrome("level") == True
+    assert module.is_palindrome("Level") == False
+    assert module.is_palindrome("") == True

@@ -8,6 +8,6 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.vowelcount("Gauntlex") == 3
-    assert module.vowelcount("WHY") == 0
-    assert module.vowelcount("aeiouAEIOU") == 10
+    assert module.count_vowels("Gauntlex") == 3
+    assert module.count_vowels("WHY") == 0
+    assert module.count_vowels("aeiouAEIOU") == 10

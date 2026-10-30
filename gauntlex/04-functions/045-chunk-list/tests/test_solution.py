@@ -8,5 +8,5 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.chunklist([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
-    assert module.chunklist([], 3) == []
+    assert module.chunks([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
+    assert module.chunks([], 3) == []

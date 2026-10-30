@@ -8,7 +8,7 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.prime(2) == True
-    assert module.prime(17) == True
-    assert module.prime(1) == False
-    assert module.prime(21) == False
+    assert module.is_prime(2) == True
+    assert module.is_prime(17) == True
+    assert module.is_prime(1) == False
+    assert module.is_prime(21) == False

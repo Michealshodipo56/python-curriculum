@@ -1,2 +1,2 @@
-def palindrome(text):
+def is_palindrome(text):
     raise NotImplementedError

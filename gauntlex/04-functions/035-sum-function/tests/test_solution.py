@@ -8,6 +8,6 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.sumfunction(2, 3) == 5
-    assert module.sumfunction(-4, 7) == 3
-    assert module.sumfunction(0, 0) == 0
+    assert module.sum_two(2, 3) == 5
+    assert module.sum_two(-4, 7) == 3
+    assert module.sum_two(0, 0) == 0

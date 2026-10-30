@@ -8,6 +8,6 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.firstunique("swiss") == "w"
-    assert module.firstunique("aabb") == None
-    assert module.firstunique("") == None
+    assert module.first_unique("swiss") == "w"
+    assert module.first_unique("aabb") == None
+    assert module.first_unique("") == None

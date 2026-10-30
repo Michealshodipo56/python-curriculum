@@ -1,2 +1,2 @@
-def prime(n):
+def is_prime(n):
     raise NotImplementedError

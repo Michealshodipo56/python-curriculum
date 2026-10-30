@@ -8,5 +8,5 @@ spec.loader.exec_module(module)
 
 
 def test_examples():
-    assert module.flattenonce([[1, 2], [3], []]) == [1, 2, 3]
-    assert module.flattenonce([[], [4]]) == [4]
+    assert module.flatten_once([[1, 2], [3], []]) == [1, 2, 3]
+    assert module.flatten_once([[], [4]]) == [4]

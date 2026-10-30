@@ -1,2 +1,2 @@
-def chunklist(items, size):
+def chunks(items, size):
     raise NotImplementedError

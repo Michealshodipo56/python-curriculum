@@ -1,2 +1,2 @@
-def firstunique(text):
+def first_unique(text):
     raise NotImplementedError

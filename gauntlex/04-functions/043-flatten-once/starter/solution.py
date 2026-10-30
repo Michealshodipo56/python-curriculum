@@ -1,2 +1,2 @@
-def flattenonce(groups):
+def flatten_once(groups):
     raise NotImplementedError

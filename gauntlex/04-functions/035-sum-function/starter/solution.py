@@ -1,2 +1,2 @@
-def sumfunction(a, b):
+def sum_two(a, b):
     raise NotImplementedError
