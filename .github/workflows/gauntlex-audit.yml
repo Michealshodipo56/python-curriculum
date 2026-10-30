@@ -7,6 +7,7 @@ on:
       - "scripts/audit_gauntlex.py"
       - "scripts/source_traceability.py"
       - "scripts/check_foundations_starters.py"
+      - "scripts/verify_foundation_contracts.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
@@ -15,6 +16,7 @@ on:
       - "scripts/audit_gauntlex.py"
       - "scripts/source_traceability.py"
       - "scripts/check_foundations_starters.py"
+      - "scripts/verify_foundation_contracts.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   workflow_dispatch:
@@ -35,3 +37,5 @@ jobs:
         run: python -m pip install pytest
       - name: Verify incomplete starter programs are rejected
         run: python scripts/check_foundations_starters.py
+      - name: Verify first ten contracts against private reference programs
+        run: python scripts/verify_foundation_contracts.py
