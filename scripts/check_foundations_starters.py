@@ -32,12 +32,19 @@ TASKS = [
     "020-multiplication-table",
     "021-digit-count",
     "022-number-guess",
+    "023-list-length",
+    "024-list-ends",
+    "025-list-total",
+    "026-list-maximum",
+    "027-reverse-words",
+    "028-filter-even",
 ]
 
 
 def main():
     for task in TASKS:
-        module = "01-foundations" if int(task[:3]) <= 13 else "02-control-flow"
+        module = ("01-foundations" if int(task[:3]) <= 13 else
+                  "02-control-flow" if int(task[:3]) <= 22 else "03-collections")
         tests = ROOT / "gauntlex" / module / task / "tests"
         result = subprocess.run(
             [sys.executable, "-m", "pytest", str(tests), "-q", "--tb=short"],
@@ -50,7 +57,7 @@ def main():
             print(output[-2500:])
             return 1
         print(f"{task}: starter correctly rejected")
-    print("Twenty-two introductory starter-negative checks passed.")
+    print("Twenty-eight introductory starter-negative checks passed.")
     return 0
 
 
