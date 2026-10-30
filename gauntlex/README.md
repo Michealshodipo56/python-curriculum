@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**374 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**384 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -454,3 +454,20 @@ These four capstones require complete working applications and include end-to-en
 - [minibatches](21-data-science/372-minibatches/README.md)
 - [one hot encode](21-data-science/373-one-hot-encode/README.md)
 - [standardize columns](21-data-science/374-standardize-columns/README.md)
+
+## Advanced algorithms (375–384)
+
+- [binary search bound](22-advanced-algorithms/375-binary-search-bound/README.md)
+- [upper bound](22-advanced-algorithms/376-upper-bound/README.md)
+- [merge intervals](22-advanced-algorithms/377-merge-intervals/README.md)
+- [interval intersection](22-advanced-algorithms/378-interval-intersection/README.md)
+- [longest unique substring](22-advanced-algorithms/379-longest-unique-substring/README.md)
+- [minimum window](22-advanced-algorithms/380-minimum-window/README.md)
+- [top k frequent](22-advanced-algorithms/381-top-k-frequent/README.md)
+- [shortest path grid](22-advanced-algorithms/382-shortest-path-grid/README.md)
+- [dijkstra distances](22-advanced-algorithms/383-dijkstra-distances/README.md)
+- [longest increasing subsequence](22-advanced-algorithms/384-longest-increasing-subsequence/README.md)
+
+## Curriculum quality checks
+
+The repository includes a [static audit](../scripts/audit_gauntlex.py) and [GitHub Actions workflow](../.github/workflows/gauntlex-audit.yml) that check package structure, metadata, and Python syntax. These checks do **not** execute learner solutions or prove the assignment tests are correct. Task packages remain marked `draft-tests-not-run` until reference-solution validation is completed.
