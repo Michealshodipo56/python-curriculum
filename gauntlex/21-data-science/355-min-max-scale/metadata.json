@@ -1,0 +1,32 @@
+{
+  "id": "355-min-max-scale",
+  "name": "min_max_scale",
+  "module": "21-data-science",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "354-wsgi-middleware"
+  ],
+  "concepts": [
+    "statistics",
+    "machine learning",
+    "numerical computing",
+    "data processing"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Guide conceptually; do not provide the final implementation.",
+    "questions": [
+      "What mathematical formula defines the result?",
+      "How do empty or degenerate inputs behave?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Derive the calculation and explain the boundary cases.",
+      "Explain how the implementation avoids data leakage or mutation."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
