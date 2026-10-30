@@ -5,11 +5,15 @@ on:
     paths:
       - "gauntlex/**"
       - "scripts/audit_gauntlex.py"
+      - "scripts/source_traceability.py"
+      - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
     paths:
       - "gauntlex/**"
       - "scripts/audit_gauntlex.py"
+      - "scripts/source_traceability.py"
+      - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   workflow_dispatch:
 
@@ -23,3 +27,5 @@ jobs:
           python-version: "3.11"
       - name: Check task metadata, structure, and Python syntax
         run: python scripts/audit_gauntlex.py
+      - name: Report source mapping coverage
+        run: python scripts/source_traceability.py
