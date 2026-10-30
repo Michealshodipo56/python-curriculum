@@ -8,6 +8,7 @@ on:
       - "scripts/source_traceability.py"
       - "scripts/check_foundations_starters.py"
       - "scripts/verify_foundation_contracts.py"
+      - "scripts/audit_function_apis.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
@@ -17,6 +18,7 @@ on:
       - "scripts/source_traceability.py"
       - "scripts/check_foundations_starters.py"
       - "scripts/verify_foundation_contracts.py"
+      - "scripts/audit_function_apis.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   workflow_dispatch:
@@ -39,3 +41,5 @@ jobs:
         run: python scripts/check_foundations_starters.py
       - name: Verify first ten contracts against private reference programs
         run: python scripts/verify_foundation_contracts.py
+      - name: Verify documented function APIs
+        run: python scripts/audit_function_apis.py
