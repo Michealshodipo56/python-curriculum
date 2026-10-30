@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**314 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**334 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -385,3 +385,26 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 - [HTTP JSON API Server](18-capstones/314-http-api-server/README.md)
 
 These four capstones require complete working applications and include end-to-end acceptance tests. The starter applications are intentionally unfinished. Automated test execution and full source-task coverage remain outstanding.
+
+## File automation and data processing (315–334)
+
+- [safe relative path](19-file-automation/315-safe-relative-path/README.md)
+- [file extension](19-file-automation/316-file-extension/README.md)
+- [line ending normalize](19-file-automation/317-line-ending-normalize/README.md)
+- [parse ini section](19-file-automation/318-parse-ini-section/README.md)
+- [json path get](19-file-automation/319-json-path-get/README.md)
+- [flatten json](19-file-automation/320-flatten-json/README.md)
+- [unflatten json](19-file-automation/321-unflatten-json/README.md)
+- [file checksum](19-file-automation/322-file-checksum/README.md)
+- [count file lines](19-file-automation/323-count-file-lines/README.md)
+- [append jsonl](19-file-automation/324-append-jsonl/README.md)
+- [read jsonl](19-file-automation/325-read-jsonl/README.md)
+- [write atomic](19-file-automation/326-write-atomic/README.md)
+- [find duplicates](19-file-automation/327-find-duplicates/README.md)
+- [csv group sum](19-file-automation/328-csv-group-sum/README.md)
+- [csv dedupe](19-file-automation/329-csv-dedupe/README.md)
+- [directory manifest](19-file-automation/330-directory-manifest/README.md)
+- [filter by suffix](19-file-automation/331-filter-by-suffix/README.md)
+- [safe archive name](19-file-automation/332-safe-archive-name/README.md)
+- [rotate logs](19-file-automation/333-rotate-logs/README.md)
+- [config fingerprint](19-file-automation/334-config-fingerprint/README.md)
