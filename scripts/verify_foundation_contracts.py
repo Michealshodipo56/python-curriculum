@@ -34,13 +34,20 @@ TASKS = {
     "020-multiplication-table": "n=int(input())\nfor i in range(1,11): print(f'{n} x {i} = {n*i}')\n",
     "021-digit-count": "n=int(input())\nprint(len(str(abs(n))))\n",
     "022-number-guess": "while True:\n n=int(input())\n if n==7:\n  print('correct')\n  break\n print('low' if n<7 else 'high')\n",
+    "023-list-length": "print(len(input().split()))\n",
+    "024-list-ends": "words=input().split()\nprint(words[0])\nprint(words[-1])\n",
+    "025-list-total": "print(sum(map(int,input().split())))\n",
+    "026-list-maximum": "print(max(map(int,input().split())))\n",
+    "027-reverse-words": "print(' '.join(reversed(input().split())))\n",
+    "028-filter-even": "nums=map(int,input().split())\nprint(' '.join(str(n) for n in nums if n%2==0))\n",
 }
 
 
 def main():
     with tempfile.TemporaryDirectory(prefix="gauntlex-contracts-") as tmp:
         for task, reference in TASKS.items():
-            module = "01-foundations" if int(task[:3]) <= 13 else "02-control-flow"
+            module = ("01-foundations" if int(task[:3]) <= 13 else
+                      "02-control-flow" if int(task[:3]) <= 22 else "03-collections")
             original = ROOT / "gauntlex" / module / task
             sandbox = Path(tmp) / task
             (sandbox / "starter").mkdir(parents=True)
@@ -55,7 +62,7 @@ def main():
                 print((result.stdout + result.stderr)[-3000:])
                 return 1
             print(f"PASS {task}: reference accepted")
-    print("Twenty-two introductory contracts passed private reference verification.")
+    print("Twenty-eight introductory contracts passed private reference verification.")
     return 0
 
 
