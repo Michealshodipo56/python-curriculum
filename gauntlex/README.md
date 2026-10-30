@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**334 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**354 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -408,3 +408,26 @@ These four capstones require complete working applications and include end-to-en
 - [safe archive name](19-file-automation/332-safe-archive-name/README.md)
 - [rotate logs](19-file-automation/333-rotate-logs/README.md)
 - [config fingerprint](19-file-automation/334-config-fingerprint/README.md)
+
+## Web applications and WSGI (335–354)
+
+- [wsgi health](20-wsgi-web/335-wsgi-health/README.md)
+- [wsgi routing](20-wsgi-web/336-wsgi-routing/README.md)
+- [wsgi method](20-wsgi-web/337-wsgi-method/README.md)
+- [wsgi query](20-wsgi-web/338-wsgi-query/README.md)
+- [wsgi json](20-wsgi-web/339-wsgi-json/README.md)
+- [wsgi post body](20-wsgi-web/340-wsgi-post-body/README.md)
+- [wsgi json post](20-wsgi-web/341-wsgi-json-post/README.md)
+- [wsgi headers](20-wsgi-web/342-wsgi-headers/README.md)
+- [wsgi head](20-wsgi-web/343-wsgi-head/README.md)
+- [wsgi redirect](20-wsgi-web/344-wsgi-redirect/README.md)
+- [wsgi cookie](20-wsgi-web/345-wsgi-cookie/README.md)
+- [wsgi auth](20-wsgi-web/346-wsgi-auth/README.md)
+- [wsgi cors](20-wsgi-web/347-wsgi-cors/README.md)
+- [wsgi conditional](20-wsgi-web/348-wsgi-conditional/README.md)
+- [wsgi error handler](20-wsgi-web/349-wsgi-error-handler/README.md)
+- [wsgi request id](20-wsgi-web/350-wsgi-request-id/README.md)
+- [wsgi content length](20-wsgi-web/351-wsgi-content-length/README.md)
+- [wsgi form](20-wsgi-web/352-wsgi-form/README.md)
+- [wsgi not found json](20-wsgi-web/353-wsgi-not-found-json/README.md)
+- [wsgi middleware](20-wsgi-web/354-wsgi-middleware/README.md)
