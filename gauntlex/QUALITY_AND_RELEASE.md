@@ -23,3 +23,9 @@ Run `python scripts/audit_gauntlex.py` to validate directory structure, task met
 ## Current release decision
 
 **Not production ready.** Static validation is passing; behavioral verification, traceability, licensing review, and platform integration remain open.
+
+## Source traceability tooling
+
+Run `python scripts/source_traceability.py` for a coverage summary, or add `--json` for a per-source activity report. The `gauntlex/source_traceability.json` file maps exact source paths to reviewed Gauntlex task IDs; it intentionally starts empty rather than inferring equivalence from similar titles. The `--strict` option fails until every assigned source activity has an explicit mapping. GitHub Actions runs the non-strict summary so that structural CI can pass while release readiness remains blocked.
+
+**Source access limitation:** The four source roots are pinned Git submodules (gitlinks, mode `160000`), not ordinary tracked directories in this repository. GitHub's contents API cannot read their nested files through this repository path. A source-by-source content review must inspect each pinned upstream submodule revision (for example by checking out the submodules), not rely solely on the index's titles. No source mapping has been certified yet.
