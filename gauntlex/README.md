@@ -28,7 +28,7 @@ Tasks are newly worded around common Python concepts from the source curricula, 
 
 ## Scope and completion
 
-**384 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+**404 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
 
 ## Control flow sequence
 
@@ -471,3 +471,26 @@ These four capstones require complete working applications and include end-to-en
 ## Curriculum quality checks
 
 The repository includes a [static audit](../scripts/audit_gauntlex.py) and [GitHub Actions workflow](../.github/workflows/gauntlex-audit.yml) that check package structure, metadata, and Python syntax. These checks do **not** execute learner solutions or prove the assignment tests are correct. Task packages remain marked `draft-tests-not-run` until reference-solution validation is completed.
+
+## Secure coding, encoding, and cryptography (385–404)
+
+- [caesar cipher](23-security-crypto/385-caesar-cipher/README.md)
+- [rot13](23-security-crypto/386-rot13/README.md)
+- [hex encode](23-security-crypto/387-hex-encode/README.md)
+- [hex decode](23-security-crypto/388-hex-decode/README.md)
+- [base64 encode](23-security-crypto/389-base64-encode/README.md)
+- [base64 decode](23-security-crypto/390-base64-decode/README.md)
+- [hmac sign](23-security-crypto/391-hmac-sign/README.md)
+- [hmac verify](23-security-crypto/392-hmac-verify/README.md)
+- [pbkdf2 key](23-security-crypto/393-pbkdf2-key/README.md)
+- [random token](23-security-crypto/394-random-token/README.md)
+- [password strength](23-security-crypto/395-password-strength/README.md)
+- [mask secret](23-security-crypto/396-mask-secret/README.md)
+- [validate ipv4](23-security-crypto/397-validate-ipv4/README.md)
+- [cidr network](23-security-crypto/398-cidr-network/README.md)
+- [cidr contains](23-security-crypto/399-cidr-contains/README.md)
+- [safe url host](23-security-crypto/400-safe-url-host/README.md)
+- [redact headers](23-security-crypto/401-redact-headers/README.md)
+- [query param filter](23-security-crypto/402-query-param-filter/README.md)
+- [security event counts](23-security-crypto/403-security-event-counts/README.md)
+- [constant time match](23-security-crypto/404-constant-time-match/README.md)
