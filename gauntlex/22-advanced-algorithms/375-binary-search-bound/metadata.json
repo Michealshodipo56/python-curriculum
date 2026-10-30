@@ -1,0 +1,32 @@
+{
+  "id": "375-binary-search-bound",
+  "name": "lower_bound",
+  "module": "22-advanced-algorithms",
+  "difficulty": "advanced",
+  "prerequisites": [
+    "374-standardize-columns"
+  ],
+  "concepts": [
+    "algorithms",
+    "complexity",
+    "graphs",
+    "sliding window"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Guide through questions and conceptual hints, never full answers.",
+    "questions": [
+      "What invariant does the algorithm maintain?",
+      "What complexity is required and why?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Prove the algorithm's correctness on edge cases.",
+      "Explain time and space complexity."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
