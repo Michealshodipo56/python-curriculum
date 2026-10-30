@@ -40,6 +40,12 @@ TASKS = {
     "026-list-maximum": "print(max(map(int,input().split())))\n",
     "027-reverse-words": "print(' '.join(reversed(input().split())))\n",
     "028-filter-even": "nums=map(int,input().split())\nprint(' '.join(str(n) for n in nums if n%2==0))\n",
+    "029-unique-order": "print(' '.join(dict.fromkeys(input().split())))\n",
+    "030-word-frequency": "from collections import Counter\nwords=input().split()\ncounts=Counter(words)\nfor word in dict.fromkeys(words): print(f'{word}: {counts[word]}')\n",
+    "031-sort-numbers": "print(' '.join(map(str,sorted(map(int,input().split())))))\n",
+    "032-middle-slice": "print(' '.join(input().split()[1:-1]))\n",
+    "033-set-overlap": "a=set(input().split())\nb=set(input().split())\nprint(' '.join(sorted(a&b)))\n",
+    "034-pair-count": "from collections import Counter\ncounts=Counter(map(int,input().split()))\nprint(sum(n*(n-1)//2 for n in counts.values()))\n",
 }
 
 
@@ -62,7 +68,7 @@ def main():
                 print((result.stdout + result.stderr)[-3000:])
                 return 1
             print(f"PASS {task}: reference accepted")
-    print("Twenty-eight introductory contracts passed private reference verification.")
+    print("Thirty-four introductory contracts passed private reference verification.")
     return 0
 
 
