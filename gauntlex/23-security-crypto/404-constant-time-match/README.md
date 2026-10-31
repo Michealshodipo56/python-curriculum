@@ -10,7 +10,7 @@ Given two UTF-8 strings, return whether they are equal using a constant-time com
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
 ## Hint
-Compare encoded byte strings using hmac.compare_digest.
+Research why ordinary string equality is not an appropriate security boundary for comparing secrets. Consider how Unicode text should be represented before using a standard-library comparison primitive.
 
 ## Run tests
 `python -m pytest tests -q`
