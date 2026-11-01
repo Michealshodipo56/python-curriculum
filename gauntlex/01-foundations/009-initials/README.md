@@ -1,15 +1,24 @@
-# initials
+# Name Initials
 
 ## Description
-Read a first name and last name on separate lines. Display their first letters in uppercase with a period after each letter.
+Transform two names into a compact set of initials. Pay attention to the order, capitalization, and punctuation.
 
 ## Requirements
-- Each input name is nonempty.
-- Output exactly `F.L.` followed by a newline, replacing F and L with the initials.
-- Do not add spaces or prompts.
+- Read a nonempty first name and last name on separate lines.
+- Display the first letter of each name in uppercase, each followed by a period.
+- Do not insert spaces or extra output.
 
-## Examples
-Input `ada` and `lovelace` produces `A.L.`.
+## Example
+```text
+Input:
+ada
+lovelace
+
+Output:
+A.L.
+```
 
 ## Tips
-Strings are sequences of characters. Python can access a character by its position. String methods can change the capitalization of a returned string.
+Consider how characters are positioned inside a string and how letter case affects the final result.
+
+The example describes expected behavior, not a solution.

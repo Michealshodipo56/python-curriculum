@@ -1,15 +1,25 @@
-# rectangle
+# Measure a Rectangle
 
 ## Description
-Read a rectangle's width and height as integers on separate lines. Display its area and perimeter.
+A rectangle has two dimensions. Build a small calculator that reports both the space it covers and the distance around its boundary.
 
 ## Requirements
-- Output `Area: N` on the first line.
-- Output `Perimeter: N` on the second line.
-- Assume positive integer dimensions; do not prompt.
+- Read a positive integer width and height, each on its own line.
+- Display `Area: N`, followed by `Perimeter: N`.
+- Do not print prompts or additional messages.
 
-## Examples
-Input `4` and `3` produces `Area: 12` and `Perimeter: 14`.
+## Example
+```text
+Input:
+4
+3
+
+Output:
+Area: 12
+Perimeter: 14
+```
 
 ## Tips
-Area measures the space inside a rectangle; perimeter measures the distance around it. Multiplication uses `*`. Save intermediate values when it makes reasoning clearer.
+Sketch a rectangle and identify which measurement counts the interior and which follows the outside edges. How can the two dimensions be reused?
+
+The example describes expected behavior, not a solution.

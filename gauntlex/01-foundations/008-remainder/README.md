@@ -1,15 +1,25 @@
-# remainder
+# Share Into Groups
 
 ## Description
-Read a number of items and a positive group size. Display how many complete groups can be made and how many items remain.
+A collection of items must be split into equal-sized groups. Report how many full groups can be made and how many items remain unused.
 
 ## Requirements
-- Print `Groups: N` and then `Leftover: N`.
-- Assume the item count is nonnegative and the group size is positive.
-- Do not print input prompts.
+- Read a nonnegative integer item count and a positive integer group size.
+- Display `Groups: N` and `Leftover: N` on separate lines.
+- Do not print prompts.
 
-## Examples
-Input `17` and `5` produces `Groups: 3` and `Leftover: 2`.
+## Example
+```text
+Input:
+17
+5
+
+Output:
+Groups: 3
+Leftover: 2
+```
 
 ## Tips
-Integer division gives a count of complete groups. The remainder operator gives what is left after those groups are formed.
+Try distributing the items by hand first. Which two quantities completely describe the result of the distribution?
+
+The example describes expected behavior, not a solution.

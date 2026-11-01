@@ -1,15 +1,23 @@
-# shout
+# Clean Announcement
 
 ## Description
-Read one line of text and display it in uppercase, without leading or trailing whitespace.
+User-entered text can contain unwanted surrounding spaces and inconsistent capitalization. Normalize a message for display.
 
 ## Requirements
-- Remove whitespace at both ends of the input.
-- Convert the remaining text to uppercase.
-- Display exactly one output line.
+- Read one line of text.
+- Remove whitespace from both ends and convert the remaining text to uppercase.
+- Display the result on one line.
 
-## Examples
-Input `  hello Gauntlex  ` produces `HELLO GAUNTLEX`.
+## Example
+```text
+Input:
+  hello Gauntlex  
+
+Output:
+HELLO GAUNTLEX
+```
 
 ## Tips
-Strings have methods for trimming surrounding whitespace and changing letter case. These operations return new strings rather than editing the original text in place.
+Distinguish whitespace at the boundaries from spaces between words. What should happen to the interior spaces?
+
+The example describes expected behavior, not a solution.
