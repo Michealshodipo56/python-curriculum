@@ -1,17 +1,18 @@
-# palindrome
+# Mirror Text
 
 ## Description
-Implement `is_palindrome(text)` returning a boolean. Compare the string exactly, including case and spaces.
+Determine whether a string reads identically from the beginning and the end. Every character matters, including case and whitespace.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``is_palindrome(text)`` in `solution.py`.
+- Return a boolean based on an exact, case-sensitive comparison.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`palindrome("level")` → `True`
-
-`palindrome("Level")` → `False`
+## Example
+`is_palindrome('level')` → `True`; `is_palindrome('Level')` → `False`.
 
 ## Tips
-Compare characters at mirrored positions or compare the text to its reversal.
+Try matching characters at equal distances from opposite ends. Consider empty and single-character strings.
+
+The examples specify behavior without supplying the implementation.

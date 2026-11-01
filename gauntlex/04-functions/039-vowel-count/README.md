@@ -1,17 +1,18 @@
-# vowelcount
+# Vowel Census
 
 ## Description
-Implement `count_vowels(text)` returning the number of English vowels, case-insensitively. Vowels are a, e, i, o, u.
+Count the English vowels in a string without letting capitalization affect the result.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``count_vowels(text)`` in `solution.py`.
+- Return the number of occurrences of `a`, `e`, `i`, `o`, or `u`, ignoring case.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`vowelcount("Gauntlex")` → `3`
-
-`vowelcount("WHY")` → `0`
+## Example
+`count_vowels('Gauntlex')` → `3`; `count_vowels('WHY')` → `0`.
 
 ## Tips
-Normalize case before checking membership in the vowel set.
+Which characters qualify, and how can uppercase and lowercase forms be treated consistently?
+
+The examples specify behavior without supplying the implementation.
