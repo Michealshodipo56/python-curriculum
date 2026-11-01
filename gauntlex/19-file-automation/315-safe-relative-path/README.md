@@ -1,6 +1,9 @@
-# safe_relative_path
+# Safe Relative Paths
 
-## Challenge
+## Description
+Normalize a relative path without allowing absolute locations or parent traversal.
+
+### Behavior contract
 Return a normalized POSIX relative path from text. Reject absolute paths, empty paths, parent (`..`) components, and backslashes with ValueError. Ignore `.` and repeated slashes.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a normalized POSIX relative path from text. Reject absolute paths, empty 
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Validate each component, not just the final normalized string.
+## Tips
+Inspect individual path components before normalizing away suspicious segments.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

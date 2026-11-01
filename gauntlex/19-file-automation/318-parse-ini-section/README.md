@@ -1,6 +1,9 @@
-# parse_ini_section
+# Read an INI Section
 
-## Challenge
+## Description
+Extract configuration entries from one named section of an INI-style document.
+
+### Behavior contract
 Parse a simple INI string and return key/value pairs from the requested section. Section headers are `[name]`; entries are `key=value`; trim surrounding whitespace; skip blank lines and lines starting # or ;. Last duplicate wins. Assume well-formed input.
 
 ## Requirements
@@ -9,8 +12,7 @@ Parse a simple INI string and return key/value pairs from the requested section.
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Track the current section while reading lines.
+## Tips
+Track the active section while processing each line.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

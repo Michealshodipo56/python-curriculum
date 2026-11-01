@@ -1,6 +1,9 @@
-# json_path_get
+# Follow Nested Keys
 
-## Challenge
+## Description
+Navigate a structured JSON-compatible object using a dot-separated path of dictionary keys.
+
+### Behavior contract
 Given a JSON-compatible object and a dot-separated path of dictionary keys, return the nested value or None if any key is absent. An empty path returns the original object. Do not interpret list indices.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a JSON-compatible object and a dot-separated path of dictionary keys, retu
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Descend one dictionary key at a time.
+## Tips
+A missing key stops traversal; an empty path refers to the original value.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.
