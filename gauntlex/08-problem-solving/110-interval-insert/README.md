@@ -1,6 +1,9 @@
-# insert_interval
+# Add a New Range
 
 ## Description
+Insert a new interval into an ordered collection while merging any ranges it touches.
+
+### Behavior contract
 Given sorted nonoverlapping closed intervals and one new interval, insert and merge overlapping or touching intervals.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given sorted nonoverlapping closed intervals and one new interval, insert and me
 `insert_interval([], [2, 4])` → `[[2, 4]]`
 
 ## Tips
-Handle intervals before, overlapping, and after the new interval.
+Separate ranges before the insertion, ranges it intersects, and ranges after it.
+
+The examples define expected behavior; design your own implementation.

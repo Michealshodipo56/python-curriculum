@@ -1,6 +1,9 @@
-# top_k_frequent
+# Most Common Values
 
 ## Description
+Rank integers by how often they occur, using numeric order to resolve ties.
+
+### Behavior contract
 Return the k most frequent integers, ordered by decreasing frequency and then increasing numeric value. Assume 0<=k<=number of distinct values.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the k most frequent integers, ordered by decreasing frequency and then in
 `top_k_frequent([4, 4, 5, 5, 3], 2)` → `[4, 5]`
 
 ## Tips
-Count values, then sort by a compound frequency/value key.
+A stable tie-breaking rule is as important as counting correctly.
+
+The examples define expected behavior; design your own implementation.

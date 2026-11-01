@@ -1,6 +1,9 @@
-# merge_intervals
+# Unify Time Ranges
 
 ## Description
+Combine overlapping or touching intervals into a sorted list of separate ranges.
+
+### Behavior contract
 Merge overlapping or touching closed integer intervals and return sorted disjoint intervals. Each input interval is [start,end] with start<=end.
 
 ## Requirements
@@ -15,4 +18,6 @@ Merge overlapping or touching closed integer intervals and return sorted disjoin
 `merge_intervals([])` → `[]`
 
 ## Tips
-Sort by start position and extend the current interval when ranges overlap.
+Once ranges are ordered by start, compare each new range with the current merged range.
+
+The examples define expected behavior; design your own implementation.

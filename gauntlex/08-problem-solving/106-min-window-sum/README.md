@@ -1,6 +1,9 @@
-# min_subarray_len
+# Smallest Sufficient Window
 
 ## Description
+Find the shortest consecutive group of positive integers whose sum reaches a target.
+
+### Behavior contract
 Return the minimum length of a contiguous subarray with sum at least target, or 0 if none exists. All nums are positive integers and target is positive.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the minimum length of a contiguous subarray with sum at least target, or 
 `min_subarray_len(15, [1, 2, 3, 4, 5])` → `5`
 
 ## Tips
-Positive values allow a sliding window to shrink safely.
+Positive values make it possible to adjust the ends of a window predictably.
+
+The examples define expected behavior; design your own implementation.

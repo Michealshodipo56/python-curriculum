@@ -1,6 +1,9 @@
-# group_anagrams
+# Families of Letters
 
 ## Description
+Group words that contain the same characters with the same multiplicities.
+
+### Behavior contract
 Group strings that are anagrams. Return groups in order of first group appearance, with strings in original input order. Comparison is case-sensitive.
 
 ## Requirements
@@ -15,4 +18,6 @@ Group strings that are anagrams. Return groups in order of first group appearanc
 `group_anagrams([])` → `[]`
 
 ## Tips
-Use a canonical character signature as a dictionary key.
+Group order and the order of words within each group must both be preserved.
+
+The examples define expected behavior; design your own implementation.
