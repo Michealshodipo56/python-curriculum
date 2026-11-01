@@ -1,6 +1,9 @@
-# weighted_mean
+# Unequal Importance
 
-## Challenge
+## Description
+Compute an average where observations contribute according to assigned nonnegative weights.
+
+### Behavior contract
 Return the weighted average of equal-length numeric values and weights. All weights are nonnegative; return None if the sum of weights is zero.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the weighted average of equal-length numeric values and weights. All weig
 
 `weighted_mean([1, 2], [0, 0])` → `None`
 
-## Hints
-Divide the sum of weighted values by the total weight.
+## Tips
+If every weight is zero, there is no meaningful weighted average.
+
+Examples illustrate expected values, not a solution.

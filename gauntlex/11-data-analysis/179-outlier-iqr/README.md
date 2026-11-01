@@ -1,6 +1,9 @@
-# iqr_outliers
+# Outside the Fences
 
-## Challenge
+## Description
+Identify observations beyond the interquartile range fences while preserving original order.
+
+### Behavior contract
 Return values strictly outside the fences Q1-1.5*IQR and Q3+1.5*IQR, preserving input order. Define Q1 and Q3 as medians of the lower and upper halves, excluding the overall median for odd N. Return [] when fewer than 4 values.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return values strictly outside the fences Q1-1.5*IQR and Q3+1.5*IQR, preserving 
 
 `iqr_outliers([1, 2, 3])` → `[]`
 
-## Hints
-Sort a copy, split into halves, then compute the quartile medians.
+## Tips
+The definition of quartiles matters, especially when the dataset length is odd.
+
+Examples illustrate expected values, not a solution.

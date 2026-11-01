@@ -1,6 +1,9 @@
-# linear_regression
+# Fit a Straight Line
 
-## Challenge
+## Description
+Estimate a slope and intercept for a least-squares line through numeric observations.
+
+### Behavior contract
 Return [slope,intercept] for ordinary least-squares fit y=slope*x+intercept on equal-length numeric lists with at least two points. Return None if all x values are equal.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return [slope,intercept] for ordinary least-squares fit y=slope*x+intercept on e
 
 `linear_regression([1, 1], [2, 3])` → `None`
 
-## Hints
-Use covariance and variance of x to calculate the slope.
+## Tips
+A vertical collection of points has no unique slope in this representation.
+
+Examples illustrate expected values, not a solution.

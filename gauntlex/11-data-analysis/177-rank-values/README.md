@@ -1,6 +1,9 @@
-# dense_ranks
+# Dense Rankings
 
-## Challenge
+## Description
+Assign consecutive ranks to distinct values while giving equal values the same rank.
+
+### Behavior contract
 Return dense ascending ranks for each input integer, with the smallest distinct value ranked 1. Equal values share a rank; there are no gaps.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return dense ascending ranks for each input integer, with the smallest distinct 
 
 `dense_ranks([])` → `[]`
 
-## Hints
-Sort distinct values to build a rank lookup.
+## Tips
+Ranks follow sorted distinct values, but output positions follow the original input.
+
+Examples illustrate expected values, not a solution.

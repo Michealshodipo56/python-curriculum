@@ -1,6 +1,9 @@
-# quantize
+# Round to Steps
 
-## Challenge
+## Description
+Snap numeric observations to the nearest multiple of a positive step.
+
+### Behavior contract
 Round each numeric value to the nearest multiple of positive step using Python's built-in round semantics.
 
 ## Requirements
@@ -14,5 +17,7 @@ Round each numeric value to the nearest multiple of positive step using Python's
 
 `quantize([2, 4], 2)` → `[2, 4]`
 
-## Hints
-Scale by the step, round, then scale back.
+## Tips
+Rounding at a midpoint follows Python's built-in behavior; do not invent a different tie rule.
+
+Examples illustrate expected values, not a solution.
