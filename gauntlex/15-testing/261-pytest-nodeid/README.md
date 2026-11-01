@@ -1,6 +1,9 @@
-# pytest_nodeid
+# Identify a Test
 
-## Challenge
+## Description
+Build a stable test identifier from a path and function name.
+
+### Behavior contract
 Return `path::test_name` for a path and test name. Raise ValueError if either is empty after stripping whitespace. Strip surrounding whitespace from both.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return `path::test_name` for a path and test name. Raise ValueError if either is
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Validate the components before joining them.
+## Tips
+Trim and validate both components before combining them.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

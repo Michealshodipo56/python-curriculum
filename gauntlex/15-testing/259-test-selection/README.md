@@ -1,6 +1,9 @@
-# select_tests
+# Select by Name
 
-## Challenge
+## Description
+Filter a list of test names using a case-insensitive search pattern.
+
+### Behavior contract
 Given a list of test names and a lowercase or uppercase substring pattern, return matching names in original order, case-insensitively.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of test names and a lowercase or uppercase substring pattern, retur
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Normalize both sides for case-insensitive matching.
+## Tips
+Keep the original ordering of matching names.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

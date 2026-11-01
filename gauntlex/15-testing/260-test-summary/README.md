@@ -1,6 +1,9 @@
-# test_summary
+# Three Outcomes
 
-## Challenge
+## Description
+Summarize passed, failed, and skipped records with a total count.
+
+### Behavior contract
 Given a list of dictionaries each with status 'pass', 'fail', or 'skip', return counts for all three statuses and total.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of dictionaries each with status 'pass', 'fail', or 'skip', return 
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Initialize all counters to zero, even if a status never occurs.
+## Tips
+Include zero counts for outcomes that never occurred.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

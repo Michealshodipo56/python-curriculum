@@ -1,6 +1,9 @@
-# normalize_test_name
+# Name a Test Function
 
-## Challenge
+## Description
+Turn a human-readable title into a valid, consistent test function name.
+
+### Behavior contract
 Convert a human-readable ASCII title into a pytest-style function name beginning with `test_`. Lowercase, replace each run of nonalphanumeric characters with _, and trim underscores. Return `test_unnamed` if nothing remains.
 
 ## Requirements
@@ -9,8 +12,7 @@ Convert a human-readable ASCII title into a pytest-style function name beginning
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Normalize before adding the required test_ prefix.
+## Tips
+Punctuation and repeated separators should not create messy identifiers.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

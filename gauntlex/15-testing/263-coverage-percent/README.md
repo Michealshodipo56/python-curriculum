@@ -1,6 +1,9 @@
-# coverage_percent
+# Coverage Ratio
 
-## Challenge
+## Description
+Compute a line-coverage percentage while validating the reported counts.
+
+### Behavior contract
 Return the percentage of covered lines as a float (0 to 100), given covered and total nonnegative integers with covered<=total. Return 100.0 when total=0; raise ValueError for invalid counts.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the percentage of covered lines as a float (0 to 100), given covered and 
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Define the empty-code convention explicitly.
+## Tips
+A project with no measurable lines has an explicit convention.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.
