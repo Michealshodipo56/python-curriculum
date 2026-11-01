@@ -1,6 +1,9 @@
-# interval_intersection
+# Where Ranges Overlap
 
-## Challenge
+## Description
+Find the shared portions of two ordered collections of disjoint intervals.
+
+### Behavior contract
 Given two sorted lists of pairwise-disjoint inclusive integer intervals, return sorted pairwise intersections [start,end].
 
 ## Requirements
@@ -9,8 +12,7 @@ Given two sorted lists of pairwise-disjoint inclusive integer intervals, return 
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Advance the interval that ends first.
+## Tips
+Advancing the interval that ends first avoids unnecessary comparisons.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.

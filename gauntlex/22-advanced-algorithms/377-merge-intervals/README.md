@@ -1,6 +1,9 @@
-# merge_intervals
+# Merge Integer Ranges
 
-## Challenge
+## Description
+Combine overlapping or adjacent integer intervals into disjoint sorted ranges.
+
+### Behavior contract
 Given a list of inclusive integer intervals [start,end] with start<=end, return merged intervals sorted by start. Overlapping or touching intervals (next.start<=current.end+1) merge. Do not mutate inputs.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of inclusive integer intervals [start,end] with start<=end, return 
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Sort by start, then extend the most recent merged interval.
+## Tips
+For inclusive integer intervals, touching can include consecutive endpoints.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.

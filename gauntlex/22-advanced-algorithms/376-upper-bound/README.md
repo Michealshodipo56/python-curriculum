@@ -1,6 +1,9 @@
-# upper_bound
+# First Strictly Greater
 
-## Challenge
+## Description
+Find the earliest position where a sorted value is greater than a target.
+
+### Behavior contract
 Return the first index in sorted ascending values where element > target, or len(values) if none. Must use O(log n) comparisons.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the first index in sorted ascending values where element > target, or len
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-The only change from lower bound is how equality moves the search.
+## Tips
+Equality changes which half of the search interval can be discarded.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.

@@ -1,6 +1,9 @@
-# lower_bound
+# First Not Smaller
 
-## Challenge
+## Description
+Find the earliest position where a sorted value meets or exceeds a target using logarithmic comparisons.
+
+### Behavior contract
 Return the first index in sorted ascending values where element >= target, or len(values) if none. Duplicates are allowed. Must use O(log n) comparisons.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the first index in sorted ascending values where element >= target, or le
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Maintain a half-open search interval.
+## Tips
+Maintain a search interval whose boundaries have a precise meaning.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.

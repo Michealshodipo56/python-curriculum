@@ -1,6 +1,9 @@
-# longest_unique_substring
+# Longest Distinct Window
 
-## Challenge
+## Description
+Find the longest contiguous region of Unicode text without repeated characters in linear time.
+
+### Behavior contract
 Return the length of the longest contiguous substring with no repeated Unicode characters. Empty string returns zero. Target O(n) time.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the length of the longest contiguous substring with no repeated Unicode c
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Track each character's most recent position within a sliding window.
+## Tips
+A sliding window can advance without reexamining all earlier characters.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.
