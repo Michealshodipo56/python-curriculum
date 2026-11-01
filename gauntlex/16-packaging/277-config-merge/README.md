@@ -1,6 +1,9 @@
-# merge_config
+# Apply Overrides
 
-## Challenge
+## Description
+Combine default settings with recognized overrides without changing either input.
+
+### Behavior contract
 Return a new dictionary formed by applying environment overrides to default settings. Only keys present in defaults may be overridden; unknown keys are ignored. Neither input may be mutated.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a new dictionary formed by applying environment overrides to default sett
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Start from a copy of the defaults.
+## Tips
+Unknown keys must not unexpectedly expand the configuration.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

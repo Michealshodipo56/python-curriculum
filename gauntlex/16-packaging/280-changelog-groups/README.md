@@ -1,6 +1,9 @@
-# group_changes
+# Organize Changes
 
-## Challenge
+## Description
+Group change descriptions by category while preserving their original order within each group.
+
+### Behavior contract
 Given [category,description] pairs, return a dictionary mapping each category to descriptions in their original order.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given [category,description] pairs, return a dictionary mapping each category to
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-A dictionary of lists preserves insertion order within categories.
+## Tips
+One category can contain many entries, and repeated categories should not replace earlier changes.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

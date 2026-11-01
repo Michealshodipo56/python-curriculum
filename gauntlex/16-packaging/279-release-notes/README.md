@@ -1,6 +1,9 @@
-# release_notes
+# Write a Release Note
 
-## Challenge
+## Description
+Generate a short Markdown release announcement from a version and list of changes.
+
+### Behavior contract
 Given version and a list of change descriptions, return Markdown with first line `# Release VERSION`, a blank line, then one `- CHANGE` line per change. End with a newline. For no changes, return only heading and newline.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given version and a list of change descriptions, return Markdown with first line
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Build the heading and bullets separately so empty releases stay well formed.
+## Tips
+An empty change list should still produce a valid release heading.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.
