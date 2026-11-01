@@ -1,6 +1,9 @@
-# jsonlselect
+# Extract JSON Fields
 
-## Challenge
+## Description
+Select a named value from each record that contains it, preserving record order.
+
+### Behavior contract
 The first input line contains a key name. Each subsequent nonempty line is a valid JSON object. Print the value for that key as compact JSON, one per matching record; skip objects without the key.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "x\n{}\n"
 
 Expected output: ""
 
-## Hints
-Distinguish an absent key from a present key with null value.
+## Tips
+An absent field is different from a present field whose value is JSON null.
+
+Examples illustrate the output contract, not a solution.

@@ -1,6 +1,9 @@
-# jsonlcount
+# Count Active Records
 
-## Challenge
+## Description
+Read JSON objects and count only those explicitly marked active with a Boolean true value.
+
+### Behavior contract
 Read valid JSON objects, one per nonempty line. Print the count of objects containing the key `active` with Boolean value true.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: "0\n"
 
-## Hints
-In Python, bool is a subclass of int; use an identity check for true.
+## Tips
+In Python, a numeric one and Boolean true can compare equal; the contract distinguishes their types.
+
+Examples illustrate the output contract, not a solution.

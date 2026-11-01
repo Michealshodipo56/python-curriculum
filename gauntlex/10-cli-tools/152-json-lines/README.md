@@ -1,6 +1,9 @@
-# jsonlines
+# Compact JSON Stream
 
-## Challenge
+## Description
+Process a stream of independent JSON records and produce canonical compact records.
+
+### Behavior contract
 Read one valid JSON value per nonempty input line. Print one compact sorted-key JSON value per nonempty line; skip blank lines.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: ""
 
-## Hints
-Process each record independently rather than parsing the whole stream as one JSON value.
+## Tips
+A blank line is not a JSON record; treat each nonempty line independently.
+
+Examples illustrate the output contract, not a solution.

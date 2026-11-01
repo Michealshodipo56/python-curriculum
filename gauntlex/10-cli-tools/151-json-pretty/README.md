@@ -1,6 +1,9 @@
-# jsonpretty
+# Readable JSON
 
-## Challenge
+## Description
+Format one JSON value for humans using consistent indentation and key ordering.
+
+### Behavior contract
 Read one JSON value from standard input. Print it as JSON with sorted object keys, an indentation width of 2, and a final newline. Input is valid JSON.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "[1,2]\n"
 
 Expected output: "[\n  1,\n  2\n]\n"
 
-## Hints
-The JSON encoder can sort keys and indent output.
+## Tips
+The output should remain valid JSON even after its layout changes.
+
+Examples illustrate the output contract, not a solution.
