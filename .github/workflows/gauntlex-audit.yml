@@ -15,6 +15,7 @@ on:
       - "scripts/verify_text_file_contracts.py"
       - "scripts/verify_csv_etl_capstone.py"
       - "scripts/verify_markdown_link_capstone.py"
+      - "scripts/verify_contact_book_capstone.py"
       - "CURRICULUM_ORDER.md"
       - ".github/workflows/gauntlex-audit.yml"
   pull_request:
@@ -65,3 +66,5 @@ jobs:
         run: python scripts/verify_csv_etl_capstone.py
       - name: Verify Markdown Link Checker with independent reference
         run: python scripts/verify_markdown_link_capstone.py
+      - name: Verify Contact Book with independent reference
+        run: python scripts/verify_contact_book_capstone.py
