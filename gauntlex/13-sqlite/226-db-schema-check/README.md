@@ -1,6 +1,9 @@
-# table_exists
+# Inspect the Schema
 
-## Challenge
+## Description
+Determine whether a named database table exists without confusing it with views or indexes.
+
+### Behavior contract
 Return True if a table with the given name exists in sqlite_schema; otherwise False. Ignore views and indexes.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return True if a table with the given name exists in sqlite_schema; otherwise Fa
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Query sqlite_schema with a parameterized name and type='table'.
+## Tips
+The schema records different object types; table existence is more specific than name existence.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.

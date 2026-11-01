@@ -1,6 +1,9 @@
-# group_counts
+# Count Event Categories
 
-## Challenge
+## Description
+Aggregate event records by category and return a stable frequency ranking.
+
+### Behavior contract
 Return [category,count] for rows in events(id,category), ordered by count descending then category ascending.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [category,count] for rows in events(id,category), ordered by count descen
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-GROUP BY and a secondary sort key make ties predictable.
+## Tips
+Two categories with equal counts still need a predictable ordering.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.

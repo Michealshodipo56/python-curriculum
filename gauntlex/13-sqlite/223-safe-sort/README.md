@@ -1,6 +1,9 @@
-# sorted_users
+# Allowlisted Sorting
 
-## Challenge
+## Description
+Support caller-selected sorting without allowing arbitrary SQL identifiers or directions.
+
+### Behavior contract
 Return [id,name] rows from users(id,name,email), ordered by a caller-specified field `id` or `name`, and direction `asc` or `desc` (case-insensitive). Raise ValueError for unsupported fields or directions.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [id,name] rows from users(id,name,email), ordered by a caller-specified f
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-SQL identifiers cannot be bound as values; use a strict allowlist.
+## Tips
+SQL parameters protect values, but column names need an explicit allowlist.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.

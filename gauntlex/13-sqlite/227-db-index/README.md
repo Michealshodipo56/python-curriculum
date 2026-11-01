@@ -1,6 +1,9 @@
-# ensure_email_index
+# Ensure an Index
 
-## Challenge
+## Description
+Add a named index for email lookup in a way that remains safe to repeat.
+
+### Behavior contract
 Create an index named idx_users_email on users(email) if absent. Repeated calls must not fail.
 
 ## Requirements
@@ -10,8 +13,7 @@ Create an index named idx_users_email on users(email) if absent. Repeated calls 
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-CREATE INDEX IF NOT EXISTS is idempotent.
+## Tips
+Schema setup should not fail merely because it has already been performed.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.
