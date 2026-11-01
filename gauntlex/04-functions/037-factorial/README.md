@@ -1,17 +1,18 @@
-# factorial
+# Factorial Product
 
 ## Description
-Implement `factorial(n)` for nonnegative integers. Return the product of all positive integers up to n; factorial(0) is 1.
+Calculate the product of the positive integers up to a given nonnegative number. The empty product is an important boundary case.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``factorial(n)`` in `solution.py`.
+- Return the factorial of nonnegative `n`; `factorial(0)` is `1`.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`factorial(0)` → `1`
-
-`factorial(1)` → `1`
+## Example
+`factorial(0)` → `1`; `factorial(4)` → `24`.
 
 ## Tips
-Think about a product accumulator and its initial value.
+Explore why multiplication starts with a different identity value than addition.
+
+The examples specify behavior without supplying the implementation.

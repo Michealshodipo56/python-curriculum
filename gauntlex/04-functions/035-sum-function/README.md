@@ -1,17 +1,18 @@
-# sumfunction
+# Return a Sum
 
 ## Description
-Implement `sum_two(a, b)` in `solution.py` and return the sum of two integers.
+Create a reusable operation that accepts two integers and gives their sum back to its caller.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``sum_two(a, b)`` in `solution.py`.
+- Return the arithmetic sum of `a` and `b`.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`sumfunction(2, 3)` → `5`
-
-`sumfunction(-4, 7)` → `3`
+## Example
+`sum_two(2, 3)` → `5`; `sum_two(-4, 7)` → `3`.
 
 ## Tips
-Use `return` to give a value back to the caller. Do not print from the function.
+How is returning a value different from displaying it? Think about how another function could reuse the result.
+
+The examples specify behavior without supplying the implementation.

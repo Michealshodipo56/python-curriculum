@@ -1,17 +1,18 @@
-# absolute
+# Distance from Zero
 
 ## Description
-Implement `absolute(n)` in `solution.py` to return the absolute value of an integer.
+Represent an integer's distance from zero without retaining its sign.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``absolute(n)`` in `solution.py`.
+- Return the nonnegative absolute value of `n`.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`absolute(-7)` → `7`
-
-`absolute(0)` → `0`
+## Example
+`absolute(-7)` → `7`; `absolute(0)` → `0`.
 
 ## Tips
-A conditional can choose between the input and its opposite.
+Which values already express their distance from zero? What changes for negative values?
+
+The examples specify behavior without supplying the implementation.
