@@ -1,7 +1,7 @@
-# extract_numbers
+# Numbers Hidden in Text
 
 ## Description
-Return nonnegative integers from contiguous ASCII digit sequences in text.
+Find each uninterrupted run of ASCII digits inside a larger string and report the numeric values.
 
 ## Requirements
 - Implement `extract_numbers(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return nonnegative integers from contiguous ASCII digit sequences in text.
 `extract_numbers("no digits")` → `[]`
 
 ## Tips
-Regular expressions can match sequences of ASCII digits.
+Think about what separates one number from the next and how leading zeros affect integer values.
+
+Examples describe expected behavior without providing the implementation.

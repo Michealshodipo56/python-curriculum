@@ -1,7 +1,7 @@
-# mask_email
+# Protect the Address
 
 ## Description
-Given an email with one @ and nonempty local part, mask all local-part characters except the first with *.
+Hide the sensitive portion of an email address while leaving enough information to recognize its structure.
 
 ## Requirements
 - Implement `mask_email(email)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Given an email with one @ and nonempty local part, mask all local-part character
 `mask_email("x@y.io")` → `"x@y.io"`
 
 ## Tips
-Split at @ and rebuild the address.
+Which part of the address should remain untouched? Consider a one-character local part.
+
+Examples describe expected behavior without providing the implementation.

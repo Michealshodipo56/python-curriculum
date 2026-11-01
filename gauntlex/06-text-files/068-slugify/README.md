@@ -1,7 +1,7 @@
-# slugify
+# URL-Friendly Words
 
 ## Description
-Convert ASCII text to lowercase; replace each run of non-alphanumeric characters with a hyphen and trim outer hyphens.
+Convert a title into a lowercase, hyphen-separated identifier suitable for a simple URL path.
 
 ## Requirements
 - Implement `slugify(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Convert ASCII text to lowercase; replace each run of non-alphanumeric characters
 `slugify("  A__B  ")` → `"a-b"`
 
 ## Tips
-Normalize case and use a replacement pattern.
+Several punctuation marks in a row should not create repeated separators.
+
+Examples describe expected behavior without providing the implementation.
