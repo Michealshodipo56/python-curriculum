@@ -1,6 +1,9 @@
-# application
+# Control Cross-Origin Access
 
-## Challenge
+## Description
+Include a CORS allow-origin header only for an exact trusted origin.
+
+### Behavior contract
 Implement GET `/public` returning 200 body `ok` and Access-Control-Allow-Origin `https://gauntlex.example` only when HTTP_ORIGIN exactly equals that origin. For any other origin, omit the header. Return Content-Type text/plain.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/public` returning 200 body `ok` and Access-Control-Allow-Origin 
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-An origin allowlist must compare full origins exactly.
+## Tips
+A similar-looking domain is not an exact match.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

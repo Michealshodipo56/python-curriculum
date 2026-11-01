@@ -1,6 +1,9 @@
-# application
+# Recognize a Session Cookie
 
-## Challenge
+## Description
+Read a Cookie header and determine whether it contains a meaningful session value.
+
+### Behavior contract
 Implement GET `/cookie` returning body `seen` if HTTP_COOKIE contains a cookie named session with a nonempty value, otherwise `missing`. Return 200 and Content-Type text/plain.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/cookie` returning body `seen` if HTTP_COOKIE contains a cookie n
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Cookie pairs are separated by semicolons.
+## Tips
+A cookie's presence is not enough when its value is empty.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

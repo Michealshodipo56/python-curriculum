@@ -1,6 +1,9 @@
-# application
+# Protect a Private Route
 
-## Challenge
+## Description
+Require a valid bearer token before returning a protected resource.
+
+### Behavior contract
 Implement GET `/private` requiring Authorization header `Bearer secret-token` (scheme case-insensitive). Valid authorization returns 200 and body `welcome`; otherwise 401 and body `unauthorized`. Use a timing-resistant token comparison.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/private` requiring Authorization header `Bearer secret-token` (s
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Separate the bearer scheme from the secret token.
+## Tips
+Compare secrets without revealing where two token strings differ.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.
