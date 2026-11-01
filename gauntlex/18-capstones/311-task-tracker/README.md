@@ -1,9 +1,11 @@
-# Task Tracker CLI
+# Persistent Task Tracker
 
-## Project brief
-Build a persistent command-line task tracker using SQLite.
+## Description
+Build a task-management command-line application whose data survives between runs. Users must be able to add, list, complete, and remove tasks.
 
-## Acceptance contract
+This is a project challenge. Plan the components, define their responsibilities, and implement the application without a provided solution.
+
+## Requirements
 Commands: `python main.py add TITLE`, `list`, `done ID`, and `delete ID`. Store tasks in a SQLite file specified by `TASK_DB` environment variable; default `tasks.db` in the working directory. The list command prints compact sorted-key JSON of all tasks ordered by ID, with objects `{id:int,title:str,done:bool}`. Add prints the new integer ID, done/delete print `ok` on success and `not found` otherwise. Unknown commands return exit status 2 and print usage to stderr. Titles must not be empty after trimming.
 
 ## Constraints
@@ -13,12 +15,12 @@ Commands: `python main.py add TITLE`, `list`, `done ID`, and `delete ID`. Store 
 - Do not print debugging information to stdout.
 
 ## Deliverables
-- Implement the complete working project in `starter/main.py` and any additional modules under `starter/`.
-- Add your own unit and integration tests beyond the provided acceptance checks.
-- Document architecture, failure modes, and how to run the program.
+- Implement the application in `starter/main.py`, with additional modules only when useful.
+- Document the program's usage, key design choices, and failure behavior.
+- Explain how persistence, input validation, or the service lifecycle works where applicable.
 
-## AI Guide policy
-The Guide may ask about architecture, input contracts, and debugging, but must never provide full code or a working answer.
+## Tips
+Separate command parsing from persistence. Think through missing IDs, empty titles, and stable record ordering.
 
-## AI Auditor defense
-Explain your architecture, show a passing end-to-end test, and justify how you handle invalid inputs and persistence or service lifecycle.
+## Guide and Auditor
+The Gauntlex Guide should help you reason through decisions and debug issues without supplying finished code. The Auditor may ask you to demonstrate the required behavior and defend your design choices.

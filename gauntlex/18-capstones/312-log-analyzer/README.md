@@ -1,9 +1,11 @@
-# Log Analyzer CLI
+# Streaming Log Inspector
 
-## Project brief
-Build a streaming log analyzer that summarizes valid application logs.
+## Description
+Create a tool that turns raw application logs into a reliable summary, ignoring invalid records.
 
-## Acceptance contract
+This is a project challenge. Plan the components, define their responsibilities, and implement the application without a provided solution.
+
+## Requirements
 Read UTF-8 lines from stdin in `LEVEL|YYYY-MM-DD|MESSAGE` format. LEVEL is INFO, WARN, or ERROR. Validate calendar dates, skip malformed lines, and count each level. Print one compact sorted-key JSON object with keys `total`, `INFO`, `WARN`, `ERROR`, and `dates`, where dates maps YYYY-MM-DD to the number of valid records on that date. Exit successfully even when input is empty. MESSAGE may contain additional pipe symbols.
 
 ## Constraints
@@ -13,12 +15,12 @@ Read UTF-8 lines from stdin in `LEVEL|YYYY-MM-DD|MESSAGE` format. LEVEL is INFO,
 - Do not print debugging information to stdout.
 
 ## Deliverables
-- Implement the complete working project in `starter/main.py` and any additional modules under `starter/`.
-- Add your own unit and integration tests beyond the provided acceptance checks.
-- Document architecture, failure modes, and how to run the program.
+- Implement the application in `starter/main.py`, with additional modules only when useful.
+- Document the program's usage, key design choices, and failure behavior.
+- Explain how persistence, input validation, or the service lifecycle works where applicable.
 
-## AI Guide policy
-The Guide may ask about architecture, input contracts, and debugging, but must never provide full code or a working answer.
+## Tips
+The log message may contain extra separators. Only validated records should affect counts.
 
-## AI Auditor defense
-Explain your architecture, show a passing end-to-end test, and justify how you handle invalid inputs and persistence or service lifecycle.
+## Guide and Auditor
+The Gauntlex Guide should help you reason through decisions and debug issues without supplying finished code. The Auditor may ask you to demonstrate the required behavior and defend your design choices.

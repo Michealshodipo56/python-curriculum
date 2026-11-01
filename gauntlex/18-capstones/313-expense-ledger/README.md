@@ -1,9 +1,11 @@
-# Expense Ledger CLI
+# Expense Ledger
 
-## Project brief
-Build a SQLite-backed expense ledger with accurate integer-cent accounting.
+## Description
+Build a persistent expense tracker that records amounts as integer cents and summarizes spending by category.
 
-## Acceptance contract
+This is a project challenge. Plan the components, define their responsibilities, and implement the application without a provided solution.
+
+## Requirements
 Use `EXPENSE_DB` environment variable or default `expenses.db`. Commands: `add CATEGORY AMOUNT_CENTS`, `summary`, `list`. Amount must be a positive integer; invalid input exits 2 without inserting. `add` prints the new integer ID. `list` prints compact sorted-key JSON array of `{id,category,amount_cents}` in ID order. `summary` prints compact sorted-key JSON mapping category to total integer cents. The database persists across process runs. No floating-point currency arithmetic.
 
 ## Constraints
@@ -13,12 +15,12 @@ Use `EXPENSE_DB` environment variable or default `expenses.db`. Commands: `add C
 - Do not print debugging information to stdout.
 
 ## Deliverables
-- Implement the complete working project in `starter/main.py` and any additional modules under `starter/`.
-- Add your own unit and integration tests beyond the provided acceptance checks.
-- Document architecture, failure modes, and how to run the program.
+- Implement the application in `starter/main.py`, with additional modules only when useful.
+- Document the program's usage, key design choices, and failure behavior.
+- Explain how persistence, input validation, or the service lifecycle works where applicable.
 
-## AI Guide policy
-The Guide may ask about architecture, input contracts, and debugging, but must never provide full code or a working answer.
+## Tips
+Money values must not be rounded through floating-point arithmetic.
 
-## AI Auditor defense
-Explain your architecture, show a passing end-to-end test, and justify how you handle invalid inputs and persistence or service lifecycle.
+## Guide and Auditor
+The Gauntlex Guide should help you reason through decisions and debug issues without supplying finished code. The Auditor may ask you to demonstrate the required behavior and defend your design choices.
