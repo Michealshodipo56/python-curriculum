@@ -1,6 +1,9 @@
-# train_test_split
+# Hold Out Examples
 
-## Challenge
+## Description
+Divide a dataset into training and evaluation portions without shuffling.
+
+### Behavior contract
 Given a sequence and a test_fraction in [0,1], return [training_items,test_items] with original order preserved. Test size is floor(len(items)*test_fraction); take test items from the end. Raise ValueError for invalid fractions.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a sequence and a test_fraction in [0,1], return [training_items,test_items
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Compute split size before slicing.
+## Tips
+The held-out portion comes from the end, and its size follows the specified rounding rule.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

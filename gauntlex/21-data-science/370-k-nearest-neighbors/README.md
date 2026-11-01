@@ -1,6 +1,9 @@
-# nearest_indices
+# Find Nearby Examples
 
-## Challenge
+## Description
+Rank data vectors by distance to a query, using original position to resolve ties.
+
+### Behavior contract
 Given a list of numeric vectors, a query vector and nonnegative integer k, return indices of the k nearest vectors by squared Euclidean distance, breaking ties by lower original index. Raise ValueError if dimensions differ or k<0. k may exceed dataset length.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of numeric vectors, a query vector and nonnegative integer k, retur
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Squared distances preserve ordering without a square root.
+## Tips
+Squared distance preserves ordering and avoids an unnecessary square root.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

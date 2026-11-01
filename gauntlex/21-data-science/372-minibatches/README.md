@@ -1,6 +1,9 @@
-# mini_batches
+# Train in Batches
 
-## Challenge
+## Description
+Partition data into consecutive batches while retaining a final incomplete batch.
+
+### Behavior contract
 Split a sequence into consecutive lists of at most positive integer batch_size. Preserve order and include the final partial batch. Raise ValueError for nonpositive batch_size.
 
 ## Requirements
@@ -9,8 +12,7 @@ Split a sequence into consecutive lists of at most positive integer batch_size. 
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Step through indices by the batch size.
+## Tips
+A final partial batch still contains useful data.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.
