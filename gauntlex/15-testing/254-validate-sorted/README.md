@@ -1,6 +1,9 @@
-# validate_sorted
+# Reject Disorder
 
-## Challenge
+## Description
+Accept an already sorted list unchanged and reject an unsorted one.
+
+### Behavior contract
 Return the original list unchanged when it is nondecreasing; otherwise raise ValueError. Do not mutate input.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the original list unchanged when it is nondecreasing; otherwise raise Val
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Validation should not replace or reorder the caller's list.
+## Tips
+Validation should not quietly repair the caller's data.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

@@ -1,6 +1,9 @@
-# is_permutation
+# Same Elements, New Order
 
-## Challenge
+## Description
+Decide whether two lists contain exactly the same elements and counts.
+
+### Behavior contract
 Return True when two lists contain the same elements with the same multiplicities, regardless of order. Elements are hashable.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return True when two lists contain the same elements with the same multiplicitie
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-A multiset comparison tracks counts, not just membership.
+## Tips
+A set cannot distinguish one occurrence from several occurrences.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

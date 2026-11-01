@@ -1,6 +1,9 @@
-# run_cases
+# Evaluate Examples
 
-## Challenge
+## Description
+Run a collection of input-output cases against a callable and report which ones match.
+
+### Behavior contract
 Given a callable fn and list of [args,expected] cases where args is a list, return a list of booleans indicating whether fn(*args) equals expected. Let exceptions propagate.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a callable fn and list of [args,expected] cases where args is a list, retu
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Keep each case independent and preserve its position.
+## Tips
+Keep each result aligned with its original case.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.
