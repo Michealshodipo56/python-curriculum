@@ -1,15 +1,23 @@
-# evensum
+# Even Accumulator
 
 ## Description
-Read a nonnegative integer N. Print the sum of all even integers from 1 through N.
+Not every number in a range should contribute to a total. Select the even values and add only those.
 
 ## Requirements
-Print exactly one integer. Zero is an allowed input.
+- Read a nonnegative integer N.
+- Display the sum of all even integers between 1 and N, inclusive.
+- Display one integer, including when N is zero.
 
-## Examples
-Input: "6\n" → output: "12\n"
+## Example
+```text
+Input:
+6
 
-Input: "7\n" → output: "12\n"
+Output:
+12
+```
 
 ## Tips
-Combine a loop with a condition that selects only values satisfying the required property.
+Separate the question 'should this number be included?' from 'how does it change the total?'.
+
+The example demonstrates expected behavior; it does not reveal an implementation.

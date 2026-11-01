@@ -1,15 +1,26 @@
-# countdown
+# Launch Countdown
 
 ## Description
-Read a nonnegative integer N. Print N down to 1, one number per line, then print `Go!`.
+Create a countdown that reaches a fixed final message, even when the starting number is zero.
 
 ## Requirements
-For N=0, print only `Go!`. Do not print prompts.
+- Read a nonnegative integer N.
+- Display N, N−1, and so on down to 1, each on its own line.
+- Display `Go!` as the final line. For N equal to zero, display only `Go!`.
 
-## Examples
-Input: "3\n" → output: "3\n2\n1\nGo!\n"
+## Example
+```text
+Input:
+3
 
-Input: "0\n" → output: "Go!\n"
+Output:
+3
+2
+1
+Go!
+```
 
 ## Tips
-A `while` loop continues while its condition remains true. Ensure that the loop variable changes so it can finish.
+Identify how the changing value approaches the stopping condition. Make sure the countdown cannot continue forever.
+
+The example demonstrates expected behavior; it does not reveal an implementation.

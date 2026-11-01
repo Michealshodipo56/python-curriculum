@@ -1,15 +1,23 @@
-# sumrange
+# Running Total
 
 ## Description
-Read a nonnegative integer N and display the sum of all integers from 1 through N.
+Compute a total that grows as more numbers are considered. The amount of work should depend on the supplied input.
 
 ## Requirements
-Print the numeric total on one line. For N=0, print 0.
+- Read a nonnegative integer N.
+- Display the sum of the integers from 1 through N.
+- For N equal to zero, display `0`.
 
-## Examples
-Input: "5\n" → output: "15\n"
+## Example
+```text
+Input:
+5
 
-Input: "0\n" → output: "0\n"
+Output:
+15
+```
 
 ## Tips
-An accumulator keeps a running total as you visit each number. Think about its initial value.
+Track the total after each step on paper. What initial total makes sense when there are no numbers to add?
+
+The example demonstrates expected behavior; it does not reveal an implementation.
