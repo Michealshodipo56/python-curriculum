@@ -1,7 +1,7 @@
-# normalize_spaces
+# One Space Apart
 
 ## Description
-Replace each run of whitespace with one ASCII space and trim the ends.
+Transform irregular whitespace into a consistent, readable separation between words.
 
 ## Requirements
 - Implement `normalize_spaces(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Replace each run of whitespace with one ASCII space and trim the ends.
 `normalize_spaces("\tA \t B\t")` → `"A B"`
 
 ## Tips
-Split text on whitespace and join with one space.
+What counts as whitespace besides an ordinary space? Preserve the words while normalizing their boundaries.
+
+Examples describe expected behavior without providing the implementation.

@@ -1,7 +1,7 @@
-# line_count
+# Count the Lines
 
 ## Description
-Return the number of lines in text, using Python splitlines semantics.
+Determine how many logical lines a string contains, including cases involving trailing line breaks.
 
 ## Requirements
 - Implement `line_count(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return the number of lines in text, using Python splitlines semantics.
 `line_count("single")` → `1`
 
 ## Tips
-The string method splitlines handles line boundaries.
+Compare empty text, one line, and a line ending with a newline. Do they all count the same way?
+
+Examples describe expected behavior without providing the implementation.

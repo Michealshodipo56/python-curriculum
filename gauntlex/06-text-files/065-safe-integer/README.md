@@ -1,7 +1,7 @@
-# parse_integer
+# Parse With Care
 
 ## Description
-Return a base-10 integer from trimmed text, or None when invalid.
+Convert textual input into a base-ten integer when possible and provide a predictable result for invalid input.
 
 ## Requirements
 - Implement `parse_integer(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return a base-10 integer from trimmed text, or None when invalid.
 `parse_integer("3.5")` → `None`
 
 ## Tips
-Catch the specific conversion exception.
+Distinguish valid negative integers from decimal fractions and nonnumeric text.
+
+Examples describe expected behavior without providing the implementation.
