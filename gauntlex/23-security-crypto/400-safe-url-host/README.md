@@ -1,6 +1,9 @@
-# safe_url_host
+# Inspect a Web Host
 
-## Challenge
+## Description
+Extract a valid HTTP or HTTPS hostname while rejecting malformed authorities and unsafe URL syntax.
+
+### Behavior contract
 Return lowercase hostname from an absolute HTTP or HTTPS URL, without port. Raise ValueError for missing hostname, non-HTTP schemes, username/password components, or control characters in the URL. This is syntax validation, not SSRF protection.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return lowercase hostname from an absolute HTTP or HTTPS URL, without port. Rais
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Parse URLs with urllib.parse, then validate the scheme and authority.
+## Tips
+Syntax validation alone does not make a URL safe to fetch; SSRF defenses require additional checks.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

@@ -1,6 +1,9 @@
-# redact_headers
+# Hide Sensitive Headers
 
-## Challenge
+## Description
+Create a copy of HTTP headers with credential-bearing values redacted.
+
+### Behavior contract
 Given a mapping of HTTP header names to strings, return a new mapping with values replaced by `[REDACTED]` for Authorization, Cookie, Set-Cookie and X-API-Key, case-insensitively. Preserve original key casing and other values.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a mapping of HTTP header names to strings, return a new mapping with value
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Normalize names only for comparison, not for output.
+## Tips
+Preserve original header names while comparing them without regard to case.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

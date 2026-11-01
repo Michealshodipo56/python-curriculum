@@ -1,6 +1,9 @@
-# constant_time_match
+# Timing-Resistant Equality
 
-## Challenge
+## Description
+Compare two UTF-8 strings using a standard-library primitive suitable for sensitive comparisons.
+
+### Behavior contract
 Given two UTF-8 strings, return whether they are equal using a constant-time comparison primitive from the standard library. Do not implement a manual early-exit loop.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given two UTF-8 strings, return whether they are equal using a constant-time com
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Research why ordinary string equality is not an appropriate security boundary for comparing secrets. Consider how Unicode text should be represented before using a standard-library comparison primitive.
+## Tips
+A manual early-exit comparison can reveal information through timing differences.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.
