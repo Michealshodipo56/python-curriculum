@@ -1,15 +1,24 @@
-# larger
+# Choose the Larger
 
 ## Description
-Read two integers, one per line. Display the larger number. If the numbers are equal, display that number once.
+Two integer values are supplied. Decide which one is greater and display it. Equal values should not create a special message.
 
 ## Requirements
-- Print only the chosen integer.
-- Handle negative numbers and equal values.
-- Do not use interactive prompts.
+- Read two integers on separate lines.
+- Display the greater integer, or the shared value if both are equal.
+- Handle negative numbers without extra prompts.
 
-## Examples
-Input `-2` and `5` produces `5`.
+## Example
+```text
+Input:
+-2
+5
+
+Output:
+5
+```
 
 ## Tips
-Comparison operators let you decide which value is greater. Think about what happens when both values are the same.
+Check three situations: the first value is larger, the second is larger, and the values are equal.
+
+The example describes expected behavior, not a solution.

@@ -1,15 +1,23 @@
-# parity
+# Even or Odd
 
 ## Description
-Read one integer and display whether it is even or odd.
+Classify an integer according to whether it can be divided into pairs without anything remaining.
 
 ## Requirements
-- Print exactly `even` or `odd` in lowercase.
-- Accept negative, zero, and positive integers.
+- Read one integer, including negative values or zero.
+- Display only `even` or `odd` in lowercase.
 - Do not print prompts.
 
-## Examples
-Input `-3` produces `odd`; input `0` produces `even`.
+## Example
+```text
+Input:
+-3
+
+Output:
+odd
+```
 
 ## Tips
-An even integer can be divided into pairs without a leftover. A conditional statement chooses which message to display.
+Test your reasoning with zero and negative integers, not just familiar positive examples.
+
+The example describes expected behavior, not a solution.
