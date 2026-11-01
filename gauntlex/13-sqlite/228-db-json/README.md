@@ -1,6 +1,9 @@
-# store_json
+# Store a JSON Document
 
-## Challenge
+## Description
+Serialize a Python value into canonical JSON and save it as one database record.
+
+### Behavior contract
 Insert a compact, sorted-key JSON string representing value into documents(id INTEGER PRIMARY KEY,body TEXT). Return the inserted row ID.
 
 ## Requirements
@@ -10,8 +13,7 @@ Insert a compact, sorted-key JSON string representing value into documents(id IN
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Serialize the value before binding it into an INSERT.
+## Tips
+Persist a stable text representation rather than a Python object's display string.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.
