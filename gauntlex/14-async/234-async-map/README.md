@@ -1,6 +1,9 @@
-# async_map
+# Concurrent Transformation
 
-## Challenge
+## Description
+Apply an asynchronous operation to many inputs concurrently while preserving their order.
+
+### Behavior contract
 Given an async function fn and a sequence of values, run fn(value) for all values concurrently and return results in input order.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given an async function fn and a sequence of values, run fn(value) for all value
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Create one coroutine per input and await them together.
+## Tips
+Concurrency need not change the order of the final output.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

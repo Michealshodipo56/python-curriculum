@@ -1,6 +1,9 @@
-# double_async
+# A Coroutine Result
 
-## Challenge
+## Description
+Return a calculated value from a coroutine and observe how callers receive it.
+
+### Behavior contract
 Define an async function returning twice its integer input.
 
 ## Requirements
@@ -9,8 +12,7 @@ Define an async function returning twice its integer input.
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-A coroutine may return a value without awaiting anything.
+## Tips
+An async function can return a value without performing any asynchronous waiting.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

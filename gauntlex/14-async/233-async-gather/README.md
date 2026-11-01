@@ -1,6 +1,9 @@
-# gather_results
+# Gather in Order
 
-## Challenge
+## Description
+Run several awaitables and return their results in the same order they were supplied.
+
+### Behavior contract
 Accept a sequence of awaitable objects and return their results as a list in input order. Empty input returns [].
 
 ## Requirements
@@ -9,8 +12,7 @@ Accept a sequence of awaitable objects and return their results as a list in inp
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Gather preserves argument order even if tasks complete in a different order.
+## Tips
+Completion order may differ from the order in which results must be returned.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

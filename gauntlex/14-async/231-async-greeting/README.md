@@ -1,6 +1,9 @@
-# greet_async
+# An Awaitable Greeting
 
-## Challenge
+## Description
+Create a coroutine that returns a personalized greeting without printing or blocking.
+
+### Behavior contract
 Define an async function that returns `Hello, NAME!` for a string name, without blocking or printing.
 
 ## Requirements
@@ -9,8 +12,7 @@ Define an async function that returns `Hello, NAME!` for a string name, without 
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-An async def function returns a coroutine when called.
+## Tips
+Calling an async function and awaiting its result are two distinct steps.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

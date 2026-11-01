@@ -1,6 +1,9 @@
-# with_timeout
+# Set a Deadline
 
-## Challenge
+## Description
+Wait for an asynchronous operation but fail when it exceeds a specified time limit.
+
+### Behavior contract
 Await an awaitable with a timeout in seconds; return its result or propagate asyncio.TimeoutError when exceeded.
 
 ## Requirements
@@ -9,8 +12,7 @@ Await an awaitable with a timeout in seconds; return its result or propagate asy
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-The asyncio library provides a timeout wrapper.
+## Tips
+A timeout is an observable failure, not a successful result.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.
