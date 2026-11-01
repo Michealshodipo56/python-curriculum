@@ -1,6 +1,9 @@
-# application
+# Route by Path
 
-## Challenge
+## Description
+Choose an HTTP response according to the path supplied in the WSGI environment.
+
+### Behavior contract
 Implement a WSGI callable routing PATH_INFO `/health` to 200 with body `ok`, and all other paths to 404 with body `not found`. Return Content-Type text/plain; charset=utf-8.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement a WSGI callable routing PATH_INFO `/health` to 200 with body `ok`, and
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Dispatch by the path field in the WSGI environment.
+## Tips
+Unknown paths should not accidentally receive the success response.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

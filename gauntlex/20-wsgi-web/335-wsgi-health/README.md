@@ -1,6 +1,9 @@
-# application
+# Your First WSGI Response
 
-## Challenge
+## Description
+Create a minimal web application callable that returns a predictable JSON health response.
+
+### Behavior contract
 Implement a WSGI callable returning HTTP 200, Content-Type application/json, and UTF-8 bytes `{"status":"ok"}` for any request. Call start_response exactly once.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement a WSGI callable returning HTTP 200, Content-Type application/json, and
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-A WSGI application returns an iterable of byte strings.
+## Tips
+WSGI response bodies are byte sequences, not ordinary strings.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

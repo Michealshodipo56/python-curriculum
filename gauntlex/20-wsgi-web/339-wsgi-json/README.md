@@ -1,6 +1,9 @@
-# application
+# Serialize a Web Response
 
-## Challenge
+## Description
+Return a stable JSON representation with the correct content type.
+
+### Behavior contract
 Implement GET `/data` returning compact sorted-key JSON bytes of `{"name":"Gauntlex","ready":true}` with Content-Type application/json and 200 status. Other paths return 404 and empty bytes.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/data` returning compact sorted-key JSON bytes of `{"name":"Gaunt
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-JSON booleans are lowercase in serialized output.
+## Tips
+JSON Boolean spelling differs from Python Boolean spelling.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

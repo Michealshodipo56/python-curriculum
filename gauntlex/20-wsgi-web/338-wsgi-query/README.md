@@ -1,6 +1,9 @@
-# application
+# Decode Query Input
 
-## Challenge
+## Description
+Read a URL-encoded query parameter and return its decoded text.
+
+### Behavior contract
 Implement GET `/echo` as a WSGI application that reads the first `message` query parameter and returns its UTF-8 bytes. Decode URL form encoding, including plus signs. Other paths return 404. Content-Type text/plain; charset=utf-8.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/echo` as a WSGI application that reads the first `message` query
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-parse_qs decodes form query strings.
+## Tips
+Query encoding treats plus signs as spaces and supports percent escapes.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.
