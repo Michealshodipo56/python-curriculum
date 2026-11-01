@@ -1,6 +1,9 @@
-# cosine_similarity
+# Compare Directions
 
-## Challenge
+## Description
+Measure vector similarity by the angle between two numeric vectors.
+
+### Behavior contract
 Return cosine similarity of equal-length numeric vectors. Return 0.0 if either vector has zero magnitude, including empty vectors. Raise ValueError on length mismatch.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return cosine similarity of equal-length numeric vectors. Return 0.0 if either v
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Normalize the dot product by both vector magnitudes.
+## Tips
+A zero-length vector has no direction; the task defines a fallback.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

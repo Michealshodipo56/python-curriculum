@@ -1,6 +1,9 @@
-# root_mean_square_error
+# Penalize Large Errors
 
-## Challenge
+## Description
+Measure prediction error with squared differences before restoring the original units.
+
+### Behavior contract
 Return square root of average squared prediction error for equal-length nonempty sequences. Raise ValueError for mismatched or empty inputs.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return square root of average squared prediction error for equal-length nonempty
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Square each error before averaging.
+## Tips
+Squaring gives large errors more influence than small errors.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

@@ -1,6 +1,9 @@
-# euclidean_distance
+# Straight-Line Distance
 
-## Challenge
+## Description
+Measure geometric distance between numeric vectors of equal length.
+
+### Behavior contract
 Return Euclidean distance between equal-length numeric vectors. Empty vectors have distance 0. Raise ValueError for different lengths.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return Euclidean distance between equal-length numeric vectors. Empty vectors ha
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Sum squared coordinate differences and take a square root.
+## Tips
+Dimension mismatch is an invalid comparison.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

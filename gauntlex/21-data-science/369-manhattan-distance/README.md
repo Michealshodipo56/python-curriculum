@@ -1,6 +1,9 @@
-# manhattan_distance
+# City-Block Distance
 
-## Challenge
+## Description
+Sum absolute coordinate differences between two vectors.
+
+### Behavior contract
 Return the sum of absolute coordinate differences between equal-length numeric vectors. Empty vectors return 0; mismatched lengths raise ValueError.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the sum of absolute coordinate differences between equal-length numeric v
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Add absolute differences for each coordinate.
+## Tips
+Unlike Euclidean distance, this measure does not square differences.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.
