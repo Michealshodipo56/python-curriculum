@@ -1,15 +1,17 @@
-# paircount
+# Matching Pairs
 
 ## Description
-Read one line of space-separated integers. Print how many distinct pairs of positions have equal values.
+Count the pairs of different positions that contain equal values. Repeated values can create more than one pair.
 
 ## Requirements
-For values appearing three times, count all three index pairs. Print zero for empty input.
+- Read one line of space-separated integers.
+- Count each pair of distinct positions with equal values exactly once.
+- Display the count as an integer; empty input produces zero.
 
-## Examples
-Input: "2 2 2\n" → output: "3\n"
-
-Input: "1 2 1 2\n" → output: "2\n"
+## Example
+Input: `2 2 2` → output: `3`. Input: `1 2 1 2` → output: `2`.
 
 ## Tips
-Each new occurrence of a value forms a pair with every previous occurrence of that value.
+When another copy of a value appears, how many new pairs can it form with earlier copies?
+
+The example illustrates the expected result, not a solution.

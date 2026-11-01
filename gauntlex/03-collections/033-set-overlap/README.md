@@ -1,15 +1,17 @@
-# setoverlap
+# Shared Vocabulary
 
 ## Description
-Read two lines of space-separated words. Print the common words in alphabetical order, separated by spaces.
+Compare two collections of words and report only the distinct values that appear in both.
 
 ## Requirements
-Each word appears at most once in the output. Print a blank line if none overlap.
+- Read two lines of space-separated words.
+- Display common words in alphabetical order, separated by single spaces.
+- Print each word at most once; display a blank line when there is no overlap.
 
-## Examples
-Input: "red blue green\nblue yellow red\n" → output: "blue red\n"
-
-Input: "a a b\nb b c\n" → output: "b\n"
+## Example
+Input lines: `red blue green` and `blue yellow red` → output: `blue red`.
 
 ## Tips
-Set intersection finds values shared by two collections; sorting makes the output deterministic.
+Think about the difference between membership, repetition, and ordering. The result needs all three handled deliberately.
+
+The example illustrates the expected result, not a solution.

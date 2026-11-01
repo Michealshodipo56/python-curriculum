@@ -1,15 +1,17 @@
-# middleslice
+# Inside the Boundaries
 
 ## Description
-Read one line of space-separated words. Print every word except the first and last, separated by one space.
+Take a sequence of words and retain only those strictly between its first and last elements.
 
 ## Requirements
-For fewer than three words, print a blank line.
+- Read one line of space-separated words.
+- Display every word except the first and last, separated by single spaces.
+- For fewer than three words, display a blank line.
 
-## Examples
-Input: "a b c d\n" → output: "b c\n"
-
-Input: "a b\n" → output: "\n"
+## Example
+Input: `a b c d` → output: `b c`. Input: `a b` → blank line.
 
 ## Tips
-A slice selects a contiguous portion of a sequence using start and stop positions.
+Identify the starting and stopping positions of the desired region. What happens when that region is empty?
+
+The example illustrates the expected result, not a solution.
