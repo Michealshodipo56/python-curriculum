@@ -1,6 +1,9 @@
-# max_subarray
+# Best Continuous Segment
 
 ## Description
+Find the largest sum obtainable from one nonempty, uninterrupted segment.
+
+### Behavior contract
 Return the maximum sum of a nonempty contiguous subarray. Assume nums is nonempty.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the maximum sum of a nonempty contiguous subarray. Assume nums is nonempt
 `max_subarray([-4, -2, -8])` → `-2`
 
 ## Tips
-At each position choose whether to extend a previous segment or start anew.
+A segment must remain contiguous, and an all-negative input still needs a result.
+
+The examples define expected behavior; design your own implementation.

@@ -1,6 +1,9 @@
-# prefix_sums
+# Totals Along the Way
 
 ## Description
+Produce a running total after every element of a numeric sequence.
+
+### Behavior contract
 Return running totals for the integer list, with one total for each prefix.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return running totals for the integer list, with one total for each prefix.
 `prefix_sums([])` → `[]`
 
 ## Tips
-A single accumulator can record the total after each item.
+A prefix includes everything from the beginning through the current position.
+
+The examples define expected behavior; design your own implementation.

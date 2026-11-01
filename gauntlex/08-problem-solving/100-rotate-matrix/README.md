@@ -1,6 +1,9 @@
-# rotate_matrix
+# Quarter Turn
 
 ## Description
+Rotate a square grid clockwise into a new grid while keeping the original unchanged.
+
+### Behavior contract
 Return a new square matrix rotated 90 degrees clockwise. An empty matrix stays empty.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return a new square matrix rotated 90 degrees clockwise. An empty matrix stays e
 `rotate_matrix([])` → `[]`
 
 ## Tips
-An output row can be assembled from a column of the input.
+Draw where each corner moves after one clockwise quarter-turn.
+
+The examples define expected behavior; design your own implementation.

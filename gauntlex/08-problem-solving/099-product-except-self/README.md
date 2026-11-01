@@ -1,6 +1,9 @@
-# product_except_self
+# Everyone Else's Product
 
 ## Description
+Compute each position's product using all the other values, without division.
+
+### Behavior contract
 Return a list where each position contains the product of all other integers. Do not use division.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return a list where each position contains the product of all other integers. Do
 `product_except_self([0, 1, 2])` → `[2, 0, 0]`
 
 ## Tips
-Prefix and suffix products avoid division and handle zeros.
+Zeros make shortcuts based on division unreliable. Consider contributions from both sides.
+
+The examples define expected behavior; design your own implementation.

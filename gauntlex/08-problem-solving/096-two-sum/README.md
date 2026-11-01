@@ -1,6 +1,9 @@
-# two_sum
+# Find the Pair
 
 ## Description
+Locate two different positions whose values combine to reach a target.
+
+### Behavior contract
 Return indices [i,j] of two different elements summing to target, with i<j. If multiple pairs exist, choose the pair with smallest j, then smallest i. Return [] if none.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return indices [i,j] of two different elements summing to target, with i<j. If m
 `two_sum([3, 3], 6)` → `[0, 1]`
 
 ## Tips
-Track previously seen values and their earliest indices.
+The earliest finishing pair takes precedence; think about how encounter order affects the result.
+
+The examples define expected behavior; design your own implementation.
