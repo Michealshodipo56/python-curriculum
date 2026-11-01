@@ -1,6 +1,9 @@
-# limited_map
+# Limit Concurrency
 
-## Challenge
+## Description
+Process asynchronous work while enforcing a maximum number of simultaneous operations.
+
+### Behavior contract
 Given async fn, values, and positive concurrency limit, return results in input order while ensuring no more than limit calls run simultaneously.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given async fn, values, and positive concurrency limit, return results in input 
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-A semaphore limits simultaneous work.
+## Tips
+A concurrency limit controls active work, not the number of total inputs.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

@@ -1,6 +1,9 @@
-# retry_async
+# Try Again
 
-## Challenge
+## Description
+Retry an asynchronous operation after ordinary failures without suppressing the final error.
+
+### Behavior contract
 Call a zero-argument async function up to attempts times, returning its first successful result. Retry only on Exception; re-raise the final exception. Raise ValueError if attempts < 1. No delays are required.
 
 ## Requirements
@@ -9,8 +12,7 @@ Call a zero-argument async function up to attempts times, returning its first su
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Keep the final exception rather than suppressing it.
+## Tips
+Every attempt should call the function again; do not reuse a failed coroutine.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

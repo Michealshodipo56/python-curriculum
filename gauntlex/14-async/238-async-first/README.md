@@ -1,6 +1,9 @@
-# first_completed
+# First to Finish
 
-## Challenge
+## Description
+Return the earliest completed asynchronous result and cancel unfinished work.
+
+### Behavior contract
 Accept a nonempty sequence of awaitables, return the result of the first to complete successfully, and cancel unfinished tasks. Assume no awaitable raises.
 
 ## Requirements
@@ -9,8 +12,7 @@ Accept a nonempty sequence of awaitables, return the result of the first to comp
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Wait for the first completed task and cancel pending work.
+## Tips
+Cancellation is part of correct cleanup, not an optional optimization.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

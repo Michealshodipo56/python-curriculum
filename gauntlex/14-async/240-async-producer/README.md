@@ -1,6 +1,9 @@
-# produce_items
+# Produce in Sequence
 
-## Challenge
+## Description
+Place a series of values into an asynchronous queue and report how many were added.
+
+### Behavior contract
 Put each element from values into an asyncio.Queue in order and return the number of items enqueued.
 
 ## Requirements
@@ -9,8 +12,7 @@ Put each element from values into an asyncio.Queue in order and return the numbe
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-The queue's put method is awaitable.
+## Tips
+Queue insertion can require waiting when capacity is limited.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

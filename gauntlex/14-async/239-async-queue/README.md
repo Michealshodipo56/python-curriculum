@@ -1,6 +1,9 @@
-# queue_drain
+# Drain the Queue
 
-## Challenge
+## Description
+Collect all items currently waiting in an asynchronous queue without waiting for future arrivals.
+
+### Behavior contract
 Given an asyncio.Queue already containing items, remove and return all currently queued items in FIFO order without blocking.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given an asyncio.Queue already containing items, remove and return all currently
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Use nonblocking queue operations when draining an existing queue.
+## Tips
+Draining what is already present differs from waiting for a producer.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.
