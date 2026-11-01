@@ -1,18 +1,19 @@
-# hello
+# First Signal
 
 ## Description
-Create `main.py` that writes `Hello, world!` followed by one newline to standard output.
+Write your first Python program. When it runs, the terminal should display a single welcome message. This exercise introduces the relationship between a source file, the Python interpreter, and standard output.
 
 ## Requirements
-- Use Python 3.
-- Print exactly the required message.
-- Do not prompt for input or print extra text.
+- Work in `main.py`.
+- Display `Hello, world!` exactly once.
+- Do not request input or add other output.
 
-## Examples
-```console
-$ python main.py
+## Example
+```text
 Hello, world!
 ```
 
 ## Tips
-`print()` sends text to standard output. A string is text enclosed in matching quotes. Python normally adds a newline when displaying a value.
+Explore how a Python script is executed. What is the difference between the characters stored in your source file and the text displayed in the terminal?
+
+The example illustrates expected behavior; it is not an implementation.

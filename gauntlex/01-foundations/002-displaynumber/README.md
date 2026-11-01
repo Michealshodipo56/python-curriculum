@@ -1,18 +1,19 @@
-# displaynumber
+# The Answer
 
 ## Description
-Create `main.py` that writes the integer `42` followed by a newline.
+Create a program that displays a whole number. Unlike a sentence, the value represents a quantity, even though its visible output consists of characters.
 
 ## Requirements
-- Run with Python 3.
-- Write exactly `42` and a newline.
-- Do not add labels, prompts, or extra output.
+- Work in `main.py`.
+- Display `42` on its own line.
+- Do not add a label, prompt, or other output.
 
-## Examples
-```console
-$ python main.py
+## Example
+```text
 42
 ```
 
 ## Tips
-Integers are whole numbers. Python can display numbers without treating them as quoted text.
+Think about the distinction between an integer value and a string containing digits. Both can look alike in terminal output.
+
+The example illustrates expected behavior; it is not an implementation.
