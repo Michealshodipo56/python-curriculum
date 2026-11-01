@@ -1,6 +1,9 @@
-# orders_with_users
+# Orders and Their Owners
 
-## Challenge
+## Description
+Combine related tables to show each order alongside its user's name.
+
+### Behavior contract
 Return [order_id,user_name,amount] for orders joined to users by user_id, ordered by order_id. Assume tables users(id,name,email), orders(id,user_id,amount). Exclude orphan orders.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [order_id,user_name,amount] for orders joined to users by user_id, ordere
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-An INNER JOIN excludes unmatched rows.
+## Tips
+An order without a matching user must not appear in the joined result.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.

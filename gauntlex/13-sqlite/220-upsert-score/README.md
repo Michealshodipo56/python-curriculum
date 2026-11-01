@@ -1,6 +1,9 @@
-# upsert_score
+# Create or Replace a Score
 
-## Challenge
+## Description
+Maintain one score per student by inserting new records or updating existing ones.
+
+### Behavior contract
 In scores(student TEXT PRIMARY KEY,score INTEGER), insert or update the score for a student, overwriting any previous value.
 
 ## Requirements
@@ -10,8 +13,7 @@ In scores(student TEXT PRIMARY KEY,score INTEGER), insert or update the score fo
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-An UPSERT can update an existing primary key.
+## Tips
+The primary key determines whether the operation creates a row or changes one.
 
-## Run tests
-`python -m pytest tests -q`
+Implement the database behavior without using solution code from another task.
