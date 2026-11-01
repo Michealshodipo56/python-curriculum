@@ -1,6 +1,9 @@
-# route_priority
+# Route Specificity
 
-## Challenge
+## Description
+Score route templates according to how many literal segments they contain.
+
+### Behavior contract
 Return the number of literal segments in a route template. A segment is dynamic only if it starts with { and ends with }. Ignore empty segments caused by leading or trailing slashes.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the number of literal segments in a route template. A segment is dynamic 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Literal segments make a route more specific.
+## Tips
+Dynamic segments are less specific than literal ones.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.
