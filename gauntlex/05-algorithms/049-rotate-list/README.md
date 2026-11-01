@@ -1,7 +1,7 @@
-# rotate_right
+# Circular Shift
 
 ## Description
-Return a new list rotated right by k positions. k is nonnegative; an empty list stays empty.
+Imagine the end of a list wrapping around to its beginning. Rotate the elements to the right without changing the original collection.
 
 ## Requirements
 - Implement `rotate_right(items, k)` in `solution.py`.
@@ -15,4 +15,6 @@ Return a new list rotated right by k positions. k is nonnegative; an empty list 
 `rotate_right([1, 2], 5)` → `[2, 1]`
 
 ## Tips
-Modulo reduces rotations larger than the list length.
+What happens after a full rotation? Explore how a very large rotation relates to the length of the list.
+
+The examples illustrate the contract without providing an implementation.

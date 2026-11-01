@@ -1,7 +1,7 @@
-# merge_sorted
+# Two Ordered Streams
 
 ## Description
-Merge two already sorted integer lists into one sorted list, preserving duplicates.
+Two input lists are already sorted. Combine them into one sorted sequence without losing any values or duplicates.
 
 ## Requirements
 - Implement `merge_sorted(left, right)` in `solution.py`.
@@ -15,4 +15,6 @@ Merge two already sorted integer lists into one sorted list, preserving duplicat
 `merge_sorted([], [-1, 2])` → `[-1, 2]`
 
 ## Tips
-Use two positions to select the smaller next item.
+At each step, only the next unconsumed element of each input can be the smallest remaining candidate.
+
+The examples illustrate the contract without providing an implementation.

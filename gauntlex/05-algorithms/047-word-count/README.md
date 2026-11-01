@@ -1,7 +1,7 @@
-# word_count
+# Count the Words
 
 ## Description
-Return the number of whitespace-separated words in a string.
+Whitespace can separate words in several ways. Determine how many words a piece of text contains, even when it has extra spaces.
 
 ## Requirements
 - Implement `word_count(text)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the number of whitespace-separated words in a string.
 `word_count("  a  b  ")` → `2`
 
 ## Tips
-Splitting without a separator handles repeated whitespace.
+Test text with leading, trailing, and repeated whitespace. What should happen when there are no words?
+
+The examples illustrate the contract without providing an implementation.

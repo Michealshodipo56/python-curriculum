@@ -1,7 +1,7 @@
-# longest_word
+# Longest in the Line
 
 ## Description
-Return the longest whitespace-separated word in a string. On ties, return the first. Return an empty string when no words exist.
+Search a sentence for the longest word. When several words share the maximum length, the earliest one wins.
 
 ## Requirements
 - Implement `longest_word(text)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the longest whitespace-separated word in a string. On ties, return the fi
 `longest_word("aa bb")` → `"aa"`
 
 ## Tips
-Keep a current best word and update only for strictly greater length.
+Consider how a comparison rule can preserve the first winner instead of replacing it with a tie.
+
+The examples illustrate the contract without providing an implementation.
