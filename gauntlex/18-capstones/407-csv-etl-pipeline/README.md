@@ -1,10 +1,24 @@
-# CSV ETL Pipeline
+# CSV Data Pipeline
 
-## Project brief and acceptance criteria
+## Description
+Transform CSV records into validated, deduplicated JSON Lines using safe file replacement.
+
+This is a project challenge. Plan the components, define their responsibilities, and implement the application without a provided solution.
+
+## Requirements
 Run python main.py INPUT.csv OUTPUT.jsonl. CSV header id,name,amount_cents. Trim fields; require nonempty id/name and nonnegative integer amount. Skip invalid rows; deduplicate by id keeping first valid row. Write compact sorted-key JSONL in original order using temporary file and atomic replacement. Print compact sorted-key JSON {written:N,skipped:M}. Missing args exit 2.
 
-## Deliverables
-Implement in starter/main.py, add unit tests and document architecture. Python 3.11+ standard library only. No network services. Do not print debug output to stdout. Handle filesystem paths and file writes safely.
+## Constraints
+- Use Python 3.11+ and the standard library only.
+- Do not use network services or print debug messages to standard output.
 
-## Run
-python -m pytest tests -q
+## Deliverables
+- Implement the application in `starter/main.py`, with additional modules only when useful.
+- Document the program's usage, key design choices, and failure behavior.
+- Explain how persistence, input validation, or the service lifecycle works where applicable.
+
+## Tips
+Deduplication keeps the first valid row for each identifier; an invalid earlier row must not claim that identifier.
+
+## Guide and Auditor
+The Gauntlex Guide should help you reason through decisions and debug issues without supplying finished code. The Auditor may ask you to demonstrate the required behavior and defend your design choices.
