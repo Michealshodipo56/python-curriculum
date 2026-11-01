@@ -1,6 +1,9 @@
-# statscli
+# Numeric Stream Summary
 
-## Challenge
+## Description
+Turn a stream of numbers into a concise statistical report.
+
+### Behavior contract
 Read whitespace-separated integers from standard input. Print `count=N`, `sum=S`, `min=M`, `max=X` on separate lines. For empty input print only `count=0` and `sum=0`.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: "count=0\nsum=0\n"
 
-## Hints
-Handle empty input before computing minimum and maximum.
+## Tips
+Consider how empty input and repeated values affect each statistic.
+
+Examples illustrate the output contract, not a solution.

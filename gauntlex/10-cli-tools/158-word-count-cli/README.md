@@ -1,6 +1,9 @@
-# wordcountcli
+# Three Text Measures
 
-## Challenge
+## Description
+Report the number of lines, words, and Unicode characters in an input stream.
+
+### Behavior contract
 Read arbitrary text from standard input. Print three integers on separate lines: line count using splitlines(), whitespace-separated word count, and total Unicode character count.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: "0\n0\n0\n"
 
-## Hints
-Read the complete input text once, then calculate each metric.
+## Tips
+These three measurements count different things; newlines and spaces contribute to characters.
+
+Examples illustrate the output contract, not a solution.

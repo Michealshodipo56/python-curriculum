@@ -1,6 +1,9 @@
-# csvfilter
+# Filter CSV Records
 
-## Challenge
+## Description
+Select records whose named field matches a target value and encode each match as JSON.
+
+### Behavior contract
 The first two input lines are column name and exact target value. Remaining input is CSV with a header. Print matching data records as compact JSON objects with sorted keys, one per line.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "status\nok\nname,status\nx,no\n"
 
 Expected output: ""
 
-## Hints
-A DictReader and a JSON encoder make output independent of CSV column order.
+## Tips
+Exact matching should not confuse values with similar spelling or capitalization.
+
+Examples illustrate the output contract, not a solution.

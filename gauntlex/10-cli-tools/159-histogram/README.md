@@ -1,6 +1,9 @@
-# histogram
+# Value Histogram
 
-## Challenge
+## Description
+Count occurrences of numeric values and display a frequency report in numeric order.
+
+### Behavior contract
 Read whitespace-separated nonnegative integers from standard input. For each distinct integer in ascending order, print `VALUE: COUNT` on its own line.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: ""
 
-## Hints
-A frequency dictionary and sorted keys produce deterministic output.
+## Tips
+Frequency is about repeated values, while sorting controls the presentation.
+
+Examples illustrate the output contract, not a solution.
