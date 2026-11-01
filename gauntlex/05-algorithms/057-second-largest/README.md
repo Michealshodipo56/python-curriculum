@@ -1,7 +1,7 @@
-# second_largest
+# Runner-Up Value
 
 ## Description
-Return the second-largest distinct integer in a list, or None if fewer than two distinct values exist.
+Find the second-largest distinct value rather than the second item in descending order.
 
 ## Requirements
 - Implement `second_largest(items)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the second-largest distinct integer in a list, or None if fewer than two 
 `second_largest([5, 5])` → `None`
 
 ## Tips
-Distinctness matters: duplicate occurrences do not create another rank.
+Duplicates do not create another rank. Think about lists with only one distinct value.
+
+The examples illustrate expected behavior, not an implementation.

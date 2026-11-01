@@ -1,7 +1,7 @@
-# transpose
+# Rows Become Columns
 
 ## Description
-Return the transpose of a rectangular matrix represented by a list of lists. An empty matrix returns an empty list.
+Reorient a rectangular matrix so that its columns become rows and its rows become columns.
 
 ## Requirements
 - Implement `transpose(matrix)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the transpose of a rectangular matrix represented by a list of lists. An 
 `transpose([[1, 2, 3]])` → `[[1], [2], [3]]`
 
 ## Tips
-Each output row collects the same column from every input row.
+Draw a small matrix and track the coordinates of one element through the transformation.
+
+The examples illustrate expected behavior, not an implementation.

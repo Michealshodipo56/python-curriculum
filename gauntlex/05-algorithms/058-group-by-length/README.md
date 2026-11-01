@@ -1,7 +1,7 @@
-# group_by_length
+# Group by Size
 
 ## Description
-Return a dictionary mapping each word length to the list of words of that length, preserving input order within each list.
+Organize words into groups based on their character counts, preserving their encounter order within each group.
 
 ## Requirements
 - Implement `group_by_length(words)` in `solution.py`.
@@ -15,4 +15,6 @@ Return a dictionary mapping each word length to the list of words of that length
 `group_by_length([])` → `{}`
 
 ## Tips
-Use a dictionary with lengths as keys and lists as values.
+What data structure lets you associate one length with several words?
+
+The examples illustrate expected behavior, not an implementation.

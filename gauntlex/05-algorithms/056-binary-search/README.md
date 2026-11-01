@@ -1,7 +1,7 @@
-# binary_search
+# Halve the Search
 
 ## Description
-Return the index of an integer target in a sorted list, or -1 if absent. Any matching index is acceptable for duplicates.
+Locate a value in an already sorted list by repeatedly narrowing the region where it could occur.
 
 ## Requirements
 - Implement `binary_search(items, target)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the index of an integer target in a sorted list, or -1 if absent. Any mat
 `binary_search([1, 3, 5], 2)` → `-1`
 
 ## Tips
-Compare the middle element and discard the half that cannot contain the target.
+Each comparison should rule out an entire portion of the remaining search interval.
+
+The examples illustrate expected behavior, not an implementation.
