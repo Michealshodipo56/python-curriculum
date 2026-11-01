@@ -1,6 +1,9 @@
-# directory_manifest
+# Map a Directory
 
-## Challenge
+## Description
+Create a sorted inventory of regular files beneath a directory.
+
+### Behavior contract
 Given a directory path, recursively return sorted relative POSIX paths of all regular files beneath it. Exclude directories and do not follow directory symlinks.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a directory path, recursively return sorted relative POSIX paths of all re
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Use pathlib recursion and convert relative paths to POSIX separators.
+## Tips
+Directory symlinks should not lead the traversal outside the intended tree.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

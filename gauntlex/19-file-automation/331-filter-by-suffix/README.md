@@ -1,6 +1,9 @@
-# filter_suffix
+# Select File Types
 
-## Challenge
+## Description
+Filter filenames by their final extension while preserving the original order.
+
+### Behavior contract
 Given a list of filenames and a suffix, return filenames whose final suffix matches case-insensitively, preserving order. The suffix must include the dot.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of filenames and a suffix, return filenames whose final suffix matc
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Compare lowercase suffixes rather than searching anywhere in the filename.
+## Tips
+Match the final suffix, not a similar substring elsewhere in the name.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

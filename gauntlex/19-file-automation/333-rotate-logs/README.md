@@ -1,6 +1,9 @@
-# rotation_names
+# Plan Log Backups
 
-## Challenge
+## Description
+Generate a predictable sequence of backup filenames without changing the filesystem.
+
+### Behavior contract
 Given a base filename and positive number of backups, return backup filenames in ascending numeric order, from `.1` to `.N`. Do not touch the filesystem.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a base filename and positive number of backups, return backup filenames in
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Validate the backup count before generating names.
+## Tips
+This task plans names only; it does not rotate files.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.
