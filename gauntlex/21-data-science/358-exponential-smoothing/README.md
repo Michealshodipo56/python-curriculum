@@ -1,6 +1,9 @@
-# exponential_smoothing
+# Weighted Recent History
 
-## Challenge
+## Description
+Produce a smoothed series where newer observations receive a controlled weight.
+
+### Behavior contract
 Return a list of smoothed values where first output equals first input and each later output is alpha*current+(1-alpha)*previous_smoothed. Require 0<alpha<=1; empty values return [].
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a list of smoothed values where first output equals first input and each 
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Each smoothed value depends on the previous smoothed output.
+## Tips
+Each output depends on the previous smoothed value, not simply the previous raw value.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

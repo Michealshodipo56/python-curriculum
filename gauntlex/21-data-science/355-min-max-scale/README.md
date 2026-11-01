@@ -1,6 +1,9 @@
-# min_max_scale
+# Scale to Zero and One
 
-## Challenge
+## Description
+Rescale a dataset to a common interval without changing the original values.
+
+### Behavior contract
 Scale numeric values to [0,1] using (x-min)/(max-min). Return [] for empty input and zeros when all values are equal. Do not mutate input.
 
 ## Requirements
@@ -9,8 +12,7 @@ Scale numeric values to [0,1] using (x-min)/(max-min). Return [] for empty input
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Find extrema once; handle a zero denominator.
+## Tips
+Handle a constant dataset where the range is zero.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

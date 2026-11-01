@@ -1,6 +1,9 @@
-# weighted_mean
+# Weighted Observations
 
-## Challenge
+## Description
+Calculate a mean where each value has an explicitly assigned importance.
+
+### Behavior contract
 Return sum(value*weight)/sum(weights) for equal-length nonempty lists. Weights must be nonnegative with positive total. Raise ValueError otherwise.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return sum(value*weight)/sum(weights) for equal-length nonempty lists. Weights m
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Validate shape and total weight before division.
+## Tips
+Reject zero total weight rather than dividing by it.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

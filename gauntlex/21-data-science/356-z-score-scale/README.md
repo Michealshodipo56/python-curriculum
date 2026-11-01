@@ -1,6 +1,9 @@
-# z_score_scale
+# Standardize Observations
 
-## Challenge
+## Description
+Transform values relative to their population mean and standard deviation.
+
+### Behavior contract
 Standardize a list of numeric values using population standard deviation (divide variance by n). Return [] for empty input, and all zeros for zero variance.
 
 ## Requirements
@@ -9,8 +12,7 @@ Standardize a list of numeric values using population standard deviation (divide
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Population variance divides by the number of observations.
+## Tips
+A zero-variance dataset requires a defined result.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.
