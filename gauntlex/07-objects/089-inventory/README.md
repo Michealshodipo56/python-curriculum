@@ -1,6 +1,9 @@
-# inventory
+# Stock Ledger
 
 ## Description
+Maintain item quantities while preventing invalid or impossible stock transactions.
+
+### Behavior contract
 Implement Inventory with stock(name,quantity), sell(name,quantity), and quantity(name). Stock and sell quantities must be positive integers; selling more than available raises ValueError. Missing items have quantity zero.
 
 ## Requirements
@@ -9,8 +12,7 @@ Implement Inventory with stock(name,quantity), sell(name,quantity), and quantity
 - Do not read input or print at import time.
 - Use the Python standard library only.
 
-## Examples
-The tests exercise the class methods and expected state changes.
-
 ## Tips
-Use a dictionary keyed by item name and validate transactions before updating.
+How should the object respond when a sale exceeds the quantity on hand?
+
+Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
