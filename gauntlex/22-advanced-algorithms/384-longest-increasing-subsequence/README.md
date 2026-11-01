@@ -1,6 +1,9 @@
-# lis_length
+# Increasing Subsequence
 
-## Challenge
+## Description
+Find the length of the longest strictly increasing subsequence within a target efficiency.
+
+### Behavior contract
 Return the length of the longest strictly increasing subsequence of integer values. Empty input returns zero. Target O(n log n) time.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the length of the longest strictly increasing subsequence of integer valu
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Maintain the smallest possible tail value for each subsequence length.
+## Tips
+A subsequence need not be contiguous, but its elements must retain original order.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.

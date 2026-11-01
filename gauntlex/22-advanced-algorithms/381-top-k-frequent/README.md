@@ -1,6 +1,9 @@
-# top_k_frequent
+# Frequency with Stable Ties
 
-## Challenge
+## Description
+Rank the most frequent values while resolving ties by first appearance.
+
+### Behavior contract
 Given hashable values and nonnegative integer k, return up to k distinct values ordered by descending frequency, breaking ties by the index of their first appearance. Raise ValueError for negative k.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given hashable values and nonnegative integer k, return up to k distinct values 
 - Do not mutate inputs or print.
 - Respect the specified asymptotic complexity.
 
-## Hint
-Keep frequency counts and first occurrence indices.
+## Tips
+Frequency and encounter order both influence the final ranking.
 
-## Run tests
-`python -m pytest tests -q`
+The task is to design an implementation that meets both behavior and efficiency requirements.
