@@ -1,6 +1,9 @@
-# bucket_count
+# Build a Histogram
 
-## Challenge
+## Description
+Distribute numeric values into fixed-width, half-open buckets and count each bucket.
+
+### Behavior contract
 Count numeric values in half-open intervals [0,width), [width,2*width), ... for bucket_count bins. Values below 0 or >=width*bucket_count are ignored. Assume width>0 and bucket_count>=0.
 
 ## Requirements
@@ -14,5 +17,7 @@ Count numeric values in half-open intervals [0,width), [width,2*width), ... for 
 
 `bucket_count([-1, 0, 10], 5, 2)` → `[1, 0]`
 
-## Hints
-Integer division can identify a bucket index.
+## Tips
+Boundary values belong to the bucket on their right; values outside the supported range are ignored.
+
+Examples illustrate expected values, not a solution.

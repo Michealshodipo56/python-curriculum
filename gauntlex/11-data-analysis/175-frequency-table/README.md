@@ -1,6 +1,9 @@
-# frequency_table
+# Observation Counts
 
-## Challenge
+## Description
+Summarize a dataset by recording how often each integer appears.
+
+### Behavior contract
 Return a dictionary mapping each integer in the input to its count.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return a dictionary mapping each integer in the input to its count.
 
 `frequency_table([])` → `{}`
 
-## Hints
-A dictionary stores counts keyed by integers.
+## Tips
+An empty dataset should produce an empty frequency mapping.
+
+Examples illustrate expected values, not a solution.

@@ -1,6 +1,9 @@
-# matrix_multiply
+# Matrix Composition
 
-## Challenge
+## Description
+Multiply two compatible matrices to produce a new matrix.
+
+### Behavior contract
 Return matrix product A*B for compatible nonempty rectangular numeric matrices.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return matrix product A*B for compatible nonempty rectangular numeric matrices.
 
 `matrix_multiply([[2]], [[3]])` → `[[6]]`
 
-## Hints
-Each output cell is the dot product of a row of A and a column of B.
+## Tips
+Each output cell combines one input row with one input column.
+
+Examples illustrate expected values, not a solution.

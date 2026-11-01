@@ -1,6 +1,9 @@
-# cumulative_product
+# Running Products
 
-## Challenge
+## Description
+Produce the product of all values encountered up to each position.
+
+### Behavior contract
 Return running products of an integer list; empty input returns [].
 
 ## Requirements
@@ -14,5 +17,7 @@ Return running products of an integer list; empty input returns [].
 
 `cumulative_product([2, 0, 4])` → `[2, 0, 0]`
 
-## Hints
-Keep an accumulator initialized to the multiplicative identity.
+## Tips
+Zero affects every later running product, even if subsequent values are nonzero.
+
+Examples illustrate expected values, not a solution.
