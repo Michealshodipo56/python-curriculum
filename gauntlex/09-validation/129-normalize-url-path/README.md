@@ -1,6 +1,9 @@
-# normalize_url_path
+# Canonical URL Paths
 
 ## Description
+Resolve redundant separators and relative segments to produce a stable rooted URL path.
+
+### Behavior contract
 Normalize a POSIX URL path by collapsing repeated slashes and removing . segments. Resolve .. segments without going above root. Return a leading /; do not preserve trailing slash except root.
 
 ## Requirements
@@ -15,4 +18,6 @@ Normalize a POSIX URL path by collapsing repeated slashes and removing . segment
 `normalize_url_path("../../x")` → `"/x"`
 
 ## Tips
-A stack can resolve path segments without accessing the filesystem.
+Treat parent segments at the root carefully: normalization must never travel above it.
+
+The examples specify results without giving an implementation.

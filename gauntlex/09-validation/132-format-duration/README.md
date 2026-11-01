@@ -1,6 +1,9 @@
-# format_duration
+# Seconds to Clock Text
 
 ## Description
+Convert a nonnegative duration into a consistent hours-minutes-seconds representation.
+
+### Behavior contract
 Format nonnegative integer seconds as `H:MM:SS`, with unpadded hours and exactly two digits each for minutes and seconds. Raise ValueError for negative seconds.
 
 ## Requirements
@@ -15,4 +18,6 @@ Format nonnegative integer seconds as `H:MM:SS`, with unpadded hours and exactly
 `format_duration(0)` → `"0:00:00"`
 
 ## Tips
-Integer division and remainders split a total into hours, minutes and seconds.
+Hours may exceed two digits; minutes and seconds must always occupy two digits.
+
+The examples specify results without giving an implementation.

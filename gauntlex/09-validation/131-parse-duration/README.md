@@ -1,6 +1,9 @@
-# parse_duration
+# Clock Text to Seconds
 
 ## Description
+Interpret a duration expressed in hours, minutes, and seconds, rejecting malformed notation.
+
+### Behavior contract
 Parse a duration formatted as `H:MM:SS`, where H is a nonnegative integer and MM and SS are exactly two digits from 00 to 59. Return total seconds. Raise ValueError on invalid input.
 
 ## Requirements
@@ -15,4 +18,6 @@ Parse a duration formatted as `H:MM:SS`, where H is a nonnegative integer and MM
 `parse_duration("0:00:05")` → `5`
 
 ## Tips
-Validate the exact structure before converting units.
+Validate minute and second bounds before combining the three units.
+
+The examples specify results without giving an implementation.
