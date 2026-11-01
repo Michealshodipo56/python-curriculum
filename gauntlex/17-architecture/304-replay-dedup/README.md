@@ -1,6 +1,9 @@
-# replay_unique
+# Replay Exactly Once
 
-## Challenge
+## Description
+Reconstruct balances from events while applying each event identifier at most once.
+
+### Behavior contract
 Given a list of event dictionaries with unique string id and account/delta fields, return account balances while applying each event ID at most once (first occurrence wins).
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of event dictionaries with unique string id and account/delta field
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Deduplicate before applying events to keep replay idempotent.
+## Tips
+Deduplication must happen before applying an event's effect.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

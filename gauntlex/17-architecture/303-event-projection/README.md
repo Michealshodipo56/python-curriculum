@@ -1,6 +1,9 @@
-# project_balances
+# Rebuild Account Balances
 
-## Challenge
+## Description
+Turn a stream of account changes into current balances.
+
+### Behavior contract
 Given a list of event dictionaries with account string, delta integer, and unique id string, return a mapping of account to final integer balance, summing deltas in event order. Accounts with net zero remain present.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of event dictionaries with account string, delta integer, and uniqu
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-A projection reduces an event stream into current state.
+## Tips
+A net-zero account should still appear in the projection.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

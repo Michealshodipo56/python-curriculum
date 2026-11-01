@@ -1,6 +1,9 @@
-# deduplicate_events
+# Keep First Events
 
-## Challenge
+## Description
+Remove duplicate events by identifier while preserving first appearance.
+
+### Behavior contract
 Given a list of event dictionaries with string id fields, return first occurrences of each id in original order as shallow copies. Do not mutate inputs.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of event dictionaries with string id fields, return first occurrenc
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Use a seen-ID set to make deduplication linear.
+## Tips
+An event with a repeated ID must not overwrite the first accepted event.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

@@ -1,6 +1,9 @@
-# partition_key
+# Choose a Stable Partition
 
-## Challenge
+## Description
+Map an identifier to one of several partitions in a repeatable way.
+
+### Behavior contract
 Given a nonempty string identifier and positive partition_count, return the integer index obtained by converting the SHA-256 UTF-8 digest to a big-endian integer and taking modulo partition_count.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a nonempty string identifier and positive partition_count, return the inte
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Stable hashing distributes identifiers without relying on Python's randomized hash.
+## Tips
+Python's built-in hash is not guaranteed to be stable across processes.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

@@ -1,6 +1,9 @@
-# config_diff
+# Configuration Changes
 
-## Challenge
+## Description
+Report which settings changed between two configurations.
+
+### Behavior contract
 Return a sorted list of keys whose values differ between old and new dictionaries. Treat missing keys as different from present keys, even when the present value is None.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a sorted list of keys whose values differ between old and new dictionarie
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-A sentinel distinguishes missing keys from None values.
+## Tips
+A missing setting and a present setting with `None` are not equivalent.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.
