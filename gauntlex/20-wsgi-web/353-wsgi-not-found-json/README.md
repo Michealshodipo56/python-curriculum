@@ -1,6 +1,9 @@
-# application
+# Consistent Not Found
 
-## Challenge
+## Description
+Return a structured JSON error for any requested path.
+
+### Behavior contract
 Implement a WSGI application that always returns 404 Not Found, Content-Type application/json, and compact JSON bytes `{"error":"not found","path":PATH}` where PATH is PATH_INFO or empty string.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement a WSGI application that always returns 404 Not Found, Content-Type app
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Return a consistent error envelope for unknown routes.
+## Tips
+Error responses need the same attention to content type and encoding as successful responses.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

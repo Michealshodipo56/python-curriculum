@@ -1,6 +1,9 @@
-# application
+# Read Form Fields
 
-## Challenge
+## Description
+Decode a URL-encoded POST body and return a selected form value.
+
+### Behavior contract
 Implement POST `/form` accepting application/x-www-form-urlencoded body and returning the first `name` value as UTF-8 bytes, or empty bytes if absent. Return 200 with Content-Type text/plain.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement POST `/form` accepting application/x-www-form-urlencoded body and retu
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Form bodies use the same encoding rules as URL query strings.
+## Tips
+Form data uses percent decoding and plus-as-space rules.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

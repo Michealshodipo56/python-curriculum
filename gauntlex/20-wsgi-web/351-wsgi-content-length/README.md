@@ -1,6 +1,9 @@
-# application
+# Count Response Bytes
 
-## Challenge
+## Description
+Set an accurate Content-Length header for a UTF-8 response containing non-ASCII characters.
+
+### Behavior contract
 Implement GET `/payload` returning 200 with UTF-8 bytes for `café`, Content-Type text/plain; charset=utf-8, and Content-Length set to the byte length of the response body.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/payload` returning 200 with UTF-8 bytes for `café`, Content-Typ
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Byte length differs from character length for non-ASCII text.
+## Tips
+A Unicode character may occupy more than one byte.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

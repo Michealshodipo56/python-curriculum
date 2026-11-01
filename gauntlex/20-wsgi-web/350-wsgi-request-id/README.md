@@ -1,6 +1,9 @@
-# application
+# Validate Request IDs
 
-## Challenge
+## Description
+Accept a supplied request identifier only when it satisfies a strict format.
+
+### Behavior contract
 Implement GET `/request` returning 200 and body `ok`, with X-Request-ID header equal to HTTP_X_REQUEST_ID if it is a nonempty ASCII alphanumeric string of at most 32 characters. Otherwise use `generated`.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/request` returning 200 and body `ok`, with X-Request-ID header e
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Validate untrusted header values before reflecting them.
+## Tips
+Never reflect arbitrary header text into a response without validation.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.
