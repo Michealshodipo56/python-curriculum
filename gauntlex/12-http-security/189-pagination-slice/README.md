@@ -1,6 +1,9 @@
-# paginate
+# One Page of Results
 
-## Challenge
+## Description
+Select one page of records from a collection without altering the original.
+
+### Behavior contract
 Return the items belonging to 1-based page of size page_size. Raise ValueError for invalid page or size. Do not mutate items.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the items belonging to 1-based page of size page_size. Raise ValueError f
 `paginate([1, 2], 3, 2)` → `[]`
 
 ## Tips
-Use the calculated offset as a slice start.
+A page beyond the available records is empty, not an error.
+
+Examples describe the contract, not a solution.

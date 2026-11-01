@@ -1,6 +1,9 @@
-# pagination_offset
+# Page to Offset
 
-## Challenge
+## Description
+Translate a one-based page number into a zero-based record offset.
+
+### Behavior contract
 Return offset for 1-based page and positive page_size: (page-1)*page_size. Raise ValueError if either is not positive.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return offset for 1-based page and positive page_size: (page-1)*page_size. Raise
 `pagination_offset(3, 20)` → `40`
 
 ## Tips
-Validate page numbering before calculating the offset.
+Page one begins at offset zero. Invalid page sizes must be rejected.
+
+Examples describe the contract, not a solution.

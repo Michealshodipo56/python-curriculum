@@ -1,6 +1,9 @@
-# filter_records
+# Match Every Field
 
-## Challenge
+## Description
+Filter structured records by a set of exact key-value requirements.
+
+### Behavior contract
 Given a list of dictionaries and a mapping of expected key/value pairs, return records matching every pair, preserving order. Empty filters match all records. Return shallow copies.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a list of dictionaries and a mapping of expected key/value pairs, return r
 `filter_records([{"a": 1}], {})` → `[{"a": 1}]`
 
 ## Tips
-Check all requested fields for each record.
+A record matches only when all requested fields agree; empty criteria match everything.
+
+Examples describe the contract, not a solution.

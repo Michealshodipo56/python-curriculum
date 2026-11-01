@@ -1,6 +1,9 @@
-# retry_delay
+# Backoff with a Ceiling
 
-## Challenge
+## Description
+Calculate exponentially increasing retry delays that stop growing beyond a cap.
+
+### Behavior contract
 Return exponential backoff delay in seconds for nonnegative attempt, positive base, and positive cap: min(cap,base*2**attempt).
 
 ## Requirements
@@ -15,4 +18,6 @@ Return exponential backoff delay in seconds for nonnegative attempt, positive ba
 `retry_delay(3, 0.5, 10)` → `4`
 
 ## Tips
-A cap prevents backoff from growing indefinitely.
+The first attempt starts at the base delay; later attempts double it.
+
+Examples describe the contract, not a solution.
