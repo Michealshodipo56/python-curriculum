@@ -1,15 +1,17 @@
-# listends
+# At Both Ends
 
 ## Description
-Read a nonempty line of space-separated words. Print the first and last words, each on its own line.
+Collections have a beginning and an end. Retrieve the values at those boundaries without changing their order.
 
 ## Requirements
-A single-word input prints the same word twice.
+- Read one nonempty line of space-separated words.
+- Display the first word and last word on separate lines.
+- A single word must be displayed twice.
 
-## Examples
-Input: "red blue green\n" → output: "red\ngreen\n"
-
-Input: "solo\n" → output: "solo\nsolo\n"
+## Example
+Input: `red blue green` → output lines `red`, `green`. Input: `solo` → output lines `solo`, `solo`.
 
 ## Tips
-List positions start at zero. Negative indexing can access the end.
+Explore how positions work in a sequence, including how to access an element relative to its end.
+
+The example illustrates the expected result, not a solution.

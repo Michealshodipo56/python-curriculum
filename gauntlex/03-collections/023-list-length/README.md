@@ -1,15 +1,17 @@
-# listlength
+# Count the Collection
 
 ## Description
-Read one line of space-separated integers. Print the number of values. An empty line represents an empty list.
+A line of input may contain several values or none at all. Interpret it as a collection of integers and report how many elements it contains.
 
 ## Requirements
-Print only the count.
+- Read one line of space-separated integers; an empty line represents an empty collection.
+- Display only the number of elements.
+- Input: `1 2 3` → output: `3`. Empty input line → output: `0`.
 
-## Examples
-Input: "1 2 3\n" → output: "3\n"
-
-Input: "\n" → output: "0\n"
+## Example
+Consider the difference between counting characters and counting individual values. What should splitting an empty line produce?
 
 ## Tips
-A list can be created from text split on whitespace. The length of a list counts its elements.
+undefined
+
+The example illustrates the expected result, not a solution.
