@@ -1,6 +1,9 @@
-# minmax_normalize
+# Scale to Unit Range
 
-## Challenge
+## Description
+Rescale observations so the smallest maps to zero and the largest to one.
+
+### Behavior contract
 Return values normalized into [0,1] by (x-min)/(max-min). If all values are equal, return a list of zeros. Empty input returns [].
 
 ## Requirements
@@ -14,5 +17,7 @@ Return values normalized into [0,1] by (x-min)/(max-min). If all values are equa
 
 `minmax_normalize([3, 3])` → `[0, 0]`
 
-## Hints
-Handle zero range before dividing.
+## Tips
+When all values are equal, the range is zero and needs a defined result.
+
+Examples illustrate expected values, not a solution.

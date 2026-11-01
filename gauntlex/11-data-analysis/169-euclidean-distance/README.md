@@ -1,6 +1,9 @@
-# euclidean_distance
+# Distance in Many Dimensions
 
-## Challenge
+## Description
+Compute the straight-line distance between two numeric vectors.
+
+### Behavior contract
 Return Euclidean distance between two equal-length numeric vectors. Empty vectors have distance zero.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return Euclidean distance between two equal-length numeric vectors. Empty vector
 
 `euclidean_distance([], [])` → `0`
 
-## Hints
-Square differences, sum, and take the square root.
+## Tips
+Think about how the familiar two-dimensional distance formula generalizes.
+
+Examples illustrate expected values, not a solution.

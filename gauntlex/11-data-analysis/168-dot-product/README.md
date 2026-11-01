@@ -1,6 +1,9 @@
-# dot_product
+# Multiply and Accumulate
 
-## Challenge
+## Description
+Combine two equal-length numeric vectors into a single scalar value.
+
+### Behavior contract
 Return the dot product of two equal-length numeric lists. Empty lists produce zero.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the dot product of two equal-length numeric lists. Empty lists produce ze
 
 `dot_product([], [])` → `0`
 
-## Hints
-Multiply matching positions and add the products.
+## Tips
+Pair elements by position rather than comparing every value with every other value.
+
+Examples illustrate expected values, not a solution.

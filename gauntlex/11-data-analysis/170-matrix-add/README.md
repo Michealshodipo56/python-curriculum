@@ -1,6 +1,9 @@
-# matrix_add
+# Add Two Grids
 
-## Challenge
+## Description
+Add matching elements from two rectangular matrices without modifying either input.
+
+### Behavior contract
 Return the elementwise sum of two equal-shaped rectangular numeric matrices. Empty matrices return [].
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the elementwise sum of two equal-shaped rectangular numeric matrices. Emp
 
 `matrix_add([], [])` → `[]`
 
-## Hints
-Visit matching rows and columns without changing the originals.
+## Tips
+Each output position depends on the same position in both inputs.
+
+Examples illustrate expected values, not a solution.

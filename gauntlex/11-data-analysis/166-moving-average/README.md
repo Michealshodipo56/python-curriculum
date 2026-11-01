@@ -1,6 +1,9 @@
-# moving_average
+# Sliding Average
 
-## Challenge
+## Description
+Compute the average of every consecutive fixed-length window.
+
+### Behavior contract
 Return a list of averages of each consecutive window of size k. Assume k is positive; return [] if k exceeds input length.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return a list of averages of each consecutive window of size k. Assume k is posi
 
 `moving_average([1, 2], 3)` → `[]`
 
-## Hints
-Maintain a running window sum instead of summing each window from scratch.
+## Tips
+Adjacent windows share most of their elements; consider what information can be reused.
+
+Examples illustrate expected values, not a solution.
