@@ -1,6 +1,9 @@
-# dedupe_requirements
+# One Requirement per Package
 
-## Challenge
+## Description
+Remove repeated package requirements, keeping the final entry for each normalized name.
+
+### Behavior contract
 Given valid exact requirements, return one per normalized package name, keeping the last occurrence and preserving the order of surviving last occurrences.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given valid exact requirements, return one per normalized package name, keeping 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Record each package's last index before filtering.
+## Tips
+The order of surviving last occurrences matters.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

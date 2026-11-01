@@ -1,6 +1,9 @@
-# parse_requirement
+# Pinned Dependency
 
-## Challenge
+## Description
+Interpret a package requirement and normalize its distribution name.
+
+### Behavior contract
 Parse an exact requirement `name==version`, where name contains ASCII letters, digits, underscores or hyphens, and version has three dot-separated nonnegative integers. Return [normalized_name,version], where name is lowercase with underscores replaced by hyphens. Raise ValueError on invalid input.
 
 ## Requirements
@@ -9,8 +12,7 @@ Parse an exact requirement `name==version`, where name contains ASCII letters, d
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Separate name normalization from version validation.
+## Tips
+Separate name normalization from the validation of the pinned version.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

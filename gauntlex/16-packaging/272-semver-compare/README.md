@@ -1,6 +1,9 @@
-# compare_version
+# Version Ordering
 
-## Challenge
+## Description
+Compare two three-part versions according to numeric component precedence.
+
+### Behavior contract
 Compare two valid MAJOR.MINOR.PATCH versions; return -1, 0, or 1. Versions have no prerelease or build suffixes.
 
 ## Requirements
@@ -9,8 +12,7 @@ Compare two valid MAJOR.MINOR.PATCH versions; return -1, 0, or 1. Versions have 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Compare integer components lexicographically.
+## Tips
+Version 1.10.0 is newer than 1.9.0 despite their string order.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

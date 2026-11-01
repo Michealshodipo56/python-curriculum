@@ -1,6 +1,9 @@
-# sort_requirements
+# Dependency Order
 
-## Challenge
+## Description
+Sort exact package requirements by normalized name while preserving each original line.
+
+### Behavior contract
 Given valid exact requirements `name==version`, return them sorted by normalized package name, preserving the original requirement text.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given valid exact requirements `name==version`, return them sorted by normalized
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Use normalized names as the sort key.
+## Tips
+The sort key and the returned text are intentionally different.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

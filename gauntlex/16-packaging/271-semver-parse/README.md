@@ -1,6 +1,9 @@
-# parse_version
+# Three-Part Version
 
-## Challenge
+## Description
+Validate and interpret a version made of major, minor, and patch numbers.
+
+### Behavior contract
 Parse a version in exact MAJOR.MINOR.PATCH form with nonnegative decimal components and no leading zeros except 0. Return [major,minor,patch], or raise ValueError.
 
 ## Requirements
@@ -9,8 +12,7 @@ Parse a version in exact MAJOR.MINOR.PATCH form with nonnegative decimal compone
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Validate each version component before converting it to an integer.
+## Tips
+Reject malformed versions rather than trying to guess their meaning.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.
