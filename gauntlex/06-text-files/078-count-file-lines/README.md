@@ -1,7 +1,7 @@
-# count_file_lines
+# Read the Line Count
 
 ## Description
-Read a UTF-8 file and return the number of lines using `splitlines()` semantics.
+Open a text file supplied by the caller and report how many logical lines it contains.
 
 ## Requirements
 - Implement `count_file_lines(path)` in `starter/solution.py`.
@@ -10,4 +10,6 @@ Read a UTF-8 file and return the number of lines using `splitlines()` semantics.
 - File paths are provided by the caller; do not hardcode locations.
 
 ## Tips
-Use a context manager or the pathlib API. Tests create temporary input files.
+File content and file paths are different inputs. Consider empty files and trailing newlines.
+
+Examples describe expected behavior without providing the implementation.

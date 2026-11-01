@@ -1,7 +1,7 @@
-# read_json_file
+# Load Structured Data
 
 ## Description
-Read a UTF-8 JSON file and return the parsed Python value.
+Read JSON from a UTF-8 file and return its parsed data instead of the original text.
 
 ## Requirements
 - Implement `read_json_file(path)` in `starter/solution.py`.
@@ -10,4 +10,6 @@ Read a UTF-8 JSON file and return the parsed Python value.
 - File paths are provided by the caller; do not hardcode locations.
 
 ## Tips
-Use a context manager or the pathlib API. Tests create temporary input files.
+A JSON file can contain an array, object, or scalar. The returned type depends on its contents.
+
+Examples describe expected behavior without providing the implementation.

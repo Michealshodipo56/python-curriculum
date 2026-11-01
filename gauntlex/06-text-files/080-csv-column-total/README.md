@@ -1,7 +1,7 @@
-# csv_column_total
+# Sum a CSV Column
 
 ## Description
-Read a UTF-8 CSV file with a header. Return the sum of valid integer cells in a named column.
+Process a CSV table with a header and add the valid integer values in a chosen column.
 
 ## Requirements
 - Implement `csv_column_total(path, column)` in `starter/solution.py`.
@@ -10,4 +10,6 @@ Read a UTF-8 CSV file with a header. Return the sum of valid integer cells in a 
 - File paths are provided by the caller; do not hardcode locations.
 
 ## Tips
-Use a context manager or the pathlib API. Tests create temporary input files.
+Identify the requested column by its header rather than relying on a fixed position.
+
+Examples describe expected behavior without providing the implementation.
