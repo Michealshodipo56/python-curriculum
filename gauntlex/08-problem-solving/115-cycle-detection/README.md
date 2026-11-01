@@ -1,6 +1,9 @@
-# has_cycle
+# Detect a Loop
 
 ## Description
+Determine whether following directed graph edges can lead back to an active path.
+
+### Behavior contract
 Return whether a directed graph represented as node -> list of outgoing neighbors contains a cycle. Neighbor nodes may be absent as dictionary keys.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return whether a directed graph represented as node -> list of outgoing neighbor
 `has_cycle({"a": ["b"], "b": []})` → `False`
 
 ## Tips
-Track nodes currently on the depth-first recursion path separately from fully explored nodes.
+A node visited in an earlier completed branch is not necessarily evidence of a cycle.
+
+The examples define expected behavior; design your own implementation.
