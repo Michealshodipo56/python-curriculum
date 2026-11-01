@@ -1,6 +1,9 @@
-# queue
+# First In, First Out
 
 ## Description
+Model a waiting line where items leave in the order they arrive.
+
+### Behavior contract
 Implement a Queue class with enqueue(value), dequeue(), and is_empty(). Dequeue from an empty queue must raise IndexError.
 
 ## Requirements
@@ -9,8 +12,7 @@ Implement a Queue class with enqueue(value), dequeue(), and is_empty(). Dequeue 
 - Do not read input or print at import time.
 - Use the Python standard library only.
 
-## Examples
-The tests exercise the class methods and expected state changes.
-
 ## Tips
-A deque supports efficient operations at both ends.
+What operations become expensive if every removal shifts all remaining elements?
+
+Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.

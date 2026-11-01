@@ -1,6 +1,9 @@
-# stack
+# Last In, First Out
 
 ## Description
+Model a collection where the most recently added value is the first one removed.
+
+### Behavior contract
 Implement a Stack class with push(value), pop(), peek(), and is_empty(). Pop and peek on an empty stack must raise IndexError.
 
 ## Requirements
@@ -9,8 +12,7 @@ Implement a Stack class with push(value), pop(), peek(), and is_empty(). Pop and
 - Do not read input or print at import time.
 - Use the Python standard library only.
 
-## Examples
-The tests exercise the class methods and expected state changes.
-
 ## Tips
-A list can represent a last-in-first-out collection.
+Think about which end of a sequence should accept and release values.
+
+Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
