@@ -1,6 +1,9 @@
-# async_filter
+# Concurrent Selection
 
-## Challenge
+## Description
+Evaluate an asynchronous predicate for every value and retain only the matching inputs.
+
+### Behavior contract
 Given an async predicate and a sequence of values, evaluate predicates concurrently and return the values whose predicate results are truthy, preserving original order.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given an async predicate and a sequence of values, evaluate predicates concurren
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Gather Boolean results, then pair each result with its original value.
+## Tips
+Preserve original input order even if predicate checks finish in a different order.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

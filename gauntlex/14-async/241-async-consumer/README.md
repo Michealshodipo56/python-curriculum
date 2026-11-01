@@ -1,6 +1,9 @@
-# consume_n
+# Consume Exactly N
 
-## Challenge
+## Description
+Wait for a specified number of queue items and return them in arrival order.
+
+### Behavior contract
 Remove exactly n items from an asyncio.Queue, returning them in FIFO order. Assume the queue will eventually receive n items. Raise ValueError for negative n.
 
 ## Requirements
@@ -9,8 +12,7 @@ Remove exactly n items from an asyncio.Queue, returning them in FIFO order. Assu
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Await queue.get for each requested item.
+## Tips
+Unlike draining, consuming a fixed count may need to wait for future items.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.

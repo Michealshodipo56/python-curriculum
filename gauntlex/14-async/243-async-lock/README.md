@@ -1,6 +1,9 @@
-# locked_increment
+# Protected Increment
 
-## Challenge
+## Description
+Update shared mutable state under an asynchronous lock.
+
+### Behavior contract
 Given a mutable dictionary with integer key `count` and an asyncio.Lock, increment the count once while holding the lock, then return the new count.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a mutable dictionary with integer key `count` and an asyncio.Lock, increme
 - Do not print or block the event loop with synchronous sleeps.
 - Preserve the specified ordering and error behavior.
 
-## Hints
-Use an async context manager to acquire and release the lock.
+## Tips
+A read-modify-write operation needs protection when several coroutines share state.
 
-## Tests
-`python -m pytest tests -q`
+No implementation is provided; reason about scheduling and return values.
