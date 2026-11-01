@@ -1,6 +1,9 @@
-# append_jsonl
+# Append Structured Records
 
-## Challenge
+## Description
+Add one JSON value to a JSON Lines file while keeping earlier records intact.
+
+### Behavior contract
 Append a JSON-compatible value as one compact sorted-key JSON record followed by a newline to a UTF-8 file, creating it if absent. Return None.
 
 ## Requirements
@@ -9,8 +12,7 @@ Append a JSON-compatible value as one compact sorted-key JSON record followed by
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Open in append mode and serialize deterministically.
+## Tips
+Each appended record occupies its own line.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

@@ -1,6 +1,9 @@
-# count_file_lines
+# Count File Records
 
-## Challenge
+## Description
+Count logical lines in a UTF-8 text file, including an unterminated final line.
+
+### Behavior contract
 Return the number of logical text lines in a UTF-8 file. A nonempty final line without a newline counts as one; empty file has zero lines. Universal newline handling is allowed.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the number of logical text lines in a UTF-8 file. A nonempty final line w
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Iterating over an opened text file yields logical lines.
+## Tips
+An empty file contains no lines; a nonempty final line counts even without a newline.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

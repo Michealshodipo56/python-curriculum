@@ -1,6 +1,9 @@
-# file_checksum
+# Fingerprint a File
 
-## Challenge
+## Description
+Calculate a content hash of a file without loading its entire contents into memory.
+
+### Behavior contract
 Return lowercase SHA-256 hex digest of the raw bytes in a file at the supplied path. Stream the file in chunks instead of reading it all at once.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return lowercase SHA-256 hex digest of the raw bytes in a file at the supplied p
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Hash bytes in fixed-size chunks.
+## Tips
+A file's content, not its filename, determines the digest.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

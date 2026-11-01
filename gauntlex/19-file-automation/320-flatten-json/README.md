@@ -1,6 +1,9 @@
-# flatten_json
+# Flatten a JSON Tree
 
-## Challenge
+## Description
+Turn nested dictionaries into dot-separated key paths while retaining their leaf values.
+
+### Behavior contract
 Flatten nested dictionaries into a mapping of dot-separated keys to leaf values. Lists count as leaves. Empty dictionaries count as leaves. Assume input keys are nonempty strings without dots.
 
 ## Requirements
@@ -9,8 +12,7 @@ Flatten nested dictionaries into a mapping of dot-separated keys to leaf values.
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Recursively visit dictionaries and keep the current key prefix.
+## Tips
+Empty dictionaries and lists have special treatment as leaves.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.
