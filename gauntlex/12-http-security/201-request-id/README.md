@@ -1,6 +1,9 @@
-# request_id
+# Unique Request Identifier
 
-## Challenge
+## Description
+Generate a fresh version-four UUID formatted for request tracing.
+
+### Behavior contract
 Return a lowercase hexadecimal UUID version 4 string with hyphens, using a secure standard-library UUID generator. Each call should normally return a new identifier.
 
 ## Requirements
@@ -13,4 +16,6 @@ Return a lowercase hexadecimal UUID version 4 string with hyphens, using a secur
 See the contract and write additional edge-case tests.
 
 ## Tips
-The uuid module generates random version-4 identifiers.
+An identifier must have the correct version and canonical text shape.
+
+Examples describe the contract, not a solution.

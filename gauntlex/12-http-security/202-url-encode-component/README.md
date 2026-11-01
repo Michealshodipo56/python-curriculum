@@ -1,6 +1,9 @@
-# encode_component
+# Escape One URL Component
 
-## Challenge
+## Description
+Encode arbitrary UTF-8 text as one URL path component, including slashes and spaces.
+
+### Behavior contract
 Percent-encode a UTF-8 string for use as one URL path component. Keep only RFC 3986 unreserved characters unescaped and encode spaces as %20.
 
 ## Requirements
@@ -15,4 +18,6 @@ Percent-encode a UTF-8 string for use as one URL path component. Keep only RFC 3
 `encode_component("a/b")` → `"a%2Fb"`
 
 ## Tips
-Path components must encode slash rather than treating it as a separator.
+A slash inside a component must not become a path separator.
+
+Examples describe the contract, not a solution.

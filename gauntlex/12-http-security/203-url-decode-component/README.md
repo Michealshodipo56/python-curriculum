@@ -1,6 +1,9 @@
-# decode_component
+# Restore One URL Component
 
-## Challenge
+## Description
+Decode percent-escaped text while preserving literal plus signs.
+
+### Behavior contract
 Percent-decode a URL component using UTF-8. Do not treat plus signs as spaces.
 
 ## Requirements
@@ -15,4 +18,6 @@ Percent-decode a URL component using UTF-8. Do not treat plus signs as spaces.
 `decode_component("a%2Fb")` → `"a/b"`
 
 ## Tips
-Choose the decoder that does not implement form-style plus conversion.
+Form decoding and path-component decoding treat plus signs differently.
+
+Examples describe the contract, not a solution.

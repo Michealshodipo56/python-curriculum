@@ -1,6 +1,9 @@
-# header_get
+# Find the Last Header
 
-## Challenge
+## Description
+Retrieve the final value of a named HTTP header, matching its name without regard to case.
+
+### Behavior contract
 Given a list of [name,value] HTTP header pairs and a name, return the last matching header value ignoring name case, or None when absent.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a list of [name,value] HTTP header pairs and a name, return the last match
 `header_get([["A", "b"]], "X")` → `None`
 
 ## Tips
-Scan in order while updating the most recent match.
+Duplicate header names are possible; the last matching value takes precedence.
+
+Examples describe the contract, not a solution.

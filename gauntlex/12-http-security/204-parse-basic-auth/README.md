@@ -1,6 +1,9 @@
-# parse_basic_auth
+# Decode Basic Credentials
 
-## Challenge
+## Description
+Interpret a Basic authorization header and recover a username and password from its encoded payload.
+
+### Behavior contract
 Parse `Basic BASE64` Authorization and return [username,password]. Decode UTF-8 and split credentials at the first colon. Return None for invalid scheme, Base64, UTF-8, or missing colon.
 
 ## Requirements
@@ -15,4 +18,6 @@ Parse `Basic BASE64` Authorization and return [username,password]. Decode UTF-8 
 `parse_basic_auth("Bearer x")` → `None`
 
 ## Tips
-Validate Base64 input before decoding and preserve colons in passwords.
+The first colon separates username from password; later colons can belong to the password.
+
+Examples describe the contract, not a solution.
