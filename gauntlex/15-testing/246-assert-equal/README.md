@@ -1,6 +1,9 @@
-# assert_equal
+# Explain a Mismatch
 
-## Challenge
+## Description
+Create an assertion helper that clearly reports when actual and expected values differ.
+
+### Behavior contract
 Return None when actual equals expected; otherwise raise AssertionError with message `expected EXPECTED, got ACTUAL` using repr() for values.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return None when actual equals expected; otherwise raise AssertionError with mes
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Use repr for clear, unambiguous failure messages.
+## Tips
+A useful failure message shows the values unambiguously.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

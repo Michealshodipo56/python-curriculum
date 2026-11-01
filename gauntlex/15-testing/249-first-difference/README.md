@@ -1,6 +1,9 @@
-# first_difference
+# Find the Divergence
 
-## Challenge
+## Description
+Locate the first position where two sequences disagree.
+
+### Behavior contract
 Return the zero-based index of the first differing element in two sequences. Return None if equal. If one is a strict prefix of the other, return the shorter length.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return the zero-based index of the first differing element in two sequences. Ret
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Compare shared positions first, then lengths.
+## Tips
+One sequence can end while the other still has elements.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

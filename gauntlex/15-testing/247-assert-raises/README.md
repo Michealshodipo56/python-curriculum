@@ -1,6 +1,9 @@
-# assert_raises
+# Expect a Failure
 
-## Challenge
+## Description
+Check that a callable raises the correct type of exception.
+
+### Behavior contract
 Call zero-argument fn and return the caught exception if it is an instance of expected_exception; otherwise raise AssertionError. If fn returns normally, raise AssertionError.
 
 ## Requirements
@@ -9,8 +12,7 @@ Call zero-argument fn and return the caught exception if it is an instance of ex
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Distinguish the expected exception from an unexpected one.
+## Tips
+A function that returns normally does not satisfy an expected-exception contract.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.
