@@ -1,15 +1,17 @@
-# wordfrequency
+# Word Tally
 
 ## Description
-Read one line of space-separated words. Print each word and its count in first-appearance order, one per line.
+Build a frequency report that shows how often each word occurs, ordered by its first appearance.
 
 ## Requirements
-Each output line uses `WORD: COUNT`. Matching is case-sensitive.
+- Read one line of space-separated words.
+- Display one line per distinct word in the format `WORD: COUNT`.
+- Preserve first-appearance order and use case-sensitive matching.
 
-## Examples
-Input: "cat dog cat\n" → output: "cat: 2\ndog: 1\n"
-
-Input: "a a b a\n" → output: "a: 3\nb: 1\n"
+## Example
+Input: `cat dog cat` → output lines `cat: 2`, `dog: 1`.
 
 ## Tips
-A dictionary can map a word to how often it has appeared; insertion order is retained in modern Python.
+A mapping can associate each distinct word with a count. How do you avoid changing the reporting order?
+
+The example illustrates the expected result, not a solution.

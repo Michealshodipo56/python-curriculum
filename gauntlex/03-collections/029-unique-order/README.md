@@ -1,15 +1,17 @@
-# uniqueorder
+# First Appearance
 
 ## Description
-Read one line of space-separated words. Print each distinct word once, keeping its first appearance order.
+Remove repeated words without disturbing the order in which distinct words first appear.
 
 ## Requirements
-Comparison is case-sensitive; print one space between output words.
+- Read one line of space-separated words.
+- Display each distinct word once, in first-appearance order, separated by single spaces.
+- Treat uppercase and lowercase words as different.
 
-## Examples
-Input: "a b a c b\n" → output: "a b c\n"
-
-Input: "A a A\n" → output: "A a\n"
+## Example
+Input: `a b a c b` → output: `a b c`. Input: `A a A` → output: `A a`.
 
 ## Tips
-A set can help detect repeated items, while a list preserves the chosen output order.
+Removing duplicates and preserving order are separate concerns. Consider how to remember what has already appeared.
+
+The example illustrates the expected result, not a solution.

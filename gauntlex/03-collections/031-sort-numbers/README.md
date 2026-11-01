@@ -1,15 +1,17 @@
-# sortnumbers
+# Numeric Order
 
 ## Description
-Read one line of space-separated integers. Print them in ascending numeric order, separated by spaces.
+Arrange a collection of integers from smallest to largest. The comparison must use numeric values rather than the characters used to represent them.
 
 ## Requirements
-Preserve duplicates. Print a blank line for empty input.
+- Read one line of space-separated integers.
+- Display all values in ascending numeric order, separated by single spaces.
+- Preserve duplicates; print a blank line for empty input.
 
-## Examples
-Input: "9 2 10 2\n" → output: "2 2 9 10\n"
-
-Input: "-1 -5 0\n" → output: "-5 -1 0\n"
+## Example
+Input: `9 2 10 2` → output: `2 2 9 10`.
 
 ## Tips
-Text order and numeric order are different; convert tokens to integers before sorting.
+Compare how the strings `10` and `2` sort with how the integers 10 and 2 sort.
+
+The example illustrates the expected result, not a solution.
