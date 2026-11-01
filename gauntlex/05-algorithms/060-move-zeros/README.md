@@ -1,7 +1,7 @@
-# move_zeros
+# Zeros to the Back
 
 ## Description
-Return a new list with all numeric zeros moved to the end while preserving order of other integers.
+Rearrange a sequence so every zero appears after all nonzero values, without changing the relative order of nonzero elements.
 
 ## Requirements
 - Implement `move_zeros(items)` in `solution.py`.
@@ -15,4 +15,6 @@ Return a new list with all numeric zeros moved to the end while preserving order
 `move_zeros([0, 0])` → `[0, 0]`
 
 ## Tips
-Separate nonzero items and count zeros before constructing the result.
+Think about constructing a new list instead of changing the caller's collection.
+
+The examples illustrate expected behavior, not an implementation.

@@ -1,7 +1,7 @@
-# flatten_recursive
+# Unfold Nested Lists
 
 ## Description
-Flatten a nested list of integers to one list in left-to-right order. Nesting may be arbitrarily deep.
+Traverse a structure containing integers and lists nested to any depth, producing a single left-to-right sequence.
 
 ## Requirements
 - Implement `flatten_recursive(items)` in `solution.py`.
@@ -15,4 +15,6 @@ Flatten a nested list of integers to one list in left-to-right order. Nesting ma
 `flatten_recursive([])` → `[]`
 
 ## Tips
-A recursive function can process a nested list by applying the same rule to each child list.
+What should happen when an element is an integer versus another list? The same question recurs at each nesting level.
+
+The examples illustrate expected behavior, not an implementation.

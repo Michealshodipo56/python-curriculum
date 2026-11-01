@@ -1,7 +1,7 @@
-# valid_parentheses
+# Balance the Parentheses
 
 ## Description
-Return True if a string containing only `(` and `)` is balanced, with no prefix containing more closing than opening brackets.
+Check whether a sequence of opening and closing parentheses forms complete, correctly ordered pairs.
 
 ## Requirements
 - Implement `valid_parentheses(text)` in `solution.py`.
@@ -15,4 +15,6 @@ Return True if a string containing only `(` and `)` is balanced, with no prefix 
 `valid_parentheses("())(")` → `False`
 
 ## Tips
-A running balance must never become negative and must finish at zero.
+A sequence may have equal numbers of each symbol and still be invalid. Inspect every prefix.
+
+The examples illustrate expected behavior, not an implementation.
