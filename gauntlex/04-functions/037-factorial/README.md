@@ -4,7 +4,7 @@
 Calculate the product of the positive integers up to a given nonnegative number. The empty product is an important boundary case.
 
 ## Requirements
-- Implement ``factorial(n)`` in `solution.py`.
+- Implement `factorial(n)` in `solution.py`.
 - Return the factorial of nonnegative `n`; `factorial(0)` is `1`.
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.

@@ -4,7 +4,7 @@
 Represent an integer's distance from zero without retaining its sign.
 
 ## Requirements
-- Implement ``absolute(n)`` in `solution.py`.
+- Implement `absolute(n)` in `solution.py`.
 - Return the nonnegative absolute value of `n`.
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.

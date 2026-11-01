@@ -4,7 +4,7 @@
 Decide whether two strings contain exactly the same characters with the same number of occurrences, regardless of order.
 
 ## Requirements
-- Implement ``are_anagrams(a, b)`` in `solution.py`.
+- Implement `are_anagrams(a, b)` in `solution.py`.
 - Return a boolean; character matching is case-sensitive and includes spaces.
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.

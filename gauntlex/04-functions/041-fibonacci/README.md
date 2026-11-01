@@ -4,7 +4,7 @@
 Compute one term of a sequence where every term after the first two depends on the two preceding terms.
 
 ## Requirements
-- Implement ``fibonacci(n)`` in `solution.py`.
+- Implement `fibonacci(n)` in `solution.py`.
 - For nonnegative `n`, return the nth term with F(0)=0, F(1)=1, and F(n)=F(n−1)+F(n−2).
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.

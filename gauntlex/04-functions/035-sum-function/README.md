@@ -4,7 +4,7 @@
 Create a reusable operation that accepts two integers and gives their sum back to its caller.
 
 ## Requirements
-- Implement ``sum_two(a, b)`` in `solution.py`.
+- Implement `sum_two(a, b)` in `solution.py`.
 - Return the arithmetic sum of `a` and `b`.
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.

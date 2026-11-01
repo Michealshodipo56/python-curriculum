@@ -4,7 +4,7 @@
 Determine whether a string reads identically from the beginning and the end. Every character matters, including case and whitespace.
 
 ## Requirements
-- Implement ``is_palindrome(text)`` in `solution.py`.
+- Implement `is_palindrome(text)` in `solution.py`.
 - Return a boolean based on an exact, case-sensitive comparison.
 - Return the result instead of printing it.
 - Do not run input-handling code when the module is imported.
