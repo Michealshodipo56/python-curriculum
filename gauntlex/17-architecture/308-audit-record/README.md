@@ -1,6 +1,9 @@
-# audit_record
+# Record an Action
 
-## Challenge
+## Description
+Construct a deterministic audit entry from actor, action, resource, and timestamp.
+
+### Behavior contract
 Return a dictionary with actor, action, resource, and timestamp keys from the four supplied values. Do not generate the timestamp; it is provided by the caller.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a dictionary with actor, action, resource, and timestamp keys from the fo
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Keep audit data explicit and deterministic.
+## Tips
+The timestamp comes from the caller; do not invent one.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

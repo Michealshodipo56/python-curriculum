@@ -1,6 +1,9 @@
-# effective_permissions
+# Inherited Permissions
 
-## Challenge
+## Description
+Collect permissions granted by assigned roles and all their ancestor roles.
+
+### Behavior contract
 Given mapping role->list of permissions, mapping role->list of parent roles, and a list of assigned roles, return sorted unique permissions inherited transitively. Assume the parent-role graph is acyclic.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given mapping role->list of permissions, mapping role->list of parent roles, and
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Traverse role ancestry and collect permissions in a set.
+## Tips
+Permissions may be inherited through several levels of the role graph.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

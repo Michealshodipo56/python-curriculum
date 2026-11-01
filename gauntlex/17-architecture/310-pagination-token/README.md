@@ -1,6 +1,9 @@
-# encode_cursor
+# Opaque Page Cursor
 
-## Challenge
+## Description
+Encode a nonnegative offset as a URL-safe, unpadded cursor token.
+
+### Behavior contract
 Given a nonnegative integer offset, return a URL-safe Base64 string without padding encoding its ASCII decimal representation. Raise ValueError for negative offsets.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a nonnegative integer offset, return a URL-safe Base64 string without padd
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Base64 URL-safe encoding supports opaque-looking cursor tokens.
+## Tips
+A cursor is a representation of an offset, not an encryption of it.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

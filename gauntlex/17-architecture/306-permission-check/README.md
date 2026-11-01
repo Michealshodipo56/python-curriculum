@@ -1,6 +1,9 @@
-# has_permission
+# Permission by Role
 
-## Challenge
+## Description
+Determine whether any assigned role explicitly grants a requested permission.
+
+### Behavior contract
 Given mapping role->list of permission strings, a list of user roles, and a permission, return True if any assigned role grants it. Unknown roles grant nothing.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given mapping role->list of permission strings, a list of user roles, and a perm
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Use an explicit allowlist rather than inferring permissions from role names.
+## Tips
+Unknown roles must grant nothing.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.
