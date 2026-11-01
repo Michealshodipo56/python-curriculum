@@ -1,6 +1,9 @@
-# verify_hmac
+# Verify a Signature
 
-## Challenge
+## Description
+Check whether a supplied signature matches a message and secret, rejecting malformed signatures.
+
+### Behavior contract
 Return True when the supplied lowercase hex signature matches HMAC-SHA256(secret,message). Treat malformed signatures as False.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return True when the supplied lowercase hex signature matches HMAC-SHA256(secret
 `verify_hmac("key", "abc", "")` → `False`
 
 ## Tips
-Compute the expected signature and compare it using a timing-resistant primitive.
+A secure comparison should not reveal where two signatures first differ.
+
+Examples describe the contract, not a solution.

@@ -1,6 +1,9 @@
-# cache_key
+# Stable Request Identity
 
-## Challenge
+## Description
+Generate a reproducible digest that identifies a request by method, URL, and body.
+
+### Behavior contract
 Return a stable SHA-256 lowercase hex digest for a request method, URL and optional body string. Normalize method to uppercase; hash the UTF-8 JSON encoding of the three-element list [method,url,body] using compact separators.
 
 ## Requirements
@@ -13,4 +16,6 @@ Return a stable SHA-256 lowercase hex digest for a request method, URL and optio
 See the contract and write additional edge-case tests.
 
 ## Tips
-Canonical serialization prevents ambiguous concatenation and makes identical requests hash alike.
+Canonical serialization prevents ambiguous combinations of fields.
+
+Examples describe the contract, not a solution.

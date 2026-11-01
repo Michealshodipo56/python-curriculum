@@ -1,6 +1,9 @@
-# allowed_origin
+# Exact Origin Allowlist
 
-## Challenge
+## Description
+Decide whether a request origin is explicitly permitted by a list of trusted origins.
+
+### Behavior contract
 Return True if origin exactly matches one of the allowed origins. Scheme and port matter; do not accept suffix or prefix matches.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return True if origin exactly matches one of the allowed origins. Scheme and por
 `allowed_origin("https://evil-example.com", ["https://example.com"])` → `False`
 
 ## Tips
-Compare full origin strings rather than using substring matching.
+Lookalike domains and different ports are not the same origin.
+
+Examples describe the contract, not a solution.

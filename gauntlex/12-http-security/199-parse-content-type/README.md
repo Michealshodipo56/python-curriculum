@@ -1,6 +1,9 @@
-# media_type
+# Extract the Media Type
 
-## Challenge
+## Description
+Separate a Content-Type header's media type from optional parameters.
+
+### Behavior contract
 Return the lowercase media type before the first semicolon in a Content-Type header, trimming surrounding whitespace. Return empty string for empty input.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the lowercase media type before the first semicolon in a Content-Type hea
 `media_type("text/plain")` → `"text/plain"`
 
 ## Tips
-Parameters follow a semicolon and do not belong to the media type.
+The part before the first semicolon identifies the media type.
+
+Examples describe the contract, not a solution.

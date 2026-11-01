@@ -1,6 +1,9 @@
-# normalize_method
+# Recognize HTTP Methods
 
-## Challenge
+## Description
+Normalize supported HTTP method names and reject unknown methods.
+
+### Behavior contract
 Return the uppercase method if it is one of GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS, ignoring surrounding whitespace and case. Otherwise raise ValueError.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the uppercase method if it is one of GET, POST, PUT, PATCH, DELETE, HEAD,
 `normalize_method("PaTcH")` → `"PATCH"`
 
 ## Tips
-Normalize first, then check membership in an allowlist.
+Normalize spelling before checking membership in the allowed set.
+
+Examples describe the contract, not a solution.
