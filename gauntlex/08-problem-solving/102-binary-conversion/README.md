@@ -1,6 +1,9 @@
-# to_binary
+# Write in Base Two
 
 ## Description
+Represent an integer using binary digits, with no language-specific prefix.
+
+### Behavior contract
 Return the base-2 representation of an integer as a string, with a leading minus sign for negative values. Do not prefix 0b.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the base-2 representation of an integer as a string, with a leading minus
 `to_binary(13)` → `"1101"`
 
 ## Tips
-Repeated division by two produces binary digits in reverse order.
+Consider zero and negative integers as distinct edge cases.
+
+The examples define expected behavior; design your own implementation.

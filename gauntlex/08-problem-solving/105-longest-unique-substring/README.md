@@ -1,6 +1,9 @@
-# longest_unique_substring
+# Longest Without Repeats
 
 ## Description
+Find the length of the longest contiguous stretch of text containing no repeated characters.
+
+### Behavior contract
 Return the length of the longest contiguous substring without repeated characters.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the length of the longest contiguous substring without repeated character
 `longest_unique_substring("bbbbb")` → `1`
 
 ## Tips
-Use a sliding window and remember the last index of each character.
+A valid stretch can move forward without restarting from the beginning every time.
+
+The examples define expected behavior; design your own implementation.

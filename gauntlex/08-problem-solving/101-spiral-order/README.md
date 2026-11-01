@@ -1,6 +1,9 @@
-# spiral_order
+# Walk the Spiral
 
 ## Description
+Visit a rectangular grid by moving clockwise around its outer boundary and then inward.
+
+### Behavior contract
 Return a list of matrix elements visited clockwise from the top-left in spiral order. Assume a rectangular matrix.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return a list of matrix elements visited clockwise from the top-left in spiral o
 `spiral_order([])` → `[]`
 
 ## Tips
-Shrink the top, bottom, left, and right boundaries after each side.
+A boundary shrinks after each side. What happens when only one row or column remains?
+
+The examples define expected behavior; design your own implementation.

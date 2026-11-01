@@ -1,6 +1,9 @@
-# to_roman
+# Number to Numeral
 
 ## Description
+Translate a decimal integer into the conventional Roman numeral system.
+
+### Behavior contract
 Convert an integer from 1 to 3999 to its canonical uppercase Roman numeral representation.
 
 ## Requirements
@@ -15,4 +18,6 @@ Convert an integer from 1 to 3999 to its canonical uppercase Roman numeral repre
 `to_roman(58)` → `"LVIII"`
 
 ## Tips
-Process place values from largest to smallest, including subtractive pairs.
+Some numerals use subtraction rather than repeated addition; identify those special cases.
+
+The examples define expected behavior; design your own implementation.

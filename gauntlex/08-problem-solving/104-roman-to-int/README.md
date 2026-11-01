@@ -1,6 +1,9 @@
-# roman_to_int
+# Numeral to Number
 
 ## Description
+Interpret a valid Roman numeral as an integer, including subtractive pairs.
+
+### Behavior contract
 Convert a valid canonical uppercase Roman numeral to its integer value. Input is guaranteed valid.
 
 ## Requirements
@@ -15,4 +18,6 @@ Convert a valid canonical uppercase Roman numeral to its integer value. Input is
 `roman_to_int("LVIII")` → `58`
 
 ## Tips
-A smaller numeral before a larger one indicates subtraction.
+The meaning of a symbol can depend on the symbol immediately following it.
+
+The examples define expected behavior; design your own implementation.
