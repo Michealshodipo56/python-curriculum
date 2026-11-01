@@ -1,6 +1,9 @@
-# countoccurrences
+# Count Matching Lines
 
-## Challenge
+## Description
+Count how many lines contain a supplied literal search string.
+
+### Behavior contract
 The first input line is the search string. Count how many subsequent lines contain it as a case-sensitive substring. Print the integer count.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "x\na\nb\n"
 
 Expected output: "0\n"
 
-## Hints
-Increment a counter once per matching line.
+## Tips
+A line with several matches still counts only once.
+
+Examples illustrate the output contract, not a solution.

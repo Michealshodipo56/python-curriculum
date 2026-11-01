@@ -1,6 +1,9 @@
-# csvtotsv
+# CSV to Tabs
 
-## Challenge
+## Description
+Convert structured comma-separated records into tab-separated output without corrupting quoted fields.
+
+### Behavior contract
 Read CSV records from standard input and print equivalent tab-separated records. Assume fields contain no tabs or embedded newlines, but may contain quoted commas and escaped double quotes.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "\"a,b\",c\n"
 
 Expected output: "a,b\tc\n"
 
-## Hints
-Use the standard library CSV reader for correct quoted-field parsing.
+## Tips
+Quoted commas belong to a field, not to the separators between fields.
+
+Examples illustrate the output contract, not a solution.

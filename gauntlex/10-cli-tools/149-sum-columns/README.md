@@ -1,6 +1,9 @@
-# sumcolumns
+# Sum the Stream
 
-## Challenge
+## Description
+Accumulate all integers from a multi-line text stream into one total.
+
+### Behavior contract
 Read zero or more nonempty lines, each containing whitespace-separated integers. Print the sum of every integer across all lines.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: "0\n"
 
-## Hints
-Nested iteration can process lines and tokens.
+## Tips
+A line can contain several values; an empty stream still has a well-defined sum.
+
+Examples illustrate the output contract, not a solution.

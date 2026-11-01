@@ -1,6 +1,9 @@
-# sortlines
+# Order the Lines
 
-## Challenge
+## Description
+Rearrange complete input lines using case-sensitive lexical ordering.
+
+### Behavior contract
 Read all input lines, sort them lexicographically by Unicode code point, and print each on a separate line. Preserve duplicate lines.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: ""
 
-## Hints
-String sorting is case-sensitive.
+## Tips
+Sorting is based on characters rather than numeric meaning; duplicates remain.
+
+Examples illustrate the output contract, not a solution.

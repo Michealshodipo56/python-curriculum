@@ -1,6 +1,9 @@
-# uniqadjacent
+# Collapse Repeated Lines
 
-## Challenge
+## Description
+Remove repeated lines only when they appear consecutively.
+
+### Behavior contract
 Read all lines and print only the first line in each run of consecutive identical lines. A repeated line after a different line must be printed again.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "\n\nx\n"
 
 Expected output: "\nx\n"
 
-## Hints
-Compare each line with the immediately previous line, not with all prior lines.
+## Tips
+A line seen earlier may reappear after a different line and must then be kept.
+
+Examples illustrate the output contract, not a solution.
