@@ -1,6 +1,9 @@
-# sha256_hex
+# Fingerprint a Message
 
-## Challenge
+## Description
+Produce a SHA-256 hexadecimal digest for UTF-8 text.
+
+### Behavior contract
 Return the lowercase SHA-256 hex digest of a UTF-8 string.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the lowercase SHA-256 hex digest of a UTF-8 string.
 `sha256_hex("abc")` → `"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"`
 
 ## Tips
-Hash the UTF-8 encoded bytes, not the Python string object.
+The hash operates on bytes; the output is a lowercase hexadecimal representation.
+
+Examples describe the contract, not a solution.

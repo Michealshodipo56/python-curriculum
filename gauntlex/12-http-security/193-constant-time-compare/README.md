@@ -1,6 +1,9 @@
-# constant_time_compare
+# Compare Secrets Safely
 
-## Challenge
+## Description
+Compare text values with a timing-resistant primitive rather than an ordinary character-by-character check.
+
+### Behavior contract
 Return whether two strings are equal, using the standard library's timing-resistant comparison primitive. Support Unicode strings.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return whether two strings are equal, using the standard library's timing-resist
 `constant_time_compare("abc", "abd")` → `False`
 
 ## Tips
-Use a cryptographic comparison helper on consistently encoded bytes.
+Use a consistent byte encoding before comparing Unicode strings.
+
+Examples describe the contract, not a solution.

@@ -1,6 +1,9 @@
-# parse_bearer
+# Read a Bearer Token
 
-## Challenge
+## Description
+Extract a token from an authorization header while rejecting malformed schemes.
+
+### Behavior contract
 Return the token from an Authorization header formatted as `Bearer TOKEN`, ignoring case of Bearer and allowing extra whitespace. Return None for invalid or empty tokens.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the token from an Authorization header formatted as `Bearer TOKEN`, ignor
 `parse_bearer(" bearer   XYZ ")` → `"XYZ"`
 
 ## Tips
-Validate the scheme and require exactly one token.
+Whitespace can vary, but the header must still identify exactly one token.
+
+Examples describe the contract, not a solution.
