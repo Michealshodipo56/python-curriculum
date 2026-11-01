@@ -1,6 +1,9 @@
-# chunk_text
+# Text Segments
 
 ## Description
+Divide a string into consecutive pieces of a maximum length without losing characters.
+
+### Behavior contract
 Split text into consecutive chunks of at most size characters. Raise ValueError if size is not positive.
 
 ## Requirements
@@ -15,4 +18,6 @@ Split text into consecutive chunks of at most size characters. Raise ValueError 
 `chunk_text("abc", 5)` → `["abc"]`
 
 ## Tips
-Use string slices with a fixed step.
+The last segment may be shorter. What should happen when the requested segment length is zero?
+
+The examples show required behavior, not an implementation.

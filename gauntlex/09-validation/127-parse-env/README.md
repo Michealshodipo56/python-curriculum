@@ -1,6 +1,9 @@
-# parse_env
+# Configuration Assignments
 
 ## Description
+Interpret lines of key-value configuration while respecting comments, whitespace, and repeated keys.
+
+### Behavior contract
 Parse lines of KEY=VALUE assignments into a dictionary. Ignore blank lines and lines whose first non-space character is #. Trim whitespace around keys and values. Reject noncomment lines without = using ValueError. Later keys overwrite earlier ones.
 
 ## Requirements
@@ -15,4 +18,6 @@ Parse lines of KEY=VALUE assignments into a dictionary. Ignore blank lines and l
 `parse_env("  \n#x")` → `{}`
 
 ## Tips
-Split each assignment only at the first equals sign.
+An equals sign may occur inside the value; only the first one separates the key from its value.
+
+The examples show required behavior, not an implementation.

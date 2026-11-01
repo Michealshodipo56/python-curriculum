@@ -1,6 +1,9 @@
-# redact_secrets
+# Hide Sensitive Tokens
 
 ## Description
+Replace credential values inside arbitrary text without changing the visible spelling of their keys.
+
+### Behavior contract
 Replace every case-insensitive occurrence of `password=VALUE` or `token=VALUE` with `password=[REDACTED]` or `token=[REDACTED]`, preserving the original key spelling. VALUE is a nonempty run of non-whitespace characters.
 
 ## Requirements
@@ -15,4 +18,6 @@ Replace every case-insensitive occurrence of `password=VALUE` or `token=VALUE` w
 `redact_secrets("TOKEN=x")` → `"TOKEN=[REDACTED]"`
 
 ## Tips
-Use a regular expression with a captured key and case-insensitive matching.
+Check mixed-case keys and adjacent punctuation; only the defined token forms should be redacted.
+
+The examples show required behavior, not an implementation.
