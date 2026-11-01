@@ -1,6 +1,9 @@
-# population_variance
+# Spread Around the Mean
 
-## Challenge
+## Description
+Measure the average squared deviation of a population from its mean.
+
+### Behavior contract
 Return the population variance of a nonempty list of numbers (divide squared deviations by N).
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the population variance of a nonempty list of numbers (divide squared dev
 
 `population_variance([5, 5, 5])` → `0`
 
-## Hints
-Calculate the mean, then the average squared distance from it.
+## Tips
+The word population matters: the divisor is the number of observations.
+
+Examples illustrate expected values, not a solution.

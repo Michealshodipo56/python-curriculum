@@ -1,6 +1,9 @@
-# median
+# The Middle Value
 
-## Challenge
+## Description
+Find the center of a dataset, averaging two central values when its size is even.
+
+### Behavior contract
 Return the median of a nonempty list of numbers. For even length, average the two middle values. Do not mutate the input.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the median of a nonempty list of numbers. For even length, average the tw
 
 `median([4, 1, 3, 2])` → `2.5`
 
-## Hints
-Sort a copy and inspect the central index or indices.
+## Tips
+The middle depends on numeric order, not original position.
+
+Examples illustrate expected values, not a solution.

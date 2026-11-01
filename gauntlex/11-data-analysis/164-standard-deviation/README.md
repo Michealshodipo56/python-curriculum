@@ -1,6 +1,9 @@
-# population_stddev
+# Standard Spread
 
-## Challenge
+## Description
+Measure the typical spread of population values in the original units of the data.
+
+### Behavior contract
 Return the population standard deviation of a nonempty list of numbers.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the population standard deviation of a nonempty list of numbers.
 
 `population_stddev([3, 4, 5])` → `0.816496580927726`
 
-## Hints
-The standard deviation is the square root of the population variance.
+## Tips
+Consider why taking the square root changes the units of variance.
+
+Examples illustrate expected values, not a solution.

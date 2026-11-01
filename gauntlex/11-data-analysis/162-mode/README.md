@@ -1,6 +1,9 @@
-# mode
+# Most Frequent Observation
 
-## Challenge
+## Description
+Identify the most common integer and apply a deterministic rule when several values tie.
+
+### Behavior contract
 Return the most frequent integer; break ties by choosing the smallest integer. Assume nonempty input.
 
 ## Requirements
@@ -14,5 +17,7 @@ Return the most frequent integer; break ties by choosing the smallest integer. A
 
 `mode([5, 5, 1])` → `5`
 
-## Hints
-A frequency table and deterministic tie-break avoid order dependence.
+## Tips
+Count occurrences first, then decide how ties should be resolved.
+
+Examples illustrate expected values, not a solution.
