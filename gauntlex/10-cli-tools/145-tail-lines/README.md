@@ -1,6 +1,9 @@
-# taillines
+# Last Lines Only
 
-## Challenge
+## Description
+Select the final requested lines of a stream while preserving their order.
+
+### Behavior contract
 Read a nonnegative integer N from the first line, then print at most the last N remaining input lines in their original order.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "0\na\n"
 
 Expected output: ""
 
-## Hints
-Consider a zero count separately before slicing.
+## Tips
+The final two lines should remain in their original order, not be reversed.
+
+Examples illustrate the output contract, not a solution.

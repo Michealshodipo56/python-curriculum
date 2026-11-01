@@ -1,6 +1,9 @@
-# numberlines
+# Line Numbers
 
-## Challenge
+## Description
+Add an ordered label to each line of text without changing the line's content.
+
+### Behavior contract
 Read all lines from standard input and prefix each line with its 1-based line number followed by a colon and one space.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "\n"
 
 Expected output: "1: \n"
 
-## Hints
-Enumerate the input lines starting at one.
+## Tips
+A blank line is still a line. The first label should be one, not zero.
+
+Examples illustrate the output contract, not a solution.

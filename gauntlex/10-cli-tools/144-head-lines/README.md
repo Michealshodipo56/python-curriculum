@@ -1,6 +1,9 @@
-# headlines
+# First Lines Only
 
-## Challenge
+## Description
+Limit a stream to its earliest requested lines, leaving the rest out.
+
+### Behavior contract
 Read a nonnegative integer N from the first line, then print at most the first N remaining input lines.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: "0\na\n"
 
 Expected output: ""
 
-## Hints
-Stop after N lines, even if more are available.
+## Tips
+Zero is a valid limit and should produce no output.
+
+Examples illustrate the output contract, not a solution.

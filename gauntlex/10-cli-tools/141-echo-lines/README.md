@@ -1,6 +1,9 @@
-# echolines
+# Reverse the Stream
 
-## Challenge
+## Description
+Read an entire stream of lines and replay them in the opposite order.
+
+### Behavior contract
 Read all lines from standard input and print them in reverse order, preserving the content of each line but using a single newline per output line.
 
 ## Requirements
@@ -18,5 +21,7 @@ Input: ""
 
 Expected output: ""
 
-## Hints
-Read all input before reversing the order.
+## Tips
+Think about why reversing lines requires remembering input before producing output.
+
+Examples illustrate the output contract, not a solution.
