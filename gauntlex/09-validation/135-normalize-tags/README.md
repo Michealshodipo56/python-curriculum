@@ -1,6 +1,9 @@
-# normalize_tags
+# Clean the Tags
 
 ## Description
+Normalize comma-separated labels and remove duplicates without disturbing their first appearance.
+
+### Behavior contract
 Given a comma-separated string, return unique lowercase trimmed nonempty tags in first-appearance order.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a comma-separated string, return unique lowercase trimmed nonempty tags in
 `normalize_tags(" , ")` → `[]`
 
 ## Tips
-Normalize each tag before checking whether it has appeared.
+Normalize a tag before deciding whether it is empty or has already appeared.
+
+The examples specify results without giving an implementation.

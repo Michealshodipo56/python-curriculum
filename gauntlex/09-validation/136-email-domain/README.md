@@ -1,6 +1,9 @@
-# email_domain
+# Domain Extraction
 
 ## Description
+Extract and normalize the domain portion of a valid email address.
+
+### Behavior contract
 Given a valid email address with exactly one @, return its domain in lowercase.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a valid email address with exactly one @, return its domain in lowercase.
 `email_domain("a@sub.example.org")` → `"sub.example.org"`
 
 ## Tips
-Split at the @ symbol and normalize only the domain.
+Only the domain needs to be converted to lowercase; do not alter the local part.
+
+The examples specify results without giving an implementation.

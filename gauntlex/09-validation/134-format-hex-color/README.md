@@ -1,6 +1,9 @@
-# format_hex_color
+# Encode an RGB Color
 
 ## Description
+Convert three channel values into a canonical uppercase hexadecimal color string.
+
+### Behavior contract
 Return an uppercase `#RRGGBB` string for three integer RGB components. Raise ValueError if any component is outside 0–255.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return an uppercase `#RRGGBB` string for three integer RGB components. Raise Val
 `format_hex_color(0, 0, 0)` → `"#000000"`
 
 ## Tips
-Two-digit hexadecimal formatting pads each channel with zero if necessary.
+Each channel needs exactly two hexadecimal digits, even for small values.
+
+The examples specify results without giving an implementation.
