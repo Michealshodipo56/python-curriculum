@@ -1,10 +1,24 @@
-# Contact Book
+# Contact Directory
 
-## Project brief and acceptance criteria
+## Description
+Build a persistent contact book with case-insensitive email uniqueness and searchable names and addresses.
+
+This is a project challenge. Plan the components, define their responsibilities, and implement the application without a provided solution.
+
+## Requirements
 Build SQLite contact book. CONTACT_DB specifies path. Commands: add NAME EMAIL, find TERM, delete EMAIL, list. Emails are unique case-insensitively; retain original casing. add prints ok or exists; delete prints ok or not found. list and find print compact sorted-key JSON arrays of {name,email}, sorted by lowercase email; find matches case-insensitive substrings in name or email. Empty names/emails exit 2.
 
-## Deliverables
-Implement in starter/main.py, add unit tests and document architecture. Python 3.11+ standard library only. No network services. Do not print debug output to stdout. Use parameterized SQL where applicable.
+## Constraints
+- Use Python 3.11+ and the standard library only.
+- Do not use network services or print debug messages to standard output.
 
-## Run
-python -m pytest tests -q
+## Deliverables
+- Implement the application in `starter/main.py`, with additional modules only when useful.
+- Document the program's usage, key design choices, and failure behavior.
+- Explain how persistence, input validation, or the service lifecycle works where applicable.
+
+## Tips
+Preserve original email spelling while comparing addresses case-insensitively.
+
+## Guide and Auditor
+The Gauntlex Guide should help you reason through decisions and debug issues without supplying finished code. The Auditor may ask you to demonstrate the required behavior and defend your design choices.
