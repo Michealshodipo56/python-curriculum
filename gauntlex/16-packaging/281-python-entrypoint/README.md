@@ -1,6 +1,9 @@
-# entrypoint_name
+# Name the Entry Point
 
-## Challenge
+## Description
+Convert a valid dotted Python module name into an executable entry-point reference.
+
+### Behavior contract
 Given a Python module path like `package.subpackage.cli`, return `package.subpackage.cli:main`. Raise ValueError for empty names or components that are not valid Python identifiers.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a Python module path like `package.subpackage.cli`, return `package.subpac
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Validate each dot-separated component with identifier rules.
+## Tips
+Each segment of a dotted name must be a valid Python identifier.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

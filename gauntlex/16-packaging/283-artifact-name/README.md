@@ -1,6 +1,9 @@
-# wheel_name
+# Wheel Filename
 
-## Challenge
+## Description
+Build a conventional Python wheel filename from distribution and version information.
+
+### Behavior contract
 Given normalized package name, version, and Python tag, return `NAME-VERSION-TAG-none-any.whl`. Convert hyphens in the package name to underscores. Inputs are trusted nonempty strings.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given normalized package name, version, and Python tag, return `NAME-VERSION-TAG
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Wheel filenames use underscores in the distribution component.
+## Tips
+Distribution names use underscores in the generated artifact name.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

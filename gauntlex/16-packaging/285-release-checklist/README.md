@@ -1,6 +1,9 @@
-# release_checklist
+# Release Readiness
 
-## Challenge
+## Description
+Report which release prerequisites are still missing in a fixed order.
+
+### Behavior contract
 Given booleans tests_passed, docs_updated, version_bumped, return an ordered list of missing steps among `run tests`, `update docs`, `bump version`. Empty list means release-ready.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given booleans tests_passed, docs_updated, version_bumped, return an ordered lis
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Check each prerequisite in the specified order.
+## Tips
+A release is ready only when every required condition is satisfied.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.

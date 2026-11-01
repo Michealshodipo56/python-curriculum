@@ -1,6 +1,9 @@
-# module_to_path
+# Module to File
 
-## Challenge
+## Description
+Translate a dotted Python module name into a relative source-file path.
+
+### Behavior contract
 Convert a dotted Python module name into a relative POSIX path ending in .py. Raise ValueError for invalid identifier components.
 
 ## Requirements
@@ -9,8 +12,7 @@ Convert a dotted Python module name into a relative POSIX path ending in .py. Ra
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Split on dots, validate identifiers, and join with forward slashes.
+## Tips
+Dots separate module levels, while slashes separate directories.
 
-## Run tests
-`python -m pytest tests -q`
+The learner must develop the implementation from the stated contract.
