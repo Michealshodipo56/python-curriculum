@@ -1,15 +1,32 @@
-# times
+# Times Table
 
 ## Description
-Read an integer N. Print its products with 1 through 10, one per line.
+Produce a complete multiplication table for a number supplied at runtime. The format must remain consistent for every row.
 
 ## Requirements
-Each line must use `N x I = RESULT`, where I ranges from 1 to 10.
+- Read one integer N.
+- Display ten lines, for multipliers 1 through 10.
+- Use the exact format `N x I = RESULT`, with single spaces as shown.
 
-## Examples
-Input: "2\n" → output: "2 x 1 = 2\n2 x 2 = 4\n2 x 3 = 6\n2 x 4 = 8\n2 x 5 = 10\n2 x 6 = 12\n2 x 7 = 14\n2 x 8 = 16\n2 x 9 = 18\n2 x 10 = 20\n"
+## Example
+```text
+Input:
+2
 
-Input: "-1\n" → output: "-1 x 1 = -1\n-1 x 2 = -2\n-1 x 3 = -3\n-1 x 4 = -4\n-1 x 5 = -5\n-1 x 6 = -6\n-1 x 7 = -7\n-1 x 8 = -8\n-1 x 9 = -9\n-1 x 10 = -10\n"
+Output:
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+```
 
 ## Tips
-Use one repeated operation with a changing multiplier; preserve spaces and symbols in the output.
+One repeated rule should generate all ten rows. Consider whether negative input changes the formatting requirements.
+
+The example demonstrates expected behavior; it does not reveal an implementation.

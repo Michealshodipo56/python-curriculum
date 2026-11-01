@@ -1,15 +1,27 @@
-# guess
+# Find the Secret
 
 ## Description
-Read integer guesses, one per line, until the secret number 7 is entered. Respond to each guess.
+Build a simple interactive guessing process. The program must respond to each attempt and stop as soon as the secret is found.
 
 ## Requirements
-For each guess less than 7 print `low`; for each guess greater than 7 print `high`; when 7 is entered print `correct` and stop reading. Assume 7 eventually appears.
+- Read integer guesses, one per line, until the value 7 is entered.
+- Display `low` for guesses below 7 and `high` for guesses above 7.
+- Display `correct` when the guess is 7 and stop reading further input. Assume 7 eventually appears.
 
-## Examples
-Input: "3\n9\n7\n" → output: "low\nhigh\ncorrect\n"
+## Example
+```text
+Input:
+3
+9
+7
 
-Input: "7\n" → output: "correct\n"
+Output:
+low
+high
+correct
+```
 
 ## Tips
-A loop can keep reading until a stopping condition occurs. `break` can end a loop early.
+Separate the repeated input step from the condition that ends the game. What happens to guesses that appear after the correct one?
+
+The example demonstrates expected behavior; it does not reveal an implementation.
