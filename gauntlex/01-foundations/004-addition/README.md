@@ -1,18 +1,24 @@
-# sumtwo
+# Combine Values
 
 ## Description
-Write a program that reads two integers from standard input, one per line, and displays their sum.
+A program receives two whole numbers and must produce one result. This is your first exercise in turning text input into a calculation.
 
 ## Requirements
-- Read exactly two integer values.
-- Print only their total, followed by a newline.
-- Do not include interactive prompts.
+- Read two integers from standard input, one per line.
+- Display their arithmetic sum on one line.
+- Do not display prompts or explanations.
 
-## Examples
-```console
-$ printf '7\n5\n' | python main.py
+## Example
+```text
+Input:
+7
+5
+
+Output:
 12
 ```
 
 ## Tips
-`input()` reads text. Numeric calculations require numeric values; Python provides conversion functions. Addition combines two numbers.
+Investigate the type of a value read from standard input. How does combining two text values differ from adding two numbers?
+
+The example illustrates expected behavior; it is not an implementation.

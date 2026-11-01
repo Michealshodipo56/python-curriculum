@@ -1,19 +1,23 @@
-# greet
+# A Personal Greeting
 
 ## Description
-Read one line containing a name and display a greeting using that name.
+Make a program respond to information supplied by another person. The greeting must adapt to the input rather than being hard-coded for one name.
 
 ## Requirements
-- Read the name from standard input.
-- Output `Hello, NAME!` with NAME replaced by the supplied text.
-- Do not print prompts.
-- End with a newline.
+- Read one line containing a name.
+- Display `Hello, NAME!`, replacing `NAME` with the input exactly as provided.
+- Do not print a prompt or extra lines.
 
-## Examples
-```console
-$ printf 'Ada\n' | python main.py
+## Example
+```text
+Input:
+Ada
+
+Output:
 Hello, Ada!
 ```
 
 ## Tips
-A variable can hold text entered by a learner. String formatting lets you combine fixed text with a changing value.
+Separate the part of the message that never changes from the part that comes from the user.
+
+The example illustrates expected behavior; it is not an implementation.

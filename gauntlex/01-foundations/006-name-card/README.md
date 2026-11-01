@@ -1,15 +1,25 @@
-# namecard
+# Identity Card
 
 ## Description
-Read a name and a city from standard input, one per line. Display a two-line name card.
+Read two pieces of information and present them as a small, structured record. The order and labels matter.
 
 ## Requirements
-- Print `Name: ` followed by the name.
-- Print `City: ` followed by the city.
-- No prompts or additional output.
+- Read a name, then a city, each on its own line.
+- Display the name as `Name: VALUE` and the city as `City: VALUE`.
+- Print exactly two lines and no prompts.
 
-## Examples
-Input: `Ada` then `Lagos` → output lines `Name: Ada` and `City: Lagos`.
+## Example
+```text
+Input:
+Ada
+Lagos
+
+Output:
+Name: Ada
+City: Lagos
+```
 
 ## Tips
-Variables hold values so you can reuse them. A program can read more than one input line. Output labels must match exactly.
+Plan which input belongs to which output label before writing the program.
+
+The example illustrates expected behavior; it is not an implementation.
