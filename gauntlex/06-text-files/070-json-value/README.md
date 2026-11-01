@@ -1,7 +1,7 @@
-# json_value
+# Find a JSON Field
 
 ## Description
-Parse a JSON object string and return the value for the given key, or None when missing.
+Interpret a JSON object and retrieve a value by key, accounting for keys that are absent.
 
 ## Requirements
 - Implement `json_value(text, key)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Parse a JSON object string and return the value for the given key, or None when 
 `json_value("{\"x\":null}", "x")` → `None`
 
 ## Tips
-Use the JSON decoder before looking up the key.
+JSON `null` and a missing key can lead to the same Python result; understand the specified contract.
+
+Examples describe expected behavior without providing the implementation.

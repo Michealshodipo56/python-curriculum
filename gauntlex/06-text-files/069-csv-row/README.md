@@ -1,7 +1,7 @@
-# parse_csv_row
+# Fields and Quotes
 
 ## Description
-Parse a single CSV record into fields, supporting quoted commas and doubled quotes.
+Interpret one comma-separated record where quoted fields may contain commas or escaped quotation marks.
 
 ## Requirements
 - Implement `parse_csv_row(line)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Parse a single CSV record into fields, supporting quoted commas and doubled quot
 `parse_csv_row("\"a,b\",c")` → `["a,b", "c"]`
 
 ## Tips
-The standard library csv reader supports quoting.
+A comma inside quotation marks is data, not a field boundary. Explore the CSV quoting rules.
+
+Examples describe expected behavior without providing the implementation.

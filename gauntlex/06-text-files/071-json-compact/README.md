@@ -1,7 +1,7 @@
-# compact_json
+# Canonical JSON Text
 
 ## Description
-Return compact JSON for a serializable Python value with sorted keys and no spaces after separators.
+Serialize a Python value into stable, compact JSON with predictable key ordering.
 
 ## Requirements
 - Implement `compact_json(value)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return compact JSON for a serializable Python value with sorted keys and no spac
 `compact_json([1, 2, 3])` → `"[1,2,3]"`
 
 ## Tips
-The JSON encoder accepts separators and sorting options.
+Whitespace and key order affect the output string even when the underlying data is equivalent.
+
+Examples describe expected behavior without providing the implementation.
