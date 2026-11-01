@@ -1,6 +1,9 @@
-# password_strength
+# Rule-Based Password Score
 
-## Challenge
+## Description
+Score a password against four explicit character and length criteria.
+
+### Behavior contract
 Return a score 0–4, adding one point each for length>=12, at least one ASCII lowercase, at least one ASCII uppercase, and at least one ASCII digit. No entropy claims.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a score 0–4, adding one point each for length>=12, at least one ASCII l
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-This is a simple rule score, not a security guarantee.
+## Tips
+This simple score is not an estimate of actual password entropy or a security guarantee.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.
