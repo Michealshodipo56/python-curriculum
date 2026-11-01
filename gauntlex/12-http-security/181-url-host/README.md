@@ -1,6 +1,9 @@
-# url_host
+# Identify the Host
 
-## Challenge
+## Description
+Extract the hostname of an absolute web URL while rejecting unsupported schemes and missing hosts.
+
+### Behavior contract
 Return the lowercase hostname of an absolute HTTP or HTTPS URL. Raise ValueError for missing hostname or unsupported schemes.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the lowercase hostname of an absolute HTTP or HTTPS URL. Raise ValueError
 `url_host("http://localhost/x")` → `"localhost"`
 
 ## Tips
-Use urlsplit; validate the scheme and hostname separately.
+A URL's hostname is not its entire network location: ports and paths are separate.
+
+Examples describe the contract, not a solution.

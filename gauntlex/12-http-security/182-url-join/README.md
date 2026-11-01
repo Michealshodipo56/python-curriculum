@@ -1,6 +1,9 @@
-# resolve_url
+# Resolve a Link
 
-## Challenge
+## Description
+Resolve a relative link against a base URL according to URL path rules.
+
+### Behavior contract
 Resolve a possibly relative URL against an absolute base URL using standard URL resolution rules.
 
 ## Requirements
@@ -15,4 +18,6 @@ Resolve a possibly relative URL against an absolute base URL using standard URL 
 `resolve_url("https://example.com/a/", "/x")` → `"https://example.com/x"`
 
 ## Tips
-The standard library can resolve relative URLs, including parent segments.
+A relative link may move to a parent directory or replace the entire path.
+
+Examples describe the contract, not a solution.

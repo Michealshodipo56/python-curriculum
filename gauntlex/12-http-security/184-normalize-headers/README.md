@@ -1,6 +1,9 @@
-# normalize_headers
+# Canonical Header Names
 
-## Challenge
+## Description
+Normalize a sequence of HTTP headers while retaining the latest value for duplicate names.
+
+### Behavior contract
 Given a sequence of [name,value] HTTP header pairs, return a dictionary with lowercase trimmed names and trimmed values. Later duplicate names overwrite earlier values.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a sequence of [name,value] HTTP header pairs, return a dictionary with low
 `normalize_headers([["X", "1"], ["x", "2"]])` → `{"x": "2"}`
 
 ## Tips
-Header field names are case-insensitive.
+HTTP header names are case-insensitive, but their values are not necessarily so.
+
+Examples describe the contract, not a solution.
