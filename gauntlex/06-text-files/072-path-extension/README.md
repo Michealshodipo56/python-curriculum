@@ -1,7 +1,7 @@
-# path_extension
+# Final File Suffix
 
 ## Description
-Return the lowercase final filename extension without the dot, or empty string if absent. POSIX paths.
+Extract the final extension of a POSIX filename, ignoring the case of its letters.
 
 ## Requirements
 - Implement `path_extension(path)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return the lowercase final filename extension without the dot, or empty string i
 `path_extension("archive.tar.gz")` → `"gz"`
 
 ## Tips
-Path suffixes differ from the text after the first dot.
+Consider filenames with multiple dots and filenames without an extension.
+
+Examples describe expected behavior without providing the implementation.

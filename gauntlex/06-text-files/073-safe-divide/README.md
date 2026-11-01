@@ -1,7 +1,7 @@
-# safe_divide
+# Division Without Failure
 
 ## Description
-Return a/b, or None if b is zero.
+Provide a division operation that handles a zero divisor without terminating unexpectedly.
 
 ## Requirements
 - Implement `safe_divide(a, b)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return a/b, or None if b is zero.
 `safe_divide(3, 0)` → `None`
 
 ## Tips
-Handle only the expected division-by-zero case.
+The zero-divisor case is expected. How should it differ from ordinary division?
+
+Examples describe expected behavior without providing the implementation.

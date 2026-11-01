@@ -1,7 +1,7 @@
-# parse_date
+# Real Calendar Dates
 
 ## Description
-Return an ISO YYYY-MM-DD date string when input is a valid calendar date, or None otherwise.
+Accept a date string only if it describes an actual day on the calendar.
 
 ## Requirements
 - Implement `parse_date(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return an ISO YYYY-MM-DD date string when input is a valid calendar date, or Non
 `parse_date("2023-02-29")` → `None`
 
 ## Tips
-The datetime module validates calendar dates.
+Check leap years and impossible day numbers; matching a date pattern alone is not enough.
+
+Examples describe expected behavior without providing the implementation.
