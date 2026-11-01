@@ -1,6 +1,9 @@
-# create_users
+# Define the Users Table
 
-## Challenge
+## Description
+Establish a database table that can safely store users and enforce uniqueness of their email addresses.
+
+### Behavior contract
 Create a users table if absent, with id INTEGER PRIMARY KEY, name TEXT NOT NULL, and email TEXT NOT NULL UNIQUE.
 
 ## Requirements
@@ -10,8 +13,7 @@ Create a users table if absent, with id INTEGER PRIMARY KEY, name TEXT NOT NULL,
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Use CREATE TABLE IF NOT EXISTS.
+## Tips
+Which rules belong in the schema so every future insert must respect them?
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

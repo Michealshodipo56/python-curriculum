@@ -1,6 +1,9 @@
-# update_email
+# Change a User Email
 
-## Challenge
+## Description
+Update a stored email address and report whether a user was actually affected.
+
+### Behavior contract
 Update the email of a user by integer ID. Return True if a row was updated, otherwise False. Table users(id,name,email) exists.
 
 ## Requirements
@@ -10,8 +13,7 @@ Update the email of a user by integer ID. Return True if a row was updated, othe
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Check cursor.rowcount after a parameterized UPDATE.
+## Tips
+The outcome should distinguish a successful update from an absent user.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

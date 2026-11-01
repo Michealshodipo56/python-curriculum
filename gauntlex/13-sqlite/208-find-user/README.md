@@ -1,6 +1,9 @@
-# find_user
+# Find One Record
 
-## Challenge
+## Description
+Retrieve a user by its numeric identifier, handling the case where no row exists.
+
+### Behavior contract
 Return [id,name,email] for a user with the specified integer ID, or None if not found. Table users(id,name,email) exists.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [id,name,email] for a user with the specified integer ID, or None if not 
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Fetch one parameterized row and convert it to a list.
+## Tips
+A database row and a Python list are different representations of the same record.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

@@ -1,6 +1,9 @@
-# list_users
+# Read the User Directory
 
-## Challenge
+## Description
+Retrieve all users in a predictable order, regardless of their insertion history.
+
+### Behavior contract
 Return a list of [id,name,email] rows from users(id,name,email), ordered by id ascending.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return a list of [id,name,email] rows from users(id,name,email), ordered by id a
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Use ORDER BY id for deterministic results.
+## Tips
+Without explicit ordering, database result order is not guaranteed.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

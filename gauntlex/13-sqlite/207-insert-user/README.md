@@ -1,6 +1,9 @@
-# insert_user
+# Register a User
 
-## Challenge
+## Description
+Insert one user into an existing database and return the identifier assigned to the new row.
+
+### Behavior contract
 Insert a user into the existing users table with name and email; return the inserted integer row ID.
 
 ## Requirements
@@ -10,8 +13,7 @@ Insert a user into the existing users table with name and email; return the inse
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Use bound parameters and cursor.lastrowid.
+## Tips
+Bind user-supplied values rather than constructing SQL by concatenating strings.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.
