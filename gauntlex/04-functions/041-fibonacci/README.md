@@ -1,17 +1,18 @@
-# fibonacci
+# Sequence Memory
 
 ## Description
-Implement `fibonacci(n)` returning the nth Fibonacci number, with F(0)=0, F(1)=1, and F(n)=F(n-1)+F(n-2). Assume n>=0.
+Compute one term of a sequence where every term after the first two depends on the two preceding terms.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``fibonacci(n)`` in `solution.py`.
+- For nonnegative `n`, return the nth term with F(0)=0, F(1)=1, and F(n)=F(n−1)+F(n−2).
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`fibonacci(0)` → `0`
-
-`fibonacci(1)` → `1`
+## Example
+`fibonacci(0)` → `0`; `fibonacci(1)` → `1`; `fibonacci(6)` → `8`.
 
 ## Tips
-Keep track of two consecutive values and update them in a loop.
+Track how much previous information is necessary to produce the next term.
+
+The examples specify behavior without supplying the implementation.
