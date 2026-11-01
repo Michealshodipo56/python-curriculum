@@ -1,6 +1,9 @@
-# build_query
+# Write URL Parameters
 
 ## Description
+Produce a predictable, encoded query string from a mapping of names and values.
+
+### Behavior contract
 Encode a mapping of string keys and values as an HTTP query string. Sort keys alphabetically before encoding. Use plus for spaces.
 
 ## Requirements
@@ -15,4 +18,6 @@ Encode a mapping of string keys and values as an HTTP query string. Sort keys al
 `build_query({})` → `""`
 
 ## Tips
-URL encoding differs from plain string concatenation.
+Sorting names first makes the result stable regardless of mapping insertion order.
+
+The examples show required behavior, not an implementation.

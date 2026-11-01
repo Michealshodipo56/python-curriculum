@@ -1,6 +1,9 @@
-# count_log_levels
+# Log Severity Summary
 
 ## Description
+Summarize valid log records by severity while ignoring malformed entries.
+
+### Behavior contract
 Given a list of log lines in `LEVEL|YYYY-MM-DD|MESSAGE` format, return counts of valid INFO, WARN and ERROR records, ignoring malformed lines. Include zero counts.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a list of log lines in `LEVEL|YYYY-MM-DD|MESSAGE` format, return counts of
 `count_log_levels([])` → `{"INFO": 0, "WARN": 0, "ERROR": 0}`
 
 ## Tips
-Reuse validation logic rather than assuming every line is well formed.
+Include categories with zero occurrences. Reuse the record contract rather than counting arbitrary prefixes.
+
+The examples show required behavior, not an implementation.

@@ -1,6 +1,9 @@
-# parse_query
+# Read URL Parameters
 
 ## Description
+Decode an HTTP query string into named values, including repeated keys and escaped characters.
+
+### Behavior contract
 Parse an HTTP-style query string into a dictionary mapping each key to its last value. Decode percent escapes and plus-as-space. Blank values are retained.
 
 ## Requirements
@@ -15,4 +18,6 @@ Parse an HTTP-style query string into a dictionary mapping each key to its last 
 `parse_query("x=&y=%2B")` → `{"x": "", "y": "+"}`
 
 ## Tips
-The standard library urllib.parse supports query parsing.
+Consider how a plus sign differs from a percent-encoded plus character.
+
+The examples show required behavior, not an implementation.

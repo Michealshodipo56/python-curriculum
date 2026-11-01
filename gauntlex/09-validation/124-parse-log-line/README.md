@@ -1,6 +1,9 @@
-# parse_log_line
+# Structured Log Entry
 
 ## Description
+Interpret a line containing a severity, calendar date, and free-form message, rejecting malformed records.
+
+### Behavior contract
 Parse a log line formatted `LEVEL|YYYY-MM-DD|MESSAGE`. Return a dict with keys level, date, message, or None if invalid. LEVEL must be INFO, WARN or ERROR; date must be a real calendar date. MESSAGE may contain |.
 
 ## Requirements
@@ -15,4 +18,6 @@ Parse a log line formatted `LEVEL|YYYY-MM-DD|MESSAGE`. Return a dict with keys l
 `parse_log_line("DEBUG|2024-01-01|x")` → `None`
 
 ## Tips
-Split at most twice, then validate each field.
+The message may contain delimiters, so dividing at every delimiter loses information.
+
+The examples show required behavior, not an implementation.
