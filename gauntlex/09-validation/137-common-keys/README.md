@@ -1,6 +1,9 @@
-# common_keys
+# Shared Dictionary Keys
 
 ## Description
+Compare two mappings and list the keys present in both.
+
+### Behavior contract
 Return a sorted list of keys appearing in both input dictionaries.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return a sorted list of keys appearing in both input dictionaries.
 `common_keys({}, {"x": 1})` → `[]`
 
 ## Tips
-Set intersection and sorting make a deterministic result.
+A stable alphabetical result should not depend on insertion order.
+
+The examples specify results without giving an implementation.

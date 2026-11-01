@@ -1,6 +1,9 @@
-# top_words
+# Word Leaderboard
 
 ## Description
+Extract ASCII words from text and rank the most frequent, using alphabetical order to break ties.
+
+### Behavior contract
 Return the n most frequent lowercase ASCII words in text, ordered by descending count and then alphabetically. Words are maximal runs of letters a-z; ignore punctuation. Assume n>=0.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return the n most frequent lowercase ASCII words in text, ordered by descending 
 `top_words("b a b a", 1)` → `["a"]`
 
 ## Tips
-Normalize and tokenize before counting; a secondary alphabetical key resolves ties.
+Punctuation separates words; case normalization happens before frequency counting.
+
+The examples specify results without giving an implementation.

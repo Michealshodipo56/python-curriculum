@@ -1,6 +1,9 @@
-# set_diff
+# What Changed?
 
 ## Description
+Compare two collections and report added, removed, and unchanged unique values.
+
+### Behavior contract
 Return a dictionary with keys `added`, `removed`, and `shared`, each containing a sorted list of strings comparing old and new collections. Ignore duplicates.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return a dictionary with keys `added`, `removed`, and `shared`, each containing 
 `set_diff([], [])` → `{"added": [], "removed": [], "shared": []}`
 
 ## Tips
-Use set differences and intersection.
+Think about the direction of the comparison: added means present in new but not old.
+
+The examples specify results without giving an implementation.

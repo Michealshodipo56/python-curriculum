@@ -1,6 +1,9 @@
-# invert_mapping
+# Reverse a Relationship
 
 ## Description
+Reverse a mapping while retaining all original keys that share one value.
+
+### Behavior contract
 Given a dictionary mapping strings to strings, return a dictionary mapping each value to the list of original keys in their insertion order.
 
 ## Requirements
@@ -15,4 +18,6 @@ Given a dictionary mapping strings to strings, return a dictionary mapping each 
 `invert_mapping({})` → `{}`
 
 ## Tips
-Multiple keys can share the same value, so each inverted entry needs a list.
+An inverse is not necessarily one-to-one; a value can map back to several keys.
+
+The examples specify results without giving an implementation.
