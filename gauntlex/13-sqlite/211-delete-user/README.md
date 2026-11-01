@@ -1,6 +1,9 @@
-# delete_user
+# Remove a User
 
-## Challenge
+## Description
+Delete one identified user and report whether the record existed.
+
+### Behavior contract
 Delete the user with the given integer ID. Return True if deleted and False if absent.
 
 ## Requirements
@@ -10,8 +13,7 @@ Delete the user with the given integer ID. Return True if deleted and False if a
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Use a bound DELETE query and inspect affected rows.
+## Tips
+Deleting a nonexistent row should not be confused with deleting an existing one.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

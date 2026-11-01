@@ -1,6 +1,9 @@
-# create_orders
+# Define the Orders Table
 
-## Challenge
+## Description
+Create a schema for orders that rejects negative amounts at the database level.
+
+### Behavior contract
 Create orders(id INTEGER PRIMARY KEY,user_id INTEGER NOT NULL,amount INTEGER NOT NULL CHECK(amount>=0)) if it does not exist.
 
 ## Requirements
@@ -10,8 +13,7 @@ Create orders(id INTEGER PRIMARY KEY,user_id INTEGER NOT NULL,amount INTEGER NOT
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Define nonnegative amounts using a CHECK constraint.
+## Tips
+A database constraint protects data even when multiple callers write to the same table.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

@@ -1,6 +1,9 @@
-# users_page
+# Paginate User Records
 
-## Challenge
+## Description
+Return one page of user records using stable ordering and validated page arguments.
+
+### Behavior contract
 Return [id,name] rows from users(id,name,email) ordered by id ascending for 1-based page and positive page_size. Raise ValueError for invalid page or page_size.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [id,name] rows from users(id,name,email) ordered by id ascending for 1-ba
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-Use LIMIT and OFFSET as bound integers.
+## Tips
+The first page starts at offset zero even though the page number starts at one.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

@@ -1,6 +1,9 @@
-# search_users
+# Search Names Literally
 
-## Challenge
+## Description
+Find users whose names contain a supplied term, without allowing SQL wildcard characters to change its meaning.
+
+### Behavior contract
 Return [id,name] rows from users(id,name,email) whose name contains the supplied substring case-insensitively, ordered by id. Treat % and _ as literal characters, not SQL wildcards.
 
 ## Requirements
@@ -10,8 +13,7 @@ Return [id,name] rows from users(id,name,email) whose name contains the supplied
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-LIKE requires escaping its wildcard characters when searching literal text.
+## Tips
+A percent sign entered by a user should be searched as text, not interpreted as a pattern.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.

@@ -1,6 +1,9 @@
-# count_users
+# Count the Directory
 
-## Challenge
+## Description
+Report how many user records exist without retrieving every record.
+
+### Behavior contract
 Return the number of rows in users(id,name,email).
 
 ## Requirements
@@ -10,8 +13,7 @@ Return the number of rows in users(id,name,email).
 - Use parameterized SQL for untrusted values and standard-library modules only.
 - Preserve the caller's existing data and transaction state except for the documented changes.
 
-## Hints
-COUNT(*) returns a single aggregate row.
+## Tips
+An aggregate query can return one value representing many rows.
 
-## Run tests
-`python -m pytest tests -q`
+Design the database interaction yourself; no SQL solution is provided.
