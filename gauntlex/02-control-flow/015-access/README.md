@@ -1,15 +1,24 @@
-# access
+# Permission Gate
 
 ## Description
-Read an age and a license status (`yes` or `no`) on separate lines. Decide if a person may enter a supervised driving session.
+A supervised driving session has two eligibility requirements. Determine whether a participant satisfies both.
 
 ## Requirements
-Print `allowed` only when age is at least 16 and license status is `yes`; otherwise print `denied`. Input status is lowercase.
+- Read an integer age and a lowercase license status (`yes` or `no`) on separate lines.
+- Display `allowed` only when the age is at least 16 and the status is `yes`.
+- Display `denied` in all other cases, with no prompts.
 
-## Examples
-Input: "16\nyes\n" → output: "allowed\n"
+## Example
+```text
+Input:
+16
+yes
 
-Input: "15\nyes\n" → output: "denied\n"
+Output:
+allowed
+```
 
 ## Tips
-A compound condition can require two separate checks to be true at the same time.
+Consider how two independent conditions combine. What should happen when only one condition is satisfied?
+
+The example demonstrates expected behavior; it does not reveal an implementation.

@@ -1,15 +1,23 @@
-# grade
+# Score Boundaries
 
 ## Description
-Read a score from 0 to 100. Print its letter grade.
+A grading system translates numeric scores into letter categories. Write a program that chooses the correct category, especially at the boundaries between grades.
 
 ## Requirements
-A: 90–100; B: 80–89; C: 70–79; D: 60–69; F: 0–59. Print `Grade: X` only.
+- Read one integer score from 0 through 100.
+- Use A for 90–100, B for 80–89, C for 70–79, D for 60–69, and F for 0–59.
+- Display only `Grade: X`, replacing X with the appropriate letter.
 
-## Examples
-Input: "100\n" → output: "Grade: A\n"
+## Example
+```text
+Input:
+90
 
-Input: "90\n" → output: "Grade: A\n"
+Output:
+Grade: A
+```
 
 ## Tips
-Check the highest boundary first; each branch should represent a nonoverlapping range.
+Test the values immediately below and above every grade boundary. Each possible score should belong to exactly one category.
+
+The example demonstrates expected behavior; it does not reveal an implementation.

@@ -1,15 +1,25 @@
-# countto
+# Count Forward
 
 ## Description
-Read a nonnegative integer N. Print the integers from 1 through N, each on its own line. Print nothing when N is zero.
+Generate a sequence of consecutive integers without writing a separate instruction for each number.
 
 ## Requirements
-Use repetition rather than writing a separate print statement for each value.
+- Read a nonnegative integer N.
+- Display every integer from 1 through N, one per line.
+- When N is zero, produce no output.
 
-## Examples
-Input: "3\n" → output: "1\n2\n3\n"
+## Example
+```text
+Input:
+3
 
-Input: "0\n" → output: ""
+Output:
+1
+2
+3
+```
 
 ## Tips
-A `for` loop can visit a sequence of integers. Pay attention to whether the endpoint is included.
+Think about the first and last values in the sequence. Pay attention to whether a loop's upper boundary is included.
+
+The example demonstrates expected behavior; it does not reveal an implementation.
