@@ -1,7 +1,7 @@
-# iso_weekday
+# Day of the Week
 
 ## Description
-Return the ISO weekday of a valid YYYY-MM-DD date: Monday=1 through Sunday=7.
+Translate a calendar date into the ISO weekday numbering system.
 
 ## Requirements
 - Implement `iso_weekday(text)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return the ISO weekday of a valid YYYY-MM-DD date: Monday=1 through Sunday=7.
 `iso_weekday("2024-01-07")` → `7`
 
 ## Tips
-Date objects expose an ISO weekday method.
+ISO weeks start on Monday. Check both the beginning and end of a week.
+
+Examples describe expected behavior without providing the implementation.

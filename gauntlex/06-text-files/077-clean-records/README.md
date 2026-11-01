@@ -1,7 +1,7 @@
-# clean_records
+# Keep Valid Records
 
 ## Description
-Return copies of dictionaries whose name field is a nonempty string after trimming, with each retained name trimmed.
+Clean a collection of record dictionaries by retaining only entries with meaningful names.
 
 ## Requirements
 - Implement `clean_records(records)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return copies of dictionaries whose name field is a nonempty string after trimmi
 `clean_records([])` → `[]`
 
 ## Tips
-Create new dictionaries to avoid mutating caller-owned records.
+Preserve other fields and avoid changing the caller's original dictionaries.
+
+Examples describe expected behavior without providing the implementation.

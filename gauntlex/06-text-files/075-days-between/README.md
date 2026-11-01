@@ -1,7 +1,7 @@
-# days_between
+# Calendar Distance
 
 ## Description
-Return the absolute number of days between two valid ISO date strings.
+Measure the number of whole days separating two valid dates, regardless of which comes first.
 
 ## Requirements
 - Implement `days_between(a, b)` in `starter/solution.py`.
@@ -14,4 +14,6 @@ Return the absolute number of days between two valid ISO date strings.
 `days_between("2024-03-01", "2024-02-28")` → `2`
 
 ## Tips
-Subtract date objects to obtain a duration.
+Dates have calendar rules that ordinary numeric subtraction does not capture.
+
+Examples describe expected behavior without providing the implementation.
