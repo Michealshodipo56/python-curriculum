@@ -1,6 +1,9 @@
-# csv_group_sum
+# Aggregate CSV Values
 
-## Challenge
+## Description
+Summarize numeric CSV records by a named category column.
+
+### Behavior contract
 Given a CSV file path with a header, category column name, and integer amount column name, return a dictionary mapping categories to summed amounts. Empty data produces {}. Assume valid CSV and integers.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a CSV file path with a header, category column name, and integer amount co
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-DictReader handles header-based column lookup.
+## Tips
+Use header names to locate fields rather than fixed column positions.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

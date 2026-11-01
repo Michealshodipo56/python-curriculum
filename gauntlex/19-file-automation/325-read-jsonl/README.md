@@ -1,6 +1,9 @@
-# read_jsonl
+# Load a JSON Lines Stream
 
-## Challenge
+## Description
+Read structured values from a JSON Lines file, skipping blank lines.
+
+### Behavior contract
 Read a UTF-8 JSON Lines file and return parsed values in order, skipping blank or whitespace-only lines. Propagate JSON decoding errors.
 
 ## Requirements
@@ -9,8 +12,7 @@ Read a UTF-8 JSON Lines file and return parsed values in order, skipping blank o
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Parse one nonblank line at a time.
+## Tips
+Each nonblank line is an independent JSON document.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.

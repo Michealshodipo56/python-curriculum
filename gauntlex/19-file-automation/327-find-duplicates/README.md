@@ -1,6 +1,9 @@
-# duplicate_hashes
+# Find Duplicate Content
 
-## Challenge
+## Description
+Group files with identical byte content by their cryptographic digest.
+
+### Behavior contract
 Given a list of file paths, return a dictionary mapping SHA-256 hex digests to sorted path strings, but only for digests occurring more than once. Read file bytes; do not rely on filenames.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of file paths, return a dictionary mapping SHA-256 hex digests to s
 - Return the specified result without printing.
 - Do not mutate caller-owned values or touch files outside the specified paths.
 
-## Hints
-Group paths by content digest, then keep only groups of size at least two.
+## Tips
+Different filenames can contain the same bytes, and equal names can contain different bytes.
 
-## Run tests
-`python -m pytest tests -q`
+The task defines behavior; design the implementation independently.
