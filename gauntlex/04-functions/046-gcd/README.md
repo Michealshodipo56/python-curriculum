@@ -1,17 +1,19 @@
-# gcd
+# Greatest Shared Divisor
 
 ## Description
-Implement `gcd(a, b)` returning the greatest common divisor as a nonnegative integer. Both arguments are integers; gcd(0,0)=0.
+Find the largest nonnegative integer that divides two integers without a remainder.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``gcd(a, b)`` in `solution.py`.
+- Return a nonnegative greatest common divisor, including `gcd(0, 0) == 0`.
+- Investigate how the remainder of two numbers relates to their common divisors.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`gcd(12, 18)` → `6`
-
-`gcd(-8, 12)` → `4`
+## Example
+Accept negative and zero arguments.
 
 ## Tips
-The Euclidean algorithm replaces a pair with the second number and their remainder until no remainder remains.
+`gcd(12, 18)` → `6`; `gcd(-8, 12)` → `4`.
+
+The examples specify behavior without supplying the implementation.

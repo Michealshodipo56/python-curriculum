@@ -1,17 +1,19 @@
-# chunklist
+# Divide Into Chunks
 
 ## Description
-Implement `chunks(items, size)` returning consecutive sublists of at most `size` elements. Assume size is positive.
+Partition a sequence into consecutive groups of a requested maximum size. The final group may be shorter.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``chunks(items, size)`` in `solution.py`.
+- Return a new list of consecutive sublists containing at most `size` elements; assume `size` is positive.
+- Consider the boundaries when the input length is not divisible by the group size.
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`chunklist([1, 2, 3, 4, 5], 2)` → `[[1, 2], [3, 4], [5]]`
-
-`chunklist([], 3)` → `[]`
+## Example
+Preserve the original order and do not modify `items`.
 
 ## Tips
-A slice can select a bounded section. Move the start position by the chunk size.
+`chunks([1, 2, 3, 4, 5], 2)` → `[[1, 2], [3, 4], [5]]`.
+
+The examples specify behavior without supplying the implementation.

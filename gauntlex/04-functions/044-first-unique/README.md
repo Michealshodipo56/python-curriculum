@@ -1,17 +1,19 @@
-# firstunique
+# First Unrepeated Character
 
 ## Description
-Implement `first_unique(text)` returning the first character that appears exactly once, or None if no such character exists. Case-sensitive.
+Find the earliest character in a string that occurs exactly once across the entire string.
 
 ## Requirements
-- Implement the named function in `solution.py`.
-- Return the value; do not print it.
-- Do not add executable input handling at module import time.
+- Implement ``first_unique(text)`` in `solution.py`.
+- Return the first character with frequency one, or `None` if none exists.
+- A character can look unique early on and repeat later. What information is needed before deciding?
+- Return the result instead of printing it.
+- Do not run input-handling code when the module is imported.
 
-## Examples
-`firstunique("swiss")` → `"w"`
-
-`firstunique("aabb")` → `None`
+## Example
+Treat uppercase and lowercase characters as different.
 
 ## Tips
-Count all characters first, then scan the original order to find the first count of one.
+`first_unique('swiss')` → `'w'`; `first_unique('aabb')` → `None`.
+
+The examples specify behavior without supplying the implementation.
