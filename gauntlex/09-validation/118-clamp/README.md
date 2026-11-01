@@ -1,6 +1,9 @@
-# clamp
+# Stay Within Bounds
 
 ## Description
+Constrain a numeric value to an inclusive interval while detecting invalid interval boundaries.
+
+### Behavior contract
 Return value bounded to the inclusive range [low,high]. Raise ValueError when low>high.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return value bounded to the inclusive range [low,high]. Raise ValueError when lo
 `clamp(-3, 0, 10)` → `0`
 
 ## Tips
-Check the range invariant before applying lower and upper bounds.
+Consider values below, within, and above the range. What if the interval itself is impossible?
+
+The examples show required behavior, not an implementation.

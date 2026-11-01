@@ -1,6 +1,9 @@
-# parse_boolean
+# Interpret a Boolean
 
 ## Description
+Convert common textual representations of yes and no into Boolean values, rejecting unsupported words.
+
+### Behavior contract
 Return True for 'true','yes','1', False for 'false','no','0', ignoring surrounding whitespace and case. Raise ValueError for other strings.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return True for 'true','yes','1', False for 'false','no','0', ignoring surroundi
 `parse_boolean("No")` → `False`
 
 ## Tips
-Map accepted tokens to Boolean values; reject ambiguous inputs.
+An invalid token must not silently become false. Distinguish rejection from a legitimate negative response.
+
+The examples show required behavior, not an implementation.

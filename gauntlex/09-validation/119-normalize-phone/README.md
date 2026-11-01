@@ -1,6 +1,9 @@
-# normalize_phone
+# Telephone Canonical Form
 
 ## Description
+Clean permitted formatting characters from a telephone number while rejecting malformed input.
+
+### Behavior contract
 Remove spaces, hyphens and parentheses from a phone string. Keep an optional leading +. Raise ValueError if any other character remains or no digits remain.
 
 ## Requirements
@@ -15,4 +18,6 @@ Remove spaces, hyphens and parentheses from a phone string. Keep an optional lea
 `normalize_phone("080-123 456")` → `"080123456"`
 
 ## Tips
-Validate characters before or after removing allowed separators.
+The plus sign is meaningful only at the beginning; removing separators must not conceal invalid characters.
+
+The examples show required behavior, not an implementation.

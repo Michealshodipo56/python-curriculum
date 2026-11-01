@@ -1,6 +1,9 @@
-# dedupe_normalized
+# Distinct After Normalization
 
 ## Description
+Clean a collection of strings and keep only the first occurrence of each meaningful normalized value.
+
+### Behavior contract
 Return unique trimmed, casefolded nonempty strings in their first appearance order.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return unique trimmed, casefolded nonempty strings in their first appearance ord
 `dedupe_normalized([])` → `[]`
 
 ## Tips
-Normalize before comparing, and preserve the first occurrence order.
+Normalization must happen before checking for duplicates. Consider empty strings and mixed case.
+
+The examples show required behavior, not an implementation.

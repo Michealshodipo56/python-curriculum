@@ -1,6 +1,9 @@
-# validate_password
+# Password Rules
 
 ## Description
+Check a candidate password against several independent character and length requirements.
+
+### Behavior contract
 Return True if a string has at least 8 characters and contains at least one ASCII uppercase letter, one ASCII lowercase letter, and one ASCII digit.
 
 ## Requirements
@@ -15,4 +18,6 @@ Return True if a string has at least 8 characters and contains at least one ASCI
 `validate_password("abcdefg1")` → `False`
 
 ## Tips
-Combine several independent character-class checks.
+A long password can still fail if it lacks one required character class.
+
+The examples show required behavior, not an implementation.
