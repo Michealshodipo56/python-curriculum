@@ -1,6 +1,9 @@
-# hmac_verify
+# Authenticate a Signature
 
-## Challenge
+## Description
+Verify a message authentication code without leaking the first mismatching position.
+
+### Behavior contract
 Return True only if lowercase or uppercase hexadecimal signature equals the HMAC-SHA256 signature of UTF-8 message with UTF-8 secret. Reject malformed signatures by returning False. Use constant-time comparison.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return True only if lowercase or uppercase hexadecimal signature equals the HMAC
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Use hmac.compare_digest for the final comparison.
+## Tips
+Reject malformed signatures before using a timing-resistant comparison.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

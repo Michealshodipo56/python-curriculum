@@ -1,6 +1,9 @@
-# derive_key
+# Derive a Key
 
-## Challenge
+## Description
+Derive fixed-length key material from a password, salt, and iteration count.
+
+### Behavior contract
 Return lowercase hex of a 32-byte PBKDF2-HMAC-SHA256 derived key for UTF-8 password and salt with positive integer iterations. Raise ValueError for nonpositive iterations.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return lowercase hex of a 32-byte PBKDF2-HMAC-SHA256 derived key for UTF-8 passw
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-PBKDF2 deliberately repeats a keyed hash to slow guessing.
+## Tips
+A key-derivation function deliberately repeats work; iterations must be positive.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

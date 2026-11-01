@@ -1,6 +1,9 @@
-# random_token
+# Secure Random Token
 
-## Challenge
+## Description
+Generate a URL-safe token from cryptographically secure random bytes.
+
+### Behavior contract
 Return a URL-safe Base64 token representing exactly n cryptographically random bytes, without trailing padding. Require n>=1. Tests check format and decoded length, not a fixed random output.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a URL-safe Base64 token representing exactly n cryptographically random b
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Use secrets.token_bytes, not random.Random.
+## Tips
+A security token needs a secure randomness source, not a predictable pseudo-random sequence.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.
