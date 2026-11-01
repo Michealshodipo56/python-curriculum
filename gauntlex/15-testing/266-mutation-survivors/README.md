@@ -1,6 +1,9 @@
-# surviving_mutants
+# Undetected Mutations
 
-## Challenge
+## Description
+Identify modified implementations that none of the supplied tests rejected.
+
+### Behavior contract
 Given mapping of mutant_id->list of booleans indicating whether each test passed, return sorted mutant IDs for which all tests passed (including no tests).
 
 ## Requirements
@@ -9,8 +12,7 @@ Given mapping of mutant_id->list of booleans indicating whether each test passed
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-A surviving mutant was not detected by any test failure.
+## Tips
+A mutation with no tests has not been detected.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

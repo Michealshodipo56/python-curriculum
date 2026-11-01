@@ -1,6 +1,9 @@
-# case_ids
+# Unique Case Labels
 
-## Challenge
+## Description
+Give repeated test names distinct identifiers based on their occurrence count.
+
+### Behavior contract
 Given a list of test case dictionaries with a `name` string, return IDs `name#N` where N is the 1-based occurrence count for that name.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of test case dictionaries with a `name` string, return IDs `name#N`
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Keep separate occurrence counters per name.
+## Tips
+Track each name independently; a different name must not change its count.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.

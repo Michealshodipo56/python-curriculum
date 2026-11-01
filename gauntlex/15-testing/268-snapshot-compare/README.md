@@ -1,6 +1,9 @@
-# snapshot_matches
+# Compare Stable Snapshots
 
-## Challenge
+## Description
+Decide whether two structured values have identical canonical JSON representations.
+
+### Behavior contract
 Return True if two JSON-compatible Python values have identical canonical compact sorted-key JSON representations. Dictionary key order must not matter; list order must matter.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return True if two JSON-compatible Python values have identical canonical compac
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Canonical JSON serialization gives stable snapshots.
+## Tips
+Object key order is not significant, but array element order is.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.
