@@ -1,6 +1,9 @@
-# application
+# Headers Without a Body
 
-## Challenge
+## Description
+Support GET and HEAD for one resource while respecting their different response-body rules.
+
+### Behavior contract
 Implement GET and HEAD `/status`: GET returns bytes `ready`, HEAD returns empty bytes, both with 200 and Content-Type text/plain. All other paths return 404.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET and HEAD `/status`: GET returns bytes `ready`, HEAD returns empty 
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-HEAD has headers but no response body.
+## Tips
+HEAD returns the response metadata without sending the representation body.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

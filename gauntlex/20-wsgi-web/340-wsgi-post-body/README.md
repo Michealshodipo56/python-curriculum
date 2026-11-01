@@ -1,6 +1,9 @@
-# application
+# Read a Request Body
 
-## Challenge
+## Description
+Read a declared number of request bytes and transform the decoded text.
+
+### Behavior contract
 Implement POST `/uppercase` reading exactly CONTENT_LENGTH bytes from `wsgi.input`, decoding UTF-8, uppercasing text, and returning UTF-8 bytes with 200 status. Other paths return 404. Content-Type text/plain.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement POST `/uppercase` reading exactly CONTENT_LENGTH bytes from `wsgi.inpu
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Never read beyond the declared request length.
+## Tips
+Never read beyond the advertised content length.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

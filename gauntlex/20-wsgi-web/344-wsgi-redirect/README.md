@@ -1,6 +1,9 @@
-# application
+# Move a Resource
 
-## Challenge
+## Description
+Return an HTTP redirect from an old path to a new one.
+
+### Behavior contract
 Implement a WSGI application redirecting GET `/old` to `/new` using 302 Found and a Location header; response body empty. GET `/new` returns 200 with body `new`. Other paths return 404.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement a WSGI application redirecting GET `/old` to `/new` using 302 Found an
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Redirects are expressed using a 3xx status and Location header.
+## Tips
+A redirect needs both a 3xx status and a Location header.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

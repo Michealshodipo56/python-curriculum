@@ -1,6 +1,9 @@
-# application
+# Inspect Request Headers
 
-## Challenge
+## Description
+Read an HTTP request header from its WSGI environment representation.
+
+### Behavior contract
 Implement GET `/agent` returning the HTTP_USER_AGENT environment value as UTF-8 bytes, or empty bytes if absent, with 200 and Content-Type text/plain.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement GET `/agent` returning the HTTP_USER_AGENT environment value as UTF-8 
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-WSGI exposes HTTP headers using HTTP_ environment keys.
+## Tips
+HTTP header names are mapped to specially prefixed environment keys.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.

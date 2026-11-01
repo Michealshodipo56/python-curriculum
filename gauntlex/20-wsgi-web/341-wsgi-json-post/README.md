@@ -1,6 +1,9 @@
-# application
+# Validate JSON Input
 
-## Challenge
+## Description
+Accept structured JSON input and return either a calculated response or a safe client error.
+
+### Behavior contract
 Implement POST `/sum` accepting JSON body `{"a":integer,"b":integer}` and returning compact JSON bytes `{"sum":total}` with 200 and Content-Type application/json. Invalid JSON or missing/noninteger values return 400 with body `{"error":"bad request"}`. Other paths return 404.
 
 ## Requirements
@@ -10,8 +13,7 @@ Implement POST `/sum` accepting JSON body `{"a":integer,"b":integer}` and return
 - Return byte strings for WSGI response bodies.
 - Do not print debug output or mutate the incoming environment.
 
-## Hint
-Validate parsed types, noting that bool is a subclass of int.
+## Tips
+In Python, Booleans are a subclass of integers, which matters for validation.
 
-## Run tests
-`python -m pytest tests -q`
+Build the response behavior yourself without a provided implementation.
