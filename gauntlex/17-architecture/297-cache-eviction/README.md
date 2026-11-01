@@ -1,6 +1,9 @@
-# eviction_candidates
+# Evict the Oldest
 
-## Challenge
+## Description
+Choose which cache entries to remove when the cache exceeds its allowed size.
+
+### Behavior contract
 Given mapping key->last_access integer and a nonnegative maximum count to keep, return keys to evict ordered by oldest access first and then alphabetically. Evict only enough to reach maximum count.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given mapping key->last_access integer and a nonnegative maximum count to keep, 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Sort by access time and key to resolve ties.
+## Tips
+When access times tie, use the specified secondary ordering.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

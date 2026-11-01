@@ -1,6 +1,9 @@
-# health_rollup
+# Worst Service Health
 
-## Challenge
+## Description
+Combine individual service health reports into one overall status.
+
+### Behavior contract
 Given a list of service status strings 'ok','degraded','down', return 'down' if any is down, else 'degraded' if any is degraded, otherwise 'ok'. Empty list is ok.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of service status strings 'ok','degraded','down', return 'down' if 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Choose the worst observed status.
+## Tips
+A single down service dominates degraded and healthy services.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

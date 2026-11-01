@@ -1,6 +1,9 @@
-# cache_valid
+# Time to Live
 
-## Challenge
+## Description
+Decide whether a cached value is still valid at a particular time.
+
+### Behavior contract
 Return True if an item created at timestamp created_at with positive ttl is still valid at now. Validity is now < created_at+ttl.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return True if an item created at timestamp created_at with positive ttl is stil
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-The expiry boundary is exclusive.
+## Tips
+The exact expiry instant is no longer valid.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

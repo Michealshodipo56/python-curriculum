@@ -1,6 +1,9 @@
-# idempotency_key
+# Identify Duplicate Requests
 
-## Challenge
+## Description
+Generate a stable key for logically identical requests using canonical input.
+
+### Behavior contract
 Given a method, URL, and request body string, return a stable lowercase SHA-256 hex digest of compact JSON encoding of [method.upper(),url,body], with no sorting required for the list.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a method, URL, and request body string, return a stable lowercase SHA-256 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Canonicalize before hashing to avoid ambiguous keys.
+## Tips
+Canonical representation matters: concatenated fields can otherwise collide ambiguously.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.
