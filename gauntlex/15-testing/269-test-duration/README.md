@@ -1,6 +1,9 @@
-# slow_tests
+# Find Slow Cases
 
-## Challenge
+## Description
+Rank tests whose runtimes exceed a threshold, using stable tie-breaking.
+
+### Behavior contract
 Given a list of [name,duration_seconds] pairs and a nonnegative threshold, return test names whose duration strictly exceeds threshold, ordered by descending duration and then ascending name.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a list of [name,duration_seconds] pairs and a nonnegative threshold, retur
 - Do not mutate input data, print, or require external packages.
 - Use the Python standard library only.
 
-## Hints
-Use a two-part sort key for deterministic ties.
+## Tips
+The threshold is strict: a duration equal to it does not qualify.
 
-## Run tests
-`python -m pytest tests -q`
+Work from the contract and edge cases; do not include a finished implementation.
