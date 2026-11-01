@@ -1,15 +1,17 @@
-# reversewords
+# Reverse the Sequence
 
 ## Description
-Read one line containing space-separated words. Print the words in reverse order, separated by one space.
+Reverse the order of words in a sentence while leaving the letters inside each word unchanged.
 
 ## Requirements
-For an empty input line, print a blank line.
+- Read one line of space-separated words.
+- Display the words in reverse order, separated by single spaces.
+- For an empty line, display a blank line.
 
-## Examples
-Input: "one two three\n" → output: "three two one\n"
-
-Input: "alone\n" → output: "alone\n"
+## Example
+Input: `one two three` → output: `three two one`. Input: `alone` → output: `alone`.
 
 ## Tips
-List slicing can reverse a sequence; consider what `join` does with words.
+Separate the idea of reversing a sequence from reversing each string. Consider how the words will be joined again.
+
+The example illustrates the expected result, not a solution.

@@ -1,15 +1,17 @@
-# filtereven
+# Keep the Evens
 
 ## Description
-Read one line of space-separated integers. Print only the even values in their original order, separated by one space.
+Select only values that satisfy a condition, but preserve their original relative order.
 
 ## Requirements
-If there are no even values, print a blank line.
+- Read one line of space-separated integers.
+- Display only even integers in their original order, separated by single spaces.
+- If no even values exist, display a blank line.
 
-## Examples
-Input: "1 2 3 4 6\n" → output: "2 4 6\n"
-
-Input: "1 3\n" → output: "\n"
+## Example
+Input: `1 2 3 4 6` → output: `2 4 6`. Input: `1 3` → blank line.
 
 ## Tips
-Build a new collection while checking each element's remainder.
+Filtering decides whether to retain each element. Think about how the output should behave when nothing qualifies.
+
+The example illustrates the expected result, not a solution.

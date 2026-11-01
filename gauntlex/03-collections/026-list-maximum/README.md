@@ -1,15 +1,17 @@
-# listmaximum
+# Find the Peak
 
 ## Description
-Read a nonempty line of space-separated integers. Print the largest number.
+Find the greatest value in a collection without assuming the numbers are positive or unique.
 
 ## Requirements
-Handle negative values and duplicates.
+- Read a nonempty line of space-separated integers.
+- Display the largest integer on its own line.
+- Handle negative values and repeated maximum values.
 
-## Examples
-Input: "-7 -2 -9\n" → output: "-2\n"
-
-Input: "3 10 10 4\n" → output: "10\n"
+## Example
+Input: `-7 -2 -9` → output: `-2`. Input: `3 10 10 4` → output: `10`.
 
 ## Tips
-A running maximum can be updated when a larger value is encountered.
+What should the initial candidate be if every number is negative? Compare each new value with the best candidate so far.
+
+The example illustrates the expected result, not a solution.
