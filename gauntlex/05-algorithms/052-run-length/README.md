@@ -1,7 +1,7 @@
-# run_length
+# Compress Repeated Runs
 
 ## Description
-Encode a string as consecutive character/count pairs, represented as a list of two-element lists.
+Describe a string as a sequence of adjacent character runs. Each run records its character and how many times it appears consecutively.
 
 ## Requirements
 - Implement `run_length(text)` in `solution.py`.
@@ -15,4 +15,6 @@ Encode a string as consecutive character/count pairs, represented as a list of t
 `run_length("abc")` → `[["a", 1], ["b", 1], ["c", 1]]`
 
 ## Tips
-Count repeated adjacent characters, then start a new run when the character changes.
+Two runs of the same character may be separated by another character; they should not be combined.
+
+The examples illustrate the contract without providing an implementation.

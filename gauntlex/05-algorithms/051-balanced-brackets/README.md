@@ -1,7 +1,7 @@
-# balanced_brackets
+# Nested Delimiters
 
 ## Description
-Return True if a string of only `()[]{}` brackets is properly nested and balanced.
+A sequence of brackets is valid only when every opening bracket has a matching closing bracket of the correct type and nesting order.
 
 ## Requirements
 - Implement `balanced_brackets(text)` in `solution.py`.
@@ -15,4 +15,6 @@ Return True if a string of only `()[]{}` brackets is properly nested and balance
 `balanced_brackets("([)]")` → `False`
 
 ## Tips
-A stack records opening brackets awaiting their matching close.
+Matching the total counts is not enough. Consider the order in which opening brackets must close.
+
+The examples illustrate the contract without providing an implementation.

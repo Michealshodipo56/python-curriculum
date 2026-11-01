@@ -1,7 +1,7 @@
-# common_prefix
+# Shared Beginning
 
 ## Description
-Return the longest prefix shared by every string in a list. Return empty string for an empty list.
+Find the longest sequence of characters appearing at the start of every word in a collection.
 
 ## Requirements
 - Implement `common_prefix(words)` in `solution.py`.
@@ -15,4 +15,6 @@ Return the longest prefix shared by every string in a list. Return empty string 
 `common_prefix(["dog", "cat"])` → `""`
 
 ## Tips
-Compare character positions while all words still agree.
+The shared prefix cannot be longer than the shortest input. What should happen for an empty list?
+
+The examples illustrate the contract without providing an implementation.

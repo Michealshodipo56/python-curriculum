@@ -1,7 +1,7 @@
-# caesar
+# Alphabet Rotation
 
 ## Description
-Shift ASCII letters by integer k positions, wrapping within A-Z or a-z. Leave nonletters unchanged.
+Transform text by shifting each ASCII letter around its alphabet. Preserve case, punctuation, digits, and other nonletters.
 
 ## Requirements
 - Implement `caesar(text, k)` in `solution.py`.
@@ -15,4 +15,6 @@ Shift ASCII letters by integer k positions, wrapping within A-Z or a-z. Leave no
 `caesar("xyz", 3)` → `"abc"`
 
 ## Tips
-Convert letters to alphabet positions, apply modular arithmetic, and restore the correct case.
+Investigate what happens at the end of the alphabet and with shifts larger than its length.
+
+The examples illustrate the contract without providing an implementation.
