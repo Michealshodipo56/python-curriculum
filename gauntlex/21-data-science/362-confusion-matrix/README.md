@@ -1,6 +1,9 @@
-# confusion_matrix
+# Classify the Outcomes
 
-## Challenge
+## Description
+Summarize binary predictions as true positives, true negatives, false positives, and false negatives.
+
+### Behavior contract
 Given equal-length sequences of actual and predicted booleans, return a dictionary with integer keys `tp`, `tn`, `fp`, `fn`. Raise ValueError on mismatched lengths.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given equal-length sequences of actual and predicted booleans, return a dictiona
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Classify each prediction against its ground truth.
+## Tips
+Each prediction belongs to exactly one of four categories.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

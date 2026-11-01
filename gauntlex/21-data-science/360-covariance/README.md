@@ -1,6 +1,9 @@
-# population_covariance
+# Move Together
 
-## Challenge
+## Description
+Measure how two numeric series vary together around their respective means.
+
+### Behavior contract
 Return population covariance for two equal-length nonempty numeric sequences. Raise ValueError if lengths differ or are empty.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return population covariance for two equal-length nonempty numeric sequences. Ra
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Center both series around their means.
+## Tips
+Population covariance uses the full number of observations as its divisor.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

@@ -1,6 +1,9 @@
-# quantile
+# Interpolate a Quantile
 
-## Challenge
+## Description
+Estimate a quantile from sorted observations using linear interpolation.
+
+### Behavior contract
 Return a quantile for nonempty numeric values and q in [0,1], using sorted values and linear interpolation at position (n-1)*q. Raise ValueError for invalid q or empty values.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return a quantile for nonempty numeric values and q in [0,1], using sorted value
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Interpolate between the two neighboring sorted positions.
+## Tips
+The requested position can fall between two observations.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.

@@ -1,6 +1,9 @@
-# classification_metrics
+# Measure a Classifier
 
-## Challenge
+## Description
+Calculate precision, recall, accuracy, and F1 from classification outcome counts.
+
+### Behavior contract
 Given integer tp,tn,fp,fn >=0, return precision, recall, accuracy and f1 as floats in a dictionary. Use 0.0 when any metric denominator is zero, including accuracy on an empty sample. Raise ValueError for negative counts.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given integer tp,tn,fp,fn >=0, return precision, recall, accuracy and f1 as floa
 - Return the specified values without printing or mutating input data.
 - Floating-point answers are checked approximately where appropriate.
 
-## Hint
-Compute precision and recall before their harmonic mean.
+## Tips
+Each metric answers a different question and has its own denominator.
 
-## Run tests
-`python -m pytest tests -q`
+Reason about edge cases before designing your implementation.
