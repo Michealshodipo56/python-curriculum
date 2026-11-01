@@ -1,6 +1,9 @@
-# reverse_dependencies
+# Who Depends on This?
 
-## Challenge
+## Description
+Reverse a dependency graph so each component lists its direct dependents.
+
+### Behavior contract
 Given a mapping of package to list of dependencies, return a dictionary mapping every package or dependency name to a sorted list of packages that depend directly on it.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a mapping of package to list of dependencies, return a dictionary mapping 
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Initialize all known nodes, then invert each directed edge.
+## Tips
+Include components that appear only as dependencies.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

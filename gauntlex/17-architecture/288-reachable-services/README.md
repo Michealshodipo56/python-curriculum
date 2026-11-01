@@ -1,6 +1,9 @@
-# reachable_services
+# Downstream Reachability
 
-## Challenge
+## Description
+Identify every service reachable from a starting service through dependency links.
+
+### Behavior contract
 Given a mapping of service to list of downstream services and a starting service, return sorted reachable service names including the start, even if it is not a key.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a mapping of service to list of downstream services and a starting service
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Track visited nodes to handle cycles.
+## Tips
+Cycles must not cause an infinite traversal.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.

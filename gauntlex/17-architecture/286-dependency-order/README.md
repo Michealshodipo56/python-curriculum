@@ -1,6 +1,9 @@
-# dependency_order
+# Build in Dependency Order
 
-## Challenge
+## Description
+Find a valid order for completing tasks whose prerequisites form a directed graph.
+
+### Behavior contract
 Given a dictionary mapping task names to prerequisite-name lists, return a valid topological order including prerequisite-only names. When multiple nodes are available, choose the lexicographically smallest. Raise ValueError for a cycle.
 
 ## Requirements
@@ -9,8 +12,7 @@ Given a dictionary mapping task names to prerequisite-name lists, return a valid
 - Use Python's standard library only.
 - Do not mutate caller-owned collections.
 
-## Hints
-Track indegrees and use a priority queue for deterministic choices.
+## Tips
+If several tasks are ready, the tie-breaking rule must still produce deterministic order.
 
-## Run tests
-`python -m pytest tests -q`
+Design your own implementation from the specified behavior.
