@@ -1,6 +1,9 @@
-# base64_encode
+# Encode Base64
 
-## Challenge
+## Description
+Represent UTF-8 text as standard Base64, including required padding.
+
+### Behavior contract
 Return standard Base64 encoding of the UTF-8 bytes of text, including padding.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return standard Base64 encoding of the UTF-8 bytes of text, including padding.
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Base64 works on bytes, not directly on Unicode code points.
+## Tips
+Base64 encodes bytes and does not provide confidentiality.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

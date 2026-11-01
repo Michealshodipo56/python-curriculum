@@ -1,6 +1,9 @@
-# caesar_cipher
+# Shift the Alphabet
 
-## Challenge
+## Description
+Implement a classical substitution cipher for ASCII letters while preserving all other text.
+
+### Behavior contract
 Shift ASCII letters by integer shift, wrapping within A-Z and a-z; leave other characters unchanged. Negative shifts are allowed.
 
 ## Requirements
@@ -9,8 +12,7 @@ Shift ASCII letters by integer shift, wrapping within A-Z and a-z; leave other c
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Reduce the shift modulo the alphabet length.
+## Tips
+A classical cipher is an exercise in text transformation, not a secure way to protect secrets.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.

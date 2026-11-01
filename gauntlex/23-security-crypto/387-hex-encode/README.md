@@ -1,6 +1,9 @@
-# hex_encode
+# Text to Hexadecimal
 
-## Challenge
+## Description
+Encode UTF-8 text into a lowercase hexadecimal representation of its bytes.
+
+### Behavior contract
 Return lowercase hexadecimal representation of UTF-8 bytes of the input string, without spaces or prefix.
 
 ## Requirements
@@ -9,8 +12,7 @@ Return lowercase hexadecimal representation of UTF-8 bytes of the input string, 
 - Do not print or mutate caller-owned data.
 - Follow the specified security constraints rather than inventing cryptographic algorithms.
 
-## Hint
-Encode Unicode to bytes before formatting as hex.
+## Tips
+Unicode characters can occupy several bytes before hexadecimal encoding.
 
-## Run tests
-`python -m pytest tests -q`
+Use established standard-library primitives where security is involved; do not invent cryptographic algorithms.
