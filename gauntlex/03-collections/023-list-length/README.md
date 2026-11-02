@@ -1,17 +1,28 @@
 # Count the Collection
 
 ## Description
-A line of input may contain several values or none at all. Interpret it as a collection of integers and report how many elements it contains.
+A single line can represent a collection of several numbers or an empty collection. Build a program that counts the values supplied, rather than counting the characters used to write them. This challenge introduces working with sequences.
 
 ## Requirements
-- Read one line of space-separated integers; an empty line represents an empty collection.
-- Display only the number of elements.
-- Input: `1 2 3` → output: `3`. Empty input line → output: `0`.
-
-## Example
-Consider the difference between counting characters and counting individual values. What should splitting an empty line produce?
+- Read one line containing space-separated integers.
+- Treat an empty line as an empty collection.
+- Display the number of integers as one number on one line.
+- Display `0` when the collection is empty.
+- Do not print prompts or additional text.
 
 ## Tips
-undefined
+- How is a collection of values different from the text that represents it?
+- Think about what separates one value from the next.
+- Check the cases with zero, one, and several elements.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+1 2 3
+```
+
+## Example Output
+```text
+3
+```
+
+For an empty input line, the output is `0`.
