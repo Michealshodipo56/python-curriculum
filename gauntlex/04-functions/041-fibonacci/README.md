@@ -1,18 +1,19 @@
 # Sequence Memory
 
 ## Description
-Compute one term of a sequence where every term after the first two depends on the two preceding terms.
+In the Fibonacci sequence, each term after the first two is the sum of the two preceding terms. Write a function that finds a requested term without displaying intermediate values.
 
 ## Requirements
 - Implement `fibonacci(n)` in `solution.py`.
-- For nonnegative `n`, return the nth term with F(0)=0, F(1)=1, and F(n)=F(n−1)+F(n−2).
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`fibonacci(0)` → `0`; `fibonacci(1)` → `1`; `fibonacci(6)` → `8`.
+- Assume `n` is a nonnegative integer.
+- Use the definition F(0) = 0, F(1) = 1, and F(n) = F(n−1) + F(n−2).
+- Return the nth term as an integer.
+- Do not print or execute input-handling code on import.
 
 ## Tips
-Track how much previous information is necessary to produce the next term.
+- Which previous terms are needed to determine the next one?
+- Why are the first two terms special?
+- Trace a short sequence before generalizing.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`fibonacci(0)` → `0`; `fibonacci(1)` → `1`; `fibonacci(6)` → `8`.
