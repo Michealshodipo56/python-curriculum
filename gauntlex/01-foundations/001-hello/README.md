@@ -1,19 +1,20 @@
 # First Signal
 
 ## Description
-Write your first Python program. When it runs, the terminal should display a single welcome message. This exercise introduces the relationship between a source file, the Python interpreter, and standard output.
+Every program begins with an observable result. In this challenge, create a Python script that sends a welcome message to the terminal. The goal is to understand what happens when the interpreter runs a source file and how a program communicates through standard output.
 
 ## Requirements
-- Work in `main.py`.
-- Display `Hello, world!` exactly once.
-- Do not request input or add other output.
+- Use the provided `main.py` file.
+- When the program runs, display the exact message `Hello, world!`.
+- Display the message once, followed by a newline.
+- Do not request input or display any other text.
 
-## Example
+## Tips
+- Find out how to run a Python source file from a terminal.
+- What does *standard output* mean, and where does its content appear?
+- Pay attention to capitalization, punctuation, and spaces: a computer compares characters exactly.
+
+## Example Output
 ```text
 Hello, world!
 ```
-
-## Tips
-Explore how a Python script is executed. What is the difference between the characters stored in your source file and the text displayed in the terminal?
-
-The example illustrates expected behavior; it is not an implementation.
