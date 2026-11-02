@@ -1,20 +1,19 @@
 # Nested Delimiters
 
 ## Description
-A sequence of brackets is valid only when every opening bracket has a matching closing bracket of the correct type and nesting order.
+Brackets must close in the reverse order in which they open. Determine whether a string has correctly matched and nested parentheses, square brackets, and braces.
 
 ## Requirements
 - Implement `balanced_brackets(text)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`balanced_brackets("([]{})")` → `True`
-
-`balanced_brackets("([)]")` → `False`
+- Recognize `()`, `[]`, and `{}` as matching pairs.
+- Return `True` only when all brackets are correctly nested and closed.
+- Ignore characters that are not brackets; an empty string is valid.
+- Return a boolean without printing or executing code on import.
 
 ## Tips
-Matching the total counts is not enough. Consider the order in which opening brackets must close.
+- Why are equal counts of opening and closing brackets insufficient?
+- Which opening bracket should match the next closing bracket?
+- Consider mismatched nesting.
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`balanced_brackets('([]{})')` → `True`; `balanced_brackets('([)]')` → `False`.
