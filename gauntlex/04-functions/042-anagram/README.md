@@ -1,18 +1,19 @@
 # Same Letters, Different Order
 
 ## Description
-Decide whether two strings contain exactly the same characters with the same number of occurrences, regardless of order.
+Two strings are anagrams when they contain the same characters with the same frequencies, even if their orders differ. Write a function that checks this exact relationship.
 
 ## Requirements
 - Implement `are_anagrams(a, b)` in `solution.py`.
-- Return a boolean; character matching is case-sensitive and includes spaces.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`are_anagrams('listen', 'silent')` → `True`; `are_anagrams('aab', 'abb')` → `False`.
+- Return `True` when both strings have identical character frequencies.
+- Treat uppercase and lowercase as different characters.
+- Include spaces and punctuation in the comparison.
+- Return a boolean without printing or executing input-handling code on import.
 
 ## Tips
-Matching the set of characters is not enough. What happens when one string contains a character more often?
+- Why is comparing only the set of characters insufficient?
+- What happens when one letter appears twice in one string?
+- Consider strings of different lengths.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`are_anagrams('listen', 'silent')` → `True`; `are_anagrams('aab', 'abb')` → `False`.
