@@ -1,23 +1,25 @@
 # A Personal Greeting
 
 ## Description
-Make a program respond to information supplied by another person. The greeting must adapt to the input rather than being hard-coded for one name.
+A useful program can respond to information it receives instead of producing the same message every time. Build a greeting that incorporates a person's name exactly as entered. The challenge introduces input-driven output and combining fixed text with changing information.
 
 ## Requirements
-- Read one line containing a name.
-- Display `Hello, NAME!`, replacing `NAME` with the input exactly as provided.
-- Do not print a prompt or extra lines.
-
-## Example
-```text
-Input:
-Ada
-
-Output:
-Hello, Ada!
-```
+- Read one line containing a name from standard input.
+- Display `Hello, NAME!`, replacing `NAME` with the name received.
+- Preserve the input name's spelling, capitalization, and spaces.
+- Display exactly one line followed by a newline, without a prompt or additional output.
 
 ## Tips
-Separate the part of the message that never changes from the part that comes from the user.
+- Which part of the greeting stays the same for every person?
+- Which part must come from the input rather than being written in advance?
+- Check the punctuation and spacing around the name.
 
-The example illustrates expected behavior; it is not an implementation.
+## Example Input
+```text
+Ada
+```
+
+## Example Output
+```text
+Hello, Ada!
+```
