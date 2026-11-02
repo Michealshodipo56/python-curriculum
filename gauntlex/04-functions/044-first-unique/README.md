@@ -1,19 +1,19 @@
 # First Unrepeated Character
 
 ## Description
-Find the earliest character in a string that occurs exactly once across the entire string.
+A character that appears once may be useful as a unique marker. Find the earliest character whose total frequency in the complete string is exactly one.
 
 ## Requirements
 - Implement `first_unique(text)` in `solution.py`.
-- Return the first character with frequency one, or `None` if none exists.
-- Treat uppercase and lowercase characters as different.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`first_unique('swiss')` → `'w'`; `first_unique('aabb')` → `None`.
+- Return the first character occurring exactly once in the entire string.
+- Return `None` when no such character exists.
+- Treat uppercase and lowercase characters as distinct.
+- Do not print or execute input-handling code on import.
 
 ## Tips
-A character can look unique early on and repeat later. What information is needed before deciding?
+- Why might a character that seems unique at first turn out to repeat later?
+- How can frequency and original order both matter?
+- Consider empty input.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`first_unique('swiss')` → `'w'`; `first_unique('aabb')` → `None`.
