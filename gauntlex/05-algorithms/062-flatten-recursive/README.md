@@ -1,20 +1,18 @@
 # Unfold Nested Lists
 
 ## Description
-Traverse a structure containing integers and lists nested to any depth, producing a single left-to-right sequence.
+A nested list may contain integers and more lists at arbitrary depths. Traverse the structure and return all integers in their original left-to-right order.
 
 ## Requirements
 - Implement `flatten_recursive(items)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`flatten_recursive([1, [2, [3]], 4])` → `[1, 2, 3, 4]`
-
-`flatten_recursive([])` → `[]`
+- Assume elements are integers or lists following the same rule at any depth.
+- Return a new flat list containing every integer in encounter order.
+- Handle empty lists at any depth.
+- Do not modify input, print, or execute code on import.
 
 ## Tips
-What should happen when an element is an integer versus another list? The same question recurs at each nesting level.
+- What is the difference between encountering an integer and encountering another list?
+- How does the same decision recur inside nested lists?
 
-The examples illustrate expected behavior, not an implementation.
+## Example Behavior
+`flatten_recursive([1, [2, [3]], 4])` → `[1, 2, 3, 4]`; `flatten_recursive([])` → `[]`.
