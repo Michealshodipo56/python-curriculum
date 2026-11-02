@@ -1,24 +1,27 @@
 # Choose the Larger
 
 ## Description
-Two integer values are supplied. Decide which one is greater and display it. Equal values should not create a special message.
+When two numbers are supplied, a program can compare them and select one based on their relative values. Build a program that displays the greater integer. Equal values should produce that shared number rather than a special message.
 
 ## Requirements
-- Read two integers on separate lines.
-- Display the greater integer, or the shared value if both are equal.
-- Handle negative numbers without extra prompts.
+- Read two integers, one per line.
+- Display the greater of the two integers.
+- If the values are equal, display that value once.
+- Support positive values, negative values, and zero.
+- Print exactly one line without prompts or additional text.
 
-## Example
+## Tips
+- Consider the three possible relationships between two values: greater, smaller, and equal.
+- Check cases involving two negative numbers.
+- What should happen when neither value is greater than the other?
+
+## Example Input
 ```text
-Input:
 -2
-5
-
-Output:
 5
 ```
 
-## Tips
-Check three situations: the first value is larger, the second is larger, and the values are equal.
-
-The example describes expected behavior, not a solution.
+## Example Output
+```text
+5
+```
