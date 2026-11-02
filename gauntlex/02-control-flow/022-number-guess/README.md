@@ -1,27 +1,31 @@
 # Find the Secret
 
 ## Description
-Build a simple interactive guessing process. The program must respond to each attempt and stop as soon as the secret is found.
+Some programs continue interacting with a user until a particular condition is met. Build a guessing process with a fixed secret number. After each guess, provide feedback and stop immediately when the secret is found. This challenge combines repeated input with conditional decisions.
 
 ## Requirements
-- Read integer guesses, one per line, until the value 7 is entered.
-- Display `low` for guesses below 7 and `high` for guesses above 7.
-- Display `correct` when the guess is 7 and stop reading further input. Assume 7 eventually appears.
+- Read integer guesses from standard input, one per line.
+- The secret number is `7`.
+- Display `low` when a guess is below 7 and `high` when it is above 7.
+- Display `correct` when the guess is 7, then stop reading input.
+- Assume the input eventually contains 7.
+- Display one feedback line per processed guess, with no prompts or additional text.
 
-## Example
+## Tips
+- What action must repeat, and what event ends that repetition?
+- Think about when feedback should be displayed relative to checking the guess.
+- Guesses after the correct answer must not affect the output.
+
+## Example Input
 ```text
-Input:
 3
 9
 7
+```
 
-Output:
+## Example Output
+```text
 low
 high
 correct
 ```
-
-## Tips
-Separate the repeated input step from the condition that ends the game. What happens to guesses that appear after the correct one?
-
-The example demonstrates expected behavior; it does not reveal an implementation.
