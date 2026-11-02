@@ -1,18 +1,18 @@
 # Prime or Composite
 
 ## Description
-Classify an integer according to whether it has exactly two positive divisors.
+Prime numbers have exactly two positive divisors: one and themselves. Build a function that identifies primes while correctly rejecting zero, one, and negative integers.
 
 ## Requirements
 - Implement `is_prime(n)` in `solution.py`.
-- Return `True` only for prime integers; all integers below 2 return `False`.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`is_prime(2)` → `True`; `is_prime(17)` → `True`; `is_prime(1)` → `False`.
+- Return `True` exactly when integer `n` is prime.
+- Return `False` for every integer below 2.
+- Return a boolean without printing or executing input-handling code on import.
 
 ## Tips
-If a number has a divisor other than 1 and itself, what does that prove? Consider how far a divisor search needs to go.
+- What does finding one divisor other than one and the number prove?
+- Can you avoid checking every smaller integer?
+- Consider 2, 4, 9, and 17.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`is_prime(2)` → `True`; `is_prime(17)` → `True`; `is_prime(1)` → `False`.
