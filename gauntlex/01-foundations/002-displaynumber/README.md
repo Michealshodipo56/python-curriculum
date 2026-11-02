@@ -1,19 +1,20 @@
 # The Answer
 
 ## Description
-Create a program that displays a whole number. Unlike a sentence, the value represents a quantity, even though its visible output consists of characters.
+Programs can represent information as numbers as well as words. In this challenge, display a specific whole number and explore why the value a program works with is not necessarily the same thing as the characters a person sees on screen.
 
 ## Requirements
-- Work in `main.py`.
-- Display `42` on its own line.
-- Do not add a label, prompt, or other output.
+- Use the provided `main.py` file.
+- Display the number `42` on one line.
+- End the output with a newline.
+- Do not add a label, prompt, or any additional text.
 
-## Example
+## Tips
+- Investigate the difference between an integer and text made of digit characters.
+- Can two different kinds of values produce identical terminal output?
+- Check that the terminal shows only the required number.
+
+## Example Output
 ```text
 42
 ```
-
-## Tips
-Think about the distinction between an integer value and a string containing digits. Both can look alike in terminal output.
-
-The example illustrates expected behavior; it is not an implementation.
