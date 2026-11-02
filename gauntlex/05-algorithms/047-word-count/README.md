@@ -1,20 +1,17 @@
 # Count the Words
 
 ## Description
-Whitespace can separate words in several ways. Determine how many words a piece of text contains, even when it has extra spaces.
+Words may be separated by spaces, tabs, or other whitespace. Determine how many words appear in a text without counting empty gaps.
 
 ## Requirements
 - Implement `word_count(text)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`word_count("one two three")` → `3`
-
-`word_count("  a  b  ")` → `2`
+- Count nonempty words separated by whitespace.
+- Return `0` for empty or whitespace-only input.
+- Return an integer; do not print or execute code on import.
 
 ## Tips
-Test text with leading, trailing, and repeated whitespace. What should happen when there are no words?
+- How does repeated whitespace affect word boundaries?
+- Check leading and trailing spaces, tabs, and empty text.
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`word_count('one two three')` → `3`; `word_count('  a  b  ')` → `2`.
