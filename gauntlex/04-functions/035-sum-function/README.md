@@ -1,18 +1,18 @@
 # Return a Sum
 
 ## Description
-Create a reusable operation that accepts two integers and gives their sum back to its caller.
+A function makes a calculation reusable by other parts of a program. Create an operation that receives two numbers and gives their sum back to its caller rather than displaying it.
 
 ## Requirements
 - Implement `sum_two(a, b)` in `solution.py`.
-- Return the arithmetic sum of `a` and `b`.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`sum_two(2, 3)` → `5`; `sum_two(-4, 7)` → `3`.
+- Accept two integers, including negative values and zero.
+- Return their arithmetic sum.
+- Do not print the result or execute input-handling code when the module is imported.
 
 ## Tips
-How is returning a value different from displaying it? Think about how another function could reuse the result.
+- What does a caller receive when a function returns a value?
+- How is returning different from printing?
+- Try values with different signs.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`sum_two(2, 3)` → `5`; `sum_two(-4, 7)` → `3`.
