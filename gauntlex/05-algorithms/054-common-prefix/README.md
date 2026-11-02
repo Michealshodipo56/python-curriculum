@@ -1,20 +1,19 @@
 # Shared Beginning
 
 ## Description
-Find the longest sequence of characters appearing at the start of every word in a collection.
+Several words may begin with the same sequence of characters. Find the longest prefix shared by every word in the input collection.
 
 ## Requirements
 - Implement `common_prefix(words)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`common_prefix(["flower", "flow", "flight"])` → `"fl"`
-
-`common_prefix(["dog", "cat"])` → `""`
+- Return the longest initial substring shared by all input strings.
+- Compare characters exactly, including case.
+- Return an empty string for an empty list or when no common prefix exists.
+- Do not mutate input, print, or execute code on import.
 
 ## Tips
-The shared prefix cannot be longer than the shortest input. What should happen for an empty list?
+- How does the shortest word limit the possible prefix?
+- What happens at the first mismatch?
+- Consider a list containing one word.
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`common_prefix(['flower', 'flow', 'flight'])` → `'fl'`; `common_prefix(['dog', 'cat'])` → `''`.
