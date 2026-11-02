@@ -1,17 +1,27 @@
 # First Appearance
 
 ## Description
-Remove repeated words without disturbing the order in which distinct words first appear.
+A collection can contain the same word more than once. Build a program that removes repeated words while keeping the order in which each distinct word first appeared.
 
 ## Requirements
-- Read one line of space-separated words.
-- Display each distinct word once, in first-appearance order, separated by single spaces.
-- Treat uppercase and lowercase words as different.
-
-## Example
-Input: `a b a c b` → output: `a b c`. Input: `A a A` → output: `A a`.
+- Read one line of space-separated words; the line may be empty.
+- Display each distinct word exactly once.
+- Preserve the order of first appearance.
+- Treat uppercase and lowercase versions as different words.
+- Separate displayed words with single spaces; display a blank line for empty input.
+- Do not print prompts or additional text.
 
 ## Tips
-Removing duplicates and preserving order are separate concerns. Consider how to remember what has already appeared.
+- Removing duplicates and preserving order are separate concerns.
+- What information must be remembered when a word is encountered?
+- Check what happens when every word is the same.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+a b a c b
+```
+
+## Example Output
+```text
+a b c
+```
