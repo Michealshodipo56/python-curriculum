@@ -1,17 +1,26 @@
 # Inside the Boundaries
 
 ## Description
-Take a sequence of words and retain only those strictly between its first and last elements.
+Sometimes only the middle part of a sequence is needed. Build a program that excludes the first and last words and displays everything between them in the original order.
 
 ## Requirements
-- Read one line of space-separated words.
-- Display every word except the first and last, separated by single spaces.
-- For fewer than three words, display a blank line.
-
-## Example
-Input: `a b c d` → output: `b c`. Input: `a b` → blank line.
+- Read one line of space-separated words; the line may be empty.
+- Exclude the first and last word.
+- Display the remaining words in their original order, separated by single spaces.
+- If the input has fewer than three words, display a blank line.
+- Do not print prompts or additional text.
 
 ## Tips
-Identify the starting and stopping positions of the desired region. What happens when that region is empty?
+- Identify the positions that mark the beginning and end of the desired region.
+- Consider whether those boundary positions belong in the result.
+- What happens when the region contains no elements?
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+a b c d
+```
+
+## Example Output
+```text
+b c
+```
