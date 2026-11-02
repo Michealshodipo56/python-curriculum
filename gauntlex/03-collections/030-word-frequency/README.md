@@ -1,17 +1,28 @@
 # Word Tally
 
 ## Description
-Build a frequency report that shows how often each word occurs, ordered by its first appearance.
+A frequency report records how often each distinct word appears in a collection. Build a report that preserves the order in which words first appeared while counting all occurrences.
 
 ## Requirements
-- Read one line of space-separated words.
+- Read one line of space-separated words; the line may be empty.
+- Count occurrences of each distinct word using case-sensitive matching.
 - Display one line per distinct word in the format `WORD: COUNT`.
-- Preserve first-appearance order and use case-sensitive matching.
-
-## Example
-Input: `cat dog cat` → output lines `cat: 2`, `dog: 1`.
+- Order the lines by each word's first appearance.
+- If the input is empty, produce no output.
+- Do not print prompts or additional text.
 
 ## Tips
-A mapping can associate each distinct word with a count. How do you avoid changing the reporting order?
+- Consider how a word can be associated with a running count.
+- How can you avoid printing a word more than once?
+- Think about the distinction between counting occurrences and ordering the report.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+cat dog cat
+```
+
+## Example Output
+```text
+cat: 2
+dog: 1
+```
