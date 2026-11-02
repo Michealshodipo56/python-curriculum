@@ -1,19 +1,19 @@
 # One Level Down
 
 ## Description
-Combine a collection of inner lists into one new list while preserving the order of every element.
+A list can contain several smaller lists. Combine their elements into one new list while preserving encounter order. This task flattens exactly one level of nesting.
 
 ## Requirements
 - Implement `flatten_once(groups)` in `solution.py`.
-- Accept a list of lists and return a new, flat list in encounter order.
-- Do not mutate the supplied lists.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`flatten_once([[1, 2], [3], []])` → `[1, 2, 3]`.
+- Accept a list of lists.
+- Return a new list containing the inner elements in their original order.
+- Handle empty inner lists and an empty outer list.
+- Do not mutate the supplied lists, print, or execute input-handling code on import.
 
 ## Tips
-Distinguish combining one level of lists from recursively flattening nested structures.
+- How does combining inner lists differ from recursively flattening arbitrary nesting?
+- What should an empty inner list contribute?
+- Consider how to preserve element order.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`flatten_once([[1, 2], [3], []])` → `[1, 2, 3]`.
