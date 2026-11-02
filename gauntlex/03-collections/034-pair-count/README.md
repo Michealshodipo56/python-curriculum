@@ -1,17 +1,26 @@
 # Matching Pairs
 
 ## Description
-Count the pairs of different positions that contain equal values. Repeated values can create more than one pair.
+Repeated values can form pairs of matching positions. Build a program that counts every pair of distinct positions containing the same integer. A value appearing several times can contribute multiple pairs.
 
 ## Requirements
-- Read one line of space-separated integers.
+- Read one line of space-separated integers; the line may be empty.
 - Count each pair of distinct positions with equal values exactly once.
-- Display the count as an integer; empty input produces zero.
-
-## Example
-Input: `2 2 2` → output: `3`. Input: `1 2 1 2` → output: `2`.
+- Display the total number of matching pairs on one line.
+- If the input is empty or has no matching positions, display `0`.
+- Do not print prompts or additional text.
 
 ## Tips
-When another copy of a value appears, how many new pairs can it form with earlier copies?
+- Work through a collection with three copies of the same value.
+- When a new copy appears, how many earlier copies could it pair with?
+- Be careful not to count the same two positions in both orders.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+2 2 2
+```
+
+## Example Output
+```text
+3
+```
