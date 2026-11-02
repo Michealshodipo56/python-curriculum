@@ -1,17 +1,25 @@
 # Find the Peak
 
 ## Description
-Find the greatest value in a collection without assuming the numbers are positive or unique.
+Find the greatest number in a collection without assuming the values are positive, different, or already ordered. This challenge develops comparison across a sequence.
 
 ## Requirements
-- Read a nonempty line of space-separated integers.
-- Display the largest integer on its own line.
-- Handle negative values and repeated maximum values.
-
-## Example
-Input: `-7 -2 -9` → output: `-2`. Input: `3 10 10 4` → output: `10`.
+- Read one nonempty line of space-separated integers.
+- Display the greatest integer on one line.
+- Handle negative numbers and repeated maximum values.
+- Do not print prompts or additional text.
 
 ## Tips
-What should the initial candidate be if every number is negative? Compare each new value with the best candidate so far.
+- Consider how to choose a starting candidate when every number is negative.
+- How should a new value affect the current greatest value?
+- Check collections containing a single element.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+-7 -2 -9
+```
+
+## Example Output
+```text
+-2
+```
