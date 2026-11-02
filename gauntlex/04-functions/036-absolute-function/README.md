@@ -1,18 +1,18 @@
 # Distance from Zero
 
 ## Description
-Represent an integer's distance from zero without retaining its sign.
+The absolute value of an integer describes its distance from zero, regardless of direction. Write a reusable function that produces this nonnegative quantity.
 
 ## Requirements
 - Implement `absolute(n)` in `solution.py`.
-- Return the nonnegative absolute value of `n`.
-- Return the result instead of printing it.
-- Do not run input-handling code when the module is imported.
-
-## Example
-`absolute(-7)` → `7`; `absolute(0)` → `0`.
+- Return the absolute value of integer `n`.
+- Handle negative values, zero, and positive values.
+- Return the result without printing or running input-handling code on import.
 
 ## Tips
-Which values already express their distance from zero? What changes for negative values?
+- Which inputs already represent a nonnegative distance?
+- What should change when the input is negative?
+- Consider the boundary at zero.
 
-The examples specify behavior without supplying the implementation.
+## Example Behavior
+`absolute(-7)` → `7`; `absolute(0)` → `0`.
