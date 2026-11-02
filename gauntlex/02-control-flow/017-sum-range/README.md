@@ -1,23 +1,25 @@
 # Running Total
 
 ## Description
-Compute a total that grows as more numbers are considered. The amount of work should depend on the supplied input.
+A running total changes as new values are considered. Build a program that adds the consecutive integers from one through a supplied limit. The number of values to include depends on the input.
 
 ## Requirements
-- Read a nonnegative integer N.
-- Display the sum of the integers from 1 through N.
-- For N equal to zero, display `0`.
-
-## Example
-```text
-Input:
-5
-
-Output:
-15
-```
+- Read a nonnegative integer `N`.
+- Display the sum of all integers from 1 through `N`, inclusive.
+- If `N` is zero, display `0`.
+- Display one integer on one line without prompts or additional text.
 
 ## Tips
-Track the total after each step on paper. What initial total makes sense when there are no numbers to add?
+- Work through a small example by hand and track how the total changes.
+- What total should you begin with before adding any values?
+- Consider how the stopping boundary affects which numbers are included.
 
-The example demonstrates expected behavior; it does not reveal an implementation.
+## Example Input
+```text
+5
+```
+
+## Example Output
+```text
+15
+```
