@@ -1,25 +1,28 @@
 # Count Forward
 
 ## Description
-Generate a sequence of consecutive integers without writing a separate instruction for each number.
+Repeating a task manually works for a few steps but not for an input-dependent sequence. Build a program that displays consecutive numbers starting at one and stopping at a supplied limit. This challenge introduces repetition with a defined boundary.
 
 ## Requirements
-- Read a nonnegative integer N.
-- Display every integer from 1 through N, one per line.
-- When N is zero, produce no output.
+- Read a nonnegative integer `N`.
+- Display each integer from 1 through `N`, in ascending order.
+- Put each number on its own line.
+- If `N` is zero, produce no output.
+- Do not print prompts or other text.
 
-## Example
+## Tips
+- Identify the first value, the last value, and how the sequence changes.
+- Investigate whether the upper boundary of a repetition construct is included.
+- Consider how the program behaves when there are no numbers to display.
+
+## Example Input
 ```text
-Input:
 3
+```
 
-Output:
+## Example Output
+```text
 1
 2
 3
 ```
-
-## Tips
-Think about the first and last values in the sequence. Pay attention to whether a loop's upper boundary is included.
-
-The example demonstrates expected behavior; it does not reveal an implementation.
