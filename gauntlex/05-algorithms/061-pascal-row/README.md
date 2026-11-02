@@ -1,20 +1,18 @@
 # Build Pascal's Row
 
 ## Description
-Produce a specified row of Pascal's triangle, where the interior values depend on adjacent values from the preceding row.
+Pascal's triangle grows one row at a time. Every row begins and ends with one, while interior entries are formed from neighboring values in the preceding row.
 
 ## Requirements
 - Implement `pascal_row(n)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`pascal_row(0)` → `[1]`
-
-`pascal_row(1)` → `[1, 1]`
+- Assume `n` is a nonnegative integer and row numbering begins at zero.
+- Return the full nth row as a list of integers.
+- Row zero is `[1]`; each later row contains `n + 1` entries.
+- Do not print or execute code on import.
 
 ## Tips
-Explore how row zero differs from later rows and how each new row grows.
+- How do the first and last values differ from the interior values?
+- Trace the first few rows and identify how their lengths change.
 
-The examples illustrate expected behavior, not an implementation.
+## Example Behavior
+`pascal_row(0)` → `[1]`; `pascal_row(1)` → `[1, 1]`; `pascal_row(4)` → `[1, 4, 6, 4, 1]`.
