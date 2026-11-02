@@ -1,23 +1,26 @@
 # Even Accumulator
 
 ## Description
-Not every number in a range should contribute to a total. Select the even values and add only those.
+A running total does not always include every value. Build a program that considers the integers in a range but adds only those that are even. This challenge combines repetition, selection, and accumulation.
 
 ## Requirements
-- Read a nonnegative integer N.
-- Display the sum of all even integers between 1 and N, inclusive.
-- Display one integer, including when N is zero.
-
-## Example
-```text
-Input:
-6
-
-Output:
-12
-```
+- Read a nonnegative integer `N`.
+- Add all even integers from 1 through `N`, inclusive.
+- Display the total as one integer on one line.
+- If `N` is zero or one, display `0`.
+- Do not print prompts or other text.
 
 ## Tips
-Separate the question 'should this number be included?' from 'how does it change the total?'.
+- Separate the decision to include a number from the action of adding it.
+- Think about how to recognize even values.
+- Check whether the upper limit itself should contribute to the total.
 
-The example demonstrates expected behavior; it does not reveal an implementation.
+## Example Input
+```text
+6
+```
+
+## Example Output
+```text
+12
+```
