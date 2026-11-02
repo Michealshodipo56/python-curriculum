@@ -1,20 +1,19 @@
 # Circular Shift
 
 ## Description
-Imagine the end of a list wrapping around to its beginning. Rotate the elements to the right without changing the original collection.
+A rotation moves items from the end of a list to the beginning while preserving their relative order. Build a function that handles shifts longer than the list itself.
 
 ## Requirements
 - Implement `rotate_right(items, k)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`rotate_right([1, 2, 3, 4], 1)` → `[4, 1, 2, 3]`
-
-`rotate_right([1, 2], 5)` → `[2, 1]`
+- Assume `k` is a nonnegative integer.
+- Return a new list rotated right by `k` positions.
+- Return an empty list for empty input and do not modify `items`.
+- Do not print or execute code on import.
 
 ## Tips
-What happens after a full rotation? Explore how a very large rotation relates to the length of the list.
+- What happens after a full rotation?
+- How can a large shift be related to the list length?
+- Consider zero shifts.
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`rotate_right([1, 2, 3, 4], 1)` → `[4, 1, 2, 3]`; `rotate_right([1, 2], 5)` → `[2, 1]`.
