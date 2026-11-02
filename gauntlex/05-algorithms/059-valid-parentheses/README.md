@@ -1,20 +1,18 @@
 # Balance the Parentheses
 
 ## Description
-Check whether a sequence of opening and closing parentheses forms complete, correctly ordered pairs.
+A sequence of parentheses is valid only if every opening parenthesis is closed in the correct order. Detect invalid prefixes as well as unclosed parentheses at the end.
 
 ## Requirements
 - Implement `valid_parentheses(text)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`valid_parentheses("(())")` → `True`
-
-`valid_parentheses("())(")` → `False`
+- Assume `text` contains only `(` and `)` characters.
+- Return `True` only if the parentheses form complete, correctly ordered pairs.
+- Return `True` for an empty string.
+- Return a boolean without printing or executing code on import.
 
 ## Tips
-A sequence may have equal numbers of each symbol and still be invalid. Inspect every prefix.
+- Why can equal counts still describe an invalid sequence?
+- What must remain true at every point while reading from left to right?
 
-The examples illustrate expected behavior, not an implementation.
+## Example Behavior
+`valid_parentheses('(())')` → `True`; `valid_parentheses('())(')` → `False`.
