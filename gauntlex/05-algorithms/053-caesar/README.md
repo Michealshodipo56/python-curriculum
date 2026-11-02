@@ -1,20 +1,19 @@
 # Alphabet Rotation
 
 ## Description
-Transform text by shifting each ASCII letter around its alphabet. Preserve case, punctuation, digits, and other nonletters.
+Shift each English letter by a specified number of positions, wrapping around the alphabet. Preserve case and leave nonletters unchanged.
 
 ## Requirements
 - Implement `caesar(text, k)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`caesar("Abc-Z!", 2)` → `"Cde-B!"`
-
-`caesar("xyz", 3)` → `"abc"`
+- Shift ASCII letters `A`–`Z` and `a`–`z` forward by integer `k` positions.
+- Wrap around each alphabet; support zero, negative, and large shifts.
+- Preserve case and leave all non-ASCII letters, digits, spaces, and punctuation unchanged.
+- Return the transformed string without printing or executing code on import.
 
 ## Tips
-Investigate what happens at the end of the alphabet and with shifts larger than its length.
+- What happens when a shift crosses `z` or `Z`?
+- How does a full alphabet rotation affect the result?
+- Think about negative shifts.
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`caesar('Abc-Z!', 2)` → `'Cde-B!'`; `caesar('xyz', 3)` → `'abc'`.
