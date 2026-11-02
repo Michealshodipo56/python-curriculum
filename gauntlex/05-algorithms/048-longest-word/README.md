@@ -1,20 +1,18 @@
 # Longest in the Line
 
 ## Description
-Search a sentence for the longest word. When several words share the maximum length, the earliest one wins.
+Find the longest word in a text. If several words have the same maximum length, keep the first one encountered.
 
 ## Requirements
 - Implement `longest_word(text)` in `solution.py`.
-- Return the required value without printing.
-- Do not modify caller-owned input collections.
-- Do not run input prompts or print statements at import time.
-
-## Examples
-`longest_word("cat elephant dog")` → `"elephant"`
-
-`longest_word("aa bb")` → `"aa"`
+- Treat words as nonempty whitespace-separated tokens.
+- Return the longest word; for ties return the earliest.
+- Return an empty string if there are no words.
+- Do not print or execute code on import.
 
 ## Tips
-Consider how a comparison rule can preserve the first winner instead of replacing it with a tie.
+- How should the current winner change when a longer word appears?
+- Why should a tie not replace the earlier winner?
 
-The examples illustrate the contract without providing an implementation.
+## Example Behavior
+`longest_word('cat elephant dog')` → `'elephant'`; `longest_word('aa bb')` → `'aa'`.
