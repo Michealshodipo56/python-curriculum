@@ -1,25 +1,28 @@
 # Share Into Groups
 
 ## Description
-A collection of items must be split into equal-sized groups. Report how many full groups can be made and how many items remain unused.
+Suppose a collection of items must be divided into groups of equal size. Some items may remain after forming every possible complete group. Build a program that reports both the number of complete groups and the leftover items.
 
 ## Requirements
-- Read a nonnegative integer item count and a positive integer group size.
-- Display `Groups: N` and `Leftover: N` on separate lines.
-- Do not print prompts.
+- Read a nonnegative integer item count on the first line.
+- Read a positive integer group size on the second line.
+- Display `Groups: N` for the number of complete groups.
+- Display `Leftover: N` for the unused items on the next line.
+- Print no prompts or additional messages.
 
-## Example
+## Tips
+- Try distributing a small number of objects by hand.
+- How can you tell whether another complete group can be formed?
+- Consider the cases where the item count is zero or smaller than the group size.
+
+## Example Input
 ```text
-Input:
 17
 5
+```
 
-Output:
+## Example Output
+```text
 Groups: 3
 Leftover: 2
 ```
-
-## Tips
-Try distributing the items by hand first. Which two quantities completely describe the result of the distribution?
-
-The example describes expected behavior, not a solution.
