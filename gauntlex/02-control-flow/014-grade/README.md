@@ -1,23 +1,25 @@
 # Score Boundaries
 
 ## Description
-A grading system translates numeric scores into letter categories. Write a program that chooses the correct category, especially at the boundaries between grades.
+A grading system converts a numeric score into a letter category. Build a program that selects the correct grade for every valid score. This challenge focuses on ordered decisions and boundary values.
 
 ## Requirements
-- Read one integer score from 0 through 100.
-- Use A for 90–100, B for 80–89, C for 70–79, D for 60–69, and F for 0–59.
-- Display only `Grade: X`, replacing X with the appropriate letter.
-
-## Example
-```text
-Input:
-90
-
-Output:
-Grade: A
-```
+- Read one integer score between 0 and 100, inclusive.
+- Assign `A` to 90–100, `B` to 80–89, `C` to 70–79, `D` to 60–69, and `F` to 0–59.
+- Display the result exactly as `Grade: X`, where `X` is the letter.
+- Print one line without prompts or additional output.
 
 ## Tips
-Test the values immediately below and above every grade boundary. Each possible score should belong to exactly one category.
+- List the score ranges and make sure none overlap or leave gaps.
+- Consider values immediately above and below each boundary.
+- How can the program ensure that exactly one category is chosen?
 
-The example demonstrates expected behavior; it does not reveal an implementation.
+## Example Input
+```text
+90
+```
+
+## Example Output
+```text
+Grade: A
+```
