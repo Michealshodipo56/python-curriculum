@@ -1,24 +1,26 @@
 # One Year Later
 
 ## Description
-Combine personal information with a simple calculation to describe a future state.
+Programs often combine descriptive information with calculations. Read a person's name and current age, then produce a sentence describing their age one year later. This challenge connects numeric input with formatted text.
 
 ## Requirements
-- Read a name and a nonnegative integer age on separate lines.
-- Display exactly `NAME will be AGE next year.` using the age one year from now.
-- Do not print prompts.
-
-## Example
-```text
-Input:
-Mira
-19
-
-Output:
-Mira will be 20 next year.
-```
+- Read a name on the first line and a nonnegative integer age on the second.
+- Calculate the person's age one year later.
+- Display exactly `NAME will be AGE next year.` with the supplied name and calculated age.
+- Print one line, with no prompts or additional messages.
 
 ## Tips
-The name is text, while the age is used in arithmetic. Decide when a conversion is necessary.
+- Which input is used as text, and which is used in arithmetic?
+- Think about when a value must change representation to be included in a sentence.
+- Verify the exact spacing and punctuation in the final message.
 
-The example describes expected behavior, not a solution.
+## Example Input
+```text
+Mira
+19
+```
+
+## Example Output
+```text
+Mira will be 20 next year.
+```
