@@ -1,17 +1,27 @@
 # Numeric Order
 
 ## Description
-Arrange a collection of integers from smallest to largest. The comparison must use numeric values rather than the characters used to represent them.
+A collection of integers may arrive in any order. Build a program that arranges them from smallest to largest. Numeric order is different from the alphabetical order of the characters used to write numbers.
 
 ## Requirements
-- Read one line of space-separated integers.
-- Display all values in ascending numeric order, separated by single spaces.
-- Preserve duplicates; print a blank line for empty input.
-
-## Example
-Input: `9 2 10 2` → output: `2 2 9 10`.
+- Read one line of space-separated integers; the line may be empty.
+- Display all integers in ascending numeric order.
+- Preserve repeated values.
+- Separate output values with single spaces.
+- If the input is empty, display a blank line.
+- Do not print prompts or additional text.
 
 ## Tips
-Compare how the strings `10` and `2` sort with how the integers 10 and 2 sort.
+- Compare the ordering of the text values `10` and `2` with the ordering of the numbers they represent.
+- Consider what should happen to duplicate values.
+- Check an input containing negative numbers.
 
-The example illustrates the expected result, not a solution.
+## Example Input
+```text
+9 2 10 2
+```
+
+## Example Output
+```text
+2 2 9 10
+```
