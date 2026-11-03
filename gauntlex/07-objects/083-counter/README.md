@@ -1,18 +1,20 @@
 # Count by Key
 
 ## Description
-Create an object that remembers how many times each key has been recorded.
-
-### Behavior contract
-Implement CounterMap with add(key), count(key), and total(). Adding increments the key's count by one; absent keys have count zero; total returns the number of adds.
+A counter can record how often different values are observed. Design an object that tracks counts by key and also remembers the total number of recorded observations.
 
 ## Requirements
 - Define `CounterMap` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `add(key)` to increase that key's count by one.
+- Implement `count(key)` to return the recorded count, or `0` for an unseen key.
+- Implement `total()` to return the number of `add` calls across all keys.
+- Maintain the state between calls without requiring interactive input.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-A missing key has never been seen; how should it be represented?
+- How should an unseen key be treated?
+- Why is the overall total different from the number of distinct keys?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+After `add('red')`, `add('blue')`, and `add('red')`, `count('red')` is `2` and `total()` is `3`.
