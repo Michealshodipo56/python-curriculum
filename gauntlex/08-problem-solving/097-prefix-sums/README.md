@@ -1,23 +1,19 @@
 # Totals Along the Way
 
 ## Description
-Produce a running total after every element of a numeric sequence.
-
-### Behavior contract
-Return running totals for the integer list, with one total for each prefix.
+A prefix includes every value from the beginning of a sequence through a chosen position. Produce the running total at each position.
 
 ## Requirements
 - Implement `prefix_sums(nums)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`prefix_sums([2, -1, 4])` → `[2, 1, 5]`
-
-`prefix_sums([])` → `[]`
+- Return a new list containing one sum for every prefix of `nums`.
+- Include negative values in the totals.
+- Return `[]` when the input list is empty.
+- Preserve the input list.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-A prefix includes everything from the beginning through the current position.
+- How does the next total relate to the previous total?
+- What should the output length be?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`prefix_sums([2, -1, 4])` → `[2, 1, 5]`; `prefix_sums([])` → `[]`.
