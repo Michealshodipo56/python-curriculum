@@ -1,18 +1,21 @@
 # Remember the Recent
 
 ## Description
-Build a fixed-capacity cache that discards the least recently used entry when it fills up.
-
-### Behavior contract
-Implement LRUCache(capacity) with get(key) and put(key,value). get returns None when missing. Accessing or updating an entry makes it most recently used; inserting beyond capacity evicts the least recently used. Capacity must be positive.
+Create a capacity-limited cache that discards its least recently used entry when another entry must be stored.
 
 ## Requirements
-- Define `LRUCache` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `LRUCache(capacity)` in `starter/solution.py`.
+- Require positive capacity.
+- Provide `get(key)` returning the value or `None` for a missing key.
+- Provide `put(key, value)` to add or update an entry.
+- Make successful reads and updates count as recent use.
+- Evict the least recently used entry when insertion exceeds capacity.
+- Use the Python standard library only. Do not print or request input at import time.
 
 ## Tips
-A read changes recency even if it does not change the stored value.
+- Why should a read change the order of future eviction?
+- What happens when an existing key is updated?
+- Think through valid and invalid operations and their effects on object state.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+With capacity `2`, storing `a` and `b`, reading `a`, then storing `c` evicts `b`.
