@@ -1,18 +1,20 @@
 # Shape Invariants
 
 ## Description
-Represent a rectangle whose dimensions are valid from the moment it is created.
-
-### Behavior contract
-Implement Rectangle(width,height) with area() and perimeter(). Width and height must be positive numbers; otherwise raise ValueError.
+An object representing a rectangle should begin in a valid state. Require valid dimensions during construction so subsequent calculations can rely on them.
 
 ## Requirements
-- Define `Rectangle` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Define `Rectangle(width, height)` in `starter/solution.py`.
+- Accept positive numeric width and height values.
+- Raise `ValueError` if either dimension is zero or negative.
+- Implement `area()` to return the rectangle's area.
+- Implement `perimeter()` to return the total boundary length.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-What rules belong in construction so that later calculations can trust the object?
+- Which rules belong in object construction?
+- How does enforcing valid dimensions simplify later calculations?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+For `Rectangle(4, 3)`, `area()` returns `12` and `perimeter()` returns `14`.
