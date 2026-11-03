@@ -1,23 +1,22 @@
 # Log Severity Summary
 
 ## Description
-Summarize valid log records by severity while ignoring malformed entries.
-
-### Behavior contract
-Given a list of log lines in `LEVEL|YYYY-MM-DD|MESSAGE` format, return counts of valid INFO, WARN and ERROR records, ignoring malformed lines. Include zero counts.
+Summarize the severity of valid structured log records while ignoring malformed lines. The output must include every supported severity even when its count is zero.
 
 ## Requirements
 - Implement `count_log_levels(lines)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`count_log_levels(["INFO|2024-01-01|ok", "WARN|2024-01-02|slow", "INFO|2024-01-03|ok", "bad"])` → `{"INFO": 2, "WARN": 1, "ERROR": 0}`
-
-`count_log_levels([])` → `{"INFO": 0, "WARN": 0, "ERROR": 0}`
+- Accept a list of log lines formatted `LEVEL
+- YYYY-MM-DD
+- MESSAGE`.
+- Count only valid `INFO`, `WARN`, and `ERROR` records.
+- Ignore malformed lines, including invalid calendar dates.
+- Return a dictionary containing all three level names with integer counts.
+- Do not modify `lines`.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Include categories with zero occurrences. Reuse the record contract rather than counting arbitrary prefixes.
+- Why is checking the prefix alone insufficient to validate a record?
+- What should the result contain for an empty list?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`count_log_levels(['INFO|2024-01-01|ok', 'WARN|2024-01-02|slow', 'INFO|2024-01-03|ok', 'bad'])` → `{'INFO': 2, 'WARN': 1, 'ERROR': 0}`.
