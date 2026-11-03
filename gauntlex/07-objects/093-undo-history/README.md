@@ -1,18 +1,20 @@
 # Step Back in Time
 
 ## Description
-Keep enough history to restore earlier values one change at a time.
-
-### Behavior contract
-Implement UndoHistory(initial) with set(value), undo(), and current property. undo restores the previous value; undo with no previous value raises IndexError.
+Maintain a current value together with enough history to restore earlier values, one change at a time.
 
 ## Requirements
-- Define `UndoHistory` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `UndoHistory(initial)` in `starter/solution.py`.
+- Provide `set(value)` to replace the current value and preserve the previous one.
+- Expose the active value through the `current` property.
+- Provide `undo()` to restore the preceding value.
+- Raise `IndexError` when there is no earlier state.
+- Use the Python standard library only. Do not print or request input at import time.
 
 ## Tips
-Which value must be saved before applying a new one?
+- What should be saved before each change?
+- How does the history change after an undo?
+- Think through valid and invalid operations and their effects on object state.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+Starting at `'A'`, setting `'B'` then `'C'` and undoing once restores `'B'`.
