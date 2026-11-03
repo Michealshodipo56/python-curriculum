@@ -1,23 +1,20 @@
 # Canonical URL Paths
 
 ## Description
-Resolve redundant separators and relative segments to produce a stable rooted URL path.
-
-### Behavior contract
-Normalize a POSIX URL path by collapsing repeated slashes and removing . segments. Resolve .. segments without going above root. Return a leading /; do not preserve trailing slash except root.
+Normalize a POSIX-style URL path into a stable rooted form. Redundant separators and relative segments should not allow the result to escape above the root.
 
 ## Requirements
 - Implement `normalize_url_path(path)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`normalize_url_path("/a//b/./c/../d")` → `"/a/b/d"`
-
-`normalize_url_path("../../x")` → `"/x"`
+- Return a path beginning with `/`.
+- Collapse repeated slashes and remove `.` segments.
+- Resolve `..` segments by removing a preceding ordinary segment when possible.
+- Never navigate above the root.
+- Remove a trailing slash unless the result is `/`.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Treat parent segments at the root carefully: normalization must never travel above it.
+- What should happen when a parent segment appears at the root?
+- How do `.` and `..` differ?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`normalize_url_path('/a//b/./c/../d')` → `'/a/b/d'`; `normalize_url_path('../../x')` → `'/x'`.
