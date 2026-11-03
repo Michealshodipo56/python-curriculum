@@ -1,23 +1,19 @@
 # Domain Extraction
 
 ## Description
-Extract and normalize the domain portion of a valid email address.
-
-### Behavior contract
-Given a valid email address with exactly one @, return its domain in lowercase.
+An email address has a local part and a domain separated by `@`. Extract the domain and normalize its capitalization without changing the local part.
 
 ## Requirements
 - Implement `email_domain(email)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`email_domain("User@Example.COM")` → `"example.com"`
-
-`email_domain("a@sub.example.org")` → `"sub.example.org"`
+- Assume the input is a valid email address containing exactly one `@`.
+- Return the substring after `@`.
+- Convert the returned domain to lowercase.
+- Do not include the separator or local part in the result.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Only the domain needs to be converted to lowercase; do not alter the local part.
+- Which part of an email address identifies its domain?
+- Why should only the extracted domain be normalized?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`email_domain('User@Example.COM')` → `'example.com'`; `email_domain('a@sub.example.org')` → `'sub.example.org'`.
