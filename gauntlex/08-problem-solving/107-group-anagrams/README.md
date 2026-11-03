@@ -1,23 +1,20 @@
 # Families of Letters
 
 ## Description
-Group words that contain the same characters with the same multiplicities.
-
-### Behavior contract
-Group strings that are anagrams. Return groups in order of first group appearance, with strings in original input order. Comparison is case-sensitive.
+Group words with identical character frequencies while preserving both the first appearance of each group and the original order within that group.
 
 ## Requirements
 - Implement `group_anagrams(words)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"])` → `[["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]`
-
-`group_anagrams([])` → `[]`
+- Return a list of lists of anagram strings.
+- Treat case and every character as significant.
+- Order groups by the first occurrence of any member.
+- Preserve input order within each group.
+- Return `[]` for empty input; do not mutate the original list.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Group order and the order of words within each group must both be preserved.
+- Why is matching only distinct characters insufficient?
+- How do you preserve two different levels of ordering?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`group_anagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])` → `[['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]`.
