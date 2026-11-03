@@ -1,23 +1,19 @@
 # Write in Base Two
 
 ## Description
-Represent an integer using binary digits, with no language-specific prefix.
-
-### Behavior contract
-Return the base-2 representation of an integer as a string, with a leading minus sign for negative values. Do not prefix 0b.
+Represent any integer using base-two digits. Return the representation as plain text without Python's binary prefix.
 
 ## Requirements
 - Implement `to_binary(n)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`to_binary(0)` → `"0"`
-
-`to_binary(13)` → `"1101"`
+- Return a string of binary digits representing integer `n`.
+- For negative values, use a leading `-` followed by the magnitude's binary digits.
+- Return `'0'` for zero.
+- Do not include a `0b` prefix.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Consider zero and negative integers as distinct edge cases.
+- Why does zero need special attention?
+- How does a negative sign relate to the digits of the magnitude?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`to_binary(0)` → `'0'`; `to_binary(13)` → `'1101'`; `to_binary(-5)` → `'-101'`.
