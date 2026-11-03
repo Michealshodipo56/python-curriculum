@@ -5,15 +5,17 @@ Determine how many logical lines a string contains, including cases involving tr
 
 ## Requirements
 - Implement `line_count(text)` in `starter/solution.py`.
-- Return the required value without printing or prompting.
-- Use the standard library only and do not mutate input collections.
+- Return the result to the caller without printing or requesting interactive input.
+- Handle the boundary cases implied by the examples and description.
+- Use Python's standard library only.
+- Preserve caller-owned input values and collections.
 
-## Examples
+## Example Behavior
 `line_count("one\ntwo\n")` → `2`
 
 `line_count("single")` → `1`
 
 ## Tips
+- Identify the input type, output type, and exact format before implementing the function.
+- Consider empty or minimal input alongside the supplied examples.
 Compare empty text, one line, and a line ending with a newline. Do they all count the same way?
-
-Examples describe expected behavior without providing the implementation.
