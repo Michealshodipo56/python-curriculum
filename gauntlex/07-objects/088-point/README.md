@@ -1,18 +1,20 @@
 # Immutable Coordinates
 
 ## Description
-Represent a point that cannot be changed after creation, and calculate distances between points.
-
-### Behavior contract
-Implement immutable Point(x,y) with distance_to(other) returning Euclidean distance. Attempting to assign x or y after construction must fail.
+A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
 
 ## Requirements
-- Define `Point` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Define `Point(x, y)` in `starter/solution.py`.
+- Store the point's `x` and `y` coordinates.
+- Prevent assignments that change either coordinate after construction.
+- Implement `distance_to(other)` to return the Euclidean distance to another point.
+- Keep the original point unchanged during distance calculations.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-How can a class guarantee that an object's coordinates remain stable?
+- What distinguishes an immutable object from an ordinary mutable one?
+- How can horizontal and vertical differences determine distance?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+The distance from `Point(0, 0)` to `Point(3, 4)` is `5`; assigning a new `x` afterward must fail.
