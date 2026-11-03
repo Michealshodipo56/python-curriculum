@@ -1,23 +1,19 @@
 # Stay Within Bounds
 
 ## Description
-Constrain a numeric value to an inclusive interval while detecting invalid interval boundaries.
-
-### Behavior contract
-Return value bounded to the inclusive range [low,high]. Raise ValueError when low>high.
+Constrain a number to a specified inclusive interval. Values outside the interval should be brought to the nearest boundary, while invalid bounds must be rejected.
 
 ## Requirements
 - Implement `clamp(value, low, high)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`clamp(12, 0, 10)` → `10`
-
-`clamp(-3, 0, 10)` → `0`
+- Accept numeric `value`, `low`, and `high` arguments.
+- Return `low` if the value is below it, or `high` if above it.
+- Return the original value when it is already within the inclusive interval.
+- Raise `ValueError` when `low > high`.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Consider values below, within, and above the range. What if the interval itself is impossible?
+- How do the three possible positions relative to an interval differ?
+- What happens when the two bounds are equal?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`clamp(12, 0, 10)` → `10`; `clamp(-3, 0, 10)` → `0`.
