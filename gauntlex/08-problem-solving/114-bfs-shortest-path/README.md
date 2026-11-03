@@ -1,23 +1,20 @@
 # Shortest Route
 
 ## Description
-Find a minimum-edge route between nodes in a graph, respecting neighbor order for ties.
-
-### Behavior contract
-Given an undirected graph as a dictionary of node -> list of neighboring nodes, return the shortest path as a list from start to goal. Return [] if unreachable. When ties exist, follow neighbor-list order.
+Find a route with the fewest edges between two graph nodes. When multiple shortest routes exist, neighbor-list order determines the selected route.
 
 ## Requirements
 - Implement `shortest_path(graph, start, goal)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`shortest_path({"A": ["B", "C"], "B": ["D"], "C": ["D"], "D": []}, "A", "D")` → `["A", "B", "D"]`
-
-`shortest_path({"A": []}, "A", "Z")` → `[]`
+- Accept a graph mapping nodes to lists of neighbors; interpret edges as specified by the adjacency lists.
+- Return a list of nodes from `start` to `goal`, including both endpoints.
+- Return `[]` when the goal is unreachable.
+- Choose among equal-length paths by exploring neighbors in listed order.
+- Do not mutate the graph.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Exploring in layers discovers shorter paths before longer ones.
+- Why does exploring paths by number of edges find a shortest route?
+- How does neighbor order break ties?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`shortest_path({'A': ['B', 'C'], 'B': ['D'], 'C': ['D'], 'D': []}, 'A', 'D')` → `['A', 'B', 'D']`.
