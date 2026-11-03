@@ -1,23 +1,21 @@
 # Word Leaderboard
 
 ## Description
-Extract ASCII words from text and rank the most frequent, using alphabetical order to break ties.
-
-### Behavior contract
-Return the n most frequent lowercase ASCII words in text, ordered by descending count and then alphabetically. Words are maximal runs of letters a-z; ignore punctuation. Assume n>=0.
+Extract words from text, count how often each appears, and rank them. Equal-frequency words must be ordered alphabetically.
 
 ## Requirements
 - Implement `top_words(text, n)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`top_words("Red red blue!", 2)` → `["red", "blue"]`
-
-`top_words("b a b a", 1)` → `["a"]`
+- Assume `n` is a nonnegative integer.
+- Recognize words as maximal runs of ASCII letters `a`–`z`, ignoring case.
+- Count normalized lowercase words, treating punctuation and other characters as separators.
+- Return at most `n` distinct words, ordered by descending frequency and then alphabetically.
+- Return `[]` when `n` is zero or no words exist.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Punctuation separates words; case normalization happens before frequency counting.
+- Why must case normalization happen before counting?
+- How should equal-frequency words be ordered?
+- What separates two ASCII words?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`top_words('Red red blue!', 2)` → `['red', 'blue']`; `top_words('b a b a', 1)` → `['a']`.
