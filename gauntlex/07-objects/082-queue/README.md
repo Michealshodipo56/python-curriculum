@@ -1,18 +1,20 @@
 # First In, First Out
 
 ## Description
-Model a waiting line where items leave in the order they arrive.
-
-### Behavior contract
-Implement a Queue class with enqueue(value), dequeue(), and is_empty(). Dequeue from an empty queue must raise IndexError.
+A queue represents a waiting line: items leave in the same order in which they arrive. Build an object that maintains that order through repeated operations.
 
 ## Requirements
 - Define `Queue` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Provide `enqueue(value)` to add an item at the back.
+- Provide `dequeue()` to remove and return the oldest waiting item.
+- Provide `is_empty()` to report whether the queue contains items.
+- Raise `IndexError` when `dequeue()` is called on an empty queue.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-What operations become expensive if every removal shifts all remaining elements?
+- How does this removal order differ from a stack?
+- Consider what happens when several items are added before any are removed.
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+After enqueuing `'A'` and `'B'`, successive calls to `dequeue()` return `'A'` and `'B'`.
