@@ -1,23 +1,20 @@
 # Clock Text to Seconds
 
 ## Description
-Interpret a duration expressed in hours, minutes, and seconds, rejecting malformed notation.
-
-### Behavior contract
-Parse a duration formatted as `H:MM:SS`, where H is a nonnegative integer and MM and SS are exactly two digits from 00 to 59. Return total seconds. Raise ValueError on invalid input.
+Interpret a duration in hours, minutes, and seconds. Reject malformed text and impossible minute or second values.
 
 ## Requirements
 - Implement `parse_duration(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`parse_duration("1:02:03")` → `3723`
-
-`parse_duration("0:00:05")` → `5`
+- Accept `H:MM:SS` with a nonnegative integer hour field.
+- Require exactly two digits each for minutes and seconds.
+- Require minutes and seconds to be between `00` and `59` inclusive.
+- Return the total duration in seconds.
+- Raise `ValueError` for invalid notation or out-of-range components.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Validate minute and second bounds before combining the three units.
+- Why must minutes and seconds be bounded independently of hours?
+- What is the difference between an invalid format and a valid zero duration?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`parse_duration('1:02:03')` → `3723`; `parse_duration('0:00:05')` → `5`.
