@@ -1,23 +1,19 @@
 # Read URL Parameters
 
 ## Description
-Decode an HTTP query string into named values, including repeated keys and escaped characters.
-
-### Behavior contract
-Parse an HTTP-style query string into a dictionary mapping each key to its last value. Decode percent escapes and plus-as-space. Blank values are retained.
+A URL query string can contain encoded characters, blank values, and repeated names. Parse it into a mapping where later occurrences replace earlier values.
 
 ## Requirements
 - Implement `parse_query(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`parse_query("a=1&b=two+words&a=3")` → `{"a": "3", "b": "two words"}`
-
-`parse_query("x=&y=%2B")` → `{"x": "", "y": "+"}`
+- Return a dictionary of decoded parameter names and values.
+- Decode percent escapes and interpret `+` as a space.
+- Keep blank values.
+- For repeated keys, retain the last decoded value.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Consider how a plus sign differs from a percent-encoded plus character.
+- Why does `%2B` differ from a literal plus sign?
+- What should happen when a name occurs more than once?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`parse_query('a=1&b=two+words&a=3')` → `{'a': '3', 'b': 'two words'}`; `parse_query('x=&y=%2B')` → `{'x': '', 'y': '+'}`.
