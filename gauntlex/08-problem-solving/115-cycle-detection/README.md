@@ -1,23 +1,19 @@
 # Detect a Loop
 
 ## Description
-Determine whether following directed graph edges can lead back to an active path.
-
-### Behavior contract
-Return whether a directed graph represented as node -> list of outgoing neighbors contains a cycle. Neighbor nodes may be absent as dictionary keys.
+A directed graph contains a cycle if a path of outgoing edges can return to a node already on that same active path.
 
 ## Requirements
 - Implement `has_cycle(graph)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`has_cycle({"a": ["b"], "b": ["c"], "c": ["a"]})` → `True`
-
-`has_cycle({"a": ["b"], "b": []})` → `False`
+- Accept a dictionary mapping nodes to lists of outgoing neighbors.
+- Return `True` if any directed cycle exists and `False` otherwise.
+- Treat neighbor nodes absent from the dictionary as nodes with no outgoing edges.
+- Do not mutate the graph.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-A node visited in an earlier completed branch is not necessarily evidence of a cycle.
+- Why is visiting a node from an earlier completed branch not enough to prove a cycle?
+- How does a self-loop differ from a dead end?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`has_cycle({'a': ['b'], 'b': ['c'], 'c': ['a']})` → `True`; `has_cycle({'a': ['b'], 'b': []})` → `False`.
