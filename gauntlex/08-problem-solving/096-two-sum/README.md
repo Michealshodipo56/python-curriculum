@@ -1,23 +1,19 @@
 # Find the Pair
 
 ## Description
-Locate two different positions whose values combine to reach a target.
-
-### Behavior contract
-Return indices [i,j] of two different elements summing to target, with i<j. If multiple pairs exist, choose the pair with smallest j, then smallest i. Return [] if none.
+Find two different positions in an integer list whose values add to a target. When several answers exist, the order in which pairs finish determines which answer is chosen.
 
 ## Requirements
 - Implement `two_sum(nums, target)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`two_sum([2, 7, 11, 15], 9)` → `[0, 1]`
-
-`two_sum([3, 3], 6)` → `[0, 1]`
+- Return a list `[i, j]` of zero-based indices where `i < j` and `nums[i] + nums[j] == target`.
+- If multiple pairs exist, choose the smallest `j`, then the smallest `i`.
+- Return `[]` when no matching pair exists.
+- Never use the same position twice.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-The earliest finishing pair takes precedence; think about how encounter order affects the result.
+- Why does the pair's second index determine which answer comes first?
+- Consider repeated values and negative numbers.
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`two_sum([2, 7, 11, 15], 9)` → `[0, 1]`; `two_sum([3, 3], 6)` → `[0, 1]`.
