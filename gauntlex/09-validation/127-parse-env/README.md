@@ -1,23 +1,21 @@
 # Configuration Assignments
 
 ## Description
-Interpret lines of key-value configuration while respecting comments, whitespace, and repeated keys.
-
-### Behavior contract
-Parse lines of KEY=VALUE assignments into a dictionary. Ignore blank lines and lines whose first non-space character is #. Trim whitespace around keys and values. Reject noncomment lines without = using ValueError. Later keys overwrite earlier ones.
+Read configuration assignments from multiline text. Ignore blank and comment lines, normalize surrounding whitespace, and allow later assignments to replace earlier ones.
 
 ## Requirements
 - Implement `parse_env(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`parse_env("A=1\nB = hello world\n# comment\nA=2")` → `{"A": "2", "B": "hello world"}`
-
-`parse_env("  \n#x")` → `{}`
+- Interpret noncomment lines as `KEY=VALUE` assignments.
+- Ignore blank lines and lines whose first nonspace character is `#`.
+- Trim whitespace around keys and values.
+- Split each assignment at its first `=` so the value may contain additional equals signs.
+- Raise `ValueError` for any noncomment, nonblank line without `=`.
+- Keep the last value for repeated keys.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-An equals sign may occur inside the value; only the first one separates the key from its value.
+- Why should only the first equals sign separate the key and value?
+- What makes a line a comment rather than an assignment?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`parse_env('A=1\nB = hello world\n# comment\nA=2')` → `{'A': '2', 'B': 'hello world'}`.
