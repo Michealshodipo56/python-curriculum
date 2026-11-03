@@ -1,23 +1,19 @@
 # Password Rules
 
 ## Description
-Check a candidate password against several independent character and length requirements.
-
-### Behavior contract
-Return True if a string has at least 8 characters and contains at least one ASCII uppercase letter, one ASCII lowercase letter, and one ASCII digit.
+A password validator must check several independent conditions. Determine whether a candidate meets the required minimum length and ASCII character classes.
 
 ## Requirements
 - Implement `validate_password(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`validate_password("Abcdefg1")` → `True`
-
-`validate_password("abcdefg1")` → `False`
+- Return a Boolean for the supplied string.
+- Require at least eight characters.
+- Require at least one ASCII uppercase letter (`A`–`Z`), one ASCII lowercase letter (`a`–`z`), and one ASCII digit (`0`–`9`).
+- Return `False` when any condition is missing.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-A long password can still fail if it lacks one required character class.
+- Why can a long password still be invalid?
+- How are ASCII letters different from arbitrary Unicode letters?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`validate_password('Abcdefg1')` → `True`; `validate_password('abcdefg1')` → `False`.
