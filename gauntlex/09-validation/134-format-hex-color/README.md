@@ -1,23 +1,19 @@
 # Encode an RGB Color
 
 ## Description
-Convert three channel values into a canonical uppercase hexadecimal color string.
-
-### Behavior contract
-Return an uppercase `#RRGGBB` string for three integer RGB components. Raise ValueError if any component is outside 0–255.
+Encode red, green, and blue channel values as a canonical uppercase hexadecimal color string.
 
 ## Requirements
 - Implement `format_hex_color(r, g, b)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`format_hex_color(255, 128, 0)` → `"#FF8000"`
-
-`format_hex_color(0, 0, 0)` → `"#000000"`
+- Accept three integer channel values `r`, `g`, and `b`.
+- Require every component to lie between `0` and `255`; raise `ValueError` otherwise.
+- Return a string in uppercase `#RRGGBB` form.
+- Represent each channel with exactly two hexadecimal digits.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Each channel needs exactly two hexadecimal digits, even for small values.
+- Why do small channel values still require two digits?
+- How does channel order affect the resulting color?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`format_hex_color(255, 128, 0)` → `'#FF8000'`; `format_hex_color(0, 0, 0)` → `'#000000'`.
