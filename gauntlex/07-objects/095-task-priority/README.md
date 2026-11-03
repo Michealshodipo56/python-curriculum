@@ -1,18 +1,20 @@
 # Serve by Priority
 
 ## Description
-Schedule tasks by urgency while preserving insertion order among equally urgent tasks.
-
-### Behavior contract
-Implement PriorityTasks with add(title,priority) and pop(). Lower integer priority values come first. Equal priorities retain insertion order. pop returns the title; popping empty raises IndexError.
+Schedule tasks by urgency while preserving arrival order when two tasks have the same priority.
 
 ## Requirements
-- Define `PriorityTasks` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `PriorityTasks` in `starter/solution.py`.
+- Provide `add(title, priority)` with integer priority values.
+- Provide `pop()` returning the title with the lowest numeric priority.
+- For equal priorities, return tasks in their insertion order.
+- Raise `IndexError` when popping an empty collection.
+- Use the Python standard library only. Do not print or request input at import time.
 
 ## Tips
-A numeric priority alone cannot distinguish which equal-priority task arrived first.
+- Why is a numeric priority alone insufficient to distinguish ties?
+- What information preserves fairness for equally urgent tasks?
+- Think through valid and invalid operations and their effects on object state.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+Adding `A` at priority `2`, `B` at priority `1`, and `C` at priority `1` yields pops `B`, `C`, `A`.
