@@ -1,23 +1,19 @@
 # Walk the Spiral
 
 ## Description
-Visit a rectangular grid by moving clockwise around its outer boundary and then inward.
-
-### Behavior contract
-Return a list of matrix elements visited clockwise from the top-left in spiral order. Assume a rectangular matrix.
+Read a rectangular grid in clockwise spiral order, starting at the top-left corner and moving inward as the outer boundary is exhausted.
 
 ## Requirements
 - Implement `spiral_order(matrix)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])` → `[1, 2, 3, 6, 9, 8, 7, 4, 5]`
-
-`spiral_order([])` → `[]`
+- Assume `matrix` is rectangular.
+- Return a flat list of values visited clockwise, starting across the top row.
+- Visit every cell exactly once.
+- Return `[]` for an empty grid; do not mutate the input.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-A boundary shrinks after each side. What happens when only one row or column remains?
+- How do the unvisited boundaries change after completing each side?
+- What if only one row or column remains?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`spiral_order([[1, 2, 3], [4, 5, 6], [7, 8, 9]])` → `[1, 2, 3, 6, 9, 8, 7, 4, 5]`.
