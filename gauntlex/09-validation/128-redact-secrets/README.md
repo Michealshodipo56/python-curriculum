@@ -1,23 +1,19 @@
 # Hide Sensitive Tokens
 
 ## Description
-Replace credential values inside arbitrary text without changing the visible spelling of their keys.
-
-### Behavior contract
-Replace every case-insensitive occurrence of `password=VALUE` or `token=VALUE` with `password=[REDACTED]` or `token=[REDACTED]`, preserving the original key spelling. VALUE is a nonempty run of non-whitespace characters.
+Hide credential values in text while preserving the original capitalization of their keys. Only explicitly recognized assignment forms should be changed.
 
 ## Requirements
 - Implement `redact_secrets(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`redact_secrets("token=abc password=123")` → `"token=[REDACTED] password=[REDACTED]"`
-
-`redact_secrets("TOKEN=x")` → `"TOKEN=[REDACTED]"`
+- Find case-insensitive occurrences of `password=VALUE` or `token=VALUE`.
+- Treat `VALUE` as a nonempty consecutive run of nonwhitespace characters.
+- Replace each matched value with `[REDACTED]`.
+- Preserve the original spelling and capitalization of each key and all unmatched text.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Check mixed-case keys and adjacent punctuation; only the defined token forms should be redacted.
+- Why should the key's original spelling remain unchanged?
+- How do spaces and punctuation affect the end of a credential value?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`redact_secrets('token=abc password=123')` → `'token=[REDACTED] password=[REDACTED]'`; `redact_secrets('TOKEN=x')` → `'TOKEN=[REDACTED]'`.
