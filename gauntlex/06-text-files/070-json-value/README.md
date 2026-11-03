@@ -5,15 +5,17 @@ Interpret a JSON object and retrieve a value by key, accounting for keys that ar
 
 ## Requirements
 - Implement `json_value(text, key)` in `starter/solution.py`.
-- Return the required value without printing or prompting.
-- Use the standard library only and do not mutate input collections.
+- Return the result to the caller without printing or requesting interactive input.
+- Handle the boundary cases implied by the examples and description.
+- Use Python's standard library only.
+- Preserve caller-owned input values and collections.
 
-## Examples
+## Example Behavior
 `json_value("{\"a\":1,\"b\":2}", "a")` → `1`
 
 `json_value("{\"x\":null}", "x")` → `None`
 
 ## Tips
+- Identify the input type, output type, and exact format before implementing the function.
+- Consider empty or minimal input alongside the supplied examples.
 JSON `null` and a missing key can lead to the same Python result; understand the specified contract.
-
-Examples describe expected behavior without providing the implementation.
