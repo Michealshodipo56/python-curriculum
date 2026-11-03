@@ -1,23 +1,18 @@
 # Numeral to Number
 
 ## Description
-Interpret a valid Roman numeral as an integer, including subtractive pairs.
-
-### Behavior contract
-Convert a valid canonical uppercase Roman numeral to its integer value. Input is guaranteed valid.
+Interpret a canonical uppercase Roman numeral as its decimal integer value. Some symbols subtract from the following larger symbol rather than adding.
 
 ## Requirements
 - Implement `roman_to_int(text)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`roman_to_int("IV")` → `4`
-
-`roman_to_int("LVIII")` → `58`
+- Assume `text` is a valid canonical uppercase Roman numeral.
+- Return its integer value.
+- Account for subtractive pairs without requiring validation of malformed input.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-The meaning of a symbol can depend on the symbol immediately following it.
+- How can the symbol immediately following another affect its value?
+- Consider the difference between `VI` and `IV`.
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`roman_to_int('IV')` → `4`; `roman_to_int('LVIII')` → `58`.
