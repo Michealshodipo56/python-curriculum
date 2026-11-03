@@ -1,23 +1,19 @@
 # Interpret a Boolean
 
 ## Description
-Convert common textual representations of yes and no into Boolean values, rejecting unsupported words.
-
-### Behavior contract
-Return True for 'true','yes','1', False for 'false','no','0', ignoring surrounding whitespace and case. Raise ValueError for other strings.
+A configuration value may express yes or no using several text forms. Convert recognized forms to Boolean values and reject unsupported tokens.
 
 ## Requirements
 - Implement `parse_boolean(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`parse_boolean(" YES ")` → `True`
-
-`parse_boolean("No")` → `False`
+- Ignore surrounding whitespace and letter case.
+- Return `True` for `true`, `yes`, or `1`.
+- Return `False` for `false`, `no`, or `0`.
+- Raise `ValueError` for every other string, including an empty value.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-An invalid token must not silently become false. Distinguish rejection from a legitimate negative response.
+- Why should an unknown token not silently become `False`?
+- Consider uppercase words and spaces around input.
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`parse_boolean(' YES ')` → `True`; `parse_boolean('No')` → `False`; `parse_boolean('maybe')` raises `ValueError`.
