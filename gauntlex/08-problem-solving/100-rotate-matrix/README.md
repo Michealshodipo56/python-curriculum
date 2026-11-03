@@ -1,23 +1,19 @@
 # Quarter Turn
 
 ## Description
-Rotate a square grid clockwise into a new grid while keeping the original unchanged.
-
-### Behavior contract
-Return a new square matrix rotated 90 degrees clockwise. An empty matrix stays empty.
+A square matrix can be rotated clockwise by a quarter turn. Return the transformed grid without changing the original rows.
 
 ## Requirements
 - Implement `rotate_matrix(matrix)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`rotate_matrix([[1, 2], [3, 4]])` → `[[3, 1], [4, 2]]`
-
-`rotate_matrix([])` → `[]`
+- Assume `matrix` is a square list of lists.
+- Return a new matrix rotated exactly 90 degrees clockwise.
+- Return `[]` for an empty matrix.
+- Do not mutate any original row.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Draw where each corner moves after one clockwise quarter-turn.
+- Where does each corner move after one clockwise rotation?
+- Consider a one-cell grid and an empty grid.
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`rotate_matrix([[1, 2], [3, 4]])` → `[[3, 1], [4, 2]]`; `rotate_matrix([])` → `[]`.
