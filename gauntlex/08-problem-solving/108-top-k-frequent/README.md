@@ -1,23 +1,19 @@
 # Most Common Values
 
 ## Description
-Rank integers by how often they occur, using numeric order to resolve ties.
-
-### Behavior contract
-Return the k most frequent integers, ordered by decreasing frequency and then increasing numeric value. Assume 0<=k<=number of distinct values.
+Rank integer values by frequency. If two values appear equally often, the smaller integer comes first.
 
 ## Requirements
 - Implement `top_k_frequent(nums, k)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`top_k_frequent([1, 1, 1, 2, 2, 3], 2)` → `[1, 2]`
-
-`top_k_frequent([4, 4, 5, 5, 3], 2)` → `[4, 5]`
+- Assume `0 <= k <=` the number of distinct values in `nums`.
+- Return exactly `k` distinct integers.
+- Order them by descending frequency, then ascending numeric value.
+- Return `[]` when `k` is zero.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-A stable tie-breaking rule is as important as counting correctly.
+- Why does a frequency ranking need an explicit tie-breaker?
+- How should negative values behave when counts tie?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`top_k_frequent([1, 1, 1, 2, 2, 3], 2)` → `[1, 2]`; `top_k_frequent([4, 4, 5, 5, 3], 2)` → `[4, 5]`.
