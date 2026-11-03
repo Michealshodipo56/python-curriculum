@@ -1,18 +1,20 @@
 # Track the Work
 
 ## Description
-Create a task collection that distinguishes pending work from completed work.
-
-### Behavior contract
-Implement TodoList with add(title), complete(index), pending(), and completed(). Titles must be nonempty strings after trimming; indexes are zero-based insertion positions; invalid indexes raise IndexError. Return lists of titles.
+A to-do list needs to preserve the order tasks were added while tracking whether each one has been completed. Build a stateful task manager.
 
 ## Requirements
 - Define `TodoList` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `add(title)` and reject titles that are empty after trimming whitespace.
+- Implement `complete(index)` using zero-based insertion positions.
+- Raise `IndexError` for invalid task positions.
+- Implement `pending()` and `completed()` to return lists of task titles in insertion order.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-A task's insertion position and its completion state serve different purposes.
+- Why is a task's original position different from its completion state?
+- What should happen when an invalid index is supplied?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+After adding `'Read'` and `'Write'`, completing index `0` leaves `'Write'` pending and `'Read'` completed.
