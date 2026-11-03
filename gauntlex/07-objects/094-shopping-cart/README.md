@@ -1,18 +1,21 @@
 # Cart Rules
 
 ## Description
-Maintain products, prices, and quantities without allowing contradictory entries.
-
-### Behavior contract
-Implement ShoppingCart with add(name,price,quantity=1), remove(name), and total(). Price must be nonnegative and quantity a positive integer. Adding an existing name with a different price raises ValueError. remove deletes the entire named item and raises KeyError if missing.
+Maintain products, prices, and quantities in a shopping cart without accepting contradictory entries.
 
 ## Requirements
-- Define `ShoppingCart` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `ShoppingCart` in `starter/solution.py`.
+- Provide `add(name, price, quantity=1)` with nonnegative prices and positive integer quantities.
+- Increase quantity when an existing name is added at the same price.
+- Raise `ValueError` if an existing name is added with a different price.
+- Provide `remove(name)` to delete the entire item; raise `KeyError` if missing.
+- Provide `total()` to calculate the sum of price times quantity.
+- Use the Python standard library only. Do not print or request input at import time.
 
 ## Tips
-What should happen when an existing item is added again at a different price?
+- Why should an existing product not silently change its price?
+- What should happen to a cart's total after removal?
+- Think through valid and invalid operations and their effects on object state.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+Adding two items at price `3` and one more at the same price produces a total of `9`.
