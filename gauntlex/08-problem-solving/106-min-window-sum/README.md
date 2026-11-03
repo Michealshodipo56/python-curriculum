@@ -1,23 +1,19 @@
 # Smallest Sufficient Window
 
 ## Description
-Find the shortest consecutive group of positive integers whose sum reaches a target.
-
-### Behavior contract
-Return the minimum length of a contiguous subarray with sum at least target, or 0 if none exists. All nums are positive integers and target is positive.
+Find the shortest uninterrupted group of positive integers whose sum reaches or exceeds a target.
 
 ## Requirements
 - Implement `min_subarray_len(target, nums)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`min_subarray_len(7, [2, 3, 1, 2, 4, 3])` → `2`
-
-`min_subarray_len(15, [1, 2, 3, 4, 5])` → `5`
+- Assume `target` and all elements of `nums` are positive integers.
+- Return the minimum length of a contiguous subarray with sum at least `target`.
+- Return `0` when no qualifying subarray exists.
+- Do not mutate the input.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Positive values make it possible to adjust the ends of a window predictably.
+- Why does the positivity of all numbers matter?
+- When might shortening a qualifying window preserve its sum threshold?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`min_subarray_len(7, [2, 3, 1, 2, 4, 3])` → `2`; `min_subarray_len(15, [1, 2, 3, 4, 5])` → `5`.
