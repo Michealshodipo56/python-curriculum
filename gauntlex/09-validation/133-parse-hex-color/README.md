@@ -1,23 +1,18 @@
 # Decode an RGB Color
 
 ## Description
-Interpret a six-digit hexadecimal color as its three channel values.
-
-### Behavior contract
-Parse a color string `#RRGGBB` into a tuple of three integers in [0,255]. Raise ValueError if the input is not exactly six hexadecimal digits after #.
+A six-digit hexadecimal color stores red, green, and blue intensities in three adjacent pairs. Validate and decode each channel.
 
 ## Requirements
 - Implement `parse_hex_color(text)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`parse_hex_color("#FF8000")` → `[255, 128, 0]`
-
-`parse_hex_color("#000000")` → `[0, 0, 0]`
+- Accept exactly `#RRGGBB` where each letter is a hexadecimal digit.
+- Reject missing `#`, incorrect lengths, and nonhexadecimal characters with `ValueError`.
+- Return three integer channel values between `0` and `255`, in red-green-blue order.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Each pair of hexadecimal digits describes one channel. Verify the entire input before decoding.
+- Why does each color channel occupy two hexadecimal digits?
+- Why should the full input be validated before decoding?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`parse_hex_color('#FF8000')` → `[255, 128, 0]`; `parse_hex_color('#000000')` → `[0, 0, 0]`.
