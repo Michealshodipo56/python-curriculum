@@ -5,15 +5,17 @@ Hide the sensitive portion of an email address while leaving enough information 
 
 ## Requirements
 - Implement `mask_email(email)` in `starter/solution.py`.
-- Return the required value without printing or prompting.
-- Use the standard library only and do not mutate input collections.
+- Return the result to the caller without printing or requesting interactive input.
+- Handle the boundary cases implied by the examples and description.
+- Use Python's standard library only.
+- Preserve caller-owned input values and collections.
 
-## Examples
+## Example Behavior
 `mask_email("alice@example.com")` → `"a****@example.com"`
 
 `mask_email("x@y.io")` → `"x@y.io"`
 
 ## Tips
+- Identify the input type, output type, and exact format before implementing the function.
+- Consider empty or minimal input alongside the supplied examples.
 Which part of the address should remain untouched? Consider a one-character local part.
-
-Examples describe expected behavior without providing the implementation.
