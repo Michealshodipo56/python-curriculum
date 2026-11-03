@@ -1,18 +1,20 @@
 # Two Scales, One Value
 
 ## Description
-Represent a temperature with one underlying value and expose another scale as a derived property.
-
-### Behavior contract
-Implement Temperature(celsius) with celsius and fahrenheit read-only properties, and from_fahrenheit(cls, value) classmethod returning a Temperature.
+A temperature can be represented in Celsius or Fahrenheit without storing two independent mutable values. Design a class that exposes both scales consistently.
 
 ## Requirements
-- Define `Temperature` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Define `Temperature(celsius)` in `starter/solution.py`.
+- Provide read-only `celsius` and `fahrenheit` properties.
+- Ensure the Fahrenheit value reflects the same temperature as the Celsius value.
+- Provide `from_fahrenheit(cls, value)` as a class method returning a `Temperature` instance.
+- Do not require input or produce output when imported.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-A conversion should not require keeping two independently mutable values.
+- What relationship connects the two temperature scales?
+- Why might storing both values independently lead to inconsistencies?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+`Temperature(0).fahrenheit` is `32`; `Temperature.from_fahrenheit(212).celsius` is `100`.
