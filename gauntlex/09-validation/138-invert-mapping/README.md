@@ -1,23 +1,20 @@
 # Reverse a Relationship
 
 ## Description
-Reverse a mapping while retaining all original keys that share one value.
-
-### Behavior contract
-Given a dictionary mapping strings to strings, return a dictionary mapping each value to the list of original keys in their insertion order.
+A dictionary can map several keys to the same value. Reverse that relationship while preserving every original key and its encounter order.
 
 ## Requirements
 - Implement `invert_mapping(mapping)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`invert_mapping({"a": "x", "b": "y", "c": "x"})` → `{"x": ["a", "c"], "y": ["b"]}`
-
-`invert_mapping({})` → `{}`
+- Accept a dictionary mapping strings to strings.
+- Return a new dictionary whose keys are the original values.
+- Associate each new key with a list of original keys having that value.
+- Preserve the original dictionary's key insertion order within each list.
+- Return `{}` for an empty mapping.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-An inverse is not necessarily one-to-one; a value can map back to several keys.
+- Why might an inverted mapping need lists rather than single values?
+- What ordering should be preserved when multiple keys share a value?
 
-The examples specify results without giving an implementation.
+## Example Behavior
+`invert_mapping({'a': 'x', 'b': 'y', 'c': 'x'})` → `{'x': ['a', 'c'], 'y': ['b']}`.
