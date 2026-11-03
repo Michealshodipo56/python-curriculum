@@ -1,23 +1,19 @@
 # Distinct After Normalization
 
 ## Description
-Clean a collection of strings and keep only the first occurrence of each meaningful normalized value.
-
-### Behavior contract
-Return unique trimmed, casefolded nonempty strings in their first appearance order.
+Clean strings consistently before deciding which values are duplicates. Keep only meaningful normalized values in their original first-appearance order.
 
 ## Requirements
 - Implement `dedupe_normalized(items)` in `starter/solution.py`.
-- Return the specified value; do not print or read from standard input.
-- Do not mutate caller-owned collections.
-- Use Python's standard library only.
-
-## Examples
-`dedupe_normalized(["  Ada ", "ada", "BOB", "bob", "  "])` → `["ada", "bob"]`
-
-`dedupe_normalized([])` → `[]`
+- Trim surrounding whitespace and apply Unicode casefolding to each string.
+- Discard values that become empty after trimming.
+- Keep only the first occurrence of each normalized value.
+- Return a new list without modifying `items`.
+- Return the specified value without printing or reading standard input. Use Python's standard library only.
 
 ## Tips
-Normalization must happen before checking for duplicates. Consider empty strings and mixed case.
+- Why must normalization happen before duplicate detection?
+- How can casefolding differ from preserving the original spelling?
 
-The examples show required behavior, not an implementation.
+## Example Behavior
+`dedupe_normalized(['  Ada ', 'ada', 'BOB', 'bob', '  '])` → `['ada', 'bob']`; `dedupe_normalized([])` → `[]`.
