@@ -1,23 +1,18 @@
 # Number to Numeral
 
 ## Description
-Translate a decimal integer into the conventional Roman numeral system.
-
-### Behavior contract
-Convert an integer from 1 to 3999 to its canonical uppercase Roman numeral representation.
+Convert a decimal integer to the conventional Roman numeral system, including the subtractive forms used for values such as four and nine.
 
 ## Requirements
 - Implement `to_roman(n)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`to_roman(4)` → `"IV"`
-
-`to_roman(58)` → `"LVIII"`
+- Assume `n` is an integer from `1` through `3999`.
+- Return its canonical uppercase Roman numeral representation.
+- Use standard symbols `I`, `V`, `X`, `L`, `C`, `D`, and `M` and conventional subtractive pairs.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-Some numerals use subtraction rather than repeated addition; identify those special cases.
+- Why are four and nine not written using repeated identical symbols?
+- How do larger place values relate to smaller ones?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`to_roman(4)` → `'IV'`; `to_roman(58)` → `'LVIII'`.
