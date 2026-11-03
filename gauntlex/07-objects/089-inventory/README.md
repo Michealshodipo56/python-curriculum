@@ -1,18 +1,21 @@
 # Stock Ledger
 
 ## Description
-Maintain item quantities while preventing invalid or impossible stock transactions.
-
-### Behavior contract
-Implement Inventory with stock(name,quantity), sell(name,quantity), and quantity(name). Stock and sell quantities must be positive integers; selling more than available raises ValueError. Missing items have quantity zero.
+An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
 
 ## Requirements
 - Define `Inventory` in `starter/solution.py`.
-- Implement the documented methods and exception behavior.
-- Do not read input or print at import time.
-- Use the Python standard library only.
+- Implement `stock(name, quantity)` to increase a product's quantity.
+- Implement `sell(name, quantity)` to decrease the available quantity.
+- Require positive integer quantities for both operations.
+- Raise `ValueError` for invalid quantities or sales exceeding available stock.
+- Implement `quantity(name)` and return `0` for unknown products.
+- Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
-How should the object respond when a sale exceeds the quantity on hand?
+- What state must remain unchanged after a failed sale?
+- How should a product with no prior stock be treated?
+- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
-Think through the object's state before and after each operation, including invalid operations. Implement the behavior yourself; no solution code is provided.
+## Example Behavior
+After stocking `'pen'` with `5` units and selling `2`, `quantity('pen')` returns `3`.
