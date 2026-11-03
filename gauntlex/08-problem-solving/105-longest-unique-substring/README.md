@@ -1,23 +1,19 @@
 # Longest Without Repeats
 
 ## Description
-Find the length of the longest contiguous stretch of text containing no repeated characters.
-
-### Behavior contract
-Return the length of the longest contiguous substring without repeated characters.
+A substring is a contiguous stretch of text. Determine the maximum length of a substring in which no character appears more than once.
 
 ## Requirements
 - Implement `longest_unique_substring(text)` in `starter/solution.py`.
-- Return the result without printing or reading input.
-- Do not mutate input collections.
-- Use only Python's standard library.
-
-## Examples
-`longest_unique_substring("abcabcbb")` → `3`
-
-`longest_unique_substring("bbbbb")` → `1`
+- Return the length of the longest contiguous substring without repeated characters.
+- Treat character comparisons as case-sensitive.
+- Return `0` for empty text.
+- Do not alter the original string.
+- Return the result without printing or reading input. Use Python's standard library only.
 
 ## Tips
-A valid stretch can move forward without restarting from the beginning every time.
+- Why is a substring different from a subsequence?
+- What happens to a candidate stretch when a character repeats?
 
-The examples define expected behavior; design your own implementation.
+## Example Behavior
+`longest_unique_substring('abcabcbb')` → `3`; `longest_unique_substring('bbbbb')` → `1`.
