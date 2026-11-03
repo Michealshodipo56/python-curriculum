@@ -5,15 +5,17 @@ Convert textual input into a base-ten integer when possible and provide a predic
 
 ## Requirements
 - Implement `parse_integer(text)` in `starter/solution.py`.
-- Return the required value without printing or prompting.
-- Use the standard library only and do not mutate input collections.
+- Return the result to the caller without printing or requesting interactive input.
+- Handle the boundary cases implied by the examples and description.
+- Use Python's standard library only.
+- Preserve caller-owned input values and collections.
 
-## Examples
+## Example Behavior
 `parse_integer("  -12 ")` → `-12`
 
 `parse_integer("3.5")` → `None`
 
 ## Tips
+- Identify the input type, output type, and exact format before implementing the function.
+- Consider empty or minimal input alongside the supplied examples.
 Distinguish valid negative integers from decimal fractions and nonnumeric text.
-
-Examples describe expected behavior without providing the implementation.
