@@ -1,18 +1,22 @@
 # Reverse the Stream
 
 ## Description
-Read an entire stream of lines and replay them in the opposite order.
-
-### Behavior contract
-Read all lines from standard input and print them in reverse order, preserving the content of each line but using a single newline per output line.
+Build a command-line program that reverses the order of input lines. The contents of each line must remain unchanged, including blank lines.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read every line from standard input.
+- Print the lines in reverse order, preserving each line's text.
+- Use exactly one newline after each output line.
+- Produce no output when input is empty.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why must all lines be known before the first output line can be chosen?
+- How should a blank line behave?
+
+## Example Input and Output
 Input: "red\nblue\ngreen\n"
 
 Expected output: "green\nblue\nred\n"
@@ -20,8 +24,3 @@ Expected output: "green\nblue\nred\n"
 Input: ""
 
 Expected output: ""
-
-## Tips
-Think about why reversing lines requires remembering input before producing output.
-
-Examples illustrate the output contract, not a solution.
