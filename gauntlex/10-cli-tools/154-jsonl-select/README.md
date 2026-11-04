@@ -1,18 +1,23 @@
 # Extract JSON Fields
 
 ## Description
-Select a named value from each record that contains it, preserving record order.
-
-### Behavior contract
-The first input line contains a key name. Each subsequent nonempty line is a valid JSON object. Print the value for that key as compact JSON, one per matching record; skip objects without the key.
+Extract one named field from a stream of JSON objects. Missing fields are skipped, but explicitly null fields must remain in the output.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read the desired key name from the first input line.
+- Treat subsequent nonempty lines as valid JSON objects.
+- Print the value for the named key as compact JSON, one line per matching object.
+- Skip objects without the key, but print `null` when the key is present with a null value.
+- Preserve record order.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is a missing key different from a key containing null?
+- Why should strings be printed as JSON strings rather than raw text?
+
+## Example Input and Output
 Input: "name\n{\"name\":\"Ada\",\"age\":3}\n{\"age\":4}\n{\"name\":null}\n"
 
 Expected output: "\"Ada\"\nnull\n"
@@ -20,8 +25,3 @@ Expected output: "\"Ada\"\nnull\n"
 Input: "x\n{}\n"
 
 Expected output: ""
-
-## Tips
-An absent field is different from a present field whose value is JSON null.
-
-Examples illustrate the output contract, not a solution.
