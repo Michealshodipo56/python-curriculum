@@ -1,18 +1,22 @@
 # Find Matching Lines
 
 ## Description
-Build a literal text search that returns matching lines in their original order.
-
-### Behavior contract
-The first input line is a case-sensitive search string. Print every subsequent input line containing that string, in original order.
+Create a simple literal search tool that filters a stream of text lines by a case-sensitive substring.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Treat the first input line as the literal search string.
+- Inspect every remaining input line for that exact substring.
+- Print matching lines in their original order, once per matching line.
+- Do not print the search string itself or lines without a match.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is a substring match different from a whole-word match?
+- What does case-sensitive matching imply?
+
+## Example Input and Output
 Input: "cat\ncatapult\ndog\nbobcat\n"
 
 Expected output: "catapult\nbobcat\n"
@@ -20,8 +24,3 @@ Expected output: "catapult\nbobcat\n"
 Input: "z\nabc\n"
 
 Expected output: ""
-
-## Tips
-Search for a substring, not a whole word or a regular expression.
-
-Examples illustrate the output contract, not a solution.
