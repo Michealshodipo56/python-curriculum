@@ -1,18 +1,23 @@
 # CSV to Tabs
 
 ## Description
-Convert structured comma-separated records into tab-separated output without corrupting quoted fields.
-
-### Behavior contract
-Read CSV records from standard input and print equivalent tab-separated records. Assume fields contain no tabs or embedded newlines, but may contain quoted commas and escaped double quotes.
+Convert comma-separated records into tab-separated records without mistaking commas inside quoted fields for separators.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read CSV records from standard input.
+- Interpret quoted commas and escaped double quotation marks using CSV rules.
+- Output the same fields separated by tabs, one record per line.
+- Assume fields contain no tabs or embedded newlines.
+- Produce no extra messages or headers.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is replacing every comma directly unsafe?
+- How are quotation marks inside quoted CSV fields represented?
+
+## Example Input and Output
 Input: "name,age\nAda,20\n"
 
 Expected output: "name\tage\nAda\t20\n"
@@ -20,8 +25,3 @@ Expected output: "name\tage\nAda\t20\n"
 Input: "\"a,b\",c\n"
 
 Expected output: "a,b\tc\n"
-
-## Tips
-Quoted commas belong to a field, not to the separators between fields.
-
-Examples illustrate the output contract, not a solution.
