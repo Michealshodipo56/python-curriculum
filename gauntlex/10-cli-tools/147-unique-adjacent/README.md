@@ -1,18 +1,22 @@
 # Collapse Repeated Lines
 
 ## Description
-Remove repeated lines only when they appear consecutively.
-
-### Behavior contract
-Read all lines and print only the first line in each run of consecutive identical lines. A repeated line after a different line must be printed again.
+Remove duplicates only when they appear consecutively. A value that returns after a different line must appear again.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read all lines from standard input.
+- Keep only the first line in each consecutive run of identical lines.
+- Preserve the original order of retained lines.
+- Treat blank lines as ordinary lines for comparison.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is this different from removing every duplicate globally?
+- What happens when an earlier line reappears after another line?
+
+## Example Input and Output
 Input: "a\na\nb\na\na\n"
 
 Expected output: "a\nb\na\n"
@@ -20,8 +24,3 @@ Expected output: "a\nb\na\n"
 Input: "\n\nx\n"
 
 Expected output: "\nx\n"
-
-## Tips
-A line seen earlier may reappear after a different line and must then be kept.
-
-Examples illustrate the output contract, not a solution.
