@@ -1,18 +1,22 @@
 # Order the Lines
 
 ## Description
-Rearrange complete input lines using case-sensitive lexical ordering.
-
-### Behavior contract
-Read all input lines, sort them lexicographically by Unicode code point, and print each on a separate line. Preserve duplicate lines.
+Rearrange complete text lines using case-sensitive lexical order while preserving repeated entries.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read all lines from standard input.
+- Sort lines lexicographically by Unicode code point.
+- Print each sorted line on its own line, preserving duplicates.
+- Produce no output for empty input.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why can uppercase and lowercase letters sort differently?
+- Why should duplicate lines remain in the output?
+
+## Example Input and Output
 Input: "pear\napple\npear\n"
 
 Expected output: "apple\npear\npear\n"
@@ -20,8 +24,3 @@ Expected output: "apple\npear\npear\n"
 Input: ""
 
 Expected output: ""
-
-## Tips
-Sorting is based on characters rather than numeric meaning; duplicates remain.
-
-Examples illustrate the output contract, not a solution.
