@@ -1,18 +1,22 @@
 # Line Numbers
 
 ## Description
-Add an ordered label to each line of text without changing the line's content.
-
-### Behavior contract
-Read all lines from standard input and prefix each line with its 1-based line number followed by a colon and one space.
+Give every input line a sequential label so that a reader can refer to its position. Blank lines count as lines too.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read text lines from standard input.
+- Prefix each line with its one-based line number, a colon, and one space.
+- Preserve the content of each line, including empty lines.
+- Produce no output for empty input.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why does the first line receive label `1` rather than `0`?
+- How can a blank line still receive a label?
+
+## Example Input and Output
 Input: "a\nb\n"
 
 Expected output: "1: a\n2: b\n"
@@ -20,8 +24,3 @@ Expected output: "1: a\n2: b\n"
 Input: "\n"
 
 Expected output: "1: \n"
-
-## Tips
-A blank line is still a line. The first label should be one, not zero.
-
-Examples illustrate the output contract, not a solution.
