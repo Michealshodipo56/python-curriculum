@@ -1,18 +1,22 @@
 # Last Lines Only
 
 ## Description
-Select the final requested lines of a stream while preserving their order.
-
-### Behavior contract
-Read a nonnegative integer N from the first line, then print at most the last N remaining input lines in their original order.
+Build a tool that selects the final requested lines of a stream without reversing their order.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read a nonnegative integer `N` from the first line.
+- Print at most the last `N` subsequent lines in their original order.
+- Print nothing when `N` is zero.
+- If fewer than `N` lines remain, print all of them.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is choosing the last lines different from reversing the stream?
+- What happens when the requested limit is larger than the input?
+
+## Example Input and Output
 Input: "2\na\nb\nc\n"
 
 Expected output: "b\nc\n"
@@ -20,8 +24,3 @@ Expected output: "b\nc\n"
 Input: "0\na\n"
 
 Expected output: ""
-
-## Tips
-The final two lines should remain in their original order, not be reversed.
-
-Examples illustrate the output contract, not a solution.
