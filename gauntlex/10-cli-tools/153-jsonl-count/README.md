@@ -1,18 +1,22 @@
 # Count Active Records
 
 ## Description
-Read JSON objects and count only those explicitly marked active with a Boolean true value.
-
-### Behavior contract
-Read valid JSON objects, one per nonempty line. Print the count of objects containing the key `active` with Boolean value true.
+Count JSON records that explicitly declare themselves active. Numeric values that resemble Boolean values must not be mistaken for true.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Read valid JSON objects, one per nonempty line.
+- Count only objects whose `active` key has the Boolean value `true`.
+- Do not count numeric `1`, strings, missing keys, or Boolean `false`.
+- Print the count as an integer followed by a newline.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why is equality alone potentially misleading when comparing Booleans and integers in Python?
+- What happens when a record lacks the key?
+
+## Example Input and Output
 Input: "{\"active\":true}\n{\"active\":1}\n{\"active\":false}\n"
 
 Expected output: "1\n"
@@ -20,8 +24,3 @@ Expected output: "1\n"
 Input: ""
 
 Expected output: "0\n"
-
-## Tips
-In Python, a numeric one and Boolean true can compare equal; the contract distinguishes their types.
-
-Examples illustrate the output contract, not a solution.
