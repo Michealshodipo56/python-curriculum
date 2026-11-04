@@ -1,18 +1,21 @@
 # Count Matching Lines
 
 ## Description
-Count how many lines contain a supplied literal search string.
-
-### Behavior contract
-The first input line is the search string. Count how many subsequent lines contain it as a case-sensitive substring. Print the integer count.
+Count the number of input lines containing a literal search string, rather than the total number of occurrences.
 
 ## Requirements
-- Implement in `starter/main.py` using standard input and standard output.
-- Print no prompts, debug messages, or explanatory text.
-- Use the Python standard library only.
-- Match the required output exactly, including line endings.
+- Implement the program in `starter/main.py` using standard input and standard output.
+- Treat the first input line as the case-sensitive search string.
+- Count each subsequent line once if it contains the search string as a substring.
+- Print the integer count followed by a newline, including `0` when no lines match.
+- Use Python's standard library only. Do not print prompts, debugging output, or explanations.
+- Match the required output exactly, including newline characters.
 
-## Examples
+## Tips
+- Why must a line with several matches count only once?
+- How does literal matching differ from regular-expression matching?
+
+## Example Input and Output
 Input: "cat\ncat\ndog\nbobcat\n"
 
 Expected output: "2\n"
@@ -20,8 +23,3 @@ Expected output: "2\n"
 Input: "x\na\nb\n"
 
 Expected output: "0\n"
-
-## Tips
-A line with several matches still counts only once.
-
-Examples illustrate the output contract, not a solution.
