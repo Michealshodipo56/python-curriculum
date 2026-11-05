@@ -1,23 +1,21 @@
 # Most Frequent Observation
 
 ## Description
-Identify the most common integer and apply a deterministic rule when several values tie.
-
-### Behavior contract
-Return the most frequent integer; break ties by choosing the smallest integer. Assume nonempty input.
+Find the most frequently observed integer in a dataset. When multiple integers are equally common, choose a deterministic answer.
 
 ## Requirements
 - Implement `mode(values)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume a nonempty list of integers.
+- Return the value with the highest occurrence count.
+- When several values tie for the highest count, return the smallest integer.
+- Leave the input unchanged.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why is the most frequent value not necessarily the largest?
+- What should happen when all observations are distinct?
+
+## Example Behavior
 `mode([2, 3, 2, 3])` → `2`
 
 `mode([5, 5, 1])` → `5`
-
-## Tips
-Count occurrences first, then decide how ties should be resolved.
-
-Examples illustrate expected values, not a solution.
