@@ -1,18 +1,18 @@
 # A Coroutine Result
 
 ## Description
-Return a calculated value from a coroutine and observe how callers receive it.
-
-### Behavior contract
-Define an async function returning twice its integer input.
+An asynchronous function can return an ordinary calculated value even when it has no waiting to perform.
 
 ## Requirements
 - Implement `async def double_async(value)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Define `async def double_async(value)` for an integer.
+- Return twice the input integer.
+- Do not print, sleep, or block the event loop.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-An async function can return a value without performing any asynchronous waiting.
+- Does an `async def` function need to await something before it can return a value?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+`await double_async(7)` → `14`
