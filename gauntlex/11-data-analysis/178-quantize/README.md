@@ -1,23 +1,21 @@
 # Round to Steps
 
 ## Description
-Snap numeric observations to the nearest multiple of a positive step.
-
-### Behavior contract
-Round each numeric value to the nearest multiple of positive step using Python's built-in round semantics.
+Quantization maps numeric observations to the nearest multiple of a positive step. The rounding rule must follow Python's built-in semantics.
 
 ## Requirements
 - Implement `quantize(values, step)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume `step` is positive.
+- Return a new list with every value rounded to the nearest multiple of `step`.
+- Use Python's built-in `round` semantics, including midpoint behavior.
+- Preserve input order and do not mutate it.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why can midpoint values behave differently from always rounding upward?
+- How does changing the step alter the available results?
+
+## Example Behavior
 `quantize([0.2, 0.7, 1.2], 0.5)` → `[0, 0.5, 1]`
 
 `quantize([2, 4], 2)` → `[2, 4]`
-
-## Tips
-Rounding at a midpoint follows Python's built-in behavior; do not invent a different tie rule.
-
-Examples illustrate expected values, not a solution.
