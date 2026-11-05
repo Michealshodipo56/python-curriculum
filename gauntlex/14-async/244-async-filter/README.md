@@ -1,18 +1,20 @@
 # Concurrent Selection
 
 ## Description
-Evaluate an asynchronous predicate for every value and retain only the matching inputs.
-
-### Behavior contract
-Given an async predicate and a sequence of values, evaluate predicates concurrently and return the values whose predicate results are truthy, preserving original order.
+Evaluate an asynchronous predicate for every value, then keep only those values whose predicate results are truthy.
 
 ## Requirements
 - Implement `async def async_filter(predicate, values)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept an async predicate and a sequence of values.
+- Evaluate the predicate for each value concurrently.
+- Return original input values whose predicate results are truthy.
+- Preserve original input order regardless of completion order.
+- Return `[]` for empty input.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-Preserve original input order even if predicate checks finish in a different order.
+- Why should filtering retain the original values rather than predicate results?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+If the predicate accepts even numbers, values `[3, 2, 4]` produce `[2, 4]`.
