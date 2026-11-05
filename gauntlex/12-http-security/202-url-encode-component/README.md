@@ -1,23 +1,21 @@
 # Escape One URL Component
 
 ## Description
-Encode arbitrary UTF-8 text as one URL path component, including slashes and spaces.
-
-### Behavior contract
-Percent-encode a UTF-8 string for use as one URL path component. Keep only RFC 3986 unreserved characters unescaped and encode spaces as %20.
+A path component is a single part of a URL, so characters such as spaces and slashes must be encoded rather than interpreted as separators.
 
 ## Requirements
 - Implement `encode_component(text)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Encode the input as UTF-8 and percent-escape reserved or unsafe bytes.
+- Leave only RFC 3986 unreserved characters (`A`–`Z`, `a`–`z`, digits, `-`, `.`, `_`, `~`) unescaped.
+- Encode spaces as `%20`, not `+`.
+- Encode `/` as `%2F` because it belongs to the component's data.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
-## Examples
+## Tips
+- Why does a slash inside one component need escaping?
+- How does URL component encoding differ from form encoding?
+
+## Example Behavior
 `encode_component("hello world")` → `"hello%20world"`
 
 `encode_component("a/b")` → `"a%2Fb"`
-
-## Tips
-A slash inside a component must not become a path separator.
-
-Examples describe the contract, not a solution.
