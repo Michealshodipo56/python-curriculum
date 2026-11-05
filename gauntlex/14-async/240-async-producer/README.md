@@ -1,18 +1,19 @@
 # Produce in Sequence
 
 ## Description
-Place a series of values into an asynchronous queue and report how many were added.
-
-### Behavior contract
-Put each element from values into an asyncio.Queue in order and return the number of items enqueued.
+A producer adds values to a shared asynchronous queue. When the queue has limited capacity, insertion may need to wait for space.
 
 ## Requirements
 - Implement `async def produce_items(queue, values)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept an `asyncio.Queue` and a sequence of values.
+- Enqueue every value in its original order.
+- Return the number of values successfully enqueued.
+- Return `0` for empty input.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-Queue insertion can require waiting when capacity is limited.
+- Why can putting an item into a bounded queue require waiting?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+Enqueuing three values returns `3`, and the queue receives them in their original order.
