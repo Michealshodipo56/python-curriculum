@@ -1,19 +1,20 @@
 # Insert Only Once
 
 ## Description
-Add a user only when their unique email does not already exist.
-
-### Behavior contract
-Insert (name,email) into users(id,name,email UNIQUE). Return True only when a new row was inserted; duplicate emails must not raise and must not overwrite.
+Add a user only when the email is not already registered. A duplicate must leave the existing record intact.
 
 ## Requirements
-- Implement `insert_email_once(conn, name, email)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `insert_email_once(conn, name, email)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Assume `users(id,name,email UNIQUE)` exists.
+- Return `True` only if a new row is inserted.
+- For an existing email, return `False` without raising or overwriting the record.
+- Bind name and email as data parameters.
+- Use parameterized SQL for untrusted values, standard-library modules, and no printed output.
+- Do not open a new connection or alter unrelated data or transaction state.
 
 ## Tips
-A duplicate should neither overwrite existing data nor be reported as a new insert.
+- How can uniqueness be enforced by the database?
+- Why is ignoring a duplicate different from replacing a record?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+Registering the same email twice returns `True` and then `False`, without changing the first record.
