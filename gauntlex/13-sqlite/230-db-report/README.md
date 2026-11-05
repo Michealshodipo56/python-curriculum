@@ -1,19 +1,20 @@
 # Revenue by Category
 
 ## Description
-Aggregate sales amounts by category and produce a descending revenue report.
-
-### Behavior contract
-Return [category,total] rows for sales(id,category,amount INTEGER), sorted by total descending then category ascending. Sum all amounts per category; return [] for empty table.
+Summarize sales performance by grouping amounts into categories, then rank the categories by total revenue.
 
 ## Requirements
-- Implement `revenue_report(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `revenue_report(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Read `sales(id,category,amount INTEGER)`.
+- Sum amounts for each category.
+- Return `[category, total]` rows ordered by total descending and category ascending for ties.
+- Return `[]` when there are no sales.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or change unrelated data or transaction state.
 
 ## Tips
-Perform the aggregation in the database and apply a deterministic tie-break.
+- Why is the category name needed as a secondary sort key?
+- How can aggregation reduce many sales rows to one row per category?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+Two categories with equal revenue are returned in alphabetical category order.
