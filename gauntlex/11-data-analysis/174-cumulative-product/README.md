@@ -1,23 +1,21 @@
 # Running Products
 
 ## Description
-Produce the product of all values encountered up to each position.
-
-### Behavior contract
-Return running products of an integer list; empty input returns [].
+Track how the product of a sequence changes as each additional integer is included. Return one product for every prefix.
 
 ## Requirements
 - Implement `cumulative_product(values)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Return a new list of running products in input order.
+- At each position, include every integer from the beginning through that position.
+- Return `[]` for empty input.
+- Do not mutate the original list.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- What effect does a zero have on all later running products?
+- How is this different from multiplying every value only once for a single result?
+
+## Example Behavior
 `cumulative_product([2, 3, 4])` → `[2, 6, 24]`
 
 `cumulative_product([2, 0, 4])` → `[2, 0, 0]`
-
-## Tips
-Zero affects every later running product, even if subsequent values are nonzero.
-
-Examples illustrate expected values, not a solution.
