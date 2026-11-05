@@ -1,23 +1,21 @@
 # Scale to Unit Range
 
 ## Description
-Rescale observations so the smallest maps to zero and the largest to one.
-
-### Behavior contract
-Return values normalized into [0,1] by (x-min)/(max-min). If all values are equal, return a list of zeros. Empty input returns [].
+Min-max normalization rescales numeric observations relative to their smallest and largest values, preserving their order.
 
 ## Requirements
 - Implement `minmax_normalize(values)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Return a new list with each value scaled into the inclusive range `[0, 1]`.
+- Map the minimum to `0` and the maximum to `1` using the range between them.
+- When every value is equal, return zeros for every position.
+- Return `[]` for empty input without mutating it.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why does a constant dataset need a special case?
+- What happens to values between the minimum and maximum?
+
+## Example Behavior
 `minmax_normalize([2, 4, 6])` → `[0, 0.5, 1]`
 
 `minmax_normalize([3, 3])` → `[0, 0]`
-
-## Tips
-When all values are equal, the range is zero and needs a defined result.
-
-Examples illustrate expected values, not a solution.
