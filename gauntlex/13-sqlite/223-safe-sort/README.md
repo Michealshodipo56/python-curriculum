@@ -1,19 +1,20 @@
 # Allowlisted Sorting
 
 ## Description
-Support caller-selected sorting without allowing arbitrary SQL identifiers or directions.
-
-### Behavior contract
-Return [id,name] rows from users(id,name,email), ordered by a caller-specified field `id` or `name`, and direction `asc` or `desc` (case-insensitive). Raise ValueError for unsupported fields or directions.
+Caller-selected sorting can be dangerous when SQL identifiers are constructed from untrusted input. Permit only known columns and directions.
 
 ## Requirements
-- Implement `sorted_users(conn, field, direction)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `sorted_users(conn, field, direction)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Accept a sort field of `id` or `name`.
+- Accept `asc` or `desc` without regard to case.
+- Raise `ValueError` for unsupported fields or directions.
+- Return `[id, name]` rows sorted as requested from `users(id,name,email)`.
+- Use parameterized SQL for untrusted values, standard-library modules, and no printed output.
+- Do not open a new connection or alter unrelated data or transaction state.
 
 ## Tips
-SQL parameters protect values, but column names need an explicit allowlist.
+- Why do SQL value parameters not safely substitute for column identifiers?
+- What role does an explicit allowlist play?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+`sorted_users(conn, 'name', 'DESC')` returns `[id, name]` rows ordered by descending name.
