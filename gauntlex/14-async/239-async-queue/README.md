@@ -1,18 +1,19 @@
 # Drain the Queue
 
 ## Description
-Collect all items currently waiting in an asynchronous queue without waiting for future arrivals.
-
-### Behavior contract
-Given an asyncio.Queue already containing items, remove and return all currently queued items in FIFO order without blocking.
+A queue holds work in first-in, first-out order. Collect what is currently waiting without suspending until future items arrive.
 
 ## Requirements
 - Implement `async def queue_drain(queue)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept an existing `asyncio.Queue`.
+- Remove and return all currently queued items in FIFO order.
+- Return `[]` if the queue is empty.
+- Do not wait for additional items.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-Draining what is already present differs from waiting for a producer.
+- Why is draining a queue different from waiting for a producer?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+A queue holding `['a', 'b']` produces `['a', 'b']` and is empty afterward.
