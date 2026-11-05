@@ -1,19 +1,20 @@
 # All or Nothing
 
 ## Description
-Insert a group of users as one atomic operation, rolling back the entire group on any constraint failure.
-
-### Behavior contract
-Insert [name,email] pairs into users(id,name,email UNIQUE) atomically. If any insert violates a constraint, propagate sqlite3.IntegrityError and leave the table as it was before the call.
+Import multiple users as one unit of work. If any record violates a database constraint, none of the records from that batch may remain.
 
 ## Requirements
-- Implement `insert_batch_atomic(conn, records)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `insert_batch_atomic(conn, records)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Insert each `[name,email]` pair into `users(id,name,email UNIQUE)`.
+- Treat the batch atomically, including when an error occurs partway through.
+- Propagate `sqlite3.IntegrityError` on a constraint violation.
+- On failure, restore the table to its pre-call contents.
+- Use parameterized SQL for untrusted values, standard-library modules, and no printed output.
+- Do not open a new connection or alter unrelated data or transaction state.
 
 ## Tips
-A batch must not leave earlier successful inserts behind when a later insert fails.
+- Why is a sequence of independent inserts insufficient?
+- What should happen to earlier successful inserts when a later one fails?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+If the third record repeats an existing unique email, the first two inserts from that batch must also be undone.
