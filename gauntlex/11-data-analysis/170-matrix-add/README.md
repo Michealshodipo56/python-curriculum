@@ -1,23 +1,21 @@
 # Add Two Grids
 
 ## Description
-Add matching elements from two rectangular matrices without modifying either input.
-
-### Behavior contract
-Return the elementwise sum of two equal-shaped rectangular numeric matrices. Empty matrices return [].
+Matrix addition combines two grids of identical shape by adding entries at matching positions.
 
 ## Requirements
 - Implement `matrix_add(a, b)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume two equal-shaped rectangular numeric matrices.
+- Return a new matrix whose entries are sums of corresponding input entries.
+- Return `[]` when both matrices are empty.
+- Preserve the structure and contents of both input matrices.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why must the two shapes match?
+- What should happen to an empty matrix?
+
+## Example Behavior
 `matrix_add([[1, 2], [3, 4]], [[5, 6], [7, 8]])` → `[[6, 8], [10, 12]]`
 
 `matrix_add([], [])` → `[]`
-
-## Tips
-Each output position depends on the same position in both inputs.
-
-Examples illustrate expected values, not a solution.
