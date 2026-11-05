@@ -1,23 +1,21 @@
 # Verify a Signature
 
 ## Description
-Check whether a supplied signature matches a message and secret, rejecting malformed signatures.
-
-### Behavior contract
-Return True when the supplied lowercase hex signature matches HMAC-SHA256(secret,message). Treat malformed signatures as False.
+A received message may be accompanied by a claimed HMAC. Determine whether the signature matches the shared secret and message, using a timing-resistant comparison.
 
 ## Requirements
 - Implement `verify_hmac(secret, message, signature)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Recompute HMAC-SHA256 for the supplied UTF-8 secret and message.
+- Return `True` only if the supplied lowercase hexadecimal signature matches the expected digest.
+- Return `False` for malformed or mismatched signatures.
+- Use a timing-resistant comparison rather than an ordinary early-exit string check.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
-## Examples
+## Tips
+- Why should malformed signatures be treated as invalid?
+- Why can comparison timing matter for authentication?
+
+## Example Behavior
 `verify_hmac("key", "abc", "wrong")` → `False`
 
 `verify_hmac("key", "abc", "")` → `False`
-
-## Tips
-A secure comparison should not reveal where two signatures first differ.
-
-Examples describe the contract, not a solution.
