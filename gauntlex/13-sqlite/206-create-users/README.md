@@ -1,19 +1,21 @@
 # Define the Users Table
 
 ## Description
-Establish a database table that can safely store users and enforce uniqueness of their email addresses.
-
-### Behavior contract
-Create a users table if absent, with id INTEGER PRIMARY KEY, name TEXT NOT NULL, and email TEXT NOT NULL UNIQUE.
+A reliable directory starts with a schema that prevents incomplete records and duplicate email addresses. Define the database constraints before any user records are inserted.
 
 ## Requirements
 - Implement `create_users(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Use the supplied live `sqlite3.Connection`; do not open a new connection.
+- Create the `users` table only if it does not already exist.
+- Use `id INTEGER PRIMARY KEY`, `name TEXT NOT NULL`, and `email TEXT NOT NULL UNIQUE`.
+- Do not remove or overwrite an existing table.
+- Use the supplied SQLite connection.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Preserve unrelated data and the caller's transaction state.
 
 ## Tips
-Which rules belong in the schema so every future insert must respect them?
+- Which integrity rules belong in the database rather than only in application code?
+- What should a second call do when the table already exists?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+Calling `create_users(conn)` twice leaves one usable table with the required constraints.
