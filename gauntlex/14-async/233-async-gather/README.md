@@ -1,18 +1,18 @@
 # Gather in Order
 
 ## Description
-Run several awaitables and return their results in the same order they were supplied.
-
-### Behavior contract
-Accept a sequence of awaitable objects and return their results as a list in input order. Empty input returns [].
+Several awaitables may finish in an unpredictable order. Collect their results in the original input order, regardless of completion timing.
 
 ## Requirements
 - Implement `async def gather_results(awaitables)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept a sequence of awaitable objects.
+- Run the awaitables concurrently and return a list of results in input order.
+- Return `[]` for empty input.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-Completion order may differ from the order in which results must be returned.
+- How can concurrent tasks finish out of order while their results remain ordered?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+Awaitables returning `3`, `1`, and `2` in that input order produce `[3, 1, 2]` even if they finish in another order.
