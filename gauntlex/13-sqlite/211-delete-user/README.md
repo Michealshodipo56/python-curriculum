@@ -1,19 +1,18 @@
 # Remove a User
 
 ## Description
-Delete one identified user and report whether the record existed.
-
-### Behavior contract
-Delete the user with the given integer ID. Return True if deleted and False if absent.
+Delete a specific directory entry without disturbing other users, and report whether the target was actually present.
 
 ## Requirements
-- Implement `delete_user(conn, user_id)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `delete_user(conn, user_id)` in `starter/solution.py` using the caller's live `sqlite3.Connection`.
+- Delete only the row with the supplied integer ID.
+- Return `True` when a row was deleted, `False` if none matched.
+- Leave unrelated records untouched.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or alter unrelated records or transaction state.
 
 ## Tips
-Deleting a nonexistent row should not be confused with deleting an existing one.
+- How can the affected-row count distinguish a missing user from a successful deletion?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+Deleting a missing user returns `False`; deleting an existing user returns `True`.
