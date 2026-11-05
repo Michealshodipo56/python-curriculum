@@ -1,23 +1,22 @@
 # Find the Last Header
 
 ## Description
-Retrieve the final value of a named HTTP header, matching its name without regard to case.
-
-### Behavior contract
-Given a list of [name,value] HTTP header pairs and a name, return the last matching header value ignoring name case, or None when absent.
+HTTP headers may repeat, and header names are case-insensitive. Retrieve the last matching value without changing the original list.
 
 ## Requirements
 - Implement `header_get(headers, name)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Accept a list of `[name, value]` pairs and a target header name.
+- Compare names without regard to letter case.
+- Return the value from the last matching pair, unchanged.
+- Return `None` when no header matches.
+- Do not modify the input.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
-## Examples
+## Tips
+- Why must the last matching value win?
+- How does case-insensitive comparison affect repeated names?
+
+## Example Behavior
 `header_get([["X-ID", "1"], ["x-id", "2"]], "X-Id")` → `"2"`
 
 `header_get([["A", "b"]], "X")` → `None`
-
-## Tips
-Duplicate header names are possible; the last matching value takes precedence.
-
-Examples describe the contract, not a solution.
