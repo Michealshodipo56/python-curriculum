@@ -1,19 +1,18 @@
 # Define the Orders Table
 
 ## Description
-Create a schema for orders that rejects negative amounts at the database level.
-
-### Behavior contract
-Create orders(id INTEGER PRIMARY KEY,user_id INTEGER NOT NULL,amount INTEGER NOT NULL CHECK(amount>=0)) if it does not exist.
+Store orders with nonnegative amounts and require the database to enforce that rule, regardless of which caller inserts the record.
 
 ## Requirements
-- Implement `create_orders(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `create_orders(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`.
+- Create `orders` if absent, with `id INTEGER PRIMARY KEY`, `user_id INTEGER NOT NULL`, and `amount INTEGER NOT NULL CHECK(amount>=0)`.
+- Keep an existing table and its data unchanged.
+- Make repeated calls safe.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or alter unrelated records or transaction state.
 
 ## Tips
-A database constraint protects data even when multiple callers write to the same table.
+- Why should the amount constraint live in the database schema?|What should happen if the setup function runs twice?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+Calling `create_orders(conn)` again must not erase existing orders.
