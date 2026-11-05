@@ -1,21 +1,18 @@
 # Build a JSON Response
 
 ## Description
-Wrap serialized JSON data in a small, consistent HTTP-style response object.
-
-### Behavior contract
-Return a dictionary with keys `status`, `headers`, and `body`, where status is 200, headers contains `content-type: application/json`, and body is a compact sorted-key JSON string of the supplied value.
+Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response object.
 
 ## Requirements
 - Implement `json_response(value)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
-
-## Examples
-`json_response({"b": 2, "a": 1})` → `{"status": 200, "headers": {"content-type": "application/json"}, "body": "{\"a\":1,\"b\":2}"}`
+- Return a dictionary with `status`, `headers`, and `body`.
+- Set status to `200` and `headers` to `{'content-type': 'application/json'}`.
+- Encode the body as compact JSON text with sorted object keys.
+- Do not return the original value as the body.
+- Use Python's standard library without printing or making network requests.
 
 ## Tips
-The body is a JSON string, not the original Python value.
+- Why is a serialized JSON body different from a Python dictionary?
 
-Examples describe the contract, not a solution.
+## Example Behavior
+`json_response({"b": 2, "a": 1})` → `{"status": 200, "headers": {"content-type": "application/json"}, "body": "{\"a\":1,\"b\":2}"}`
