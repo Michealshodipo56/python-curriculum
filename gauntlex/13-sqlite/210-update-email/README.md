@@ -1,19 +1,21 @@
 # Change a User Email
 
 ## Description
-Update a stored email address and report whether a user was actually affected.
-
-### Behavior contract
-Update the email of a user by integer ID. Return True if a row was updated, otherwise False. Table users(id,name,email) exists.
+Changing a stored email should affect only the intended user. Report whether the target record existed so callers can distinguish success from a missing ID.
 
 ## Requirements
 - Implement `update_email(conn, user_id, email)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Use the supplied live `sqlite3.Connection`; do not open a new connection.
+- Update the email of the user identified by `user_id`.
+- Assume `users(id,name,email)` exists.
+- Return `True` if a row was updated and `False` if none matched.
+- Keep all other user records unchanged.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Preserve unrelated data and the caller's transaction state.
 
 ## Tips
-The outcome should distinguish a successful update from an absent user.
+- How can the number of affected rows tell you whether the user existed?
+- Why should the identifier be parameterized?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+`update_email(conn, 999, 'new@example.com')` → `False` when the user does not exist.
