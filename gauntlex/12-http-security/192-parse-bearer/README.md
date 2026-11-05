@@ -1,23 +1,20 @@
 # Read a Bearer Token
 
 ## Description
-Extract a token from an authorization header while rejecting malformed schemes.
-
-### Behavior contract
-Return the token from an Authorization header formatted as `Bearer TOKEN`, ignoring case of Bearer and allowing extra whitespace. Return None for invalid or empty tokens.
+Extract one token from an Authorization header while checking its authentication scheme.
 
 ## Requirements
 - Implement `parse_bearer(header)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Recognize `Bearer TOKEN` without regard to scheme capitalization.
+- Allow extra surrounding and separating whitespace.
+- Return the token as written.
+- Return `None` for missing tokens, invalid schemes, or malformed headers.
+- Use Python's standard library without printing or making network requests.
 
-## Examples
+## Tips
+- Why must the scheme be validated before accepting the token?
+
+## Example Behavior
 `parse_bearer("Bearer abc123")` → `"abc123"`
 
 `parse_bearer(" bearer   XYZ ")` → `"XYZ"`
-
-## Tips
-Whitespace can vary, but the header must still identify exactly one token.
-
-Examples describe the contract, not a solution.
