@@ -1,23 +1,20 @@
 # Recognize HTTP Methods
 
 ## Description
-Normalize supported HTTP method names and reject unknown methods.
-
-### Behavior contract
-Return the uppercase method if it is one of GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS, ignoring surrounding whitespace and case. Otherwise raise ValueError.
+Normalize a request method to a standard uppercase spelling, then reject names outside a fixed set of supported HTTP methods.
 
 ## Requirements
 - Implement `normalize_method(text)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Trim surrounding whitespace and ignore the input's letter case.
+- Return the uppercase method if it is GET, POST, PUT, PATCH, DELETE, HEAD, or OPTIONS.
+- Raise `ValueError` for all other values, including an empty string.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
-## Examples
+## Tips
+- Why is normalization useful before checking allowed methods?
+- Why should an unsupported method be rejected explicitly?
+
+## Example Behavior
 `normalize_method(" get ")` → `"GET"`
 
 `normalize_method("PaTcH")` → `"PATCH"`
-
-## Tips
-Normalize spelling before checking membership in the allowed set.
-
-Examples describe the contract, not a solution.
