@@ -1,19 +1,20 @@
 # Ensure an Index
 
 ## Description
-Add a named index for email lookup in a way that remains safe to repeat.
-
-### Behavior contract
-Create an index named idx_users_email on users(email) if absent. Repeated calls must not fail.
+An index can speed up lookups by a frequently searched column. Create a named email index without failing when setup is repeated.
 
 ## Requirements
-- Implement `ensure_email_index(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `ensure_email_index(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Assume `users(email)` exists.
+- Ensure an index named `idx_users_email` exists on the `email` column.
+- Make repeated calls safe and preserve existing data.
+- Do not recreate the table.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or change unrelated data or transaction state.
 
 ## Tips
-Schema setup should not fail merely because it has already been performed.
+- Why should database setup be idempotent?
+- How does an index differ from a table?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+Calling `ensure_email_index(conn)` twice leaves the named index available without an error.
