@@ -1,21 +1,19 @@
 # Unique Request Identifier
 
 ## Description
-Generate a fresh version-four UUID formatted for request tracing.
-
-### Behavior contract
-Return a lowercase hexadecimal UUID version 4 string with hyphens, using a secure standard-library UUID generator. Each call should normally return a new identifier.
+Distributed systems use request identifiers to connect logs and trace related work. Generate a fresh identifier in canonical UUID version-four form.
 
 ## Requirements
 - Implement `request_id()` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
-
-## Examples
-See the contract and write additional edge-case tests.
+- Return a lowercase UUID version 4 string with hyphens in canonical positions.
+- Use a secure standard-library UUID generator.
+- Generate a fresh identifier on each call rather than returning a fixed value.
+- Do not print or make network requests.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
 ## Tips
-An identifier must have the correct version and canonical text shape.
+- Why should the identifier include both a recognizable version and a consistent format?
+- Why is a hard-coded identifier unsuitable?
 
-Examples describe the contract, not a solution.
+## Example Behavior
+See the contract and write additional edge-case tests.
