@@ -1,19 +1,21 @@
 # Find One Record
 
 ## Description
-Retrieve a user by its numeric identifier, handling the case where no row exists.
-
-### Behavior contract
-Return [id,name,email] for a user with the specified integer ID, or None if not found. Table users(id,name,email) exists.
+A user ID identifies at most one directory entry. Retrieve that record in a predictable Python representation, or clearly indicate that it does not exist.
 
 ## Requirements
 - Implement `find_user(conn, user_id)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Use the supplied live `sqlite3.Connection`; do not open a new connection.
+- Assume the `users(id,name,email)` table exists.
+- Find the row with the supplied integer `user_id`.
+- Return `[id, name, email]` when found, or `None` otherwise.
+- Do not change any database rows.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Preserve unrelated data and the caller's transaction state.
 
 ## Tips
-A database row and a Python list are different representations of the same record.
+- Why is a missing record different from a record with an empty field?
+- How should a SQLite row be represented in the return value?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+`find_user(conn, 999)` → `None` when no row has that ID.
