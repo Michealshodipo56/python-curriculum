@@ -1,21 +1,19 @@
 # Authenticate a Message
 
 ## Description
-Compute a keyed SHA-256 message authentication code for a message and shared secret.
-
-### Behavior contract
-Return lowercase HMAC-SHA256 hex digest of a UTF-8 message with a UTF-8 secret key.
+A keyed message authentication code helps verify that a message came from someone holding a shared secret. Produce an HMAC using SHA-256 without exposing the key.
 
 ## Requirements
 - Implement `hmac_signature(secret, message)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
-
-## Examples
-`hmac_signature("key", "The quick brown fox jumps over the lazy dog")` → `"f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8"`
+- Encode the secret and message separately as UTF-8.
+- Return the lowercase hexadecimal HMAC-SHA256 digest.
+- Treat the secret as the authentication key, not as an ordinary prefix or suffix.
+- Do not print or expose the secret.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
 ## Tips
-A keyed MAC differs from an ordinary hash because it depends on the secret.
+- Why does a keyed MAC provide different guarantees from an unkeyed hash?
+- How would changing the secret affect the result?
 
-Examples describe the contract, not a solution.
+## Example Behavior
+`hmac_signature("key", "The quick brown fox jumps over the lazy dog")` → `"f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8"`
