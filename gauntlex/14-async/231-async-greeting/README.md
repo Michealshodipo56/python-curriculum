@@ -1,18 +1,18 @@
 # An Awaitable Greeting
 
 ## Description
-Create a coroutine that returns a personalized greeting without printing or blocking.
-
-### Behavior contract
-Define an async function that returns `Hello, NAME!` for a string name, without blocking or printing.
+A coroutine is a function whose result can be awaited by an asynchronous caller. Begin with a greeting that returns text rather than printing it.
 
 ## Requirements
 - Implement `async def greet_async(name)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Define `async def greet_async(name)`.
+- Return the exact string `Hello, NAME!`, substituting the supplied name.
+- Do not print, sleep, or block the event loop.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-Calling an async function and awaiting its result are two distinct steps.
+- What is the difference between calling a coroutine function and awaiting it?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+`await greet_async('Ada')` → `'Hello, Ada!'`
