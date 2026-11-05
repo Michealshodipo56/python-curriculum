@@ -1,19 +1,18 @@
 # Count the Directory
 
 ## Description
-Report how many user records exist without retrieving every record.
-
-### Behavior contract
-Return the number of rows in users(id,name,email).
+A directory count should return one number, without loading every user record into Python.
 
 ## Requirements
-- Implement `count_users(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `count_users(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`.
+- Return the number of rows in `users(id,name,email)` as an integer.
+- Return `0` for an empty table.
+- Do not change database contents.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or alter unrelated records or transaction state.
 
 ## Tips
-An aggregate query can return one value representing many rows.
+- What does a SQL aggregate return when no records exist?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+An empty directory returns `0`; inserting one user makes the result `1`.
