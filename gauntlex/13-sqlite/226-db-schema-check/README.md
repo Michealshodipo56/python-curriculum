@@ -1,19 +1,20 @@
 # Inspect the Schema
 
 ## Description
-Determine whether a named database table exists without confusing it with views or indexes.
-
-### Behavior contract
-Return True if a table with the given name exists in sqlite_schema; otherwise False. Ignore views and indexes.
+A database can contain tables, views, and indexes. Determine whether a named object is specifically a table, not merely any schema entry.
 
 ## Requirements
-- Implement `table_exists(conn, table_name)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `table_exists(conn, table_name)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Check the SQLite schema for the supplied table name.
+- Return `True` only if an actual table with that name exists.
+- Return `False` for missing names, views, and indexes.
+- Treat the name as data rather than interpolating it into arbitrary SQL.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or change unrelated data or transaction state.
 
 ## Tips
-The schema records different object types; table existence is more specific than name existence.
+- Why does the presence of a schema name not guarantee a table exists?
+- Which object type must be checked?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+A named view must produce `False`, even if its name exists in the SQLite schema.
