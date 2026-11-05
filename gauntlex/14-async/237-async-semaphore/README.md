@@ -1,18 +1,19 @@
 # Limit Concurrency
 
 ## Description
-Process asynchronous work while enforcing a maximum number of simultaneous operations.
-
-### Behavior contract
-Given async fn, values, and positive concurrency limit, return results in input order while ensuring no more than limit calls run simultaneously.
+Launching all work simultaneously can overload a resource. Bound the number of operations running at once while preserving output order.
 
 ## Requirements
 - Implement `async def limited_map(fn, values, limit)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept an async function, input values, and a positive concurrency limit.
+- Never allow more than `limit` calls to run simultaneously.
+- Return results in original input order.
+- Return `[]` for empty input.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-A concurrency limit controls active work, not the number of total inputs.
+- How is the number of active operations different from the number of total inputs?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+For five inputs and a limit of two, no more than two calls may be active at any instant.
