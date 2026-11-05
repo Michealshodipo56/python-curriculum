@@ -1,23 +1,21 @@
 # Distance in Many Dimensions
 
 ## Description
-Compute the straight-line distance between two numeric vectors.
-
-### Behavior contract
-Return Euclidean distance between two equal-length numeric vectors. Empty vectors have distance zero.
+Generalize the familiar straight-line distance between two points to vectors of any matching dimension.
 
 ## Requirements
 - Implement `euclidean_distance(a, b)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume two equal-length numeric vectors.
+- Return the square root of the sum of squared coordinate differences.
+- Return `0` for two empty vectors.
+- Do not modify either input.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- How does two-dimensional distance extend to more coordinates?
+- Why does changing the order of the vectors not change the distance?
+
+## Example Behavior
 `euclidean_distance([0, 0], [3, 4])` → `5`
 
 `euclidean_distance([], [])` → `0`
-
-## Tips
-Think about how the familiar two-dimensional distance formula generalizes.
-
-Examples illustrate expected values, not a solution.
