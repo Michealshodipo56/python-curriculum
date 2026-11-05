@@ -1,23 +1,21 @@
 # Linear Relationship
 
 ## Description
-Measure the direction and strength of the linear relationship between two numeric datasets.
-
-### Behavior contract
-Return Pearson correlation of two equal-length numeric lists of length >=2. Return None if either list has zero variance.
+Pearson correlation measures the direction and strength of a linear relationship between two paired numeric datasets.
 
 ## Requirements
 - Implement `pearson_correlation(a, b)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume two equal-length numeric lists containing at least two observations.
+- Return the Pearson correlation coefficient of the paired observations.
+- Return `None` if either dataset has zero variance.
+- Do not mutate either input.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why does a constant dataset prevent correlation from being calculated?
+- What do positive and negative correlation indicate?
+
+## Example Behavior
 `pearson_correlation([1, 2, 3], [2, 4, 6])` → `1`
 
 `pearson_correlation([1, 1, 1], [2, 3, 4])` → `None`
-
-## Tips
-A dataset with no variation cannot support this correlation calculation.
-
-Examples illustrate expected values, not a solution.
