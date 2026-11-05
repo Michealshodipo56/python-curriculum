@@ -1,19 +1,20 @@
 # Count Event Categories
 
 ## Description
-Aggregate event records by category and return a stable frequency ranking.
-
-### Behavior contract
-Return [category,count] for rows in events(id,category), ordered by count descending then category ascending.
+Summarize event frequencies by category and produce a deterministic ranking even when multiple categories have equal counts.
 
 ## Requirements
-- Implement `group_counts(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `group_counts(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Read from `events(id,category)`.
+- Return `[category, count]` for every distinct category.
+- Sort by count descending, then category ascending.
+- Return `[]` for an empty table.
+- Use parameterized SQL for untrusted values, standard-library modules, and no printed output.
+- Do not open a new connection or alter unrelated data or transaction state.
 
 ## Tips
-Two categories with equal counts still need a predictable ordering.
+- Why should a frequency report specify tie-breaking?
+- How does grouping combine multiple rows into one result?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+If two categories have equal counts, their names determine their order.
