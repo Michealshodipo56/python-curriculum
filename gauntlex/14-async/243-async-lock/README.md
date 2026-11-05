@@ -1,18 +1,19 @@
 # Protected Increment
 
 ## Description
-Update shared mutable state under an asynchronous lock.
-
-### Behavior contract
-Given a mutable dictionary with integer key `count` and an asyncio.Lock, increment the count once while holding the lock, then return the new count.
+Multiple coroutines may share mutable state. Protect a read-modify-write operation so concurrent updates cannot interfere with one another.
 
 ## Requirements
 - Implement `async def locked_increment(state, lock)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept a dictionary containing integer key `count` and an `asyncio.Lock`.
+- Acquire the lock while reading and incrementing the count by one.
+- Update the dictionary and return the new integer count.
+- Release the lock even if the operation cannot complete normally.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-A read-modify-write operation needs protection when several coroutines share state.
+- Why must the read and write occur inside the same protected section?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+With `state = {'count': 4}`, one protected increment returns `5` and updates the stored count to `5`.
