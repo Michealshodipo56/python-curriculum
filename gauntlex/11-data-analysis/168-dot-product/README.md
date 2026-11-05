@@ -1,23 +1,21 @@
 # Multiply and Accumulate
 
 ## Description
-Combine two equal-length numeric vectors into a single scalar value.
-
-### Behavior contract
-Return the dot product of two equal-length numeric lists. Empty lists produce zero.
+The dot product combines two numeric vectors by pairing corresponding positions and adding their products.
 
 ## Requirements
 - Implement `dot_product(a, b)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume `a` and `b` are equal-length numeric lists.
+- Multiply the elements at matching indices and sum those products.
+- Return a single numeric result.
+- Return `0` for two empty vectors; do not mutate either list.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why must vector elements be paired by position?
+- How does the empty case affect the total?
+
+## Example Behavior
 `dot_product([1, 2, 3], [4, 5, 6])` → `32`
 
 `dot_product([], [])` → `0`
-
-## Tips
-Pair elements by position rather than comparing every value with every other value.
-
-Examples illustrate expected values, not a solution.
