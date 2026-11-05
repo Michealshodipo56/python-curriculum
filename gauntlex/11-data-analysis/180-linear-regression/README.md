@@ -1,23 +1,21 @@
 # Fit a Straight Line
 
 ## Description
-Estimate a slope and intercept for a least-squares line through numeric observations.
-
-### Behavior contract
-Return [slope,intercept] for ordinary least-squares fit y=slope*x+intercept on equal-length numeric lists with at least two points. Return None if all x values are equal.
+Find the least-squares straight line that best describes paired numeric observations, expressed as a slope and intercept.
 
 ## Requirements
 - Implement `linear_regression(xs, ys)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
+- Assume equal-length numeric `xs` and `ys` containing at least two points.
+- Return `[slope, intercept]` for the ordinary least-squares line `y = slope * x + intercept`.
+- Return `None` when all `x` values are equal.
 - Do not mutate the input lists.
-- Use only the Python standard library.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- What does the slope describe about changes in `x` and `y`?
+- Why can a vertical set of observations not be represented by this form?
+
+## Example Behavior
 `linear_regression([1, 2, 3], [2, 4, 6])` → `[2, 0]`
 
 `linear_regression([1, 1], [2, 3])` → `None`
-
-## Tips
-A vertical collection of points has no unique slope in this representation.
-
-Examples illustrate expected values, not a solution.
