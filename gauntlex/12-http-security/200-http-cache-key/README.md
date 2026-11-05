@@ -1,21 +1,20 @@
 # Stable Request Identity
 
 ## Description
-Generate a reproducible digest that identifies a request by method, URL, and body.
-
-### Behavior contract
-Return a stable SHA-256 lowercase hex digest for a request method, URL and optional body string. Normalize method to uppercase; hash the UTF-8 JSON encoding of the three-element list [method,url,body] using compact separators.
+A cache key should consistently identify the same request inputs. Combine the method, URL, and body into an unambiguous canonical representation before hashing.
 
 ## Requirements
 - Implement `cache_key(method, url, body)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
-
-## Examples
-See the contract and write additional edge-case tests.
+- Uppercase the request method before serialization.
+- Represent the normalized method, URL, and optional body as a three-element JSON list in that order.
+- Serialize JSON using compact separators and UTF-8 encoding.
+- Return the SHA-256 digest as lowercase hexadecimal text.
+- Do not make network requests.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
 ## Tips
-Canonical serialization prevents ambiguous combinations of fields.
+- Why can directly concatenating fields be ambiguous?
+- Why should method capitalization not change the resulting key?
 
-Examples describe the contract, not a solution.
+## Example Behavior
+See the contract and write additional edge-case tests.
