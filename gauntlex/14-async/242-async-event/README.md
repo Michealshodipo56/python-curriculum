@@ -1,18 +1,19 @@
 # Wait for a Signal
 
 ## Description
-Suspend a coroutine until another part of the program signals that an event occurred.
-
-### Behavior contract
-Await an asyncio.Event and return True after it is set.
+An event coordinates coroutines by letting one wait until another announces that a condition is ready.
 
 ## Requirements
 - Implement `async def wait_for_event(event)` in `starter/solution.py`.
-- Use Python's `asyncio` standard library; no external packages or network access.
-- Do not print or block the event loop with synchronous sleeps.
-- Preserve the specified ordering and error behavior.
+- Accept an `asyncio.Event`.
+- Suspend until the event is set.
+- Return `True` after the signal arrives.
+- Return promptly if the event is already set.
+- Use Python's `asyncio` standard library, with no external packages or network access.
+- Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
-An event allows waiting without repeatedly checking a flag.
+- Why is awaiting a signal preferable to repeatedly polling a flag?
 
-No implementation is provided; reason about scheduling and return values.
+## Example Behavior
+An already-set event lets `wait_for_event(event)` return `True` without waiting.
