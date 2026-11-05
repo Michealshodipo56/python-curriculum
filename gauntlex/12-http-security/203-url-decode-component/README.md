@@ -1,23 +1,21 @@
 # Restore One URL Component
 
 ## Description
-Decode percent-escaped text while preserving literal plus signs.
-
-### Behavior contract
-Percent-decode a URL component using UTF-8. Do not treat plus signs as spaces.
+Recover text from percent-escaped UTF-8 bytes while preserving literal plus signs, which are not spaces in URL path components.
 
 ## Requirements
 - Implement `decode_component(text)` in `starter/solution.py`.
-- Return the required value; do not print or prompt.
-- Use Python's standard library only; do not make real network requests.
-- Preserve inputs without mutation.
+- Percent-decode the input and interpret the resulting bytes as UTF-8.
+- Do not convert literal `+` characters to spaces.
+- Preserve unescaped characters as appropriate.
+- Return the decoded string.
+- Return the result without printing or prompting. Use Python's standard library only; make no network requests.
 
-## Examples
+## Tips
+- Why does form-style query decoding handle plus signs differently?
+- What happens to `%2F` during decoding?
+
+## Example Behavior
 `decode_component("hello%20world")` → `"hello world"`
 
 `decode_component("a%2Fb")` → `"a/b"`
-
-## Tips
-Form decoding and path-component decoding treat plus signs differently.
-
-Examples describe the contract, not a solution.
