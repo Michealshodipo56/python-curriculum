@@ -1,19 +1,21 @@
 # Read the User Directory
 
 ## Description
-Retrieve all users in a predictable order, regardless of their insertion history.
-
-### Behavior contract
-Return a list of [id,name,email] rows from users(id,name,email), ordered by id ascending.
+Database queries do not guarantee insertion order. Retrieve the complete user directory in a stable order suitable for display or further processing.
 
 ## Requirements
 - Implement `list_users(conn)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Use the supplied live `sqlite3.Connection`; do not open a new connection.
+- Read all rows from `users(id,name,email)`.
+- Return a list of `[id, name, email]` records.
+- Order records by ascending ID.
+- Return `[]` when the table is empty.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Preserve unrelated data and the caller's transaction state.
 
 ## Tips
-Without explicit ordering, database result order is not guaranteed.
+- Why should sorting be requested explicitly?
+- What is the expected result for an empty directory?
 
-Design the database interaction yourself; no SQL solution is provided.
+## Example Behavior
+An empty `users` table produces `[]`; populated results are ordered by ID.
