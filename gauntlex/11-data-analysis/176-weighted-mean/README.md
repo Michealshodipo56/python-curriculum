@@ -1,23 +1,21 @@
 # Unequal Importance
 
 ## Description
-Compute an average where observations contribute according to assigned nonnegative weights.
-
-### Behavior contract
-Return the weighted average of equal-length numeric values and weights. All weights are nonnegative; return None if the sum of weights is zero.
+A weighted mean lets some observations contribute more than others. Each observation has a corresponding nonnegative weight.
 
 ## Requirements
 - Implement `weighted_mean(values, weights)` in `starter/solution.py`.
-- Return the result; do not print or read standard input.
-- Do not mutate the input lists.
-- Use only the Python standard library.
+- Assume numeric `values` and `weights` have equal length and every weight is nonnegative.
+- Return the weighted average, with each observation contributing in proportion to its weight.
+- Return `None` if the total weight is zero.
+- Do not mutate either list.
+- Return the result without printing or reading standard input. Use only Python's standard library.
 
-## Examples
+## Tips
+- Why is a simple arithmetic mean insufficient when weights differ?
+- What does a zero weight contribute?
+
+## Example Behavior
 `weighted_mean([10, 20], [1, 3])` → `17.5`
 
 `weighted_mean([1, 2], [0, 0])` → `None`
-
-## Tips
-If every weight is zero, there is no meaningful weighted average.
-
-Examples illustrate expected values, not a solution.
