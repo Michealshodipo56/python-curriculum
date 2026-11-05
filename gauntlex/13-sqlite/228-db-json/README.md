@@ -1,19 +1,20 @@
 # Store a JSON Document
 
 ## Description
-Serialize a Python value into canonical JSON and save it as one database record.
-
-### Behavior contract
-Insert a compact, sorted-key JSON string representing value into documents(id INTEGER PRIMARY KEY,body TEXT). Return the inserted row ID.
+Structured Python data can be persisted as JSON text. Use a stable representation so equivalent dictionaries serialize consistently.
 
 ## Requirements
-- Implement `store_json(conn, value)` in `starter/solution.py`.
-- The `conn` argument is a live `sqlite3.Connection` supplied by the caller.
-- Do not open a new database connection or print output.
-- Use parameterized SQL for untrusted values and standard-library modules only.
-- Preserve the caller's existing data and transaction state except for the documented changes.
+- Implement `store_json(conn, value)` in `starter/solution.py` using the supplied live `sqlite3.Connection`.
+- Assume `documents(id INTEGER PRIMARY KEY,body TEXT)` exists.
+- Serialize the supplied JSON-compatible value with sorted object keys and compact separators.
+- Store the resulting JSON string in the `body` column.
+- Return the new document's integer row ID.
+- Use parameterized SQL for untrusted values, Python's standard library, and no printed output.
+- Do not open another connection or change unrelated data or transaction state.
 
 ## Tips
-Persist a stable text representation rather than a Python object's display string.
+- Why is Python's display representation not a substitute for JSON?
+- How does stable key ordering help reproducibility?
 
-Implement the database behavior without using solution code from another task.
+## Example Behavior
+Storing `{'b': 2, 'a': 1}` saves the compact JSON body `{"a":1,"b":2}`.
