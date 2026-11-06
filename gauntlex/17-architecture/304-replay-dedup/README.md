@@ -1,18 +1,18 @@
 # Replay Exactly Once
 
 ## Description
-Reconstruct balances from events while applying each event identifier at most once.
-
-### Behavior contract
-Given a list of event dictionaries with unique string id and account/delta fields, return account balances while applying each event ID at most once (first occurrence wins).
+Repeated delivery must not apply the same account event more than once. Rebuild balances while treating each event ID as unique.
 
 ## Requirements
 - Implement `replay_unique(events)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept events with string `id`, account, and integer delta fields.
+- Apply only the first occurrence of each event ID.
+- Sum retained deltas by account, starting from zero.
+- Return final balances, including accounts with zero totals.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Deduplication must happen before applying an event's effect.
+- Why must deduplication happen before updating balances?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+Two deliveries of `{'id': 'x', 'account': 'a', 'delta': 5}` produce balance `{'a': 5}`, not `{'a': 10}`.
