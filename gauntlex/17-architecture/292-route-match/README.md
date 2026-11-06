@@ -1,18 +1,19 @@
 # Capture Route Parameters
 
 ## Description
-Match a request path to a template containing literal and variable segments.
-
-### Behavior contract
-Match an HTTP path to a route template with literal segments and parameters written `{name}`. Return a dict of captured parameter values, or None on mismatch. Paths must have matching segment counts. Do not decode percent escapes.
+HTTP route templates combine fixed path segments with named placeholders. Match a request path and extract the placeholder values.
 
 ## Requirements
 - Implement `match_route(template, path)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a route template and request path.
+- Require the same number of path segments.
+- Match literal segments exactly; capture segments written `{name}` as dictionary entries.
+- Return captured values on a match, or `None` on mismatch.
+- Do not percent-decode path text.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Literal segments must match exactly; parameter segments capture values.
+- Why must a literal route segment match exactly?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`match_route('/users/{id}', '/users/42')` → `{'id': '42'}`.
