@@ -1,18 +1,18 @@
 # Package Metadata
 
 ## Description
-Assemble package metadata without exposing mutable input lists to later changes.
-
-### Behavior contract
-Return a dictionary with keys name, version, requires_python, dependencies from name, version, minimum_python, and dependency list. Copy the dependencies list so caller changes do not affect the result.
+Build a small package metadata record that does not unexpectedly change when the caller later edits its dependency list.
 
 ## Requirements
 - Implement `build_metadata(name, version, minimum_python, dependencies)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Return a dictionary with keys `name`, `version`, `requires_python`, and `dependencies`.
+- Set `requires_python` from `minimum_python`.
+- Copy the supplied dependency list into the result.
+- Do not mutate the input list or retain it by reference.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Copying a list avoids surprising changes after the result is returned.
+- Why can sharing a mutable dependency list cause unexpected changes after the function returns?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`build_metadata('demo', '1.0.0', '>=3.10', ['requests'])` returns the four metadata fields and an independent dependency list.
