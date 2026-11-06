@@ -17,6 +17,12 @@ Build SQLite contact book. CONTACT_DB specifies path. Commands: add NAME EMAIL, 
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Store original email spelling while enforcing uniqueness and lookups case-insensitively. Sort records by normalized email, not by display name.
+
+## Example Behavior
+After adding `Ada@Example.com`, adding `ada@example.com` returns `exists` without creating a second contact.
+
 ## Tips
 Preserve original email spelling while comparing addresses case-insensitively.
 
