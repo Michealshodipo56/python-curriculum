@@ -11,6 +11,9 @@ Routes with more fixed path segments are more specific than routes dominated by 
 - Return the integer literal-segment count.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Count only complete fixed segments. A segment beginning with `{` and ending with `}` is dynamic even when its contents are unusual.
+
 ## Tips
 - Why is a placeholder less specific than a fixed path segment?
 
