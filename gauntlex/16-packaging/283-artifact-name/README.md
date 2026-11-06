@@ -1,18 +1,18 @@
 # Wheel Filename
 
 ## Description
-Build a conventional Python wheel filename from distribution and version information.
-
-### Behavior contract
-Given normalized package name, version, and Python tag, return `NAME-VERSION-TAG-none-any.whl`. Convert hyphens in the package name to underscores. Inputs are trusted nonempty strings.
+A Python wheel filename encodes the distribution, version, and compatibility tags. Assemble the expected filename from trusted components.
 
 ## Requirements
 - Implement `wheel_name(name, version, python_tag)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept trusted, nonempty package name, version, and Python tag strings.
+- Convert hyphens in the package name to underscores.
+- Return `NAME-VERSION-TAG-none-any.whl` using the converted name.
+- Do not alter the version or Python tag.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Distribution names use underscores in the generated artifact name.
+- Why is the distribution name represented differently inside a wheel filename?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`wheel_name('my-package', '1.2.0', 'py3')` → `'my_package-1.2.0-py3-none-any.whl'`.
