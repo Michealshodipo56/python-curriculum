@@ -11,6 +11,9 @@ A sliding-window rate limit counts recent requests to decide whether another req
 - Do not mutate timestamps.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A request exactly at `now - window` is outside the window; a request exactly at `now` is inside. The next request is permitted only below the limit.
+
 ## Tips
 - Why is the lower boundary excluded but the upper included?
 
