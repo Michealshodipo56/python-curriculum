@@ -19,6 +19,12 @@ Use `EXPENSE_DB` environment variable or default `expenses.db`. Commands: `add C
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Keep monetary values as integer cents through storage and aggregation. Invalid amounts must not create rows or change summaries.
+
+## Example Behavior
+After adding 125 and 75 cents in one category, its summary total is 200 cents, not a floating-point approximation.
+
 ## Tips
 Money values must not be rounded through floating-point arithmetic.
 
