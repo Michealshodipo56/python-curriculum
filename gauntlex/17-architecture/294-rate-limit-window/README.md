@@ -1,18 +1,18 @@
 # Requests in a Time Window
 
 ## Description
-Determine whether another request is allowed under a sliding-window rate limit.
-
-### Behavior contract
-Given sorted integer request timestamps, current integer time, positive window, and nonnegative limit, return True if fewer than limit requests occurred in the half-open interval (now-window,now].
+A sliding-window rate limit counts recent requests to decide whether another request is permitted. Boundary handling must be exact.
 
 ## Requirements
 - Implement `rate_limit_allowed(timestamps, now, window, limit)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept sorted integer timestamps, integer `now`, positive `window`, and nonnegative `limit`.
+- Count timestamps in the interval `(now - window, now]`.
+- Return `True` only when that count is strictly less than `limit`.
+- Do not mutate timestamps.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-The lower time boundary is exclusive while the upper boundary is inclusive.
+- Why is the lower boundary excluded but the upper included?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`rate_limit_allowed([5, 8, 10], 10, 5, 3)` → `True`, because time 5 is excluded.
