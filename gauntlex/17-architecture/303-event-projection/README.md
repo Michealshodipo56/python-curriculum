@@ -11,6 +11,9 @@ Event-sourced state can be rebuilt by applying recorded changes. Derive each acc
 - Keep accounts whose net balance is zero in the result.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A zero net balance is still a meaningful account result. Events are applied in their supplied order without requiring a database.
+
 ## Tips
 - Why should an account remain present when its total returns to zero?
 
