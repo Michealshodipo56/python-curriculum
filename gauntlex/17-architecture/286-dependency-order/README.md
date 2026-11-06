@@ -12,6 +12,9 @@ A build system must complete prerequisites before their dependents. Produce a de
 - Raise `ValueError` if any cycle makes completion impossible.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A task mentioned only as a prerequisite must still appear in the final order; disconnected tasks also belong in the result.
+
 ## Tips
 - Why does choosing among ready tasks require a consistent rule?
 
