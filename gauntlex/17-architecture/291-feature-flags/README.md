@@ -1,18 +1,19 @@
 # Transitive Feature Gates
 
 ## Description
-Determine which features can actually be enabled when their own flags and dependencies must all be active.
-
-### Behavior contract
-Given a mapping of feature names to booleans and a mapping of feature dependencies to lists, return sorted enabled feature names whose own flag and every transitive dependency flag are true. Missing flags count as false. Assume the dependency graph is acyclic.
+A feature may be enabled by its own flag yet unavailable because a required feature is disabled. Resolve every prerequisite before reporting usable features.
 
 ## Requirements
 - Implement `enabled_features(flags, dependencies)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept mappings of feature flags and dependency lists.
+- Include a feature only if its own flag and every transitive dependency flag are `True`.
+- Treat missing flags as `False`.
+- Assume dependencies are acyclic.
+- Return sorted enabled feature names.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-A feature may be switched on yet unavailable because one prerequisite is off.
+- Why does checking only a feature's own flag miss disabled prerequisites?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+With `{'a': True, 'b': False}` and `{'a': ['b']}`, feature `a` is not enabled.
