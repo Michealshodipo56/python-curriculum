@@ -12,6 +12,9 @@ HTTP route templates combine fixed path segments with named placeholders. Match 
 - Do not percent-decode path text.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A literal path segment cannot match a different spelling. Capture parameters as raw strings without decoding or numeric conversion.
+
 ## Tips
 - Why must a literal route segment match exactly?
 
