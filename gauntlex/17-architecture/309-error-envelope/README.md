@@ -11,6 +11,9 @@ A consistent error response lets callers inspect an error code, message, and opt
 - Copy provided details so later caller changes do not alter the returned response.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+The nested `details` mapping must be a new dictionary, even when the caller supplies one; a missing details argument becomes an empty mapping.
+
 ## Tips
 - Why is sharing a mutable details dictionary risky?
 
