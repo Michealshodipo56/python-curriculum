@@ -19,6 +19,12 @@ Read UTF-8 lines from stdin in `LEVEL|YYYY-MM-DD|MESSAGE` format. LEVEL is INFO,
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Parse only the first two separators as structural delimiters; later pipes belong to the message. Validate dates as real calendar dates, not merely strings matching a pattern.
+
+## Example Behavior
+A valid `INFO|2026-01-01|start|ready` line counts as one INFO event; an impossible date does not contribute.
+
 ## Tips
 The log message may contain extra separators. Only validated records should affect counts.
 
