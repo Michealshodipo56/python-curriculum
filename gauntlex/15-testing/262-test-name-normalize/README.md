@@ -1,18 +1,18 @@
 # Name a Test Function
 
 ## Description
-Turn a human-readable title into a valid, consistent test function name.
-
-### Behavior contract
-Convert a human-readable ASCII title into a pytest-style function name beginning with `test_`. Lowercase, replace each run of nonalphanumeric characters with _, and trim underscores. Return `test_unnamed` if nothing remains.
+Turn a human-readable ASCII title into a predictable pytest-style function name, avoiding repeated or trailing separators.
 
 ## Requirements
 - Implement `normalize_test_name(title)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Lowercase the ASCII title.
+- Replace each run of nonalphanumeric characters with one underscore.
+- Trim leading and trailing underscores from the normalized title.
+- Prefix the result with `test_`, or return `test_unnamed` when no alphanumeric characters remain.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Punctuation and repeated separators should not create messy identifiers.
+- Why should consecutive punctuation marks become a single separator?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`normalize_test_name('  Save & Load! ')` → `'test_save_load'`; `normalize_test_name('!!!')` → `'test_unnamed'`.
