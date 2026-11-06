@@ -1,18 +1,19 @@
 # Identify Duplicate Requests
 
 ## Description
-Generate a stable key for logically identical requests using canonical input.
-
-### Behavior contract
-Given a method, URL, and request body string, return a stable lowercase SHA-256 hex digest of compact JSON encoding of [method.upper(),url,body], with no sorting required for the list.
+Logically identical requests need a stable identifier even when their method capitalization differs. Canonicalize request data before hashing.
 
 ## Requirements
 - Implement `idempotency_key(method, url, body)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a method, URL, and request body string.
+- Uppercase the method.
+- Serialize `[method, url, body]` as compact JSON in that order.
+- Hash the UTF-8 JSON bytes with SHA-256.
+- Return the lowercase hexadecimal digest.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Canonical representation matters: concatenated fields can otherwise collide ambiguously.
+- Why is structured serialization safer than concatenating fields?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+Requests with methods `'post'` and `'POST'` and otherwise identical inputs must produce the same key.
