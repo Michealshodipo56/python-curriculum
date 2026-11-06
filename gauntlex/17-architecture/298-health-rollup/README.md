@@ -1,18 +1,18 @@
 # Worst Service Health
 
 ## Description
-Combine individual service health reports into one overall status.
-
-### Behavior contract
-Given a list of service status strings 'ok','degraded','down', return 'down' if any is down, else 'degraded' if any is degraded, otherwise 'ok'. Empty list is ok.
+A system-wide health summary should reflect its most severe service condition. Combine individual statuses into one result.
 
 ## Requirements
 - Implement `health_rollup(statuses)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept service statuses `'ok'`, `'degraded'`, and `'down'`.
+- Return `'down'` if any service is down.
+- Otherwise return `'degraded'` if any service is degraded.
+- Return `'ok'` when every service is healthy or the list is empty.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-A single down service dominates degraded and healthy services.
+- Why should one down service dominate the overall status?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`health_rollup(['ok', 'degraded'])` → `'degraded'`; `health_rollup([])` → `'ok'`.
