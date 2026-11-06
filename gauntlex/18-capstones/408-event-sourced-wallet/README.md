@@ -17,6 +17,12 @@ Use SQLite WALLET_DB path. Commands credit ACCOUNT AMOUNT, debit ACCOUNT AMOUNT,
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Use append-only events as the source of truth. A rejected debit must leave the event history untouched, and replay must reproduce balances.
+
+## Example Behavior
+Credit 500 cents and debit 200 cents for one account: the balance is 300 cents, with two ordered history entries.
+
 ## Tips
 A rejected debit must not leave an event behind. Every balance must be reproducible from history.
 
