@@ -1,18 +1,18 @@
 # Protect the Retry Budget
 
 ## Description
-Calculate how many retries remain under a policy based on request volume.
-
-### Behavior contract
-Given a nonnegative request count, nonnegative ratio, and nonnegative retries already used, return the maximum of zero and floor(requests*ratio)-retries_used.
+Retries consume resources and should remain proportional to normal request traffic. Calculate how many attempts are still permitted.
 
 ## Requirements
 - Implement `retry_budget(requests, ratio, retries_used)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept nonnegative request count, retry ratio, and retries already used.
+- Compute the allowed retry count as the floor of `requests * ratio`.
+- Subtract used retries and never return a negative number.
+- Return the remaining retry count as an integer.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-A budget cannot become negative after retries have been spent.
+- Why should a retry budget never become negative?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`retry_budget(10, 0.3, 1)` → `2`.
