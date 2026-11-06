@@ -1,18 +1,18 @@
 # Structured Errors
 
 ## Description
-Wrap an error code and message in a consistent response shape with independent details.
-
-### Behavior contract
-Return {'error':{'code':code,'message':message,'details':details}}. If details is None, use an empty dictionary. Copy details to avoid aliasing caller data.
+A consistent error response lets callers inspect an error code, message, and optional details without guessing the shape of the result.
 
 ## Requirements
 - Implement `error_envelope(code, message, details)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept error code, message, and optional details mapping.
+- Return `{'error': {'code': code, 'message': message, 'details': details}}`.
+- Use an empty dictionary when details is `None`.
+- Copy provided details so later caller changes do not alter the returned response.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Copy mutable details rather than sharing caller-owned state.
+- Why is sharing a mutable details dictionary risky?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`error_envelope('bad', 'Invalid', None)` → `{'error': {'code': 'bad', 'message': 'Invalid', 'details': {}}}`.
