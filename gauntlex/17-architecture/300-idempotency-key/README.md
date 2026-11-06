@@ -12,6 +12,9 @@ Logically identical requests need a stable identifier even when their method cap
 - Return the lowercase hexadecimal digest.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+The JSON array field order matters. Method case is normalized, but URL and body text remain unchanged.
+
 ## Tips
 - Why is structured serialization safer than concatenating fields?
 
