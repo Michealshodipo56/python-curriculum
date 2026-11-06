@@ -1,18 +1,18 @@
 # Require Every Item
 
 ## Description
-Verify that an expected collection is contained in the actual collection, reporting missing items.
-
-### Behavior contract
-Return None if every element in expected_items appears in actual_items; otherwise raise AssertionError with a sorted list of missing items in the message. Elements are sortable and hashable.
+An assertion can check whether all expected items appear in an actual collection. When the check fails, report the missing values in a reproducible order.
 
 ## Requirements
 - Implement `assert_subset(expected_items, actual_items)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept collections of sortable, hashable elements.
+- Return `None` if every expected item is present in the actual collection.
+- Otherwise raise `AssertionError` whose message includes a sorted list of missing items.
+- Do not mutate either input.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Sort missing items so failure messages are reproducible.
+- Why is sorting useful for reproducible failure messages?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`assert_subset([1, 2], [1, 2, 3])` → `None`; missing expected items trigger `AssertionError`.
