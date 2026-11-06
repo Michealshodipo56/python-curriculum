@@ -19,6 +19,12 @@ This is a project challenge. Plan the components, define their responsibilities,
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Separate URL path matching from query-string parsing, and encode all responses consistently as compact JSON. Keep request logs off stdout.
+
+## Example Behavior
+A GET request to `/health` returns HTTP 200 and `{"status":"ok"}`; an unknown path returns HTTP 404 with the specified JSON error.
+
 ## Tips
 A request's path and query parameters are different parts of its URL. Keep response encoding consistent.
 
