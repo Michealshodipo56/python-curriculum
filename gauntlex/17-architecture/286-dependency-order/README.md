@@ -1,18 +1,19 @@
 # Build in Dependency Order
 
 ## Description
-Find a valid order for completing tasks whose prerequisites form a directed graph.
-
-### Behavior contract
-Given a dictionary mapping task names to prerequisite-name lists, return a valid topological order including prerequisite-only names. When multiple nodes are available, choose the lexicographically smallest. Raise ValueError for a cycle.
+A build system must complete prerequisites before their dependents. Produce a deterministic sequence even when several tasks are ready simultaneously.
 
 ## Requirements
 - Implement `dependency_order(graph)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a mapping of task names to prerequisite-name lists.
+- Include tasks mentioned only as prerequisites.
+- Return a topological ordering with every prerequisite before its dependent.
+- When several tasks are ready, choose the lexicographically smallest available name.
+- Raise `ValueError` if any cycle makes completion impossible.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-If several tasks are ready, the tie-breaking rule must still produce deterministic order.
+- Why does choosing among ready tasks require a consistent rule?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+For `{'app': ['lib'], 'lib': []}`, return `['lib', 'app']`.
