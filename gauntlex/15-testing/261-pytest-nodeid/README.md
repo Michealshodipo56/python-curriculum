@@ -1,18 +1,17 @@
 # Identify a Test
 
 ## Description
-Build a stable test identifier from a path and function name.
-
-### Behavior contract
-Return `path::test_name` for a path and test name. Raise ValueError if either is empty after stripping whitespace. Strip surrounding whitespace from both.
+A test identifier combines the file location and test function name. Validate both parts before building the identifier.
 
 ## Requirements
 - Implement `pytest_nodeid(path, test_name)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Strip surrounding whitespace from `path` and `test_name`.
+- Raise `ValueError` if either is empty after stripping.
+- Return the exact form `path::test_name` using the trimmed parts.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Trim and validate both components before combining them.
+- Why must both parts be validated before joining them?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`pytest_nodeid(' tests/test_math.py ', ' test_sum ')` → `'tests/test_math.py::test_sum'`.
