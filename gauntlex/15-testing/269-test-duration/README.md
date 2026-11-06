@@ -1,18 +1,18 @@
 # Find Slow Cases
 
 ## Description
-Rank tests whose runtimes exceed a threshold, using stable tie-breaking.
-
-### Behavior contract
-Given a list of [name,duration_seconds] pairs and a nonnegative threshold, return test names whose duration strictly exceeds threshold, ordered by descending duration and then ascending name.
+Performance reports can prioritize slow tests. Select only tests exceeding a threshold and rank them predictably.
 
 ## Requirements
 - Implement `slow_tests(records, threshold)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept `[name, duration_seconds]` pairs and a nonnegative threshold.
+- Include only names whose duration is strictly greater than the threshold.
+- Sort qualifying tests by duration descending, then name ascending.
+- Return the names only.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-The threshold is strict: a duration equal to it does not qualify.
+- Why does a duration equal to the threshold not qualify?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`slow_tests([['a', 2], ['b', 3], ['c', 3]], 2)` → `['b', 'c']`.
