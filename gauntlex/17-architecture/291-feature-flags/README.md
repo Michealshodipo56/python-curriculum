@@ -12,6 +12,9 @@ A feature may be enabled by its own flag yet unavailable because a required feat
 - Return sorted enabled feature names.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A feature's own flag is not sufficient: every dependency in its chain must also be enabled. A missing dependency flag disables the feature.
+
 ## Tips
 - Why does checking only a feature's own flag miss disabled prerequisites?
 
