@@ -1,18 +1,18 @@
 # Select by Name
 
 ## Description
-Filter a list of test names using a case-insensitive search pattern.
-
-### Behavior contract
-Given a list of test names and a lowercase or uppercase substring pattern, return matching names in original order, case-insensitively.
+Large test suites often need a focused subset. Match a search term within test names without changing their original spelling or order.
 
 ## Requirements
 - Implement `select_tests(names, pattern)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept test names and a substring pattern.
+- Match the pattern case-insensitively anywhere in each name.
+- Return matching original names in their input order.
+- An empty pattern matches every name.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Keep the original ordering of matching names.
+- Why should the output preserve the original capitalization?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`select_tests(['TestLogin', 'testCart', 'LOGIN_FLOW'], 'login')` → `['TestLogin', 'LOGIN_FLOW']`.
