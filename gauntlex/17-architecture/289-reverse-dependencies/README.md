@@ -11,6 +11,9 @@ A dependency graph points from packages to their requirements. Reverse those rel
 - Include empty lists for names with no dependents.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A package listed as a prerequisite by several packages must list each direct dependent, not indirect dependents.
+
 ## Tips
 - Why should a dependency-only package still appear in the result?
 
