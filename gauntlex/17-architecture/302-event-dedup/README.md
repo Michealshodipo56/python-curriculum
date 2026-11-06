@@ -11,6 +11,9 @@ An event stream may contain duplicate deliveries. Keep the first occurrence of e
 - Do not mutate the original events or allow later duplicates to overwrite earlier ones.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Retain the first dictionary for each ID as a shallow copy. Changing the returned dictionary must not change the original top-level event.
+
 ## Tips
 - Why should the first occurrence win rather than the last?
 
