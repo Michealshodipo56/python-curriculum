@@ -1,18 +1,18 @@
 # Dependency Order
 
 ## Description
-Sort exact package requirements by normalized name while preserving each original line.
-
-### Behavior contract
-Given valid exact requirements `name==version`, return them sorted by normalized package name, preserving the original requirement text.
+A dependency file can be made easier to review by sorting package entries consistently, while preserving their original spelling and version text.
 
 ## Requirements
 - Implement `sort_requirements(lines)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept valid exact requirement strings `name==version`.
+- Sort requirements by their normalized package names.
+- Return the original requirement strings, not rewritten versions.
+- Do not mutate the original sequence.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-The sort key and the returned text are intentionally different.
+- Why should the comparison key differ from the text returned to the caller?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`sort_requirements(['Zed==1.0.0', 'alpha==2.0.0'])` → `['alpha==2.0.0', 'Zed==1.0.0']`.
