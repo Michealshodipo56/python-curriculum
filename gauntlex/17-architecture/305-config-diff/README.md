@@ -1,18 +1,18 @@
 # Configuration Changes
 
 ## Description
-Report which settings changed between two configurations.
-
-### Behavior contract
-Return a sorted list of keys whose values differ between old and new dictionaries. Treat missing keys as different from present keys, even when the present value is None.
+Configuration drift can come from changed values, added settings, or removed settings. Report every key that differs between two snapshots.
 
 ## Requirements
 - Implement `config_diff(old, new)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept old and new dictionaries.
+- Return sorted keys whose values differ or whose presence differs.
+- Treat a missing key as different from a present key whose value is `None`.
+- Do not mutate either dictionary.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-A missing setting and a present setting with `None` are not equivalent.
+- Why is missing different from explicitly configured `None`?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`config_diff({'a': None}, {})` → `['a']`.
