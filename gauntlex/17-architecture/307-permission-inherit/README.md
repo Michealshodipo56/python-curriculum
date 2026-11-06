@@ -11,6 +11,9 @@ Roles can inherit permissions from parent roles. Collect all permissions granted
 - Return a sorted list of unique permission strings.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Permissions flow through every ancestor role, not only direct parents. Multiple inheritance paths must not duplicate permissions.
+
 ## Tips
 - Why can one role inherit permissions through several levels?
 
