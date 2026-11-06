@@ -11,6 +11,9 @@ A service dependency graph can show which components may be reached from one sta
 - Handle cycles without infinite traversal.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A start node absent from the graph still produces a one-item result containing that start name.
+
 ## Tips
 - Why must visited services be tracked?
 
