@@ -17,6 +17,12 @@ Run python main.py INPUT.csv OUTPUT.jsonl. CSV header id,name,amount_cents. Trim
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Validate each row before reserving its ID for deduplication. Write output to a temporary file and replace the destination only after the output is complete.
+
+## Example Behavior
+If an invalid row uses ID `x` before a valid row with ID `x`, the valid row may still be written as the first valid occurrence.
+
 ## Tips
 Deduplication keeps the first valid row for each identifier; an invalid earlier row must not claim that identifier.
 
