@@ -1,18 +1,18 @@
 # Find Dependency Loops
 
 ## Description
-Detect whether a prerequisite graph contains an impossible circular dependency.
-
-### Behavior contract
-Return True if the directed prerequisite graph contains a cycle. Include names that appear only in prerequisite lists.
+Circular prerequisites prevent any valid build order. Detect a cycle even when some nodes appear only in other tasks' dependency lists.
 
 ## Requirements
 - Implement `has_dependency_cycle(graph)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a directed mapping of tasks to prerequisites.
+- Return `True` if any directed cycle exists; otherwise `False`.
+- Include names appearing only as prerequisites.
+- Do not change the graph.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Revisiting a fully explored node is different from encountering a node still on the active path.
+- Why is revisiting a fully explored node different from revisiting an active path?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`has_dependency_cycle({'a': ['b'], 'b': ['a']})` → `True`.
