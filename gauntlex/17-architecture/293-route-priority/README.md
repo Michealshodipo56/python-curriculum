@@ -1,18 +1,18 @@
 # Route Specificity
 
 ## Description
-Score route templates according to how many literal segments they contain.
-
-### Behavior contract
-Return the number of literal segments in a route template. A segment is dynamic only if it starts with { and ends with }. Ignore empty segments caused by leading or trailing slashes.
+Routes with more fixed path segments are more specific than routes dominated by placeholders. Calculate a simple specificity score.
 
 ## Requirements
 - Implement `route_priority(template)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Split the template into path segments, ignoring empty segments from leading or trailing slashes.
+- Count each literal segment as one point.
+- Treat a segment as dynamic only when it starts with `{` and ends with `}`.
+- Return the integer literal-segment count.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Dynamic segments are less specific than literal ones.
+- Why is a placeholder less specific than a fixed path segment?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`route_priority('/users/{id}/posts')` → `2`.
