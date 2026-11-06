@@ -1,18 +1,18 @@
 # Keep First Events
 
 ## Description
-Remove duplicate events by identifier while preserving first appearance.
-
-### Behavior contract
-Given a list of event dictionaries with string id fields, return first occurrences of each id in original order as shallow copies. Do not mutate inputs.
+An event stream may contain duplicate deliveries. Keep the first occurrence of each event ID and preserve event order.
 
 ## Requirements
 - Implement `deduplicate_events(events)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept event dictionaries with string `id` fields.
+- Return the first event for each distinct ID in original order.
+- Return shallow copies of retained event dictionaries.
+- Do not mutate the original events or allow later duplicates to overwrite earlier ones.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-An event with a repeated ID must not overwrite the first accepted event.
+- Why should the first occurrence win rather than the last?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+Events with IDs `a`, `b`, `a` produce two retained events, ordered `a`, `b`.
