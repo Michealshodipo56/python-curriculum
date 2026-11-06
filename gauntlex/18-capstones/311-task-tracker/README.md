@@ -19,6 +19,12 @@ Commands: `python main.py add TITLE`, `list`, `done ID`, and `delete ID`. Store 
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Design the CLI so every command operates on the same persisted SQLite state across separate invocations. Treat malformed titles and missing task IDs as distinct cases.
+
+## Example Behavior
+Adding a task and then listing tasks in a fresh process must still show the new task; an unknown command exits with status 2.
+
 ## Tips
 Separate command parsing from persistence. Think through missing IDs, empty titles, and stable record ordering.
 
