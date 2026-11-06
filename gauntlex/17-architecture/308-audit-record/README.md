@@ -1,18 +1,18 @@
 # Record an Action
 
 ## Description
-Construct a deterministic audit entry from actor, action, resource, and timestamp.
-
-### Behavior contract
-Return a dictionary with actor, action, resource, and timestamp keys from the four supplied values. Do not generate the timestamp; it is provided by the caller.
+Audit records should capture who performed an action, what they did, which resource was involved, and when it occurred. Use caller-supplied facts without inventing new ones.
 
 ## Requirements
 - Implement `audit_record(actor, action, resource, timestamp)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept `actor`, `action`, `resource`, and `timestamp`.
+- Return a dictionary with exactly those four keys and their supplied values.
+- Use the caller's timestamp; do not generate the current time.
+- Do not modify the supplied values.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-The timestamp comes from the caller; do not invent one.
+- Why should the audit function not substitute its own timestamp?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`audit_record('ada', 'edit', 'doc-1', '2026-01-01')` → `{'actor': 'ada', 'action': 'edit', 'resource': 'doc-1', 'timestamp': '2026-01-01'}`.
