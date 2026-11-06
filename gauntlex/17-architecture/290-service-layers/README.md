@@ -1,18 +1,19 @@
 # Build in Parallel Layers
 
 ## Description
-Group services into successive layers whose prerequisites have already been completed.
-
-### Behavior contract
-Given a dependency graph mapping service to prerequisite services, return successive sorted layers of services that can be built together. Include dependency-only nodes. Raise ValueError on cycles.
+Independent services can be built in parallel once all their prerequisites are complete. Group services by the earliest layer in which they become ready.
 
 ## Requirements
 - Implement `service_layers(graph)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a mapping of services to prerequisite-name lists.
+- Include names that occur only as prerequisites.
+- Return successive layers, each a sorted list of all services ready at that stage.
+- Place each service after every prerequisite.
+- Raise `ValueError` if a dependency cycle exists.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-All currently ready services can belong to the same layer.
+- Why should all currently ready services share a layer?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`service_layers({'app': ['db', 'api'], 'api': []})` → `[['api', 'db'], ['app']]`.
