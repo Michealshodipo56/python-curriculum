@@ -11,6 +11,9 @@ Role-based access control grants actions through assigned roles. Determine wheth
 - Return `False` when no assigned role grants the permission.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Permission checks use direct grants from assigned roles only. Unknown roles grant nothing, and a missing permission is denied.
+
 ## Tips
 - Why must an unknown role never grant permissions by default?
 
