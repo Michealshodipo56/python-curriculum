@@ -1,18 +1,18 @@
 # Check the Order
 
 ## Description
-Determine whether values already appear in nondecreasing order.
-
-### Behavior contract
-Return whether a sequence is nondecreasing. Empty and single-element sequences are sorted.
+Determine whether a sequence is already in nondecreasing order. Equal neighbors are permitted.
 
 ## Requirements
 - Implement `is_sorted(values)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Return `True` if each element is no smaller than the preceding one.
+- Return `True` for empty and one-element sequences.
+- Return `False` when any adjacent pair decreases.
+- Do not sort or mutate the input.
+- Use Python's standard library only; do not print or mutate inputs unless the task explicitly requires capturing output.
 
 ## Tips
-An empty collection is ordered by definition.
+- Why does an empty sequence count as sorted?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`is_sorted([1, 1, 3])` → `True`; `is_sorted([2, 1])` → `False`.
