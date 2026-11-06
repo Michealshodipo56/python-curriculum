@@ -17,6 +17,12 @@ Run python main.py ROOT. Recursively inspect Markdown files. Extract inline link
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Resolve paths against the correct base and verify their canonical locations remain under ROOT, including when symbolic links are involved. Do not fetch remote links.
+
+## Example Behavior
+A Markdown link pointing outside ROOT through `../` or a symlink is reported broken even if the target file exists.
+
 ## Tips
 A path can appear inside the project yet resolve outside it through traversal or a symbolic link.
 
