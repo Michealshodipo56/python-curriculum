@@ -1,16 +1,18 @@
-# check_nonnegative
+# Guard the Nonnegative Invariant
 
-## Challenge
-Return True when all numeric values are >=0, otherwise raise AssertionError reporting the index of the first negative element in the form `negative at INDEX`.
+## Description
+An invariant is a condition that must remain true for a collection of values. Detect the earliest violation and report its location.
 
 ## Requirements
 - Implement `check_nonnegative(values)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept a sequence of numeric values.
+- Return `True` if every value is nonnegative.
+- Otherwise raise `AssertionError` with exact message `negative at INDEX` for the first negative value's zero-based index.
+- Do not mutate the sequence.
+- Use Python's standard library only; do not print or mutate inputs.
 
-## Hints
-Report the earliest violated invariant.
+## Tips
+- Why should the first violation be reported instead of every violation?
 
-## Run tests
-`python -m pytest tests -q`
+## Example Behavior
+`check_nonnegative([0, 3])` → `True`; `check_nonnegative([1, -2, -3])` raises `AssertionError('negative at 1')`.
