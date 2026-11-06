@@ -1,18 +1,18 @@
 # Cross-Platform Failures
 
 ## Description
-Find tests that failed on at least one execution platform.
-
-### Behavior contract
-Given mapping of platform->mapping of test_name->bool, return sorted test names that failed on at least one platform.
+A test suite may run on several platforms. Identify any test that failed on at least one platform, regardless of its results elsewhere.
 
 ## Requirements
 - Implement `test_matrix(results)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept a mapping from platform names to mappings of test names to boolean results.
+- Include a test name if any platform records `False` for that test.
+- Return unique failing names sorted alphabetically.
+- Return `[]` when no failures are recorded.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-One failing platform is enough for a test to appear in the result.
+- Why does one failure matter even if other platforms pass?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`test_matrix({'linux': {'a': True}, 'windows': {'a': False, 'b': True}})` → `['a']`.
