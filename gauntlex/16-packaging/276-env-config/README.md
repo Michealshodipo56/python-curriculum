@@ -1,18 +1,19 @@
 # Read Environment Settings
 
 ## Description
-Interpret application settings from environment-like key-value data with safe defaults.
-
-### Behavior contract
-Given a mapping of environment variables, return {'debug':bool,'port':int}. DEBUG is true for 1/true/yes (case-insensitive), otherwise false. PORT defaults to 8000 and must be an integer 1–65535; invalid PORT raises ValueError.
+Application configuration often arrives as text from environment variables. Interpret the supported values while applying a safe default only when a setting is absent.
 
 ## Requirements
 - Implement `read_config(env)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a mapping of environment variable names to strings.
+- Return a dictionary with boolean `debug` and integer `port`.
+- Set `debug` to `True` for `DEBUG` values `1`, `true`, or `yes`, ignoring case; otherwise `False`.
+- Use port `8000` when `PORT` is absent.
+- Raise `ValueError` unless a supplied port is an integer from 1 through 65535.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Some settings are optional; invalid ports must not silently fall back to a default.
+- Why should an invalid supplied port not silently fall back to the default?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`read_config({'DEBUG': 'YES', 'PORT': '9000'})` → `{'debug': True, 'port': 9000}`.
