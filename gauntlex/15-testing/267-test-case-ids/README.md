@@ -1,18 +1,18 @@
 # Unique Case Labels
 
 ## Description
-Give repeated test names distinct identifiers based on their occurrence count.
-
-### Behavior contract
-Given a list of test case dictionaries with a `name` string, return IDs `name#N` where N is the 1-based occurrence count for that name.
+Repeated test names need distinct identifiers so reports can refer to each occurrence without ambiguity.
 
 ## Requirements
 - Implement `case_ids(cases)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept test case dictionaries containing a string `name`.
+- Assign each name its own one-based occurrence counter.
+- Return IDs in original case order, formatted as `name#N`.
+- Do not mutate case dictionaries.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Track each name independently; a different name must not change its count.
+- Why must different names have independent counters?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`case_ids([{'name': 'a'}, {'name': 'b'}, {'name': 'a'}])` → `['a#1', 'b#1', 'a#2']`.
