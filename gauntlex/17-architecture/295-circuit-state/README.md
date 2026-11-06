@@ -10,6 +10,9 @@ A circuit breaker tracks consecutive failures and may allow a recovery probe. Cl
 - At or above the threshold, return `'half-open'` for a successful probe, otherwise `'open'`.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+When failures are below threshold, the state remains closed regardless of probe outcome; the probe matters only at or above threshold.
+
 ## Tips
 - Why must the failure threshold be checked before the probe outcome?
 
