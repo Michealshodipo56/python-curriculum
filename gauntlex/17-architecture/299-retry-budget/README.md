@@ -11,6 +11,9 @@ Retries consume resources and should remain proportional to normal request traff
 - Return the remaining retry count as an integer.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+The retry allowance is rounded down before subtracting used attempts; exhausted budgets return zero rather than a negative count.
+
 ## Tips
 - Why should a retry budget never become negative?
 
