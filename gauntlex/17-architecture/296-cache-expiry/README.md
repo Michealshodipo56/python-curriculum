@@ -1,18 +1,17 @@
 # Time to Live
 
 ## Description
-Decide whether a cached value is still valid at a particular time.
-
-### Behavior contract
-Return True if an item created at timestamp created_at with positive ttl is still valid at now. Validity is now < created_at+ttl.
+Cached data has a limited lifetime. Determine whether an entry remains usable at a given moment, including the exact expiry boundary.
 
 ## Requirements
 - Implement `cache_valid(created_at, ttl, now)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept creation time, positive time-to-live (`ttl`), and current time.
+- Return `True` only while `now` is strictly earlier than `created_at + ttl`.
+- Return `False` at or after the expiry instant.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-The exact expiry instant is no longer valid.
+- Why should an entry expire exactly when its lifetime is exhausted?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`cache_valid(100, 30, 129)` → `True`; `cache_valid(100, 30, 130)` → `False`.
