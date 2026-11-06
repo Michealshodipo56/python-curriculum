@@ -1,18 +1,18 @@
 # Describe Build Files
 
 ## Description
-Produce a sorted manifest of relative file paths and sizes while rejecting unsafe paths.
-
-### Behavior contract
-Given a list of [relative_path,bytes_count] pairs, return sorted entries as `path<TAB>bytes` strings. Reject absolute paths and paths containing `..` segments with ValueError.
+A build manifest records the files included in an artifact and their byte counts. Reject paths that could escape the intended relative directory.
 
 ## Requirements
 - Implement `file_manifest(entries)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept `[relative_path, bytes_count]` pairs.
+- Reject absolute paths and paths containing a complete `..` segment with `ValueError`.
+- Return sorted strings formatted `path<TAB>bytes`.
+- Do not modify the entries.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Path traversal is about complete `..` components, not every occurrence of two dots.
+- Why is a `..` path component different from two dots inside a filename?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`file_manifest([['b.txt', 2], ['a.txt', 5]])` → `['a.txt\t5', 'b.txt\t2']`.
