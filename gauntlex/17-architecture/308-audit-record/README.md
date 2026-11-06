@@ -11,6 +11,9 @@ Audit records should capture who performed an action, what they did, which resou
 - Do not modify the supplied values.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+The record contains exactly the supplied four facts. Do not generate a timestamp or add implicit metadata.
+
 ## Tips
 - Why should the audit function not substitute its own timestamp?
 
