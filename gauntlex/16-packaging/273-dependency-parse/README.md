@@ -1,18 +1,19 @@
 # Pinned Dependency
 
 ## Description
-Interpret a package requirement and normalize its distribution name.
-
-### Behavior contract
-Parse an exact requirement `name==version`, where name contains ASCII letters, digits, underscores or hyphens, and version has three dot-separated nonnegative integers. Return [normalized_name,version], where name is lowercase with underscores replaced by hyphens. Raise ValueError on invalid input.
+A pinned dependency specifies one package and one exact version. Normalize the package name while retaining the version text.
 
 ## Requirements
 - Implement `parse_requirement(text)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept exactly `name==version`.
+- Allow ASCII letters, digits, underscores, and hyphens in the name.
+- Require three dot-separated nonnegative integer components in the version.
+- Return `[normalized_name, version]` where the name is lowercase and underscores become hyphens.
+- Raise `ValueError` for invalid input.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Separate name normalization from the validation of the pinned version.
+- Why should package-name normalization be distinct from version validation?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`parse_requirement('My_Pkg==1.2.3')` → `['my-pkg', '1.2.3']`.
