@@ -1,18 +1,18 @@
 # Name the Entry Point
 
 ## Description
-Convert a valid dotted Python module name into an executable entry-point reference.
-
-### Behavior contract
-Given a Python module path like `package.subpackage.cli`, return `package.subpackage.cli:main`. Raise ValueError for empty names or components that are not valid Python identifiers.
+A command-line entry point refers to a Python module and the function to execute. Validate a dotted module path before adding the function reference.
 
 ## Requirements
 - Implement `entrypoint_name(module_name)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a nonempty dotted module name.
+- Require every dot-separated component to be a valid Python identifier.
+- Return `module.path:main` using the original valid module name.
+- Raise `ValueError` for empty names or invalid components.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Each segment of a dotted name must be a valid Python identifier.
+- Why is validating each component more reliable than checking only the full string?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`entrypoint_name('package.cli')` → `'package.cli:main'`; `entrypoint_name('package..cli')` raises `ValueError`.
