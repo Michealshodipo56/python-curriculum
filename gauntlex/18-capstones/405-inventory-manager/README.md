@@ -17,6 +17,12 @@ Build a SQLite-backed inventory CLI. INVENTORY_DB specifies database path. Comma
 - Document the program's usage, key design choices, and failure behavior.
 - Explain how persistence, input validation, or the service lifecycle works where applicable.
 
+## Design Considerations
+Guard updates against negative stock before committing changes. Distinguish an unknown SKU from an existing SKU with insufficient quantity.
+
+## Example Behavior
+An adjustment that would make stock negative returns `insufficient` and leaves the persisted quantity unchanged.
+
 ## Tips
 Treat stock updates as guarded state transitions. Invalid quantities and insufficient stock are different failures.
 
