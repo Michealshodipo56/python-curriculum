@@ -1,18 +1,17 @@
 # Circuit Breaker States
 
 ## Description
-Classify a service circuit as closed, open, or half-open using failures and a probe outcome.
-
-### Behavior contract
-Given number of consecutive failures, positive threshold, and bool probe_success, return 'closed' if failures<threshold, 'half-open' if failures>=threshold and probe_success, otherwise 'open'.
+A circuit breaker tracks consecutive failures and may allow a recovery probe. Classify the state from the failure threshold and probe result.
 
 ## Requirements
 - Implement `circuit_state(failures, threshold, probe_success)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a failure count, positive threshold, and boolean `probe_success`.
+- Return `'closed'` when failures are below the threshold.
+- At or above the threshold, return `'half-open'` for a successful probe, otherwise `'open'`.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Model the threshold and probe as separate decisions.
+- Why must the failure threshold be checked before the probe outcome?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`circuit_state(3, 3, False)` → `'open'`; `circuit_state(3, 3, True)` → `'half-open'`.
