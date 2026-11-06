@@ -12,6 +12,9 @@ Independent services can be built in parallel once all their prerequisites are c
 - Raise `ValueError` if a dependency cycle exists.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Independent services are grouped in the same layer; a service may enter only after all its prerequisites are in earlier layers.
+
 ## Tips
 - Why should all currently ready services share a layer?
 
