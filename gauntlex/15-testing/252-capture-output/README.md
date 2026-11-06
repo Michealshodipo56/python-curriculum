@@ -1,18 +1,18 @@
 # Observe Printed Output
 
 ## Description
-Capture the text produced by a function while preserving its return value.
-
-### Behavior contract
-Call zero-argument fn and return [result,stdout_text] with everything printed to stdout during the call. Restore stdout even if fn raises, and propagate its exception.
+A function's return value and printed output are different observable effects. Capture both while ensuring the global output stream is restored.
 
 ## Requirements
 - Implement `capture_output(fn)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Call the supplied zero-argument function once.
+- Capture everything it writes to standard output during that call.
+- Return `[result, stdout_text]` if the function returns normally.
+- Restore standard output even if the function raises, and propagate the exception.
+- Use Python's standard library only; do not print or mutate inputs unless the task explicitly requires capturing output.
 
 ## Tips
-Restore the output stream even when the function raises an exception.
+- Why is cleanup necessary even when the callable fails?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+A callable that prints `Hi` and returns `7` produces `[7, 'Hi\n']`.
