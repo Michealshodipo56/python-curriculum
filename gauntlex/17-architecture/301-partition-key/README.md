@@ -11,6 +11,9 @@ Distributed storage often assigns records to partitions using a repeatable hash.
 - Return that integer modulo the partition count.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+Use a deterministic byte representation and digest interpretation; the partition number must remain within the valid zero-based range.
+
 ## Tips
 - Why is Python's built-in hash unsuitable for stable cross-process partitioning?
 
