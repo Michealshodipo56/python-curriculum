@@ -1,18 +1,17 @@
 # Explain a Mismatch
 
 ## Description
-Create an assertion helper that clearly reports when actual and expected values differ.
-
-### Behavior contract
-Return None when actual equals expected; otherwise raise AssertionError with message `expected EXPECTED, got ACTUAL` using repr() for values.
+A good assertion does more than say a check failed. Compare actual and expected values and report an unambiguous failure message.
 
 ## Requirements
 - Implement `assert_equal(actual, expected)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Return `None` when `actual == expected`.
+- Otherwise raise `AssertionError` with exact message `expected EXPECTED, got ACTUAL`, where each placeholder uses `repr()`.
+- Do not mutate the values.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-A useful failure message shows the values unambiguously.
+- Why is `repr()` more informative than a plain string conversion?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`assert_equal(3, 3)` → `None`; `assert_equal('x', 'y')` raises `AssertionError` with `expected 'y', got 'x'`.
