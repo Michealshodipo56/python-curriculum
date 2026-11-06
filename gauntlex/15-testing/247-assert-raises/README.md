@@ -1,18 +1,18 @@
 # Expect a Failure
 
 ## Description
-Check that a callable raises the correct type of exception.
-
-### Behavior contract
-Call zero-argument fn and return the caught exception if it is an instance of expected_exception; otherwise raise AssertionError. If fn returns normally, raise AssertionError.
+Some tests succeed only when a callable raises a particular exception. Validate the exception type and preserve the caught instance.
 
 ## Requirements
 - Implement `assert_raises(expected_exception, fn)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Call the zero-argument function `fn`.
+- Return the caught exception when it is an instance of `expected_exception`.
+- Raise `AssertionError` if `fn` returns normally or raises a different exception type.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-A function that returns normally does not satisfy an expected-exception contract.
+- Why is a normal return a failure for this test?
+- What distinguishes an exception instance from its class?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+A callable raising `ValueError('bad')` passes when `ValueError` is expected and returns that exception instance.
