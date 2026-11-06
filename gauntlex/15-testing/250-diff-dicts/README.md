@@ -1,18 +1,18 @@
 # Compare Records
 
 ## Description
-Identify missing and changed fields between two mappings.
-
-### Behavior contract
-Return a dictionary mapping keys with missing or unequal values to [old,new], using None for absent keys. Assume values are never None. Include keys from either mapping.
+Two records can differ because a field was added, removed, or changed. Report every difference without losing which side contained which value.
 
 ## Requirements
 - Implement `diff_dicts(old, new)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept `old` and `new` mappings whose stored values are never `None`.
+- Include every key appearing in either mapping whose values differ or whose key is missing on one side.
+- Return a dictionary mapping each changed key to `[old_value, new_value]`.
+- Use `None` for an absent side; omit unchanged keys.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-A missing key is not the same as an unchanged value.
+- Why is it important to distinguish a missing key from an equal value?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`diff_dicts({'a': 1}, {'a': 2, 'b': 3})` → `{'a': [1, 2], 'b': [None, 3]}`.
