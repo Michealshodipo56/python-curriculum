@@ -1,18 +1,18 @@
 # Module to File
 
 ## Description
-Translate a dotted Python module name into a relative source-file path.
-
-### Behavior contract
-Convert a dotted Python module name into a relative POSIX path ending in .py. Raise ValueError for invalid identifier components.
+A Python module's dotted import path corresponds to directories and a source filename. Convert the module name into a relative POSIX file path.
 
 ## Requirements
 - Implement `module_to_path(module_name)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a dotted module name.
+- Require every component to be a valid Python identifier.
+- Replace module separators with forward slashes and append `.py`.
+- Raise `ValueError` for empty or invalid components.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Dots separate module levels, while slashes separate directories.
+- Why must dots become path separators rather than remain in the filename?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`module_to_path('package.tools.cli')` → `'package/tools/cli.py'`.
