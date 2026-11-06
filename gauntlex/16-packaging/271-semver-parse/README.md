@@ -1,18 +1,18 @@
 # Three-Part Version
 
 ## Description
-Validate and interpret a version made of major, minor, and patch numbers.
-
-### Behavior contract
-Parse a version in exact MAJOR.MINOR.PATCH form with nonnegative decimal components and no leading zeros except 0. Return [major,minor,patch], or raise ValueError.
+Package releases often use three numeric components: major, minor, and patch. Parse this precise version form without silently accepting ambiguous formatting.
 
 ## Requirements
 - Implement `parse_version(text)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept exactly `MAJOR.MINOR.PATCH` with three nonnegative decimal integers.
+- Reject leading zeros in multi-digit components; `0` itself is valid.
+- Return `[major, minor, patch]` as integers.
+- Raise `ValueError` for missing, extra, negative, or malformed components.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-Reject malformed versions rather than trying to guess their meaning.
+- Why is strict validation preferable to guessing what a malformed version means?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`parse_version('2.10.3')` → `[2, 10, 3]`; `parse_version('01.2.3')` raises `ValueError`.
