@@ -1,18 +1,18 @@
 # Compare Stable Snapshots
 
 ## Description
-Decide whether two structured values have identical canonical JSON representations.
-
-### Behavior contract
-Return True if two JSON-compatible Python values have identical canonical compact sorted-key JSON representations. Dictionary key order must not matter; list order must matter.
+Structured snapshots should be compared using a canonical JSON representation so irrelevant object-key ordering does not cause false mismatches.
 
 ## Requirements
 - Implement `snapshot_matches(actual, expected)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept two JSON-compatible Python values.
+- Compare their compact JSON representations with object keys sorted.
+- Return `True` only when the canonical representations match exactly.
+- Treat dictionary key order as irrelevant but list element order as significant.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-Object key order is not significant, but array element order is.
+- Why should object keys and array elements be treated differently?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`snapshot_matches({'b': 2, 'a': 1}, {'a': 1, 'b': 2})` → `True`.
