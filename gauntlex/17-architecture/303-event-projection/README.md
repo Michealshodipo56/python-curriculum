@@ -1,18 +1,18 @@
 # Rebuild Account Balances
 
 ## Description
-Turn a stream of account changes into current balances.
-
-### Behavior contract
-Given a list of event dictionaries with account string, delta integer, and unique id string, return a mapping of account to final integer balance, summing deltas in event order. Accounts with net zero remain present.
+Event-sourced state can be rebuilt by applying recorded changes. Derive each account's current balance from its event deltas.
 
 ## Requirements
 - Implement `project_balances(events)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept events containing `id`, string `account`, and integer `delta` fields; IDs are unique.
+- Accumulate deltas for each account in event order, beginning from zero.
+- Return a dictionary from account names to integer balances.
+- Keep accounts whose net balance is zero in the result.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-A net-zero account should still appear in the projection.
+- Why should an account remain present when its total returns to zero?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`project_balances([{'id': '1', 'account': 'a', 'delta': 3}, {'id': '2', 'account': 'a', 'delta': -3}])` → `{'a': 0}`.
