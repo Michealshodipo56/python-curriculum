@@ -11,6 +11,9 @@ A system-wide health summary should reflect its most severe service condition. C
 - Return `'ok'` when every service is healthy or the list is empty.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+The summary reflects the most severe status, not the most common one. An empty service list has the defined status `ok`.
+
 ## Tips
 - Why should one down service dominate the overall status?
 
