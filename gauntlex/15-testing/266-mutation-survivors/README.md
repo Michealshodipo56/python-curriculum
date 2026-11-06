@@ -1,18 +1,18 @@
 # Undetected Mutations
 
 ## Description
-Identify modified implementations that none of the supplied tests rejected.
-
-### Behavior contract
-Given mapping of mutant_id->list of booleans indicating whether each test passed, return sorted mutant IDs for which all tests passed (including no tests).
+Mutation testing changes a program deliberately to see whether tests detect the change. A mutant survives when every supplied test still passes.
 
 ## Requirements
 - Implement `surviving_mutants(results)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept a mapping from mutant IDs to lists of boolean test outcomes.
+- Return sorted mutant IDs whose entire outcome list contains only `True`.
+- Treat an empty outcome list as surviving, because no test detected the mutant.
+- Return `[]` when no mutants survive.
+- Use Python's standard library only; do not print or mutate inputs.
 
 ## Tips
-A mutation with no tests has not been detected.
+- Why does a mutant with no test outcomes count as undetected?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`surviving_mutants({'m1': [True, True], 'm2': [True, False], 'm3': []})` → `['m1', 'm3']`.
