@@ -11,6 +11,9 @@ Configuration drift can come from changed values, added settings, or removed set
 - Do not mutate either dictionary.
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
+## Design Considerations
+A missing key is not equivalent to a present key whose value is `None`; report the key as changed.
+
 ## Tips
 - Why is missing different from explicitly configured `None`?
 
