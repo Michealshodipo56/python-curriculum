@@ -1,18 +1,17 @@
 # Reject Disorder
 
 ## Description
-Accept an already sorted list unchanged and reject an unsorted one.
-
-### Behavior contract
-Return the original list unchanged when it is nondecreasing; otherwise raise ValueError. Do not mutate input.
+Validation checks a property of existing data; it must not silently repair the data by sorting it.
 
 ## Requirements
 - Implement `validate_sorted(values)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Return the original list unchanged when values are nondecreasing.
+- Raise `ValueError` if any later value is smaller than the previous one.
+- Do not mutate the list or return a sorted copy.
+- Use Python's standard library only; do not print or mutate inputs unless the task explicitly requires capturing output.
 
 ## Tips
-Validation should not quietly repair the caller's data.
+- Why should validation reject rather than repair unordered data?
 
-Work from the contract and edge cases; do not include a finished implementation.
+## Example Behavior
+`validate_sorted([1, 2, 2])` returns the original list; `validate_sorted([2, 1])` raises `ValueError`.
