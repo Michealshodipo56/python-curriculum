@@ -1,18 +1,18 @@
 # Write a Release Note
 
 ## Description
-Generate a short Markdown release announcement from a version and list of changes.
-
-### Behavior contract
-Given version and a list of change descriptions, return Markdown with first line `# Release VERSION`, a blank line, then one `- CHANGE` line per change. End with a newline. For no changes, return only heading and newline.
+Turn a version identifier and change descriptions into a short, predictable Markdown announcement.
 
 ## Requirements
 - Implement `release_notes(version, changes)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Begin with the exact heading `# Release VERSION`.
+- When changes exist, follow the heading with a blank line and one `- CHANGE` line per entry.
+- End the result with a newline.
+- When no changes exist, return only the heading and one newline.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-An empty change list should still produce a valid release heading.
+- Why is the empty-change case formatted differently from a release with entries?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`release_notes('1.0.0', ['Initial release'])` → `'# Release 1.0.0\n\n- Initial release\n'`.
