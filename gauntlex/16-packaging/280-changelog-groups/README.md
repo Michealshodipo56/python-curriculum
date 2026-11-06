@@ -1,18 +1,18 @@
 # Organize Changes
 
 ## Description
-Group change descriptions by category while preserving their original order within each group.
-
-### Behavior contract
-Given [category,description] pairs, return a dictionary mapping each category to descriptions in their original order.
+Release changes can be grouped by category for easier reading without changing the order in which changes were supplied.
 
 ## Requirements
 - Implement `group_changes(entries)` in `starter/solution.py`.
-- Return the specified result; do not print or prompt.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept `[category, description]` pairs.
+- Return a dictionary mapping each category to its list of descriptions.
+- Preserve original description order within each category.
+- Do not discard earlier descriptions when a category repeats.
+- Use Python's standard library only; do not print or mutate caller-owned collections.
 
 ## Tips
-One category can contain many entries, and repeated categories should not replace earlier changes.
+- Why does assigning a new list for every repeated category lose information?
 
-The learner must develop the implementation from the stated contract.
+## Example Behavior
+`group_changes([['fix', 'A'], ['feat', 'B'], ['fix', 'C']])` → `{'fix': ['A', 'C'], 'feat': ['B']}`.
