@@ -1,16 +1,18 @@
-# failure_rate
+# Measure the Failure Rate
 
-## Challenge
-Given a sequence of booleans representing successful test runs, return the fraction of False results. Return 0.0 for empty input.
+## Description
+Repeated test runs can reveal instability. Summarize the proportion of unsuccessful runs rather than the count alone.
 
 ## Requirements
 - Implement `failure_rate(results)` in `starter/solution.py`.
-- Return the specified value or raise the specified exception.
-- Do not mutate input data, print, or require external packages.
-- Use the Python standard library only.
+- Accept a sequence of booleans where `True` means success and `False` means failure.
+- Return the number of failures divided by the number of runs.
+- Return `0.0` when there are no runs.
+- Do not change the results.
+- Use Python's standard library only; do not print or mutate inputs.
 
-## Hints
-Count failures and divide by the total number of runs.
+## Tips
+- Why does a fraction make results comparable across different run counts?
 
-## Run tests
-`python -m pytest tests -q`
+## Example Behavior
+`failure_rate([True, False, False, True])` → `0.5`; `failure_rate([])` → `0.0`.
