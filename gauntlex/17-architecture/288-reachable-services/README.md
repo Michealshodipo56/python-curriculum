@@ -1,18 +1,18 @@
 # Downstream Reachability
 
 ## Description
-Identify every service reachable from a starting service through dependency links.
-
-### Behavior contract
-Given a mapping of service to list of downstream services and a starting service, return sorted reachable service names including the start, even if it is not a key.
+A service dependency graph can show which components may be reached from one starting point. Explore transitively without looping forever.
 
 ## Requirements
 - Implement `reachable_services(graph, start)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept a mapping from service names to lists of downstream services and a start name.
+- Include the start itself, even if it is not a graph key.
+- Return every reachable service name once, sorted alphabetically.
+- Handle cycles without infinite traversal.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Cycles must not cause an infinite traversal.
+- Why must visited services be tracked?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+`reachable_services({'a': ['b'], 'b': ['c']}, 'a')` → `['a', 'b', 'c']`.
