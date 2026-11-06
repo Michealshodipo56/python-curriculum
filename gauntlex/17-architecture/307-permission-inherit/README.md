@@ -1,18 +1,18 @@
 # Inherited Permissions
 
 ## Description
-Collect permissions granted by assigned roles and all their ancestor roles.
-
-### Behavior contract
-Given mapping role->list of permissions, mapping role->list of parent roles, and a list of assigned roles, return sorted unique permissions inherited transitively. Assume the parent-role graph is acyclic.
+Roles can inherit permissions from parent roles. Collect all permissions granted directly or transitively through the hierarchy.
 
 ## Requirements
 - Implement `effective_permissions(role_permissions, parents, assigned)` in `starter/solution.py`.
-- Return the specified result without printing.
-- Use Python's standard library only.
-- Do not mutate caller-owned collections.
+- Accept role-to-permissions mapping, role-to-parent-roles mapping, and assigned roles.
+- Include permissions of every assigned role and all transitive ancestor roles.
+- Assume the parent-role graph is acyclic.
+- Return a sorted list of unique permission strings.
+- Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Tips
-Permissions may be inherited through several levels of the role graph.
+- Why can one role inherit permissions through several levels?
 
-Design your own implementation from the specified behavior.
+## Example Behavior
+If `admin` inherits `editor` and `editor` grants `write`, an assigned `admin` role includes `write`.
