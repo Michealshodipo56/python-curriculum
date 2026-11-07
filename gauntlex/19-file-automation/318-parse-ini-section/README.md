@@ -1,18 +1,18 @@
 # Read an INI Section
 
 ## Description
-Extract configuration entries from one named section of an INI-style document.
-
-### Behavior contract
-Parse a simple INI string and return key/value pairs from the requested section. Section headers are `[name]`; entries are `key=value`; trim surrounding whitespace; skip blank lines and lines starting # or ;. Last duplicate wins. Assume well-formed input.
+Configuration files group assignments under named sections. Read only one section while respecting whitespace and comments.
 
 ## Requirements
 - Implement `parse_ini_section(text, section)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Recognize section headers `[name]` and assignments `key=value` in well-formed text.
+- Trim surrounding whitespace from keys and values.
+- Ignore blank lines and lines beginning `#` or `;`.
+- Return entries from the requested section, with later duplicate keys overriding earlier ones.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Track the active section while processing each line.
+- How can the current section be tracked while reading line by line?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`parse_ini_section('[db]\nhost=local\n[app]\nmode=dev', 'db')` → `{'host': 'local'}`.
