@@ -12,6 +12,9 @@ Rank distinct values by how often they occur, retaining first-seen order when fr
 - Do not mutate inputs or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Frequency ties require a deterministic ordering policy. Keep the count and tie-breaking rules distinct, and consider what should happen when k exceeds the number of distinct values.
+
 ## Tips
 - What two pieces of information must be retained for each distinct value?
 - What happens when `k` exceeds the number of distinct values?
