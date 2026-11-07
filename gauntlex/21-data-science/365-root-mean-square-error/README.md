@@ -1,18 +1,18 @@
 # Penalize Large Errors
 
 ## Description
-Measure prediction error with squared differences before restoring the original units.
-
-### Behavior contract
-Return square root of average squared prediction error for equal-length nonempty sequences. Raise ValueError for mismatched or empty inputs.
+Squaring prediction errors makes larger deviations contribute more strongly to the overall error score.
 
 ## Requirements
 - Implement `root_mean_square_error(actual, predicted)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require nonempty actual and predicted numeric sequences of equal length.
+- Square each paired prediction difference, average those squares, and return the square root.
+- Raise `ValueError` for empty or mismatched sequences.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Squaring gives large errors more influence than small errors.
+- Why does squaring make large errors more influential?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`root_mean_square_error([0, 0], [3, 4])` → approximately `3.5355339`.
