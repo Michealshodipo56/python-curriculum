@@ -11,6 +11,9 @@ Files with different names can contain identical bytes. Group duplicate content 
 - Include only digests associated with more than one supplied path.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Group files by digest of raw bytes, then omit groups containing only one supplied path. Sort path strings within every retained group so the result does not depend on traversal order.
+
 ## Tips
 - Why is file size or filename alone insufficient to identify duplicates?
 
