@@ -11,6 +11,9 @@ Squaring prediction errors makes larger deviations contribute more strongly to t
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Square each paired prediction residual before averaging and taking the square root. This makes large misses more influential than they would be under absolute-error averaging.
+
 ## Tips
 - Why does squaring make large errors more influential?
 
