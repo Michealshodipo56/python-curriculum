@@ -1,18 +1,18 @@
 # Standardize Observations
 
 ## Description
-Transform values relative to their population mean and standard deviation.
-
-### Behavior contract
-Standardize a list of numeric values using population standard deviation (divide variance by n). Return [] for empty input, and all zeros for zero variance.
+Express each observation relative to the population's center and spread, rather than its original units.
 
 ## Requirements
 - Implement `z_score_scale(values)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Calculate the population mean and population standard deviation (variance divided by `n`).
+- Return each value's deviation from the mean divided by that standard deviation.
+- Return `[]` for empty input and zeros for zero variance.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-A zero-variance dataset requires a defined result.
+- How does population variance differ from sample variance?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`z_score_scale([2, 2, 2])` → `[0.0, 0.0, 0.0]`.
