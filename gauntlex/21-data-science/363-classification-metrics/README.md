@@ -11,6 +11,9 @@ Different evaluation metrics capture different kinds of classification performan
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Derive each measure from the relevant counts rather than assuming all metrics share a denominator. Return `0.0` for undefined zero-denominator cases, including an empty sample.
+
 ## Tips
 - Why can precision and recall disagree for the same classifier?
 
