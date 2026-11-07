@@ -10,6 +10,9 @@ WSGI applications receive request metadata and a callback for response headers. 
 - Do not depend on any particular request path.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+A WSGI application reports status and headers through `start_response`, then returns an iterable of byte chunks. Do not make the health response depend on the path or return a plain string.
+
 ## Tips
 - Why must the response body contain bytes rather than a Python string?
 
