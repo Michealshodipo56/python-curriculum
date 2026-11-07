@@ -11,6 +11,9 @@ GET retrieves a resource body, while HEAD requests only response metadata. Suppo
 - Return HTTP 404 for other paths.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Preserve the route's successful status and response metadata for HEAD while omitting its body. GET and HEAD differ in representation delivery, not in whether the resource exists.
+
 ## Tips
 - Why does HEAD omit a body even when the resource exists?
 
