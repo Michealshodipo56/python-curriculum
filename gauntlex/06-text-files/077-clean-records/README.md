@@ -1,21 +1,21 @@
 # Keep Valid Records
 
 ## Description
-Clean a collection of record dictionaries by retaining only entries with meaningful names.
+Imported records may have missing names or names containing only whitespace. Keep usable records while normalizing their names and preserving other fields.
 
 ## Requirements
 - Implement `clean_records(records)` in `starter/solution.py`.
-- Return the result to the caller without printing or requesting interactive input.
-- Handle the boundary cases implied by the examples and description.
-- Use Python's standard library only.
-- Preserve caller-owned input values and collections.
+- Accept a sequence of record dictionaries.
+- Discard records without a meaningful `name` value after trimming surrounding whitespace.
+- Return cleaned records in their original order, trimming retained names and preserving their other fields.
+- Do not modify any original record dictionaries.
+- Use Python's standard library only. Do not mutate caller-owned inputs.
+
+## Tips
+- How can you check whether a name remains meaningful after trimming?
+- Why should output records be distinct from caller-owned dictionaries?
 
 ## Example Behavior
 `clean_records([{"name": " Ada ", "age": 3}, {"name": " "}, {"age": 4}])` → `[{"name": "Ada", "age": 3}]`
 
 `clean_records([])` → `[]`
-
-## Tips
-- Identify the expected input, output, and failure or empty-data behavior before implementing the function.
-- Check the exact behavior at boundaries, not only typical inputs.
-Preserve other fields and avoid changing the caller's original dictionaries.
