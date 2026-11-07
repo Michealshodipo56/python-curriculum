@@ -10,6 +10,9 @@ WSGI represents HTTP request headers through environment keys. Expose a selected
 - Respond with HTTP 200 and `Content-Type: text/plain`.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+WSGI request headers appear as environment variables, commonly with an `HTTP_` prefix. Handle an absent user-agent header as an empty response rather than raising an error.
+
 ## Tips
 - How do HTTP header names become WSGI environment keys?
 
