@@ -12,6 +12,9 @@ Exponential smoothing balances a new observation with the previous smoothed esti
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Initialize the smoothed sequence from the first observation, then combine each later raw value with the previous smoothed result. The parameter bounds keep the recurrence meaningful.
+
 ## Tips
 - Why must the recurrence use the previous smoothed value rather than the previous raw observation?
 
