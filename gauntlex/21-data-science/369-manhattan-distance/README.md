@@ -1,18 +1,18 @@
 # City-Block Distance
 
 ## Description
-Sum absolute coordinate differences between two vectors.
-
-### Behavior contract
-Return the sum of absolute coordinate differences between equal-length numeric vectors. Empty vectors return 0; mismatched lengths raise ValueError.
+Some distances are measured by adding coordinate-wise travel rather than following a straight line.
 
 ## Requirements
 - Implement `manhattan_distance(a, b)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length numeric vectors; raise `ValueError` on mismatch.
+- Return the sum of absolute differences between corresponding coordinates.
+- Return `0` for two empty vectors.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Unlike Euclidean distance, this measure does not square differences.
+- How does this distance differ from Euclidean distance on a two-dimensional grid?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`manhattan_distance([0, 0], [3, 4])` → `7`.
