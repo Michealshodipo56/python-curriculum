@@ -1,19 +1,18 @@
 # Protect a Private Route
 
 ## Description
-Require a valid bearer token before returning a protected resource.
-
-### Behavior contract
-Implement GET `/private` requiring Authorization header `Bearer secret-token` (scheme case-insensitive). Valid authorization returns 200 and body `welcome`; otherwise 401 and body `unauthorized`. Use a timing-resistant token comparison.
+A private endpoint must verify a bearer credential before releasing its content. Validate the authorization scheme and compare the secret safely.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- For GET `/private`, require Authorization `Bearer secret-token`.
+- Treat the `Bearer` scheme case-insensitively.
+- Use a timing-resistant comparison for the token.
+- Return HTTP 200 with body `welcome` on success, or HTTP 401 with body `unauthorized` otherwise.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Compare secrets without revealing where two token strings differ.
+- Why should token comparison avoid leaking information through timing differences?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+`Authorization: bearer secret-token` → HTTP 200; an incorrect token → HTTP 401.
