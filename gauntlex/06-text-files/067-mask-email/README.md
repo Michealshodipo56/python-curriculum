@@ -1,21 +1,20 @@
 # Protect the Address
 
 ## Description
-Hide the sensitive portion of an email address while leaving enough information to recognize its structure.
+When displaying an address publicly, conceal most of the local part while keeping its first character and domain recognizable.
 
 ## Requirements
 - Implement `mask_email(email)` in `starter/solution.py`.
-- Return the result to the caller without printing or requesting interactive input.
-- Handle the boundary cases implied by the examples and description.
-- Use Python's standard library only.
-- Preserve caller-owned input values and collections.
+- Preserve the domain and `@` separator in the returned address.
+- For a local part longer than one character, keep its first character and replace each remaining character with `*`.
+- Keep a one-character local part visible as shown in the examples.
+- Use Python's standard library only. Return values without printing or requesting input; do not mutate caller-owned inputs.
+
+## Tips
+- Which characters identify the domain and must remain unchanged?
+- How does the result differ for a one-character local part?
 
 ## Example Behavior
 `mask_email("alice@example.com")` → `"a****@example.com"`
 
 `mask_email("x@y.io")` → `"x@y.io"`
-
-## Tips
-- Identify the input type, output type, and exact format before implementing the function.
-- Consider empty or minimal input alongside the supplied examples.
-Which part of the address should remain untouched? Consider a one-character local part.
