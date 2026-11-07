@@ -1,19 +1,18 @@
 # Serialize a Web Response
 
 ## Description
-Return a stable JSON representation with the correct content type.
-
-### Behavior contract
-Implement GET `/data` returning compact sorted-key JSON bytes of `{"name":"Gauntlex","ready":true}` with Content-Type application/json and 200 status. Other paths return 404 and empty bytes.
+A JSON API must serialize Python data into valid compact JSON and label its response correctly.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- For GET `/data`, return HTTP 200 and `Content-Type: application/json`.
+- Serialize `{"name":"Gauntlex","ready":true}` as compact JSON with sorted keys.
+- Return the encoded bytes.
+- For other paths, return HTTP 404 with an empty body.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-JSON Boolean spelling differs from Python Boolean spelling.
+- Why is Python's `True` not the same literal as JSON's `true`?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+GET `/data` → `b'{"name":"Gauntlex","ready":true}'`.
