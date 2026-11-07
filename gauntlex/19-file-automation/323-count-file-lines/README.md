@@ -1,18 +1,18 @@
 # Count File Records
 
 ## Description
-Count logical lines in a UTF-8 text file, including an unterminated final line.
-
-### Behavior contract
-Return the number of logical text lines in a UTF-8 file. A nonempty final line without a newline counts as one; empty file has zero lines. Universal newline handling is allowed.
+A logical line may end with a newline or at end-of-file. Count both forms correctly when reading UTF-8 text.
 
 ## Requirements
 - Implement `count_file_lines(path)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Read a UTF-8 text file.
+- Return the number of logical lines, including a final nonempty line without a newline.
+- Return zero for an empty file.
+- Universal newline handling is permitted.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-An empty file contains no lines; a nonempty final line counts even without a newline.
+- Why does counting newline characters alone miss some final lines?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+A file containing `alpha\nbeta` has two logical lines; an empty file has zero.
