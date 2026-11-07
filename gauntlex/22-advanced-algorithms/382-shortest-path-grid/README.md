@@ -12,6 +12,9 @@ Navigate a rectangular grid from its upper-left corner to its lower-right corner
 - Do not mutate the grid or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Treat passable grid cells as vertices with moves between adjacent cells. Breadth-first exploration finds shortest routes in an unweighted grid, while blocked or unreachable destinations need explicit handling.
+
 ## Tips
 - Why does exploring reachable cells by distance layers find a shortest route?
 - How many moves does a single open cell require?
