@@ -1,18 +1,18 @@
 # Weighted Observations
 
 ## Description
-Calculate a mean where each value has an explicitly assigned importance.
-
-### Behavior contract
-Return sum(value*weight)/sum(weights) for equal-length nonempty lists. Weights must be nonnegative with positive total. Raise ValueError otherwise.
+Some observations contribute more to a summary than others. Compute a mean that respects their supplied nonnegative weights.
 
 ## Requirements
 - Implement `weighted_mean(values, weights)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length nonempty value and weight sequences.
+- Reject negative weights and a zero total weight with `ValueError`.
+- Return the sum of value-times-weight products divided by the sum of weights.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Reject zero total weight rather than dividing by it.
+- What happens if every weight is zero?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`weighted_mean([10, 20], [1, 3])` → `17.5`.
