@@ -12,6 +12,9 @@ Large datasets are often processed in smaller consecutive groups. Preserve all o
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Partition consecutive observations without overlap or omission. Keep the last smaller batch when the input length is not divisible by the requested positive batch size.
+
 ## Tips
 - Why should a partially filled final batch not be discarded?
 
