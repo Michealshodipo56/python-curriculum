@@ -1,18 +1,19 @@
 # Hold Out Examples
 
 ## Description
-Divide a dataset into training and evaluation portions without shuffling.
-
-### Behavior contract
-Given a sequence and a test_fraction in [0,1], return [training_items,test_items] with original order preserved. Test size is floor(len(items)*test_fraction); take test items from the end. Raise ValueError for invalid fractions.
+Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
 
 ## Requirements
 - Implement `train_test_split(items, test_fraction)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require `test_fraction` between `0` and `1` inclusive; otherwise raise `ValueError`.
+- Use `floor(len(items) * test_fraction)` as the test count.
+- Take test items from the end and return `[training_items, test_items]`.
+- Preserve item order in both groups.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-The held-out portion comes from the end, and its size follows the specified rounding rule.
+- Why does choosing the final observations matter for reproducibility?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`train_test_split([1, 2, 3, 4], 0.25)` → `[[1, 2, 3], [4]]`.
