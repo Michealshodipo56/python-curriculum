@@ -6,6 +6,7 @@ on:
     paths:
       - "gauntlex/**/README.md"
       - "tools/build_gauntlex_master.py"
+      - "scripts/audit_readme_contracts.py"
       - ".github/workflows/publish-curriculum.yml"
   workflow_dispatch:
 
@@ -23,7 +24,6 @@ jobs:
         with:
           python-version: "3.11"
       - name: Report README and starter inconsistencies
-        continue-on-error: true
         run: python scripts/audit_readme_contracts.py
       - name: Assemble the 409 learner assignments
         run: python tools/build_gauntlex_master.py
