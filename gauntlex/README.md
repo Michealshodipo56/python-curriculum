@@ -1,6 +1,6 @@
-# Gauntlex Python Piscine — work in progress
+# Gauntlex Python Piscine — 409 Challenge Learning Path
 
-Original problem-first Gauntlex assignments live here. The original four source submodules and review files remain intact.
+This directory contains 409 problem-first Python challenges across 23 sections. Each challenge has a learner-facing README, metadata, an incomplete starter, and acceptance checks. The source repositories remain linked for provenance; internal review artifacts are not part of the learner curriculum.
 
 ## Foundations sequence
 
