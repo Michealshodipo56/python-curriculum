@@ -11,6 +11,9 @@ A logical line may end with a newline or at end-of-file. Count both forms correc
 - Universal newline handling is permitted.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Count logical records rather than raw newline characters: a final nonempty segment is a line even without a trailing newline. Empty input must not become one phantom line.
+
 ## Tips
 - Why does counting newline characters alone miss some final lines?
 
