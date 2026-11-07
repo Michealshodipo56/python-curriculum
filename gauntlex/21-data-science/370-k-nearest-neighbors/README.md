@@ -1,18 +1,19 @@
 # Find Nearby Examples
 
 ## Description
-Rank data vectors by distance to a query, using original position to resolve ties.
-
-### Behavior contract
-Given a list of numeric vectors, a query vector and nonnegative integer k, return indices of the k nearest vectors by squared Euclidean distance, breaking ties by lower original index. Raise ValueError if dimensions differ or k<0. k may exceed dataset length.
+Nearest-neighbor search ranks examples by their distance from a query, with deterministic tie-breaking.
 
 ## Requirements
 - Implement `nearest_indices(vectors, query, k)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Accept a list of numeric vectors, a query vector, and nonnegative integer `k`.
+- Compare each vector using squared Euclidean distance to the query.
+- Return indices of the nearest `k` vectors, breaking equal-distance ties by lower original index.
+- Raise `ValueError` for mismatched dimensions or negative `k`; allow `k` greater than the dataset length.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Squared distance preserves ordering and avoids an unnecessary square root.
+- Why is the square root unnecessary when ranking distances?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`nearest_indices([[0], [2], [4]], [3], 2)` → `[1, 2]`.
