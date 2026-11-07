@@ -1,18 +1,18 @@
 # Select File Types
 
 ## Description
-Filter filenames by their final extension while preserving the original order.
-
-### Behavior contract
-Given a list of filenames and a suffix, return filenames whose final suffix matches case-insensitively, preserving order. The suffix must include the dot.
+Filter a sequence of filenames by final extension without changing the filenames or their order.
 
 ## Requirements
 - Implement `filter_suffix(names, suffix)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Accept filenames and a suffix that includes its leading dot.
+- Match the final suffix case-insensitively.
+- Return the original matching filenames in input order.
+- Do not match a similar substring that is not the final suffix.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Match the final suffix, not a similar substring elsewhere in the name.
+- Why should `report.csv.bak` not match a `.csv` filter?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`filter_suffix(['A.CSV', 'b.txt', 'c.csv'], '.csv')` → `['A.CSV', 'c.csv']`.
