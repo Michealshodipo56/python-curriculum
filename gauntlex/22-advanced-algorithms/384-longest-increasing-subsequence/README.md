@@ -1,18 +1,19 @@
 # Increasing Subsequence
 
 ## Description
-Find the length of the longest strictly increasing subsequence within a target efficiency.
-
-### Behavior contract
-Return the length of the longest strictly increasing subsequence of integer values. Empty input returns zero. Target O(n log n) time.
+Find the maximum length of a strictly increasing subsequence while preserving the original relative order. Elements in a subsequence need not be adjacent.
 
 ## Requirements
 - Implement `lis_length(values)` in `starter/solution.py`.
+- Return the length of the longest strictly increasing subsequence of integer values.
+- Equal consecutive chosen values do not count as increasing.
+- Return `0` for empty input.
+- Target O(n log n) time; do not mutate inputs or print.
 - Use Python's standard library only.
-- Do not mutate inputs or print.
-- Respect the specified asymptotic complexity.
 
 ## Tips
-A subsequence need not be contiguous, but its elements must retain original order.
+- How is a subsequence different from a contiguous substring?
+- What compact information could represent promising subsequences without storing them all?
 
-The task is to design an implementation that meets both behavior and efficiency requirements.
+## Example Behavior
+`lis_length([10, 9, 2, 5, 3, 7, 101, 18])` → `4`; `lis_length([])` → `0`.
