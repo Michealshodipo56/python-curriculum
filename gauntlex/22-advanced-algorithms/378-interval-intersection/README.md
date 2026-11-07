@@ -11,6 +11,9 @@ Find every region shared by two ordered interval collections. Each collection al
 - Do not mutate either input or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Use the overlap between the later start and earlier end of two candidate intervals. Move past the interval that finishes first so no possible intersection is skipped.
+
 ## Tips
 - Which of two current intervals can no longer overlap later intervals?
 - When is the overlap a single point rather than an empty interval?
