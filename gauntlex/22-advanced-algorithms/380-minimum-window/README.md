@@ -11,6 +11,9 @@ Find the shortest contiguous part of a string that covers every required charact
 - Do not mutate inputs or print.
 - Use Python's standard library only.
 
+## Design Considerations
+A valid window must cover every required character with its required multiplicity, not merely contain the set of characters. Shrink valid windows to find the shortest qualifying span.
+
 ## Tips
 - Why is a set of required characters insufficient for repeated letters?
 - When can the left edge of a valid window be advanced safely?
