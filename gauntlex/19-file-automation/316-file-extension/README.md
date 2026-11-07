@@ -10,6 +10,9 @@ A file's final suffix can identify its type, but hidden files beginning with a d
 - Return `''` when there is no extension.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Distinguish the leading dot used to hide a file from the separator introducing its final suffix. Preserve only the extension in the return value and normalize its case.
+
 ## Tips
 - How does `.env` differ from `.env.local`?
 
