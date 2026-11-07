@@ -1,18 +1,18 @@
 # First Strictly Greater
 
 ## Description
-Find the earliest position where a sorted value is greater than a target.
-
-### Behavior contract
-Return the first index in sorted ascending values where element > target, or len(values) if none. Must use O(log n) comparisons.
+Locate the insertion boundary immediately after all values equal to a target in an ascending sequence. Unlike a lower bound, equality must remain on the left of the answer.
 
 ## Requirements
 - Implement `upper_bound(values, target)` in `starter/solution.py`.
+- Assume ascending sorted values, including possible duplicates.
+- Return the first index whose value is strictly greater than `target`; return `len(values)` when no such element exists.
+- Use O(log n) comparisons; do not mutate inputs or print.
 - Use Python's standard library only.
-- Do not mutate inputs or print.
-- Respect the specified asymptotic complexity.
 
 ## Tips
-Equality changes which half of the search interval can be discarded.
+- How should an equality comparison affect the search interval?
+- What index should an empty sequence return?
 
-The task is to design an implementation that meets both behavior and efficiency requirements.
+## Example Behavior
+`upper_bound([1, 2, 2, 5], 2)` → `3`; `upper_bound([], 2)` → `0`.
