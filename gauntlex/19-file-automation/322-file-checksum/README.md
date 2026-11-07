@@ -11,6 +11,9 @@ Large files should be hashed without loading all bytes into memory. Compute a co
 - Do not modify the file.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Process binary data in bounded chunks and update one ongoing hash state. A checksum must depend on the exact file bytes, including newline encodings, rather than decoded text.
+
 ## Tips
 - Why must binary file bytes be hashed without text conversion?
 
