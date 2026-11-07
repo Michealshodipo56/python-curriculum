@@ -11,6 +11,9 @@ WSGI middleware surrounds an existing application without replacing its business
 - Do not consume or alter the wrapped application's body iterable.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Wrap `start_response` to append the required header once while preserving the wrapped application's status and other headers. Forward its body iterable without eagerly consuming or changing it.
+
 ## Tips
 - Why should middleware return the original iterable rather than reading it eagerly?
 
