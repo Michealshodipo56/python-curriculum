@@ -8903,6 +8903,9 @@ Search a sorted collection for the first position at which a target could be ins
 - Use O(log n) comparisons; do not mutate the input or print output.
 - Use Python's standard library only.
 
+## Design Considerations
+Maintain a half-open search interval whose left boundary is the earliest possible valid insertion point. Equal elements must push the search toward earlier positions, not terminate it.
+
 ## Tips
 - What does the boundary mean when all elements are smaller than the target?
 - Which half can be discarded when a middle value equals the target?
@@ -8923,6 +8926,9 @@ Locate the insertion boundary immediately after all values equal to a target in 
 - Return the first index whose value is strictly greater than `target`; return `len(values)` when no such element exists.
 - Use O(log n) comparisons; do not mutate inputs or print.
 - Use Python's standard library only.
+
+## Design Considerations
+Locate the first element strictly greater than the target; equality belongs on the left side of the insertion boundary. Empty input and all-equal sequences are important boundary cases.
 
 ## Tips
 - How should an equality comparison affect the search interval?
@@ -8946,6 +8952,9 @@ Combine a collection of inclusive integer ranges into a canonical, sorted set of
 - Do not mutate input intervals or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Sort by interval start before combining overlaps, and preserve the intended treatment of touching endpoints. Keep the output ordered and avoid modifying caller-owned intervals.
+
 ## Tips
 - Why is sorting useful before merging?
 - Why do `[1, 2]` and `[3, 4]` merge under this contract?
@@ -8967,6 +8976,9 @@ Find every region shared by two ordered interval collections. Each collection al
 - An intersection consisting of one shared endpoint counts.
 - Do not mutate either input or print.
 - Use Python's standard library only.
+
+## Design Considerations
+Use the overlap between the later start and earlier end of two candidate intervals. Move past the interval that finishes first so no possible intersection is skipped.
 
 ## Tips
 - Which of two current intervals can no longer overlap later intervals?
@@ -8990,6 +9002,9 @@ Measure the longest contiguous stretch of Unicode text in which no character rep
 - Do not print or mutate inputs.
 - Use Python's standard library only.
 
+## Design Considerations
+Track a contiguous window containing no repeated characters. When a repeated character appears, adjust the left boundary without revisiting every earlier substring.
+
 ## Tips
 - How can the left edge of a valid window move when a repeated character appears?
 - What information about earlier occurrences would avoid rescanning?
@@ -9011,6 +9026,9 @@ Find the shortest contiguous part of a string that covers every required charact
 - Return `''` when no qualifying window exists or when the pattern is empty.
 - Do not mutate inputs or print.
 - Use Python's standard library only.
+
+## Design Considerations
+A valid window must cover every required character with its required multiplicity, not merely contain the set of characters. Shrink valid windows to find the shortest qualifying span.
 
 ## Tips
 - Why is a set of required characters insufficient for repeated letters?
@@ -9035,6 +9053,9 @@ Rank distinct values by how often they occur, retaining first-seen order when fr
 - Do not mutate inputs or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Frequency ties require a deterministic ordering policy. Keep the count and tie-breaking rules distinct, and consider what should happen when k exceeds the number of distinct values.
+
 ## Tips
 - What two pieces of information must be retained for each distinct value?
 - What happens when `k` exceeds the number of distinct values?
@@ -9057,6 +9078,9 @@ Navigate a rectangular grid from its upper-left corner to its lower-right corner
 - Return `-1` for an empty grid, blocked endpoint, or unreachable destination.
 - Do not mutate the grid or print.
 - Use Python's standard library only.
+
+## Design Considerations
+Treat passable grid cells as vertices with moves between adjacent cells. Breadth-first exploration finds shortest routes in an unweighted grid, while blocked or unreachable destinations need explicit handling.
 
 ## Tips
 - Why does exploring reachable cells by distance layers find a shortest route?
@@ -9081,6 +9105,9 @@ Determine the least total cost from a starting node to every reachable node in a
 - Do not mutate the graph or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Relax candidate distances only when a shorter route is found. Nonnegative edge weights are essential for Dijkstra's correctness, and unreachable vertices should retain the specified sentinel.
+
 ## Tips
 - Why can a later route improve an earlier tentative distance?
 - What should happen to a reachable neighbor absent from the graph's keys?
@@ -9102,6 +9129,9 @@ Find the maximum length of a strictly increasing subsequence while preserving th
 - Return `0` for empty input.
 - Target O(n log n) time; do not mutate inputs or print.
 - Use Python's standard library only.
+
+## Design Considerations
+Increasing means strictly greater, so equal values cannot extend a subsequence. Preserve the original order of selected elements even though they need not be adjacent.
 
 ## Tips
 - How is a subsequence different from a contiguous substring?
