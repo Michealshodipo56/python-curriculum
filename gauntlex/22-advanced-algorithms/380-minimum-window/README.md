@@ -1,18 +1,19 @@
 # Smallest Covering Substring
 
 ## Description
-Find the shortest substring containing all required characters with their multiplicities.
-
-### Behavior contract
-Return the shortest substring of text containing all characters in pattern with required multiplicities. If no window exists, return empty string. On equal-length windows, return the leftmost. Empty pattern returns empty string.
+Find the shortest contiguous part of a string that covers every required character, including repeated requirements. If several shortest windows qualify, choose the earliest.
 
 ## Requirements
 - Implement `minimum_window(text, pattern)` in `starter/solution.py`.
-- Use Python's standard library only.
+- The selected substring must contain every character of `pattern` at least as many times as it occurs there.
+- Return the shortest qualifying substring; break equal-length ties by leftmost position.
+- Return `''` when no qualifying window exists or when the pattern is empty.
 - Do not mutate inputs or print.
-- Respect the specified asymptotic complexity.
+- Use Python's standard library only.
 
 ## Tips
-Character presence is not enough when a pattern repeats a character.
+- Why is a set of required characters insufficient for repeated letters?
+- When can the left edge of a valid window be advanced safely?
 
-The task is to design an implementation that meets both behavior and efficiency requirements.
+## Example Behavior
+`minimum_window('ADOBECODEBANC', 'ABC')` → `'BANC'`; `minimum_window('a', 'aa')` → `''`.
