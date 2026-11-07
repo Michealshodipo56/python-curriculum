@@ -1,19 +1,18 @@
 # Wrap an Application
 
 ## Description
-Add one response header around an existing WSGI application without changing its behavior.
-
-### Behavior contract
-Implement a WSGI middleware factory taking an application callable and returning a WSGI application that forwards requests and responses unchanged except for appending header `X-Powered-By: Gauntlex` exactly once. Do not consume or alter the body iterable.
+WSGI middleware surrounds an existing application without replacing its business logic. Add response metadata while forwarding the original body untouched.
 
 ## Requirements
 - Implement `wrap_app(app)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- Implement `wrap_app(app)` to return a WSGI callable.
+- Forward incoming environment and the wrapped application's response behavior.
+- Append `X-Powered-By: Gauntlex` exactly once to response headers.
+- Do not consume or alter the wrapped application's body iterable.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Middleware should forward the original body iterable rather than consuming it.
+- Why should middleware return the original iterable rather than reading it eagerly?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+A wrapped app's original response body remains unchanged, while headers include exactly one `X-Powered-By: Gauntlex`.
