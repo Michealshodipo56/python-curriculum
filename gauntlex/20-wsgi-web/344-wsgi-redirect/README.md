@@ -10,6 +10,9 @@ When a resource moves, a redirect tells clients where to request it next. Preser
 - Other paths return HTTP 404.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+A redirect requires both the redirect status and a `Location` header naming the new path. Keep the destination's ordinary success response separate from the old path.
+
 ## Tips
 - Why is a Location header needed in addition to a 302 status?
 
