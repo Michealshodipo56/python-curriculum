@@ -11,6 +11,9 @@ Log rotation can be planned as a deterministic sequence of backup names. This ex
 - Do not create, rename, or delete files.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Generate a predictable ordered plan without touching the filesystem. The numeric suffix sequence starts at one and ends at the requested positive backup count.
+
 ## Tips
 - Why is separating a rotation plan from actual file operations useful?
 
