@@ -1,18 +1,19 @@
 # Smooth with Windows
 
 ## Description
-Compute averages across consecutive windows of a fixed size.
-
-### Behavior contract
-Return floating-point averages of each consecutive window of positive integer size k. If k exceeds the list length, return []. Raise ValueError for k<1.
+A moving average summarizes adjacent observations and smooths short-term fluctuations without changing their sequence.
 
 ## Requirements
 - Implement `moving_average(values, k)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Accept a sequence and positive integer window size `k`.
+- Return floating-point averages for each consecutive window of exactly `k` observations.
+- Return `[]` when `k` exceeds the sequence length.
+- Raise `ValueError` when `k < 1`.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Each new window shares most of its observations with the previous one.
+- How does the next window differ from the previous window?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`moving_average([2, 4, 6, 8], 2)` → `[3.0, 5.0, 7.0]`.
