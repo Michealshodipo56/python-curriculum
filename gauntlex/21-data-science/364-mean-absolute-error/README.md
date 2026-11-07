@@ -12,6 +12,9 @@ Prediction errors above and below the target should not cancel. Measure the aver
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Take the absolute magnitude of each paired residual before averaging, so overprediction and underprediction cannot cancel. Require at least one matched observation.
+
 ## Tips
 - Why is taking absolute values necessary before averaging?
 
