@@ -10,6 +10,9 @@ Locate the insertion boundary immediately after all values equal to a target in 
 - Use O(log n) comparisons; do not mutate inputs or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Locate the first element strictly greater than the target; equality belongs on the left side of the insertion boundary. Empty input and all-equal sequences are important boundary cases.
+
 ## Tips
 - How should an equality comparison affect the search interval?
 - What index should an empty sequence return?
