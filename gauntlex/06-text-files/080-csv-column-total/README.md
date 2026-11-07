@@ -1,15 +1,16 @@
 # Sum a CSV Column
 
 ## Description
-Process a CSV table with a header and add the valid integer values in a chosen column.
+CSV reports often reorder columns and contain cells that cannot be used as numbers. Locate the requested column by its header and accumulate valid integer values.
 
 ## Requirements
 - Implement `csv_column_total(path, column)` in `starter/solution.py`.
-- Return the result to the caller; do not print it or request interactive input.
-- Use Python's standard library and UTF-8 encoding.
-- File paths are provided by the caller; do not hardcode locations.
+- Accept the CSV file path and the name of the column to total.
+- Read the CSV with UTF-8 encoding and identify the target column by its header, not a fixed index.
+- Add valid integer values from that column and return the numeric total.
+- Do not hardcode paths, print results, or alter the input file.
+- Use Python's standard library only. Do not mutate caller-owned inputs.
 
 ## Tips
-- Identify the expected input, output, and failure or empty-data behavior before implementing the function.
-- Check the exact behavior at boundaries, not only typical inputs.
-Identify the requested column by its header rather than relying on a fixed position.
+- What happens when the requested column moves to another position?
+- How should empty or noninteger cells affect the running total?
