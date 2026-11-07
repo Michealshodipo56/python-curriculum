@@ -11,6 +11,9 @@ Structured data often contains nested mappings. Navigate a dot-separated key pat
 - Do not interpret numeric components as list indices.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+At each path component, verify that the current value is a dictionary before attempting key lookup. A dictionary key containing digits is still a key, never a list position.
+
 ## Tips
 - Why should a missing intermediate key stop traversal?
 
