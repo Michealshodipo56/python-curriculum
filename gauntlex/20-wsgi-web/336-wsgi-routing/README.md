@@ -1,19 +1,18 @@
 # Route by Path
 
 ## Description
-Choose an HTTP response according to the path supplied in the WSGI environment.
-
-### Behavior contract
-Implement a WSGI callable routing PATH_INFO `/health` to 200 with body `ok`, and all other paths to 404 with body `not found`. Return Content-Type text/plain; charset=utf-8.
+A web service chooses responses using the request path. Distinguish a known health route from all other locations.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- Read `PATH_INFO` from the WSGI environment.
+- For `/health`, return HTTP 200 with body `ok`.
+- For other paths, return HTTP 404 with body `not found`.
+- Use `Content-Type: text/plain; charset=utf-8`.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Unknown paths should not accidentally receive the success response.
+- Why should an unknown route not share the health route's success status?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+`/health` → `200` and `b'ok'`; `/missing` → `404` and `b'not found'`.
