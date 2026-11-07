@@ -1,18 +1,18 @@
 # Rebuild Nested JSON
 
 ## Description
-Reconstruct nested dictionaries from a mapping of dot-separated key paths.
-
-### Behavior contract
-Given a flat mapping of dot-separated paths to leaf values, construct nested dictionaries. Assume no paths conflict (e.g. a and a.b), and keys are nonempty.
+Reverse a flat mapping of dotted paths into nested dictionaries, creating intermediate containers only where needed.
 
 ## Requirements
 - Implement `unflatten_json(data)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Accept flat keys made of nonempty dot-separated components.
+- Construct nested dictionaries for intermediate path components.
+- Assign each original leaf value at its final component.
+- Assume no conflicting paths such as `a` and `a.b`.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Create intermediate mappings only when needed.
+- What intermediate structure is needed for a key with three components?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`unflatten_json({'a.b': 2, 'a.c': 3})` → `{'a': {'b': 2, 'c': 3}}`.
