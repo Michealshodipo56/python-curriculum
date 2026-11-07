@@ -11,6 +11,9 @@ A CSV file may repeat complete data rows. Count distinct parsed records while ex
 - Do not count the header as a data row.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Compare the entire parsed row, not the original CSV text or one selected field. Identical rows count once regardless of where they occur, while the header is never a data record.
+
 ## Tips
 - Why is comparing only one field insufficient for full-row deduplication?
 
