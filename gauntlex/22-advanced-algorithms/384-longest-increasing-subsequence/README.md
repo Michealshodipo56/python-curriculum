@@ -11,6 +11,9 @@ Find the maximum length of a strictly increasing subsequence while preserving th
 - Target O(n log n) time; do not mutate inputs or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Increasing means strictly greater, so equal values cannot extend a subsequence. Preserve the original order of selected elements even though they need not be adjacent.
+
 ## Tips
 - How is a subsequence different from a contiguous substring?
 - What compact information could represent promising subsequences without storing them all?
