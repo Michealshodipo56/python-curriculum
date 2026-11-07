@@ -1,9 +1,11 @@
 # Immutable Coordinates
 
 ## Description
+
 A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
 
 ## Requirements
+
 - Define `Point(x, y)` in `starter/solution.py`.
 - Store the point's `x` and `y` coordinates.
 - Prevent assignments that change either coordinate after construction.
@@ -12,9 +14,10 @@ A point identifies a fixed location in two-dimensional space. Create a class who
 - Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
+
 - What distinguishes an immutable object from an ordinary mutable one?
 - How can horizontal and vertical differences determine distance?
-- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
 ## Example Behavior
+
 The distance from `Point(0, 0)` to `Point(3, 4)` is `5`; assigning a new `x` afterward must fail.

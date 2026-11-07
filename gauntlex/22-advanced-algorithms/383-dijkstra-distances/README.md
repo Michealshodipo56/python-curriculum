@@ -1,9 +1,11 @@
 # Weighted Shortest Paths
 
 ## Description
+
 Determine the least total cost from a starting node to every reachable node in a directed weighted graph. A path discovered first is not necessarily the cheapest.
 
 ## Requirements
+
 - Implement `dijkstra_distances(graph, start)` in `starter/solution.py`.
 - `graph` maps hashable nodes to lists of `[neighbor, weight]` edges; all valid weights are nonnegative.
 - Return a mapping from each reachable node to its minimum total distance, including `start: 0`.
@@ -13,11 +15,14 @@ Determine the least total cost from a starting node to every reachable node in a
 - Use Python's standard library only.
 
 ## Design Considerations
-Relax candidate distances only when a shorter route is found. Nonnegative edge weights are essential for Dijkstra's correctness, and unreachable vertices should retain the specified sentinel.
+
+Relax candidate distances only when a shorter route is found. Nonnegative edge weights are essential for Dijkstra's correctness, and unreachable vertices must be omitted from the returned mapping.
 
 ## Tips
+
 - Why can a later route improve an earlier tentative distance?
 - What should happen to a reachable neighbor absent from the graph's keys?
 
 ## Example Behavior
+
 `dijkstra_distances({'A': [['B', 5], ['C', 1]], 'C': [['B', 2]]}, 'A')` → `{'A': 0, 'C': 1, 'B': 3}`.

@@ -1,6 +1,428 @@
-# Python Curriculum — Verified Learning Order
+# Gauntlex Python — Curriculum Order
 
-> This is the canonical easiest-to-hardest arrangement for Gauntlex integration. Read it top to bottom. Every listed task points to its pinned authored source; solutions and answer keys are deliberately excluded.
+**409 authored challenges across 23 sections.** Follow the numeric IDs below; titles and paths are taken from the challenge READMEs.
+
+[Learning guidance](GAUNTLEX_LEARNING_PATH.md) · [Full text](GAUNTLEX_PYTHON_CURRICULUM.md) · [Audit report](CURRICULUM_AUDIT_REPORT.md)
+
+Core projects 311–314 precede the extension tracks, preserving the explicit 314 → 315 prerequisite. Final projects 405–409 complete the path. No challenge directories have been renumbered or moved.
+
+| ID | Section | Challenge |
+|---|---|---|
+| 001 | 01-foundations | [First Signal](gauntlex/01-foundations/001-hello/README.md) |
+| 002 | 01-foundations | [The Answer](gauntlex/01-foundations/002-displaynumber/README.md) |
+| 003 | 01-foundations | [Two Signals](gauntlex/01-foundations/003-two-lines/README.md) |
+| 004 | 01-foundations | [Combine Values](gauntlex/01-foundations/004-addition/README.md) |
+| 005 | 01-foundations | [A Personal Greeting](gauntlex/01-foundations/005-greeting/README.md) |
+| 006 | 01-foundations | [Identity Card](gauntlex/01-foundations/006-name-card/README.md) |
+| 007 | 01-foundations | [Measure a Rectangle](gauntlex/01-foundations/007-rectangle/README.md) |
+| 008 | 01-foundations | [Share Into Groups](gauntlex/01-foundations/008-remainder/README.md) |
+| 009 | 01-foundations | [Name Initials](gauntlex/01-foundations/009-initials/README.md) |
+| 010 | 01-foundations | [Clean Announcement](gauntlex/01-foundations/010-shout/README.md) |
+| 011 | 01-foundations | [One Year Later](gauntlex/01-foundations/011-next-year/README.md) |
+| 012 | 01-foundations | [Even or Odd](gauntlex/01-foundations/012-even-or-odd/README.md) |
+| 013 | 01-foundations | [Choose the Larger](gauntlex/01-foundations/013-larger/README.md) |
+| 014 | 02-control-flow | [Score Boundaries](gauntlex/02-control-flow/014-grade/README.md) |
+| 015 | 02-control-flow | [Permission Gate](gauntlex/02-control-flow/015-access/README.md) |
+| 016 | 02-control-flow | [Count Forward](gauntlex/02-control-flow/016-count/README.md) |
+| 017 | 02-control-flow | [Running Total](gauntlex/02-control-flow/017-sum-range/README.md) |
+| 018 | 02-control-flow | [Launch Countdown](gauntlex/02-control-flow/018-countdown/README.md) |
+| 019 | 02-control-flow | [Even Accumulator](gauntlex/02-control-flow/019-even-sum/README.md) |
+| 020 | 02-control-flow | [Times Table](gauntlex/02-control-flow/020-multiplication-table/README.md) |
+| 021 | 02-control-flow | [Decimal Length](gauntlex/02-control-flow/021-digit-count/README.md) |
+| 022 | 02-control-flow | [Find the Secret](gauntlex/02-control-flow/022-number-guess/README.md) |
+| 023 | 03-collections | [Count the Collection](gauntlex/03-collections/023-list-length/README.md) |
+| 024 | 03-collections | [At Both Ends](gauntlex/03-collections/024-list-ends/README.md) |
+| 025 | 03-collections | [Sum the Collection](gauntlex/03-collections/025-list-total/README.md) |
+| 026 | 03-collections | [Find the Peak](gauntlex/03-collections/026-list-maximum/README.md) |
+| 027 | 03-collections | [Reverse the Sequence](gauntlex/03-collections/027-reverse-words/README.md) |
+| 028 | 03-collections | [Keep the Evens](gauntlex/03-collections/028-filter-even/README.md) |
+| 029 | 03-collections | [First Appearance](gauntlex/03-collections/029-unique-order/README.md) |
+| 030 | 03-collections | [Word Tally](gauntlex/03-collections/030-word-frequency/README.md) |
+| 031 | 03-collections | [Numeric Order](gauntlex/03-collections/031-sort-numbers/README.md) |
+| 032 | 03-collections | [Inside the Boundaries](gauntlex/03-collections/032-middle-slice/README.md) |
+| 033 | 03-collections | [Shared Vocabulary](gauntlex/03-collections/033-set-overlap/README.md) |
+| 034 | 03-collections | [Matching Pairs](gauntlex/03-collections/034-pair-count/README.md) |
+| 035 | 04-functions | [Return a Sum](gauntlex/04-functions/035-sum-function/README.md) |
+| 036 | 04-functions | [Distance from Zero](gauntlex/04-functions/036-absolute-function/README.md) |
+| 037 | 04-functions | [Factorial Product](gauntlex/04-functions/037-factorial/README.md) |
+| 038 | 04-functions | [Mirror Text](gauntlex/04-functions/038-palindrome/README.md) |
+| 039 | 04-functions | [Vowel Census](gauntlex/04-functions/039-vowel-count/README.md) |
+| 040 | 04-functions | [Prime or Composite](gauntlex/04-functions/040-prime-check/README.md) |
+| 041 | 04-functions | [Sequence Memory](gauntlex/04-functions/041-fibonacci/README.md) |
+| 042 | 04-functions | [Same Letters, Different Order](gauntlex/04-functions/042-anagram/README.md) |
+| 043 | 04-functions | [One Level Down](gauntlex/04-functions/043-flatten-once/README.md) |
+| 044 | 04-functions | [First Unrepeated Character](gauntlex/04-functions/044-first-unique/README.md) |
+| 045 | 04-functions | [Divide Into Chunks](gauntlex/04-functions/045-chunk-list/README.md) |
+| 046 | 04-functions | [Greatest Shared Divisor](gauntlex/04-functions/046-gcd/README.md) |
+| 047 | 05-algorithms | [Count the Words](gauntlex/05-algorithms/047-word-count/README.md) |
+| 048 | 05-algorithms | [Longest in the Line](gauntlex/05-algorithms/048-longest-word/README.md) |
+| 049 | 05-algorithms | [Circular Shift](gauntlex/05-algorithms/049-rotate-list/README.md) |
+| 050 | 05-algorithms | [Two Ordered Streams](gauntlex/05-algorithms/050-merge-sorted/README.md) |
+| 051 | 05-algorithms | [Nested Delimiters](gauntlex/05-algorithms/051-balanced-brackets/README.md) |
+| 052 | 05-algorithms | [Compress Repeated Runs](gauntlex/05-algorithms/052-run-length/README.md) |
+| 053 | 05-algorithms | [Alphabet Rotation](gauntlex/05-algorithms/053-caesar/README.md) |
+| 054 | 05-algorithms | [Shared Beginning](gauntlex/05-algorithms/054-common-prefix/README.md) |
+| 055 | 05-algorithms | [Rows Become Columns](gauntlex/05-algorithms/055-matrix-transpose/README.md) |
+| 056 | 05-algorithms | [Halve the Search](gauntlex/05-algorithms/056-binary-search/README.md) |
+| 057 | 05-algorithms | [Runner-Up Value](gauntlex/05-algorithms/057-second-largest/README.md) |
+| 058 | 05-algorithms | [Group by Size](gauntlex/05-algorithms/058-group-by-length/README.md) |
+| 059 | 05-algorithms | [Balance the Parentheses](gauntlex/05-algorithms/059-valid-parentheses/README.md) |
+| 060 | 05-algorithms | [Zeros to the Back](gauntlex/05-algorithms/060-move-zeros/README.md) |
+| 061 | 05-algorithms | [Build Pascal's Row](gauntlex/05-algorithms/061-pascal-row/README.md) |
+| 062 | 05-algorithms | [Unfold Nested Lists](gauntlex/05-algorithms/062-flatten-recursive/README.md) |
+| 063 | 06-text-files | [One Space Apart](gauntlex/06-text-files/063-normalize-spaces/README.md) |
+| 064 | 06-text-files | [Count the Lines](gauntlex/06-text-files/064-line-count/README.md) |
+| 065 | 06-text-files | [Parse With Care](gauntlex/06-text-files/065-safe-integer/README.md) |
+| 066 | 06-text-files | [Numbers Hidden in Text](gauntlex/06-text-files/066-extract-numbers/README.md) |
+| 067 | 06-text-files | [Protect the Address](gauntlex/06-text-files/067-mask-email/README.md) |
+| 068 | 06-text-files | [URL-Friendly Words](gauntlex/06-text-files/068-slugify/README.md) |
+| 069 | 06-text-files | [Fields and Quotes](gauntlex/06-text-files/069-csv-row/README.md) |
+| 070 | 06-text-files | [Find a JSON Field](gauntlex/06-text-files/070-json-value/README.md) |
+| 071 | 06-text-files | [Compact JSON Text](gauntlex/06-text-files/071-json-compact/README.md) |
+| 072 | 06-text-files | [Final File Suffix](gauntlex/06-text-files/072-path-extension/README.md) |
+| 073 | 06-text-files | [Division Without Failure](gauntlex/06-text-files/073-safe-divide/README.md) |
+| 074 | 06-text-files | [Real Calendar Dates](gauntlex/06-text-files/074-parse-date/README.md) |
+| 075 | 06-text-files | [Calendar Distance](gauntlex/06-text-files/075-days-between/README.md) |
+| 076 | 06-text-files | [Day of the Week](gauntlex/06-text-files/076-iso-weekday/README.md) |
+| 077 | 06-text-files | [Keep Valid Records](gauntlex/06-text-files/077-clean-records/README.md) |
+| 078 | 06-text-files | [Read the Line Count](gauntlex/06-text-files/078-count-file-lines/README.md) |
+| 079 | 06-text-files | [Load Structured Data](gauntlex/06-text-files/079-read-json-file/README.md) |
+| 080 | 06-text-files | [Sum a CSV Column](gauntlex/06-text-files/080-csv-column-total/README.md) |
+| 081 | 07-objects | [Last In, First Out](gauntlex/07-objects/081-stack/README.md) |
+| 082 | 07-objects | [First In, First Out](gauntlex/07-objects/082-queue/README.md) |
+| 083 | 07-objects | [Count by Key](gauntlex/07-objects/083-counter/README.md) |
+| 084 | 07-objects | [Guard the Balance](gauntlex/07-objects/084-bank-account/README.md) |
+| 085 | 07-objects | [Two Scales, One Value](gauntlex/07-objects/085-temperature/README.md) |
+| 086 | 07-objects | [Shape Invariants](gauntlex/07-objects/086-rectangle-class/README.md) |
+| 087 | 07-objects | [Track the Work](gauntlex/07-objects/087-todo-list/README.md) |
+| 088 | 07-objects | [Immutable Coordinates](gauntlex/07-objects/088-point/README.md) |
+| 089 | 07-objects | [Stock Ledger](gauntlex/07-objects/089-inventory/README.md) |
+| 090 | 07-objects | [Student Averages](gauntlex/07-objects/090-gradebook/README.md) |
+| 091 | 07-objects | [Publish and Listen](gauntlex/07-objects/091-event-emitter/README.md) |
+| 092 | 07-objects | [Remember the Recent](gauntlex/07-objects/092-lru-cache/README.md) |
+| 093 | 07-objects | [Step Back in Time](gauntlex/07-objects/093-undo-history/README.md) |
+| 094 | 07-objects | [Cart Rules](gauntlex/07-objects/094-shopping-cart/README.md) |
+| 095 | 07-objects | [Serve by Priority](gauntlex/07-objects/095-task-priority/README.md) |
+| 096 | 08-problem-solving | [Find the Pair](gauntlex/08-problem-solving/096-two-sum/README.md) |
+| 097 | 08-problem-solving | [Totals Along the Way](gauntlex/08-problem-solving/097-prefix-sums/README.md) |
+| 098 | 08-problem-solving | [Best Continuous Segment](gauntlex/08-problem-solving/098-max-subarray/README.md) |
+| 099 | 08-problem-solving | [Everyone Else's Product](gauntlex/08-problem-solving/099-product-except-self/README.md) |
+| 100 | 08-problem-solving | [Quarter Turn](gauntlex/08-problem-solving/100-rotate-matrix/README.md) |
+| 101 | 08-problem-solving | [Walk the Spiral](gauntlex/08-problem-solving/101-spiral-order/README.md) |
+| 102 | 08-problem-solving | [Write in Base Two](gauntlex/08-problem-solving/102-binary-conversion/README.md) |
+| 103 | 08-problem-solving | [Number to Numeral](gauntlex/08-problem-solving/103-roman-numerals/README.md) |
+| 104 | 08-problem-solving | [Numeral to Number](gauntlex/08-problem-solving/104-roman-to-int/README.md) |
+| 105 | 08-problem-solving | [Longest Without Repeats](gauntlex/08-problem-solving/105-longest-unique-substring/README.md) |
+| 106 | 08-problem-solving | [Smallest Sufficient Window](gauntlex/08-problem-solving/106-min-window-sum/README.md) |
+| 107 | 08-problem-solving | [Families of Letters](gauntlex/08-problem-solving/107-group-anagrams/README.md) |
+| 108 | 08-problem-solving | [Most Common Values](gauntlex/08-problem-solving/108-top-k-frequent/README.md) |
+| 109 | 08-problem-solving | [Unify Time Ranges](gauntlex/08-problem-solving/109-interval-merge/README.md) |
+| 110 | 08-problem-solving | [Add a New Range](gauntlex/08-problem-solving/110-interval-insert/README.md) |
+| 111 | 08-problem-solving | [Sudoku Constraints](gauntlex/08-problem-solving/111-valid-sudoku/README.md) |
+| 112 | 08-problem-solving | [Recolor a Region](gauntlex/08-problem-solving/112-flood-fill/README.md) |
+| 113 | 08-problem-solving | [Count the Islands](gauntlex/08-problem-solving/113-islands/README.md) |
+| 114 | 08-problem-solving | [Shortest Route](gauntlex/08-problem-solving/114-bfs-shortest-path/README.md) |
+| 115 | 08-problem-solving | [Detect a Loop](gauntlex/08-problem-solving/115-cycle-detection/README.md) |
+| 116 | 09-validation | [Distinct After Normalization](gauntlex/09-validation/116-dedupe-normalized/README.md) |
+| 117 | 09-validation | [Interpret a Boolean](gauntlex/09-validation/117-parse-boolean/README.md) |
+| 118 | 09-validation | [Stay Within Bounds](gauntlex/09-validation/118-clamp/README.md) |
+| 119 | 09-validation | [Telephone Canonical Form](gauntlex/09-validation/119-normalize-phone/README.md) |
+| 120 | 09-validation | [Password Rules](gauntlex/09-validation/120-validate-password/README.md) |
+| 121 | 09-validation | [Read URL Parameters](gauntlex/09-validation/121-parse-query/README.md) |
+| 122 | 09-validation | [Write URL Parameters](gauntlex/09-validation/122-build-query/README.md) |
+| 123 | 09-validation | [Four Network Octets](gauntlex/09-validation/123-validate-ipv4/README.md) |
+| 124 | 09-validation | [Structured Log Entry](gauntlex/09-validation/124-parse-log-line/README.md) |
+| 125 | 09-validation | [Log Severity Summary](gauntlex/09-validation/125-count-log-levels/README.md) |
+| 126 | 09-validation | [Text Segments](gauntlex/09-validation/126-chunk-text/README.md) |
+| 127 | 09-validation | [Configuration Assignments](gauntlex/09-validation/127-parse-env/README.md) |
+| 128 | 09-validation | [Hide Sensitive Tokens](gauntlex/09-validation/128-redact-secrets/README.md) |
+| 129 | 09-validation | [Canonical URL Paths](gauntlex/09-validation/129-normalize-url-path/README.md) |
+| 130 | 09-validation | [Safe File Labels](gauntlex/09-validation/130-safe-filename/README.md) |
+| 131 | 09-validation | [Clock Text to Seconds](gauntlex/09-validation/131-parse-duration/README.md) |
+| 132 | 09-validation | [Seconds to Clock Text](gauntlex/09-validation/132-format-duration/README.md) |
+| 133 | 09-validation | [Decode an RGB Color](gauntlex/09-validation/133-parse-hex-color/README.md) |
+| 134 | 09-validation | [Encode an RGB Color](gauntlex/09-validation/134-format-hex-color/README.md) |
+| 135 | 09-validation | [Clean the Tags](gauntlex/09-validation/135-normalize-tags/README.md) |
+| 136 | 09-validation | [Domain Extraction](gauntlex/09-validation/136-email-domain/README.md) |
+| 137 | 09-validation | [Shared Dictionary Keys](gauntlex/09-validation/137-common-keys/README.md) |
+| 138 | 09-validation | [Reverse a Relationship](gauntlex/09-validation/138-invert-mapping/README.md) |
+| 139 | 09-validation | [What Changed?](gauntlex/09-validation/139-diff-sets/README.md) |
+| 140 | 09-validation | [Word Leaderboard](gauntlex/09-validation/140-top-words/README.md) |
+| 141 | 10-cli-tools | [Reverse the Stream](gauntlex/10-cli-tools/141-echo-lines/README.md) |
+| 142 | 10-cli-tools | [Line Numbers](gauntlex/10-cli-tools/142-number-lines/README.md) |
+| 143 | 10-cli-tools | [Find Matching Lines](gauntlex/10-cli-tools/143-grep-literal/README.md) |
+| 144 | 10-cli-tools | [First Lines Only](gauntlex/10-cli-tools/144-head-lines/README.md) |
+| 145 | 10-cli-tools | [Last Lines Only](gauntlex/10-cli-tools/145-tail-lines/README.md) |
+| 146 | 10-cli-tools | [Order the Lines](gauntlex/10-cli-tools/146-sort-lines/README.md) |
+| 147 | 10-cli-tools | [Collapse Repeated Lines](gauntlex/10-cli-tools/147-unique-adjacent/README.md) |
+| 148 | 10-cli-tools | [Count Matching Lines](gauntlex/10-cli-tools/148-count-occurrences/README.md) |
+| 149 | 10-cli-tools | [Sum the Stream](gauntlex/10-cli-tools/149-sum-columns/README.md) |
+| 150 | 10-cli-tools | [CSV to Tabs](gauntlex/10-cli-tools/150-csv-to-tsv/README.md) |
+| 151 | 10-cli-tools | [Readable JSON](gauntlex/10-cli-tools/151-json-pretty/README.md) |
+| 152 | 10-cli-tools | [Compact JSON Stream](gauntlex/10-cli-tools/152-json-lines/README.md) |
+| 153 | 10-cli-tools | [Count Active Records](gauntlex/10-cli-tools/153-jsonl-count/README.md) |
+| 154 | 10-cli-tools | [Extract JSON Fields](gauntlex/10-cli-tools/154-jsonl-select/README.md) |
+| 155 | 10-cli-tools | [Count CSV Records](gauntlex/10-cli-tools/155-csv-row-count/README.md) |
+| 156 | 10-cli-tools | [Extract a CSV Column](gauntlex/10-cli-tools/156-csv-select-column/README.md) |
+| 157 | 10-cli-tools | [Filter CSV Records](gauntlex/10-cli-tools/157-csv-filter-equal/README.md) |
+| 158 | 10-cli-tools | [Three Text Measures](gauntlex/10-cli-tools/158-word-count-cli/README.md) |
+| 159 | 10-cli-tools | [Value Histogram](gauntlex/10-cli-tools/159-histogram/README.md) |
+| 160 | 10-cli-tools | [Numeric Stream Summary](gauntlex/10-cli-tools/160-stats-cli/README.md) |
+| 161 | 11-data-analysis | [The Middle Value](gauntlex/11-data-analysis/161-median/README.md) |
+| 162 | 11-data-analysis | [Most Frequent Observation](gauntlex/11-data-analysis/162-mode/README.md) |
+| 163 | 11-data-analysis | [Spread Around the Mean](gauntlex/11-data-analysis/163-variance/README.md) |
+| 164 | 11-data-analysis | [Standard Spread](gauntlex/11-data-analysis/164-standard-deviation/README.md) |
+| 165 | 11-data-analysis | [Nearest-Rank Percentile](gauntlex/11-data-analysis/165-percentile-nearest/README.md) |
+| 166 | 11-data-analysis | [Sliding Average](gauntlex/11-data-analysis/166-moving-average/README.md) |
+| 167 | 11-data-analysis | [Scale to Unit Range](gauntlex/11-data-analysis/167-normalize-minmax/README.md) |
+| 168 | 11-data-analysis | [Multiply and Accumulate](gauntlex/11-data-analysis/168-dot-product/README.md) |
+| 169 | 11-data-analysis | [Distance in Many Dimensions](gauntlex/11-data-analysis/169-euclidean-distance/README.md) |
+| 170 | 11-data-analysis | [Add Two Grids](gauntlex/11-data-analysis/170-matrix-add/README.md) |
+| 171 | 11-data-analysis | [Matrix Composition](gauntlex/11-data-analysis/171-matrix-multiply/README.md) |
+| 172 | 11-data-analysis | [Build a Histogram](gauntlex/11-data-analysis/172-bucket-count/README.md) |
+| 173 | 11-data-analysis | [Linear Relationship](gauntlex/11-data-analysis/173-pearson-correlation/README.md) |
+| 174 | 11-data-analysis | [Running Products](gauntlex/11-data-analysis/174-cumulative-product/README.md) |
+| 175 | 11-data-analysis | [Observation Counts](gauntlex/11-data-analysis/175-frequency-table/README.md) |
+| 176 | 11-data-analysis | [Unequal Importance](gauntlex/11-data-analysis/176-weighted-mean/README.md) |
+| 177 | 11-data-analysis | [Dense Rankings](gauntlex/11-data-analysis/177-rank-values/README.md) |
+| 178 | 11-data-analysis | [Round to Steps](gauntlex/11-data-analysis/178-quantize/README.md) |
+| 179 | 11-data-analysis | [Outside the Fences](gauntlex/11-data-analysis/179-outlier-iqr/README.md) |
+| 180 | 11-data-analysis | [Fit a Straight Line](gauntlex/11-data-analysis/180-linear-regression/README.md) |
+| 181 | 12-http-security | [Identify the Host](gauntlex/12-http-security/181-url-host/README.md) |
+| 182 | 12-http-security | [Resolve a Link](gauntlex/12-http-security/182-url-join/README.md) |
+| 183 | 12-http-security | [Read the Response Status](gauntlex/12-http-security/183-parse-http-status/README.md) |
+| 184 | 12-http-security | [Canonical Header Names](gauntlex/12-http-security/184-normalize-headers/README.md) |
+| 185 | 12-http-security | [Read Cookie Pairs](gauntlex/12-http-security/185-parse-cookie/README.md) |
+| 186 | 12-http-security | [Assemble a Cookie Header](gauntlex/12-http-security/186-build-cookie/README.md) |
+| 187 | 12-http-security | [Backoff with a Ceiling](gauntlex/12-http-security/187-http-retry-delay/README.md) |
+| 188 | 12-http-security | [Page to Offset](gauntlex/12-http-security/188-pagination-offset/README.md) |
+| 189 | 12-http-security | [One Page of Results](gauntlex/12-http-security/189-pagination-slice/README.md) |
+| 190 | 12-http-security | [Match Every Field](gauntlex/12-http-security/190-query-filter/README.md) |
+| 191 | 12-http-security | [Build a JSON Response](gauntlex/12-http-security/191-json-response/README.md) |
+| 192 | 12-http-security | [Read a Bearer Token](gauntlex/12-http-security/192-parse-bearer/README.md) |
+| 193 | 12-http-security | [Compare Secrets Safely](gauntlex/12-http-security/193-constant-time-compare/README.md) |
+| 194 | 12-http-security | [Fingerprint a Message](gauntlex/12-http-security/194-sha256-hex/README.md) |
+| 195 | 12-http-security | [Authenticate a Message](gauntlex/12-http-security/195-hmac-signature/README.md) |
+| 196 | 12-http-security | [Verify a Signature](gauntlex/12-http-security/196-verify-hmac/README.md) |
+| 197 | 12-http-security | [Exact Origin Allowlist](gauntlex/12-http-security/197-cors-origin/README.md) |
+| 198 | 12-http-security | [Recognize HTTP Methods](gauntlex/12-http-security/198-http-method/README.md) |
+| 199 | 12-http-security | [Extract the Media Type](gauntlex/12-http-security/199-parse-content-type/README.md) |
+| 200 | 12-http-security | [Stable Request Identity](gauntlex/12-http-security/200-http-cache-key/README.md) |
+| 201 | 12-http-security | [Unique Request Identifier](gauntlex/12-http-security/201-request-id/README.md) |
+| 202 | 12-http-security | [Escape One URL Component](gauntlex/12-http-security/202-url-encode-component/README.md) |
+| 203 | 12-http-security | [Restore One URL Component](gauntlex/12-http-security/203-url-decode-component/README.md) |
+| 204 | 12-http-security | [Decode Basic Credentials](gauntlex/12-http-security/204-parse-basic-auth/README.md) |
+| 205 | 12-http-security | [Find the Last Header](gauntlex/12-http-security/205-header-get/README.md) |
+| 206 | 13-sqlite | [Define the Users Table](gauntlex/13-sqlite/206-create-users/README.md) |
+| 207 | 13-sqlite | [Register a User](gauntlex/13-sqlite/207-insert-user/README.md) |
+| 208 | 13-sqlite | [Find One Record](gauntlex/13-sqlite/208-find-user/README.md) |
+| 209 | 13-sqlite | [Read the User Directory](gauntlex/13-sqlite/209-list-users/README.md) |
+| 210 | 13-sqlite | [Change a User Email](gauntlex/13-sqlite/210-update-email/README.md) |
+| 211 | 13-sqlite | [Remove a User](gauntlex/13-sqlite/211-delete-user/README.md) |
+| 212 | 13-sqlite | [Search Names Literally](gauntlex/13-sqlite/212-search-users/README.md) |
+| 213 | 13-sqlite | [Count the Directory](gauntlex/13-sqlite/213-count-users/README.md) |
+| 214 | 13-sqlite | [Paginate User Records](gauntlex/13-sqlite/214-users-page/README.md) |
+| 215 | 13-sqlite | [Define the Orders Table](gauntlex/13-sqlite/215-create-orders/README.md) |
+| 216 | 13-sqlite | [Sum Customer Orders](gauntlex/13-sqlite/216-order-total/README.md) |
+| 217 | 13-sqlite | [Rank Customers by Spending](gauntlex/13-sqlite/217-top-customers/README.md) |
+| 218 | 13-sqlite | [Orders and Their Owners](gauntlex/13-sqlite/218-join-orders/README.md) |
+| 219 | 13-sqlite | [Insert Only Once](gauntlex/13-sqlite/219-insert-ignore/README.md) |
+| 220 | 13-sqlite | [Create or Replace a Score](gauntlex/13-sqlite/220-upsert-score/README.md) |
+| 221 | 13-sqlite | [Atomic Account Transfer](gauntlex/13-sqlite/221-transaction-transfer/README.md) |
+| 222 | 13-sqlite | [All or Nothing](gauntlex/13-sqlite/222-transaction-batch/README.md) |
+| 223 | 13-sqlite | [Allowlisted Sorting](gauntlex/13-sqlite/223-safe-sort/README.md) |
+| 224 | 13-sqlite | [Count Event Categories](gauntlex/13-sqlite/224-group-counts/README.md) |
+| 225 | 13-sqlite | [Events After a Date](gauntlex/13-sqlite/225-date-filter/README.md) |
+| 226 | 13-sqlite | [Inspect the Schema](gauntlex/13-sqlite/226-db-schema-check/README.md) |
+| 227 | 13-sqlite | [Ensure an Index](gauntlex/13-sqlite/227-db-index/README.md) |
+| 228 | 13-sqlite | [Store a JSON Document](gauntlex/13-sqlite/228-db-json/README.md) |
+| 229 | 13-sqlite | [Load a JSON Document](gauntlex/13-sqlite/229-db-json-read/README.md) |
+| 230 | 13-sqlite | [Revenue by Category](gauntlex/13-sqlite/230-db-report/README.md) |
+| 231 | 14-async | [An Awaitable Greeting](gauntlex/14-async/231-async-greeting/README.md) |
+| 232 | 14-async | [A Coroutine Result](gauntlex/14-async/232-async-double/README.md) |
+| 233 | 14-async | [Gather in Order](gauntlex/14-async/233-async-gather/README.md) |
+| 234 | 14-async | [Concurrent Transformation](gauntlex/14-async/234-async-map/README.md) |
+| 235 | 14-async | [Set a Deadline](gauntlex/14-async/235-async-timeout/README.md) |
+| 236 | 14-async | [Try Again](gauntlex/14-async/236-async-retry/README.md) |
+| 237 | 14-async | [Limit Concurrency](gauntlex/14-async/237-async-semaphore/README.md) |
+| 238 | 14-async | [First to Finish](gauntlex/14-async/238-async-first/README.md) |
+| 239 | 14-async | [Drain the Queue](gauntlex/14-async/239-async-queue/README.md) |
+| 240 | 14-async | [Produce in Sequence](gauntlex/14-async/240-async-producer/README.md) |
+| 241 | 14-async | [Consume Exactly N](gauntlex/14-async/241-async-consumer/README.md) |
+| 242 | 14-async | [Wait for a Signal](gauntlex/14-async/242-async-event/README.md) |
+| 243 | 14-async | [Protected Increment](gauntlex/14-async/243-async-lock/README.md) |
+| 244 | 14-async | [Concurrent Selection](gauntlex/14-async/244-async-filter/README.md) |
+| 245 | 14-async | [Process in Waves](gauntlex/14-async/245-async-batch/README.md) |
+| 246 | 15-testing | [Explain a Mismatch](gauntlex/15-testing/246-assert-equal/README.md) |
+| 247 | 15-testing | [Expect a Failure](gauntlex/15-testing/247-assert-raises/README.md) |
+| 248 | 15-testing | [Close Enough](gauntlex/15-testing/248-approx-equal/README.md) |
+| 249 | 15-testing | [Find the Divergence](gauntlex/15-testing/249-first-difference/README.md) |
+| 250 | 15-testing | [Compare Records](gauntlex/15-testing/250-diff-dicts/README.md) |
+| 251 | 15-testing | [Evaluate Examples](gauntlex/15-testing/251-run-cases/README.md) |
+| 252 | 15-testing | [Observe Printed Output](gauntlex/15-testing/252-capture-output/README.md) |
+| 253 | 15-testing | [Check the Order](gauntlex/15-testing/253-is-sorted/README.md) |
+| 254 | 15-testing | [Reject Disorder](gauntlex/15-testing/254-validate-sorted/README.md) |
+| 255 | 15-testing | [Same Elements, New Order](gauntlex/15-testing/255-check-permutation/README.md) |
+| 256 | 15-testing | [Guard the Nonnegative Invariant](gauntlex/15-testing/256-invariant-check/README.md) |
+| 257 | 15-testing | [Count Test Report Lines](gauntlex/15-testing/257-parse-test-report/README.md) |
+| 258 | 15-testing | [Measure the Failure Rate](gauntlex/15-testing/258-flaky-detector/README.md) |
+| 259 | 15-testing | [Select by Name](gauntlex/15-testing/259-test-selection/README.md) |
+| 260 | 15-testing | [Three Outcomes](gauntlex/15-testing/260-test-summary/README.md) |
+| 261 | 15-testing | [Identify a Test](gauntlex/15-testing/261-pytest-nodeid/README.md) |
+| 262 | 15-testing | [Name a Test Function](gauntlex/15-testing/262-test-name-normalize/README.md) |
+| 263 | 15-testing | [Coverage Ratio](gauntlex/15-testing/263-coverage-percent/README.md) |
+| 264 | 15-testing | [Spot Regressions](gauntlex/15-testing/264-regression-check/README.md) |
+| 265 | 15-testing | [Cross-Platform Failures](gauntlex/15-testing/265-test-matrix/README.md) |
+| 266 | 15-testing | [Undetected Mutations](gauntlex/15-testing/266-mutation-survivors/README.md) |
+| 267 | 15-testing | [Unique Case Labels](gauntlex/15-testing/267-test-case-ids/README.md) |
+| 268 | 15-testing | [Compare Stable Snapshots](gauntlex/15-testing/268-snapshot-compare/README.md) |
+| 269 | 15-testing | [Find Slow Cases](gauntlex/15-testing/269-test-duration/README.md) |
+| 270 | 15-testing | [Require Every Item](gauntlex/15-testing/270-assert-subset/README.md) |
+| 271 | 16-packaging | [Three-Part Version](gauntlex/16-packaging/271-semver-parse/README.md) |
+| 272 | 16-packaging | [Version Ordering](gauntlex/16-packaging/272-semver-compare/README.md) |
+| 273 | 16-packaging | [Pinned Dependency](gauntlex/16-packaging/273-dependency-parse/README.md) |
+| 274 | 16-packaging | [Dependency Order](gauntlex/16-packaging/274-requirements-sort/README.md) |
+| 275 | 16-packaging | [One Requirement per Package](gauntlex/16-packaging/275-requirements-dedupe/README.md) |
+| 276 | 16-packaging | [Read Environment Settings](gauntlex/16-packaging/276-env-config/README.md) |
+| 277 | 16-packaging | [Apply Overrides](gauntlex/16-packaging/277-config-merge/README.md) |
+| 278 | 16-packaging | [Describe Build Files](gauntlex/16-packaging/278-file-manifest/README.md) |
+| 279 | 16-packaging | [Write a Release Note](gauntlex/16-packaging/279-release-notes/README.md) |
+| 280 | 16-packaging | [Organize Changes](gauntlex/16-packaging/280-changelog-groups/README.md) |
+| 281 | 16-packaging | [Name the Entry Point](gauntlex/16-packaging/281-python-entrypoint/README.md) |
+| 282 | 16-packaging | [Module to File](gauntlex/16-packaging/282-module-path/README.md) |
+| 283 | 16-packaging | [Wheel Filename](gauntlex/16-packaging/283-artifact-name/README.md) |
+| 284 | 16-packaging | [Package Metadata](gauntlex/16-packaging/284-build-metadata/README.md) |
+| 285 | 16-packaging | [Release Readiness](gauntlex/16-packaging/285-release-checklist/README.md) |
+| 286 | 17-architecture | [Build in Dependency Order](gauntlex/17-architecture/286-dependency-order/README.md) |
+| 287 | 17-architecture | [Find Dependency Loops](gauntlex/17-architecture/287-dependency-cycles/README.md) |
+| 288 | 17-architecture | [Downstream Reachability](gauntlex/17-architecture/288-reachable-services/README.md) |
+| 289 | 17-architecture | [Who Depends on This?](gauntlex/17-architecture/289-reverse-dependencies/README.md) |
+| 290 | 17-architecture | [Build in Parallel Layers](gauntlex/17-architecture/290-service-layers/README.md) |
+| 291 | 17-architecture | [Transitive Feature Gates](gauntlex/17-architecture/291-feature-flags/README.md) |
+| 292 | 17-architecture | [Capture Route Parameters](gauntlex/17-architecture/292-route-match/README.md) |
+| 293 | 17-architecture | [Route Specificity](gauntlex/17-architecture/293-route-priority/README.md) |
+| 294 | 17-architecture | [Requests in a Time Window](gauntlex/17-architecture/294-rate-limit-window/README.md) |
+| 295 | 17-architecture | [Circuit Breaker States](gauntlex/17-architecture/295-circuit-state/README.md) |
+| 296 | 17-architecture | [Time to Live](gauntlex/17-architecture/296-cache-expiry/README.md) |
+| 297 | 17-architecture | [Evict the Oldest](gauntlex/17-architecture/297-cache-eviction/README.md) |
+| 298 | 17-architecture | [Worst Service Health](gauntlex/17-architecture/298-health-rollup/README.md) |
+| 299 | 17-architecture | [Protect the Retry Budget](gauntlex/17-architecture/299-retry-budget/README.md) |
+| 300 | 17-architecture | [Identify Duplicate Requests](gauntlex/17-architecture/300-idempotency-key/README.md) |
+| 301 | 17-architecture | [Choose a Stable Partition](gauntlex/17-architecture/301-partition-key/README.md) |
+| 302 | 17-architecture | [Keep First Events](gauntlex/17-architecture/302-event-dedup/README.md) |
+| 303 | 17-architecture | [Rebuild Account Balances](gauntlex/17-architecture/303-event-projection/README.md) |
+| 304 | 17-architecture | [Replay Exactly Once](gauntlex/17-architecture/304-replay-dedup/README.md) |
+| 305 | 17-architecture | [Configuration Changes](gauntlex/17-architecture/305-config-diff/README.md) |
+| 306 | 17-architecture | [Permission by Role](gauntlex/17-architecture/306-permission-check/README.md) |
+| 307 | 17-architecture | [Inherited Permissions](gauntlex/17-architecture/307-permission-inherit/README.md) |
+| 308 | 17-architecture | [Record an Action](gauntlex/17-architecture/308-audit-record/README.md) |
+| 309 | 17-architecture | [Structured Errors](gauntlex/17-architecture/309-error-envelope/README.md) |
+| 310 | 17-architecture | [Opaque Page Cursor](gauntlex/17-architecture/310-pagination-token/README.md) |
+| 311 | 18-capstones | [Persistent Task Tracker](gauntlex/18-capstones/311-task-tracker/README.md) |
+| 312 | 18-capstones | [Streaming Log Inspector](gauntlex/18-capstones/312-log-analyzer/README.md) |
+| 313 | 18-capstones | [Expense Ledger](gauntlex/18-capstones/313-expense-ledger/README.md) |
+| 314 | 18-capstones | [A Minimal HTTP Service](gauntlex/18-capstones/314-http-api-server/README.md) |
+| 315 | 19-file-automation | [Safe Relative Paths](gauntlex/19-file-automation/315-safe-relative-path/README.md) |
+| 316 | 19-file-automation | [Recognize File Extensions](gauntlex/19-file-automation/316-file-extension/README.md) |
+| 317 | 19-file-automation | [One Line Ending](gauntlex/19-file-automation/317-line-ending-normalize/README.md) |
+| 318 | 19-file-automation | [Read an INI Section](gauntlex/19-file-automation/318-parse-ini-section/README.md) |
+| 319 | 19-file-automation | [Follow Nested Keys](gauntlex/19-file-automation/319-json-path-get/README.md) |
+| 320 | 19-file-automation | [Flatten a JSON Tree](gauntlex/19-file-automation/320-flatten-json/README.md) |
+| 321 | 19-file-automation | [Rebuild Nested JSON](gauntlex/19-file-automation/321-unflatten-json/README.md) |
+| 322 | 19-file-automation | [Fingerprint a File](gauntlex/19-file-automation/322-file-checksum/README.md) |
+| 323 | 19-file-automation | [Count File Records](gauntlex/19-file-automation/323-count-file-lines/README.md) |
+| 324 | 19-file-automation | [Append Structured Records](gauntlex/19-file-automation/324-append-jsonl/README.md) |
+| 325 | 19-file-automation | [Load a JSON Lines Stream](gauntlex/19-file-automation/325-read-jsonl/README.md) |
+| 326 | 19-file-automation | [Replace a File Safely](gauntlex/19-file-automation/326-write-atomic/README.md) |
+| 327 | 19-file-automation | [Find Duplicate Content](gauntlex/19-file-automation/327-find-duplicates/README.md) |
+| 328 | 19-file-automation | [Aggregate CSV Values](gauntlex/19-file-automation/328-csv-group-sum/README.md) |
+| 329 | 19-file-automation | [Count Unique CSV Rows](gauntlex/19-file-automation/329-csv-dedupe/README.md) |
+| 330 | 19-file-automation | [Map a Directory](gauntlex/19-file-automation/330-directory-manifest/README.md) |
+| 331 | 19-file-automation | [Select File Types](gauntlex/19-file-automation/331-filter-by-suffix/README.md) |
+| 332 | 19-file-automation | [Inspect Archive Paths](gauntlex/19-file-automation/332-safe-archive-name/README.md) |
+| 333 | 19-file-automation | [Plan Log Backups](gauntlex/19-file-automation/333-rotate-logs/README.md) |
+| 334 | 19-file-automation | [Fingerprint Configuration](gauntlex/19-file-automation/334-config-fingerprint/README.md) |
+| 335 | 20-wsgi-web | [Your First WSGI Response](gauntlex/20-wsgi-web/335-wsgi-health/README.md) |
+| 336 | 20-wsgi-web | [Route by Path](gauntlex/20-wsgi-web/336-wsgi-routing/README.md) |
+| 337 | 20-wsgi-web | [Method Matters](gauntlex/20-wsgi-web/337-wsgi-method/README.md) |
+| 338 | 20-wsgi-web | [Decode Query Input](gauntlex/20-wsgi-web/338-wsgi-query/README.md) |
+| 339 | 20-wsgi-web | [Serialize a Web Response](gauntlex/20-wsgi-web/339-wsgi-json/README.md) |
+| 340 | 20-wsgi-web | [Read a Request Body](gauntlex/20-wsgi-web/340-wsgi-post-body/README.md) |
+| 341 | 20-wsgi-web | [Validate JSON Input](gauntlex/20-wsgi-web/341-wsgi-json-post/README.md) |
+| 342 | 20-wsgi-web | [Inspect Request Headers](gauntlex/20-wsgi-web/342-wsgi-headers/README.md) |
+| 343 | 20-wsgi-web | [Headers Without a Body](gauntlex/20-wsgi-web/343-wsgi-head/README.md) |
+| 344 | 20-wsgi-web | [Move a Resource](gauntlex/20-wsgi-web/344-wsgi-redirect/README.md) |
+| 345 | 20-wsgi-web | [Recognize a Session Cookie](gauntlex/20-wsgi-web/345-wsgi-cookie/README.md) |
+| 346 | 20-wsgi-web | [Protect a Private Route](gauntlex/20-wsgi-web/346-wsgi-auth/README.md) |
+| 347 | 20-wsgi-web | [Control Cross-Origin Access](gauntlex/20-wsgi-web/347-wsgi-cors/README.md) |
+| 348 | 20-wsgi-web | [Avoid Unchanged Responses](gauntlex/20-wsgi-web/348-wsgi-conditional/README.md) |
+| 349 | 20-wsgi-web | [Safe Server Errors](gauntlex/20-wsgi-web/349-wsgi-error-handler/README.md) |
+| 350 | 20-wsgi-web | [Validate Request IDs](gauntlex/20-wsgi-web/350-wsgi-request-id/README.md) |
+| 351 | 20-wsgi-web | [Count Response Bytes](gauntlex/20-wsgi-web/351-wsgi-content-length/README.md) |
+| 352 | 20-wsgi-web | [Read Form Fields](gauntlex/20-wsgi-web/352-wsgi-form/README.md) |
+| 353 | 20-wsgi-web | [Consistent Not Found](gauntlex/20-wsgi-web/353-wsgi-not-found-json/README.md) |
+| 354 | 20-wsgi-web | [Wrap an Application](gauntlex/20-wsgi-web/354-wsgi-middleware/README.md) |
+| 355 | 21-data-science | [Scale to Zero and One](gauntlex/21-data-science/355-min-max-scale/README.md) |
+| 356 | 21-data-science | [Standardize Observations](gauntlex/21-data-science/356-z-score-scale/README.md) |
+| 357 | 21-data-science | [Smooth with Windows](gauntlex/21-data-science/357-moving-average/README.md) |
+| 358 | 21-data-science | [Weighted Recent History](gauntlex/21-data-science/358-exponential-smoothing/README.md) |
+| 359 | 21-data-science | [Weighted Observations](gauntlex/21-data-science/359-weighted-mean/README.md) |
+| 360 | 21-data-science | [Move Together](gauntlex/21-data-science/360-covariance/README.md) |
+| 361 | 21-data-science | [Interpolate a Quantile](gauntlex/21-data-science/361-quantile-linear/README.md) |
+| 362 | 21-data-science | [Classify the Outcomes](gauntlex/21-data-science/362-confusion-matrix/README.md) |
+| 363 | 21-data-science | [Measure a Classifier](gauntlex/21-data-science/363-classification-metrics/README.md) |
+| 364 | 21-data-science | [Average Prediction Error](gauntlex/21-data-science/364-mean-absolute-error/README.md) |
+| 365 | 21-data-science | [Penalize Large Errors](gauntlex/21-data-science/365-root-mean-square-error/README.md) |
+| 366 | 21-data-science | [Explain the Variation](gauntlex/21-data-science/366-r-squared/README.md) |
+| 367 | 21-data-science | [Straight-Line Distance](gauntlex/21-data-science/367-euclidean-distance/README.md) |
+| 368 | 21-data-science | [Compare Directions](gauntlex/21-data-science/368-cosine-similarity/README.md) |
+| 369 | 21-data-science | [City-Block Distance](gauntlex/21-data-science/369-manhattan-distance/README.md) |
+| 370 | 21-data-science | [Find Nearby Examples](gauntlex/21-data-science/370-k-nearest-neighbors/README.md) |
+| 371 | 21-data-science | [Hold Out Examples](gauntlex/21-data-science/371-train-test-split/README.md) |
+| 372 | 21-data-science | [Train in Batches](gauntlex/21-data-science/372-minibatches/README.md) |
+| 373 | 21-data-science | [Encode Categories](gauntlex/21-data-science/373-one-hot-encode/README.md) |
+| 374 | 21-data-science | [Normalize Each Feature](gauntlex/21-data-science/374-standardize-columns/README.md) |
+| 375 | 22-advanced-algorithms | [First Not Smaller](gauntlex/22-advanced-algorithms/375-binary-search-bound/README.md) |
+| 376 | 22-advanced-algorithms | [First Strictly Greater](gauntlex/22-advanced-algorithms/376-upper-bound/README.md) |
+| 377 | 22-advanced-algorithms | [Merge Integer Ranges](gauntlex/22-advanced-algorithms/377-merge-intervals/README.md) |
+| 378 | 22-advanced-algorithms | [Where Ranges Overlap](gauntlex/22-advanced-algorithms/378-interval-intersection/README.md) |
+| 379 | 22-advanced-algorithms | [Longest Distinct Window](gauntlex/22-advanced-algorithms/379-longest-unique-substring/README.md) |
+| 380 | 22-advanced-algorithms | [Smallest Covering Substring](gauntlex/22-advanced-algorithms/380-minimum-window/README.md) |
+| 381 | 22-advanced-algorithms | [Frequency with Stable Ties](gauntlex/22-advanced-algorithms/381-top-k-frequent/README.md) |
+| 382 | 22-advanced-algorithms | [Shortest Grid Route](gauntlex/22-advanced-algorithms/382-shortest-path-grid/README.md) |
+| 383 | 22-advanced-algorithms | [Weighted Shortest Paths](gauntlex/22-advanced-algorithms/383-dijkstra-distances/README.md) |
+| 384 | 22-advanced-algorithms | [Increasing Subsequence](gauntlex/22-advanced-algorithms/384-longest-increasing-subsequence/README.md) |
+| 385 | 23-security-crypto | [Shift the Alphabet](gauntlex/23-security-crypto/385-caesar-cipher/README.md) |
+| 386 | 23-security-crypto | [Half an Alphabet](gauntlex/23-security-crypto/386-rot13/README.md) |
+| 387 | 23-security-crypto | [Text to Hexadecimal](gauntlex/23-security-crypto/387-hex-encode/README.md) |
+| 388 | 23-security-crypto | [Hexadecimal to Text](gauntlex/23-security-crypto/388-hex-decode/README.md) |
+| 389 | 23-security-crypto | [Encode Base64](gauntlex/23-security-crypto/389-base64-encode/README.md) |
+| 390 | 23-security-crypto | [Decode Base64](gauntlex/23-security-crypto/390-base64-decode/README.md) |
+| 391 | 23-security-crypto | [Sign a Message](gauntlex/23-security-crypto/391-hmac-sign/README.md) |
+| 392 | 23-security-crypto | [Authenticate a Signature](gauntlex/23-security-crypto/392-hmac-verify/README.md) |
+| 393 | 23-security-crypto | [Derive a Key](gauntlex/23-security-crypto/393-pbkdf2-key/README.md) |
+| 394 | 23-security-crypto | [Secure Random Token](gauntlex/23-security-crypto/394-random-token/README.md) |
+| 395 | 23-security-crypto | [Rule-Based Password Score](gauntlex/23-security-crypto/395-password-strength/README.md) |
+| 396 | 23-security-crypto | [Reveal Only the End](gauntlex/23-security-crypto/396-mask-secret/README.md) |
+| 397 | 23-security-crypto | [Canonical IPv4](gauntlex/23-security-crypto/397-validate-ipv4/README.md) |
+| 398 | 23-security-crypto | [Normalize a Network](gauntlex/23-security-crypto/398-cidr-network/README.md) |
+| 399 | 23-security-crypto | [Network Membership](gauntlex/23-security-crypto/399-cidr-contains/README.md) |
+| 400 | 23-security-crypto | [Inspect a Web Host](gauntlex/23-security-crypto/400-safe-url-host/README.md) |
+| 401 | 23-security-crypto | [Hide Sensitive Headers](gauntlex/23-security-crypto/401-redact-headers/README.md) |
+| 402 | 23-security-crypto | [Allowlisted Query Parameters](gauntlex/23-security-crypto/402-query-param-filter/README.md) |
+| 403 | 23-security-crypto | [Summarize Security Events](gauntlex/23-security-crypto/403-security-event-counts/README.md) |
+| 404 | 23-security-crypto | [Timing-Resistant Equality](gauntlex/23-security-crypto/404-constant-time-match/README.md) |
+| 405 | 18-capstones | [Inventory Manager](gauntlex/18-capstones/405-inventory-manager/README.md) |
+| 406 | 18-capstones | [Contact Directory](gauntlex/18-capstones/406-contact-book/README.md) |
+| 407 | 18-capstones | [CSV Data Pipeline](gauntlex/18-capstones/407-csv-etl-pipeline/README.md) |
+| 408 | 18-capstones | [Event-Sourced Wallet](gauntlex/18-capstones/408-event-sourced-wallet/README.md) |
+| 409 | 18-capstones | [Local Link Inspector](gauntlex/18-capstones/409-markdown-link-checker/README.md) |
+
+---
+
+# Source Activity Inventory — Historical Reviewed Order
+
+> The following appendix preserves the source-derived arrangement of 693 assigned activities from four curricula. These are source activities, not the 409 authored Gauntlex challenges above. Source-native numbering, links, review notes, and attribution are retained; source coverage is not certified.
 
 ## Audit basis
 

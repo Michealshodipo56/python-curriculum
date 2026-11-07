@@ -1,9 +1,11 @@
 # Last Lines Only
 
 ## Description
+
 Build a tool that selects the final requested lines of a stream without reversing their order.
 
 ## Requirements
+
 - Implement the program in `starter/main.py` using standard input and standard output.
 - Read a nonnegative integer `N` from the first line.
 - Print at most the last `N` subsequent lines in their original order.
@@ -13,10 +15,12 @@ Build a tool that selects the final requested lines of a stream without reversin
 - Match the required output exactly, including newline characters.
 
 ## Tips
+
 - Why is choosing the last lines different from reversing the stream?
 - What happens when the requested limit is larger than the input?
 
 ## Example Input and Output
+
 Input: "2\na\nb\nc\n"
 
 Expected output: "b\nc\n"

@@ -1,9 +1,11 @@
 # Value Histogram
 
 ## Description
+
 Count how often each nonnegative integer occurs in a stream, then display a frequency report sorted by value.
 
 ## Requirements
+
 - Implement the program in `starter/main.py` using standard input and standard output.
 - Read whitespace-separated nonnegative integers from standard input.
 - Count occurrences of each distinct value.
@@ -13,10 +15,12 @@ Count how often each nonnegative integer occurs in a stream, then display a freq
 - Match the required output exactly, including newline characters.
 
 ## Tips
+
 - Why does sorting by value differ from sorting by frequency?
 - How should repeated values affect the count?
 
 ## Example Input and Output
+
 Input: "3 1 3 2 1 3\n"
 
 Expected output: "1: 2\n2: 1\n3: 3\n"

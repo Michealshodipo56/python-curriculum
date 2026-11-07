@@ -1,9 +1,11 @@
 # Who Depends on This?
 
 ## Description
+
 A dependency graph points from packages to their requirements. Reverse those relationships to find the direct dependents of each package.
 
 ## Requirements
+
 - Implement `reverse_dependencies(graph)` in `starter/solution.py`.
 - Accept a mapping from package names to dependency-name lists.
 - Include every name occurring as a key or dependency.
@@ -12,10 +14,13 @@ A dependency graph points from packages to their requirements. Reverse those rel
 - Return the result without printing; use Python's standard library only and do not mutate caller-owned collections.
 
 ## Design Considerations
+
 A package listed as a prerequisite by several packages must list each direct dependent, not indirect dependents.
 
 ## Tips
+
 - Why should a dependency-only package still appear in the result?
 
 ## Example Behavior
+
 `reverse_dependencies({'app': ['core'], 'tool': ['core']})` → `{'app': [], 'tool': [], 'core': ['app', 'tool']}`.

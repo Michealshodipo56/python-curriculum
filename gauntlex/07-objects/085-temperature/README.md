@@ -1,9 +1,11 @@
 # Two Scales, One Value
 
 ## Description
+
 A temperature can be represented in Celsius or Fahrenheit without storing two independent mutable values. Design a class that exposes both scales consistently.
 
 ## Requirements
+
 - Define `Temperature(celsius)` in `starter/solution.py`.
 - Provide read-only `celsius` and `fahrenheit` properties.
 - Ensure the Fahrenheit value reflects the same temperature as the Celsius value.
@@ -12,9 +14,10 @@ A temperature can be represented in Celsius or Fahrenheit without storing two in
 - Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
+
 - What relationship connects the two temperature scales?
 - Why might storing both values independently lead to inconsistencies?
-- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
 ## Example Behavior
+
 `Temperature(0).fahrenheit` is `32`; `Temperature.from_fahrenheit(212).celsius` is `100`.

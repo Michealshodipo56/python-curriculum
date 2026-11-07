@@ -1,9 +1,11 @@
 # Sum the Stream
 
 ## Description
+
 Read integer values spread across multiple lines and produce one total for the entire input stream.
 
 ## Requirements
+
 - Implement the program in `starter/main.py` using standard input and standard output.
 - Read zero or more lines containing whitespace-separated integers.
 - Include every integer on every line in the total.
@@ -13,10 +15,12 @@ Read integer values spread across multiple lines and produce one total for the e
 - Match the required output exactly, including newline characters.
 
 ## Tips
+
 - Why should the number of lines not affect the calculation?
 - What is the sum of no values?
 
 ## Example Input and Output
+
 Input: "1 2\n3 4\n"
 
 Expected output: "10\n"

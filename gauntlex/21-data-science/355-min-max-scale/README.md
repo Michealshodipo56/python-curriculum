@@ -1,9 +1,11 @@
 # Scale to Zero and One
 
 ## Description
+
 Different numeric ranges make features difficult to compare. Rescale observations using the dataset minimum and maximum while preserving their order.
 
 ## Requirements
+
 - Implement `min_max_scale(values)` in `starter/solution.py`.
 - Map each value to `(value - minimum) / (maximum - minimum)`.
 - Return `[]` for empty input.
@@ -13,10 +15,13 @@ Different numeric ranges make features difficult to compare. Rescale observation
 - Floating-point results may be compared approximately.
 
 ## Design Considerations
+
 Calculate the minimum and maximum across the entire supplied sequence before transforming observations. Handle an empty or constant dataset explicitly so no division by zero occurs.
 
 ## Tips
+
 - Why does a constant dataset need special handling?
 
 ## Example Behavior
+
 `min_max_scale([2, 4, 6])` → `[0.0, 0.5, 1.0]`.

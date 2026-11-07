@@ -1,9 +1,11 @@
 # Register a User
 
 ## Description
+
 Register one new person in the existing users table and return the database-generated identity of that record.
 
 ## Requirements
+
 - Implement `insert_user(conn, name, email)` in `starter/solution.py`.
 - Use the supplied live `sqlite3.Connection`; do not open a new connection.
 - Assume the `users(id,name,email)` table already exists.
@@ -14,8 +16,10 @@ Register one new person in the existing users table and return the database-gene
 - Preserve unrelated data and the caller's transaction state.
 
 ## Tips
+
 - Why should user-supplied text be bound as a parameter?
 - How can you identify the row that was just created?
 
 ## Example Behavior
+
 After `insert_user(conn, 'Ada', 'ada@example.com')`, the returned integer identifies the new row.

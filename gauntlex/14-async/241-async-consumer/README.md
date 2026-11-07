@@ -1,9 +1,11 @@
 # Consume Exactly N
 
 ## Description
+
 Unlike draining a queue, consuming a fixed number of items may require waiting for items that have not arrived yet.
 
 ## Requirements
+
 - Implement `async def consume_n(queue, n)` in `starter/solution.py`.
 - Accept an `asyncio.Queue` and integer `n`.
 - Raise `ValueError` when `n` is negative.
@@ -14,7 +16,9 @@ Unlike draining a queue, consuming a fixed number of items may require waiting f
 - Do not print output or block the event loop with synchronous sleeps.
 
 ## Tips
+
 - Why can a consumer need to wait even when a queue is initially empty?
 
 ## Example Behavior
+
 `consume_n(queue, 0)` returns `[]` without removing anything.

@@ -1,9 +1,11 @@
 # Stock Ledger
 
 ## Description
+
 An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
 
 ## Requirements
+
 - Define `Inventory` in `starter/solution.py`.
 - Implement `stock(name, quantity)` to increase a product's quantity.
 - Implement `sell(name, quantity)` to decrease the available quantity.
@@ -13,9 +15,10 @@ An inventory tracks how many units of each product are available. Model stock ad
 - Use Python's standard library only and do not print or request input at import time.
 
 ## Tips
+
 - What state must remain unchanged after a failed sale?
 - How should a product with no prior stock be treated?
-- Think through the object's state before and after each operation; implement the behavior without using the examples as solution code.
 
 ## Example Behavior
+
 After stocking `'pen'` with `5` units and selling `2`, `quantity('pen')` returns `3`.

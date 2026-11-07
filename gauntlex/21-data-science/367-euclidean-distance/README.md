@@ -1,9 +1,11 @@
 # Straight-Line Distance
 
 ## Description
+
 Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
 
 ## Requirements
+
 - Implement `euclidean_distance(a, b)` in `starter/solution.py`.
 - Require vectors of equal length, or raise `ValueError`.
 - Return the square root of the sum of squared coordinate differences.
@@ -12,10 +14,13 @@ Numeric vectors represent points in a coordinate space. Measure their straight-l
 - Floating-point results may be compared approximately.
 
 ## Design Considerations
+
 Match coordinates by position and require equal dimensionality. The square root of accumulated squared differences gives straight-line distance; two empty vectors have zero distance.
 
 ## Tips
+
 - Why can vectors of different dimensions not be compared directly?
 
 ## Example Behavior
+
 `euclidean_distance([0, 0], [3, 4])` → `5.0`.

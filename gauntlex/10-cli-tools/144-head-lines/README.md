@@ -1,9 +1,11 @@
 # First Lines Only
 
 ## Description
+
 Build a tool that selects the earliest requested lines from a text stream and discards the remainder.
 
 ## Requirements
+
 - Implement the program in `starter/main.py` using standard input and standard output.
 - Read a nonnegative integer `N` from the first line.
 - Print at most the first `N` subsequent lines, preserving their order and content.
@@ -13,10 +15,12 @@ Build a tool that selects the earliest requested lines from a text stream and di
 - Match the required output exactly, including newline characters.
 
 ## Tips
+
 - How does the first line differ from the lines being selected?
 - What happens when the requested limit exceeds available data?
 
 ## Example Input and Output
+
 Input: "2\na\nb\nc\n"
 
 Expected output: "a\nb\n"

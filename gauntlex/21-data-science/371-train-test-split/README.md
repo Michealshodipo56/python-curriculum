@@ -1,9 +1,11 @@
 # Hold Out Examples
 
 ## Description
+
 Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
 
 ## Requirements
+
 - Implement `train_test_split(items, test_fraction)` in `starter/solution.py`.
 - Require `test_fraction` between `0` and `1` inclusive; otherwise raise `ValueError`.
 - Use `floor(len(items) * test_fraction)` as the test count.
@@ -13,10 +15,13 @@ Model evaluation requires separating training and held-out observations. Preserv
 - Floating-point results may be compared approximately.
 
 ## Design Considerations
+
 Compute the held-out count using the specified floor rule and select that many items from the end. Keep both partitions ordered and avoid randomization so results are reproducible.
 
 ## Tips
+
 - Why does choosing the final observations matter for reproducibility?
 
 ## Example Behavior
+
 `train_test_split([1, 2, 3, 4], 0.25)` → `[[1, 2, 3], [4]]`.
