@@ -1,19 +1,18 @@
 # Safe Server Errors
 
 ## Description
-Convert an internal failure into a predictable response without exposing exception details.
-
-### Behavior contract
-Implement GET `/safe` returning 200 and body `ok`; GET `/crash` must catch an internal ValueError and return 500 with body `internal error`, without exposing exception details. Return Content-Type text/plain.
+An internal exception should not expose implementation details to API clients. Provide a predictable failure response while preserving normal behavior.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- GET `/safe` returns HTTP 200 with body `ok`.
+- GET `/crash` catches an internal `ValueError` and returns HTTP 500 with body `internal error`.
+- Do not expose exception text in the response.
+- Use `Content-Type: text/plain`.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-An error message intended for a developer is not necessarily safe for an API client.
+- Why is a developer-facing exception message unsafe to return directly?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+GET `/crash` → HTTP 500 with `b'internal error'`, not a traceback.
