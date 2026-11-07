@@ -11,6 +11,9 @@ Combine a collection of inclusive integer ranges into a canonical, sorted set of
 - Do not mutate input intervals or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Sort by interval start before combining overlaps, and preserve the intended treatment of touching endpoints. Keep the output ordered and avoid modifying caller-owned intervals.
+
 ## Tips
 - Why is sorting useful before merging?
 - Why do `[1, 2]` and `[3, 4]` merge under this contract?
