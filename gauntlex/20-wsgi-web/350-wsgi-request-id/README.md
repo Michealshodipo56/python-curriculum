@@ -10,6 +10,9 @@ Request identifiers can help correlate logs, but arbitrary client-supplied heade
 - Set `X-Request-ID` to that accepted value, or to `generated` otherwise.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Validate both ASCII-only alphanumeric characters and the maximum length before reflecting a client-provided identifier. Use the prescribed fallback when any check fails.
+
 ## Tips
 - Why must length and character restrictions be checked before reflecting a header?
 
