@@ -1,18 +1,18 @@
 # Straight-Line Distance
 
 ## Description
-Measure geometric distance between numeric vectors of equal length.
-
-### Behavior contract
-Return Euclidean distance between equal-length numeric vectors. Empty vectors have distance 0. Raise ValueError for different lengths.
+Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
 
 ## Requirements
 - Implement `euclidean_distance(a, b)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require vectors of equal length, or raise `ValueError`.
+- Return the square root of the sum of squared coordinate differences.
+- Return `0` for two empty vectors.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Dimension mismatch is an invalid comparison.
+- Why can vectors of different dimensions not be compared directly?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`euclidean_distance([0, 0], [3, 4])` → `5.0`.
