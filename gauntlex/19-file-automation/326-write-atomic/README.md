@@ -1,18 +1,18 @@
 # Replace a File Safely
 
 ## Description
-Write text through a temporary file and atomically replace the destination.
-
-### Behavior contract
-Write a UTF-8 string to an existing parent directory at the supplied path using a temporary file in the same directory and atomic replacement. Return None. Do not leave temporary files on success.
+Writing directly to a destination risks leaving partial content if a write is interrupted. Prepare replacement content in the same directory before switching files.
 
 ## Requirements
 - Implement `write_text_atomic(path, text)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Write the supplied string as UTF-8.
+- Use a temporary file in the destination's existing parent directory.
+- Atomically replace the destination with the completed temporary file.
+- Return `None`; leave no temporary file after a successful replacement.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-The temporary file must share the destination directory to support an atomic replacement.
+- Why should the temporary file be created on the same filesystem as the destination?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+Writing `'ready\n'` to an existing destination replaces its previous contents with exactly `ready` followed by a newline.
