@@ -1997,6 +1997,9 @@ A file can contain empty lines, a trailing newline, or a final line with no term
 - Why does counting newline characters alone miss a final unterminated line?
 - How do you distinguish an empty file from a file containing one blank line?
 
+## Example Behavior
+For a UTF-8 file containing `one\ntwo\n`, `count_file_lines(path)` returns `2`. An empty file returns `0`.
+
 *Source: gauntlex/06-text-files/079-read-json-file/README.md*
 
 ### 079 — Load Structured Data
@@ -2016,6 +2019,9 @@ Structured configuration and data files may contain objects, arrays, or scalar J
 - Why should the function not assume that every JSON document starts with `{`?
 - What Python values correspond to JSON booleans and null?
 
+## Example Behavior
+For a UTF-8 file containing `{"ok": true, "count": 3}`, `read_json_file(path)` returns `{'ok': True, 'count': 3}`.
+
 *Source: gauntlex/06-text-files/080-csv-column-total/README.md*
 
 ### 080 — Sum a CSV Column
@@ -2034,6 +2040,9 @@ CSV reports often reorder columns and contain cells that cannot be used as numbe
 ## Tips
 - What happens when the requested column moves to another position?
 - How should empty or noninteger cells affect the running total?
+
+## Example Behavior
+For a CSV file containing a header `name,amount` and rows `Ada,4` and `Lin,-2`, `csv_column_total(path, 'amount')` returns `2`.
 
 ---
 
