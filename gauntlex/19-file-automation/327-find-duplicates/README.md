@@ -1,18 +1,18 @@
 # Find Duplicate Content
 
 ## Description
-Group files with identical byte content by their cryptographic digest.
-
-### Behavior contract
-Given a list of file paths, return a dictionary mapping SHA-256 hex digests to sorted path strings, but only for digests occurring more than once. Read file bytes; do not rely on filenames.
+Files with different names can contain identical bytes. Group duplicate content by SHA-256 fingerprints rather than comparing filenames.
 
 ## Requirements
 - Implement `duplicate_hashes(paths)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Accept a list of file paths.
+- Hash each file's raw bytes with SHA-256.
+- Return a dictionary from lowercase digest strings to sorted path strings.
+- Include only digests associated with more than one supplied path.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Different filenames can contain the same bytes, and equal names can contain different bytes.
+- Why is file size or filename alone insufficient to identify duplicates?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+Two distinct paths containing the same bytes appear together under one digest; a unique file is omitted.
