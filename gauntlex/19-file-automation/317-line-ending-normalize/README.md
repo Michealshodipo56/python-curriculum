@@ -10,6 +10,9 @@ Text copied between operating systems may contain CRLF, CR, or LF line endings. 
 - Return the normalized text without writing to disk.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Treat CRLF as one boundary before processing lone CR characters; otherwise a single Windows newline could become two line breaks. Preserve the presence or absence of a trailing newline.
+
 ## Tips
 - Why does handling two-character line endings require care?
 
