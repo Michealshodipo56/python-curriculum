@@ -11,6 +11,9 @@ Configuration fingerprints should remain identical when dictionaries contain the
 - Return the lowercase hexadecimal digest; do not mutate the configuration.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Canonicalize JSON by sorting object keys and using compact separators before UTF-8 encoding. Hash the resulting bytes so dictionary insertion order cannot change the fingerprint.
+
 ## Tips
 - Why does sorting dictionary keys matter for reproducible hashes?
 
