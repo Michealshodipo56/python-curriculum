@@ -11,6 +11,9 @@ Filter a sequence of filenames by final extension without changing the filenames
 - Do not match a similar substring that is not the final suffix.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Match the complete final suffix without treating a similar substring in the middle of a filename as a match. Keep original filenames and input ordering while comparing without case sensitivity.
+
 ## Tips
 - Why should `report.csv.bak` not match a `.csv` filter?
 
