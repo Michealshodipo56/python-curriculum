@@ -1,18 +1,18 @@
 # Aggregate CSV Values
 
 ## Description
-Summarize numeric CSV records by a named category column.
-
-### Behavior contract
-Given a CSV file path with a header, category column name, and integer amount column name, return a dictionary mapping categories to summed amounts. Empty data produces {}. Assume valid CSV and integers.
+Tabular data often needs totals by category. Use CSV column names rather than fixed positions to group and sum numeric records.
 
 ## Requirements
 - Implement `csv_group_sum(path, category_column, amount_column)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Read the CSV file with its header row.
+- Locate the category and amount columns by their supplied names.
+- Treat amounts as valid integer strings and sum them by category.
+- Return a category-to-integer-total dictionary; return `{}` when there are no data rows.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Use header names to locate fields rather than fixed column positions.
+- What happens when the columns appear in a different order?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+For rows `kind,amount` followed by `food,4` and `food,6`, the result is `{'food': 10}`.
