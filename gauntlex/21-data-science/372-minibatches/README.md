@@ -1,18 +1,19 @@
 # Train in Batches
 
 ## Description
-Partition data into consecutive batches while retaining a final incomplete batch.
-
-### Behavior contract
-Split a sequence into consecutive lists of at most positive integer batch_size. Preserve order and include the final partial batch. Raise ValueError for nonpositive batch_size.
+Large datasets are often processed in smaller consecutive groups. Preserve all observations, including a final incomplete group.
 
 ## Requirements
 - Implement `mini_batches(items, batch_size)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require positive integer `batch_size`; raise `ValueError` otherwise.
+- Split input into consecutive lists with at most `batch_size` items.
+- Preserve original order and include a shorter final batch.
+- Return `[]` for empty input.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-A final partial batch still contains useful data.
+- Why should a partially filled final batch not be discarded?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`mini_batches([1, 2, 3, 4, 5], 2)` → `[[1, 2], [3, 4], [5]]`.
