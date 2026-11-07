@@ -1,18 +1,18 @@
 # Plan Log Backups
 
 ## Description
-Generate a predictable sequence of backup filenames without changing the filesystem.
-
-### Behavior contract
-Given a base filename and positive number of backups, return backup filenames in ascending numeric order, from `.1` to `.N`. Do not touch the filesystem.
+Log rotation can be planned as a deterministic sequence of backup names. This exercise generates names without performing filesystem operations.
 
 ## Requirements
 - Implement `rotation_names(base, backups)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Accept a base filename and a positive backup count.
+- Return filenames formed by appending `.1` through `.N` to the base.
+- Keep the names in ascending numeric order.
+- Do not create, rename, or delete files.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-This task plans names only; it does not rotate files.
+- Why is separating a rotation plan from actual file operations useful?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`rotation_names('app.log', 3)` → `['app.log.1', 'app.log.2', 'app.log.3']`.
