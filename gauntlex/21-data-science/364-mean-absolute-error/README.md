@@ -1,18 +1,19 @@
 # Average Prediction Error
 
 ## Description
-Measure the typical magnitude of a prediction's error without cancellation.
-
-### Behavior contract
-Return average absolute difference between corresponding numeric actual and predicted values. Require equal nonempty lengths, otherwise raise ValueError.
+Prediction errors above and below the target should not cancel. Measure the average magnitude of deviations.
 
 ## Requirements
 - Implement `mean_absolute_error(actual, predicted)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length, nonempty actual and predicted sequences.
+- Compute absolute differences for corresponding observations.
+- Return their arithmetic mean.
+- Raise `ValueError` for empty or mismatched sequences.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Errors on opposite sides of the truth must not cancel each other.
+- Why is taking absolute values necessary before averaging?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`mean_absolute_error([1, 3], [2, 1])` → `1.5`.
