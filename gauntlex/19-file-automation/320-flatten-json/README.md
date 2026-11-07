@@ -1,18 +1,18 @@
 # Flatten a JSON Tree
 
 ## Description
-Turn nested dictionaries into dot-separated key paths while retaining their leaf values.
-
-### Behavior contract
-Flatten nested dictionaries into a mapping of dot-separated keys to leaf values. Lists count as leaves. Empty dictionaries count as leaves. Assume input keys are nonempty strings without dots.
+Nested dictionaries can be represented by dotted paths to their leaf values. Flatten the structure without treating lists as subtrees.
 
 ## Requirements
 - Implement `flatten_json(data)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Return a dictionary mapping dotted key paths to leaf values.
+- Recursively traverse dictionaries, but treat lists and empty dictionaries as leaves.
+- Assume keys are nonempty strings without dots.
+- Preserve original leaf values.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Empty dictionaries and lists have special treatment as leaves.
+- Why should an empty dictionary remain visible in the flattened result?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`flatten_json({'a': {'b': 2}, 'c': []})` → `{'a.b': 2, 'c': []}`.
