@@ -11,6 +11,9 @@ Some observations contribute more to a summary than others. Compute a mean that 
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Validate that values and weights align and that the total weight is positive. Zero-weight observations are allowed, but negative weights and an all-zero weighting are not.
+
 ## Tips
 - What happens if every weight is zero?
 
