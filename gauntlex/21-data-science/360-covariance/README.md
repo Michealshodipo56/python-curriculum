@@ -12,6 +12,9 @@ Covariance describes whether two series tend to rise and fall together relative 
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Pair observations by index, measure both deviations from their respective means, and divide the aggregate by the population count. Reject empty and unequal-length series.
+
 ## Tips
 - Why is the population divisor `n` instead of `n-1`?
 
