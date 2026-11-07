@@ -11,6 +11,9 @@ Express each observation relative to the population's center and spread, rather 
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Use population variance with divisor `n`, not sample variance with `n-1`. If every observation equals the mean, return a zero for each position instead of dividing by zero.
+
 ## Tips
 - How does population variance differ from sample variance?
 
