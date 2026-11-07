@@ -1,19 +1,18 @@
 # Read Form Fields
 
 ## Description
-Decode a URL-encoded POST body and return a selected form value.
-
-### Behavior contract
-Implement POST `/form` accepting application/x-www-form-urlencoded body and returning the first `name` value as UTF-8 bytes, or empty bytes if absent. Return 200 with Content-Type text/plain.
+HTML forms commonly submit URL-encoded data in a POST body. Decode it and extract the first matching field.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- For POST `/form`, read the `application/x-www-form-urlencoded` body.
+- Decode percent escapes and plus-as-space encoding.
+- Return the first `name` field value as UTF-8 bytes, or empty bytes if absent.
+- Respond with HTTP 200 and `Content-Type: text/plain`.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Form data uses percent decoding and plus-as-space rules.
+- Why should repeated form fields use the first value for this contract?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+POST body `name=Ada+Lovelace` → `b'Ada Lovelace'`.
