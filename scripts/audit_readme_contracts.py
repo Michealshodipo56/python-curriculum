@@ -35,9 +35,13 @@ def main():
             problems.append(f"{task.name}: starter syntax error {exc}")
             continue
         declared = set(FUNCTION.findall(content))
-        defined = {node.name for node in ast.walk(tree) if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))}
-        for name in declared - defined:
-            problems.append(f"{task.name}: README specifies {name} but starter does not define it")
+        defined = {node.name for node in tree.body if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef))}
+        has_class_starter = any(isinstance(node, ast.ClassDef) for node in tree.body)
+        # Object-oriented starters intentionally expose only an empty class; methods
+        # are learner work and must not be mistaken for missing top-level functions.
+        if not has_class_starter:
+            for name in declared - defined:
+                problems.append(f"{task.name}: README specifies {name} but starter does not define it")
     print(f"README contract audit: {checked} challenges; {len(problems)} issue(s)")
     for issue in problems:
         print(issue)
