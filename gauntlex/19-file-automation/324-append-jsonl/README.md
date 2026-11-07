@@ -1,18 +1,18 @@
 # Append Structured Records
 
 ## Description
-Add one JSON value to a JSON Lines file while keeping earlier records intact.
-
-### Behavior contract
-Append a JSON-compatible value as one compact sorted-key JSON record followed by a newline to a UTF-8 file, creating it if absent. Return None.
+JSON Lines stores independent JSON values on separate lines. Append a new value without destroying existing records.
 
 ## Requirements
 - Implement `append_jsonl(path, value)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Open or create the UTF-8 file at `path` for appending.
+- Serialize the JSON-compatible value in compact JSON with sorted object keys.
+- Append exactly one serialized record followed by a newline.
+- Return `None` and preserve existing content.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Each appended record occupies its own line.
+- Why must each appended value end with a newline?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+Appending `{'b': 2, 'a': 1}` writes `{"a":1,"b":2}\n` at the end of the file.
