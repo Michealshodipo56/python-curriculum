@@ -14,3 +14,6 @@ A file can contain empty lines, a trailing newline, or a final line with no term
 ## Tips
 - Why does counting newline characters alone miss a final unterminated line?
 - How do you distinguish an empty file from a file containing one blank line?
+
+## Example Behavior
+For a UTF-8 file containing `one\ntwo\n`, `count_file_lines(path)` returns `2`. An empty file returns `0`.
