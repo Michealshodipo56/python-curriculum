@@ -1,18 +1,17 @@
 # Recognize File Extensions
 
 ## Description
-Identify the final extension of a filename, including hidden-file edge cases.
-
-### Behavior contract
-Return the lowercase final extension including its dot from a filename. A leading dot on a dotfile does not count as an extension. Return empty string if none.
+A file's final suffix can identify its type, but hidden files beginning with a dot need careful treatment.
 
 ## Requirements
 - Implement `file_extension(filename)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Return the lowercase final extension, including its leading dot.
+- Do not count the leading dot of a dotfile as an extension by itself.
+- Return `''` when there is no extension.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-A dot at the beginning of a hidden filename does not necessarily indicate an extension.
+- How does `.env` differ from `.env.local`?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`file_extension('REPORT.CSV')` → `'.csv'`; `file_extension('.env')` → `''`.
