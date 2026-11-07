@@ -1,18 +1,18 @@
 # Load a JSON Lines Stream
 
 ## Description
-Read structured values from a JSON Lines file, skipping blank lines.
-
-### Behavior contract
-Read a UTF-8 JSON Lines file and return parsed values in order, skipping blank or whitespace-only lines. Propagate JSON decoding errors.
+JSON Lines files contain one independent JSON document per nonblank line. Read the stream in order while allowing malformed JSON to surface as an error.
 
 ## Requirements
 - Implement `read_jsonl(path)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Read the file as UTF-8 text.
+- Skip blank or whitespace-only lines.
+- Parse every other line as a JSON value and return the values in original order.
+- Propagate JSON decoding errors rather than silently ignoring invalid records.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Each nonblank line is an independent JSON document.
+- Why must each line be decoded independently?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+A file with lines `{"a":1}`, blank, and `[2,3]` produces `[{'a': 1}, [2, 3]]`.
