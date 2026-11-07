@@ -1,21 +1,20 @@
 # Real Calendar Dates
 
 ## Description
-Accept a date string only if it describes an actual day on the calendar.
+A date-like string is not necessarily a real date. Validate calendar rules, including month lengths and leap years, before accepting it.
 
 ## Requirements
 - Implement `parse_date(text)` in `starter/solution.py`.
-- Return the result to the caller without printing or requesting interactive input.
-- Handle the boundary cases implied by the examples and description.
-- Use Python's standard library only.
-- Preserve caller-owned input values and collections.
+- Interpret date text in the `YYYY-MM-DD` calendar format.
+- Return the validated date string for a real date.
+- Return `None` when the date is invalid, including impossible days such as February 29 in a nonleap year.
+- Use Python's standard library only. Do not mutate caller-owned inputs.
+
+## Tips
+- Why does a matching pattern not prove that a date exists?
+- Which years permit February 29?
 
 ## Example Behavior
 `parse_date("2024-02-29")` → `"2024-02-29"`
 
 `parse_date("2023-02-29")` → `None`
-
-## Tips
-- Identify the expected input, output, and failure or empty-data behavior before implementing the function.
-- Check the exact behavior at boundaries, not only typical inputs.
-Check leap years and impossible day numbers; matching a date pattern alone is not enough.
