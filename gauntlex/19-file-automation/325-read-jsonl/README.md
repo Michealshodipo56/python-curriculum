@@ -11,6 +11,9 @@ JSON Lines files contain one independent JSON document per nonblank line. Read t
 - Propagate JSON decoding errors rather than silently ignoring invalid records.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Treat each nonblank line as its own JSON document, preserving stream order and supporting any valid JSON value type. Invalid nonblank lines must raise a decoding error rather than disappear.
+
 ## Tips
 - Why must each line be decoded independently?
 
