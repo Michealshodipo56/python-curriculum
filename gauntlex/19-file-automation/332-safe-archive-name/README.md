@@ -11,6 +11,9 @@ Archive member names can contain traversal or platform-specific absolute paths. 
 - Do not read or write any files.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Check every member path component rather than trusting normalization to remove dangerous segments. Reject Windows drive prefixes and backslashes even when the host platform is not Windows.
+
 ## Tips
 - Why must Windows-style paths be rejected even on a POSIX system?
 
