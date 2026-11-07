@@ -26,9 +26,15 @@ Every task contains a learner-facing README, JSON metadata, an intentionally inc
 
 Tasks are newly worded around common Python concepts from the source curricula, using 01-edu's problem-first philosophy as an educational reference. Preserve source license and attribution obligations when reusing any original source content.
 
-## Scope and completion
+## Curriculum status and navigation
 
-**409 original tasks authored. The entire curriculum is not complete.** The source order lists 693 assigned activities, which require individual design decisions, coverage tracking, and validation. Do not treat this directory as a complete replacement for the four sources yet.
+All **409 numbered challenge packages** (001–409) are present across 23 sections. The learner-facing documentation pass is complete, but independent behavioral verification, source-to-task traceability, licensing review, and Gauntlex runtime integration remain outstanding. Do not represent this as a production-certified curriculum or as complete conversion of the 693 source activities.
+
+- **Learner sequence:** [`GAUNTLEX_LEARNING_PATH.md`](../GAUNTLEX_LEARNING_PATH.md) — ordered challenge links, with capstones placed after prerequisite material.
+- **Source inventory:** [`CURRICULUM_ORDER.md`](../CURRICULUM_ORDER.md) — 693 source activities; not 693 authored Gauntlex challenges.
+- **Release criteria:** [`QUALITY_AND_RELEASE.md`](QUALITY_AND_RELEASE.md) — verification and provenance requirements.
+
+The earlier source-derived unified draft and duplicate quality-assurance report were removed to reduce competing documentation.
 
 ## Control flow sequence
 
