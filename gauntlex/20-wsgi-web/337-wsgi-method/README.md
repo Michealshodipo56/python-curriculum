@@ -1,19 +1,18 @@
 # Method Matters
 
 ## Description
-Distinguish a supported HTTP method from unsupported methods on the same resource.
-
-### Behavior contract
-Implement a WSGI callable accepting GET `/resource` with 200 body `resource`, rejecting other methods for that path with 405 body `method not allowed`, and returning 404 body `not found` for other paths. Content-Type text/plain.
+The same URL can support one HTTP method while rejecting another. Distinguish a missing route from a disallowed method.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- Accept GET `/resource` with HTTP 200 and body `resource`.
+- Return HTTP 405 with body `method not allowed` for other methods at `/resource`.
+- Return HTTP 404 with body `not found` for other paths.
+- Set a text/plain content type.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-A missing route and a disallowed method have different HTTP statuses.
+- What information does 405 convey that 404 does not?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+GET `/resource` → `200`; POST `/resource` → `405`; GET `/else` → `404`.
