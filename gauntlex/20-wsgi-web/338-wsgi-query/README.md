@@ -1,19 +1,18 @@
 # Decode Query Input
 
 ## Description
-Read a URL-encoded query parameter and return its decoded text.
-
-### Behavior contract
-Implement GET `/echo` as a WSGI application that reads the first `message` query parameter and returns its UTF-8 bytes. Decode URL form encoding, including plus signs. Other paths return 404. Content-Type text/plain; charset=utf-8.
+Query parameters are encoded separately from the URL path. Decode the first `message` value on an echo route.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- Handle GET `/echo` and read the first `message` value from `QUERY_STRING`.
+- Decode percent escapes and plus-as-space form encoding.
+- Return the decoded message as UTF-8 bytes and use text/plain with UTF-8 charset.
+- Return HTTP 404 for other paths.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Query encoding treats plus signs as spaces and supports percent escapes.
+- Why is splitting a raw query string on every equals sign unreliable?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+GET `/echo?message=hello+world` → `b'hello world'`.
