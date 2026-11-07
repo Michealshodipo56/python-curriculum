@@ -2,9 +2,9 @@
 
 **Learn Python by solving problems, building projects, and explaining your decisions.**
 
-A project-based Python curriculum designed for [Gauntlex](https://www.gauntlex.vercel.app), with **409 challenges across 23 sections**. Start with your first terminal program, develop reusable functions and reliable applications, and finish with projects that combine data, persistence, APIs, and automation.
+A project-based Python curriculum designed for [Gauntlex](https://gauntlex.vercel.app/), with **409 challenges across 23 sections**. Start with your first terminal program, develop reusable functions and reliable applications, and finish with projects that combine data, persistence, APIs, and automation.
 
-**[Visit Gauntlex](https://www.gauntlex.vercel.app)** · **[Explore the learning path](GAUNTLEX_LEARNING_PATH.md)** · **[Read the complete curriculum](GAUNTLEX_PYTHON_CURRICULUM.md)**
+**[Visit Gauntlex](https://gauntlex.vercel.app/)** · **[Explore the learning path](GAUNTLEX_LEARNING_PATH.md)** · **[Read the complete curriculum](GAUNTLEX_PYTHON_CURRICULUM.md)**
 
 ## About this repository
 
@@ -119,4 +119,4 @@ Keep assignments approachable for their intended level, preserve existing public
 
 ---
 
-**Build your Python skills one challenge at a time.** Explore the platform at **[www.gauntlex.vercel.app](https://www.gauntlex.vercel.app)**.
+**Build your Python skills one challenge at a time.** Explore the platform at **[gauntlex.vercel.app](https://gauntlex.vercel.app/)**.
