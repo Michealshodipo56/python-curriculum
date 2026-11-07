@@ -14,3 +14,6 @@ CSV reports often reorder columns and contain cells that cannot be used as numbe
 ## Tips
 - What happens when the requested column moves to another position?
 - How should empty or noninteger cells affect the running total?
+
+## Example Behavior
+For a CSV file containing a header `name,amount` and rows `Ada,4` and `Lin,-2`, `csv_column_total(path, 'amount')` returns `2`.
