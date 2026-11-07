@@ -1,18 +1,18 @@
 # Measure a Classifier
 
 ## Description
-Calculate precision, recall, accuracy, and F1 from classification outcome counts.
-
-### Behavior contract
-Given integer tp,tn,fp,fn >=0, return precision, recall, accuracy and f1 as floats in a dictionary. Use 0.0 when any metric denominator is zero, including accuracy on an empty sample. Raise ValueError for negative counts.
+Different evaluation metrics capture different kinds of classification performance. Derive four measures from outcome counts.
 
 ## Requirements
 - Implement `classification_metrics(tp, tn, fp, fn)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Accept nonnegative integer `tp`, `tn`, `fp`, and `fn`; reject negative counts with `ValueError`.
+- Return a dictionary containing floating-point `precision`, `recall`, `accuracy`, and `f1`.
+- Use `0.0` whenever a metric's denominator is zero, including an empty sample.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Each metric answers a different question and has its own denominator.
+- Why can precision and recall disagree for the same classifier?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`classification_metrics(1, 1, 0, 0)` → all four metrics equal `1.0`.
