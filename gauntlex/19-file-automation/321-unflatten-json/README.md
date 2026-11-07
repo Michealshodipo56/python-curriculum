@@ -11,6 +11,9 @@ Reverse a flat mapping of dotted paths into nested dictionaries, creating interm
 - Assume no conflicting paths such as `a` and `a.b`.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Build intermediate dictionaries only for nonfinal path components, then place the supplied leaf at its terminal key. Rely on the stated absence of prefix conflicts rather than inventing a conflict policy.
+
 ## Tips
 - What intermediate structure is needed for a key with three components?
 
