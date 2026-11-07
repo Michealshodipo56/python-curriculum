@@ -1,18 +1,18 @@
 # Compare Directions
 
 ## Description
-Measure vector similarity by the angle between two numeric vectors.
-
-### Behavior contract
-Return cosine similarity of equal-length numeric vectors. Return 0.0 if either vector has zero magnitude, including empty vectors. Raise ValueError on length mismatch.
+Cosine similarity compares vector orientation rather than raw distance, making direction the focus of the measure.
 
 ## Requirements
 - Implement `cosine_similarity(a, b)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length vectors, or raise `ValueError`.
+- Compute the dot product divided by the product of vector magnitudes.
+- Return `0.0` when either magnitude is zero, including empty vectors.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-A zero-length vector has no direction; the task defines a fallback.
+- Why is a zero vector a special case for directional similarity?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`cosine_similarity([1, 0], [0, 1])` → `0.0`; identical unit vectors → `1.0`.
