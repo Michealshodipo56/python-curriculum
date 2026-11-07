@@ -1,19 +1,18 @@
 # Consistent Not Found
 
 ## Description
-Return a structured JSON error for any requested path.
-
-### Behavior contract
-Implement a WSGI application that always returns 404 Not Found, Content-Type application/json, and compact JSON bytes `{"error":"not found","path":PATH}` where PATH is PATH_INFO or empty string.
+Even an error-only service should provide predictable JSON and HTTP metadata. Include the requested path in a structured not-found response.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- Return HTTP 404 Not Found for every request.
+- Set `Content-Type: application/json`.
+- Return compact JSON with keys `error` set to `not found` and `path` set to `PATH_INFO` or `''` when missing.
+- Return JSON as bytes.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Error responses need the same attention to content type and encoding as successful responses.
+- Why does a structured error need the same encoding discipline as a successful response?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+With `PATH_INFO='/missing'`, body is `b'{"error":"not found","path":"/missing"}'`.
