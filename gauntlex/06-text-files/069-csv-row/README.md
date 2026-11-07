@@ -1,21 +1,20 @@
 # Fields and Quotes
 
 ## Description
-Interpret one comma-separated record where quoted fields may contain commas or escaped quotation marks.
+A comma-separated row may contain quoted fields whose commas are data rather than separators. Interpret one complete record using CSV quoting conventions.
 
 ## Requirements
 - Implement `parse_csv_row(line)` in `starter/solution.py`.
-- Return the result to the caller without printing or requesting interactive input.
-- Handle the boundary cases implied by the examples and description.
-- Use Python's standard library only.
-- Preserve caller-owned input values and collections.
+- Return the parsed fields of the supplied CSV record as a list of strings.
+- Respect quoted commas and doubled quotation marks inside quoted fields.
+- Preserve empty fields and their positions; use Python's standard library.
+- Use Python's standard library only. Return values without printing or requesting input; do not mutate caller-owned inputs.
+
+## Tips
+- Why does splitting on every comma fail for a quoted field?
+- How are quotation marks represented inside a quoted CSV value?
 
 ## Example Behavior
 `parse_csv_row("a,b,c")` → `["a", "b", "c"]`
 
 `parse_csv_row("\"a,b\",c")` → `["a,b", "c"]`
-
-## Tips
-- Identify the input type, output type, and exact format before implementing the function.
-- Consider empty or minimal input alongside the supplied examples.
-A comma inside quotation marks is data, not a field boundary. Explore the CSV quoting rules.
