@@ -11,6 +11,9 @@ Cosine similarity compares vector orientation rather than raw distance, making d
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Calculate directional similarity from a dot product and the two vector magnitudes. A zero-magnitude vector has no defined direction, so return the prescribed zero result.
+
 ## Tips
 - Why is a zero vector a special case for directional similarity?
 
