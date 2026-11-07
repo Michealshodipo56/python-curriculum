@@ -11,6 +11,9 @@ Cookies arrive in a request header containing multiple name-value pairs. Determi
 - Respond with HTTP 200 and `Content-Type: text/plain`.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Parse cookie name-value pairs without mistaking the mere presence of `session` for a usable session. The contract requires a nonempty value; other cookie names must not affect the result.
+
 ## Tips
 - Why is the presence of a cookie name insufficient when its value is empty?
 
