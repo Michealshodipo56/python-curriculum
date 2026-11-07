@@ -1,18 +1,18 @@
 # First Not Smaller
 
 ## Description
-Find the earliest position where a sorted value meets or exceeds a target using logarithmic comparisons.
-
-### Behavior contract
-Return the first index in sorted ascending values where element >= target, or len(values) if none. Duplicates are allowed. Must use O(log n) comparisons.
+Search a sorted collection for the first position at which a target could be inserted without placing it after an equal value. The result is an insertion boundary, even when the target is absent.
 
 ## Requirements
 - Implement `lower_bound(values, target)` in `starter/solution.py`.
+- Assume `values` is sorted in ascending order and may contain duplicates.
+- Return the index of the first element greater than or equal to `target`; return `len(values)` if there is none.
+- Use O(log n) comparisons; do not mutate the input or print output.
 - Use Python's standard library only.
-- Do not mutate inputs or print.
-- Respect the specified asymptotic complexity.
 
 ## Tips
-Maintain a search interval whose boundaries have a precise meaning.
+- What does the boundary mean when all elements are smaller than the target?
+- Which half can be discarded when a middle value equals the target?
 
-The task is to design an implementation that meets both behavior and efficiency requirements.
+## Example Behavior
+`lower_bound([1, 2, 2, 5], 2)` → `1`; `lower_bound([1, 2], 3)` → `2`.
