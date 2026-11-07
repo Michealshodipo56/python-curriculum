@@ -11,6 +11,9 @@ Measure the longest contiguous stretch of Unicode text in which no character rep
 - Do not print or mutate inputs.
 - Use Python's standard library only.
 
+## Design Considerations
+Track a contiguous window containing no repeated characters. When a repeated character appears, adjust the left boundary without revisiting every earlier substring.
+
 ## Tips
 - How can the left edge of a valid window move when a repeated character appears?
 - What information about earlier occurrences would avoid rescanning?
