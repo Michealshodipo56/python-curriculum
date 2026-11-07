@@ -1,18 +1,19 @@
 # Weighted Recent History
 
 ## Description
-Produce a smoothed series where newer observations receive a controlled weight.
-
-### Behavior contract
-Return a list of smoothed values where first output equals first input and each later output is alpha*current+(1-alpha)*previous_smoothed. Require 0<alpha<=1; empty values return [].
+Exponential smoothing balances a new observation with the previous smoothed estimate, producing a history-aware series.
 
 ## Requirements
 - Implement `exponential_smoothing(values, alpha)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require smoothing factor `alpha` to satisfy `0 < alpha <= 1`.
+- For nonempty input, begin with the first observation unchanged.
+- For later observations, combine the current value and previous smoothed output using `alpha` and `1-alpha`.
+- Return `[]` for empty input.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Each output depends on the previous smoothed value, not simply the previous raw value.
+- Why must the recurrence use the previous smoothed value rather than the previous raw observation?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`exponential_smoothing([10, 20, 30], 0.5)` → `[10, 15.0, 22.5]`.
