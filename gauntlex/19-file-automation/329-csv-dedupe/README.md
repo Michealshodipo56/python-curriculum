@@ -1,18 +1,18 @@
 # Count Unique CSV Rows
 
 ## Description
-Count distinct CSV data rows without treating the header as data.
-
-### Behavior contract
-Given a CSV file path with a header, return the number of unique data rows. Two rows are equal if every field matches, irrespective of record order. Assume valid CSV.
+A CSV file may repeat complete data rows. Count distinct parsed records while excluding the header from the data.
 
 ## Requirements
 - Implement `csv_unique_rows(path)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Read a valid CSV file with a header.
+- Compare data rows by all parsed field values, regardless of row order.
+- Return the number of distinct data rows as an integer.
+- Do not count the header as a data row.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Row equality depends on parsed field values, not the row's position.
+- Why is comparing only one field insufficient for full-row deduplication?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+For data rows `a,1`, `a,1`, and `a,2`, the unique row count is `2`.
