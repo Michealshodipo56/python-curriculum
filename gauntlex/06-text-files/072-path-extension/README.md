@@ -1,21 +1,20 @@
 # Final File Suffix
 
 ## Description
-Extract the final extension of a POSIX filename, ignoring the case of its letters.
+A filename can contain several dots or none at all. Identify its final suffix without confusing earlier filename segments with the extension.
 
 ## Requirements
 - Implement `path_extension(path)` in `starter/solution.py`.
-- Return the result to the caller without printing or requesting interactive input.
-- Handle the boundary cases implied by the examples and description.
-- Use Python's standard library only.
-- Preserve caller-owned input values and collections.
+- Inspect the final filename component of the supplied POSIX path.
+- Return the final extension in lowercase without the leading dot.
+- Return an empty string when there is no extension; do not treat a lone leading dot as an ordinary extension.
+- Use Python's standard library only. Do not mutate caller-owned inputs.
+
+## Tips
+- Why is the final dot more relevant than the first dot?
+- How should a hidden file without a second dot be treated?
 
 ## Example Behavior
 `path_extension("notes.TXT")` → `"txt"`
 
 `path_extension("archive.tar.gz")` → `"gz"`
-
-## Tips
-- Identify the input type, output type, and exact format before implementing the function.
-- Consider empty or minimal input alongside the supplied examples.
-Consider filenames with multiple dots and filenames without an extension.
