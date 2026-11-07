@@ -12,6 +12,9 @@ Different features can have different scales. Standardize each matrix column ind
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Compute population statistics separately for each feature column, not across the whole matrix. Detect ragged rows and turn constant columns into zeros while preserving row order.
+
 ## Tips
 - Why would computing one mean for the entire matrix distort individual features?
 
