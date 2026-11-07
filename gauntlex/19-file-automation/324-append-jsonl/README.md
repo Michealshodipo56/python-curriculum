@@ -11,6 +11,9 @@ JSON Lines stores independent JSON values on separate lines. Append a new value 
 - Return `None` and preserve existing content.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Preserve existing file content and append one complete UTF-8 JSON record per call. Canonical key ordering and compact separators make output stable for downstream consumers.
+
 ## Tips
 - Why must each appended value end with a newline?
 
