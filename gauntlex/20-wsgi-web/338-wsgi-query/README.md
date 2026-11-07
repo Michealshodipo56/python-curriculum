@@ -11,6 +11,9 @@ Query parameters are encoded separately from the URL path. Decode the first `mes
 - Return HTTP 404 for other paths.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Parse `QUERY_STRING` independently of `PATH_INFO`, preserving the first value for repeated `message` keys. Decode percent escapes and plus signs before UTF-8 encoding the response.
+
 ## Tips
 - Why is splitting a raw query string on every equals sign unreliable?
 
