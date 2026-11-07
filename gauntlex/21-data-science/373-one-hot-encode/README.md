@@ -11,6 +11,9 @@ Categorical labels can be represented as binary vectors with one active position
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Use the supplied class sequence as the fixed coordinate order. Reject duplicate class definitions and unknown labels rather than silently producing ambiguous or all-zero rows.
+
 ## Tips
 - Why must the class order be fixed before encoding?
 
