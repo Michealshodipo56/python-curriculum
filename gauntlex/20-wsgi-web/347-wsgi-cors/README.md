@@ -11,6 +11,9 @@ Cross-origin headers must not trust origins merely because they resemble an appr
 - Set `Content-Type: text/plain`.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Treat the approved origin as an exact string, not a suffix or substring pattern. Omit the allow-origin header entirely for missing or unapproved origins rather than reflecting untrusted input.
+
 ## Tips
 - Why is a suffix or substring match unsafe for origin allowlists?
 
