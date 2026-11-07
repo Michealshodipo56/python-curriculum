@@ -11,6 +11,9 @@ Configuration files group assignments under named sections. Read only one sectio
 - Return entries from the requested section, with later duplicate keys overriding earlier ones.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Track the active section as lines are read, and apply assignments only while the requested section is active. Later duplicate keys in that section replace earlier values.
+
 ## Tips
 - How can the current section be tracked while reading line by line?
 
