@@ -1,18 +1,18 @@
 # Map a Directory
 
 ## Description
-Create a sorted inventory of regular files beneath a directory.
-
-### Behavior contract
-Given a directory path, recursively return sorted relative POSIX paths of all regular files beneath it. Exclude directories and do not follow directory symlinks.
+A directory manifest describes all regular files below a root using portable relative paths. Traverse subdirectories without following directory symlinks.
 
 ## Requirements
 - Implement `directory_manifest(root)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Recursively find regular files beneath the supplied root directory.
+- Return their paths relative to the root using POSIX forward slashes.
+- Sort the resulting path strings alphabetically.
+- Exclude directories and do not follow directory symlinks.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Directory symlinks should not lead the traversal outside the intended tree.
+- Why is a relative POSIX path more portable than an absolute local path?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+A root containing `a.txt` and `docs/b.txt` produces `['a.txt', 'docs/b.txt']`.
