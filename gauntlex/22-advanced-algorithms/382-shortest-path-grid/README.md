@@ -1,18 +1,20 @@
 # Shortest Grid Route
 
 ## Description
-Find the minimum number of moves between two grid corners while avoiding blocked cells.
-
-### Behavior contract
-Given a rectangular grid of 0 (open) and 1 (blocked), return minimum number of four-direction moves from top-left to bottom-right, or -1 if unreachable. Return -1 for empty grid or blocked endpoints. Assume rows have equal length.
+Navigate a rectangular grid from its upper-left corner to its lower-right corner while avoiding blocked cells. Return the fewest orthogonal moves, not the number of visited cells.
 
 ## Requirements
 - Implement `shortest_path_grid(grid)` in `starter/solution.py`.
+- Cells are `0` for open and `1` for blocked; assume equal row lengths.
+- Movement is permitted up, down, left, or right, never diagonally.
+- Return the minimum number of moves from top-left to bottom-right.
+- Return `-1` for an empty grid, blocked endpoint, or unreachable destination.
+- Do not mutate the grid or print.
 - Use Python's standard library only.
-- Do not mutate inputs or print.
-- Respect the specified asymptotic complexity.
 
 ## Tips
-Unweighted shortest paths can be explored in layers.
+- Why does exploring reachable cells by distance layers find a shortest route?
+- How many moves does a single open cell require?
 
-The task is to design an implementation that meets both behavior and efficiency requirements.
+## Example Behavior
+`shortest_path_grid([[0, 0], [1, 0]])` → `2`; `shortest_path_grid([[1]])` → `-1`.
