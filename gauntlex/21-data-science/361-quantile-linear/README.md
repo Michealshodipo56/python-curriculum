@@ -12,6 +12,9 @@ Quantiles locate positions in sorted observations, including positions that fall
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Sort a copy of the data before locating the fractional index `(n - 1) * q`. When the position lies between observations, interpolate rather than rounding to a nearby index.
+
 ## Tips
 - How does an interpolated quantile differ from selecting the nearest observation?
 
