@@ -11,6 +11,9 @@ The coefficient of determination compares prediction residuals against the natur
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Compare residual error against variation around the actual mean. A constant target has no natural variation, so use the specified exact-prediction rule instead of dividing by zero.
+
 ## Tips
 - Why does a constant target sequence require a special rule?
 
