@@ -11,6 +11,9 @@ Nested dictionaries can be represented by dotted paths to their leaf values. Fla
 - Preserve original leaf values.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Differentiate an empty mapping from a nonempty mapping: an empty dictionary is a leaf that must survive flattening. Lists are also opaque values, even when they contain dictionaries.
+
 ## Tips
 - Why should an empty dictionary remain visible in the flattened result?
 
