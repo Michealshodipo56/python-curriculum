@@ -12,6 +12,9 @@ Model evaluation requires separating training and held-out observations. Preserv
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Compute the held-out count using the specified floor rule and select that many items from the end. Keep both partitions ordered and avoid randomization so results are reproducible.
+
 ## Tips
 - Why does choosing the final observations matter for reproducibility?
 
