@@ -1,19 +1,18 @@
 # Read a Request Body
 
 ## Description
-Read a declared number of request bytes and transform the decoded text.
-
-### Behavior contract
-Implement POST `/uppercase` reading exactly CONTENT_LENGTH bytes from `wsgi.input`, decoding UTF-8, uppercasing text, and returning UTF-8 bytes with 200 status. Other paths return 404. Content-Type text/plain.
+WSGI exposes request bodies as a byte stream. Read only the declared bytes before transforming their decoded text.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- For POST `/uppercase`, read exactly `CONTENT_LENGTH` bytes from `wsgi.input`.
+- Decode UTF-8, uppercase the text, and return UTF-8 bytes with HTTP 200.
+- Set `Content-Type: text/plain`.
+- Return HTTP 404 for other paths.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-Never read beyond the advertised content length.
+- What could go wrong if the application reads beyond the advertised length?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+POST `/uppercase` with body `hello` → `b'HELLO'`.
