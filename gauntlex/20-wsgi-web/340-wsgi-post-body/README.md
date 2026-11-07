@@ -11,6 +11,9 @@ WSGI exposes request bodies as a byte stream. Read only the declared bytes befor
 - Return HTTP 404 for other paths.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Respect the declared request-body byte count when reading `wsgi.input`. Decode only the bytes belonging to this request and keep the response body in bytes after transforming text.
+
 ## Tips
 - What could go wrong if the application reads beyond the advertised length?
 
