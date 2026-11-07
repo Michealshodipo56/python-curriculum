@@ -1,18 +1,18 @@
 # Encode Categories
 
 ## Description
-Represent category labels as vectors with a single active position.
-
-### Behavior contract
-Given a list of hashable labels and an ordered list of distinct classes, return a matrix of 0/1 rows with one 1 at each label's class position. Raise ValueError for unknown labels or duplicate classes.
+Categorical labels can be represented as binary vectors with one active position. The supplied class order defines that position.
 
 ## Requirements
 - Implement `one_hot_encode(labels, classes)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Accept hashable labels and an ordered sequence of distinct classes.
+- Return one row per label, with `1` at its class position and `0` elsewhere.
+- Raise `ValueError` for duplicate classes or labels not found among classes.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-The class ordering defines which position each label occupies.
+- Why must the class order be fixed before encoding?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`one_hot_encode(['cat', 'dog'], ['dog', 'cat'])` → `[[0, 1], [1, 0]]`.
