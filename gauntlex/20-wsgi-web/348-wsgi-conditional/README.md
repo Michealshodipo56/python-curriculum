@@ -11,6 +11,9 @@ Entity tags allow a client to ask whether cached content is still current. Retur
 - Include the same ETag in both responses.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Return the same exact quoted ETag in both cache-hit and cache-miss responses. Only an exact matching conditional header produces 304 and an empty body; otherwise return the resource.
+
 ## Tips
 - Why should a 304 response omit the representation body?
 
