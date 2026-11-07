@@ -1,18 +1,18 @@
 # Fingerprint a File
 
 ## Description
-Calculate a content hash of a file without loading its entire contents into memory.
-
-### Behavior contract
-Return lowercase SHA-256 hex digest of the raw bytes in a file at the supplied path. Stream the file in chunks instead of reading it all at once.
+Large files should be hashed without loading all bytes into memory. Compute a content fingerprint from the exact raw byte stream.
 
 ## Requirements
 - Implement `file_checksum(path)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Read the file at `path` in bounded chunks.
+- Compute SHA-256 over its raw bytes, without text decoding or newline changes.
+- Return the lowercase hexadecimal digest.
+- Do not modify the file.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-A file's content, not its filename, determines the digest.
+- Why must binary file bytes be hashed without text conversion?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+A file containing the bytes `abc` has SHA-256 digest `ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad`.
