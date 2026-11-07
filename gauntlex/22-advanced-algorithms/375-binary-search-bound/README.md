@@ -10,6 +10,9 @@ Search a sorted collection for the first position at which a target could be ins
 - Use O(log n) comparisons; do not mutate the input or print output.
 - Use Python's standard library only.
 
+## Design Considerations
+Maintain a half-open search interval whose left boundary is the earliest possible valid insertion point. Equal elements must push the search toward earlier positions, not terminate it.
+
 ## Tips
 - What does the boundary mean when all elements are smaller than the target?
 - Which half can be discarded when a middle value equals the target?
