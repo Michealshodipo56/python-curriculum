@@ -14,3 +14,6 @@ Structured configuration and data files may contain objects, arrays, or scalar J
 ## Tips
 - Why should the function not assume that every JSON document starts with `{`?
 - What Python values correspond to JSON booleans and null?
+
+## Example Behavior
+For a UTF-8 file containing `{"ok": true, "count": 3}`, `read_json_file(path)` returns `{'ok': True, 'count': 3}`.
