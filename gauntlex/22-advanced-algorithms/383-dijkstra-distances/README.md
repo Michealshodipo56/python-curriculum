@@ -12,6 +12,9 @@ Determine the least total cost from a starting node to every reachable node in a
 - Do not mutate the graph or print.
 - Use Python's standard library only.
 
+## Design Considerations
+Relax candidate distances only when a shorter route is found. Nonnegative edge weights are essential for Dijkstra's correctness, and unreachable vertices should retain the specified sentinel.
+
 ## Tips
 - Why can a later route improve an earlier tentative distance?
 - What should happen to a reachable neighbor absent from the graph's keys?
