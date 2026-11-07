@@ -11,6 +11,9 @@ A JSON endpoint must validate structure and field types before computing a resul
 - Use `Content-Type: application/json`; return HTTP 404 for other paths.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Validate the JSON document's shape and both field types before calculating a sum. In Python, Boolean values satisfy integer type checks, so distinguish them explicitly for this contract.
+
 ## Tips
 - Why must Boolean values be considered separately when validating Python integers?
 
