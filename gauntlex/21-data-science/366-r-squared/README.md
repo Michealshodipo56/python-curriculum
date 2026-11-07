@@ -1,18 +1,18 @@
 # Explain the Variation
 
 ## Description
-Evaluate predictions by comparing residual error with the variation in observed values.
-
-### Behavior contract
-Return coefficient of determination 1-SSE/SST for equal-length nonempty numeric actual and predicted sequences. When all actual values equal, return 1.0 if predictions exactly match, otherwise 0.0.
+The coefficient of determination compares prediction residuals against the natural variation in the observed targets.
 
 ## Requirements
 - Implement `r_squared(actual, predicted)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length, nonempty actual and predicted sequences.
+- Compute `1 - SSE/SST` using squared residuals and squared deviations from the actual mean.
+- If all actual values are equal, return `1.0` for exact predictions and `0.0` otherwise.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-A constant target series requires special handling.
+- Why does a constant target sequence require a special rule?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`r_squared([1, 2, 3], [1, 2, 3])` → `1.0`.
