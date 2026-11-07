@@ -1,18 +1,18 @@
 # Follow Nested Keys
 
 ## Description
-Navigate a structured JSON-compatible object using a dot-separated path of dictionary keys.
-
-### Behavior contract
-Given a JSON-compatible object and a dot-separated path of dictionary keys, return the nested value or None if any key is absent. An empty path returns the original object. Do not interpret list indices.
+Structured data often contains nested mappings. Navigate a dot-separated key path without assuming list indices are supported.
 
 ## Requirements
 - Implement `json_path_get(data, path)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- An empty path returns the original object.
+- For a nonempty path, interpret each dot-separated component as a dictionary key.
+- Return `None` when a required key is missing or traversal cannot continue through a dictionary.
+- Do not interpret numeric components as list indices.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-A missing key stops traversal; an empty path refers to the original value.
+- Why should a missing intermediate key stop traversal?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`json_path_get({'user': {'name': 'Ada'}}, 'user.name')` → `'Ada'`; missing path → `None`.
