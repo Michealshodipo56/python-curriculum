@@ -1,18 +1,19 @@
 # Move Together
 
 ## Description
-Measure how two numeric series vary together around their respective means.
-
-### Behavior contract
-Return population covariance for two equal-length nonempty numeric sequences. Raise ValueError if lengths differ or are empty.
+Covariance describes whether two series tend to rise and fall together relative to their own means.
 
 ## Requirements
 - Implement `population_covariance(xs, ys)` in `starter/solution.py`.
-- Use only Python's standard library; no NumPy, pandas, or scikit-learn.
-- Return the specified values without printing or mutating input data.
-- Floating-point answers are checked approximately where appropriate.
+- Require equal-length, nonempty numeric sequences.
+- Compute each series' mean and sum paired deviations' products.
+- Divide by the full number of observations for population covariance.
+- Raise `ValueError` for empty or mismatched inputs.
+- Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
+- Floating-point results may be compared approximately.
 
 ## Tips
-Population covariance uses the full number of observations as its divisor.
+- Why is the population divisor `n` instead of `n-1`?
 
-Reason about edge cases before designing your implementation.
+## Example Behavior
+`population_covariance([1, 2, 3], [2, 4, 6])` → approximately `1.3333333333`.
