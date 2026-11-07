@@ -12,6 +12,9 @@ Binary classifiers can be evaluated by counting correct and incorrect prediction
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Assign each actual/predicted Boolean pair to exactly one of the four outcome categories. Distinguish a false positive from a false negative by which side of the pair is positive.
+
 ## Tips
 - What distinguishes a false positive from a false negative?
 
