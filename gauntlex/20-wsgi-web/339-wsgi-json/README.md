@@ -11,6 +11,9 @@ A JSON API must serialize Python data into valid compact JSON and label its resp
 - For other paths, return HTTP 404 with an empty body.
 - Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
+## Design Considerations
+Construct a JSON representation rather than Python's string representation of a dictionary. Serialize deterministically with compact separators and sorted keys, then encode it to bytes.
+
 ## Tips
 - Why is Python's `True` not the same literal as JSON's `true`?
 
