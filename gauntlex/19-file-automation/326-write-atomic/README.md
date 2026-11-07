@@ -11,6 +11,9 @@ Writing directly to a destination risks leaving partial content if a write is in
 - Return `None`; leave no temporary file after a successful replacement.
 - Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
+## Design Considerations
+Create the temporary file in the destination's existing parent directory to keep replacement on the same filesystem. Complete and close the temporary write before replacing the destination; clean up temporary files if an operation fails.
+
 ## Tips
 - Why should the temporary file be created on the same filesystem as the destination?
 
