@@ -1,0 +1,31 @@
+{
+  "id": "063-normalize-spaces",
+  "name": "normalize_spaces",
+  "module": "06-text-files",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "062-flatten-recursive"
+  ],
+  "concepts": [
+    "text processing",
+    "validation",
+    "standard library"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask conceptual questions; never provide code.",
+    "questions": [
+      "Which standard library feature can help?",
+      "What are the boundary inputs?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the contract and edge cases.",
+      "Describe the time complexity."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

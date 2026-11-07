@@ -1,0 +1,32 @@
+{
+  "id": "280-changelog-groups",
+  "name": "group_changes",
+  "module": "16-packaging",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "279-release-notes"
+  ],
+  "concepts": [
+    "packaging",
+    "versioning",
+    "configuration",
+    "release workflows"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Do not supply full code; ask questions about the contract.",
+    "questions": [
+      "What format constraints must be validated?",
+      "How do you keep generated output deterministic?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the release or packaging convention used.",
+      "Explain how invalid input is handled."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

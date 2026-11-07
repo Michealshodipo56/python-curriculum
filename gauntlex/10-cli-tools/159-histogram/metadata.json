@@ -1,0 +1,31 @@
+{
+  "id": "159-histogram",
+  "name": "histogram",
+  "module": "10-cli-tools",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "158-word-count-cli"
+  ],
+  "concepts": [
+    "standard input",
+    "stream processing",
+    "CLI contracts"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask questions and give conceptual hints, never provide implementation code.",
+    "questions": [
+      "Should the program process one line or the whole stream?",
+      "What exact output does the contract require?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain how your solution handles empty input.",
+      "Explain the format and ordering guarantees."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

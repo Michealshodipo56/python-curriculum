@@ -1,0 +1,32 @@
+{
+  "id": "403-security-event-counts",
+  "name": "security_event_counts",
+  "module": "23-security-crypto",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "402-query-param-filter"
+  ],
+  "concepts": [
+    "cryptography",
+    "secure coding",
+    "encoding",
+    "network security"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Guide conceptually without providing full solutions.",
+    "questions": [
+      "Which standard-library primitive is appropriate?",
+      "What input validation and security limitations apply?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain why this primitive is appropriate.",
+      "Identify a misuse case or threat not covered by the exercise."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

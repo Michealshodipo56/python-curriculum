@@ -1,0 +1,32 @@
+{
+  "id": "235-async-timeout",
+  "name": "with_timeout",
+  "module": "14-async",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "234-async-map"
+  ],
+  "concepts": [
+    "asyncio",
+    "coroutines",
+    "concurrency",
+    "coordination"
+  ],
+  "task_type": "async-function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask guiding questions only; do not give full solutions.",
+    "questions": [
+      "Which operations must be awaited?",
+      "How is ordering or concurrency bounded?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain cancellation or exception propagation.",
+      "Explain the concurrency invariant."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

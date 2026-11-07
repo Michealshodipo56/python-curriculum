@@ -1,0 +1,34 @@
+{
+  "id": "008-remainder",
+  "name": "remainder",
+  "title": "Divide items into equal groups",
+  "module": "01-foundations",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "007-rectangle"
+  ],
+  "concepts": [
+    "integer division",
+    "modulo"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Explain concepts and ask questions without writing a solution.",
+    "questions": [
+      "How might integer division help with this problem?",
+      "How might modulo help with this problem?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your implementation and the result.",
+      "What happens on an edge case from the requirements?"
+    ]
+  },
+  "source_inspiration": [
+    "learn.python beginner exercises"
+  ],
+  "status": "draft-tests-not-run"
+}

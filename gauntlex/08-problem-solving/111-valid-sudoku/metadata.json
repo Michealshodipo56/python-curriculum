@@ -1,0 +1,31 @@
+{
+  "id": "111-valid-sudoku",
+  "name": "valid_sudoku",
+  "module": "08-problem-solving",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "110-interval-insert"
+  ],
+  "concepts": [
+    "algorithms",
+    "complexity",
+    "data structures"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "No solutions; ask questions about invariants and complexity.",
+    "questions": [
+      "What invariant does the algorithm maintain?",
+      "Can you improve the complexity of a direct approach?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Give worst-case time and space complexity.",
+      "Explain a boundary case."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

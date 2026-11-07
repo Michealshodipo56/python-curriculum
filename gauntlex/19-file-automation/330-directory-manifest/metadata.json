@@ -1,0 +1,32 @@
+{
+  "id": "330-directory-manifest",
+  "name": "directory_manifest",
+  "module": "19-file-automation",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "329-csv-dedupe"
+  ],
+  "concepts": [
+    "file I/O",
+    "automation",
+    "data formats",
+    "path safety"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Provide questions and conceptual hints, never code answers.",
+    "questions": [
+      "What edge cases could damage files or leak data?",
+      "How will you make the output deterministic?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your path and error handling.",
+      "Explain how you test file I/O without touching unrelated files."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

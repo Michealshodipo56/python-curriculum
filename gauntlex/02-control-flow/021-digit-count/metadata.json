@@ -1,0 +1,30 @@
+{
+  "id": "021-digit-count",
+  "name": "digitcount",
+  "module": "02-control-flow",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "020-multiplication-table"
+  ],
+  "concepts": [
+    "while loops",
+    "integer division"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Explain concepts without providing the solution.",
+    "questions": [
+      "How might while loops help?",
+      "How might integer division help?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain the stopping condition.",
+      "Describe an edge case."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

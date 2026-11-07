@@ -1,0 +1,32 @@
+{
+  "id": "264-regression-check",
+  "name": "regressions",
+  "module": "15-testing",
+  "difficulty": "intermediate",
+  "prerequisites": [
+    "263-coverage-percent"
+  ],
+  "concepts": [
+    "testing",
+    "assertions",
+    "debugging",
+    "quality"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Guide without providing implementation.",
+    "questions": [
+      "What behavior should a failing test reveal?",
+      "How can the error report be deterministic?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Describe a boundary case and how it is tested.",
+      "Explain why the test contract is reliable."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

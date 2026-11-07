@@ -1,0 +1,30 @@
+{
+  "id": "018-countdown",
+  "name": "countdown",
+  "module": "02-control-flow",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "017-sum-range"
+  ],
+  "concepts": [
+    "while loops",
+    "state"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Use conceptual hints and questions, never show a working solution.",
+    "questions": [
+      "How can while loops help solve this task?",
+      "How can state help solve this task?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your program's control flow.",
+      "Describe the behavior at a boundary input."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

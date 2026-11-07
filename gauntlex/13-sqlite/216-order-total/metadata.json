@@ -1,0 +1,32 @@
+{
+  "id": "216-order-total",
+  "name": "order_total",
+  "module": "13-sqlite",
+  "difficulty": "intermediate-advanced",
+  "prerequisites": [
+    "215-create-orders"
+  ],
+  "concepts": [
+    "SQLite",
+    "parameterized queries",
+    "transactions",
+    "data persistence"
+  ],
+  "task_type": "function",
+  "entrypoint": "starter/solution.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Ask guiding questions only; do not supply implementation.",
+    "questions": [
+      "Which SQL constraint or query fits the contract?",
+      "How do you avoid SQL injection and partial writes?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain how your SQL is parameterized.",
+      "Describe transaction and error behavior."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}

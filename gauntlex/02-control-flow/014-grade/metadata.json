@@ -1,0 +1,30 @@
+{
+  "id": "014-grade",
+  "name": "grade",
+  "module": "02-control-flow",
+  "difficulty": "beginner",
+  "prerequisites": [
+    "013-larger"
+  ],
+  "concepts": [
+    "conditionals",
+    "comparisons"
+  ],
+  "task_type": "program",
+  "entrypoint": "starter/main.py",
+  "test_command": "python -m pytest tests -q",
+  "guide": {
+    "policy": "Use conceptual hints and questions, never show a working solution.",
+    "questions": [
+      "How can conditionals help solve this task?",
+      "How can comparisons help solve this task?"
+    ]
+  },
+  "auditor": {
+    "questions": [
+      "Explain your program's control flow.",
+      "Describe the behavior at a boundary input."
+    ]
+  },
+  "status": "draft-tests-not-run"
+}
