@@ -1,19 +1,18 @@
 # Validate JSON Input
 
 ## Description
-Accept structured JSON input and return either a calculated response or a safe client error.
-
-### Behavior contract
-Implement POST `/sum` accepting JSON body `{"a":integer,"b":integer}` and returning compact JSON bytes `{"sum":total}` with 200 and Content-Type application/json. Invalid JSON or missing/noninteger values return 400 with body `{"error":"bad request"}`. Other paths return 404.
+A JSON endpoint must validate structure and field types before computing a result. Invalid input should produce a stable client error.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- For POST `/sum`, accept JSON containing integer `a` and integer `b`.
+- Return compact JSON `{"sum":total}` with HTTP 200.
+- For malformed JSON or missing/noninteger fields, return HTTP 400 and `{"error":"bad request"}`.
+- Use `Content-Type: application/json`; return HTTP 404 for other paths.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-In Python, Booleans are a subclass of integers, which matters for validation.
+- Why must Boolean values be considered separately when validating Python integers?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+POST `/sum` with `{"a":2,"b":3}` → `b'{"sum":5}'`; invalid input → HTTP 400.
