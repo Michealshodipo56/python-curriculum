@@ -12,6 +12,9 @@ A moving average summarizes adjacent observations and smooths short-term fluctua
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Generate a result only for each complete window of length `k`; preserve observation order. An oversized window produces no results, while a nonpositive size is invalid.
+
 ## Tips
 - How does the next window differ from the previous window?
 
