@@ -1,19 +1,17 @@
 # Move a Resource
 
 ## Description
-Return an HTTP redirect from an old path to a new one.
-
-### Behavior contract
-Implement a WSGI application redirecting GET `/old` to `/new` using 302 Found and a Location header; response body empty. GET `/new` returns 200 with body `new`. Other paths return 404.
+When a resource moves, a redirect tells clients where to request it next. Preserve distinct behavior for old and new paths.
 
 ## Requirements
 - Implement `application(environ, start_response)` in `starter/solution.py`.
-- Use the Python standard library and the WSGI interface only.
-- Never make real network requests in the function tests.
-- Return byte strings for WSGI response bodies.
-- Do not print debug output or mutate the incoming environment.
+- GET `/old` returns HTTP 302 Found with `Location: /new` and an empty body.
+- GET `/new` returns HTTP 200 and body `new`.
+- Other paths return HTTP 404.
+- Use Python's standard library and the WSGI interface only; do not make network requests, print debug output, or mutate `environ`.
 
 ## Tips
-A redirect needs both a 3xx status and a Location header.
+- Why is a Location header needed in addition to a 302 status?
 
-Build the response behavior yourself without a provided implementation.
+## Example Behavior
+GET `/old` → `302 Found`, `Location: /new`, empty body.
