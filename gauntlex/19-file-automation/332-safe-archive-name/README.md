@@ -1,18 +1,18 @@
 # Inspect Archive Paths
 
 ## Description
-Decide whether an archive member name is safe to extract as a relative path.
-
-### Behavior contract
-Return True only if a ZIP/TAR member path is a safe nonempty relative POSIX path: no leading slash, backslash, empty segment, dot or dot-dot segment, and no Windows drive prefix such as C:. Do not access the filesystem.
+Archive member names can contain traversal or platform-specific absolute paths. Validate the name before it could be used for extraction.
 
 ## Requirements
 - Implement `archive_member_safe(name)` in `starter/solution.py`.
-- Use the Python standard library only.
-- Return the specified result without printing.
-- Do not mutate caller-owned values or touch files outside the specified paths.
+- Return `True` only for nonempty relative POSIX member names.
+- Reject leading slashes, backslashes, empty segments, `.` segments, and `..` segments.
+- Reject Windows drive prefixes such as `C:`.
+- Do not read or write any files.
+- Use Python's standard library only. Do not print or mutate caller-owned inputs.
 
 ## Tips
-Check both POSIX traversal and Windows-style absolute prefixes.
+- Why must Windows-style paths be rejected even on a POSIX system?
 
-The task defines behavior; design the implementation independently.
+## Example Behavior
+`archive_member_safe('docs/readme.md')` → `True`; `archive_member_safe('../secret')` → `False`.
