@@ -11,6 +11,9 @@ Numeric vectors represent points in a coordinate space. Measure their straight-l
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Match coordinates by position and require equal dimensionality. The square root of accumulated squared differences gives straight-line distance; two empty vectors have zero distance.
+
 ## Tips
 - Why can vectors of different dimensions not be compared directly?
 
