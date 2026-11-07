@@ -12,6 +12,9 @@ Different numeric ranges make features difficult to compare. Rescale observation
 - Use Python's standard library only; do not use NumPy, pandas, or scikit-learn. Do not print or mutate inputs.
 - Floating-point results may be compared approximately.
 
+## Design Considerations
+Calculate the minimum and maximum across the entire supplied sequence before transforming observations. Handle an empty or constant dataset explicitly so no division by zero occurs.
+
 ## Tips
 - Why does a constant dataset need special handling?
 
