@@ -20,7 +20,7 @@ Assignment: [001-hello](gauntlex/01-foundations/001-hello/README.md)
 
 #### Description
 
-Every program begins with an observable result. In this challenge, create a Python script that sends a welcome message to the terminal. The goal is to understand what happens when the interpreter runs a source file and how a program communicates through standard output.
+Your task is to edit `main.py` and write a Python program that prints exactly `Hello, world!` in the terminal. The output must appear once, with the same capitalization, comma, exclamation mark, and final newline shown below. Do not ask for input or print anything else.
 
 #### Requirements
 
