@@ -2,7 +2,7 @@
 
 ## Description
 
-Your task is to edit `main.py` and write a Python program that prints exactly `Hello, world!` in the terminal. The output must appear once, with the same capitalization, comma, exclamation mark, and final newline shown below. Do not ask for input or print anything else.
+Your task is to edit `main.py` and write a Python program that prints exactly `Hello, world!` in the terminal. The output must appear once, with the same capitalization, comma, exclamation mark, and final newline shown below.
 
 ## Requirements
 
