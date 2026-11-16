@@ -2,7 +2,7 @@
 
 ## Description
 
-A factorial combines a sequence of positive integers through multiplication. Implement this operation as a function and account for the empty product at zero.
+In `starter/solution.py`, write `factorial(n)` to return the product of all whole numbers from `1` through `n`. For example, `factorial(4)` returns `24` because `1 × 2 × 3 × 4 = 24`. Return `1` for `n = 0`.
 
 ## Requirements
 
