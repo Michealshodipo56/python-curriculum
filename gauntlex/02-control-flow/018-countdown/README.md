@@ -2,7 +2,7 @@
 
 ## Description
 
-A countdown is a sequence that moves toward a stopping point. Build a program that counts backward from a supplied number and finishes with a launch message. This challenge develops control over decreasing sequences and their termination.
+Write a program that reads a whole number `N`, prints a countdown from `N` to `1` with one number per line, and then prints `Go!`. If `N` is `0`, print only `Go!`.
 
 ## Requirements
 
