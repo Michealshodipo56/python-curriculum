@@ -2,7 +2,7 @@
 
 ## Description
 
-Organize words into groups according to their lengths. Each group must retain the original encounter order of the words it contains.
+Implement `group_by_length(words)` in `starter/solution.py`. Return a dictionary mapping integer word lengths to lists of words.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Organize words into groups according to their lengths. Each group must retain th
 
 ## Tips
 
+- **Concept to understand:** Organize words into groups according to their lengths. Each group must retain the original encounter order of the words it contains.
 - Which data structure can associate one length with several words?
 - What should happen when another word has a length already seen?
 

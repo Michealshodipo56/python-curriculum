@@ -2,7 +2,7 @@
 
 ## Description
 
-A date-like string is not necessarily a real date. Validate calendar rules, including month lengths and leap years, before accepting it.
+Implement `parse_date(text)` in `starter/solution.py`. Return the validated date string for a real date.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A date-like string is not necessarily a real date. Validate calendar rules, incl
 
 ## Tips
 
+- **Concept to understand:** A date-like string is not necessarily a real date. Validate calendar rules, including month lengths and leap years, before accepting it.
 - Why does a matching pattern not prove that a date exists?
 - Which years permit February 29?
 

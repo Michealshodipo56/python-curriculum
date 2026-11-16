@@ -2,7 +2,7 @@
 
 ## Description
 
-A reusable numeric operation should handle an expected zero divisor without crashing the caller. Preserve ordinary division behavior for valid divisors.
+Implement `safe_divide(a, b)` in `starter/solution.py`. Return the result of dividing `a` by `b` when the divisor is nonzero.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A reusable numeric operation should handle an expected zero divisor without cras
 
 ## Tips
 
+- **Concept to understand:** A reusable numeric operation should handle an expected zero divisor without crashing the caller. Preserve ordinary division behavior for valid divisors.
 - What is the difference between a valid zero quotient and an invalid zero divisor?
 - Which failure condition does this function explicitly handle?
 

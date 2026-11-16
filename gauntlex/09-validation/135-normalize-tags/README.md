@@ -2,7 +2,7 @@
 
 ## Description
 
-Normalize comma-separated labels into a unique, ordered collection of meaningful tags.
+Implement `normalize_tags(text)` in `starter/solution.py`. Split input text at commas.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Normalize comma-separated labels into a unique, ordered collection of meaningful
 
 ## Tips
 
+- **Concept to understand:** Normalize comma-separated labels into a unique, ordered collection of meaningful tags.
 - Why must normalization happen before duplicate detection?
 - What should consecutive commas contribute?
 

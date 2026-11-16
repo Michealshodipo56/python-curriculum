@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a capacity-limited cache that discards its least recently used entry when another entry must be stored.
+Implement `LRUCache(capacity)` in `starter/solution.py`. Require positive capacity; raise `ValueError` for nonpositive capacity.
 
 ## Requirements
 

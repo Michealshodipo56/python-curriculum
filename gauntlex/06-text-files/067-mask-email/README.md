@@ -2,7 +2,7 @@
 
 ## Description
 
-When displaying an address publicly, conceal most of the local part while keeping its first character and domain recognizable.
+Implement `mask_email(email)` in `starter/solution.py`. Preserve the domain and `@` separator in the returned address.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ When displaying an address publicly, conceal most of the local part while keepin
 
 ## Tips
 
+- **Concept to understand:** When displaying an address publicly, conceal most of the local part while keeping its first character and domain recognizable.
 - Which characters identify the domain and must remain unchanged?
 - How does the result differ for a one-character local part?
 

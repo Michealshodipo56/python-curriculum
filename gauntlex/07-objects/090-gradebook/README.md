@@ -2,7 +2,7 @@
 
 ## Description
 
-A gradebook records multiple scores for each student and reports their average. Distinguish students with no recorded scores from those with a genuine average of zero.
+Define `Gradebook` in `starter/solution.py`. Implement `add_score(student, score)` to record a score for a student.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A gradebook records multiple scores for each student and reports their average. 
 
 ## Tips
 
+- **Concept to understand:** A gradebook records multiple scores for each student and reports their average. Distinguish students with no recorded scores from those with a genuine average of zero.
 - Why does a missing average differ from an average of zero?
 - How should repeated scores for one student affect the result?
 

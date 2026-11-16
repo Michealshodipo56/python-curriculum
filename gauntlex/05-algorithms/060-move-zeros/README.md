@@ -2,7 +2,7 @@
 
 ## Description
 
-Rearrange a sequence so that all numeric zeros appear after the nonzero values. Preserve the original order of nonzero elements.
+Implement `move_zeros(items)` in `starter/solution.py`. Return a new list containing all nonzero elements in original order, followed by the same number of zeros.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Rearrange a sequence so that all numeric zeros appear after the nonzero values. 
 
 ## Tips
 
+- **Concept to understand:** Rearrange a sequence so that all numeric zeros appear after the nonzero values. Preserve the original order of nonzero elements.
 - What information must be preserved about the nonzero values?
 - Consider all-zero, no-zero, and empty inputs.
 

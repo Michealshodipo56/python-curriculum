@@ -2,7 +2,7 @@
 
 ## Description
 
-Extract words from text, count how often each appears, and rank them. Equal-frequency words must be ordered alphabetically.
+Implement `top_words(text, n)` in `starter/solution.py`. Recognize words as maximal runs of ASCII letters `a`–`z`, ignoring case.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Extract words from text, count how often each appears, and rank them. Equal-freq
 
 ## Tips
 
+- **Concept to understand:** Extract words from text, count how often each appears, and rank them. Equal-frequency words must be ordered alphabetically.
 - Why must case normalization happen before counting?
 - How should equal-frequency words be ordered?
 - What separates two ASCII words?
@@ -23,3 +24,5 @@ Extract words from text, count how often each appears, and rank them. Equal-freq
 ## Example Behavior
 
 `top_words('Red red blue!', 2)` → `['red', 'blue']`; `top_words('b a b a', 1)` → `['a']`.
+
+---

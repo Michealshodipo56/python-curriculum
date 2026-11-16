@@ -2,7 +2,7 @@
 
 ## Description
 
-An email address has a local part and a domain separated by `@`. Extract the domain and normalize its capitalization without changing the local part.
+Implement `email_domain(email)` in `starter/solution.py`. Return the substring after `@`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ An email address has a local part and a domain separated by `@`. Extract the dom
 
 ## Tips
 
+- **Concept to understand:** An email address has a local part and a domain separated by `@`. Extract the domain and normalize its capitalization without changing the local part.
 - Which part of an email address identifies its domain?
 - Why should only the extracted domain be normalized?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-A bank account must protect its balance against invalid operations. Model deposits and withdrawals so the object remains consistent even when a transaction is rejected.
+Define `BankAccount(initial_balance=0)` in `starter/solution.py`. Expose the current amount through a `balance` property.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A bank account must protect its balance against invalid operations. Model deposi
 
 ## Tips
 
+- **Concept to understand:** A bank account must protect its balance against invalid operations. Model deposits and withdrawals so the object remains consistent even when a transaction is rejected.
 - Why should validation happen before changing the stored balance?
 - Consider zero-value transactions and withdrawals exceeding the balance.
 

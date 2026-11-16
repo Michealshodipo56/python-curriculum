@@ -2,7 +2,7 @@
 
 ## Description
 
-A log entry combines a severity, a date, and a message. Parse these fields without losing separators that belong to the message itself.
+Implement `parse_log_line(line)` in `starter/solution.py`. Require `LEVEL` to be exactly `INFO`, `WARN`, or `ERROR`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A log entry combines a severity, a date, and a message. Parse these fields witho
 
 ## Tips
 
+- **Concept to understand:** A log entry combines a severity, a date, and a message. Parse these fields without losing separators that belong to the message itself.
 - Why is splitting at every delimiter unsafe for the message?
 - Why must a date be checked beyond its visual pattern?
 

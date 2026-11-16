@@ -2,7 +2,7 @@
 
 ## Description
 
-Read a rectangular grid in clockwise spiral order, starting at the top-left corner and moving inward as the outer boundary is exhausted.
+Implement `spiral_order(matrix)` in `starter/solution.py`. Return a flat list of values visited clockwise, starting across the top row.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Read a rectangular grid in clockwise spiral order, starting at the top-left corn
 
 ## Tips
 
+- **Concept to understand:** Read a rectangular grid in clockwise spiral order, starting at the top-left corner and moving inward as the outer boundary is exhausted.
 - How do the unvisited boundaries change after completing each side?
 - What if only one row or column remains?
 

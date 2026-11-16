@@ -2,7 +2,7 @@
 
 ## Description
 
-An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
+Define `Inventory` in `starter/solution.py`. Implement `stock(name, quantity)` to increase a product's quantity.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ An inventory tracks how many units of each product are available. Model stock ad
 
 ## Tips
 
+- **Concept to understand:** An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
 - What state must remain unchanged after a failed sale?
 - How should a product with no prior stock be treated?
 

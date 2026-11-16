@@ -2,7 +2,7 @@
 
 ## Description
 
-A stack stores values so the newest addition is the first one removed. Model this behavior as an object whose state changes across method calls.
+Define `Stack` in `starter/solution.py`. Provide `push(value)` to add an item and `pop()` to remove and return the newest item.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A stack stores values so the newest addition is the first one removed. Model thi
 
 ## Tips
 
+- **Concept to understand:** A stack stores values so the newest addition is the first one removed. Model this behavior as an object whose state changes across method calls.
 - How does the most recent addition affect the next removal?
 - What should change after a peek compared with a pop?
 

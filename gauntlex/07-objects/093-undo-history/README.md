@@ -2,7 +2,7 @@
 
 ## Description
 
-Maintain a current value together with enough history to restore earlier values, one change at a time.
+Implement `UndoHistory(initial)` in `starter/solution.py`. Provide `set(value)` to replace the current value and preserve the previous one.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Maintain a current value together with enough history to restore earlier values,
 
 ## Tips
 
+- **Concept to understand:** Maintain a current value together with enough history to restore earlier values, one change at a time.
 - What should be saved before each change?
 - How does the history change after an undo?
 

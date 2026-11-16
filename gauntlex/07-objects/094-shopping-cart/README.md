@@ -2,7 +2,7 @@
 
 ## Description
 
-Maintain products, prices, and quantities in a shopping cart without accepting contradictory entries.
+Implement `ShoppingCart` in `starter/solution.py`. Provide `add(name, price, quantity=1)` with nonnegative prices and positive integer quantities.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Maintain products, prices, and quantities in a shopping cart without accepting c
 
 ## Tips
 
+- **Concept to understand:** Maintain products, prices, and quantities in a shopping cart without accepting contradictory entries.
 - Why should an existing product not silently change its price?
 - What should happen to a cart's total after removal?
 

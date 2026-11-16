@@ -2,7 +2,7 @@
 
 ## Description
 
-A message copied from different sources may contain tabs, newlines, and repeated spaces. Produce a clean single-line representation without losing or rearranging words.
+Implement `normalize_spaces(text)` in `starter/solution.py`. Treat consecutive whitespace characters as a single separator between words.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A message copied from different sources may contain tabs, newlines, and repeated
 
 ## Tips
 
+- **Concept to understand:** A message copied from different sources may contain tabs, newlines, and repeated spaces. Produce a clean single-line representation without losing or rearranging words.
 - What happens when the input contains only tabs and spaces?
 - Why should a newline between two words become a separator rather than joining the words?
 

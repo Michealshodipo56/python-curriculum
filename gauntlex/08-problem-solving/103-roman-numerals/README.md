@@ -2,7 +2,7 @@
 
 ## Description
 
-Convert a decimal integer to the conventional Roman numeral system, including the subtractive forms used for values such as four and nine.
+Implement `to_roman(n)` in `starter/solution.py`. Return its canonical uppercase Roman numeral representation.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Convert a decimal integer to the conventional Roman numeral system, including th
 
 ## Tips
 
+- **Concept to understand:** Convert a decimal integer to the conventional Roman numeral system, including the subtractive forms used for values such as four and nine.
 - Why are four and nine not written using repeated identical symbols?
 - How do larger place values relate to smaller ones?
 

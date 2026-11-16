@@ -2,7 +2,7 @@
 
 ## Description
 
-Scheduling systems often represent weekdays numerically. Translate a valid calendar date to the ISO convention instead of relying on locale-specific weekday names.
+Implement `iso_weekday(text)` in `starter/solution.py`. Return the ISO weekday as an integer from `1` (Monday) through `7` (Sunday).
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Scheduling systems often represent weekdays numerically. Translate a valid calen
 
 ## Tips
 
+- **Concept to understand:** Scheduling systems often represent weekdays numerically. Translate a valid calendar date to the ISO convention instead of relying on locale-specific weekday names.
 - How does ISO numbering differ from systems that start weeks on Sunday?
 - What weekday value should consecutive dates produce?
 

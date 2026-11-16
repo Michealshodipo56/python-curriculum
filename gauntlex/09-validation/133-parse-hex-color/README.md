@@ -2,7 +2,7 @@
 
 ## Description
 
-A six-digit hexadecimal color stores red, green, and blue intensities in three adjacent pairs. Validate and decode each channel.
+Implement `parse_hex_color(text)` in `starter/solution.py`. Reject missing `#`, incorrect lengths, and nonhexadecimal characters with `ValueError`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A six-digit hexadecimal color stores red, green, and blue intensities in three a
 
 ## Tips
 
+- **Concept to understand:** A six-digit hexadecimal color stores red, green, and blue intensities in three adjacent pairs. Validate and decode each channel.
 - Why does each color channel occupy two hexadecimal digits?
 - Why should the full input be validated before decoding?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-An object representing a rectangle should begin in a valid state. Require valid dimensions during construction so subsequent calculations can rely on them.
+Define `Rectangle(width, height)` in `starter/solution.py`. Raise `ValueError` if either dimension is zero or negative.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ An object representing a rectangle should begin in a valid state. Require valid 
 
 ## Tips
 
+- **Concept to understand:** An object representing a rectangle should begin in a valid state. Require valid dimensions during construction so subsequent calculations can rely on them.
 - Which rules belong in object construction?
 - How does enforcing valid dimensions simplify later calculations?
 

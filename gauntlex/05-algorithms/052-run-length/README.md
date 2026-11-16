@@ -2,7 +2,7 @@
 
 ## Description
 
-Represent a string as consecutive runs of identical characters. Each run records the character and the number of times it appears without interruption.
+Implement `run_length(text)` in `starter/solution.py`. Return a list of two-element lists in the form `[character, count]`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Represent a string as consecutive runs of identical characters. Each run records
 
 ## Tips
 
+- **Concept to understand:** Represent a string as consecutive runs of identical characters. Each run records the character and the number of times it appears without interruption.
 - How can you tell when one run ends and the next begins?
 - Why must separated runs of the same character remain distinct?
 

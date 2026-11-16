@@ -2,7 +2,7 @@
 
 ## Description
 
-Imported records may have missing names or names containing only whitespace. Keep usable records while normalizing their names and preserving other fields.
+Implement `clean_records(records)` in `starter/solution.py`. Discard records whose `name` is missing, is not a string, or becomes empty after trimming surrounding whitespace.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Imported records may have missing names or names containing only whitespace. Kee
 
 ## Tips
 
+- **Concept to understand:** Imported records may have missing names or names containing only whitespace. Keep usable records while normalizing their names and preserving other fields.
 - How can you check whether a name remains meaningful after trimming?
 - Why should output records be distinct from caller-owned dictionaries?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-A directed graph contains a cycle if a path of outgoing edges can return to a node already on that same active path.
+Implement `has_cycle(graph)` in `starter/solution.py`. Return `True` if any directed cycle exists and `False` otherwise.
 
 ## Requirements
 
@@ -15,9 +15,12 @@ A directed graph contains a cycle if a path of outgoing edges can return to a no
 
 ## Tips
 
+- **Concept to understand:** A directed graph contains a cycle if a path of outgoing edges can return to a node already on that same active path.
 - Why is visiting a node from an earlier completed branch not enough to prove a cycle?
 - How does a self-loop differ from a dead end?
 
 ## Example Behavior
 
 `has_cycle({'a': ['b'], 'b': ['c'], 'c': ['a']})` → `True`; `has_cycle({'a': ['b'], 'b': []})` → `False`.
+
+---

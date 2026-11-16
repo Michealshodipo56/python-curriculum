@@ -2,7 +2,7 @@
 
 ## Description
 
-A substring is a contiguous stretch of text. Determine the maximum length of a substring in which no character appears more than once.
+Implement `longest_unique_substring(text)` in `starter/solution.py`. Return the length of the longest contiguous substring without repeated characters.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A substring is a contiguous stretch of text. Determine the maximum length of a s
 
 ## Tips
 
+- **Concept to understand:** A substring is a contiguous stretch of text. Determine the maximum length of a substring in which no character appears more than once.
 - Why is a substring different from a subsequence?
 - What happens to a candidate stretch when a character repeats?
 

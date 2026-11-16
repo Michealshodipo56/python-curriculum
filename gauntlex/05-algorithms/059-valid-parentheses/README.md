@@ -2,7 +2,7 @@
 
 ## Description
 
-A sequence of parentheses is valid only if every opening parenthesis is closed in the correct order. Detect invalid prefixes as well as unclosed parentheses at the end.
+Implement `valid_parentheses(text)` in `starter/solution.py`. Return `True` only if the parentheses form complete, correctly ordered pairs.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A sequence of parentheses is valid only if every opening parenthesis is closed i
 
 ## Tips
 
+- **Concept to understand:** A sequence of parentheses is valid only if every opening parenthesis is closed in the correct order. Detect invalid prefixes as well as unclosed parentheses at the end.
 - Why can equal counts still describe an invalid sequence?
 - What must remain true at every point while reading from left to right?
 

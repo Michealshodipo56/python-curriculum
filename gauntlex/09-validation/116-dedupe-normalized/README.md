@@ -2,7 +2,7 @@
 
 ## Description
 
-Clean strings consistently before deciding which values are duplicates. Keep only meaningful normalized values in their original first-appearance order.
+Implement `dedupe_normalized(items)` in `starter/solution.py`. Trim surrounding whitespace and apply Unicode casefolding to each string.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Clean strings consistently before deciding which values are duplicates. Keep onl
 
 ## Tips
 
+- **Concept to understand:** Clean strings consistently before deciding which values are duplicates. Keep only meaningful normalized values in their original first-appearance order.
 - Why must normalization happen before duplicate detection?
 - How can casefolding differ from preserving the original spelling?
 

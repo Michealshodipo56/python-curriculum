@@ -2,7 +2,7 @@
 
 ## Description
 
-A URL query string can contain encoded characters, blank values, and repeated names. Parse it into a mapping where later occurrences replace earlier values.
+Implement `parse_query(text)` in `starter/solution.py`. Return a dictionary of decoded parameter names and values.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A URL query string can contain encoded characters, blank values, and repeated na
 
 ## Tips
 
+- **Concept to understand:** A URL query string can contain encoded characters, blank values, and repeated names. Parse it into a mapping where later occurrences replace earlier values.
 - Why does `%2B` differ from a literal plus sign?
 - What should happen when a name occurs more than once?
 

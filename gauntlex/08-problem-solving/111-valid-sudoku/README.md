@@ -2,7 +2,7 @@
 
 ## Description
 
-Check whether the currently filled cells in a Sudoku board obey the puzzle's uniqueness rules. Do not attempt to solve the board.
+Implement `valid_sudoku(board)` in `starter/solution.py`. Return `True` only if each row, column, and 3-by-3 box contains no repeated filled digit.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Check whether the currently filled cells in a Sudoku board obey the puzzle's uni
 
 ## Tips
 
+- **Concept to understand:** Check whether the currently filled cells in a Sudoku board obey the puzzle's uniqueness rules. Do not attempt to solve the board.
 - Why must each filled cell satisfy three different regions?
 - Does an unfinished board necessarily violate the rules?
 

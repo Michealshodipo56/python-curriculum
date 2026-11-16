@@ -2,7 +2,7 @@
 
 ## Description
 
-Pascal's triangle grows one row at a time. Every row begins and ends with one, while interior entries are formed from neighboring values in the preceding row.
+Implement `pascal_row(n)` in `starter/solution.py`. Return the full nth row as a list of integers.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Pascal's triangle grows one row at a time. Every row begins and ends with one, w
 
 ## Tips
 
+- **Concept to understand:** Pascal's triangle grows one row at a time. Every row begins and ends with one, while interior entries are formed from neighboring values in the preceding row.
 - How do the first and last values differ from the interior values?
 - Trace the first few rows and identify how their lengths change.
 

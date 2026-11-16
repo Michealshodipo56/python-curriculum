@@ -2,7 +2,7 @@
 
 ## Description
 
-CSV reports often reorder columns and contain cells that cannot be used as numbers. Locate the requested column by its header and accumulate valid integer values.
+Implement `csv_column_total(path, column)` in `starter/solution.py`. Read the CSV with UTF-8 encoding and identify the target column by its header, not a fixed index.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ CSV reports often reorder columns and contain cells that cannot be used as numbe
 
 ## Tips
 
+- **Concept to understand:** CSV reports often reorder columns and contain cells that cannot be used as numbers. Locate the requested column by its header and accumulate valid integer values.
 - What happens when the requested column moves to another position?
 - How should empty or noninteger cells affect the running total?
 
@@ -24,3 +25,5 @@ CSV reports often reorder columns and contain cells that cannot be used as numbe
 For a CSV file containing a header `name,amount` and rows `Ada,4` and `Lin,-2`, `csv_column_total(path, 'amount')` returns `2`.
 
 Rows with `amount` values `4`, empty, `unknown`, and `-2` also total `2`: the empty and noninteger cells are skipped. A header with no data rows totals `0`.
+
+---

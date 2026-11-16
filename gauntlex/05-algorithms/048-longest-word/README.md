@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the longest word in a text. If several words have the same maximum length, keep the first one encountered.
+Implement `longest_word(text)` in `starter/solution.py`. Treat words as nonempty whitespace-separated tokens.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Find the longest word in a text. If several words have the same maximum length, 
 
 ## Tips
 
+- **Concept to understand:** Find the longest word in a text. If several words have the same maximum length, keep the first one encountered.
 - How should the current winner change when a longer word appears?
 - Why should a tie not replace the earlier winner?
 

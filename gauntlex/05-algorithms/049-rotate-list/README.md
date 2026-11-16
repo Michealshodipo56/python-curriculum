@@ -2,7 +2,7 @@
 
 ## Description
 
-A rotation moves items from the end of a list to the beginning while preserving their relative order. Build a function that handles shifts longer than the list itself.
+Implement `rotate_right(items, k)` in `starter/solution.py`. Return a new list rotated right by `k` positions.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A rotation moves items from the end of a list to the beginning while preserving 
 
 ## Tips
 
+- **Concept to understand:** A rotation moves items from the end of a list to the beginning while preserving their relative order. Build a function that handles shifts longer than the list itself.
 - What happens after a full rotation?
 - How can a large shift be related to the list length?
 - Consider zero shifts.

@@ -2,7 +2,7 @@
 
 ## Description
 
-A queue represents a waiting line: items leave in the same order in which they arrive. Build an object that maintains that order through repeated operations.
+Define `Queue` in `starter/solution.py`. Provide `enqueue(value)` to add an item at the back.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A queue represents a waiting line: items leave in the same order in which they a
 
 ## Tips
 
+- **Concept to understand:** A queue represents a waiting line: items leave in the same order in which they arrive. Build an object that maintains that order through repeated operations.
 - How does this removal order differ from a stack?
 - Consider what happens when several items are added before any are removed.
 

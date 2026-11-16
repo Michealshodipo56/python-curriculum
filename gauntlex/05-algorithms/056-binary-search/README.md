@@ -2,7 +2,7 @@
 
 ## Description
 
-A sorted collection can be searched efficiently by repeatedly ruling out half of the remaining candidates. Find the index of a target value using this approach.
+Implement `binary_search(items, target)` in `starter/solution.py`. Return the zero-based index of `target`, or `-1` when absent.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A sorted collection can be searched efficiently by repeatedly ruling out half of
 
 ## Tips
 
+- **Concept to understand:** A sorted collection can be searched efficiently by repeatedly ruling out half of the remaining candidates. Find the index of a target value using this approach.
 - How does a comparison with the middle value eliminate part of the search space?
 - What does it mean when no candidate positions remain?
 

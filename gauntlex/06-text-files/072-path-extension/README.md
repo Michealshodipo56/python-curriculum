@@ -2,7 +2,7 @@
 
 ## Description
 
-A filename can contain several dots or none at all. Identify its final suffix without confusing earlier filename segments with the extension.
+Implement `path_extension(path)` in `starter/solution.py`. Inspect the final filename component of the supplied POSIX path.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A filename can contain several dots or none at all. Identify its final suffix wi
 
 ## Tips
 
+- **Concept to understand:** A filename can contain several dots or none at all. Identify its final suffix without confusing earlier filename segments with the extension.
 - Why is the final dot more relevant than the first dot?
 - How should a hidden file without a second dot be treated?
 

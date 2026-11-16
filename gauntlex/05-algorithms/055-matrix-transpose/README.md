@@ -2,7 +2,7 @@
 
 ## Description
 
-Transposing a matrix exchanges its rows and columns. Build a function that returns a new matrix with each element moved to its corresponding transposed position.
+Implement `transpose(matrix)` in `starter/solution.py`. Return a new matrix whose rows correspond to the original columns.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Transposing a matrix exchanges its rows and columns. Build a function that retur
 
 ## Tips
 
+- **Concept to understand:** Transposing a matrix exchanges its rows and columns. Build a function that returns a new matrix with each element moved to its corresponding transposed position.
 - Draw a small rectangular grid and track the row and column of one element.
 - How do the dimensions change after transposition?
 

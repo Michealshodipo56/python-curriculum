@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn a human-readable ASCII label into a predictable lowercase filename stem by replacing disallowed runs with underscores.
+Implement `safe_filename(text)` in `starter/solution.py`. Convert ASCII letters to lowercase.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Turn a human-readable ASCII label into a predictable lowercase filename stem by 
 
 ## Tips
 
+- **Concept to understand:** Turn a human-readable ASCII label into a predictable lowercase filename stem by replacing disallowed runs with underscores.
 - Why should consecutive punctuation produce one separator?
 - What happens when every input character is disallowed?
 

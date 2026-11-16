@@ -2,7 +2,7 @@
 
 ## Description
 
-A counter can record how often different values are observed. Design an object that tracks counts by key and also remembers the total number of recorded observations.
+Define `CounterMap` in `starter/solution.py`. Implement `add(key)` to increase that key's count by one.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A counter can record how often different values are observed. Design an object t
 
 ## Tips
 
+- **Concept to understand:** A counter can record how often different values are observed. Design an object that tracks counts by key and also remembers the total number of recorded observations.
 - How should an unseen key be treated?
 - Why is the overall total different from the number of distinct keys?
 

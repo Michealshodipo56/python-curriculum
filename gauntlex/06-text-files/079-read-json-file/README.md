@@ -2,7 +2,7 @@
 
 ## Description
 
-Structured configuration and data files may contain objects, arrays, or scalar JSON values. Load the actual Python value rather than returning unparsed text.
+Implement `read_json_file(path)` in `starter/solution.py`. Parse the file as JSON and return the decoded Python value.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Structured configuration and data files may contain objects, arrays, or scalar J
 
 ## Tips
 
+- **Concept to understand:** Structured configuration and data files may contain objects, arrays, or scalar JSON values. Load the actual Python value rather than returning unparsed text.
 - Why should the function not assume that every JSON document starts with `{`?
 - What Python values correspond to JSON booleans and null?
 

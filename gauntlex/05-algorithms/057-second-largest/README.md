@@ -2,7 +2,7 @@
 
 ## Description
 
-The second-largest distinct value is not always the second item in descending order. Find the runner-up value while ignoring repeated copies of the maximum.
+Implement `second_largest(items)` in `starter/solution.py`. Return the second-largest distinct integer.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ The second-largest distinct value is not always the second item in descending or
 
 ## Tips
 
+- **Concept to understand:** The second-largest distinct value is not always the second item in descending order. Find the runner-up value while ignoring repeated copies of the maximum.
 - Why should two copies of the maximum not occupy both ranks?
 - Consider an all-equal list and a list of negative numbers.
 

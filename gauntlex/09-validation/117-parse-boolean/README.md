@@ -2,7 +2,7 @@
 
 ## Description
 
-A configuration value may express yes or no using several text forms. Convert recognized forms to Boolean values and reject unsupported tokens.
+Implement `parse_boolean(text)` in `starter/solution.py`. Ignore surrounding whitespace and letter case.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A configuration value may express yes or no using several text forms. Convert re
 
 ## Tips
 
+- **Concept to understand:** A configuration value may express yes or no using several text forms. Convert recognized forms to Boolean values and reject unsupported tokens.
 - Why should an unknown token not silently become `False`?
 - Consider uppercase words and spaces around input.
 

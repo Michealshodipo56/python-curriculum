@@ -2,7 +2,7 @@
 
 ## Description
 
-Constrain a number to a specified inclusive interval. Values outside the interval should be brought to the nearest boundary, while invalid bounds must be rejected.
+Implement `clamp(value, low, high)` in `starter/solution.py`. Return `low` if the value is below it, or `high` if above it.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Constrain a number to a specified inclusive interval. Values outside the interva
 
 ## Tips
 
+- **Concept to understand:** Constrain a number to a specified inclusive interval. Values outside the interval should be brought to the nearest boundary, while invalid bounds must be rejected.
 - How do the three possible positions relative to an interval differ?
 - What happens when the two bounds are equal?
 

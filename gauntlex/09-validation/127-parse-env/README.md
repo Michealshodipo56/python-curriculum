@@ -2,7 +2,7 @@
 
 ## Description
 
-Read configuration assignments from multiline text. Ignore blank and comment lines, normalize surrounding whitespace, and allow later assignments to replace earlier ones.
+Implement `parse_env(text)` in `starter/solution.py`. Interpret noncomment lines as `KEY=VALUE` assignments.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Read configuration assignments from multiline text. Ignore blank and comment lin
 
 ## Tips
 
+- **Concept to understand:** Read configuration assignments from multiline text. Ignore blank and comment lines, normalize surrounding whitespace, and allow later assignments to replace earlier ones.
 - Why should only the first equals sign separate the key and value?
 - What makes a line a comment rather than an assignment?
 

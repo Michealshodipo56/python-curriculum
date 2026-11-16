@@ -2,7 +2,7 @@
 
 ## Description
 
-Build a command-line program that reverses the order of input lines. The contents of each line must remain unchanged, including blank lines.
+Implement the program in `starter/main.py` using standard input and standard output. Read every line from standard input.
 
 ## Requirements
 

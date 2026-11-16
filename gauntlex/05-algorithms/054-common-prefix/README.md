@@ -2,7 +2,7 @@
 
 ## Description
 
-Several words may begin with the same sequence of characters. Find the longest prefix shared by every word in the input collection.
+Implement `common_prefix(words)` in `starter/solution.py`. Return the longest initial substring shared by all input strings.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Several words may begin with the same sequence of characters. Find the longest p
 
 ## Tips
 
+- **Concept to understand:** Several words may begin with the same sequence of characters. Find the longest prefix shared by every word in the input collection.
 - How does the shortest word limit the possible prefix?
 - What happens at the first mismatch?
 - Consider a list containing one word.

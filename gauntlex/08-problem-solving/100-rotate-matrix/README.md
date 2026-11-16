@@ -2,7 +2,7 @@
 
 ## Description
 
-A square matrix can be rotated clockwise by a quarter turn. Return the transformed grid without changing the original rows.
+Implement `rotate_matrix(matrix)` in `starter/solution.py`. Return a new matrix rotated exactly 90 degrees clockwise.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A square matrix can be rotated clockwise by a quarter turn. Return the transform
 
 ## Tips
 
+- **Concept to understand:** A square matrix can be rotated clockwise by a quarter turn. Return the transformed grid without changing the original rows.
 - Where does each corner move after one clockwise rotation?
 - Consider a one-cell grid and an empty grid.
 

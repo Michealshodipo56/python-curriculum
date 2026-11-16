@@ -2,7 +2,7 @@
 
 ## Description
 
-Applications frequently receive structured JSON text but need only one field. Parse the document and retrieve the requested object key while handling absent keys.
+Implement `json_value(text, key)` in `starter/solution.py`. Decode the supplied JSON text using standard JSON rules.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Applications frequently receive structured JSON text but need only one field. Pa
 
 ## Tips
 
+- **Concept to understand:** Applications frequently receive structured JSON text but need only one field. Parse the document and retrieve the requested object key while handling absent keys.
 - Why can missing keys and explicit JSON `null` produce the same result?
 - Why is manual string searching unreliable for JSON values?
 

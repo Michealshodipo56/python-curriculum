@@ -2,7 +2,7 @@
 
 ## Description
 
-Page titles are often turned into compact URL identifiers. Normalize casing and separate words consistently, even when punctuation and whitespace appear together.
+Implement `slugify(text)` in `starter/solution.py`. Lowercase the text, retain only ASCII letters `a` through `z` and digits `0` through `9`, and separate retained runs with hyphens.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Page titles are often turned into compact URL identifiers. Normalize casing and 
 
 ## Tips
 
+- **Concept to understand:** Page titles are often turned into compact URL identifiers. Normalize casing and separate words consistently, even when punctuation and whitespace appear together.
 - What happens when several separators occur consecutively?
 - How should leading or trailing punctuation affect the output?
 

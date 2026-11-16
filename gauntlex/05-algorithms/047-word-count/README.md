@@ -2,7 +2,7 @@
 
 ## Description
 
-Words may be separated by spaces, tabs, or other whitespace. Determine how many words appear in a text without counting empty gaps.
+Implement `word_count(text)` in `starter/solution.py`. Count nonempty words separated by whitespace.
 
 ## Requirements
 
@@ -13,6 +13,7 @@ Words may be separated by spaces, tabs, or other whitespace. Determine how many 
 
 ## Tips
 
+- **Concept to understand:** Words may be separated by spaces, tabs, or other whitespace. Determine how many words appear in a text without counting empty gaps.
 - How does repeated whitespace affect word boundaries?
 - Check leading and trailing spaces, tabs, and empty text.
 

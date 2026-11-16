@@ -2,7 +2,7 @@
 
 ## Description
 
-Brackets must close in the reverse order in which they open. Determine whether a string has correctly matched and nested parentheses, square brackets, and braces.
+Implement `balanced_brackets(text)` in `starter/solution.py`. Recognize `()`, `[]`, and `{}` as matching pairs.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Brackets must close in the reverse order in which they open. Determine whether a
 
 ## Tips
 
+- **Concept to understand:** Brackets must close in the reverse order in which they open. Determine whether a string has correctly matched and nested parentheses, square brackets, and braces.
 - Why are equal counts of opening and closing brackets insufficient?
 - Which opening bracket should match the next closing bracket?
 - Consider mismatched nesting.

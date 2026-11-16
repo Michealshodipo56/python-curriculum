@@ -2,7 +2,7 @@
 
 ## Description
 
-Encode red, green, and blue channel values as a canonical uppercase hexadecimal color string.
+Implement `format_hex_color(r, g, b)` in `starter/solution.py`. Require every component to lie between `0` and `255`; raise `ValueError` otherwise.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Encode red, green, and blue channel values as a canonical uppercase hexadecimal 
 
 ## Tips
 
+- **Concept to understand:** Encode red, green, and blue channel values as a canonical uppercase hexadecimal color string.
 - Why do small channel values still require two digits?
 - How does channel order affect the resulting color?
 

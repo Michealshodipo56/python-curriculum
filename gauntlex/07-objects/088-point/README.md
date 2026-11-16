@@ -2,7 +2,7 @@
 
 ## Description
 
-A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
+Define `Point(x, y)` in `starter/solution.py`. Store the point's `x` and `y` coordinates.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A point identifies a fixed location in two-dimensional space. Create a class who
 
 ## Tips
 
+- **Concept to understand:** A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
 - What distinguishes an immutable object from an ordinary mutable one?
 - How can horizontal and vertical differences determine distance?
 

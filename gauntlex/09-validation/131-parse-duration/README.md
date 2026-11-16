@@ -2,7 +2,7 @@
 
 ## Description
 
-Interpret a duration in hours, minutes, and seconds. Reject malformed text and impossible minute or second values.
+Implement `parse_duration(text)` in `starter/solution.py`. Require exactly two digits each for minutes and seconds.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Interpret a duration in hours, minutes, and seconds. Reject malformed text and i
 
 ## Tips
 
+- **Concept to understand:** Interpret a duration in hours, minutes, and seconds. Reject malformed text and impossible minute or second values.
 - Why must minutes and seconds be bounded independently of hours?
 - What is the difference between an invalid format and a valid zero duration?
 

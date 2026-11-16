@@ -2,7 +2,7 @@
 
 ## Description
 
-Compare an older collection of labels with a newer collection. Report which distinct values were introduced, removed, or kept.
+Implement `set_diff(old, new)` in `starter/solution.py`. Ignore duplicate occurrences within each collection.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Compare an older collection of labels with a newer collection. Report which dist
 
 ## Tips
 
+- **Concept to understand:** Compare an older collection of labels with a newer collection. Report which distinct values were introduced, removed, or kept.
 - Why does comparison direction matter?
 - How should duplicates affect membership and the result?
 

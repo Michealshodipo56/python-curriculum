@@ -2,7 +2,7 @@
 
 ## Description
 
-A to-do list needs to preserve the order tasks were added while tracking whether each one has been completed. Build a stateful task manager.
+Define `TodoList` in `starter/solution.py`. Implement `add(title)` to store a title with surrounding whitespace removed; raise `ValueError` if nothing remains.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A to-do list needs to preserve the order tasks were added while tracking whether
 
 ## Tips
 
+- **Concept to understand:** A to-do list needs to preserve the order tasks were added while tracking whether each one has been completed. Build a stateful task manager.
 - Why is a task's original position different from its completion state?
 - What should happen when an invalid index is supplied?
 

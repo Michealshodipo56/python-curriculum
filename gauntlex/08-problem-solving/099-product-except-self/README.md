@@ -2,7 +2,7 @@
 
 ## Description
 
-For each position, multiply every other value in the list, excluding the value at that position. This challenge requires reasoning about products without division.
+Implement `product_except_self(nums)` in `starter/solution.py`. Return a new list of the same length as `nums`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ For each position, multiply every other value in the list, excluding the value a
 
 ## Tips
 
+- **Concept to understand:** For each position, multiply every other value in the list, excluding the value at that position.
 - What changes when the list contains one zero or several zeros?
 - How can values before and after a position contribute separately?
 

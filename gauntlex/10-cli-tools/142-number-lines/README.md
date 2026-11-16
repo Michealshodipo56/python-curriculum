@@ -2,7 +2,7 @@
 
 ## Description
 
-Give every input line a sequential label so that a reader can refer to its position. Blank lines count as lines too.
+Implement the program in `starter/main.py` using standard input and standard output. Read text lines from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Give every input line a sequential label so that a reader can refer to its posit
 
 ## Tips
 
+- **Concept to understand:** Give every input line a sequential label so that a reader can refer to its position. Blank lines count as lines too.
 - Why does the first line receive label `1` rather than `0`?
 - How can a blank line still receive a label?
 

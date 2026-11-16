@@ -2,7 +2,7 @@
 
 ## Description
 
-User-entered numbers are not always valid integers. Convert valid base-ten integer text while giving callers a predictable nonexceptional result for invalid input.
+Implement `parse_integer(text)` in `starter/solution.py`. Return the parsed integer for valid decimal integer text.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ User-entered numbers are not always valid integers. Convert valid base-ten integ
 
 ## Tips
 
+- **Concept to understand:** User-entered numbers are not always valid integers. Convert valid base-ten integer text while giving callers a predictable nonexceptional result for invalid input.
 - How should `-12` differ from `3.5`?
 - What should happen with empty or whitespace-only input?
 

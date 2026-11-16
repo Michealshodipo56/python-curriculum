@@ -2,7 +2,7 @@
 
 ## Description
 
-A contiguous subarray is an uninterrupted stretch of a list. Find the largest possible sum of a nonempty stretch, even when every number is negative.
+Implement `max_subarray(nums)` in `starter/solution.py`. Return the maximum sum among all nonempty contiguous subarrays.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A contiguous subarray is an uninterrupted stretch of a list. Find the largest po
 
 ## Tips
 
+- **Concept to understand:** A contiguous subarray is an uninterrupted stretch of a list. Find the largest possible sum of a nonempty stretch, even when every number is negative.
 - Why can the best answer be negative?
 - When can extending a segment make its sum worse?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Hide credential values in text while preserving the original capitalization of their keys. Only explicitly recognized assignment forms should be changed.
+Implement `redact_secrets(text)` in `starter/solution.py`. Find case-insensitive occurrences of `password=VALUE` or `token=VALUE`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Hide credential values in text while preserving the original capitalization of t
 
 ## Tips
 
+- **Concept to understand:** Hide credential values in text while preserving the original capitalization of their keys. Only explicitly recognized assignment forms should be changed.
 - Why should the key's original spelling remain unchanged?
 - How do spaces and punctuation affect the end of a credential value?
 

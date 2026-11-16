@@ -2,7 +2,7 @@
 
 ## Description
 
-Rank integer values by frequency. If two values appear equally often, the smaller integer comes first.
+Implement `top_k_frequent(nums, k)` in `starter/solution.py`. Return exactly `k` distinct integers.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Rank integer values by frequency. If two values appear equally often, the smalle
 
 ## Tips
 
+- **Concept to understand:** Rank integer values by frequency. If two values appear equally often, the smaller integer comes first.
 - Why does a frequency ranking need an explicit tie-breaker?
 - How should negative values behave when counts tie?
 

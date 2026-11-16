@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the shortest uninterrupted group of positive integers whose sum reaches or exceeds a target.
+Implement `min_subarray_len(target, nums)` in `starter/solution.py`. Return the minimum length of a contiguous subarray with sum at least `target`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Find the shortest uninterrupted group of positive integers whose sum reaches or 
 
 ## Tips
 
+- **Concept to understand:** Find the shortest uninterrupted group of positive integers whose sum reaches or exceeds a target.
 - Why does the positivity of all numbers matter?
 - When might shortening a qualifying window preserve its sum threshold?
 

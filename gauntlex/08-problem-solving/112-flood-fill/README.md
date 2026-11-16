@@ -2,7 +2,7 @@
 
 ## Description
 
-Recolor the connected area containing a starting pixel without changing disconnected pixels of the same color.
+Implement `flood_fill(image, sr, sc, color)` in `starter/solution.py`. Find all cells connected to the starting cell in the four cardinal directions that share its original color.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Recolor the connected area containing a starting pixel without changing disconne
 
 ## Tips
 
+- **Concept to understand:** Recolor the connected area containing a starting pixel without changing disconnected pixels of the same color.
 - Why does diagonal contact not establish connectivity?
 - How can already visited cells be distinguished from unvisited ones?
 

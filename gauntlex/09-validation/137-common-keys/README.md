@@ -2,7 +2,7 @@
 
 ## Description
 
-Two dictionaries may contain some of the same keys even when their values differ. Find the shared keys and return them in a predictable order.
+Implement `common_keys(a, b)` in `starter/solution.py`. Return a sorted list of keys present in both dictionaries.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Two dictionaries may contain some of the same keys even when their values differ
 
 ## Tips
 
+- **Concept to understand:** Two dictionaries may contain some of the same keys even when their values differ. Find the shared keys and return them in a predictable order.
 - Why should different values not affect whether keys match?
 - How does sorting remove dependence on insertion order?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-A prefix includes every value from the beginning of a sequence through a chosen position. Produce the running total at each position.
+Implement `prefix_sums(nums)` in `starter/solution.py`. Return a new list containing one sum for every prefix of `nums`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A prefix includes every value from the beginning of a sequence through a chosen 
 
 ## Tips
 
+- **Concept to understand:** A prefix includes every value from the beginning of a sequence through a chosen position. Produce the running total at each position.
 - How does the next total relate to the previous total?
 - What should the output length be?
 

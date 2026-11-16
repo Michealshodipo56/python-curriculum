@@ -2,7 +2,7 @@
 
 ## Description
 
-Calendar arithmetic must account for varying month lengths and leap years. Determine the absolute number of days separating two supplied dates.
+Implement `days_between(a, b)` in `starter/solution.py`. Return the nonnegative count of whole calendar days between them.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Calendar arithmetic must account for varying month lengths and leap years. Deter
 
 ## Tips
 
+- **Concept to understand:** Calendar arithmetic must account for varying month lengths and leap years. Determine the absolute number of days separating two supplied dates.
 - Why is subtracting day-of-month numbers insufficient?
 - What changes when the interval crosses February in a leap year?
 

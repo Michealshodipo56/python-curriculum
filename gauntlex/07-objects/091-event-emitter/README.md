@@ -2,7 +2,7 @@
 
 ## Description
 
-Build an event emitter that associates named events with callback functions and dispatches notifications in registration order.
+Implement `EventEmitter` in `starter/solution.py`. Provide `on(event, callback)` to register a callback.
 
 ## Requirements
 

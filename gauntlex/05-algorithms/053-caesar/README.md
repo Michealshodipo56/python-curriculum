@@ -2,7 +2,7 @@
 
 ## Description
 
-Shift each English letter by a specified number of positions, wrapping around the alphabet. Preserve case and leave nonletters unchanged.
+Implement `caesar(text, k)` in `starter/solution.py`. Shift ASCII letters `A`–`Z` and `a`–`z` forward by integer `k` positions.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Shift each English letter by a specified number of positions, wrapping around th
 
 ## Tips
 
+- **Concept to understand:** Shift each English letter by a specified number of positions, wrapping around the alphabet. Preserve case and leave nonletters unchanged.
 - What happens when a shift crosses `z` or `Z`?
 - How does a full alphabet rotation affect the result?
 - Think about negative shifts.

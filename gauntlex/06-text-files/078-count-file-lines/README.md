@@ -2,7 +2,7 @@
 
 ## Description
 
-A file can contain empty lines, a trailing newline, or a final line with no terminator. Read the caller's UTF-8 text file and count its logical lines.
+Implement `count_file_lines(path)` in `starter/solution.py`. Return the number of logical text lines as an integer.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A file can contain empty lines, a trailing newline, or a final line with no term
 
 ## Tips
 
+- **Concept to understand:** A file can contain empty lines, a trailing newline, or a final line with no terminator. Read the caller's UTF-8 text file and count its logical lines.
 - Why does counting newline characters alone miss a final unterminated line?
 - How do you distinguish an empty file from a file containing one blank line?
 

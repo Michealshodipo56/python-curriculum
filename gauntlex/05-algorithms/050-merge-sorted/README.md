@@ -2,7 +2,7 @@
 
 ## Description
 
-Combine two already sorted lists into one sorted list. Preserve every value, including duplicates, without changing the original inputs.
+Implement `merge_sorted(left, right)` in `starter/solution.py`. Return a new ascending list containing every element of both inputs.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Combine two already sorted lists into one sorted list. Preserve every value, inc
 
 ## Tips
 
+- **Concept to understand:** Combine two already sorted lists into one sorted list. Preserve every value, including duplicates, without changing the original inputs.
 - Compare the next unconsumed values from each list.
 - What happens when one list has no elements left?
 - How should equal values be handled?

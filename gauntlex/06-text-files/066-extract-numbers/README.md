@@ -2,7 +2,7 @@
 
 ## Description
 
-Logs and messages often mix words with numeric identifiers. Extract every consecutive run of ASCII digits and represent each run as an integer.
+Implement `extract_numbers(text)` in `starter/solution.py`. Find nonoverlapping runs of ASCII digits `0` through `9` in input order.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Logs and messages often mix words with numeric identifiers. Extract every consec
 
 ## Tips
 
+- **Concept to understand:** Logs and messages often mix words with numeric identifiers. Extract every consecutive run of ASCII digits and represent each run as an integer.
 - What ends one digit run and starts the next?
 - Should a leading minus sign be part of a run of digits under this contract?
 

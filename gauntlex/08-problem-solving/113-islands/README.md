@@ -2,7 +2,7 @@
 
 ## Description
 
-A land region is a group of `'1'` cells connected horizontally or vertically. Count the number of separate regions in a grid.
+Implement `count_islands(grid)` in `starter/solution.py`. Count distinct four-directionally connected land regions.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A land region is a group of `'1'` cells connected horizontally or vertically. Co
 
 ## Tips
 
+- **Concept to understand:** A land region is a group of `'1'` cells connected horizontally or vertically. Count the number of separate regions in a grid.
 - How can one discovered region be counted only once?
 - Why do diagonal neighbors remain separate islands?
 

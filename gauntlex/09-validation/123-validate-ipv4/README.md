@@ -2,7 +2,7 @@
 
 ## Description
 
-An IPv4 address has four dotted decimal components, but not every four-part numeric string is valid. Validate both the structure and canonical spelling.
+Implement `valid_ipv4(text)` in `starter/solution.py`. Return `True` only for exactly four dot-separated decimal components.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ An IPv4 address has four dotted decimal components, but not every four-part nume
 
 ## Tips
 
+- **Concept to understand:** An IPv4 address has four dotted decimal components, but not every four-part numeric string is valid. Validate both the structure and canonical spelling.
 - Why are numeric range checks alone insufficient?
 - What distinguishes `0` from `00` in canonical notation?
 

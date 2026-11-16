@@ -2,7 +2,7 @@
 
 ## Description
 
-Represent any integer using base-two digits. Return the representation as plain text without Python's binary prefix.
+Implement `to_binary(n)` in `starter/solution.py`. Return a string of binary digits representing integer `n`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Represent any integer using base-two digits. Return the representation as plain 
 
 ## Tips
 
+- **Concept to understand:** Represent any integer using base-two digits. Return the representation as plain text without Python's binary prefix.
 - Why does zero need special attention?
 - How does a negative sign relate to the digits of the magnitude?
 

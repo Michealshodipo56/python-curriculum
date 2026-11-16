@@ -2,7 +2,7 @@
 
 ## Description
 
-Find two different positions in an integer list whose values add to a target. When several answers exist, the order in which pairs finish determines which answer is chosen.
+Implement `two_sum(nums, target)` in `starter/solution.py`. Return a list `[i, j]` of zero-based indices where `i < j` and `nums[i] + nums[j] == target`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Find two different positions in an integer list whose values add to a target. Wh
 
 ## Tips
 
+- **Concept to understand:** Find two different positions in an integer list whose values add to a target. When several answers exist, the order in which pairs finish determines which answer is chosen.
 - Why does the pair's second index determine which answer comes first?
 - Consider repeated values and negative numbers.
 

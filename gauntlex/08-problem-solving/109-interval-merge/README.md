@@ -2,7 +2,7 @@
 
 ## Description
 
-Intervals may overlap or share an endpoint. Combine them into the smallest sorted collection of disjoint closed intervals.
+Implement `merge_intervals(intervals)` in `starter/solution.py`. Each input interval is `[start, end]` with integer endpoints and `start <= end`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Intervals may overlap or share an endpoint. Combine them into the smallest sorte
 
 ## Tips
 
+- **Concept to understand:** Intervals may overlap or share an endpoint. Combine them into the smallest sorted collection of disjoint closed intervals.
 - What changes after intervals are ordered by their starts?
 - Why should `[1, 3]` and `[3, 5]` combine?
 

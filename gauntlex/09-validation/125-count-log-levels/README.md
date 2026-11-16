@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize the severity of valid structured log records while ignoring malformed lines. The output must include every supported severity even when its count is zero.
+Implement `count_log_levels(lines)` in `starter/solution.py`. Count only valid `INFO`, `WARN`, and `ERROR` records.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Summarize the severity of valid structured log records while ignoring malformed 
 
 ## Tips
 
+- **Concept to understand:** Summarize the severity of valid structured log records while ignoring malformed lines. The output must include every supported severity even when its count is zero.
 - Why is checking the prefix alone insufficient to validate a record?
 - What should the result contain for an empty list?
 

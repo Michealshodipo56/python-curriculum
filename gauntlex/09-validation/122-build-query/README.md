@@ -2,7 +2,7 @@
 
 ## Description
 
-Convert a mapping of text keys and values into a predictable HTTP query string. The result must not depend on the mapping's insertion order.
+Implement `build_query(params)` in `starter/solution.py`. Sort keys alphabetically before encoding.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Convert a mapping of text keys and values into a predictable HTTP query string. 
 
 ## Tips
 
+- **Concept to understand:** Convert a mapping of text keys and values into a predictable HTTP query string. The result must not depend on the mapping's insertion order.
 - Why does sorting keys make output reproducible?
 - Which characters require encoding inside query components?
 

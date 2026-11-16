@@ -2,7 +2,7 @@
 
 ## Description
 
-A dictionary can map several keys to the same value. Reverse that relationship while preserving every original key and its encounter order.
+Implement `invert_mapping(mapping)` in `starter/solution.py`. Return a new dictionary whose keys are the original values.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A dictionary can map several keys to the same value. Reverse that relationship w
 
 ## Tips
 
+- **Concept to understand:** A dictionary can map several keys to the same value. Reverse that relationship while preserving every original key and its encounter order.
 - Why might an inverted mapping need lists rather than single values?
 - What ordering should be preserved when multiple keys share a value?
 

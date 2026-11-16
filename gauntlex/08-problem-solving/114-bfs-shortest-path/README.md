@@ -2,7 +2,7 @@
 
 ## Description
 
-Find a route with the fewest edges between two graph nodes. When multiple shortest routes exist, neighbor-list order determines the selected route.
+Implement `shortest_path(graph, start, goal)` in `starter/solution.py`. Return a list of nodes from `start` to `goal`, including both endpoints.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Find a route with the fewest edges between two graph nodes. When multiple shorte
 
 ## Tips
 
+- **Concept to understand:** Find a route with the fewest edges between two graph nodes. When multiple shortest routes exist, neighbor-list order determines the selected route.
 - Why does exploring paths by number of edges find a shortest route?
 - How does neighbor order break ties?
 

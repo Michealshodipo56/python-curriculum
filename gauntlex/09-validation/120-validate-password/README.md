@@ -2,7 +2,7 @@
 
 ## Description
 
-A password validator must check several independent conditions. Determine whether a candidate meets the required minimum length and ASCII character classes.
+Implement `validate_password(text)` in `starter/solution.py`. Return a Boolean for the supplied string.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A password validator must check several independent conditions. Determine whethe
 
 ## Tips
 
+- **Concept to understand:** A password validator must check several independent conditions. Determine whether a candidate meets the required minimum length and ASCII character classes.
 - Why can a long password still be invalid?
 - How are ASCII letters different from arbitrary Unicode letters?
 

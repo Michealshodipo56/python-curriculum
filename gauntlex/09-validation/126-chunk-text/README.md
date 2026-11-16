@@ -2,7 +2,7 @@
 
 ## Description
 
-Divide a string into consecutive pieces of a requested maximum length. Preserve every character and the original order.
+Implement `chunk_text(text, size)` in `starter/solution.py`. Return a list of consecutive substrings of length at most `size`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Divide a string into consecutive pieces of a requested maximum length. Preserve 
 
 ## Tips
 
+- **Concept to understand:** Divide a string into consecutive pieces of a requested maximum length. Preserve every character and the original order.
 - What happens when the text length is not a multiple of the chunk size?
 - Why must zero or negative chunk lengths be rejected?
 

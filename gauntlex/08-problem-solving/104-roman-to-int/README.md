@@ -2,7 +2,7 @@
 
 ## Description
 
-Interpret a canonical uppercase Roman numeral as its decimal integer value. Some symbols subtract from the following larger symbol rather than adding.
+Implement `roman_to_int(text)` in `starter/solution.py`. Return its integer value.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Interpret a canonical uppercase Roman numeral as its decimal integer value. Some
 
 ## Tips
 
+- **Concept to understand:** Interpret a canonical uppercase Roman numeral as its decimal integer value. Some symbols subtract from the following larger symbol rather than adding.
 - How can the symbol immediately following another affect its value?
 - Consider the difference between `VI` and `IV`.
 

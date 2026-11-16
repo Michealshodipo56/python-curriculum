@@ -2,7 +2,7 @@
 
 ## Description
 
-Represent a nonnegative number of seconds in a consistent hours-minutes-seconds format.
+Implement `format_duration(seconds)` in `starter/solution.py`. Return text formatted as `H:MM:SS`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Represent a nonnegative number of seconds in a consistent hours-minutes-seconds 
 
 ## Tips
 
+- **Concept to understand:** Represent a nonnegative number of seconds in a consistent hours-minutes-seconds format.
 - Why must minutes and seconds remain below sixty?
 - What happens when the hour count has several digits?
 

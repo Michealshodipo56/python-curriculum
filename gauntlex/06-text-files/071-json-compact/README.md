@@ -2,7 +2,7 @@
 
 ## Description
 
-A consistently formatted JSON representation makes output stable for comparison and storage. Convert JSON-compatible Python values into compact text with predictable object key order.
+Implement `compact_json(value)` in `starter/solution.py`. Serialize the supplied JSON-compatible value as a string, not bytes.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A consistently formatted JSON representation makes output stable for comparison 
 
 ## Tips
 
+- **Concept to understand:** A consistently formatted JSON representation makes output stable for comparison and storage. Convert JSON-compatible Python values into compact text with predictable object key order.
 - Why can two equivalent dictionaries serialize differently without canonical key ordering?
 - Which spaces are structural formatting rather than part of string values?
 

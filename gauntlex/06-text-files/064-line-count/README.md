@@ -2,7 +2,7 @@
 
 ## Description
 
-Text records can end at a newline or at the end of the string. Count logical lines consistently, without inventing an extra record merely because the text ends in a line break.
+Implement `line_count(text)` in `starter/solution.py`. Return the number of logical lines represented by the supplied text.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Text records can end at a newline or at the end of the string. Count logical lin
 
 ## Tips
 
+- **Concept to understand:** Text records can end at a newline or at the end of the string. Count logical lines consistently, without inventing an extra record merely because the text ends in a line break.
 - Compare an empty string, a single word, and a word followed by a newline.
 - Why is counting separators alone not sufficient?
 

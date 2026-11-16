@@ -2,7 +2,7 @@
 
 ## Description
 
-Normalize a POSIX-style URL path into a stable rooted form. Redundant separators and relative segments should not allow the result to escape above the root.
+Implement `normalize_url_path(path)` in `starter/solution.py`. Return a path beginning with `/`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Normalize a POSIX-style URL path into a stable rooted form. Redundant separators
 
 ## Tips
 
+- **Concept to understand:** Normalize a POSIX-style URL path into a stable rooted form. Redundant separators and relative segments should not allow the result to escape above the root.
 - What should happen when a parent segment appears at the root?
 - How do `.` and `..` differ?
 

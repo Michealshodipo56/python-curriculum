@@ -2,7 +2,7 @@
 
 ## Description
 
-Insert one new closed interval into an already sorted, nonoverlapping collection, merging any ranges it overlaps or touches.
+Implement `insert_interval(intervals, new_interval)` in `starter/solution.py`. Insert `new_interval` in its correct position.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Insert one new closed interval into an already sorted, nonoverlapping collection
 
 ## Tips
 
+- **Concept to understand:** Insert one new closed interval into an already sorted, nonoverlapping collection, merging any ranges it overlaps or touches.
 - Which existing intervals lie completely before the new interval?
 - How do overlapping ranges affect the new interval's boundaries?
 
