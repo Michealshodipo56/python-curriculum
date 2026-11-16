@@ -2,7 +2,7 @@
 
 ## Description
 
-In the Fibonacci sequence, each term after the first two is the sum of the two preceding terms. Write a function that finds a requested term without displaying intermediate values.
+In `starter/solution.py`, write `fibonacci(n)` to return the number at position `n` in the Fibonacci sequence, which starts `0, 1, 1, 2, 3, 5, 8, ...`. Position `0` returns `0`, and position `1` returns `1`.
 
 ## Requirements
 
