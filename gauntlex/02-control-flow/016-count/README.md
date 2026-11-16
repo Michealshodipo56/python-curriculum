@@ -2,7 +2,7 @@
 
 ## Description
 
-Repeating a task manually works for a few steps but not for an input-dependent sequence. Build a program that displays consecutive numbers starting at one and stopping at a supplied limit. This challenge introduces repetition with a defined boundary.
+Write a program that reads a whole number `N` and prints the numbers from `1` to `N`, one per line. If `N` is `0`, print nothing.
 
 ## Requirements
 
