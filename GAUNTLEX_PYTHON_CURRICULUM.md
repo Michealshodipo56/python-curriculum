@@ -452,7 +452,7 @@ Assignment: [014-grade](gauntlex/02-control-flow/014-grade/README.md)
 
 #### Description
 
-A grading system converts a numeric score into a letter category. Build a program that selects the correct grade for every valid score. This challenge focuses on ordered decisions and boundary values.
+Write a program that reads a score from `0` to `100` and prints its letter grade. Use `A` for 90–100, `B` for 80–89, `C` for 70–79, `D` for 60–69, and `F` for 0–59. Print the result as `Grade: X`.
 
 #### Requirements
 
@@ -485,7 +485,7 @@ Assignment: [015-access](gauntlex/02-control-flow/015-access/README.md)
 
 #### Description
 
-Some decisions depend on more than one requirement. A supervised driving session is available only to participants who meet an age threshold and have the required license status. Build a program that evaluates both conditions together.
+Write a program that reads a person's age and whether they have a license (`yes` or `no`). Print `allowed` only if they are at least 16 years old **and** the license status is `yes`; otherwise print `denied`.
 
 #### Requirements
 
@@ -520,7 +520,7 @@ Assignment: [016-count](gauntlex/02-control-flow/016-count/README.md)
 
 #### Description
 
-Repeating a task manually works for a few steps but not for an input-dependent sequence. Build a program that displays consecutive numbers starting at one and stopping at a supplied limit. This challenge introduces repetition with a defined boundary.
+Write a program that reads a whole number `N` and prints the numbers from `1` to `N`, one per line. If `N` is `0`, print nothing.
 
 #### Requirements
 
@@ -556,7 +556,7 @@ Assignment: [017-sum-range](gauntlex/02-control-flow/017-sum-range/README.md)
 
 #### Description
 
-A running total changes as new values are considered. Build a program that adds the consecutive integers from one through a supplied limit. The number of values to include depends on the input.
+Write a program that reads a whole number `N`, adds every number from `1` through `N`, and prints the total. For example, an input of `5` produces `15`.
 
 #### Requirements
 
@@ -589,7 +589,7 @@ Assignment: [018-countdown](gauntlex/02-control-flow/018-countdown/README.md)
 
 #### Description
 
-A countdown is a sequence that moves toward a stopping point. Build a program that counts backward from a supplied number and finishes with a launch message. This challenge develops control over decreasing sequences and their termination.
+Write a program that reads a whole number `N`, prints a countdown from `N` to `1` with one number per line, and then prints `Go!`. If `N` is `0`, print only `Go!`.
 
 #### Requirements
 
@@ -626,7 +626,7 @@ Assignment: [019-even-sum](gauntlex/02-control-flow/019-even-sum/README.md)
 
 #### Description
 
-A running total does not always include every value. Build a program that considers the integers in a range but adds only those that are even. This challenge combines repetition, selection, and accumulation.
+Write a program that reads a whole number `N` and prints the sum of all even numbers between `1` and `N`, including `N` if it is even. For example, `6` produces `12` because `2 + 4 + 6 = 12`.
 
 #### Requirements
 
@@ -660,7 +660,7 @@ Assignment: [020-multiplication-table](gauntlex/02-control-flow/020-multiplicati
 
 #### Description
 
-A multiplication table follows the same pattern across several rows. Build a program that produces ten rows for an input number, keeping the calculation and text formatting consistent. This challenge practices repetition with changing values.
+Write a program that reads one number `N` and prints its multiplication table from `1` to `10`. Each line must use the format `N x I = RESULT`, such as `2 x 3 = 6`.
 
 #### Requirements
 
@@ -703,7 +703,7 @@ Assignment: [021-digit-count](gauntlex/02-control-flow/021-digit-count/README.md
 
 #### Description
 
-The number of digits in an integer depends on its size, not on whether it is positive or negative. Build a program that counts the decimal digits in an input value. This challenge encourages careful handling of zero and sign characters.
+Write a program that reads one integer and prints how many decimal digits it contains. Do not count a minus sign. For example, `-1204` has `4` digits, and `0` has `1` digit.
 
 #### Requirements
 
@@ -737,7 +737,7 @@ Assignment: [022-number-guess](gauntlex/02-control-flow/022-number-guess/README.
 
 #### Description
 
-Some programs continue interacting with a user until a particular condition is met. Build a guessing process with a fixed secret number. After each guess, provide feedback and stop immediately when the secret is found. This challenge combines repeated input with conditional decisions.
+Write a program that reads guesses, one number per line, until the user guesses the secret number `7`. After each guess, print `low` if it is below `7`, `high` if it is above `7`, or `correct` if it equals `7`. Stop immediately after printing `correct`.
 
 #### Requirements
 
