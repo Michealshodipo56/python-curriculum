@@ -2,7 +2,7 @@
 
 ## Description
 
-When two numbers are supplied, a program can compare them and select one based on their relative values. Build a program that displays the greater integer. Equal values should produce that shared number rather than a special message.
+Write a program that reads two whole numbers and prints whichever is greater. If both numbers are equal, print that number.
 
 ## Requirements
 
