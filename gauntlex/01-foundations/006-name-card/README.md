@@ -2,7 +2,7 @@
 
 ## Description
 
-Programs often collect several pieces of information and present them in a consistent format. Build a small identity card from a name and a city. This challenge practices reading inputs in sequence and matching each value to the correct output label.
+Write a program that reads a person's name and city on separate lines. Print `Name: ` followed by their name, then `City: ` followed by their city on the next line.
 
 ## Requirements
 
