@@ -2,7 +2,7 @@
 
 ## Description
 
-A rectangle has an interior and a boundary, and each is measured differently. Build a calculator that uses its width and height to report both its area and its perimeter. This challenge develops arithmetic reasoning and precise formatting.
+Write a program that reads a rectangle's width and height as two positive whole numbers. Calculate its area and perimeter, then print them on separate lines using the labels `Area:` and `Perimeter:`.
 
 ## Requirements
 
