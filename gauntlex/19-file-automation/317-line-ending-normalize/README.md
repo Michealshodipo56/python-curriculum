@@ -2,7 +2,7 @@
 
 ## Description
 
-Text copied between operating systems may contain CRLF, CR, or LF line endings. Standardize line boundaries without modifying other content.
+Implement `normalize_line_endings(text)` in `starter/solution.py`. Replace every CRLF and standalone CR line ending with LF.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ Treat CRLF as one boundary before processing lone CR characters; otherwise a sin
 
 ## Tips
 
+- **Concept to understand:** Text copied between operating systems may contain CRLF, CR, or LF line endings. Standardize line boundaries without modifying other content.
 - Why does handling two-character line endings require care?
 
 ## Example Behavior

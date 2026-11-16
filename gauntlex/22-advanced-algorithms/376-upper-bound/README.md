@@ -2,7 +2,7 @@
 
 ## Description
 
-Locate the insertion boundary immediately after all values equal to a target in an ascending sequence. Unlike a lower bound, equality must remain on the left of the answer.
+Implement `upper_bound(values, target)` in `starter/solution.py`. Return the first index whose value is strictly greater than `target`; return `len(values)` when no such element exists.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ Locate the first element strictly greater than the target; equality belongs on t
 
 ## Tips
 
+- **Concept to understand:** Locate the insertion boundary immediately after all values equal to a target in an ascending sequence. Unlike a lower bound, equality must remain on the left of the answer.
 - How should an equality comparison affect the search interval?
 - What index should an empty sequence return?
 

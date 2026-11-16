@@ -2,7 +2,7 @@
 
 ## Description
 
-Archive member names can contain traversal or platform-specific absolute paths. Validate the name before it could be used for extraction.
+Implement `archive_member_safe(name)` in `starter/solution.py`. Return `True` only for nonempty relative POSIX member names.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Check every member path component rather than trusting normalization to remove d
 
 ## Tips
 
+- **Concept to understand:** Archive member names can contain traversal or platform-specific absolute paths. Validate the name before it could be used for extraction.
 - Why must Windows-style paths be rejected even on a POSIX system?
 
 ## Example Behavior

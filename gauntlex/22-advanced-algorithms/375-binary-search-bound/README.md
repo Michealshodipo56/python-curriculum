@@ -2,7 +2,7 @@
 
 ## Description
 
-Search a sorted collection for the first position at which a target could be inserted without placing it after an equal value. The result is an insertion boundary, even when the target is absent.
+Implement `lower_bound(values, target)` in `starter/solution.py`. Return the index of the first element greater than or equal to `target`; return `len(values)` if there is none.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ Maintain a half-open search interval whose left boundary is the earliest possibl
 
 ## Tips
 
+- **Concept to understand:** Search a sorted collection for the first position at which a target could be inserted without placing it after an equal value. The result is an insertion boundary, even when the target is absent.
 - What does the boundary mean when all elements are smaller than the target?
 - Which half can be discarded when a middle value equals the target?
 

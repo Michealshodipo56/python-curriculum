@@ -2,7 +2,7 @@
 
 ## Description
 
-Paths supplied by users must not escape an intended working directory. Normalize harmless separators while rejecting traversal and absolute locations.
+Implement `safe_relative_path(text)` in `starter/solution.py`. Reject empty paths, absolute paths, any `..` component, and any backslash with `ValueError`.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ Validate path components before simplifying them: normalizing away `..` first wo
 
 ## Tips
 
+- **Concept to understand:** Paths supplied by users must not escape an intended working directory. Normalize harmless separators while rejecting traversal and absolute locations.
 - Why must traversal be checked before normalization?
 
 ## Example Behavior

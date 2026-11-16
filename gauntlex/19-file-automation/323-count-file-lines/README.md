@@ -2,7 +2,7 @@
 
 ## Description
 
-A logical line may end with a newline or at end-of-file. Count both forms correctly when reading UTF-8 text.
+Implement `count_file_lines(path)` in `starter/solution.py`. Read a UTF-8 text file.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Count logical records rather than raw newline characters: a final nonempty segme
 
 ## Tips
 
+- **Concept to understand:** A logical line may end with a newline or at end-of-file. Count both forms correctly when reading UTF-8 text.
 - Why does counting newline characters alone miss some final lines?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Tabular data often needs totals by category. Use CSV column names rather than fixed positions to group and sum numeric records.
+Implement `csv_group_sum(path, category_column, amount_column)` in `starter/solution.py`. Read the CSV file with its header row.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Read the header to locate columns by name, rather than assuming their positions.
 
 ## Tips
 
+- **Concept to understand:** Tabular data often needs totals by category. Use CSV column names rather than fixed positions to group and sum numeric records.
 - What happens when the columns appear in a different order?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Log rotation can be planned as a deterministic sequence of backup names. This exercise generates names without performing filesystem operations.
+Implement `rotation_names(base, backups)` in `starter/solution.py`. Return filenames formed by appending `.1` through `.N` to the base.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Generate a predictable ordered plan without touching the filesystem. The numeric
 
 ## Tips
 
+- **Concept to understand:** Log rotation can be planned as a deterministic sequence of backup names. This exercise generates names without performing filesystem operations.
 - Why is separating a rotation plan from actual file operations useful?
 
 ## Example Behavior

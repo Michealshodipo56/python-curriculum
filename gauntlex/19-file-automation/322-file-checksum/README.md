@@ -2,7 +2,7 @@
 
 ## Description
 
-Large files should be hashed without loading all bytes into memory. Compute a content fingerprint from the exact raw byte stream.
+Implement `file_checksum(path)` in `starter/solution.py`. Read the file at `path` in bounded chunks.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Process binary data in bounded chunks and update one ongoing hash state. A check
 
 ## Tips
 
+- **Concept to understand:** Large files should be hashed without loading all bytes into memory. Compute a content fingerprint from the exact raw byte stream.
 - Why must binary file bytes be hashed without text conversion?
 
 ## Example Behavior

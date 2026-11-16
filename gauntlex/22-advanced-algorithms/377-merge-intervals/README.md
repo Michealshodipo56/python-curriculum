@@ -2,7 +2,7 @@
 
 ## Description
 
-Combine a collection of inclusive integer ranges into a canonical, sorted set of nonoverlapping ranges. Adjacent integer ranges must be combined as well as overlapping ones.
+Implement `merge_intervals(intervals)` in `starter/solution.py`. Each input interval is `[start, end]` with `start <= end`; inputs need not be sorted.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Sort by interval start before combining overlaps, and preserve the intended trea
 
 ## Tips
 
+- **Concept to understand:** Combine a collection of inclusive integer ranges into a canonical, sorted set of nonoverlapping ranges. Adjacent integer ranges must be combined as well as overlapping ones.
 - Why is sorting useful before merging?
 - Why do `[1, 2]` and `[3, 4]` merge under this contract?
 

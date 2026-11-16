@@ -2,7 +2,7 @@
 
 ## Description
 
-Rank distinct values by how often they occur, retaining first-seen order when frequencies match. This makes results reproducible without relying on sorting the values themselves.
+Implement `top_k_frequent(values, k)` in `starter/solution.py`. Input values are hashable; `k` is an integer.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Frequency ties require a deterministic ordering policy. Keep the count and tie-b
 
 ## Tips
 
+- **Concept to understand:** Rank distinct values by how often they occur, retaining first-seen order when frequencies match. This makes results reproducible without relying on sorting the values themselves.
 - What two pieces of information must be retained for each distinct value?
 - What happens when `k` exceeds the number of distinct values?
 

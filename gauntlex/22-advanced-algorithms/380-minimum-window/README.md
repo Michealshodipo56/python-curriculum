@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the shortest contiguous part of a string that covers every required character, including repeated requirements. If several shortest windows qualify, choose the earliest.
+Implement `minimum_window(text, pattern)` in `starter/solution.py`. The selected substring must contain every character of `pattern` at least as many times as it occurs there.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A valid window must cover every required character with its required multiplicit
 
 ## Tips
 
+- **Concept to understand:** Find the shortest contiguous part of a string that covers every required character, including repeated requirements. If several shortest windows qualify, choose the earliest.
 - Why is a set of required characters insufficient for repeated letters?
 - When can the left edge of a valid window be advanced safely?
 

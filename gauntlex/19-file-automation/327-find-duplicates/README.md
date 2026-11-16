@@ -2,7 +2,7 @@
 
 ## Description
 
-Files with different names can contain identical bytes. Group duplicate content by SHA-256 fingerprints rather than comparing filenames.
+Implement `duplicate_hashes(paths)` in `starter/solution.py`. Hash each file's raw bytes with SHA-256.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Group files by digest of raw bytes, then omit groups containing only one supplie
 
 ## Tips
 
+- **Concept to understand:** Files with different names can contain identical bytes. Group duplicate content by SHA-256 fingerprints rather than comparing filenames.
 - Why is file size or filename alone insufficient to identify duplicates?
 
 ## Example Behavior

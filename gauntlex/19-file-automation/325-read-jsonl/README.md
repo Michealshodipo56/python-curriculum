@@ -2,7 +2,7 @@
 
 ## Description
 
-JSON Lines files contain one independent JSON document per nonblank line. Read the stream in order while allowing malformed JSON to surface as an error.
+Implement `read_jsonl(path)` in `starter/solution.py`. Read the file as UTF-8 text.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Treat each nonblank line as its own JSON document, preserving stream order and s
 
 ## Tips
 
+- **Concept to understand:** JSON Lines files contain one independent JSON document per nonblank line. Read the stream in order while allowing malformed JSON to surface as an error.
 - Why must each line be decoded independently?
 
 ## Example Behavior

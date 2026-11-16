@@ -2,7 +2,7 @@
 
 ## Description
 
-A CSV file may repeat complete data rows. Count distinct parsed records while excluding the header from the data.
+Implement `csv_unique_rows(path)` in `starter/solution.py`. Read a valid CSV file with a header.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Compare the entire parsed row, not the original CSV text or one selected field. 
 
 ## Tips
 
+- **Concept to understand:** A CSV file may repeat complete data rows. Count distinct parsed records while excluding the header from the data.
 - Why is comparing only one field insufficient for full-row deduplication?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Find every region shared by two ordered interval collections. Each collection already contains disjoint inclusive ranges, so compare their boundaries without combining unrelated regions.
+Implement `interval_intersection(a, b)` in `starter/solution.py`. Both inputs are sorted lists of pairwise-disjoint inclusive integer intervals.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Use the overlap between the later start and earlier end of two candidate interva
 
 ## Tips
 
+- **Concept to understand:** Find every region shared by two ordered interval collections. Each collection already contains disjoint inclusive ranges, so compare their boundaries without combining unrelated regions.
 - Which of two current intervals can no longer overlap later intervals?
 - When is the overlap a single point rather than an empty interval?
 

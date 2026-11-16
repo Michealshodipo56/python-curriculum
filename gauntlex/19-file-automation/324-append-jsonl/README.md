@@ -2,7 +2,7 @@
 
 ## Description
 
-JSON Lines stores independent JSON values on separate lines. Append a new value without destroying existing records.
+Implement `append_jsonl(path, value)` in `starter/solution.py`. Open or create the UTF-8 file at `path` for appending.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Preserve existing file content and append one complete UTF-8 JSON record per cal
 
 ## Tips
 
+- **Concept to understand:** JSON Lines stores independent JSON values on separate lines. Append a new value without destroying existing records.
 - Why must each appended value end with a newline?
 
 ## Example Behavior

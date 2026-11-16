@@ -2,7 +2,7 @@
 
 ## Description
 
-Nested dictionaries can be represented by dotted paths to their leaf values. Flatten the structure without treating lists as subtrees.
+Implement `flatten_json(data)` in `starter/solution.py`. Return a dictionary mapping dotted key paths to leaf values.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Differentiate an empty mapping from a nonempty mapping: an empty dictionary is a
 
 ## Tips
 
+- **Concept to understand:** Nested dictionaries can be represented by dotted paths to their leaf values. Flatten the structure without treating lists as subtrees.
 - Why should an empty dictionary remain visible in the flattened result?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Measure the longest contiguous stretch of Unicode text in which no character repeats. A substring must stay contiguous; skipping repeated characters would change the problem.
+Implement `longest_unique_substring(text)` in `starter/solution.py`. Return the maximum number of characters in a contiguous substring with no repeated Unicode characters.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Track a contiguous window containing no repeated characters. When a repeated cha
 
 ## Tips
 
+- **Concept to understand:** Measure the longest contiguous stretch of Unicode text in which no character repeats. A substring must stay contiguous; skipping repeated characters would change the problem.
 - How can the left edge of a valid window move when a repeated character appears?
 - What information about earlier occurrences would avoid rescanning?
 

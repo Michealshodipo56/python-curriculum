@@ -2,7 +2,7 @@
 
 ## Description
 
-Configuration files group assignments under named sections. Read only one section while respecting whitespace and comments.
+Implement `parse_ini_section(text, section)` in `starter/solution.py`. Recognize section headers `[name]` and assignments `key=value` in well-formed text.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Track the active section as lines are read, and apply assignments only while the
 
 ## Tips
 
+- **Concept to understand:** Configuration files group assignments under named sections. Read only one section while respecting whitespace and comments.
 - How can the current section be tracked while reading line by line?
 
 ## Example Behavior

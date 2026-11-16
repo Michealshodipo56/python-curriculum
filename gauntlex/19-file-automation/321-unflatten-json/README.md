@@ -2,7 +2,7 @@
 
 ## Description
 
-Reverse a flat mapping of dotted paths into nested dictionaries, creating intermediate containers only where needed.
+Implement `unflatten_json(data)` in `starter/solution.py`. Construct nested dictionaries for intermediate path components.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Build intermediate dictionaries only for nonfinal path components, then place th
 
 ## Tips
 
+- **Concept to understand:** Reverse a flat mapping of dotted paths into nested dictionaries, creating intermediate containers only where needed.
 - What intermediate structure is needed for a key with three components?
 
 ## Example Behavior

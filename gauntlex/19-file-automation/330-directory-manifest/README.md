@@ -2,7 +2,7 @@
 
 ## Description
 
-A directory manifest describes all regular files below a root using portable relative paths. Traverse subdirectories without following directory symlinks.
+Implement `directory_manifest(root)` in `starter/solution.py`. Recursively find regular files beneath the supplied root directory.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Traverse directories recursively but do not descend into symlinked directories. 
 
 ## Tips
 
+- **Concept to understand:** A directory manifest describes all regular files below a root using portable relative paths. Traverse subdirectories without following directory symlinks.
 - Why is a relative POSIX path more portable than an absolute local path?
 
 ## Example Behavior

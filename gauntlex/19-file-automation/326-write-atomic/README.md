@@ -2,7 +2,7 @@
 
 ## Description
 
-Writing directly to a destination risks leaving partial content if a write is interrupted. Prepare replacement content in the same directory before switching files.
+Implement `write_text_atomic(path, text)` in `starter/solution.py`. Write the supplied string as UTF-8.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Create the temporary file in the destination's existing parent directory to keep
 
 ## Tips
 
+- **Concept to understand:** Writing directly to a destination risks leaving partial content if a write is interrupted. Prepare replacement content in the same directory before switching files.
 - Why should the temporary file be created on the same filesystem as the destination?
 
 ## Example Behavior

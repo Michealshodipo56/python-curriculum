@@ -2,7 +2,7 @@
 
 ## Description
 
-Filter a sequence of filenames by final extension without changing the filenames or their order.
+Implement `filter_suffix(names, suffix)` in `starter/solution.py`. Match the final suffix case-insensitively.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Match the complete final suffix without treating a similar substring in the midd
 
 ## Tips
 
+- **Concept to understand:** Filter a sequence of filenames by final extension without changing the filenames or their order.
 - Why should `report.csv.bak` not match a `.csv` filter?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Navigate a rectangular grid from its upper-left corner to its lower-right corner while avoiding blocked cells. Return the fewest orthogonal moves, not the number of visited cells.
+Implement `shortest_path_grid(grid)` in `starter/solution.py`. Cells are `0` for open and `1` for blocked; assume equal row lengths.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Treat passable grid cells as vertices with moves between adjacent cells. Breadth
 
 ## Tips
 
+- **Concept to understand:** Navigate a rectangular grid from its upper-left corner to its lower-right corner while avoiding blocked cells. Return the fewest orthogonal moves, not the number of visited cells.
 - Why does exploring reachable cells by distance layers find a shortest route?
 - How many moves does a single open cell require?
 

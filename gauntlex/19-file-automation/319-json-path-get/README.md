@@ -2,7 +2,7 @@
 
 ## Description
 
-Structured data often contains nested mappings. Navigate a dot-separated key path without assuming list indices are supported.
+Implement `json_path_get(data, path)` in `starter/solution.py`. An empty path returns the original object.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ At each path component, verify that the current value is a dictionary before att
 
 ## Tips
 
+- **Concept to understand:** Structured data often contains nested mappings. Navigate a dot-separated key path without assuming list indices are supported.
 - Why should a missing intermediate key stop traversal?
 
 ## Example Behavior
