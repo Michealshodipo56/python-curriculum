@@ -2,7 +2,7 @@
 
 ## Description
 
-A multiplication table follows the same pattern across several rows. Build a program that produces ten rows for an input number, keeping the calculation and text formatting consistent. This challenge practices repetition with changing values.
+Write a program that reads one number `N` and prints its multiplication table from `1` to `10`. Each line must use the format `N x I = RESULT`, such as `2 x 3 = 6`.
 
 ## Requirements
 
