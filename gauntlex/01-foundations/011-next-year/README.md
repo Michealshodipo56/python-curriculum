@@ -2,7 +2,7 @@
 
 ## Description
 
-Programs often combine descriptive information with calculations. Read a person's name and current age, then produce a sentence describing their age one year later. This challenge connects numeric input with formatted text.
+Write a program that reads a person's name and age on separate lines. Add one to the age and print a sentence in this exact format: `NAME will be AGE next year.`
 
 ## Requirements
 
