@@ -2,7 +2,7 @@
 
 ## Description
 
-An integer is even when it can be separated into pairs without a remainder; otherwise, it is odd. Build a program that classifies any integer, including zero and negative values. This challenge introduces decision-making based on a numeric property.
+Write a program that reads one whole number and prints `even` if the number is even or `odd` if it is odd. Print only that one word in lowercase.
 
 ## Requirements
 
