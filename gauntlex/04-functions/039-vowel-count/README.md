@@ -2,7 +2,7 @@
 
 ## Description
 
-Count how many English vowels appear in a piece of text. The count must include repeated vowels and treat uppercase and lowercase forms equally.
+In `starter/solution.py`, write `count_vowels(text)` to return how many times the letters `a`, `e`, `i`, `o`, or `u` appear in the text. Count uppercase and lowercase vowels equally.
 
 ## Requirements
 
