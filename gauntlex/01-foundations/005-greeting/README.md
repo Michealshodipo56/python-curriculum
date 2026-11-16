@@ -2,7 +2,7 @@
 
 ## Description
 
-A useful program can respond to information it receives instead of producing the same message every time. Build a greeting that incorporates a person's name exactly as entered. The challenge introduces input-driven output and combining fixed text with changing information.
+Write a program that reads a person's name and prints a greeting using that name. For example, if the input is `Ada`, the output must be `Hello, Ada!`.
 
 ## Requirements
 
