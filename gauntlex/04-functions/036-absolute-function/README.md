@@ -2,7 +2,7 @@
 
 ## Description
 
-The absolute value of an integer describes its distance from zero, regardless of direction. Write a reusable function that produces this nonnegative quantity.
+In `starter/solution.py`, write `absolute(n)` to return the absolute value of an integer. For example, `absolute(-5)` returns `5`, and `absolute(5)` also returns `5`.
 
 ## Requirements
 
