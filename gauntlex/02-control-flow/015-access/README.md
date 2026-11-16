@@ -2,7 +2,7 @@
 
 ## Description
 
-Some decisions depend on more than one requirement. A supervised driving session is available only to participants who meet an age threshold and have the required license status. Build a program that evaluates both conditions together.
+Write a program that reads a person's age and whether they have a license (`yes` or `no`). Print `allowed` only if they are at least 16 years old **and** the license status is `yes`; otherwise print `denied`.
 
 ## Requirements
 
