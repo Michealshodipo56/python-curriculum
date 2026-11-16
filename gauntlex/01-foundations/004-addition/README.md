@@ -2,7 +2,7 @@
 
 ## Description
 
-A program can transform information instead of simply displaying it. Create a program that receives two whole numbers and produces their sum. This challenge introduces the distinction between text received from standard input and numeric values used in arithmetic.
+Write a program that reads two whole numbers, one per line, adds them together, and prints the result. For example, if the input numbers are `7` and `5`, print `12`.
 
 ## Requirements
 
