@@ -2,7 +2,7 @@
 
 ## Description
 
-Programs can represent information as numbers as well as words. In this challenge, display a specific whole number and explore why the value a program works with is not necessarily the same thing as the characters a person sees on screen.
+Write a Python program in `main.py` that prints the number `42` on its own line. Do not print any words, labels, or other numbers.
 
 ## Requirements
 
