@@ -2,7 +2,7 @@
 
 ## Description
 
-A grading system converts a numeric score into a letter category. Build a program that selects the correct grade for every valid score. This challenge focuses on ordered decisions and boundary values.
+Write a program that reads a score from `0` to `100` and prints its letter grade. Use `A` for 90–100, `B` for 80–89, `C` for 70–79, `D` for 60–69, and `F` for 0–59. Print the result as `Grade: X`.
 
 ## Requirements
 
