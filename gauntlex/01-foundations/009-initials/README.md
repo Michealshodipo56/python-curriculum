@@ -2,7 +2,7 @@
 
 ## Description
 
-Names can be represented in shorter forms while retaining identifying information. Read two names and transform their first letters into a compact set of initials. This challenge practices accessing characters in text and handling capitalization.
+Write a program that reads a first name and last name on separate lines. Print their first letters in uppercase, each followed by a period. For example, `ada` and `lovelace` should produce `A.L.`.
 
 ## Requirements
 
