@@ -2,7 +2,7 @@
 
 ## Description
 
-Some strings read the same forward and backward. Build a function that checks this property using an exact character comparison; capitalization, spaces, and punctuation all matter.
+In `starter/solution.py`, write `is_palindrome(text)` to return `True` if the text reads exactly the same forward and backward, or `False` otherwise. For example, `racecar` is a palindrome. Capitalization and spaces count.
 
 ## Requirements
 
