@@ -2,7 +2,7 @@
 
 ## Description
 
-Prime numbers have exactly two positive divisors: one and themselves. Build a function that identifies primes while correctly rejecting zero, one, and negative integers.
+In `starter/solution.py`, write `is_prime(n)` to return `True` if `n` is a prime number and `False` otherwise. A prime number is greater than `1` and has no positive divisors except `1` and itself.
 
 ## Requirements
 
