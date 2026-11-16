@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the greatest number in a collection without assuming the values are positive, different, or already ordered. This challenge develops comparison across a sequence.
+Write a program that reads a nonempty line of space-separated integers and prints the largest number. The input may contain negative numbers or repeated values.
 
 ## Requirements
 
