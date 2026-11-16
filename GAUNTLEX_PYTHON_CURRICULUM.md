@@ -1513,7 +1513,7 @@ Assignment: [047-word-count](gauntlex/05-algorithms/047-word-count/README.md)
 
 #### Description
 
-Words may be separated by spaces, tabs, or other whitespace. Determine how many words appear in a text without counting empty gaps.
+Implement `word_count(text)` in `starter/solution.py`. Count nonempty words separated by whitespace.
 
 #### Requirements
 
@@ -1524,6 +1524,7 @@ Words may be separated by spaces, tabs, or other whitespace. Determine how many 
 
 #### Tips
 
+- **Concept to understand:** Words may be separated by spaces, tabs, or other whitespace. Determine how many words appear in a text without counting empty gaps.
 - How does repeated whitespace affect word boundaries?
 - Check leading and trailing spaces, tabs, and empty text.
 
@@ -1537,7 +1538,7 @@ Assignment: [048-longest-word](gauntlex/05-algorithms/048-longest-word/README.md
 
 #### Description
 
-Find the longest word in a text. If several words have the same maximum length, keep the first one encountered.
+Implement `longest_word(text)` in `starter/solution.py`. Treat words as nonempty whitespace-separated tokens.
 
 #### Requirements
 
@@ -1549,6 +1550,7 @@ Find the longest word in a text. If several words have the same maximum length, 
 
 #### Tips
 
+- **Concept to understand:** Find the longest word in a text. If several words have the same maximum length, keep the first one encountered.
 - How should the current winner change when a longer word appears?
 - Why should a tie not replace the earlier winner?
 
@@ -1562,7 +1564,7 @@ Assignment: [049-rotate-list](gauntlex/05-algorithms/049-rotate-list/README.md)
 
 #### Description
 
-A rotation moves items from the end of a list to the beginning while preserving their relative order. Build a function that handles shifts longer than the list itself.
+Implement `rotate_right(items, k)` in `starter/solution.py`. Return a new list rotated right by `k` positions.
 
 #### Requirements
 
@@ -1574,6 +1576,7 @@ A rotation moves items from the end of a list to the beginning while preserving 
 
 #### Tips
 
+- **Concept to understand:** A rotation moves items from the end of a list to the beginning while preserving their relative order. Build a function that handles shifts longer than the list itself.
 - What happens after a full rotation?
 - How can a large shift be related to the list length?
 - Consider zero shifts.
@@ -1588,7 +1591,7 @@ Assignment: [050-merge-sorted](gauntlex/05-algorithms/050-merge-sorted/README.md
 
 #### Description
 
-Combine two already sorted lists into one sorted list. Preserve every value, including duplicates, without changing the original inputs.
+Implement `merge_sorted(left, right)` in `starter/solution.py`. Return a new ascending list containing every element of both inputs.
 
 #### Requirements
 
@@ -1600,6 +1603,7 @@ Combine two already sorted lists into one sorted list. Preserve every value, inc
 
 #### Tips
 
+- **Concept to understand:** Combine two already sorted lists into one sorted list. Preserve every value, including duplicates, without changing the original inputs.
 - Compare the next unconsumed values from each list.
 - What happens when one list has no elements left?
 - How should equal values be handled?
@@ -1614,7 +1618,7 @@ Assignment: [051-balanced-brackets](gauntlex/05-algorithms/051-balanced-brackets
 
 #### Description
 
-Brackets must close in the reverse order in which they open. Determine whether a string has correctly matched and nested parentheses, square brackets, and braces.
+Implement `balanced_brackets(text)` in `starter/solution.py`. Recognize `()`, `[]`, and `{}` as matching pairs.
 
 #### Requirements
 
@@ -1626,6 +1630,7 @@ Brackets must close in the reverse order in which they open. Determine whether a
 
 #### Tips
 
+- **Concept to understand:** Brackets must close in the reverse order in which they open. Determine whether a string has correctly matched and nested parentheses, square brackets, and braces.
 - Why are equal counts of opening and closing brackets insufficient?
 - Which opening bracket should match the next closing bracket?
 - Consider mismatched nesting.
@@ -1640,7 +1645,7 @@ Assignment: [052-run-length](gauntlex/05-algorithms/052-run-length/README.md)
 
 #### Description
 
-Represent a string as consecutive runs of identical characters. Each run records the character and the number of times it appears without interruption.
+Implement `run_length(text)` in `starter/solution.py`. Return a list of two-element lists in the form `[character, count]`.
 
 #### Requirements
 
@@ -1652,6 +1657,7 @@ Represent a string as consecutive runs of identical characters. Each run records
 
 #### Tips
 
+- **Concept to understand:** Represent a string as consecutive runs of identical characters. Each run records the character and the number of times it appears without interruption.
 - How can you tell when one run ends and the next begins?
 - Why must separated runs of the same character remain distinct?
 
@@ -1665,7 +1671,7 @@ Assignment: [053-caesar](gauntlex/05-algorithms/053-caesar/README.md)
 
 #### Description
 
-Shift each English letter by a specified number of positions, wrapping around the alphabet. Preserve case and leave nonletters unchanged.
+Implement `caesar(text, k)` in `starter/solution.py`. Shift ASCII letters `A`–`Z` and `a`–`z` forward by integer `k` positions.
 
 #### Requirements
 
@@ -1677,6 +1683,7 @@ Shift each English letter by a specified number of positions, wrapping around th
 
 #### Tips
 
+- **Concept to understand:** Shift each English letter by a specified number of positions, wrapping around the alphabet. Preserve case and leave nonletters unchanged.
 - What happens when a shift crosses `z` or `Z`?
 - How does a full alphabet rotation affect the result?
 - Think about negative shifts.
@@ -1691,7 +1698,7 @@ Assignment: [054-common-prefix](gauntlex/05-algorithms/054-common-prefix/README.
 
 #### Description
 
-Several words may begin with the same sequence of characters. Find the longest prefix shared by every word in the input collection.
+Implement `common_prefix(words)` in `starter/solution.py`. Return the longest initial substring shared by all input strings.
 
 #### Requirements
 
@@ -1703,6 +1710,7 @@ Several words may begin with the same sequence of characters. Find the longest p
 
 #### Tips
 
+- **Concept to understand:** Several words may begin with the same sequence of characters. Find the longest prefix shared by every word in the input collection.
 - How does the shortest word limit the possible prefix?
 - What happens at the first mismatch?
 - Consider a list containing one word.
@@ -1717,7 +1725,7 @@ Assignment: [055-matrix-transpose](gauntlex/05-algorithms/055-matrix-transpose/R
 
 #### Description
 
-Transposing a matrix exchanges its rows and columns. Build a function that returns a new matrix with each element moved to its corresponding transposed position.
+Implement `transpose(matrix)` in `starter/solution.py`. Return a new matrix whose rows correspond to the original columns.
 
 #### Requirements
 
@@ -1729,6 +1737,7 @@ Transposing a matrix exchanges its rows and columns. Build a function that retur
 
 #### Tips
 
+- **Concept to understand:** Transposing a matrix exchanges its rows and columns. Build a function that returns a new matrix with each element moved to its corresponding transposed position.
 - Draw a small rectangular grid and track the row and column of one element.
 - How do the dimensions change after transposition?
 
@@ -1742,7 +1751,7 @@ Assignment: [056-binary-search](gauntlex/05-algorithms/056-binary-search/README.
 
 #### Description
 
-A sorted collection can be searched efficiently by repeatedly ruling out half of the remaining candidates. Find the index of a target value using this approach.
+Implement `binary_search(items, target)` in `starter/solution.py`. Return the zero-based index of `target`, or `-1` when absent.
 
 #### Requirements
 
@@ -1754,6 +1763,7 @@ A sorted collection can be searched efficiently by repeatedly ruling out half of
 
 #### Tips
 
+- **Concept to understand:** A sorted collection can be searched efficiently by repeatedly ruling out half of the remaining candidates. Find the index of a target value using this approach.
 - How does a comparison with the middle value eliminate part of the search space?
 - What does it mean when no candidate positions remain?
 
@@ -1767,7 +1777,7 @@ Assignment: [057-second-largest](gauntlex/05-algorithms/057-second-largest/READM
 
 #### Description
 
-The second-largest distinct value is not always the second item in descending order. Find the runner-up value while ignoring repeated copies of the maximum.
+Implement `second_largest(items)` in `starter/solution.py`. Return the second-largest distinct integer.
 
 #### Requirements
 
@@ -1779,6 +1789,7 @@ The second-largest distinct value is not always the second item in descending or
 
 #### Tips
 
+- **Concept to understand:** The second-largest distinct value is not always the second item in descending order. Find the runner-up value while ignoring repeated copies of the maximum.
 - Why should two copies of the maximum not occupy both ranks?
 - Consider an all-equal list and a list of negative numbers.
 
@@ -1792,7 +1803,7 @@ Assignment: [058-group-by-length](gauntlex/05-algorithms/058-group-by-length/REA
 
 #### Description
 
-Organize words into groups according to their lengths. Each group must retain the original encounter order of the words it contains.
+Implement `group_by_length(words)` in `starter/solution.py`. Return a dictionary mapping integer word lengths to lists of words.
 
 #### Requirements
 
@@ -1804,6 +1815,7 @@ Organize words into groups according to their lengths. Each group must retain th
 
 #### Tips
 
+- **Concept to understand:** Organize words into groups according to their lengths. Each group must retain the original encounter order of the words it contains.
 - Which data structure can associate one length with several words?
 - What should happen when another word has a length already seen?
 
@@ -1817,7 +1829,7 @@ Assignment: [059-valid-parentheses](gauntlex/05-algorithms/059-valid-parentheses
 
 #### Description
 
-A sequence of parentheses is valid only if every opening parenthesis is closed in the correct order. Detect invalid prefixes as well as unclosed parentheses at the end.
+Implement `valid_parentheses(text)` in `starter/solution.py`. Return `True` only if the parentheses form complete, correctly ordered pairs.
 
 #### Requirements
 
@@ -1829,6 +1841,7 @@ A sequence of parentheses is valid only if every opening parenthesis is closed i
 
 #### Tips
 
+- **Concept to understand:** A sequence of parentheses is valid only if every opening parenthesis is closed in the correct order. Detect invalid prefixes as well as unclosed parentheses at the end.
 - Why can equal counts still describe an invalid sequence?
 - What must remain true at every point while reading from left to right?
 
@@ -1842,7 +1855,7 @@ Assignment: [060-move-zeros](gauntlex/05-algorithms/060-move-zeros/README.md)
 
 #### Description
 
-Rearrange a sequence so that all numeric zeros appear after the nonzero values. Preserve the original order of nonzero elements.
+Implement `move_zeros(items)` in `starter/solution.py`. Return a new list containing all nonzero elements in original order, followed by the same number of zeros.
 
 #### Requirements
 
@@ -1854,6 +1867,7 @@ Rearrange a sequence so that all numeric zeros appear after the nonzero values. 
 
 #### Tips
 
+- **Concept to understand:** Rearrange a sequence so that all numeric zeros appear after the nonzero values. Preserve the original order of nonzero elements.
 - What information must be preserved about the nonzero values?
 - Consider all-zero, no-zero, and empty inputs.
 
@@ -1867,7 +1881,7 @@ Assignment: [061-pascal-row](gauntlex/05-algorithms/061-pascal-row/README.md)
 
 #### Description
 
-Pascal's triangle grows one row at a time. Every row begins and ends with one, while interior entries are formed from neighboring values in the preceding row.
+Implement `pascal_row(n)` in `starter/solution.py`. Return the full nth row as a list of integers.
 
 #### Requirements
 
@@ -1879,6 +1893,7 @@ Pascal's triangle grows one row at a time. Every row begins and ends with one, w
 
 #### Tips
 
+- **Concept to understand:** Pascal's triangle grows one row at a time. Every row begins and ends with one, while interior entries are formed from neighboring values in the preceding row.
 - How do the first and last values differ from the interior values?
 - Trace the first few rows and identify how their lengths change.
 
@@ -1892,7 +1907,7 @@ Assignment: [062-flatten-recursive](gauntlex/05-algorithms/062-flatten-recursive
 
 #### Description
 
-A nested list may contain integers and more lists at arbitrary depths. Traverse the structure and return all integers in their original left-to-right order.
+Implement `flatten_recursive(items)` in `starter/solution.py`. Return a new flat list containing every integer in encounter order.
 
 #### Requirements
 
@@ -1904,12 +1919,15 @@ A nested list may contain integers and more lists at arbitrary depths. Traverse 
 
 #### Tips
 
+- **Concept to understand:** A nested list may contain integers and more lists at arbitrary depths. Traverse the structure and return all integers in their original left-to-right order.
 - What is the difference between encountering an integer and encountering another list?
 - How does the same decision recur inside nested lists?
 
 #### Example Behavior
 
 `flatten_recursive([1, [2, [3]], 4])` → `[1, 2, 3, 4]`; `flatten_recursive([])` → `[]`.
+
+---
 
 ---
 
@@ -1921,7 +1939,7 @@ Assignment: [063-normalize-spaces](gauntlex/06-text-files/063-normalize-spaces/R
 
 #### Description
 
-A message copied from different sources may contain tabs, newlines, and repeated spaces. Produce a clean single-line representation without losing or rearranging words.
+Implement `normalize_spaces(text)` in `starter/solution.py`. Treat consecutive whitespace characters as a single separator between words.
 
 #### Requirements
 
@@ -1933,6 +1951,7 @@ A message copied from different sources may contain tabs, newlines, and repeated
 
 #### Tips
 
+- **Concept to understand:** A message copied from different sources may contain tabs, newlines, and repeated spaces. Produce a clean single-line representation without losing or rearranging words.
 - What happens when the input contains only tabs and spaces?
 - Why should a newline between two words become a separator rather than joining the words?
 
@@ -1948,7 +1967,7 @@ Assignment: [064-line-count](gauntlex/06-text-files/064-line-count/README.md)
 
 #### Description
 
-Text records can end at a newline or at the end of the string. Count logical lines consistently, without inventing an extra record merely because the text ends in a line break.
+Implement `line_count(text)` in `starter/solution.py`. Return the number of logical lines represented by the supplied text.
 
 #### Requirements
 
@@ -1960,6 +1979,7 @@ Text records can end at a newline or at the end of the string. Count logical lin
 
 #### Tips
 
+- **Concept to understand:** Text records can end at a newline or at the end of the string. Count logical lines consistently, without inventing an extra record merely because the text ends in a line break.
 - Compare an empty string, a single word, and a word followed by a newline.
 - Why is counting separators alone not sufficient?
 
@@ -1977,7 +1997,7 @@ Assignment: [065-safe-integer](gauntlex/06-text-files/065-safe-integer/README.md
 
 #### Description
 
-User-entered numbers are not always valid integers. Convert valid base-ten integer text while giving callers a predictable nonexceptional result for invalid input.
+Implement `parse_integer(text)` in `starter/solution.py`. Return the parsed integer for valid decimal integer text.
 
 #### Requirements
 
@@ -1989,6 +2009,7 @@ User-entered numbers are not always valid integers. Convert valid base-ten integ
 
 #### Tips
 
+- **Concept to understand:** User-entered numbers are not always valid integers. Convert valid base-ten integer text while giving callers a predictable nonexceptional result for invalid input.
 - How should `-12` differ from `3.5`?
 - What should happen with empty or whitespace-only input?
 
@@ -2004,7 +2025,7 @@ Assignment: [066-extract-numbers](gauntlex/06-text-files/066-extract-numbers/REA
 
 #### Description
 
-Logs and messages often mix words with numeric identifiers. Extract every consecutive run of ASCII digits and represent each run as an integer.
+Implement `extract_numbers(text)` in `starter/solution.py`. Find nonoverlapping runs of ASCII digits `0` through `9` in input order.
 
 #### Requirements
 
@@ -2016,6 +2037,7 @@ Logs and messages often mix words with numeric identifiers. Extract every consec
 
 #### Tips
 
+- **Concept to understand:** Logs and messages often mix words with numeric identifiers. Extract every consecutive run of ASCII digits and represent each run as an integer.
 - What ends one digit run and starts the next?
 - Should a leading minus sign be part of a run of digits under this contract?
 
@@ -2031,7 +2053,7 @@ Assignment: [067-mask-email](gauntlex/06-text-files/067-mask-email/README.md)
 
 #### Description
 
-When displaying an address publicly, conceal most of the local part while keeping its first character and domain recognizable.
+Implement `mask_email(email)` in `starter/solution.py`. Preserve the domain and `@` separator in the returned address.
 
 #### Requirements
 
@@ -2044,6 +2066,7 @@ When displaying an address publicly, conceal most of the local part while keepin
 
 #### Tips
 
+- **Concept to understand:** When displaying an address publicly, conceal most of the local part while keeping its first character and domain recognizable.
 - Which characters identify the domain and must remain unchanged?
 - How does the result differ for a one-character local part?
 
@@ -2059,7 +2082,7 @@ Assignment: [068-slugify](gauntlex/06-text-files/068-slugify/README.md)
 
 #### Description
 
-Page titles are often turned into compact URL identifiers. Normalize casing and separate words consistently, even when punctuation and whitespace appear together.
+Implement `slugify(text)` in `starter/solution.py`. Lowercase the text, retain only ASCII letters `a` through `z` and digits `0` through `9`, and separate retained runs with hyphens.
 
 #### Requirements
 
@@ -2071,6 +2094,7 @@ Page titles are often turned into compact URL identifiers. Normalize casing and 
 
 #### Tips
 
+- **Concept to understand:** Page titles are often turned into compact URL identifiers. Normalize casing and separate words consistently, even when punctuation and whitespace appear together.
 - What happens when several separators occur consecutively?
 - How should leading or trailing punctuation affect the output?
 
@@ -2088,7 +2112,7 @@ Assignment: [069-csv-row](gauntlex/06-text-files/069-csv-row/README.md)
 
 #### Description
 
-A comma-separated row may contain quoted fields whose commas are data rather than separators. Interpret one complete record using CSV quoting conventions.
+Implement `parse_csv_row(line)` in `starter/solution.py`. Return the parsed fields of the supplied CSV record as a list of strings.
 
 #### Requirements
 
@@ -2101,6 +2125,7 @@ A comma-separated row may contain quoted fields whose commas are data rather tha
 
 #### Tips
 
+- **Concept to understand:** A comma-separated row may contain quoted fields whose commas are data rather than separators. Interpret one complete record using CSV quoting conventions.
 - Why does splitting on every comma fail for a quoted field?
 - How are quotation marks represented inside a quoted CSV value?
 
@@ -2118,7 +2143,7 @@ Assignment: [070-json-value](gauntlex/06-text-files/070-json-value/README.md)
 
 #### Description
 
-Applications frequently receive structured JSON text but need only one field. Parse the document and retrieve the requested object key while handling absent keys.
+Implement `json_value(text, key)` in `starter/solution.py`. Decode the supplied JSON text using standard JSON rules.
 
 #### Requirements
 
@@ -2131,6 +2156,7 @@ Applications frequently receive structured JSON text but need only one field. Pa
 
 #### Tips
 
+- **Concept to understand:** Applications frequently receive structured JSON text but need only one field. Parse the document and retrieve the requested object key while handling absent keys.
 - Why can missing keys and explicit JSON `null` produce the same result?
 - Why is manual string searching unreliable for JSON values?
 
@@ -2146,7 +2172,7 @@ Assignment: [071-json-compact](gauntlex/06-text-files/071-json-compact/README.md
 
 #### Description
 
-A consistently formatted JSON representation makes output stable for comparison and storage. Convert JSON-compatible Python values into compact text with predictable object key order.
+Implement `compact_json(value)` in `starter/solution.py`. Serialize the supplied JSON-compatible value as a string, not bytes.
 
 #### Requirements
 
@@ -2159,6 +2185,7 @@ A consistently formatted JSON representation makes output stable for comparison 
 
 #### Tips
 
+- **Concept to understand:** A consistently formatted JSON representation makes output stable for comparison and storage. Convert JSON-compatible Python values into compact text with predictable object key order.
 - Why can two equivalent dictionaries serialize differently without canonical key ordering?
 - Which spaces are structural formatting rather than part of string values?
 
@@ -2174,7 +2201,7 @@ Assignment: [072-path-extension](gauntlex/06-text-files/072-path-extension/READM
 
 #### Description
 
-A filename can contain several dots or none at all. Identify its final suffix without confusing earlier filename segments with the extension.
+Implement `path_extension(path)` in `starter/solution.py`. Inspect the final filename component of the supplied POSIX path.
 
 #### Requirements
 
@@ -2186,6 +2213,7 @@ A filename can contain several dots or none at all. Identify its final suffix wi
 
 #### Tips
 
+- **Concept to understand:** A filename can contain several dots or none at all. Identify its final suffix without confusing earlier filename segments with the extension.
 - Why is the final dot more relevant than the first dot?
 - How should a hidden file without a second dot be treated?
 
@@ -2203,7 +2231,7 @@ Assignment: [073-safe-divide](gauntlex/06-text-files/073-safe-divide/README.md)
 
 #### Description
 
-A reusable numeric operation should handle an expected zero divisor without crashing the caller. Preserve ordinary division behavior for valid divisors.
+Implement `safe_divide(a, b)` in `starter/solution.py`. Return the result of dividing `a` by `b` when the divisor is nonzero.
 
 #### Requirements
 
@@ -2215,6 +2243,7 @@ A reusable numeric operation should handle an expected zero divisor without cras
 
 #### Tips
 
+- **Concept to understand:** A reusable numeric operation should handle an expected zero divisor without crashing the caller. Preserve ordinary division behavior for valid divisors.
 - What is the difference between a valid zero quotient and an invalid zero divisor?
 - Which failure condition does this function explicitly handle?
 
@@ -2230,7 +2259,7 @@ Assignment: [074-parse-date](gauntlex/06-text-files/074-parse-date/README.md)
 
 #### Description
 
-A date-like string is not necessarily a real date. Validate calendar rules, including month lengths and leap years, before accepting it.
+Implement `parse_date(text)` in `starter/solution.py`. Return the validated date string for a real date.
 
 #### Requirements
 
@@ -2242,6 +2271,7 @@ A date-like string is not necessarily a real date. Validate calendar rules, incl
 
 #### Tips
 
+- **Concept to understand:** A date-like string is not necessarily a real date. Validate calendar rules, including month lengths and leap years, before accepting it.
 - Why does a matching pattern not prove that a date exists?
 - Which years permit February 29?
 
@@ -2257,7 +2287,7 @@ Assignment: [075-days-between](gauntlex/06-text-files/075-days-between/README.md
 
 #### Description
 
-Calendar arithmetic must account for varying month lengths and leap years. Determine the absolute number of days separating two supplied dates.
+Implement `days_between(a, b)` in `starter/solution.py`. Return the nonnegative count of whole calendar days between them.
 
 #### Requirements
 
@@ -2269,6 +2299,7 @@ Calendar arithmetic must account for varying month lengths and leap years. Deter
 
 #### Tips
 
+- **Concept to understand:** Calendar arithmetic must account for varying month lengths and leap years. Determine the absolute number of days separating two supplied dates.
 - Why is subtracting day-of-month numbers insufficient?
 - What changes when the interval crosses February in a leap year?
 
@@ -2284,7 +2315,7 @@ Assignment: [076-iso-weekday](gauntlex/06-text-files/076-iso-weekday/README.md)
 
 #### Description
 
-Scheduling systems often represent weekdays numerically. Translate a valid calendar date to the ISO convention instead of relying on locale-specific weekday names.
+Implement `iso_weekday(text)` in `starter/solution.py`. Return the ISO weekday as an integer from `1` (Monday) through `7` (Sunday).
 
 #### Requirements
 
@@ -2296,6 +2327,7 @@ Scheduling systems often represent weekdays numerically. Translate a valid calen
 
 #### Tips
 
+- **Concept to understand:** Scheduling systems often represent weekdays numerically. Translate a valid calendar date to the ISO convention instead of relying on locale-specific weekday names.
 - How does ISO numbering differ from systems that start weeks on Sunday?
 - What weekday value should consecutive dates produce?
 
@@ -2311,7 +2343,7 @@ Assignment: [077-clean-records](gauntlex/06-text-files/077-clean-records/README.
 
 #### Description
 
-Imported records may have missing names or names containing only whitespace. Keep usable records while normalizing their names and preserving other fields.
+Implement `clean_records(records)` in `starter/solution.py`. Discard records whose `name` is missing, is not a string, or becomes empty after trimming surrounding whitespace.
 
 #### Requirements
 
@@ -2324,6 +2356,7 @@ Imported records may have missing names or names containing only whitespace. Kee
 
 #### Tips
 
+- **Concept to understand:** Imported records may have missing names or names containing only whitespace. Keep usable records while normalizing their names and preserving other fields.
 - How can you check whether a name remains meaningful after trimming?
 - Why should output records be distinct from caller-owned dictionaries?
 
@@ -2341,7 +2374,7 @@ Assignment: [078-count-file-lines](gauntlex/06-text-files/078-count-file-lines/R
 
 #### Description
 
-A file can contain empty lines, a trailing newline, or a final line with no terminator. Read the caller's UTF-8 text file and count its logical lines.
+Implement `count_file_lines(path)` in `starter/solution.py`. Return the number of logical text lines as an integer.
 
 #### Requirements
 
@@ -2355,6 +2388,7 @@ A file can contain empty lines, a trailing newline, or a final line with no term
 
 #### Tips
 
+- **Concept to understand:** A file can contain empty lines, a trailing newline, or a final line with no terminator. Read the caller's UTF-8 text file and count its logical lines.
 - Why does counting newline characters alone miss a final unterminated line?
 - How do you distinguish an empty file from a file containing one blank line?
 
@@ -2368,7 +2402,7 @@ Assignment: [079-read-json-file](gauntlex/06-text-files/079-read-json-file/READM
 
 #### Description
 
-Structured configuration and data files may contain objects, arrays, or scalar JSON values. Load the actual Python value rather than returning unparsed text.
+Implement `read_json_file(path)` in `starter/solution.py`. Parse the file as JSON and return the decoded Python value.
 
 #### Requirements
 
@@ -2382,6 +2416,7 @@ Structured configuration and data files may contain objects, arrays, or scalar J
 
 #### Tips
 
+- **Concept to understand:** Structured configuration and data files may contain objects, arrays, or scalar JSON values. Load the actual Python value rather than returning unparsed text.
 - Why should the function not assume that every JSON document starts with `{`?
 - What Python values correspond to JSON booleans and null?
 
@@ -2395,7 +2430,7 @@ Assignment: [080-csv-column-total](gauntlex/06-text-files/080-csv-column-total/R
 
 #### Description
 
-CSV reports often reorder columns and contain cells that cannot be used as numbers. Locate the requested column by its header and accumulate valid integer values.
+Implement `csv_column_total(path, column)` in `starter/solution.py`. Read the CSV with UTF-8 encoding and identify the target column by its header, not a fixed index.
 
 #### Requirements
 
@@ -2409,6 +2444,7 @@ CSV reports often reorder columns and contain cells that cannot be used as numbe
 
 #### Tips
 
+- **Concept to understand:** CSV reports often reorder columns and contain cells that cannot be used as numbers. Locate the requested column by its header and accumulate valid integer values.
 - What happens when the requested column moves to another position?
 - How should empty or noninteger cells affect the running total?
 
@@ -2420,6 +2456,8 @@ Rows with `amount` values `4`, empty, `unknown`, and `-2` also total `2`: the em
 
 ---
 
+---
+
 ## Objects
 
 ### 081 — Last In, First Out
@@ -2428,7 +2466,7 @@ Assignment: [081-stack](gauntlex/07-objects/081-stack/README.md)
 
 #### Description
 
-A stack stores values so the newest addition is the first one removed. Model this behavior as an object whose state changes across method calls.
+Define `Stack` in `starter/solution.py`. Provide `push(value)` to add an item and `pop()` to remove and return the newest item.
 
 #### Requirements
 
@@ -2441,6 +2479,7 @@ A stack stores values so the newest addition is the first one removed. Model thi
 
 #### Tips
 
+- **Concept to understand:** A stack stores values so the newest addition is the first one removed. Model this behavior as an object whose state changes across method calls.
 - How does the most recent addition affect the next removal?
 - What should change after a peek compared with a pop?
 
@@ -2454,7 +2493,7 @@ Assignment: [082-queue](gauntlex/07-objects/082-queue/README.md)
 
 #### Description
 
-A queue represents a waiting line: items leave in the same order in which they arrive. Build an object that maintains that order through repeated operations.
+Define `Queue` in `starter/solution.py`. Provide `enqueue(value)` to add an item at the back.
 
 #### Requirements
 
@@ -2467,6 +2506,7 @@ A queue represents a waiting line: items leave in the same order in which they a
 
 #### Tips
 
+- **Concept to understand:** A queue represents a waiting line: items leave in the same order in which they arrive. Build an object that maintains that order through repeated operations.
 - How does this removal order differ from a stack?
 - Consider what happens when several items are added before any are removed.
 
@@ -2480,7 +2520,7 @@ Assignment: [083-counter](gauntlex/07-objects/083-counter/README.md)
 
 #### Description
 
-A counter can record how often different values are observed. Design an object that tracks counts by key and also remembers the total number of recorded observations.
+Define `CounterMap` in `starter/solution.py`. Implement `add(key)` to increase that key's count by one.
 
 #### Requirements
 
@@ -2493,6 +2533,7 @@ A counter can record how often different values are observed. Design an object t
 
 #### Tips
 
+- **Concept to understand:** A counter can record how often different values are observed. Design an object that tracks counts by key and also remembers the total number of recorded observations.
 - How should an unseen key be treated?
 - Why is the overall total different from the number of distinct keys?
 
@@ -2506,7 +2547,7 @@ Assignment: [084-bank-account](gauntlex/07-objects/084-bank-account/README.md)
 
 #### Description
 
-A bank account must protect its balance against invalid operations. Model deposits and withdrawals so the object remains consistent even when a transaction is rejected.
+Define `BankAccount(initial_balance=0)` in `starter/solution.py`. Expose the current amount through a `balance` property.
 
 #### Requirements
 
@@ -2520,6 +2561,7 @@ A bank account must protect its balance against invalid operations. Model deposi
 
 #### Tips
 
+- **Concept to understand:** A bank account must protect its balance against invalid operations. Model deposits and withdrawals so the object remains consistent even when a transaction is rejected.
 - Why should validation happen before changing the stored balance?
 - Consider zero-value transactions and withdrawals exceeding the balance.
 
@@ -2533,7 +2575,7 @@ Assignment: [085-temperature](gauntlex/07-objects/085-temperature/README.md)
 
 #### Description
 
-A temperature can be represented in Celsius or Fahrenheit without storing two independent mutable values. Design a class that exposes both scales consistently.
+Define `Temperature(celsius)` in `starter/solution.py`. Provide read-only `celsius` and `fahrenheit` properties.
 
 #### Requirements
 
@@ -2546,6 +2588,7 @@ A temperature can be represented in Celsius or Fahrenheit without storing two in
 
 #### Tips
 
+- **Concept to understand:** A temperature can be represented in Celsius or Fahrenheit without storing two independent mutable values. Design a class that exposes both scales consistently.
 - What relationship connects the two temperature scales?
 - Why might storing both values independently lead to inconsistencies?
 
@@ -2559,7 +2602,7 @@ Assignment: [086-rectangle-class](gauntlex/07-objects/086-rectangle-class/README
 
 #### Description
 
-An object representing a rectangle should begin in a valid state. Require valid dimensions during construction so subsequent calculations can rely on them.
+Define `Rectangle(width, height)` in `starter/solution.py`. Raise `ValueError` if either dimension is zero or negative.
 
 #### Requirements
 
@@ -2572,6 +2615,7 @@ An object representing a rectangle should begin in a valid state. Require valid 
 
 #### Tips
 
+- **Concept to understand:** An object representing a rectangle should begin in a valid state. Require valid dimensions during construction so subsequent calculations can rely on them.
 - Which rules belong in object construction?
 - How does enforcing valid dimensions simplify later calculations?
 
@@ -2585,7 +2629,7 @@ Assignment: [087-todo-list](gauntlex/07-objects/087-todo-list/README.md)
 
 #### Description
 
-A to-do list needs to preserve the order tasks were added while tracking whether each one has been completed. Build a stateful task manager.
+Define `TodoList` in `starter/solution.py`. Implement `add(title)` to store a title with surrounding whitespace removed; raise `ValueError` if nothing remains.
 
 #### Requirements
 
@@ -2598,6 +2642,7 @@ A to-do list needs to preserve the order tasks were added while tracking whether
 
 #### Tips
 
+- **Concept to understand:** A to-do list needs to preserve the order tasks were added while tracking whether each one has been completed. Build a stateful task manager.
 - Why is a task's original position different from its completion state?
 - What should happen when an invalid index is supplied?
 
@@ -2611,7 +2656,7 @@ Assignment: [088-point](gauntlex/07-objects/088-point/README.md)
 
 #### Description
 
-A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
+Define `Point(x, y)` in `starter/solution.py`. Store the point's `x` and `y` coordinates.
 
 #### Requirements
 
@@ -2624,6 +2669,7 @@ A point identifies a fixed location in two-dimensional space. Create a class who
 
 #### Tips
 
+- **Concept to understand:** A point identifies a fixed location in two-dimensional space. Create a class whose coordinates cannot be reassigned after construction and that can measure distance to another point.
 - What distinguishes an immutable object from an ordinary mutable one?
 - How can horizontal and vertical differences determine distance?
 
@@ -2637,7 +2683,7 @@ Assignment: [089-inventory](gauntlex/07-objects/089-inventory/README.md)
 
 #### Description
 
-An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
+Define `Inventory` in `starter/solution.py`. Implement `stock(name, quantity)` to increase a product's quantity.
 
 #### Requirements
 
@@ -2651,6 +2697,7 @@ An inventory tracks how many units of each product are available. Model stock ad
 
 #### Tips
 
+- **Concept to understand:** An inventory tracks how many units of each product are available. Model stock additions and sales without permitting impossible transactions.
 - What state must remain unchanged after a failed sale?
 - How should a product with no prior stock be treated?
 
@@ -2664,7 +2711,7 @@ Assignment: [090-gradebook](gauntlex/07-objects/090-gradebook/README.md)
 
 #### Description
 
-A gradebook records multiple scores for each student and reports their average. Distinguish students with no recorded scores from those with a genuine average of zero.
+Define `Gradebook` in `starter/solution.py`. Implement `add_score(student, score)` to record a score for a student.
 
 #### Requirements
 
@@ -2677,6 +2724,7 @@ A gradebook records multiple scores for each student and reports their average. 
 
 #### Tips
 
+- **Concept to understand:** A gradebook records multiple scores for each student and reports their average. Distinguish students with no recorded scores from those with a genuine average of zero.
 - Why does a missing average differ from an average of zero?
 - How should repeated scores for one student affect the result?
 
@@ -2690,7 +2738,7 @@ Assignment: [091-event-emitter](gauntlex/07-objects/091-event-emitter/README.md)
 
 #### Description
 
-Build an event emitter that associates named events with callback functions and dispatches notifications in registration order.
+Implement `EventEmitter` in `starter/solution.py`. Provide `on(event, callback)` to register a callback.
 
 #### Requirements
 
@@ -2715,7 +2763,7 @@ Assignment: [092-lru-cache](gauntlex/07-objects/092-lru-cache/README.md)
 
 #### Description
 
-Create a capacity-limited cache that discards its least recently used entry when another entry must be stored.
+Implement `LRUCache(capacity)` in `starter/solution.py`. Require positive capacity; raise `ValueError` for nonpositive capacity.
 
 #### Requirements
 
@@ -2742,7 +2790,7 @@ Assignment: [093-undo-history](gauntlex/07-objects/093-undo-history/README.md)
 
 #### Description
 
-Maintain a current value together with enough history to restore earlier values, one change at a time.
+Implement `UndoHistory(initial)` in `starter/solution.py`. Provide `set(value)` to replace the current value and preserve the previous one.
 
 #### Requirements
 
@@ -2755,6 +2803,7 @@ Maintain a current value together with enough history to restore earlier values,
 
 #### Tips
 
+- **Concept to understand:** Maintain a current value together with enough history to restore earlier values, one change at a time.
 - What should be saved before each change?
 - How does the history change after an undo?
 
@@ -2768,7 +2817,7 @@ Assignment: [094-shopping-cart](gauntlex/07-objects/094-shopping-cart/README.md)
 
 #### Description
 
-Maintain products, prices, and quantities in a shopping cart without accepting contradictory entries.
+Implement `ShoppingCart` in `starter/solution.py`. Provide `add(name, price, quantity=1)` with nonnegative prices and positive integer quantities.
 
 #### Requirements
 
@@ -2782,6 +2831,7 @@ Maintain products, prices, and quantities in a shopping cart without accepting c
 
 #### Tips
 
+- **Concept to understand:** Maintain products, prices, and quantities in a shopping cart without accepting contradictory entries.
 - Why should an existing product not silently change its price?
 - What should happen to a cart's total after removal?
 
@@ -2795,7 +2845,7 @@ Assignment: [095-task-priority](gauntlex/07-objects/095-task-priority/README.md)
 
 #### Description
 
-Schedule tasks by urgency while preserving arrival order when two tasks have the same priority.
+Implement `PriorityTasks` in `starter/solution.py`. Provide `add(title, priority)` with integer priority values.
 
 #### Requirements
 
@@ -2808,12 +2858,15 @@ Schedule tasks by urgency while preserving arrival order when two tasks have the
 
 #### Tips
 
+- **Concept to understand:** Schedule tasks by urgency while preserving arrival order when two tasks have the same priority.
 - Why is a numeric priority alone insufficient to distinguish ties?
 - What information preserves fairness for equally urgent tasks?
 
 #### Example Behavior
 
 Adding `A` at priority `2`, `B` at priority `1`, and `C` at priority `1` yields pops `B`, `C`, `A`.
+
+---
 
 ---
 
@@ -2825,7 +2878,7 @@ Assignment: [096-two-sum](gauntlex/08-problem-solving/096-two-sum/README.md)
 
 #### Description
 
-Find two different positions in an integer list whose values add to a target. When several answers exist, the order in which pairs finish determines which answer is chosen.
+Implement `two_sum(nums, target)` in `starter/solution.py`. Return a list `[i, j]` of zero-based indices where `i < j` and `nums[i] + nums[j] == target`.
 
 #### Requirements
 
@@ -2838,6 +2891,7 @@ Find two different positions in an integer list whose values add to a target. Wh
 
 #### Tips
 
+- **Concept to understand:** Find two different positions in an integer list whose values add to a target. When several answers exist, the order in which pairs finish determines which answer is chosen.
 - Why does the pair's second index determine which answer comes first?
 - Consider repeated values and negative numbers.
 
@@ -2851,7 +2905,7 @@ Assignment: [097-prefix-sums](gauntlex/08-problem-solving/097-prefix-sums/README
 
 #### Description
 
-A prefix includes every value from the beginning of a sequence through a chosen position. Produce the running total at each position.
+Implement `prefix_sums(nums)` in `starter/solution.py`. Return a new list containing one sum for every prefix of `nums`.
 
 #### Requirements
 
@@ -2864,6 +2918,7 @@ A prefix includes every value from the beginning of a sequence through a chosen 
 
 #### Tips
 
+- **Concept to understand:** A prefix includes every value from the beginning of a sequence through a chosen position. Produce the running total at each position.
 - How does the next total relate to the previous total?
 - What should the output length be?
 
@@ -2877,7 +2932,7 @@ Assignment: [098-max-subarray](gauntlex/08-problem-solving/098-max-subarray/READ
 
 #### Description
 
-A contiguous subarray is an uninterrupted stretch of a list. Find the largest possible sum of a nonempty stretch, even when every number is negative.
+Implement `max_subarray(nums)` in `starter/solution.py`. Return the maximum sum among all nonempty contiguous subarrays.
 
 #### Requirements
 
@@ -2890,6 +2945,7 @@ A contiguous subarray is an uninterrupted stretch of a list. Find the largest po
 
 #### Tips
 
+- **Concept to understand:** A contiguous subarray is an uninterrupted stretch of a list. Find the largest possible sum of a nonempty stretch, even when every number is negative.
 - Why can the best answer be negative?
 - When can extending a segment make its sum worse?
 
@@ -2903,7 +2959,7 @@ Assignment: [099-product-except-self](gauntlex/08-problem-solving/099-product-ex
 
 #### Description
 
-For each position, multiply every other value in the list, excluding the value at that position. This challenge requires reasoning about products without division.
+Implement `product_except_self(nums)` in `starter/solution.py`. Return a new list of the same length as `nums`.
 
 #### Requirements
 
@@ -2916,6 +2972,7 @@ For each position, multiply every other value in the list, excluding the value a
 
 #### Tips
 
+- **Concept to understand:** For each position, multiply every other value in the list, excluding the value at that position.
 - What changes when the list contains one zero or several zeros?
 - How can values before and after a position contribute separately?
 
@@ -2929,7 +2986,7 @@ Assignment: [100-rotate-matrix](gauntlex/08-problem-solving/100-rotate-matrix/RE
 
 #### Description
 
-A square matrix can be rotated clockwise by a quarter turn. Return the transformed grid without changing the original rows.
+Implement `rotate_matrix(matrix)` in `starter/solution.py`. Return a new matrix rotated exactly 90 degrees clockwise.
 
 #### Requirements
 
@@ -2942,6 +2999,7 @@ A square matrix can be rotated clockwise by a quarter turn. Return the transform
 
 #### Tips
 
+- **Concept to understand:** A square matrix can be rotated clockwise by a quarter turn. Return the transformed grid without changing the original rows.
 - Where does each corner move after one clockwise rotation?
 - Consider a one-cell grid and an empty grid.
 
@@ -2955,7 +3013,7 @@ Assignment: [101-spiral-order](gauntlex/08-problem-solving/101-spiral-order/READ
 
 #### Description
 
-Read a rectangular grid in clockwise spiral order, starting at the top-left corner and moving inward as the outer boundary is exhausted.
+Implement `spiral_order(matrix)` in `starter/solution.py`. Return a flat list of values visited clockwise, starting across the top row.
 
 #### Requirements
 
@@ -2968,6 +3026,7 @@ Read a rectangular grid in clockwise spiral order, starting at the top-left corn
 
 #### Tips
 
+- **Concept to understand:** Read a rectangular grid in clockwise spiral order, starting at the top-left corner and moving inward as the outer boundary is exhausted.
 - How do the unvisited boundaries change after completing each side?
 - What if only one row or column remains?
 
@@ -2981,7 +3040,7 @@ Assignment: [102-binary-conversion](gauntlex/08-problem-solving/102-binary-conve
 
 #### Description
 
-Represent any integer using base-two digits. Return the representation as plain text without Python's binary prefix.
+Implement `to_binary(n)` in `starter/solution.py`. Return a string of binary digits representing integer `n`.
 
 #### Requirements
 
@@ -2994,6 +3053,7 @@ Represent any integer using base-two digits. Return the representation as plain 
 
 #### Tips
 
+- **Concept to understand:** Represent any integer using base-two digits. Return the representation as plain text without Python's binary prefix.
 - Why does zero need special attention?
 - How does a negative sign relate to the digits of the magnitude?
 
@@ -3007,7 +3067,7 @@ Assignment: [103-roman-numerals](gauntlex/08-problem-solving/103-roman-numerals/
 
 #### Description
 
-Convert a decimal integer to the conventional Roman numeral system, including the subtractive forms used for values such as four and nine.
+Implement `to_roman(n)` in `starter/solution.py`. Return its canonical uppercase Roman numeral representation.
 
 #### Requirements
 
@@ -3019,6 +3079,7 @@ Convert a decimal integer to the conventional Roman numeral system, including th
 
 #### Tips
 
+- **Concept to understand:** Convert a decimal integer to the conventional Roman numeral system, including the subtractive forms used for values such as four and nine.
 - Why are four and nine not written using repeated identical symbols?
 - How do larger place values relate to smaller ones?
 
@@ -3032,7 +3093,7 @@ Assignment: [104-roman-to-int](gauntlex/08-problem-solving/104-roman-to-int/READ
 
 #### Description
 
-Interpret a canonical uppercase Roman numeral as its decimal integer value. Some symbols subtract from the following larger symbol rather than adding.
+Implement `roman_to_int(text)` in `starter/solution.py`. Return its integer value.
 
 #### Requirements
 
@@ -3044,6 +3105,7 @@ Interpret a canonical uppercase Roman numeral as its decimal integer value. Some
 
 #### Tips
 
+- **Concept to understand:** Interpret a canonical uppercase Roman numeral as its decimal integer value. Some symbols subtract from the following larger symbol rather than adding.
 - How can the symbol immediately following another affect its value?
 - Consider the difference between `VI` and `IV`.
 
@@ -3057,7 +3119,7 @@ Assignment: [105-longest-unique-substring](gauntlex/08-problem-solving/105-longe
 
 #### Description
 
-A substring is a contiguous stretch of text. Determine the maximum length of a substring in which no character appears more than once.
+Implement `longest_unique_substring(text)` in `starter/solution.py`. Return the length of the longest contiguous substring without repeated characters.
 
 #### Requirements
 
@@ -3070,6 +3132,7 @@ A substring is a contiguous stretch of text. Determine the maximum length of a s
 
 #### Tips
 
+- **Concept to understand:** A substring is a contiguous stretch of text. Determine the maximum length of a substring in which no character appears more than once.
 - Why is a substring different from a subsequence?
 - What happens to a candidate stretch when a character repeats?
 
@@ -3083,7 +3146,7 @@ Assignment: [106-min-window-sum](gauntlex/08-problem-solving/106-min-window-sum/
 
 #### Description
 
-Find the shortest uninterrupted group of positive integers whose sum reaches or exceeds a target.
+Implement `min_subarray_len(target, nums)` in `starter/solution.py`. Return the minimum length of a contiguous subarray with sum at least `target`.
 
 #### Requirements
 
@@ -3096,6 +3159,7 @@ Find the shortest uninterrupted group of positive integers whose sum reaches or 
 
 #### Tips
 
+- **Concept to understand:** Find the shortest uninterrupted group of positive integers whose sum reaches or exceeds a target.
 - Why does the positivity of all numbers matter?
 - When might shortening a qualifying window preserve its sum threshold?
 
@@ -3109,7 +3173,7 @@ Assignment: [107-group-anagrams](gauntlex/08-problem-solving/107-group-anagrams/
 
 #### Description
 
-Group words with identical character frequencies while preserving both the first appearance of each group and the original order within that group.
+Implement `group_anagrams(words)` in `starter/solution.py`. Return a list of lists of anagram strings.
 
 #### Requirements
 
@@ -3123,6 +3187,7 @@ Group words with identical character frequencies while preserving both the first
 
 #### Tips
 
+- **Concept to understand:** Group words with identical character frequencies while preserving both the first appearance of each group and the original order within that group.
 - Why is matching only distinct characters insufficient?
 - How do you preserve two different levels of ordering?
 
@@ -3136,7 +3201,7 @@ Assignment: [108-top-k-frequent](gauntlex/08-problem-solving/108-top-k-frequent/
 
 #### Description
 
-Rank integer values by frequency. If two values appear equally often, the smaller integer comes first.
+Implement `top_k_frequent(nums, k)` in `starter/solution.py`. Return exactly `k` distinct integers.
 
 #### Requirements
 
@@ -3149,6 +3214,7 @@ Rank integer values by frequency. If two values appear equally often, the smalle
 
 #### Tips
 
+- **Concept to understand:** Rank integer values by frequency. If two values appear equally often, the smaller integer comes first.
 - Why does a frequency ranking need an explicit tie-breaker?
 - How should negative values behave when counts tie?
 
@@ -3162,7 +3228,7 @@ Assignment: [109-interval-merge](gauntlex/08-problem-solving/109-interval-merge/
 
 #### Description
 
-Intervals may overlap or share an endpoint. Combine them into the smallest sorted collection of disjoint closed intervals.
+Implement `merge_intervals(intervals)` in `starter/solution.py`. Each input interval is `[start, end]` with integer endpoints and `start <= end`.
 
 #### Requirements
 
@@ -3175,6 +3241,7 @@ Intervals may overlap or share an endpoint. Combine them into the smallest sorte
 
 #### Tips
 
+- **Concept to understand:** Intervals may overlap or share an endpoint. Combine them into the smallest sorted collection of disjoint closed intervals.
 - What changes after intervals are ordered by their starts?
 - Why should `[1, 3]` and `[3, 5]` combine?
 
@@ -3188,7 +3255,7 @@ Assignment: [110-interval-insert](gauntlex/08-problem-solving/110-interval-inser
 
 #### Description
 
-Insert one new closed interval into an already sorted, nonoverlapping collection, merging any ranges it overlaps or touches.
+Implement `insert_interval(intervals, new_interval)` in `starter/solution.py`. Insert `new_interval` in its correct position.
 
 #### Requirements
 
@@ -3201,6 +3268,7 @@ Insert one new closed interval into an already sorted, nonoverlapping collection
 
 #### Tips
 
+- **Concept to understand:** Insert one new closed interval into an already sorted, nonoverlapping collection, merging any ranges it overlaps or touches.
 - Which existing intervals lie completely before the new interval?
 - How do overlapping ranges affect the new interval's boundaries?
 
@@ -3214,7 +3282,7 @@ Assignment: [111-valid-sudoku](gauntlex/08-problem-solving/111-valid-sudoku/READ
 
 #### Description
 
-Check whether the currently filled cells in a Sudoku board obey the puzzle's uniqueness rules. Do not attempt to solve the board.
+Implement `valid_sudoku(board)` in `starter/solution.py`. Return `True` only if each row, column, and 3-by-3 box contains no repeated filled digit.
 
 #### Requirements
 
@@ -3227,6 +3295,7 @@ Check whether the currently filled cells in a Sudoku board obey the puzzle's uni
 
 #### Tips
 
+- **Concept to understand:** Check whether the currently filled cells in a Sudoku board obey the puzzle's uniqueness rules. Do not attempt to solve the board.
 - Why must each filled cell satisfy three different regions?
 - Does an unfinished board necessarily violate the rules?
 
@@ -3240,7 +3309,7 @@ Assignment: [112-flood-fill](gauntlex/08-problem-solving/112-flood-fill/README.m
 
 #### Description
 
-Recolor the connected area containing a starting pixel without changing disconnected pixels of the same color.
+Implement `flood_fill(image, sr, sc, color)` in `starter/solution.py`. Find all cells connected to the starting cell in the four cardinal directions that share its original color.
 
 #### Requirements
 
@@ -3253,6 +3322,7 @@ Recolor the connected area containing a starting pixel without changing disconne
 
 #### Tips
 
+- **Concept to understand:** Recolor the connected area containing a starting pixel without changing disconnected pixels of the same color.
 - Why does diagonal contact not establish connectivity?
 - How can already visited cells be distinguished from unvisited ones?
 
@@ -3266,7 +3336,7 @@ Assignment: [113-islands](gauntlex/08-problem-solving/113-islands/README.md)
 
 #### Description
 
-A land region is a group of `'1'` cells connected horizontally or vertically. Count the number of separate regions in a grid.
+Implement `count_islands(grid)` in `starter/solution.py`. Count distinct four-directionally connected land regions.
 
 #### Requirements
 
@@ -3279,6 +3349,7 @@ A land region is a group of `'1'` cells connected horizontally or vertically. Co
 
 #### Tips
 
+- **Concept to understand:** A land region is a group of `'1'` cells connected horizontally or vertically. Count the number of separate regions in a grid.
 - How can one discovered region be counted only once?
 - Why do diagonal neighbors remain separate islands?
 
@@ -3292,7 +3363,7 @@ Assignment: [114-bfs-shortest-path](gauntlex/08-problem-solving/114-bfs-shortest
 
 #### Description
 
-Find a route with the fewest edges between two graph nodes. When multiple shortest routes exist, neighbor-list order determines the selected route.
+Implement `shortest_path(graph, start, goal)` in `starter/solution.py`. Return a list of nodes from `start` to `goal`, including both endpoints.
 
 #### Requirements
 
@@ -3306,6 +3377,7 @@ Find a route with the fewest edges between two graph nodes. When multiple shorte
 
 #### Tips
 
+- **Concept to understand:** Find a route with the fewest edges between two graph nodes. When multiple shortest routes exist, neighbor-list order determines the selected route.
 - Why does exploring paths by number of edges find a shortest route?
 - How does neighbor order break ties?
 
@@ -3319,7 +3391,7 @@ Assignment: [115-cycle-detection](gauntlex/08-problem-solving/115-cycle-detectio
 
 #### Description
 
-A directed graph contains a cycle if a path of outgoing edges can return to a node already on that same active path.
+Implement `has_cycle(graph)` in `starter/solution.py`. Return `True` if any directed cycle exists and `False` otherwise.
 
 #### Requirements
 
@@ -3332,12 +3404,15 @@ A directed graph contains a cycle if a path of outgoing edges can return to a no
 
 #### Tips
 
+- **Concept to understand:** A directed graph contains a cycle if a path of outgoing edges can return to a node already on that same active path.
 - Why is visiting a node from an earlier completed branch not enough to prove a cycle?
 - How does a self-loop differ from a dead end?
 
 #### Example Behavior
 
 `has_cycle({'a': ['b'], 'b': ['c'], 'c': ['a']})` → `True`; `has_cycle({'a': ['b'], 'b': []})` → `False`.
+
+---
 
 ---
 
@@ -3349,7 +3424,7 @@ Assignment: [116-dedupe-normalized](gauntlex/09-validation/116-dedupe-normalized
 
 #### Description
 
-Clean strings consistently before deciding which values are duplicates. Keep only meaningful normalized values in their original first-appearance order.
+Implement `dedupe_normalized(items)` in `starter/solution.py`. Trim surrounding whitespace and apply Unicode casefolding to each string.
 
 #### Requirements
 
@@ -3362,6 +3437,7 @@ Clean strings consistently before deciding which values are duplicates. Keep onl
 
 #### Tips
 
+- **Concept to understand:** Clean strings consistently before deciding which values are duplicates. Keep only meaningful normalized values in their original first-appearance order.
 - Why must normalization happen before duplicate detection?
 - How can casefolding differ from preserving the original spelling?
 
@@ -3375,7 +3451,7 @@ Assignment: [117-parse-boolean](gauntlex/09-validation/117-parse-boolean/README.
 
 #### Description
 
-A configuration value may express yes or no using several text forms. Convert recognized forms to Boolean values and reject unsupported tokens.
+Implement `parse_boolean(text)` in `starter/solution.py`. Ignore surrounding whitespace and letter case.
 
 #### Requirements
 
@@ -3388,6 +3464,7 @@ A configuration value may express yes or no using several text forms. Convert re
 
 #### Tips
 
+- **Concept to understand:** A configuration value may express yes or no using several text forms. Convert recognized forms to Boolean values and reject unsupported tokens.
 - Why should an unknown token not silently become `False`?
 - Consider uppercase words and spaces around input.
 
@@ -3401,7 +3478,7 @@ Assignment: [118-clamp](gauntlex/09-validation/118-clamp/README.md)
 
 #### Description
 
-Constrain a number to a specified inclusive interval. Values outside the interval should be brought to the nearest boundary, while invalid bounds must be rejected.
+Implement `clamp(value, low, high)` in `starter/solution.py`. Return `low` if the value is below it, or `high` if above it.
 
 #### Requirements
 
@@ -3414,6 +3491,7 @@ Constrain a number to a specified inclusive interval. Values outside the interva
 
 #### Tips
 
+- **Concept to understand:** Constrain a number to a specified inclusive interval. Values outside the interval should be brought to the nearest boundary, while invalid bounds must be rejected.
 - How do the three possible positions relative to an interval differ?
 - What happens when the two bounds are equal?
 
@@ -3427,7 +3505,7 @@ Assignment: [119-normalize-phone](gauntlex/09-validation/119-normalize-phone/REA
 
 #### Description
 
-Remove permitted visual separators from a telephone number without silently accepting invalid symbols. Preserve a plus sign only when it indicates an international prefix.
+Implement `normalize_phone(text)` in `starter/solution.py`. Remove spaces, hyphens, and parentheses.
 
 #### Requirements
 
@@ -3440,6 +3518,7 @@ Remove permitted visual separators from a telephone number without silently acce
 
 #### Tips
 
+- **Concept to understand:** Remove permitted visual separators from a telephone number without silently accepting invalid symbols. Preserve a plus sign only when it indicates an international prefix.
 - Why must a plus sign be checked for its position?
 - Can removing formatting characters hide an invalid symbol?
 
@@ -3453,7 +3532,7 @@ Assignment: [120-validate-password](gauntlex/09-validation/120-validate-password
 
 #### Description
 
-A password validator must check several independent conditions. Determine whether a candidate meets the required minimum length and ASCII character classes.
+Implement `validate_password(text)` in `starter/solution.py`. Return a Boolean for the supplied string.
 
 #### Requirements
 
@@ -3466,6 +3545,7 @@ A password validator must check several independent conditions. Determine whethe
 
 #### Tips
 
+- **Concept to understand:** A password validator must check several independent conditions. Determine whether a candidate meets the required minimum length and ASCII character classes.
 - Why can a long password still be invalid?
 - How are ASCII letters different from arbitrary Unicode letters?
 
@@ -3479,7 +3559,7 @@ Assignment: [121-parse-query](gauntlex/09-validation/121-parse-query/README.md)
 
 #### Description
 
-A URL query string can contain encoded characters, blank values, and repeated names. Parse it into a mapping where later occurrences replace earlier values.
+Implement `parse_query(text)` in `starter/solution.py`. Return a dictionary of decoded parameter names and values.
 
 #### Requirements
 
@@ -3492,6 +3572,7 @@ A URL query string can contain encoded characters, blank values, and repeated na
 
 #### Tips
 
+- **Concept to understand:** A URL query string can contain encoded characters, blank values, and repeated names. Parse it into a mapping where later occurrences replace earlier values.
 - Why does `%2B` differ from a literal plus sign?
 - What should happen when a name occurs more than once?
 
@@ -3505,7 +3586,7 @@ Assignment: [122-build-query](gauntlex/09-validation/122-build-query/README.md)
 
 #### Description
 
-Convert a mapping of text keys and values into a predictable HTTP query string. The result must not depend on the mapping's insertion order.
+Implement `build_query(params)` in `starter/solution.py`. Sort keys alphabetically before encoding.
 
 #### Requirements
 
@@ -3519,6 +3600,7 @@ Convert a mapping of text keys and values into a predictable HTTP query string. 
 
 #### Tips
 
+- **Concept to understand:** Convert a mapping of text keys and values into a predictable HTTP query string. The result must not depend on the mapping's insertion order.
 - Why does sorting keys make output reproducible?
 - Which characters require encoding inside query components?
 
@@ -3532,7 +3614,7 @@ Assignment: [123-validate-ipv4](gauntlex/09-validation/123-validate-ipv4/README.
 
 #### Description
 
-An IPv4 address has four dotted decimal components, but not every four-part numeric string is valid. Validate both the structure and canonical spelling.
+Implement `valid_ipv4(text)` in `starter/solution.py`. Return `True` only for exactly four dot-separated decimal components.
 
 #### Requirements
 
@@ -3545,6 +3627,7 @@ An IPv4 address has four dotted decimal components, but not every four-part nume
 
 #### Tips
 
+- **Concept to understand:** An IPv4 address has four dotted decimal components, but not every four-part numeric string is valid. Validate both the structure and canonical spelling.
 - Why are numeric range checks alone insufficient?
 - What distinguishes `0` from `00` in canonical notation?
 
@@ -3558,7 +3641,7 @@ Assignment: [124-parse-log-line](gauntlex/09-validation/124-parse-log-line/READM
 
 #### Description
 
-A log entry combines a severity, a date, and a message. Parse these fields without losing separators that belong to the message itself.
+Implement `parse_log_line(line)` in `starter/solution.py`. Require `LEVEL` to be exactly `INFO`, `WARN`, or `ERROR`.
 
 #### Requirements
 
@@ -3572,6 +3655,7 @@ A log entry combines a severity, a date, and a message. Parse these fields witho
 
 #### Tips
 
+- **Concept to understand:** A log entry combines a severity, a date, and a message. Parse these fields without losing separators that belong to the message itself.
 - Why is splitting at every delimiter unsafe for the message?
 - Why must a date be checked beyond its visual pattern?
 
@@ -3585,7 +3669,7 @@ Assignment: [125-count-log-levels](gauntlex/09-validation/125-count-log-levels/R
 
 #### Description
 
-Summarize the severity of valid structured log records while ignoring malformed lines. The output must include every supported severity even when its count is zero.
+Implement `count_log_levels(lines)` in `starter/solution.py`. Count only valid `INFO`, `WARN`, and `ERROR` records.
 
 #### Requirements
 
@@ -3599,6 +3683,7 @@ Summarize the severity of valid structured log records while ignoring malformed 
 
 #### Tips
 
+- **Concept to understand:** Summarize the severity of valid structured log records while ignoring malformed lines. The output must include every supported severity even when its count is zero.
 - Why is checking the prefix alone insufficient to validate a record?
 - What should the result contain for an empty list?
 
@@ -3612,7 +3697,7 @@ Assignment: [126-chunk-text](gauntlex/09-validation/126-chunk-text/README.md)
 
 #### Description
 
-Divide a string into consecutive pieces of a requested maximum length. Preserve every character and the original order.
+Implement `chunk_text(text, size)` in `starter/solution.py`. Return a list of consecutive substrings of length at most `size`.
 
 #### Requirements
 
@@ -3625,6 +3710,7 @@ Divide a string into consecutive pieces of a requested maximum length. Preserve 
 
 #### Tips
 
+- **Concept to understand:** Divide a string into consecutive pieces of a requested maximum length. Preserve every character and the original order.
 - What happens when the text length is not a multiple of the chunk size?
 - Why must zero or negative chunk lengths be rejected?
 
@@ -3638,7 +3724,7 @@ Assignment: [127-parse-env](gauntlex/09-validation/127-parse-env/README.md)
 
 #### Description
 
-Read configuration assignments from multiline text. Ignore blank and comment lines, normalize surrounding whitespace, and allow later assignments to replace earlier ones.
+Implement `parse_env(text)` in `starter/solution.py`. Interpret noncomment lines as `KEY=VALUE` assignments.
 
 #### Requirements
 
@@ -3653,6 +3739,7 @@ Read configuration assignments from multiline text. Ignore blank and comment lin
 
 #### Tips
 
+- **Concept to understand:** Read configuration assignments from multiline text. Ignore blank and comment lines, normalize surrounding whitespace, and allow later assignments to replace earlier ones.
 - Why should only the first equals sign separate the key and value?
 - What makes a line a comment rather than an assignment?
 
@@ -3666,7 +3753,7 @@ Assignment: [128-redact-secrets](gauntlex/09-validation/128-redact-secrets/READM
 
 #### Description
 
-Hide credential values in text while preserving the original capitalization of their keys. Only explicitly recognized assignment forms should be changed.
+Implement `redact_secrets(text)` in `starter/solution.py`. Find case-insensitive occurrences of `password=VALUE` or `token=VALUE`.
 
 #### Requirements
 
@@ -3679,6 +3766,7 @@ Hide credential values in text while preserving the original capitalization of t
 
 #### Tips
 
+- **Concept to understand:** Hide credential values in text while preserving the original capitalization of their keys. Only explicitly recognized assignment forms should be changed.
 - Why should the key's original spelling remain unchanged?
 - How do spaces and punctuation affect the end of a credential value?
 
@@ -3692,7 +3780,7 @@ Assignment: [129-normalize-url-path](gauntlex/09-validation/129-normalize-url-pa
 
 #### Description
 
-Normalize a POSIX-style URL path into a stable rooted form. Redundant separators and relative segments should not allow the result to escape above the root.
+Implement `normalize_url_path(path)` in `starter/solution.py`. Return a path beginning with `/`.
 
 #### Requirements
 
@@ -3706,6 +3794,7 @@ Normalize a POSIX-style URL path into a stable rooted form. Redundant separators
 
 #### Tips
 
+- **Concept to understand:** Normalize a POSIX-style URL path into a stable rooted form. Redundant separators and relative segments should not allow the result to escape above the root.
 - What should happen when a parent segment appears at the root?
 - How do `.` and `..` differ?
 
@@ -3719,7 +3808,7 @@ Assignment: [130-safe-filename](gauntlex/09-validation/130-safe-filename/README.
 
 #### Description
 
-Turn a human-readable ASCII label into a predictable lowercase filename stem by replacing disallowed runs with underscores.
+Implement `safe_filename(text)` in `starter/solution.py`. Convert ASCII letters to lowercase.
 
 #### Requirements
 
@@ -3733,6 +3822,7 @@ Turn a human-readable ASCII label into a predictable lowercase filename stem by 
 
 #### Tips
 
+- **Concept to understand:** Turn a human-readable ASCII label into a predictable lowercase filename stem by replacing disallowed runs with underscores.
 - Why should consecutive punctuation produce one separator?
 - What happens when every input character is disallowed?
 
@@ -3746,7 +3836,7 @@ Assignment: [131-parse-duration](gauntlex/09-validation/131-parse-duration/READM
 
 #### Description
 
-Interpret a duration in hours, minutes, and seconds. Reject malformed text and impossible minute or second values.
+Implement `parse_duration(text)` in `starter/solution.py`. Require exactly two digits each for minutes and seconds.
 
 #### Requirements
 
@@ -3760,6 +3850,7 @@ Interpret a duration in hours, minutes, and seconds. Reject malformed text and i
 
 #### Tips
 
+- **Concept to understand:** Interpret a duration in hours, minutes, and seconds. Reject malformed text and impossible minute or second values.
 - Why must minutes and seconds be bounded independently of hours?
 - What is the difference between an invalid format and a valid zero duration?
 
@@ -3773,7 +3864,7 @@ Assignment: [132-format-duration](gauntlex/09-validation/132-format-duration/REA
 
 #### Description
 
-Represent a nonnegative number of seconds in a consistent hours-minutes-seconds format.
+Implement `format_duration(seconds)` in `starter/solution.py`. Return text formatted as `H:MM:SS`.
 
 #### Requirements
 
@@ -3786,6 +3877,7 @@ Represent a nonnegative number of seconds in a consistent hours-minutes-seconds 
 
 #### Tips
 
+- **Concept to understand:** Represent a nonnegative number of seconds in a consistent hours-minutes-seconds format.
 - Why must minutes and seconds remain below sixty?
 - What happens when the hour count has several digits?
 
@@ -3799,7 +3891,7 @@ Assignment: [133-parse-hex-color](gauntlex/09-validation/133-parse-hex-color/REA
 
 #### Description
 
-A six-digit hexadecimal color stores red, green, and blue intensities in three adjacent pairs. Validate and decode each channel.
+Implement `parse_hex_color(text)` in `starter/solution.py`. Reject missing `#`, incorrect lengths, and nonhexadecimal characters with `ValueError`.
 
 #### Requirements
 
@@ -3811,6 +3903,7 @@ A six-digit hexadecimal color stores red, green, and blue intensities in three a
 
 #### Tips
 
+- **Concept to understand:** A six-digit hexadecimal color stores red, green, and blue intensities in three adjacent pairs. Validate and decode each channel.
 - Why does each color channel occupy two hexadecimal digits?
 - Why should the full input be validated before decoding?
 
@@ -3824,7 +3917,7 @@ Assignment: [134-format-hex-color](gauntlex/09-validation/134-format-hex-color/R
 
 #### Description
 
-Encode red, green, and blue channel values as a canonical uppercase hexadecimal color string.
+Implement `format_hex_color(r, g, b)` in `starter/solution.py`. Require every component to lie between `0` and `255`; raise `ValueError` otherwise.
 
 #### Requirements
 
@@ -3837,6 +3930,7 @@ Encode red, green, and blue channel values as a canonical uppercase hexadecimal 
 
 #### Tips
 
+- **Concept to understand:** Encode red, green, and blue channel values as a canonical uppercase hexadecimal color string.
 - Why do small channel values still require two digits?
 - How does channel order affect the resulting color?
 
@@ -3850,7 +3944,7 @@ Assignment: [135-normalize-tags](gauntlex/09-validation/135-normalize-tags/READM
 
 #### Description
 
-Normalize comma-separated labels into a unique, ordered collection of meaningful tags.
+Implement `normalize_tags(text)` in `starter/solution.py`. Split input text at commas.
 
 #### Requirements
 
@@ -3864,6 +3958,7 @@ Normalize comma-separated labels into a unique, ordered collection of meaningful
 
 #### Tips
 
+- **Concept to understand:** Normalize comma-separated labels into a unique, ordered collection of meaningful tags.
 - Why must normalization happen before duplicate detection?
 - What should consecutive commas contribute?
 
@@ -3877,7 +3972,7 @@ Assignment: [136-email-domain](gauntlex/09-validation/136-email-domain/README.md
 
 #### Description
 
-An email address has a local part and a domain separated by `@`. Extract the domain and normalize its capitalization without changing the local part.
+Implement `email_domain(email)` in `starter/solution.py`. Return the substring after `@`.
 
 #### Requirements
 
@@ -3890,6 +3985,7 @@ An email address has a local part and a domain separated by `@`. Extract the dom
 
 #### Tips
 
+- **Concept to understand:** An email address has a local part and a domain separated by `@`. Extract the domain and normalize its capitalization without changing the local part.
 - Which part of an email address identifies its domain?
 - Why should only the extracted domain be normalized?
 
@@ -3903,7 +3999,7 @@ Assignment: [137-common-keys](gauntlex/09-validation/137-common-keys/README.md)
 
 #### Description
 
-Two dictionaries may contain some of the same keys even when their values differ. Find the shared keys and return them in a predictable order.
+Implement `common_keys(a, b)` in `starter/solution.py`. Return a sorted list of keys present in both dictionaries.
 
 #### Requirements
 
@@ -3916,6 +4012,7 @@ Two dictionaries may contain some of the same keys even when their values differ
 
 #### Tips
 
+- **Concept to understand:** Two dictionaries may contain some of the same keys even when their values differ. Find the shared keys and return them in a predictable order.
 - Why should different values not affect whether keys match?
 - How does sorting remove dependence on insertion order?
 
@@ -3929,7 +4026,7 @@ Assignment: [138-invert-mapping](gauntlex/09-validation/138-invert-mapping/READM
 
 #### Description
 
-A dictionary can map several keys to the same value. Reverse that relationship while preserving every original key and its encounter order.
+Implement `invert_mapping(mapping)` in `starter/solution.py`. Return a new dictionary whose keys are the original values.
 
 #### Requirements
 
@@ -3943,6 +4040,7 @@ A dictionary can map several keys to the same value. Reverse that relationship w
 
 #### Tips
 
+- **Concept to understand:** A dictionary can map several keys to the same value. Reverse that relationship while preserving every original key and its encounter order.
 - Why might an inverted mapping need lists rather than single values?
 - What ordering should be preserved when multiple keys share a value?
 
@@ -3956,7 +4054,7 @@ Assignment: [139-diff-sets](gauntlex/09-validation/139-diff-sets/README.md)
 
 #### Description
 
-Compare an older collection of labels with a newer collection. Report which distinct values were introduced, removed, or kept.
+Implement `set_diff(old, new)` in `starter/solution.py`. Ignore duplicate occurrences within each collection.
 
 #### Requirements
 
@@ -3970,6 +4068,7 @@ Compare an older collection of labels with a newer collection. Report which dist
 
 #### Tips
 
+- **Concept to understand:** Compare an older collection of labels with a newer collection. Report which distinct values were introduced, removed, or kept.
 - Why does comparison direction matter?
 - How should duplicates affect membership and the result?
 
@@ -3983,7 +4082,7 @@ Assignment: [140-top-words](gauntlex/09-validation/140-top-words/README.md)
 
 #### Description
 
-Extract words from text, count how often each appears, and rank them. Equal-frequency words must be ordered alphabetically.
+Implement `top_words(text, n)` in `starter/solution.py`. Recognize words as maximal runs of ASCII letters `a`–`z`, ignoring case.
 
 #### Requirements
 
@@ -3997,6 +4096,7 @@ Extract words from text, count how often each appears, and rank them. Equal-freq
 
 #### Tips
 
+- **Concept to understand:** Extract words from text, count how often each appears, and rank them. Equal-frequency words must be ordered alphabetically.
 - Why must case normalization happen before counting?
 - How should equal-frequency words be ordered?
 - What separates two ASCII words?
@@ -4004,6 +4104,8 @@ Extract words from text, count how often each appears, and rank them. Equal-freq
 #### Example Behavior
 
 `top_words('Red red blue!', 2)` → `['red', 'blue']`; `top_words('b a b a', 1)` → `['a']`.
+
+---
 
 ---
 
@@ -4015,7 +4117,7 @@ Assignment: [141-echo-lines](gauntlex/10-cli-tools/141-echo-lines/README.md)
 
 #### Description
 
-Build a command-line program that reverses the order of input lines. The contents of each line must remain unchanged, including blank lines.
+Implement the program in `starter/main.py` using standard input and standard output. Read every line from standard input.
 
 #### Requirements
 
@@ -4048,7 +4150,7 @@ Assignment: [142-number-lines](gauntlex/10-cli-tools/142-number-lines/README.md)
 
 #### Description
 
-Give every input line a sequential label so that a reader can refer to its position. Blank lines count as lines too.
+Implement the program in `starter/main.py` using standard input and standard output. Read text lines from standard input.
 
 #### Requirements
 
@@ -4062,6 +4164,7 @@ Give every input line a sequential label so that a reader can refer to its posit
 
 #### Tips
 
+- **Concept to understand:** Give every input line a sequential label so that a reader can refer to its position. Blank lines count as lines too.
 - Why does the first line receive label `1` rather than `0`?
 - How can a blank line still receive a label?
 
