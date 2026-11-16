@@ -2,7 +2,7 @@
 
 ## Description
 
-The order of items in a sequence can change without changing the items themselves. Build a program that reverses the order of words in a line while leaving the characters inside each word unchanged.
+Write a program that reads words on one line and prints those words in reverse order, separated by single spaces. Do not reverse the letters inside each word.
 
 ## Requirements
 
