@@ -2,7 +2,7 @@
 
 ## Description
 
-Two strings are anagrams when they contain the same characters with the same frequencies, even if their orders differ. Write a function that checks this exact relationship.
+In `starter/solution.py`, write `are_anagrams(a, b)` to return `True` if the two strings contain exactly the same characters with the same counts, even in a different order. Treat uppercase letters, spaces, and punctuation as distinct characters.
 
 ## Requirements
 
