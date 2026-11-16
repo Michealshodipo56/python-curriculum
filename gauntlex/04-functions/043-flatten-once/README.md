@@ -2,7 +2,7 @@
 
 ## Description
 
-A list can contain several smaller lists. Combine their elements into one new list while preserving encounter order. This task flattens exactly one level of nesting.
+In `starter/solution.py`, write `flatten_once(groups)` to combine a list of smaller lists into one new list, keeping the original element order. For example, `[[1, 2], [3]]` becomes `[1, 2, 3]`. Do not change the original lists.
 
 ## Requirements
 
