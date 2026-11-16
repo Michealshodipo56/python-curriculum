@@ -780,7 +780,7 @@ Assignment: [023-list-length](gauntlex/03-collections/023-list-length/README.md)
 
 #### Description
 
-A single line can represent a collection of several numbers or an empty collection. Build a program that counts the values supplied, rather than counting the characters used to write them. This challenge introduces working with sequences.
+Write a program that reads a line of space-separated integers and prints how many integers were entered. If the line is empty, print `0`.
 
 #### Requirements
 
@@ -816,7 +816,7 @@ Assignment: [024-list-ends](gauntlex/03-collections/024-list-ends/README.md)
 
 #### Description
 
-An ordered collection has a first element and a last element. Build a program that retrieves both boundaries while preserving the values exactly as supplied.
+Write a program that reads a line of words and prints the first word and last word on separate lines. If there is only one word, print it twice.
 
 #### Requirements
 
@@ -851,7 +851,7 @@ Assignment: [025-list-total](gauntlex/03-collections/025-list-total/README.md)
 
 #### Description
 
-A collection of numbers can be reduced to one result by combining its elements. Build a program that finds the arithmetic sum of a sequence of integers, including when the sequence is empty.
+Write a program that reads space-separated integers on one line, adds them together, and prints their total. If the line is empty, print `0`.
 
 #### Requirements
 
@@ -885,7 +885,7 @@ Assignment: [026-list-maximum](gauntlex/03-collections/026-list-maximum/README.m
 
 #### Description
 
-Find the greatest number in a collection without assuming the values are positive, different, or already ordered. This challenge develops comparison across a sequence.
+Write a program that reads a nonempty line of space-separated integers and prints the largest number. The input may contain negative numbers or repeated values.
 
 #### Requirements
 
@@ -918,7 +918,7 @@ Assignment: [027-reverse-words](gauntlex/03-collections/027-reverse-words/README
 
 #### Description
 
-The order of items in a sequence can change without changing the items themselves. Build a program that reverses the order of words in a line while leaving the characters inside each word unchanged.
+Write a program that reads words on one line and prints those words in reverse order, separated by single spaces. Do not reverse the letters inside each word.
 
 #### Requirements
 
@@ -952,7 +952,7 @@ Assignment: [028-filter-even](gauntlex/03-collections/028-filter-even/README.md)
 
 #### Description
 
-Filtering a collection means keeping only elements that satisfy a condition. Build a program that selects even integers without changing their relative order.
+Write a program that reads space-separated integers and prints only the even numbers, keeping their original order. If there are no even numbers, print an empty line.
 
 #### Requirements
 
@@ -986,7 +986,7 @@ Assignment: [029-unique-order](gauntlex/03-collections/029-unique-order/README.m
 
 #### Description
 
-A collection can contain the same word more than once. Build a program that removes repeated words while keeping the order in which each distinct word first appeared.
+Write a program that reads a line of words and prints each different word once, in the order it first appeared. Treat words with different capitalization as different.
 
 #### Requirements
 
@@ -1021,7 +1021,7 @@ Assignment: [030-word-frequency](gauntlex/03-collections/030-word-frequency/READ
 
 #### Description
 
-A frequency report records how often each distinct word appears in a collection. Build a report that preserves the order in which words first appeared while counting all occurrences.
+Write a program that reads a line of words and counts how many times each word appears. Print each word and its count as `WORD: COUNT`, in the order that word first appeared.
 
 #### Requirements
 
@@ -1057,7 +1057,7 @@ Assignment: [031-sort-numbers](gauntlex/03-collections/031-sort-numbers/README.m
 
 #### Description
 
-A collection of integers may arrive in any order. Build a program that arranges them from smallest to largest. Numeric order is different from the alphabetical order of the characters used to write numbers.
+Write a program that reads a line of space-separated integers and prints them from smallest to largest. Keep duplicate numbers and separate the output numbers with single spaces.
 
 #### Requirements
 
@@ -1092,7 +1092,7 @@ Assignment: [032-middle-slice](gauntlex/03-collections/032-middle-slice/README.m
 
 #### Description
 
-Sometimes only the middle part of a sequence is needed. Build a program that excludes the first and last words and displays everything between them in the original order.
+Write a program that reads a line of words, removes the first and last words, and prints the words between them. If fewer than three words were entered, print an empty line.
 
 #### Requirements
 
@@ -1126,7 +1126,7 @@ Assignment: [033-set-overlap](gauntlex/03-collections/033-set-overlap/README.md)
 
 #### Description
 
-Two collections may contain some of the same words. Build a program that finds the distinct words shared by both collections and reports them in alphabetical order.
+Write a program that reads two lines of words and prints the words that appear in both lines. Print each shared word once, sorted alphabetically, with single spaces between words.
 
 #### Requirements
 
@@ -1162,7 +1162,7 @@ Assignment: [034-pair-count](gauntlex/03-collections/034-pair-count/README.md)
 
 #### Description
 
-Repeated values can form pairs of matching positions. Build a program that counts every pair of distinct positions containing the same integer. A value appearing several times can contribute multiple pairs.
+Write a program that reads a line of integers and counts how many pairs of different positions contain the same number. Print the total number of matching pairs; print `0` if there are none.
 
 #### Requirements
 
