@@ -2,7 +2,7 @@
 
 ## Description
 
-Messages received from users may contain unwanted whitespace at their boundaries and inconsistent capitalization. Prepare a message for announcement by normalizing its appearance without changing the spaces between its words.
+Write a program that reads one line of text, removes spaces at the beginning and end, converts the remaining letters to uppercase, and prints the result. Keep spaces between words unchanged.
 
 ## Requirements
 
