@@ -1200,7 +1200,7 @@ Assignment: [035-sum-function](gauntlex/04-functions/035-sum-function/README.md)
 
 #### Description
 
-A function makes a calculation reusable by other parts of a program. Create an operation that receives two numbers and gives their sum back to its caller rather than displaying it.
+In `starter/solution.py`, write a function named `sum_two(a, b)` that accepts two integers and **returns** their sum. For example, `sum_two(3, 4)` should return `7`. Do not print the answer.
 
 #### Requirements
 
@@ -1225,7 +1225,7 @@ Assignment: [036-absolute-function](gauntlex/04-functions/036-absolute-function/
 
 #### Description
 
-The absolute value of an integer describes its distance from zero, regardless of direction. Write a reusable function that produces this nonnegative quantity.
+In `starter/solution.py`, write `absolute(n)` to return the absolute value of an integer. For example, `absolute(-5)` returns `5`, and `absolute(5)` also returns `5`.
 
 #### Requirements
 
@@ -1250,7 +1250,7 @@ Assignment: [037-factorial](gauntlex/04-functions/037-factorial/README.md)
 
 #### Description
 
-A factorial combines a sequence of positive integers through multiplication. Implement this operation as a function and account for the empty product at zero.
+In `starter/solution.py`, write `factorial(n)` to return the product of all whole numbers from `1` through `n`. For example, `factorial(4)` returns `24` because `1 × 2 × 3 × 4 = 24`. Return `1` for `n = 0`.
 
 #### Requirements
 
@@ -1276,7 +1276,7 @@ Assignment: [038-palindrome](gauntlex/04-functions/038-palindrome/README.md)
 
 #### Description
 
-Some strings read the same forward and backward. Build a function that checks this property using an exact character comparison; capitalization, spaces, and punctuation all matter.
+In `starter/solution.py`, write `is_palindrome(text)` to return `True` if the text reads exactly the same forward and backward, or `False` otherwise. For example, `racecar` is a palindrome. Capitalization and spaces count.
 
 #### Requirements
 
@@ -1302,7 +1302,7 @@ Assignment: [039-vowel-count](gauntlex/04-functions/039-vowel-count/README.md)
 
 #### Description
 
-Count how many English vowels appear in a piece of text. The count must include repeated vowels and treat uppercase and lowercase forms equally.
+In `starter/solution.py`, write `count_vowels(text)` to return how many times the letters `a`, `e`, `i`, `o`, or `u` appear in the text. Count uppercase and lowercase vowels equally.
 
 #### Requirements
 
@@ -1328,7 +1328,7 @@ Assignment: [040-prime-check](gauntlex/04-functions/040-prime-check/README.md)
 
 #### Description
 
-Prime numbers have exactly two positive divisors: one and themselves. Build a function that identifies primes while correctly rejecting zero, one, and negative integers.
+In `starter/solution.py`, write `is_prime(n)` to return `True` if `n` is a prime number and `False` otherwise. A prime number is greater than `1` and has no positive divisors except `1` and itself.
 
 #### Requirements
 
@@ -1353,7 +1353,7 @@ Assignment: [041-fibonacci](gauntlex/04-functions/041-fibonacci/README.md)
 
 #### Description
 
-In the Fibonacci sequence, each term after the first two is the sum of the two preceding terms. Write a function that finds a requested term without displaying intermediate values.
+In `starter/solution.py`, write `fibonacci(n)` to return the number at position `n` in the Fibonacci sequence, which starts `0, 1, 1, 2, 3, 5, 8, ...`. Position `0` returns `0`, and position `1` returns `1`.
 
 #### Requirements
 
@@ -1379,7 +1379,7 @@ Assignment: [042-anagram](gauntlex/04-functions/042-anagram/README.md)
 
 #### Description
 
-Two strings are anagrams when they contain the same characters with the same frequencies, even if their orders differ. Write a function that checks this exact relationship.
+In `starter/solution.py`, write `are_anagrams(a, b)` to return `True` if the two strings contain exactly the same characters with the same counts, even in a different order. Treat uppercase letters, spaces, and punctuation as distinct characters.
 
 #### Requirements
 
@@ -1405,7 +1405,7 @@ Assignment: [043-flatten-once](gauntlex/04-functions/043-flatten-once/README.md)
 
 #### Description
 
-A list can contain several smaller lists. Combine their elements into one new list while preserving encounter order. This task flattens exactly one level of nesting.
+In `starter/solution.py`, write `flatten_once(groups)` to combine a list of smaller lists into one new list, keeping the original element order. For example, `[[1, 2], [3]]` becomes `[1, 2, 3]`. Do not change the original lists.
 
 #### Requirements
 
@@ -1431,7 +1431,7 @@ Assignment: [044-first-unique](gauntlex/04-functions/044-first-unique/README.md)
 
 #### Description
 
-A character that appears once may be useful as a unique marker. Find the earliest character whose total frequency in the complete string is exactly one.
+In `starter/solution.py`, write `first_unique(text)` to return the first character that occurs **only once** in the entire string. If every character repeats, return `None`. Treat uppercase and lowercase letters as different.
 
 #### Requirements
 
@@ -1457,7 +1457,7 @@ Assignment: [045-chunk-list](gauntlex/04-functions/045-chunk-list/README.md)
 
 #### Description
 
-Partition a sequence into consecutive groups of a requested maximum size. Preserve the order of elements, and allow the final group to be shorter.
+In `starter/solution.py`, write `chunks(items, size)` to split a list into consecutive smaller lists containing at most `size` elements. For example, splitting `[1, 2, 3, 4, 5]` with size `2` produces `[[1, 2], [3, 4], [5]]`.
 
 #### Requirements
 
@@ -1483,7 +1483,7 @@ Assignment: [046-gcd](gauntlex/04-functions/046-gcd/README.md)
 
 #### Description
 
-Find the greatest nonnegative integer that divides two integers without a remainder. The function must handle negative inputs and zero correctly.
+In `starter/solution.py`, write `gcd(a, b)` to return the greatest nonnegative whole number that divides both input integers without a remainder. For example, `gcd(12, 18)` returns `6`. Return `0` if both inputs are zero.
 
 #### Requirements
 
