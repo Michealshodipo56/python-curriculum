@@ -2,7 +2,7 @@
 
 ## Description
 
-Partition a sequence into consecutive groups of a requested maximum size. Preserve the order of elements, and allow the final group to be shorter.
+In `starter/solution.py`, write `chunks(items, size)` to split a list into consecutive smaller lists containing at most `size` elements. For example, splitting `[1, 2, 3, 4, 5]` with size `2` produces `[[1, 2], [3, 4], [5]]`.
 
 ## Requirements
 
