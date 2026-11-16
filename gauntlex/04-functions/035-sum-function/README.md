@@ -2,7 +2,7 @@
 
 ## Description
 
-A function makes a calculation reusable by other parts of a program. Create an operation that receives two numbers and gives their sum back to its caller rather than displaying it.
+In `starter/solution.py`, write a function named `sum_two(a, b)` that accepts two integers and **returns** their sum. For example, `sum_two(3, 4)` should return `7`. Do not print the answer.
 
 ## Requirements
 
