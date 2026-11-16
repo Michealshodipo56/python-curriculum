@@ -2,7 +2,7 @@
 
 ## Description
 
-A terminal program can communicate a sequence of messages, not just one. Build a script that displays two separate lines in the correct order. This challenge focuses on line boundaries and precise output formatting.
+Write a Python program in `main.py` that prints `Python` on the first line and `Gauntlex` on the second line. The words must appear in that order, with no extra text.
 
 ## Requirements
 
