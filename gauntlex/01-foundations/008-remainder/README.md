@@ -2,7 +2,7 @@
 
 ## Description
 
-Suppose a collection of items must be divided into groups of equal size. Some items may remain after forming every possible complete group. Build a program that reports both the number of complete groups and the leftover items.
+Write a program that reads the number of items and the number of items allowed in each group. Print how many complete groups you can make and how many items are left over.
 
 ## Requirements
 
