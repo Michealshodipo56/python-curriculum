@@ -4184,7 +4184,7 @@ Assignment: [143-grep-literal](gauntlex/10-cli-tools/143-grep-literal/README.md)
 
 #### Description
 
-Create a simple literal search tool that filters a stream of text lines by a case-sensitive substring.
+Implement the program in `starter/main.py` using standard input and standard output. Treat the first input line as the literal search string.
 
 #### Requirements
 
@@ -4217,7 +4217,7 @@ Assignment: [144-head-lines](gauntlex/10-cli-tools/144-head-lines/README.md)
 
 #### Description
 
-Build a tool that selects the earliest requested lines from a text stream and discards the remainder.
+Implement the program in `starter/main.py` using standard input and standard output. Read a nonnegative integer `N` from the first line.
 
 #### Requirements
 
@@ -4250,7 +4250,7 @@ Assignment: [145-tail-lines](gauntlex/10-cli-tools/145-tail-lines/README.md)
 
 #### Description
 
-Build a tool that selects the final requested lines of a stream without reversing their order.
+Implement the program in `starter/main.py` using standard input and standard output. Read a nonnegative integer `N` from the first line.
 
 #### Requirements
 
@@ -4283,7 +4283,7 @@ Assignment: [146-sort-lines](gauntlex/10-cli-tools/146-sort-lines/README.md)
 
 #### Description
 
-Rearrange complete text lines using case-sensitive lexical order while preserving repeated entries.
+Implement the program in `starter/main.py` using standard input and standard output. Read all lines from standard input.
 
 #### Requirements
 
@@ -4297,6 +4297,7 @@ Rearrange complete text lines using case-sensitive lexical order while preservin
 
 #### Tips
 
+- **Concept to understand:** Rearrange complete text lines using case-sensitive lexical order while preserving repeated entries.
 - Why can uppercase and lowercase letters sort differently?
 - Why should duplicate lines remain in the output?
 
@@ -4316,7 +4317,7 @@ Assignment: [147-unique-adjacent](gauntlex/10-cli-tools/147-unique-adjacent/READ
 
 #### Description
 
-Remove duplicates only when they appear consecutively. A value that returns after a different line must appear again.
+Implement the program in `starter/main.py` using standard input and standard output. Read all lines from standard input.
 
 #### Requirements
 
@@ -4330,6 +4331,7 @@ Remove duplicates only when they appear consecutively. A value that returns afte
 
 #### Tips
 
+- **Concept to understand:** Remove duplicates only when they appear consecutively. A value that returns after a different line must appear again.
 - Why is this different from removing every duplicate globally?
 - What happens when an earlier line reappears after another line?
 
@@ -4349,7 +4351,7 @@ Assignment: [148-count-occurrences](gauntlex/10-cli-tools/148-count-occurrences/
 
 #### Description
 
-Count the number of input lines containing a literal search string, rather than the total number of occurrences.
+Implement the program in `starter/main.py` using standard input and standard output. Treat the first input line as the case-sensitive search string.
 
 #### Requirements
 
@@ -4362,6 +4364,7 @@ Count the number of input lines containing a literal search string, rather than 
 
 #### Tips
 
+- **Concept to understand:** Count the number of input lines containing a literal search string, rather than the total number of occurrences.
 - Why must a line with several matches count only once?
 - How does literal matching differ from regular-expression matching?
 
@@ -4381,7 +4384,7 @@ Assignment: [149-sum-columns](gauntlex/10-cli-tools/149-sum-columns/README.md)
 
 #### Description
 
-Read integer values spread across multiple lines and produce one total for the entire input stream.
+Implement the program in `starter/main.py` using standard input and standard output. Read zero or more lines containing whitespace-separated integers.
 
 #### Requirements
 
@@ -4395,6 +4398,7 @@ Read integer values spread across multiple lines and produce one total for the e
 
 #### Tips
 
+- **Concept to understand:** Read integer values spread across multiple lines and produce one total for the entire input stream.
 - Why should the number of lines not affect the calculation?
 - What is the sum of no values?
 
@@ -4414,7 +4418,7 @@ Assignment: [150-csv-to-tsv](gauntlex/10-cli-tools/150-csv-to-tsv/README.md)
 
 #### Description
 
-Convert comma-separated records into tab-separated records without mistaking commas inside quoted fields for separators.
+Implement the program in `starter/main.py` using standard input and standard output. Read CSV records from standard input.
 
 #### Requirements
 
@@ -4429,6 +4433,7 @@ Convert comma-separated records into tab-separated records without mistaking com
 
 #### Tips
 
+- **Concept to understand:** Convert comma-separated records into tab-separated records without mistaking commas inside quoted fields for separators.
 - Why is replacing every comma directly unsafe?
 - How are quotation marks inside quoted CSV fields represented?
 
@@ -4448,7 +4453,7 @@ Assignment: [151-json-pretty](gauntlex/10-cli-tools/151-json-pretty/README.md)
 
 #### Description
 
-Turn compact JSON into a human-readable representation while preserving its data. The output must use predictable indentation and key ordering.
+Implement the program in `starter/main.py` using standard input and standard output. Read one valid JSON value from standard input.
 
 #### Requirements
 
@@ -4462,6 +4467,7 @@ Turn compact JSON into a human-readable representation while preserving its data
 
 #### Tips
 
+- **Concept to understand:** Turn compact JSON into a human-readable representation while preserving its data. The output must use predictable indentation and key ordering.
 - Why can two differently formatted JSON strings represent the same value?
 - What makes output formatting predictable?
 
@@ -4481,7 +4487,7 @@ Assignment: [152-json-lines](gauntlex/10-cli-tools/152-json-lines/README.md)
 
 #### Description
 
-Process a stream of independent JSON values and output one canonical compact representation for each nonblank record.
+Implement the program in `starter/main.py` using standard input and standard output. Read one valid JSON value per nonempty input line.
 
 #### Requirements
 
@@ -4496,6 +4502,7 @@ Process a stream of independent JSON values and output one canonical compact rep
 
 #### Tips
 
+- **Concept to understand:** Process a stream of independent JSON values and output one canonical compact representation for each nonblank record.
 - Why must each line be parsed independently?
 - What distinguishes an empty line from a JSON string containing empty text?
 
@@ -4515,7 +4522,7 @@ Assignment: [153-jsonl-count](gauntlex/10-cli-tools/153-jsonl-count/README.md)
 
 #### Description
 
-Count JSON records that explicitly declare themselves active. Numeric values that resemble Boolean values must not be mistaken for true.
+Implement the program in `starter/main.py` using standard input and standard output. Read valid JSON objects, one per nonempty line.
 
 #### Requirements
 
@@ -4529,6 +4536,7 @@ Count JSON records that explicitly declare themselves active. Numeric values tha
 
 #### Tips
 
+- **Concept to understand:** Count JSON records that explicitly declare themselves active. Numeric values that resemble Boolean values must not be mistaken for true.
 - Why is equality alone potentially misleading when comparing Booleans and integers in Python?
 - What happens when a record lacks the key?
 
@@ -4548,7 +4556,7 @@ Assignment: [154-jsonl-select](gauntlex/10-cli-tools/154-jsonl-select/README.md)
 
 #### Description
 
-Extract one named field from a stream of JSON objects. Missing fields are skipped, but explicitly null fields must remain in the output.
+Implement the program in `starter/main.py` using standard input and standard output. Read the desired key name from the first input line.
 
 #### Requirements
 
@@ -4563,6 +4571,7 @@ Extract one named field from a stream of JSON objects. Missing fields are skippe
 
 #### Tips
 
+- **Concept to understand:** Extract one named field from a stream of JSON objects. Missing fields are skipped, but explicitly null fields must remain in the output.
 - Why is a missing key different from a key containing null?
 - Why should strings be printed as JSON strings rather than raw text?
 
@@ -4582,7 +4591,7 @@ Assignment: [155-csv-row-count](gauntlex/10-cli-tools/155-csv-row-count/README.m
 
 #### Description
 
-Count data records in a CSV stream while excluding the header row. The result should reflect CSV records, not merely arbitrary text lines.
+Implement the program in `starter/main.py` using standard input and standard output. Read CSV input with a header and zero or more data records.
 
 #### Requirements
 
@@ -4596,6 +4605,7 @@ Count data records in a CSV stream while excluding the header row. The result sh
 
 #### Tips
 
+- **Concept to understand:** Count data records in a CSV stream while excluding the header row. The result should reflect CSV records, not merely arbitrary text lines.
 - Why does a header not count as a data record?
 - What happens when no data rows follow the header?
 
@@ -4615,7 +4625,7 @@ Assignment: [156-csv-select-column](gauntlex/10-cli-tools/156-csv-select-column/
 
 #### Description
 
-Select a CSV column by its header name rather than by a fixed numeric position. Preserve the order of data rows.
+Implement the program in `starter/main.py` using standard input and standard output. Read the target column name from the first input line.
 
 #### Requirements
 
@@ -4629,6 +4639,7 @@ Select a CSV column by its header name rather than by a fixed numeric position. 
 
 #### Tips
 
+- **Concept to understand:** Select a CSV column by its header name rather than by a fixed numeric position. Preserve the order of data rows.
 - Why should the header determine which field is selected?
 - How does an empty field affect the output?
 
@@ -4648,7 +4659,7 @@ Assignment: [157-csv-filter-equal](gauntlex/10-cli-tools/157-csv-filter-equal/RE
 
 #### Description
 
-Filter CSV data records using an exact field comparison and emit each match as a compact JSON object.
+Implement the program in `starter/main.py` using standard input and standard output. Read the column name and exact target value from the first two input lines.
 
 #### Requirements
 
@@ -4663,6 +4674,7 @@ Filter CSV data records using an exact field comparison and emit each match as a
 
 #### Tips
 
+- **Concept to understand:** Filter CSV data records using an exact field comparison and emit each match as a compact JSON object.
 - Why should capitalization and whitespace matter for an exact match?
 - How can the header provide JSON field names?
 
@@ -4682,7 +4694,7 @@ Assignment: [158-word-count-cli](gauntlex/10-cli-tools/158-word-count-cli/README
 
 #### Description
 
-Report three different measurements of an input stream: logical lines, whitespace-separated words, and Unicode characters.
+Implement the program in `starter/main.py` using standard input and standard output. Read all text from standard input.
 
 #### Requirements
 
@@ -4697,6 +4709,7 @@ Report three different measurements of an input stream: logical lines, whitespac
 
 #### Tips
 
+- **Concept to understand:** Report three different measurements of an input stream: logical lines, whitespace-separated words, and Unicode characters.
 - Why do spaces and line breaks contribute to the character count?
 - How does the number of words differ from the number of lines?
 
@@ -4716,7 +4729,7 @@ Assignment: [159-histogram](gauntlex/10-cli-tools/159-histogram/README.md)
 
 #### Description
 
-Count how often each nonnegative integer occurs in a stream, then display a frequency report sorted by value.
+Implement the program in `starter/main.py` using standard input and standard output. Read whitespace-separated nonnegative integers from standard input.
 
 #### Requirements
 
@@ -4730,6 +4743,7 @@ Count how often each nonnegative integer occurs in a stream, then display a freq
 
 #### Tips
 
+- **Concept to understand:** Count how often each nonnegative integer occurs in a stream, then display a frequency report sorted by value.
 - Why does sorting by value differ from sorting by frequency?
 - How should repeated values affect the count?
 
@@ -4749,7 +4763,7 @@ Assignment: [160-stats-cli](gauntlex/10-cli-tools/160-stats-cli/README.md)
 
 #### Description
 
-Summarize an integer stream using its count, total, minimum, and maximum. Empty input has a deliberately shorter report.
+Implement the program in `starter/main.py` using standard input and standard output. Read whitespace-separated integers from standard input.
 
 #### Requirements
 
@@ -4763,6 +4777,7 @@ Summarize an integer stream using its count, total, minimum, and maximum. Empty 
 
 #### Tips
 
+- **Concept to understand:** Summarize an integer stream using its count, total, minimum, and maximum. Empty input has a deliberately shorter report.
 - Why are minimum and maximum undefined for an empty stream?
 - How should negative and repeated values affect each statistic?
 
@@ -4778,6 +4793,8 @@ Expected output: "count=0\nsum=0\n"
 
 ---
 
+---
+
 ## Data Analysis
 
 ### 161 — The Middle Value
@@ -4786,7 +4803,7 @@ Assignment: [161-median](gauntlex/11-data-analysis/161-median/README.md)
 
 #### Description
 
-The median describes the center of a dataset after its observations are arranged in numeric order. The rule differs depending on whether the dataset has an odd or even number of values.
+Implement `median(values)` in `starter/solution.py`. Return the middle value for an odd number of observations.
 
 #### Requirements
 
@@ -4799,6 +4816,7 @@ The median describes the center of a dataset after its observations are arranged
 
 #### Tips
 
+- **Concept to understand:** The median describes the center of a dataset after its observations are arranged in numeric order. The rule differs depending on whether the dataset has an odd or even number of values.
 - Why is the original order irrelevant to the median?
 - What happens when there are two central observations?
 
@@ -4814,7 +4832,7 @@ Assignment: [162-mode](gauntlex/11-data-analysis/162-mode/README.md)
 
 #### Description
 
-Find the most frequently observed integer in a dataset. When multiple integers are equally common, choose a deterministic answer.
+Implement `mode(values)` in `starter/solution.py`. Return the value with the highest occurrence count.
 
 #### Requirements
 
@@ -4827,6 +4845,7 @@ Find the most frequently observed integer in a dataset. When multiple integers a
 
 #### Tips
 
+- **Concept to understand:** Find the most frequently observed integer in a dataset. When multiple integers are equally common, choose a deterministic answer.
 - Why is the most frequent value not necessarily the largest?
 - What should happen when all observations are distinct?
 
@@ -4842,7 +4861,7 @@ Assignment: [163-variance](gauntlex/11-data-analysis/163-variance/README.md)
 
 #### Description
 
-Population variance measures how widely observations differ from their average. It uses squared deviations and divides by the number of observations.
+Implement `population_variance(values)` in `starter/solution.py`. Calculate the arithmetic mean and the average squared deviation from it.
 
 #### Requirements
 
@@ -4855,6 +4874,7 @@ Population variance measures how widely observations differ from their average. 
 
 #### Tips
 
+- **Concept to understand:** Population variance measures how widely observations differ from their average. It uses squared deviations and divides by the number of observations.
 - Why are deviations squared rather than simply added?
 - What happens when every value equals the mean?
 
@@ -4870,7 +4890,7 @@ Assignment: [164-standard-deviation](gauntlex/11-data-analysis/164-standard-devi
 
 #### Description
 
-Population standard deviation describes the spread of values in the original units of the dataset rather than squared units.
+Implement `population_stddev(values)` in `starter/solution.py`. Return the square root of the population variance.
 
 #### Requirements
 
@@ -4883,6 +4903,7 @@ Population standard deviation describes the spread of values in the original uni
 
 #### Tips
 
+- **Concept to understand:** Population standard deviation describes the spread of values in the original units of the dataset rather than squared units.
 - How is standard deviation related to variance?
 - Why does taking a square root change the units?
 
@@ -4898,7 +4919,7 @@ Assignment: [165-percentile-nearest](gauntlex/11-data-analysis/165-percentile-ne
 
 #### Description
 
-A percentile selects an observation at a specified position in sorted data. Use the nearest-rank definition rather than interpolation.
+Implement `nearest_rank_percentile(values, p)` in `starter/solution.py`. Sort the values conceptually in ascending order without mutating the input.
 
 #### Requirements
 
@@ -4911,6 +4932,7 @@ A percentile selects an observation at a specified position in sorted data. Use 
 
 #### Tips
 
+- **Concept to understand:** A percentile selects an observation at a specified position in sorted data. Use the nearest-rank definition rather than interpolation.
 - Why does the percentile rank start at one rather than zero?
 - What does the 100th percentile select?
 
@@ -4926,7 +4948,7 @@ Assignment: [166-moving-average](gauntlex/11-data-analysis/166-moving-average/RE
 
 #### Description
 
-A moving average smooths a sequence by averaging every consecutive group of a fixed size. Each neighboring group overlaps the previous one.
+Implement `moving_average(values, k)` in `starter/solution.py`. Return one arithmetic average for each contiguous window of `k` values.
 
 #### Requirements
 
@@ -4940,6 +4962,7 @@ A moving average smooths a sequence by averaging every consecutive group of a fi
 
 #### Tips
 
+- **Concept to understand:** A moving average smooths a sequence by averaging every consecutive group of a fixed size. Each neighboring group overlaps the previous one.
 - How many windows fit in a list of length `N`?
 - What changes when the window moves one position?
 
@@ -4955,7 +4978,7 @@ Assignment: [167-normalize-minmax](gauntlex/11-data-analysis/167-normalize-minma
 
 #### Description
 
-Min-max normalization rescales numeric observations relative to their smallest and largest values, preserving their order.
+Implement `minmax_normalize(values)` in `starter/solution.py`. Return a new list with each value scaled into the inclusive range `[0, 1]`.
 
 #### Requirements
 
@@ -4968,6 +4991,7 @@ Min-max normalization rescales numeric observations relative to their smallest a
 
 #### Tips
 
+- **Concept to understand:** Min-max normalization rescales numeric observations relative to their smallest and largest values, preserving their order.
 - Why does a constant dataset need a special case?
 - What happens to values between the minimum and maximum?
 
@@ -4983,7 +5007,7 @@ Assignment: [168-dot-product](gauntlex/11-data-analysis/168-dot-product/README.m
 
 #### Description
 
-The dot product combines two numeric vectors by pairing corresponding positions and adding their products.
+Implement `dot_product(a, b)` in `starter/solution.py`. Multiply the elements at matching indices and sum those products.
 
 #### Requirements
 
@@ -4996,6 +5020,7 @@ The dot product combines two numeric vectors by pairing corresponding positions 
 
 #### Tips
 
+- **Concept to understand:** The dot product combines two numeric vectors by pairing corresponding positions and adding their products.
 - Why must vector elements be paired by position?
 - How does the empty case affect the total?
 
@@ -5011,7 +5036,7 @@ Assignment: [169-euclidean-distance](gauntlex/11-data-analysis/169-euclidean-dis
 
 #### Description
 
-Generalize the familiar straight-line distance between two points to vectors of any matching dimension.
+Implement `euclidean_distance(a, b)` in `starter/solution.py`. Return the square root of the sum of squared coordinate differences.
 
 #### Requirements
 
@@ -5024,6 +5049,7 @@ Generalize the familiar straight-line distance between two points to vectors of 
 
 #### Tips
 
+- **Concept to understand:** Generalize the familiar straight-line distance between two points to vectors of any matching dimension.
 - How does two-dimensional distance extend to more coordinates?
 - Why does changing the order of the vectors not change the distance?
 
@@ -5039,7 +5065,7 @@ Assignment: [170-matrix-add](gauntlex/11-data-analysis/170-matrix-add/README.md)
 
 #### Description
 
-Matrix addition combines two grids of identical shape by adding entries at matching positions.
+Implement `matrix_add(a, b)` in `starter/solution.py`. Return a new matrix whose entries are sums of corresponding input entries.
 
 #### Requirements
 
@@ -5052,6 +5078,7 @@ Matrix addition combines two grids of identical shape by adding entries at match
 
 #### Tips
 
+- **Concept to understand:** Matrix addition combines two grids of identical shape by adding entries at matching positions.
 - Why must the two shapes match?
 - What should happen to an empty matrix?
 
@@ -5067,7 +5094,7 @@ Assignment: [171-matrix-multiply](gauntlex/11-data-analysis/171-matrix-multiply/
 
 #### Description
 
-Matrix multiplication combines rows from one matrix with columns from another. The resulting grid has dimensions determined by the outer dimensions of the inputs.
+Implement `matrix_multiply(a, b)` in `starter/solution.py`. Return a new matrix representing the product `a * b`.
 
 #### Requirements
 
@@ -5080,6 +5107,7 @@ Matrix multiplication combines rows from one matrix with columns from another. T
 
 #### Tips
 
+- **Concept to understand:** Matrix multiplication combines rows from one matrix with columns from another. The resulting grid has dimensions determined by the outer dimensions of the inputs.
 - Why must the number of columns in the first matrix match the number of rows in the second?
 - How is multiplication different from elementwise addition?
 
@@ -5095,7 +5123,7 @@ Assignment: [172-bucket-count](gauntlex/11-data-analysis/172-bucket-count/README
 
 #### Description
 
-A fixed-width histogram groups observations into adjacent numeric intervals. Count values that fall into each interval and ignore those outside the supported range.
+Implement `bucket_count(values, width, bucket_count)` in `starter/solution.py`. Create `bucket_count` half-open buckets beginning at zero, each of width `width`.
 
 #### Requirements
 
@@ -5109,6 +5137,7 @@ A fixed-width histogram groups observations into adjacent numeric intervals. Cou
 
 #### Tips
 
+- **Concept to understand:** A fixed-width histogram groups observations into adjacent numeric intervals. Count values that fall into each interval and ignore those outside the supported range.
 - Why does a value exactly on a boundary belong to the bucket on its right?
 - What should happen when no buckets are requested?
 
@@ -5124,7 +5153,7 @@ Assignment: [173-pearson-correlation](gauntlex/11-data-analysis/173-pearson-corr
 
 #### Description
 
-Pearson correlation measures the direction and strength of a linear relationship between two paired numeric datasets.
+Implement `pearson_correlation(a, b)` in `starter/solution.py`. Return the Pearson correlation coefficient of the paired observations.
 
 #### Requirements
 
@@ -5137,6 +5166,7 @@ Pearson correlation measures the direction and strength of a linear relationship
 
 #### Tips
 
+- **Concept to understand:** Pearson correlation measures the direction and strength of a linear relationship between two paired numeric datasets.
 - Why does a constant dataset prevent correlation from being calculated?
 - What do positive and negative correlation indicate?
 
@@ -5152,7 +5182,7 @@ Assignment: [174-cumulative-product](gauntlex/11-data-analysis/174-cumulative-pr
 
 #### Description
 
-Track how the product of a sequence changes as each additional integer is included. Return one product for every prefix.
+Implement `cumulative_product(values)` in `starter/solution.py`. Return a new list of running products in input order.
 
 #### Requirements
 
@@ -5165,6 +5195,7 @@ Track how the product of a sequence changes as each additional integer is includ
 
 #### Tips
 
+- **Concept to understand:** Track how the product of a sequence changes as each additional integer is included. Return one product for every prefix.
 - What effect does a zero have on all later running products?
 - How is this different from multiplying every value only once for a single result?
 
@@ -5180,7 +5211,7 @@ Assignment: [175-frequency-table](gauntlex/11-data-analysis/175-frequency-table/
 
 #### Description
 
-Summarize a collection of integers by recording how many times each distinct value appears.
+Implement `frequency_table(values)` in `starter/solution.py`. Return a dictionary mapping each distinct integer to its number of occurrences.
 
 #### Requirements
 
@@ -5193,6 +5224,7 @@ Summarize a collection of integers by recording how many times each distinct val
 
 #### Tips
 
+- **Concept to understand:** Summarize a collection of integers by recording how many times each distinct value appears.
 - How does a repeated value change a frequency count?
 - What is the natural representation of an empty dataset?
 
@@ -5208,7 +5240,7 @@ Assignment: [176-weighted-mean](gauntlex/11-data-analysis/176-weighted-mean/READ
 
 #### Description
 
-A weighted mean lets some observations contribute more than others. Each observation has a corresponding nonnegative weight.
+Implement `weighted_mean(values, weights)` in `starter/solution.py`. Return the weighted average, with each observation contributing in proportion to its weight.
 
 #### Requirements
 
@@ -5221,6 +5253,7 @@ A weighted mean lets some observations contribute more than others. Each observa
 
 #### Tips
 
+- **Concept to understand:** A weighted mean lets some observations contribute more than others. Each observation has a corresponding nonnegative weight.
 - Why is a simple arithmetic mean insufficient when weights differ?
 - What does a zero weight contribute?
 
@@ -5236,7 +5269,7 @@ Assignment: [177-rank-values](gauntlex/11-data-analysis/177-rank-values/README.m
 
 #### Description
 
-Assign ranks to integer observations by their numeric value. Equal values share a rank, and consecutive distinct values receive consecutive ranks without gaps.
+Implement `dense_ranks(values)` in `starter/solution.py`. Return a list of ranks in the original input order.
 
 #### Requirements
 
@@ -5250,6 +5283,7 @@ Assign ranks to integer observations by their numeric value. Equal values share 
 
 #### Tips
 
+- **Concept to understand:** Assign ranks to integer observations by their numeric value. Equal values share a rank, and consecutive distinct values receive consecutive ranks without gaps.
 - Why must ranking order differ from output order?
 - What makes dense ranking different from ranking with skipped positions?
 
@@ -5265,7 +5299,7 @@ Assignment: [178-quantize](gauntlex/11-data-analysis/178-quantize/README.md)
 
 #### Description
 
-Quantization maps numeric observations to the nearest multiple of a positive step. The rounding rule must follow Python's built-in semantics.
+Implement `quantize(values, step)` in `starter/solution.py`. Return a new list with every value rounded to the nearest multiple of `step`.
 
 #### Requirements
 
@@ -5278,6 +5312,7 @@ Quantization maps numeric observations to the nearest multiple of a positive ste
 
 #### Tips
 
+- **Concept to understand:** Quantization maps numeric observations to the nearest multiple of a positive step. The rounding rule must follow Python's built-in semantics.
 - Why can midpoint values behave differently from always rounding upward?
 - How does changing the step alter the available results?
 
@@ -5293,7 +5328,7 @@ Assignment: [179-outlier-iqr](gauntlex/11-data-analysis/179-outlier-iqr/README.m
 
 #### Description
 
-The interquartile range describes the spread of the middle half of a dataset. Use it to identify observations beyond the standard lower and upper fences.
+Implement `iqr_outliers(values)` in `starter/solution.py`. Return `[]` for fewer than four values.
 
 #### Requirements
 
@@ -5307,6 +5342,7 @@ The interquartile range describes the spread of the middle half of a dataset. Us
 
 #### Tips
 
+- **Concept to understand:** The interquartile range describes the spread of the middle half of a dataset. Use it to identify observations beyond the standard lower and upper fences.
 - Why does the quartile definition matter for odd-sized datasets?
 - Why are values exactly on a fence not outliers?
 
@@ -5322,7 +5358,7 @@ Assignment: [180-linear-regression](gauntlex/11-data-analysis/180-linear-regress
 
 #### Description
 
-Find the least-squares straight line that best describes paired numeric observations, expressed as a slope and intercept.
+Implement `linear_regression(xs, ys)` in `starter/solution.py`. Return `[slope, intercept]` for the ordinary least-squares line `y = slope * x + intercept`.
 
 #### Requirements
 
@@ -5335,6 +5371,7 @@ Find the least-squares straight line that best describes paired numeric observat
 
 #### Tips
 
+- **Concept to understand:** Find the least-squares straight line that best describes paired numeric observations, expressed as a slope and intercept.
 - What does the slope describe about changes in `x` and `y`?
 - Why can a vertical set of observations not be represented by this form?
 
@@ -5346,6 +5383,8 @@ Find the least-squares straight line that best describes paired numeric observat
 
 ---
 
+---
+
 ## Http Security
 
 ### 181 — Identify the Host
@@ -5354,7 +5393,7 @@ Assignment: [181-url-host](gauntlex/12-http-security/181-url-host/README.md)
 
 #### Description
 
-An absolute web URL contains a scheme, a network location, and an optional path. Extract the hostname without confusing it with the port or the complete address.
+Implement `url_host(url)` in `starter/solution.py`. Return its hostname in lowercase, excluding the port and path.
 
 #### Requirements
 
@@ -5366,6 +5405,7 @@ An absolute web URL contains a scheme, a network location, and an optional path.
 
 #### Tips
 
+- **Concept to understand:** An absolute web URL contains a scheme, a network location, and an optional path. Extract the hostname without confusing it with the port or the complete address.
 - Consider how a hostname differs from a network location containing a port.
 - A URL may have a path without changing its hostname.
 
@@ -5381,7 +5421,7 @@ Assignment: [182-url-join](gauntlex/12-http-security/182-url-join/README.md)
 
 #### Description
 
-Resolve a relative link against an absolute base URL using standard URL path rules.
+Implement `resolve_url(base, relative)` in `starter/solution.py`. Return the resolved absolute URL.
 
 #### Requirements
 
@@ -5393,6 +5433,7 @@ Resolve a relative link against an absolute base URL using standard URL path rul
 
 #### Tips
 
+- **Concept to understand:** Resolve a relative link against an absolute base URL using standard URL path rules.
 - Why does a root-relative link behave differently from a parent-relative link?
 
 #### Example Behavior
@@ -5407,7 +5448,7 @@ Assignment: [183-parse-http-status](gauntlex/12-http-security/183-parse-http-sta
 
 #### Description
 
-Interpret an HTTP/1.1 response status line as a numeric status and a potentially multiword reason.
+Implement `parse_status_line(line)` in `starter/solution.py`. Return a dictionary with integer `status` and string `reason` for valid HTTP/1.1 status lines.
 
 #### Requirements
 
@@ -5419,6 +5460,7 @@ Interpret an HTTP/1.1 response status line as a numeric status and a potentially
 
 #### Tips
 
+- **Concept to understand:** Interpret an HTTP/1.1 response status line as a numeric status and a potentially multiword reason.
 - Why is splitting every word insufficient for a reason such as `Not Found`?
 
 #### Example Behavior
@@ -5433,7 +5475,7 @@ Assignment: [184-normalize-headers](gauntlex/12-http-security/184-normalize-head
 
 #### Description
 
-HTTP header names are case-insensitive. Normalize them while retaining the latest supplied value.
+Implement `normalize_headers(pairs)` in `starter/solution.py`. Return a dictionary with trimmed lowercase names and trimmed values.
 
 #### Requirements
 
@@ -5446,6 +5488,7 @@ HTTP header names are case-insensitive. Normalize them while retaining the lates
 
 #### Tips
 
+- **Concept to understand:** HTTP header names are case-insensitive. Normalize them while retaining the latest supplied value.
 - Why are header names and header values normalized differently?
 
 #### Example Behavior
@@ -5460,7 +5503,7 @@ Assignment: [185-parse-cookie](gauntlex/12-http-security/185-parse-cookie/README
 
 #### Description
 
-Parse semicolon-separated cookie assignments without decoding their contents.
+Implement `parse_cookie(text)` in `starter/solution.py`. Ignore empty segments and trim spaces around names and values.
 
 #### Requirements
 
@@ -5473,6 +5516,7 @@ Parse semicolon-separated cookie assignments without decoding their contents.
 
 #### Tips
 
+- **Concept to understand:** Parse semicolon-separated cookie assignments without decoding their contents.
 - Why might a cookie value contain an equals sign?
 
 #### Example Behavior
@@ -5487,7 +5531,7 @@ Assignment: [186-build-cookie](gauntlex/12-http-security/186-build-cookie/README
 
 #### Description
 
-Serialize cookie pairs into a predictable header string.
+Implement `build_cookie(cookies)` in `starter/solution.py`. Sort names alphabetically and join `name=value` entries with `; `.
 
 #### Requirements
 
@@ -5499,6 +5543,7 @@ Serialize cookie pairs into a predictable header string.
 
 #### Tips
 
+- **Concept to understand:** Serialize cookie pairs into a predictable header string.
 - Why does a stable ordering help reproducibility?
 
 #### Example Behavior
@@ -5513,7 +5558,7 @@ Assignment: [187-http-retry-delay](gauntlex/12-http-security/187-http-retry-dela
 
 #### Description
 
-When a request fails, successive retries can wait progressively longer. Calculate an exponential delay without exceeding a maximum permitted interval.
+Implement `retry_delay(attempt, base, cap)` in `starter/solution.py`. Return the smaller of `cap` and `base * 2**attempt`, measured in seconds.
 
 #### Requirements
 
@@ -5524,6 +5569,7 @@ When a request fails, successive retries can wait progressively longer. Calculat
 
 #### Tips
 
+- **Concept to understand:** When a request fails, successive retries can wait progressively longer. Calculate an exponential delay without exceeding a maximum permitted interval.
 - The first attempt uses the base delay; each successive attempt doubles the uncapped delay.
 - Consider when the cap prevents further growth.
 
@@ -5539,7 +5585,7 @@ Assignment: [188-pagination-offset](gauntlex/12-http-security/188-pagination-off
 
 #### Description
 
-Convert a one-based page number into the zero-based position of its first record.
+Implement `pagination_offset(page, page_size)` in `starter/solution.py`. Return the offset for positive `page` and `page_size`.
 
 #### Requirements
 
@@ -5551,6 +5597,7 @@ Convert a one-based page number into the zero-based position of its first record
 
 #### Tips
 
+- **Concept to understand:** Convert a one-based page number into the zero-based position of its first record.
 - Why do two pages precede page three?
 
 #### Example Behavior
@@ -5565,7 +5612,7 @@ Assignment: [189-pagination-slice](gauntlex/12-http-security/189-pagination-slic
 
 #### Description
 
-Select a page of records from a collection without changing the original.
+Implement `paginate(items, page, page_size)` in `starter/solution.py`. Raise `ValueError` for invalid page or size.
 
 #### Requirements
 
@@ -5579,6 +5626,7 @@ Select a page of records from a collection without changing the original.
 
 #### Tips
 
+- **Concept to understand:** Select a page of records from a collection without changing the original.
 - How should a partially filled final page behave?
 
 #### Example Behavior
@@ -5593,7 +5641,7 @@ Assignment: [190-query-filter](gauntlex/12-http-security/190-query-filter/README
 
 #### Description
 
-Select dictionary records that match every exact field requirement.
+Implement `filter_records(records, filters)` in `starter/solution.py`. Return only records matching all key-value pairs in `filters`.
 
 #### Requirements
 
@@ -5606,6 +5654,7 @@ Select dictionary records that match every exact field requirement.
 
 #### Tips
 
+- **Concept to understand:** Select dictionary records that match every exact field requirement.
 - Why does a single mismatched field disqualify a record?
 
 #### Example Behavior
@@ -5620,7 +5669,7 @@ Assignment: [191-json-response](gauntlex/12-http-security/191-json-response/READ
 
 #### Description
 
-Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response object.
+Implement `json_response(value)` in `starter/solution.py`. Return a dictionary with `status`, `headers`, and `body`.
 
 #### Requirements
 
@@ -5633,6 +5682,7 @@ Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response o
 
 #### Tips
 
+- **Concept to understand:** Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response object.
 - Why is a serialized JSON body different from a Python dictionary?
 
 #### Example Behavior
@@ -5645,7 +5695,7 @@ Assignment: [192-parse-bearer](gauntlex/12-http-security/192-parse-bearer/README
 
 #### Description
 
-Extract one token from an Authorization header while checking its authentication scheme.
+Implement `parse_bearer(header)` in `starter/solution.py`. Recognize `Bearer TOKEN` without regard to scheme capitalization.
 
 #### Requirements
 
@@ -5658,6 +5708,7 @@ Extract one token from an Authorization header while checking its authentication
 
 #### Tips
 
+- **Concept to understand:** Extract one token from an Authorization header while checking its authentication scheme.
 - Why must the scheme be validated before accepting the token?
 
 #### Example Behavior
@@ -5672,7 +5723,7 @@ Assignment: [193-constant-time-compare](gauntlex/12-http-security/193-constant-t
 
 #### Description
 
-Compare Unicode strings using a timing-resistant standard-library primitive rather than an ordinary early-exit comparison.
+Implement `constant_time_compare(a, b)` in `starter/solution.py`. Return whether the two strings are equal.
 
 #### Requirements
 
@@ -5685,6 +5736,7 @@ Compare Unicode strings using a timing-resistant standard-library primitive rath
 
 #### Tips
 
+- **Concept to understand:** Compare Unicode strings using a timing-resistant standard-library primitive rather than an ordinary early-exit comparison.
 - Why can early-exit comparisons reveal information through timing?
 
 #### Example Behavior
@@ -5699,7 +5751,7 @@ Assignment: [194-sha256-hex](gauntlex/12-http-security/194-sha256-hex/README.md)
 
 #### Description
 
-A cryptographic digest turns a message into a fixed-length fingerprint. In this challenge, generate the SHA-256 fingerprint of text encoded as UTF-8 and present the digest in a consistent hexadecimal form.
+Implement `sha256_hex(text)` in `starter/solution.py`. Encode the input string as UTF-8 before hashing.
 
 #### Requirements
 
@@ -5711,6 +5763,7 @@ A cryptographic digest turns a message into a fixed-length fingerprint. In this 
 
 #### Tips
 
+- **Concept to understand:** A cryptographic digest turns a message into a fixed-length fingerprint. In
 - Hash functions operate on bytes, not directly on Python characters.
 - The hexadecimal digest represents the hash output, not the original message.
 - Even an empty string has a well-defined digest.
@@ -5727,7 +5780,7 @@ Assignment: [195-hmac-signature](gauntlex/12-http-security/195-hmac-signature/RE
 
 #### Description
 
-A keyed message authentication code helps verify that a message came from someone holding a shared secret. Produce an HMAC using SHA-256 without exposing the key.
+Implement `hmac_signature(secret, message)` in `starter/solution.py`. Encode the secret and message separately as UTF-8.
 
 #### Requirements
 
@@ -5740,6 +5793,7 @@ A keyed message authentication code helps verify that a message came from someon
 
 #### Tips
 
+- **Concept to understand:** A keyed message authentication code helps verify that a message came from someone holding a shared secret. Produce an HMAC using SHA-256 without exposing the key.
 - Why does a keyed MAC provide different guarantees from an unkeyed hash?
 - How would changing the secret affect the result?
 
@@ -5753,7 +5807,7 @@ Assignment: [196-verify-hmac](gauntlex/12-http-security/196-verify-hmac/README.m
 
 #### Description
 
-A received message may be accompanied by a claimed HMAC. Determine whether the signature matches the shared secret and message, using a timing-resistant comparison.
+Implement `verify_hmac(secret, message, signature)` in `starter/solution.py`. Recompute HMAC-SHA256 for the supplied UTF-8 secret and message.
 
 #### Requirements
 
@@ -5766,6 +5820,7 @@ A received message may be accompanied by a claimed HMAC. Determine whether the s
 
 #### Tips
 
+- **Concept to understand:** A received message may be accompanied by a claimed HMAC. Determine whether the signature matches the shared secret and message, using a timing-resistant comparison.
 - Why should malformed signatures be treated as invalid?
 - Why can comparison timing matter for authentication?
 
@@ -5781,7 +5836,7 @@ Assignment: [197-cors-origin](gauntlex/12-http-security/197-cors-origin/README.m
 
 #### Description
 
-Cross-origin access decisions depend on exact origins, not vaguely similar hostnames. Check whether a request origin is explicitly permitted.
+Implement `allowed_origin(origin, allowed)` in `starter/solution.py`. Return `True` only when `origin` exactly equals one of the allowed origins.
 
 #### Requirements
 
@@ -5794,6 +5849,7 @@ Cross-origin access decisions depend on exact origins, not vaguely similar hostn
 
 #### Tips
 
+- **Concept to understand:** Cross-origin access decisions depend on exact origins, not vaguely similar hostnames. Check whether a request origin is explicitly permitted.
 - Why is a lookalike domain not the same origin?
 - What changes when an HTTPS origin uses a different port?
 
@@ -5809,7 +5865,7 @@ Assignment: [198-http-method](gauntlex/12-http-security/198-http-method/README.m
 
 #### Description
 
-Normalize a request method to a standard uppercase spelling, then reject names outside a fixed set of supported HTTP methods.
+Implement `normalize_method(text)` in `starter/solution.py`. Trim surrounding whitespace and ignore the input's letter case.
 
 #### Requirements
 
@@ -5821,6 +5877,7 @@ Normalize a request method to a standard uppercase spelling, then reject names o
 
 #### Tips
 
+- **Concept to understand:** Normalize a request method to a standard uppercase spelling, then reject names outside a fixed set of supported HTTP methods.
 - Why is normalization useful before checking allowed methods?
 - Why should an unsupported method be rejected explicitly?
 
@@ -5836,7 +5893,7 @@ Assignment: [199-parse-content-type](gauntlex/12-http-security/199-parse-content
 
 #### Description
 
-A Content-Type header identifies a representation and may also include parameters such as character encoding. Extract only its media type.
+Implement `media_type(header)` in `starter/solution.py`. Return the portion of the header before the first semicolon.
 
 #### Requirements
 
@@ -5849,6 +5906,7 @@ A Content-Type header identifies a representation and may also include parameter
 
 #### Tips
 
+- **Concept to understand:** A Content-Type header identifies a representation and may also include parameters such as character encoding. Extract only its media type.
 - Why should a charset parameter not be part of the media type?
 - What if no semicolon appears?
 
@@ -5864,7 +5922,7 @@ Assignment: [200-http-cache-key](gauntlex/12-http-security/200-http-cache-key/RE
 
 #### Description
 
-A cache key should consistently identify the same request inputs. Combine the method, URL, and body into an unambiguous canonical representation before hashing.
+Implement `cache_key(method, url, body)` in `starter/solution.py`. Uppercase the request method before serialization.
 
 #### Requirements
 
@@ -5878,6 +5936,7 @@ A cache key should consistently identify the same request inputs. Combine the me
 
 #### Tips
 
+- **Concept to understand:** A cache key should consistently identify the same request inputs. Combine the method, URL, and body into an unambiguous canonical representation before hashing.
 - Why can directly concatenating fields be ambiguous?
 - Why should method capitalization not change the resulting key?
 
@@ -5891,7 +5950,7 @@ Assignment: [201-request-id](gauntlex/12-http-security/201-request-id/README.md)
 
 #### Description
 
-Distributed systems use request identifiers to connect logs and trace related work. Generate a fresh identifier in canonical UUID version-four form.
+Implement `request_id()` in `starter/solution.py`. Return a lowercase UUID version 4 string with hyphens in canonical positions.
 
 #### Requirements
 
@@ -5904,6 +5963,7 @@ Distributed systems use request identifiers to connect logs and trace related wo
 
 #### Tips
 
+- **Concept to understand:** Distributed systems use request identifiers to connect logs and trace related work. Generate a fresh identifier in canonical UUID version-four form.
 - Why should the identifier include both a recognizable version and a consistent format?
 - Why is a hard-coded identifier unsuitable?
 
@@ -5917,7 +5977,7 @@ Assignment: [202-url-encode-component](gauntlex/12-http-security/202-url-encode-
 
 #### Description
 
-A path component is a single part of a URL, so characters such as spaces and slashes must be encoded rather than interpreted as separators.
+Implement `encode_component(text)` in `starter/solution.py`. Encode the input as UTF-8 and percent-escape reserved or unsafe bytes.
 
 #### Requirements
 
@@ -5930,6 +5990,7 @@ A path component is a single part of a URL, so characters such as spaces and sla
 
 #### Tips
 
+- **Concept to understand:** A path component is a single part of a URL, so characters such as spaces and slashes must be encoded rather than interpreted as separators.
 - Why does a slash inside one component need escaping?
 - How does URL component encoding differ from form encoding?
 
@@ -5945,7 +6006,7 @@ Assignment: [203-url-decode-component](gauntlex/12-http-security/203-url-decode-
 
 #### Description
 
-Recover text from percent-escaped UTF-8 bytes while preserving literal plus signs, which are not spaces in URL path components.
+Implement `decode_component(text)` in `starter/solution.py`. Percent-decode the input and interpret the resulting bytes as UTF-8.
 
 #### Requirements
 
@@ -5958,6 +6019,7 @@ Recover text from percent-escaped UTF-8 bytes while preserving literal plus sign
 
 #### Tips
 
+- **Concept to understand:** Recover text from percent-escaped UTF-8 bytes while preserving literal plus signs, which are not spaces in URL path components.
 - Why does form-style query decoding handle plus signs differently?
 - What happens to `%2F` during decoding?
 
@@ -5973,7 +6035,7 @@ Assignment: [204-parse-basic-auth](gauntlex/12-http-security/204-parse-basic-aut
 
 #### Description
 
-HTTP Basic authorization carries a Base64-encoded username and password separated by a colon. Decode the credentials and reject malformed input without exposing secrets.
+Implement `parse_basic_auth(header)` in `starter/solution.py`. Decode valid Base64 data as UTF-8.
 
 #### Requirements
 
@@ -5987,6 +6049,7 @@ HTTP Basic authorization carries a Base64-encoded username and password separate
 
 #### Tips
 
+- **Concept to understand:** HTTP Basic authorization carries a Base64-encoded username and password separated by a colon. Decode the credentials and reject malformed input without exposing secrets.
 - Why must the first colon be the separator?
 - Why does Base64 encoding not provide encryption?
 
@@ -6002,7 +6065,7 @@ Assignment: [205-header-get](gauntlex/12-http-security/205-header-get/README.md)
 
 #### Description
 
-HTTP headers may repeat, and header names are case-insensitive. Retrieve the last matching value without changing the original list.
+Implement `header_get(headers, name)` in `starter/solution.py`. Compare names without regard to letter case.
 
 #### Requirements
 
@@ -6016,6 +6079,7 @@ HTTP headers may repeat, and header names are case-insensitive. Retrieve the las
 
 #### Tips
 
+- **Concept to understand:** HTTP headers may repeat, and header names are case-insensitive. Retrieve the last matching value without changing the original list.
 - Why must the last matching value win?
 - How does case-insensitive comparison affect repeated names?
 
@@ -6027,6 +6091,8 @@ HTTP headers may repeat, and header names are case-insensitive. Retrieve the las
 
 ---
 
+---
+
 ## Sqlite
 
 ### 206 — Define the Users Table
@@ -6035,7 +6101,7 @@ Assignment: [206-create-users](gauntlex/13-sqlite/206-create-users/README.md)
 
 #### Description
 
-A reliable directory starts with a schema that prevents incomplete records and duplicate email addresses. Define the database constraints before any user records are inserted.
+Implement `create_users(conn)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 #### Requirements
 
@@ -6050,6 +6116,7 @@ A reliable directory starts with a schema that prevents incomplete records and d
 
 #### Tips
 
+- **Concept to understand:** A reliable directory starts with a schema that prevents incomplete records and duplicate email addresses. Define the database constraints before any user records are inserted.
 - Which integrity rules belong in the database rather than only in application code?
 - What should a second call do when the table already exists?
 
@@ -6063,7 +6130,7 @@ Assignment: [207-insert-user](gauntlex/13-sqlite/207-insert-user/README.md)
 
 #### Description
 
-Register one new person in the existing users table and return the database-generated identity of that record.
+Implement `insert_user(conn, name, email)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 #### Requirements
 
@@ -6078,6 +6145,7 @@ Register one new person in the existing users table and return the database-gene
 
 #### Tips
 
+- **Concept to understand:** Register one new person in the existing users table and return the database-generated identity of that record.
 - Why should user-supplied text be bound as a parameter?
 - How can you identify the row that was just created?
 
@@ -6091,7 +6159,7 @@ Assignment: [208-find-user](gauntlex/13-sqlite/208-find-user/README.md)
 
 #### Description
 
-A user ID identifies at most one directory entry. Retrieve that record in a predictable Python representation, or clearly indicate that it does not exist.
+Implement `find_user(conn, user_id)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 #### Requirements
 
@@ -6106,6 +6174,7 @@ A user ID identifies at most one directory entry. Retrieve that record in a pred
 
 #### Tips
 
+- **Concept to understand:** A user ID identifies at most one directory entry. Retrieve that record in a predictable Python representation, or clearly indicate that it does not exist.
 - Why is a missing record different from a record with an empty field?
 - How should a SQLite row be represented in the return value?
 
@@ -6119,7 +6188,7 @@ Assignment: [209-list-users](gauntlex/13-sqlite/209-list-users/README.md)
 
 #### Description
 
-Database queries do not guarantee insertion order. Retrieve the complete user directory in a stable order suitable for display or further processing.
+Implement `list_users(conn)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 #### Requirements
 
@@ -6134,6 +6203,7 @@ Database queries do not guarantee insertion order. Retrieve the complete user di
 
 #### Tips
 
+- **Concept to understand:** Database queries do not guarantee insertion order. Retrieve the complete user directory in a stable order suitable for display or further processing.
 - Why should sorting be requested explicitly?
 - What is the expected result for an empty directory?
 
@@ -6147,7 +6217,7 @@ Assignment: [210-update-email](gauntlex/13-sqlite/210-update-email/README.md)
 
 #### Description
 
-Changing a stored email should affect only the intended user. Report whether the target record existed so callers can distinguish success from a missing ID.
+Implement `update_email(conn, user_id, email)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 #### Requirements
 
@@ -6162,6 +6232,7 @@ Changing a stored email should affect only the intended user. Report whether the
 
 #### Tips
 
+- **Concept to understand:** Changing a stored email should affect only the intended user. Report whether the target record existed so callers can distinguish success from a missing ID.
 - How can the number of affected rows tell you whether the user existed?
 - Why should the identifier be parameterized?
 
@@ -6175,7 +6246,7 @@ Assignment: [211-delete-user](gauntlex/13-sqlite/211-delete-user/README.md)
 
 #### Description
 
-Delete a specific directory entry without disturbing other users, and report whether the target was actually present.
+Implement `delete_user(conn, user_id)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Delete only the row with the supplied integer ID.
 
 #### Requirements
 
@@ -6188,6 +6259,7 @@ Delete a specific directory entry without disturbing other users, and report whe
 
 #### Tips
 
+- **Concept to understand:** Delete a specific directory entry without disturbing other users, and report whether the target was actually present.
 - How can the affected-row count distinguish a missing user from a successful deletion?
 
 #### Example Behavior
@@ -6200,7 +6272,7 @@ Assignment: [212-search-users](gauntlex/13-sqlite/212-search-users/README.md)
 
 #### Description
 
-A name search should treat the search term as text, even when it contains characters that SQL ordinarily uses as wildcards.
+Implement `search_users(conn, term)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Search names case-insensitively for the supplied substring.
 
 #### Requirements
 
@@ -6214,6 +6286,7 @@ A name search should treat the search term as text, even when it contains charac
 
 #### Tips
 
+- **Concept to understand:** A name search should treat the search term as text, even when it contains characters that SQL ordinarily uses as wildcards.
 - Why does binding a LIKE pattern not automatically make its wildcard characters literal?
 - How can a search be case-insensitive without losing the input text?
 
@@ -6227,7 +6300,7 @@ Assignment: [213-count-users](gauntlex/13-sqlite/213-count-users/README.md)
 
 #### Description
 
-A directory count should return one number, without loading every user record into Python.
+Implement `count_users(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Return the number of rows in `users(id,name,email)` as an integer.
 
 #### Requirements
 
@@ -6240,6 +6313,7 @@ A directory count should return one number, without loading every user record in
 
 #### Tips
 
+- **Concept to understand:** A directory count should return one number, without loading every user record into Python.
 - What does a SQL aggregate return when no records exist?
 
 #### Example Behavior
@@ -6252,7 +6326,7 @@ Assignment: [214-users-page](gauntlex/13-sqlite/214-users-page/README.md)
 
 #### Description
 
-A large directory is easier to consume in pages. Select a consistent slice of users by their IDs.
+Implement `users_page(conn, page, page_size)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Raise `ValueError` for nonpositive page or page size.
 
 #### Requirements
 
@@ -6266,6 +6340,7 @@ A large directory is easier to consume in pages. Select a consistent slice of us
 
 #### Tips
 
+- **Concept to understand:** A large directory is easier to consume in pages. Select a consistent slice of users by their IDs.
 - Why is an explicit ordering necessary for stable pagination?
 - What is the offset of the first page?
 
@@ -6279,7 +6354,7 @@ Assignment: [215-create-orders](gauntlex/13-sqlite/215-create-orders/README.md)
 
 #### Description
 
-Store orders with nonnegative amounts and require the database to enforce that rule, regardless of which caller inserts the record.
+Implement `create_orders(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Create `orders` if absent, with `id INTEGER PRIMARY KEY`, `user_id INTEGER NOT NULL`, and `amount INTEGER NOT NULL CHECK(amount>=0)`.
 
 #### Requirements
 
@@ -6292,6 +6367,7 @@ Store orders with nonnegative amounts and require the database to enforce that r
 
 #### Tips
 
+- **Concept to understand:** Store orders with nonnegative amounts and require the database to enforce that rule, regardless of which caller inserts the record.
 - Why should the amount constraint live in the database schema?
 - What should happen if the setup function runs twice?
 
@@ -6305,7 +6381,7 @@ Assignment: [216-order-total](gauntlex/13-sqlite/216-order-total/README.md)
 
 #### Description
 
-Calculate a customer's total order value using the database, even when that customer has no orders.
+Implement `order_total(conn, user_id)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read amounts from `orders(id,user_id,amount)` for the supplied user ID.
 
 #### Requirements
 
@@ -6319,6 +6395,7 @@ Calculate a customer's total order value using the database, even when that cust
 
 #### Tips
 
+- **Concept to understand:** Calculate a customer's total order value using the database, even when that customer has no orders.
 - Why might a SQL aggregate over zero matching rows need special handling?
 
 #### Example Behavior
@@ -6331,7 +6408,7 @@ Assignment: [217-top-customers](gauntlex/13-sqlite/217-top-customers/README.md)
 
 #### Description
 
-Build a leaderboard by combining each customer's orders and ranking the resulting totals.
+Implement `top_customers(conn, k)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Aggregate `orders(id,user_id,amount)` by user ID.
 
 #### Requirements
 
@@ -6358,7 +6435,7 @@ Assignment: [218-join-orders](gauntlex/13-sqlite/218-join-orders/README.md)
 
 #### Description
 
-Combine related order and user tables so each order is presented alongside the name of its owner.
+Implement `orders_with_users(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Use `users(id,name,email)` and `orders(id,user_id,amount)`.
 
 #### Requirements
 
@@ -6372,6 +6449,7 @@ Combine related order and user tables so each order is presented alongside the n
 
 #### Tips
 
+- **Concept to understand:** Combine related order and user tables so each order is presented alongside the name of its owner.
 - What makes an order an orphan?
 - Why is a matching key needed when joining tables?
 
@@ -6385,7 +6463,7 @@ Assignment: [219-insert-ignore](gauntlex/13-sqlite/219-insert-ignore/README.md)
 
 #### Description
 
-Add a user only when the email is not already registered. A duplicate must leave the existing record intact.
+Implement `insert_email_once(conn, name, email)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Return `True` only if a new row is inserted.
 
 #### Requirements
 
@@ -6399,6 +6477,7 @@ Add a user only when the email is not already registered. A duplicate must leave
 
 #### Tips
 
+- **Concept to understand:** Add a user only when the email is not already registered. A duplicate must leave the existing record intact.
 - How can uniqueness be enforced by the database?
 - Why is ignoring a duplicate different from replacing a record?
 
@@ -6412,7 +6491,7 @@ Assignment: [220-upsert-score](gauntlex/13-sqlite/220-upsert-score/README.md)
 
 #### Description
 
-Maintain exactly one score per student, creating a record on first use and updating it on later submissions.
+Implement `upsert_score(conn, student, score)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Insert a new student and score when the student is absent.
 
 #### Requirements
 
@@ -6426,6 +6505,7 @@ Maintain exactly one score per student, creating a record on first use and updat
 
 #### Tips
 
+- **Concept to understand:** Maintain exactly one score per student, creating a record on first use and updating it on later submissions.
 - What determines whether the operation is an insert or an update?
 - Why is the student key central to the behavior?
 
@@ -6439,7 +6519,7 @@ Assignment: [221-transaction-transfer](gauntlex/13-sqlite/221-transaction-transf
 
 #### Description
 
-A transfer changes two balances that must stay consistent. Treat the debit and credit as one indivisible operation.
+Implement `transfer(conn, source_id, target_id, amount)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Transfer a positive integer amount from source to target.
 
 #### Requirements
 
@@ -6453,6 +6533,7 @@ A transfer changes two balances that must stay consistent. Treat the debit and c
 
 #### Tips
 
+- **Concept to understand:** A transfer changes two balances that must stay consistent. Treat the debit and credit as one indivisible operation.
 - Why must a debit and credit succeed or fail together?
 - What should happen if validation fails after a tentative change?
 
@@ -6466,7 +6547,7 @@ Assignment: [222-transaction-batch](gauntlex/13-sqlite/222-transaction-batch/REA
 
 #### Description
 
-Import multiple users as one unit of work. If any record violates a database constraint, none of the records from that batch may remain.
+Implement `insert_batch_atomic(conn, records)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Insert each `[name,email]` pair into `users(id,name,email UNIQUE)`.
 
 #### Requirements
 
@@ -6480,6 +6561,7 @@ Import multiple users as one unit of work. If any record violates a database con
 
 #### Tips
 
+- **Concept to understand:** Import multiple users as one unit of work. If any record violates a database constraint, none of the records from that batch may remain.
 - Why is a sequence of independent inserts insufficient?
 - What should happen to earlier successful inserts when a later one fails?
 
@@ -6493,7 +6575,7 @@ Assignment: [223-safe-sort](gauntlex/13-sqlite/223-safe-sort/README.md)
 
 #### Description
 
-Caller-selected sorting can be dangerous when SQL identifiers are constructed from untrusted input. Permit only known columns and directions.
+Implement `sorted_users(conn, field, direction)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Raise `ValueError` for unsupported fields or directions.
 
 #### Requirements
 
@@ -6507,6 +6589,7 @@ Caller-selected sorting can be dangerous when SQL identifiers are constructed fr
 
 #### Tips
 
+- **Concept to understand:** Caller-selected sorting can be dangerous when SQL identifiers are constructed from untrusted input. Permit only known columns and directions.
 - Why do SQL value parameters not safely substitute for column identifiers?
 - What role does an explicit allowlist play?
 
@@ -6520,7 +6603,7 @@ Assignment: [224-group-counts](gauntlex/13-sqlite/224-group-counts/README.md)
 
 #### Description
 
-Summarize event frequencies by category and produce a deterministic ranking even when multiple categories have equal counts.
+Implement `group_counts(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read from `events(id,category)`.
 
 #### Requirements
 
@@ -6534,6 +6617,7 @@ Summarize event frequencies by category and produce a deterministic ranking even
 
 #### Tips
 
+- **Concept to understand:** Summarize event frequencies by category and produce a deterministic ranking even when multiple categories have equal counts.
 - Why should a frequency report specify tie-breaking?
 - How does grouping combine multiple rows into one result?
 
@@ -6547,7 +6631,7 @@ Assignment: [225-date-filter](gauntlex/13-sqlite/225-date-filter/README.md)
 
 #### Description
 
-Canonical ISO dates can be compared lexically when their format is consistent. Select events from a cutoff date onward.
+Implement `events_on_or_after(conn, cutoff)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Include events on or after the cutoff date.
 
 #### Requirements
 
@@ -6561,6 +6645,7 @@ Canonical ISO dates can be compared lexically when their format is consistent. S
 
 #### Tips
 
+- **Concept to understand:** Canonical ISO dates can be compared lexically when their format is consistent. Select events from a cutoff date onward.
 - Why do zero-padded ISO dates have useful lexical ordering?
 - Why is the cutoff inclusive?
 
@@ -6574,7 +6659,7 @@ Assignment: [226-db-schema-check](gauntlex/13-sqlite/226-db-schema-check/README.
 
 #### Description
 
-A database can contain tables, views, and indexes. Determine whether a named object is specifically a table, not merely any schema entry.
+Implement `table_exists(conn, table_name)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Check the SQLite schema for the supplied table name.
 
 #### Requirements
 
@@ -6588,6 +6673,7 @@ A database can contain tables, views, and indexes. Determine whether a named obj
 
 #### Tips
 
+- **Concept to understand:** A database can contain tables, views, and indexes. Determine whether a named object is specifically a table, not merely any schema entry.
 - Why does the presence of a schema name not guarantee a table exists?
 - Which object type must be checked?
 
@@ -6601,7 +6687,7 @@ Assignment: [227-db-index](gauntlex/13-sqlite/227-db-index/README.md)
 
 #### Description
 
-An index can speed up lookups by a frequently searched column. Create a named email index without failing when setup is repeated.
+Implement `ensure_email_index(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Ensure an index named `idx_users_email` exists on the `email` column.
 
 #### Requirements
 
@@ -6615,6 +6701,7 @@ An index can speed up lookups by a frequently searched column. Create a named em
 
 #### Tips
 
+- **Concept to understand:** An index can speed up lookups by a frequently searched column. Create a named email index without failing when setup is repeated.
 - Why should database setup be idempotent?
 - How does an index differ from a table?
 
@@ -6628,7 +6715,7 @@ Assignment: [228-db-json](gauntlex/13-sqlite/228-db-json/README.md)
 
 #### Description
 
-Structured Python data can be persisted as JSON text. Use a stable representation so equivalent dictionaries serialize consistently.
+Implement `store_json(conn, value)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Serialize the supplied JSON-compatible value with sorted object keys and compact separators.
 
 #### Requirements
 
@@ -6642,6 +6729,7 @@ Structured Python data can be persisted as JSON text. Use a stable representatio
 
 #### Tips
 
+- **Concept to understand:** Structured Python data can be persisted as JSON text. Use a stable representation so equivalent dictionaries serialize consistently.
 - Why is Python's display representation not a substitute for JSON?
 - How does stable key ordering help reproducibility?
 
@@ -6655,7 +6743,7 @@ Assignment: [229-db-json-read](gauntlex/13-sqlite/229-db-json-read/README.md)
 
 #### Description
 
-Retrieve a stored JSON document and restore its structured Python representation rather than returning raw serialized text.
+Implement `load_json(conn, doc_id)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read the `body` field from `documents(id,body TEXT)` for the requested ID.
 
 #### Requirements
 
@@ -6669,6 +6757,7 @@ Retrieve a stored JSON document and restore its structured Python representation
 
 #### Tips
 
+- **Concept to understand:** Retrieve a stored JSON document and restore its structured Python representation rather than returning raw serialized text.
 - Why is a stored JSON string different from its decoded Python value?
 - What does a missing record mean?
 
@@ -6682,7 +6771,7 @@ Assignment: [230-db-report](gauntlex/13-sqlite/230-db-report/README.md)
 
 #### Description
 
-Summarize sales performance by grouping amounts into categories, then rank the categories by total revenue.
+Implement `revenue_report(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read `sales(id,category,amount INTEGER)`.
 
 #### Requirements
 
@@ -6696,12 +6785,15 @@ Summarize sales performance by grouping amounts into categories, then rank the c
 
 #### Tips
 
+- **Concept to understand:** Summarize sales performance by grouping amounts into categories, then rank the categories by total revenue.
 - Why is the category name needed as a secondary sort key?
 - How can aggregation reduce many sales rows to one row per category?
 
 #### Example Behavior
 
 Two categories with equal revenue are returned in alphabetical category order.
+
+---
 
 ---
 
@@ -6713,7 +6805,7 @@ Assignment: [231-async-greeting](gauntlex/14-async/231-async-greeting/README.md)
 
 #### Description
 
-A coroutine is a function whose result can be awaited by an asynchronous caller. Begin with a greeting that returns text rather than printing it.
+Implement `async def greet_async(name)` in `starter/solution.py`. Return the exact string `Hello, NAME!`, substituting the supplied name.
 
 #### Requirements
 
@@ -6725,6 +6817,7 @@ A coroutine is a function whose result can be awaited by an asynchronous caller.
 
 #### Tips
 
+- **Concept to understand:** A coroutine is a function whose result can be awaited by an asynchronous caller. Begin with a greeting that returns text rather than printing it.
 - What is the difference between calling a coroutine function and awaiting it?
 
 #### Example Behavior
@@ -6737,7 +6830,7 @@ Assignment: [232-async-double](gauntlex/14-async/232-async-double/README.md)
 
 #### Description
 
-An asynchronous function can return an ordinary calculated value even when it has no waiting to perform.
+Implement `async def double_async(value)` in `starter/solution.py`. Return twice the input integer.
 
 #### Requirements
 
@@ -6749,6 +6842,7 @@ An asynchronous function can return an ordinary calculated value even when it ha
 
 #### Tips
 
+- **Concept to understand:** An asynchronous function can return an ordinary calculated value even when it has no waiting to perform.
 - Does an `async def` function need to await something before it can return a value?
 
 #### Example Behavior
@@ -6761,7 +6855,7 @@ Assignment: [233-async-gather](gauntlex/14-async/233-async-gather/README.md)
 
 #### Description
 
-Several awaitables may finish in an unpredictable order. Collect their results in the original input order, regardless of completion timing.
+Implement `async def gather_results(awaitables)` in `starter/solution.py`. Run the awaitables concurrently and return a list of results in input order.
 
 #### Requirements
 
@@ -6774,6 +6868,7 @@ Several awaitables may finish in an unpredictable order. Collect their results i
 
 #### Tips
 
+- **Concept to understand:** Several awaitables may finish in an unpredictable order. Collect their results in the original input order, regardless of completion timing.
 - How can concurrent tasks finish out of order while their results remain ordered?
 
 #### Example Behavior
@@ -6786,7 +6881,7 @@ Assignment: [234-async-map](gauntlex/14-async/234-async-map/README.md)
 
 #### Description
 
-Apply an asynchronous operation to each item without waiting for one item to finish before beginning the next.
+Implement `async def async_map(fn, values)` in `starter/solution.py`. Invoke `fn(value)` for every value concurrently.
 
 #### Requirements
 
@@ -6799,6 +6894,7 @@ Apply an asynchronous operation to each item without waiting for one item to fin
 
 #### Tips
 
+- **Concept to understand:** Apply an asynchronous operation to each item without waiting for one item to finish before beginning the next.
 - What is the difference between creating concurrent work and ordering its results?
 
 #### Example Behavior
@@ -6811,7 +6907,7 @@ Assignment: [235-async-timeout](gauntlex/14-async/235-async-timeout/README.md)
 
 #### Description
 
-An asynchronous operation should not be allowed to wait indefinitely when a caller sets a deadline.
+Implement `async def with_timeout(awaitable, seconds)` in `starter/solution.py`. Return the awaited result if it finishes before the deadline.
 
 #### Requirements
 
@@ -6825,6 +6921,7 @@ An asynchronous operation should not be allowed to wait indefinitely when a call
 
 #### Tips
 
+- **Concept to understand:** An asynchronous operation should not be allowed to wait indefinitely when a caller sets a deadline.
 - What distinguishes a timeout from a normal return value?
 
 #### Example Behavior
@@ -6837,7 +6934,7 @@ Assignment: [236-async-retry](gauntlex/14-async/236-async-retry/README.md)
 
 #### Description
 
-Transient failures sometimes justify another attempt. Each retry must call the operation again rather than reuse a coroutine that has already failed.
+Implement `async def retry_async(fn, attempts)` in `starter/solution.py`. Raise `ValueError` if attempts is less than one.
 
 #### Requirements
 
@@ -6852,6 +6949,7 @@ Transient failures sometimes justify another attempt. Each retry must call the o
 
 #### Tips
 
+- **Concept to understand:** Transient failures sometimes justify another attempt. Each retry must call the operation again rather than reuse a coroutine that has already failed.
 - Why must a fresh coroutine be created for each attempt?
 - Why should the final error remain visible?
 
@@ -6865,7 +6963,7 @@ Assignment: [237-async-semaphore](gauntlex/14-async/237-async-semaphore/README.m
 
 #### Description
 
-Launching all work simultaneously can overload a resource. Bound the number of operations running at once while preserving output order.
+Implement `async def limited_map(fn, values, limit)` in `starter/solution.py`. Never allow more than `limit` calls to run simultaneously.
 
 #### Requirements
 
@@ -6880,6 +6978,7 @@ Launching all work simultaneously can overload a resource. Bound the number of o
 
 #### Tips
 
+- **Concept to understand:** Launching all work simultaneously can overload a resource. Bound the number of operations running at once while preserving output order.
 - How is the number of active operations different from the number of total inputs?
 
 #### Example Behavior
@@ -6892,7 +6991,7 @@ Assignment: [238-async-first](gauntlex/14-async/238-async-first/README.md)
 
 #### Description
 
-When several independent operations can provide the same answer, the earliest completed one may be sufficient. Unfinished operations still require cleanup.
+Implement `async def first_completed(awaitables)` in `starter/solution.py`. Return the result of the first completed awaitable.
 
 #### Requirements
 
@@ -6906,6 +7005,7 @@ When several independent operations can provide the same answer, the earliest co
 
 #### Tips
 
+- **Concept to understand:** When several independent operations can provide the same answer, the earliest completed one may be sufficient. Unfinished operations still require cleanup.
 - Why is cancellation part of correctness rather than just an optimization?
 
 #### Example Behavior
@@ -6918,7 +7018,7 @@ Assignment: [239-async-queue](gauntlex/14-async/239-async-queue/README.md)
 
 #### Description
 
-A queue holds work in first-in, first-out order. Collect what is currently waiting without suspending until future items arrive.
+Implement `async def queue_drain(queue)` in `starter/solution.py`. Remove and return all currently queued items in FIFO order.
 
 #### Requirements
 
@@ -6932,6 +7032,7 @@ A queue holds work in first-in, first-out order. Collect what is currently waiti
 
 #### Tips
 
+- **Concept to understand:** A queue holds work in first-in, first-out order. Collect what is currently waiting without suspending until future items arrive.
 - Why is draining a queue different from waiting for a producer?
 
 #### Example Behavior
@@ -6944,7 +7045,7 @@ Assignment: [240-async-producer](gauntlex/14-async/240-async-producer/README.md)
 
 #### Description
 
-A producer adds values to a shared asynchronous queue. When the queue has limited capacity, insertion may need to wait for space.
+Implement `async def produce_items(queue, values)` in `starter/solution.py`. Enqueue every value in its original order.
 
 #### Requirements
 
@@ -6958,6 +7059,7 @@ A producer adds values to a shared asynchronous queue. When the queue has limite
 
 #### Tips
 
+- **Concept to understand:** A producer adds values to a shared asynchronous queue. When the queue has limited capacity, insertion may need to wait for space.
 - Why can putting an item into a bounded queue require waiting?
 
 #### Example Behavior
@@ -6970,7 +7072,7 @@ Assignment: [241-async-consumer](gauntlex/14-async/241-async-consumer/README.md)
 
 #### Description
 
-Unlike draining a queue, consuming a fixed number of items may require waiting for items that have not arrived yet.
+Implement `async def consume_n(queue, n)` in `starter/solution.py`. Raise `ValueError` when `n` is negative.
 
 #### Requirements
 
@@ -6985,6 +7087,7 @@ Unlike draining a queue, consuming a fixed number of items may require waiting f
 
 #### Tips
 
+- **Concept to understand:** Unlike draining a queue, consuming a fixed number of items may require waiting for items that have not arrived yet.
 - Why can a consumer need to wait even when a queue is initially empty?
 
 #### Example Behavior
@@ -6997,7 +7100,7 @@ Assignment: [242-async-event](gauntlex/14-async/242-async-event/README.md)
 
 #### Description
 
-An event coordinates coroutines by letting one wait until another announces that a condition is ready.
+Implement `async def wait_for_event(event)` in `starter/solution.py`. Suspend until the event is set.
 
 #### Requirements
 
@@ -7011,6 +7114,7 @@ An event coordinates coroutines by letting one wait until another announces that
 
 #### Tips
 
+- **Concept to understand:** An event coordinates coroutines by letting one wait until another announces that a condition is ready.
 - Why is awaiting a signal preferable to repeatedly polling a flag?
 
 #### Example Behavior
@@ -7023,7 +7127,7 @@ Assignment: [243-async-lock](gauntlex/14-async/243-async-lock/README.md)
 
 #### Description
 
-Multiple coroutines may share mutable state. Protect a read-modify-write operation so concurrent updates cannot interfere with one another.
+Implement `async def locked_increment(state, lock)` in `starter/solution.py`. Acquire the lock while reading and incrementing the count by one.
 
 #### Requirements
 
@@ -7037,6 +7141,7 @@ Multiple coroutines may share mutable state. Protect a read-modify-write operati
 
 #### Tips
 
+- **Concept to understand:** Multiple coroutines may share mutable state. Protect a read-modify-write operation so concurrent updates cannot interfere with one another.
 - Why must the read and write occur inside the same protected section?
 
 #### Example Behavior
@@ -7049,7 +7154,7 @@ Assignment: [244-async-filter](gauntlex/14-async/244-async-filter/README.md)
 
 #### Description
 
-Evaluate an asynchronous predicate for every value, then keep only those values whose predicate results are truthy.
+Implement `async def async_filter(predicate, values)` in `starter/solution.py`. Evaluate the predicate for each value concurrently.
 
 #### Requirements
 
@@ -7064,6 +7169,7 @@ Evaluate an asynchronous predicate for every value, then keep only those values 
 
 #### Tips
 
+- **Concept to understand:** Evaluate an asynchronous predicate for every value, then keep only those values whose predicate results are truthy.
 - Why should filtering retain the original values rather than predicate results?
 
 #### Example Behavior
@@ -7076,7 +7182,7 @@ Assignment: [245-async-batch](gauntlex/14-async/245-async-batch/README.md)
 
 #### Description
 
-Divide asynchronous work into consecutive batches. Work within a batch may overlap, but later batches must not begin until earlier batches finish.
+Implement `async def async_batches(fn, values, batch_size)` in `starter/solution.py`. Process consecutive groups of at most `batch_size` items.
 
 #### Requirements
 
@@ -7092,11 +7198,14 @@ Divide asynchronous work into consecutive batches. Work within a batch may overl
 
 #### Tips
 
+- **Concept to understand:** Divide asynchronous work into consecutive batches. Work within a batch may overlap, but later batches must not begin until earlier batches finish.
 - How do batch boundaries differ from a simple concurrency limit?
 
 #### Example Behavior
 
 With five inputs and a batch size of two, batches have sizes 2, 2, and 1, executed in sequence.
+
+---
 
 ---
 
@@ -7108,7 +7217,7 @@ Assignment: [246-assert-equal](gauntlex/15-testing/246-assert-equal/README.md)
 
 #### Description
 
-A good assertion does more than say a check failed. Compare actual and expected values and report an unambiguous failure message.
+Implement `assert_equal(actual, expected)` in `starter/solution.py`. Return `None` when `actual == expected`.
 
 #### Requirements
 
@@ -7120,6 +7229,7 @@ A good assertion does more than say a check failed. Compare actual and expected 
 
 #### Tips
 
+- **Concept to understand:** A good assertion does more than say a check failed. Compare actual and expected values and report an unambiguous failure message.
 - Why is `repr()` more informative than a plain string conversion?
 
 #### Example Behavior
@@ -7132,7 +7242,7 @@ Assignment: [247-assert-raises](gauntlex/15-testing/247-assert-raises/README.md)
 
 #### Description
 
-Some tests succeed only when a callable raises a particular exception. Validate the exception type and preserve the caught instance.
+Implement `assert_raises(expected_exception, fn)` in `starter/solution.py`. Call the zero-argument function `fn`.
 
 #### Requirements
 
@@ -7144,6 +7254,7 @@ Some tests succeed only when a callable raises a particular exception. Validate 
 
 #### Tips
 
+- **Concept to understand:** Some tests succeed only when a callable raises a particular exception. Validate the exception type and preserve the caught instance.
 - Why is a normal return a failure for this test?
 - What distinguishes an exception instance from its class?
 
@@ -7157,7 +7268,7 @@ Assignment: [248-approx-equal](gauntlex/15-testing/248-approx-equal/README.md)
 
 #### Description
 
-Floating-point results may differ slightly because of representation and rounding. Compare numbers using an explicit absolute tolerance.
+Implement `approx_equal(a, b, tolerance)` in `starter/solution.py`. Return `True` when their absolute difference is at most the tolerance; otherwise return `False`.
 
 #### Requirements
 
@@ -7169,6 +7280,7 @@ Floating-point results may differ slightly because of representation and roundin
 
 #### Tips
 
+- **Concept to understand:** Floating-point results may differ slightly because of representation and rounding. Compare numbers using an explicit absolute tolerance.
 - Why is exact equality sometimes inappropriate for floating-point calculations?
 
 #### Example Behavior
@@ -7181,7 +7293,7 @@ Assignment: [249-first-difference](gauntlex/15-testing/249-first-difference/READ
 
 #### Description
 
-When comparing two sequences, identify the earliest point where their contents or lengths diverge.
+Implement `first_difference(a, b)` in `starter/solution.py`. Return the zero-based index of the first unequal pair.
 
 #### Requirements
 
@@ -7194,6 +7306,7 @@ When comparing two sequences, identify the earliest point where their contents o
 
 #### Tips
 
+- **Concept to understand:** When comparing two sequences, identify the earliest point where their contents or lengths diverge.
 - What happens if every overlapping element matches but one sequence continues?
 
 #### Example Behavior
@@ -7206,7 +7319,7 @@ Assignment: [250-diff-dicts](gauntlex/15-testing/250-diff-dicts/README.md)
 
 #### Description
 
-Two records can differ because a field was added, removed, or changed. Report every difference without losing which side contained which value.
+Implement `diff_dicts(old, new)` in `starter/solution.py`. Include every key appearing in either mapping whose values differ or whose key is missing on one side.
 
 #### Requirements
 
@@ -7219,6 +7332,7 @@ Two records can differ because a field was added, removed, or changed. Report ev
 
 #### Tips
 
+- **Concept to understand:** Two records can differ because a field was added, removed, or changed. Report every difference without losing which side contained which value.
 - Why is it important to distinguish a missing key from an equal value?
 
 #### Example Behavior
@@ -7231,7 +7345,7 @@ Assignment: [251-run-cases](gauntlex/15-testing/251-run-cases/README.md)
 
 #### Description
 
-Turn a collection of expected input-output pairs into a simple test report. Each case should produce one boolean result.
+Implement `run_cases(fn, cases)` in `starter/solution.py`. Call `fn` with each case's positional arguments.
 
 #### Requirements
 
@@ -7244,6 +7358,7 @@ Turn a collection of expected input-output pairs into a simple test report. Each
 
 #### Tips
 
+- **Concept to understand:** Turn a collection of expected input-output pairs into a simple test report. Each case should produce one boolean result.
 - Why should the result list preserve the order of the cases?
 
 #### Example Behavior
@@ -7256,7 +7371,7 @@ Assignment: [252-capture-output](gauntlex/15-testing/252-capture-output/README.m
 
 #### Description
 
-A function's return value and printed output are different observable effects. Capture both while ensuring the global output stream is restored.
+Implement `capture_output(fn)` in `starter/solution.py`. Call the supplied zero-argument function once.
 
 #### Requirements
 
@@ -7269,6 +7384,7 @@ A function's return value and printed output are different observable effects. C
 
 #### Tips
 
+- **Concept to understand:** A function's return value and printed output are different observable effects. Capture both while ensuring the global output stream is restored.
 - Why is cleanup necessary even when the callable fails?
 
 #### Example Behavior
@@ -7281,7 +7397,7 @@ Assignment: [253-is-sorted](gauntlex/15-testing/253-is-sorted/README.md)
 
 #### Description
 
-Determine whether a sequence is already in nondecreasing order. Equal neighbors are permitted.
+Implement `is_sorted(values)` in `starter/solution.py`. Return `True` if each element is no smaller than the preceding one.
 
 #### Requirements
 
@@ -7294,6 +7410,7 @@ Determine whether a sequence is already in nondecreasing order. Equal neighbors 
 
 #### Tips
 
+- **Concept to understand:** Determine whether a sequence is already in nondecreasing order. Equal neighbors are permitted.
 - Why does an empty sequence count as sorted?
 
 #### Example Behavior
@@ -7306,7 +7423,7 @@ Assignment: [254-validate-sorted](gauntlex/15-testing/254-validate-sorted/README
 
 #### Description
 
-Validation checks a property of existing data; it must not silently repair the data by sorting it.
+Implement `validate_sorted(values)` in `starter/solution.py`. Return the original list unchanged when values are nondecreasing.
 
 #### Requirements
 
@@ -7318,6 +7435,7 @@ Validation checks a property of existing data; it must not silently repair the d
 
 #### Tips
 
+- **Concept to understand:** Validation checks a property of existing data; it must not silently repair the data by sorting it.
 - Why should validation reject rather than repair unordered data?
 
 #### Example Behavior
@@ -7330,7 +7448,7 @@ Assignment: [255-check-permutation](gauntlex/15-testing/255-check-permutation/RE
 
 #### Description
 
-Two sequences are permutations when they contain the same elements with identical occurrence counts, regardless of position.
+Implement `is_permutation(a, b)` in `starter/solution.py`. Return `True` only if both lists contain the same values with the same multiplicities.
 
 #### Requirements
 
@@ -7343,6 +7461,7 @@ Two sequences are permutations when they contain the same elements with identica
 
 #### Tips
 
+- **Concept to understand:** Two sequences are permutations when they contain the same elements with identical occurrence counts, regardless of position.
 - Why is comparing sets alone insufficient when values repeat?
 
 #### Example Behavior
@@ -7355,7 +7474,7 @@ Assignment: [256-invariant-check](gauntlex/15-testing/256-invariant-check/README
 
 #### Description
 
-An invariant is a condition that must remain true for a collection of values. Detect the earliest violation and report its location.
+Implement `check_nonnegative(values)` in `starter/solution.py`. Return `True` if every value is nonnegative.
 
 #### Requirements
 
@@ -7368,6 +7487,7 @@ An invariant is a condition that must remain true for a collection of values. De
 
 #### Tips
 
+- **Concept to understand:** An invariant is a condition that must remain true for a collection of values. Detect the earliest violation and report its location.
 - Why should the first violation be reported instead of every violation?
 
 #### Example Behavior
@@ -7380,7 +7500,7 @@ Assignment: [257-parse-test-report](gauntlex/15-testing/257-parse-test-report/RE
 
 #### Description
 
-Textual test reports often mix structured results with unrelated lines. Count only records that match a strict pass-or-fail format.
+Implement `parse_test_report(lines)` in `starter/solution.py`. Count only lines matching `PASS name` or `FAIL name` with exactly one space and a nonempty name.
 
 #### Requirements
 
@@ -7393,6 +7513,7 @@ Textual test reports often mix structured results with unrelated lines. Count on
 
 #### Tips
 
+- **Concept to understand:** Textual test reports often mix structured results with unrelated lines. Count only records that match a strict pass-or-fail format.
 - Why is checking only the start of a line insufficient?
 
 #### Example Behavior
@@ -7405,7 +7526,7 @@ Assignment: [258-flaky-detector](gauntlex/15-testing/258-flaky-detector/README.m
 
 #### Description
 
-Repeated test runs can reveal instability. Summarize the proportion of unsuccessful runs rather than the count alone.
+Implement `failure_rate(results)` in `starter/solution.py`. Return the number of failures divided by the number of runs.
 
 #### Requirements
 
@@ -7418,6 +7539,7 @@ Repeated test runs can reveal instability. Summarize the proportion of unsuccess
 
 #### Tips
 
+- **Concept to understand:** Repeated test runs can reveal instability. Summarize the proportion of unsuccessful runs rather than the count alone.
 - Why does a fraction make results comparable across different run counts?
 
 #### Example Behavior
@@ -7430,7 +7552,7 @@ Assignment: [259-test-selection](gauntlex/15-testing/259-test-selection/README.m
 
 #### Description
 
-Large test suites often need a focused subset. Match a search term within test names without changing their original spelling or order.
+Implement `select_tests(names, pattern)` in `starter/solution.py`. Match the pattern case-insensitively anywhere in each name.
 
 #### Requirements
 
@@ -7443,6 +7565,7 @@ Large test suites often need a focused subset. Match a search term within test n
 
 #### Tips
 
+- **Concept to understand:** Large test suites often need a focused subset. Match a search term within test names without changing their original spelling or order.
 - Why should the output preserve the original capitalization?
 
 #### Example Behavior
@@ -7455,7 +7578,7 @@ Assignment: [260-test-summary](gauntlex/15-testing/260-test-summary/README.md)
 
 #### Description
 
-Summarize a test run that can pass, fail, or skip individual cases. A complete report includes zero counts for absent outcomes.
+Implement `test_summary(records)` in `starter/solution.py`. Count records for each status and the total number of records.
 
 #### Requirements
 
@@ -7468,6 +7591,7 @@ Summarize a test run that can pass, fail, or skip individual cases. A complete r
 
 #### Tips
 
+- **Concept to understand:** Summarize a test run that can pass, fail, or skip individual cases. A complete report includes zero counts for absent outcomes.
 - Why are explicit zero counts useful for reporting?
 
 #### Example Behavior
@@ -7480,7 +7604,7 @@ Assignment: [261-pytest-nodeid](gauntlex/15-testing/261-pytest-nodeid/README.md)
 
 #### Description
 
-A test identifier combines the file location and test function name. Validate both parts before building the identifier.
+Implement `pytest_nodeid(path, test_name)` in `starter/solution.py`. Strip surrounding whitespace from `path` and `test_name`.
 
 #### Requirements
 
@@ -7492,6 +7616,7 @@ A test identifier combines the file location and test function name. Validate bo
 
 #### Tips
 
+- **Concept to understand:** A test identifier combines the file location and test function name. Validate both parts before building the identifier.
 - Why must both parts be validated before joining them?
 
 #### Example Behavior
@@ -7504,7 +7629,7 @@ Assignment: [262-test-name-normalize](gauntlex/15-testing/262-test-name-normaliz
 
 #### Description
 
-Turn a human-readable ASCII title into a predictable pytest-style function name, avoiding repeated or trailing separators.
+Implement `normalize_test_name(title)` in `starter/solution.py`. Lowercase the ASCII title.
 
 #### Requirements
 
@@ -7517,6 +7642,7 @@ Turn a human-readable ASCII title into a predictable pytest-style function name,
 
 #### Tips
 
+- **Concept to understand:** Turn a human-readable ASCII title into a predictable pytest-style function name, avoiding repeated or trailing separators.
 - Why should consecutive punctuation marks become a single separator?
 
 #### Example Behavior
@@ -7529,7 +7655,7 @@ Assignment: [263-coverage-percent](gauntlex/15-testing/263-coverage-percent/READ
 
 #### Description
 
-Line coverage reports the fraction of measurable lines exercised by tests. Validate the counts and define what an empty project means.
+Implement `coverage_percent(covered, total)` in `starter/solution.py`. Return the covered percentage as a float between `0.0` and `100.0`.
 
 #### Requirements
 
@@ -7542,6 +7668,7 @@ Line coverage reports the fraction of measurable lines exercised by tests. Valid
 
 #### Tips
 
+- **Concept to understand:** Line coverage reports the fraction of measurable lines exercised by tests. Validate the counts and define what an empty project means.
 - Why does an empty denominator need an explicit convention?
 
 #### Example Behavior
@@ -7554,7 +7681,7 @@ Assignment: [264-regression-check](gauntlex/15-testing/264-regression-check/READ
 
 #### Description
 
-A regression occurs when a previously passing test now fails. Compare two test runs while excluding tests that were not present in both.
+Implement `regressions(baseline, current)` in `starter/solution.py`. Include only names present in both mappings that changed from `True` to `False`.
 
 #### Requirements
 
@@ -7567,6 +7694,7 @@ A regression occurs when a previously passing test now fails. Compare two test r
 
 #### Tips
 
+- **Concept to understand:** A regression occurs when a previously passing test now fails. Compare two test runs while excluding tests that were not present in both.
 - Why is a new failing test not necessarily a regression relative to the baseline?
 
 #### Example Behavior
@@ -7579,7 +7707,7 @@ Assignment: [265-test-matrix](gauntlex/15-testing/265-test-matrix/README.md)
 
 #### Description
 
-A test suite may run on several platforms. Identify any test that failed on at least one platform, regardless of its results elsewhere.
+Implement `test_matrix(results)` in `starter/solution.py`. Include a test name if any platform records `False` for that test.
 
 #### Requirements
 
@@ -7592,6 +7720,7 @@ A test suite may run on several platforms. Identify any test that failed on at l
 
 #### Tips
 
+- **Concept to understand:** A test suite may run on several platforms. Identify any test that failed on at least one platform, regardless of its results elsewhere.
 - Why does one failure matter even if other platforms pass?
 
 #### Example Behavior
@@ -7604,7 +7733,7 @@ Assignment: [266-mutation-survivors](gauntlex/15-testing/266-mutation-survivors/
 
 #### Description
 
-Mutation testing changes a program deliberately to see whether tests detect the change. A mutant survives when every supplied test still passes.
+Implement `surviving_mutants(results)` in `starter/solution.py`. Return sorted mutant IDs whose entire outcome list contains only `True`.
 
 #### Requirements
 
@@ -7617,6 +7746,7 @@ Mutation testing changes a program deliberately to see whether tests detect the 
 
 #### Tips
 
+- **Concept to understand:** Mutation testing changes a program deliberately to see whether tests detect the change. A mutant survives when every supplied test still passes.
 - Why does a mutant with no test outcomes count as undetected?
 
 #### Example Behavior
@@ -7629,7 +7759,7 @@ Assignment: [267-test-case-ids](gauntlex/15-testing/267-test-case-ids/README.md)
 
 #### Description
 
-Repeated test names need distinct identifiers so reports can refer to each occurrence without ambiguity.
+Implement `case_ids(cases)` in `starter/solution.py`. Assign each name its own one-based occurrence counter.
 
 #### Requirements
 
@@ -7642,6 +7772,7 @@ Repeated test names need distinct identifiers so reports can refer to each occur
 
 #### Tips
 
+- **Concept to understand:** Repeated test names need distinct identifiers so reports can refer to each occurrence without ambiguity.
 - Why must different names have independent counters?
 
 #### Example Behavior
@@ -7654,7 +7785,7 @@ Assignment: [268-snapshot-compare](gauntlex/15-testing/268-snapshot-compare/READ
 
 #### Description
 
-Structured snapshots should be compared using a canonical JSON representation so irrelevant object-key ordering does not cause false mismatches.
+Implement `snapshot_matches(actual, expected)` in `starter/solution.py`. Compare their compact JSON representations with object keys sorted.
 
 #### Requirements
 
@@ -7667,6 +7798,7 @@ Structured snapshots should be compared using a canonical JSON representation so
 
 #### Tips
 
+- **Concept to understand:** Structured snapshots should be compared using a canonical JSON representation so irrelevant object-key ordering does not cause false mismatches.
 - Why should object keys and array elements be treated differently?
 
 #### Example Behavior
@@ -7679,7 +7811,7 @@ Assignment: [269-test-duration](gauntlex/15-testing/269-test-duration/README.md)
 
 #### Description
 
-Performance reports can prioritize slow tests. Select only tests exceeding a threshold and rank them predictably.
+Implement `slow_tests(records, threshold)` in `starter/solution.py`. Include only names whose duration is strictly greater than the threshold.
 
 #### Requirements
 
@@ -7692,6 +7824,7 @@ Performance reports can prioritize slow tests. Select only tests exceeding a thr
 
 #### Tips
 
+- **Concept to understand:** Performance reports can prioritize slow tests. Select only tests exceeding a threshold and rank them predictably.
 - Why does a duration equal to the threshold not qualify?
 
 #### Example Behavior
@@ -7704,7 +7837,7 @@ Assignment: [270-assert-subset](gauntlex/15-testing/270-assert-subset/README.md)
 
 #### Description
 
-An assertion can check whether all expected items appear in an actual collection. When the check fails, report the missing values in a reproducible order.
+Implement `assert_subset(expected_items, actual_items)` in `starter/solution.py`. Return `None` if every expected item is present in the actual collection.
 
 #### Requirements
 
@@ -7717,11 +7850,14 @@ An assertion can check whether all expected items appear in an actual collection
 
 #### Tips
 
+- **Concept to understand:** An assertion can check whether all expected items appear in an actual collection. When the check fails, report the missing values in a reproducible order.
 - Why is sorting useful for reproducible failure messages?
 
 #### Example Behavior
 
 `assert_subset([1, 2], [1, 2, 3])` → `None`; missing expected items trigger `AssertionError`.
+
+---
 
 ---
 
@@ -7733,7 +7869,7 @@ Assignment: [271-semver-parse](gauntlex/16-packaging/271-semver-parse/README.md)
 
 #### Description
 
-Package releases often use three numeric components: major, minor, and patch. Parse this precise version form without silently accepting ambiguous formatting.
+Implement `parse_version(text)` in `starter/solution.py`. Reject leading zeros in multi-digit components; `0` itself is valid.
 
 #### Requirements
 
@@ -7746,6 +7882,7 @@ Package releases often use three numeric components: major, minor, and patch. Pa
 
 #### Tips
 
+- **Concept to understand:** Package releases often use three numeric components: major, minor, and patch. Parse this precise version form without silently accepting ambiguous formatting.
 - Why is strict validation preferable to guessing what a malformed version means?
 
 #### Example Behavior
@@ -7758,7 +7895,7 @@ Assignment: [272-semver-compare](gauntlex/16-packaging/272-semver-compare/README
 
 #### Description
 
-Version components represent numeric precedence, not ordinary string order. Compare major, minor, and patch numbers in significance order.
+Implement `compare_version(a, b)` in `starter/solution.py`. Return `-1` if the first version is older, `0` if equal, and `1` if newer.
 
 #### Requirements
 
@@ -7770,6 +7907,7 @@ Version components represent numeric precedence, not ordinary string order. Comp
 
 #### Tips
 
+- **Concept to understand:** Version components represent numeric precedence, not ordinary string order. Compare major, minor, and patch numbers in significance order.
 - Why does `1.10.0` come after `1.9.0`?
 
 #### Example Behavior
@@ -7782,7 +7920,7 @@ Assignment: [273-dependency-parse](gauntlex/16-packaging/273-dependency-parse/RE
 
 #### Description
 
-A pinned dependency specifies one package and one exact version. Normalize the package name while retaining the version text.
+Implement `parse_requirement(text)` in `starter/solution.py`. Allow ASCII letters, digits, underscores, and hyphens in the name.
 
 #### Requirements
 
@@ -7796,6 +7934,7 @@ A pinned dependency specifies one package and one exact version. Normalize the p
 
 #### Tips
 
+- **Concept to understand:** A pinned dependency specifies one package and one exact version. Normalize the package name while retaining the version text.
 - Why should package-name normalization be distinct from version validation?
 
 #### Example Behavior
@@ -7808,7 +7947,7 @@ Assignment: [274-requirements-sort](gauntlex/16-packaging/274-requirements-sort/
 
 #### Description
 
-A dependency file can be made easier to review by sorting package entries consistently, while preserving their original spelling and version text.
+Implement `sort_requirements(lines)` in `starter/solution.py`. Sort requirements by their normalized package names.
 
 #### Requirements
 
@@ -7821,6 +7960,7 @@ A dependency file can be made easier to review by sorting package entries consis
 
 #### Tips
 
+- **Concept to understand:** A dependency file can be made easier to review by sorting package entries consistently, while preserving their original spelling and version text.
 - Why should the comparison key differ from the text returned to the caller?
 
 #### Example Behavior
@@ -7833,7 +7973,7 @@ Assignment: [275-requirements-dedupe](gauntlex/16-packaging/275-requirements-ded
 
 #### Description
 
-A dependency list may mention the same normalized package multiple times. Keep the final declaration for each package while preserving surviving declaration order.
+Implement `dedupe_requirements(lines)` in `starter/solution.py`. Treat names as equivalent after lowercase conversion and replacing underscores with hyphens.
 
 #### Requirements
 
@@ -7846,6 +7986,7 @@ A dependency list may mention the same normalized package multiple times. Keep t
 
 #### Tips
 
+- **Concept to understand:** A dependency list may mention the same normalized package multiple times. Keep the final declaration for each package while preserving surviving declaration order.
 - Why would keeping the first occurrence violate the intended override behavior?
 
 #### Example Behavior
@@ -7858,7 +7999,7 @@ Assignment: [276-env-config](gauntlex/16-packaging/276-env-config/README.md)
 
 #### Description
 
-Application configuration often arrives as text from environment variables. Interpret the supported values while applying a safe default only when a setting is absent.
+Implement `read_config(env)` in `starter/solution.py`. Return a dictionary with boolean `debug` and integer `port`.
 
 #### Requirements
 
@@ -7872,6 +8013,7 @@ Application configuration often arrives as text from environment variables. Inte
 
 #### Tips
 
+- **Concept to understand:** Application configuration often arrives as text from environment variables. Interpret the supported values while applying a safe default only when a setting is absent.
 - Why should an invalid supplied port not silently fall back to the default?
 
 #### Example Behavior
@@ -7884,7 +8026,7 @@ Assignment: [277-config-merge](gauntlex/16-packaging/277-config-merge/README.md)
 
 #### Description
 
-Default configuration defines which settings an application recognizes. Apply only permitted overrides and keep both source mappings intact.
+Implement `merge_config(defaults, overrides)` in `starter/solution.py`. Return a new dictionary containing the defaults with recognized overrides applied.
 
 #### Requirements
 
@@ -7897,6 +8039,7 @@ Default configuration defines which settings an application recognizes. Apply on
 
 #### Tips
 
+- **Concept to understand:** Default configuration defines which settings an application recognizes. Apply only permitted overrides and keep both source mappings intact.
 - Why might allowing unknown keys unexpectedly change application behavior?
 
 #### Example Behavior
@@ -7909,7 +8052,7 @@ Assignment: [278-file-manifest](gauntlex/16-packaging/278-file-manifest/README.m
 
 #### Description
 
-A build manifest records the files included in an artifact and their byte counts. Reject paths that could escape the intended relative directory.
+Implement `file_manifest(entries)` in `starter/solution.py`. Reject absolute paths and paths containing a complete `..` segment with `ValueError`.
 
 #### Requirements
 
@@ -7922,6 +8065,7 @@ A build manifest records the files included in an artifact and their byte counts
 
 #### Tips
 
+- **Concept to understand:** A build manifest records the files included in an artifact and their byte counts. Reject paths that could escape the intended relative directory.
 - Why is a `..` path component different from two dots inside a filename?
 
 #### Example Behavior
@@ -7934,7 +8078,7 @@ Assignment: [279-release-notes](gauntlex/16-packaging/279-release-notes/README.m
 
 #### Description
 
-Turn a version identifier and change descriptions into a short, predictable Markdown announcement.
+Implement `release_notes(version, changes)` in `starter/solution.py`. Begin with the exact heading `# Release VERSION`.
 
 #### Requirements
 
@@ -7947,6 +8091,7 @@ Turn a version identifier and change descriptions into a short, predictable Mark
 
 #### Tips
 
+- **Concept to understand:** Turn a version identifier and change descriptions into a short, predictable Markdown announcement.
 - Why is the empty-change case formatted differently from a release with entries?
 
 #### Example Behavior
@@ -7959,7 +8104,7 @@ Assignment: [280-changelog-groups](gauntlex/16-packaging/280-changelog-groups/RE
 
 #### Description
 
-Release changes can be grouped by category for easier reading without changing the order in which changes were supplied.
+Implement `group_changes(entries)` in `starter/solution.py`. Return a dictionary mapping each category to its list of descriptions.
 
 #### Requirements
 
@@ -7972,6 +8117,7 @@ Release changes can be grouped by category for easier reading without changing t
 
 #### Tips
 
+- **Concept to understand:** Release changes can be grouped by category for easier reading without changing the order in which changes were supplied.
 - Why does assigning a new list for every repeated category lose information?
 
 #### Example Behavior
@@ -7984,7 +8130,7 @@ Assignment: [281-python-entrypoint](gauntlex/16-packaging/281-python-entrypoint/
 
 #### Description
 
-A command-line entry point refers to a Python module and the function to execute. Validate a dotted module path before adding the function reference.
+Implement `entrypoint_name(module_name)` in `starter/solution.py`. Require every dot-separated component to be a valid Python identifier.
 
 #### Requirements
 
@@ -7997,6 +8143,7 @@ A command-line entry point refers to a Python module and the function to execute
 
 #### Tips
 
+- **Concept to understand:** A command-line entry point refers to a Python module and the function to execute. Validate a dotted module path before adding the function reference.
 - Why is validating each component more reliable than checking only the full string?
 
 #### Example Behavior
@@ -8009,7 +8156,7 @@ Assignment: [282-module-path](gauntlex/16-packaging/282-module-path/README.md)
 
 #### Description
 
-A Python module's dotted import path corresponds to directories and a source filename. Convert the module name into a relative POSIX file path.
+Implement `module_to_path(module_name)` in `starter/solution.py`. Require every component to be a valid Python identifier.
 
 #### Requirements
 
@@ -8022,6 +8169,7 @@ A Python module's dotted import path corresponds to directories and a source fil
 
 #### Tips
 
+- **Concept to understand:** A Python module's dotted import path corresponds to directories and a source filename. Convert the module name into a relative POSIX file path.
 - Why must dots become path separators rather than remain in the filename?
 
 #### Example Behavior
@@ -8034,7 +8182,7 @@ Assignment: [283-artifact-name](gauntlex/16-packaging/283-artifact-name/README.m
 
 #### Description
 
-A Python wheel filename encodes the distribution, version, and compatibility tags. Assemble the expected filename from trusted components.
+Implement `wheel_name(name, version, python_tag)` in `starter/solution.py`. Convert hyphens in the package name to underscores.
 
 #### Requirements
 
@@ -8047,6 +8195,7 @@ A Python wheel filename encodes the distribution, version, and compatibility tag
 
 #### Tips
 
+- **Concept to understand:** A Python wheel filename encodes the distribution, version, and compatibility tags. Assemble the expected filename from trusted components.
 - Why is the distribution name represented differently inside a wheel filename?
 
 #### Example Behavior
@@ -8059,7 +8208,7 @@ Assignment: [284-build-metadata](gauntlex/16-packaging/284-build-metadata/README
 
 #### Description
 
-Build a small package metadata record that does not unexpectedly change when the caller later edits its dependency list.
+Implement `build_metadata(name, version, minimum_python, dependencies)` in `starter/solution.py`. Return a dictionary with keys `name`, `version`, `requires_python`, and `dependencies`.
 
 #### Requirements
 
@@ -8084,7 +8233,7 @@ Assignment: [285-release-checklist](gauntlex/16-packaging/285-release-checklist/
 
 #### Description
 
-A release should proceed only when its required checks are complete. Report missing steps in a consistent order.
+Implement `release_checklist(tests_passed, docs_updated, version_bumped)` in `starter/solution.py`. For each false condition, include its corresponding action: `run tests`, `update docs`, or `bump version`.
 
 #### Requirements
 
@@ -8097,11 +8246,14 @@ A release should proceed only when its required checks are complete. Report miss
 
 #### Tips
 
+- **Concept to understand:** A release should proceed only when its required checks are complete. Report missing steps in a consistent order.
 - Why is a fixed checklist order useful for repeatable release reviews?
 
 #### Example Behavior
 
 `release_checklist(False, True, False)` → `['run tests', 'bump version']`; all true → `[]`.
+
+---
 
 ---
 
@@ -8113,7 +8265,7 @@ Assignment: [286-dependency-order](gauntlex/17-architecture/286-dependency-order
 
 #### Description
 
-A build system must complete prerequisites before their dependents. Produce a deterministic sequence even when several tasks are ready simultaneously.
+Implement `dependency_order(graph)` in `starter/solution.py`. Include tasks mentioned only as prerequisites.
 
 #### Requirements
 
@@ -8131,6 +8283,7 @@ A task mentioned only as a prerequisite must still appear in the final order; di
 
 #### Tips
 
+- **Concept to understand:** A build system must complete prerequisites before their dependents. Produce a deterministic sequence even when several tasks are ready simultaneously.
 - Why does choosing among ready tasks require a consistent rule?
 
 #### Example Behavior
@@ -8143,7 +8296,7 @@ Assignment: [287-dependency-cycles](gauntlex/17-architecture/287-dependency-cycl
 
 #### Description
 
-Circular prerequisites prevent any valid build order. Detect a cycle even when some nodes appear only in other tasks' dependency lists.
+Implement `has_dependency_cycle(graph)` in `starter/solution.py`. Return `True` if any directed cycle exists; otherwise `False`.
 
 #### Requirements
 
@@ -8160,6 +8313,7 @@ A self-dependency is a cycle, while two separate branches that converge on the s
 
 #### Tips
 
+- **Concept to understand:** Circular prerequisites prevent any valid build order. Detect a cycle even when some nodes appear only in other tasks' dependency lists.
 - Why is revisiting a fully explored node different from revisiting an active path?
 
 #### Example Behavior
@@ -8172,7 +8326,7 @@ Assignment: [288-reachable-services](gauntlex/17-architecture/288-reachable-serv
 
 #### Description
 
-A service dependency graph can show which components may be reached from one starting point. Explore transitively without looping forever.
+Implement `reachable_services(graph, start)` in `starter/solution.py`. Include the start itself, even if it is not a graph key.
 
 #### Requirements
 
@@ -8189,6 +8343,7 @@ A start node absent from the graph still produces a one-item result containing t
 
 #### Tips
 
+- **Concept to understand:** A service dependency graph can show which components may be reached from one starting point. Explore transitively without looping forever.
 - Why must visited services be tracked?
 
 #### Example Behavior
@@ -8201,7 +8356,7 @@ Assignment: [289-reverse-dependencies](gauntlex/17-architecture/289-reverse-depe
 
 #### Description
 
-A dependency graph points from packages to their requirements. Reverse those relationships to find the direct dependents of each package.
+Implement `reverse_dependencies(graph)` in `starter/solution.py`. Include every name occurring as a key or dependency.
 
 #### Requirements
 
@@ -8218,6 +8373,7 @@ A package listed as a prerequisite by several packages must list each direct dep
 
 #### Tips
 
+- **Concept to understand:** A dependency graph points from packages to their requirements. Reverse those relationships to find the direct dependents of each package.
 - Why should a dependency-only package still appear in the result?
 
 #### Example Behavior
@@ -8230,7 +8386,7 @@ Assignment: [290-service-layers](gauntlex/17-architecture/290-service-layers/REA
 
 #### Description
 
-Independent services can be built in parallel once all their prerequisites are complete. Group services by the earliest layer in which they become ready.
+Implement `service_layers(graph)` in `starter/solution.py`. Include names that occur only as prerequisites.
 
 #### Requirements
 
@@ -8248,6 +8404,7 @@ Independent services are grouped in the same layer; a service may enter only aft
 
 #### Tips
 
+- **Concept to understand:** Independent services can be built in parallel once all their prerequisites are complete. Group services by the earliest layer in which they become ready.
 - Why should all currently ready services share a layer?
 
 #### Example Behavior
@@ -8260,7 +8417,7 @@ Assignment: [291-feature-flags](gauntlex/17-architecture/291-feature-flags/READM
 
 #### Description
 
-A feature may be enabled by its own flag yet unavailable because a required feature is disabled. Resolve every prerequisite before reporting usable features.
+Implement `enabled_features(flags, dependencies)` in `starter/solution.py`. Include a feature only if its own flag and every transitive dependency flag are `True`.
 
 #### Requirements
 
@@ -8278,6 +8435,7 @@ A feature's own flag is not sufficient: every dependency in its chain must also 
 
 #### Tips
 
+- **Concept to understand:** A feature may be enabled by its own flag yet unavailable because a required feature is disabled. Resolve every prerequisite before reporting usable features.
 - Why does checking only a feature's own flag miss disabled prerequisites?
 
 #### Example Behavior
@@ -8290,7 +8448,7 @@ Assignment: [292-route-match](gauntlex/17-architecture/292-route-match/README.md
 
 #### Description
 
-HTTP route templates combine fixed path segments with named placeholders. Match a request path and extract the placeholder values.
+Implement `match_route(template, path)` in `starter/solution.py`. Require the same number of path segments.
 
 #### Requirements
 
@@ -8308,6 +8466,7 @@ A literal path segment cannot match a different spelling. Capture parameters as 
 
 #### Tips
 
+- **Concept to understand:** HTTP route templates combine fixed path segments with named placeholders. Match a request path and extract the placeholder values.
 - Why must a literal route segment match exactly?
 
 #### Example Behavior
@@ -8320,7 +8479,7 @@ Assignment: [293-route-priority](gauntlex/17-architecture/293-route-priority/REA
 
 #### Description
 
-Routes with more fixed path segments are more specific than routes dominated by placeholders. Calculate a simple specificity score.
+Implement `route_priority(template)` in `starter/solution.py`. Split the template into path segments, ignoring empty segments from leading or trailing slashes.
 
 #### Requirements
 
@@ -8337,6 +8496,7 @@ Count only complete fixed segments. A segment beginning with `{` and ending with
 
 #### Tips
 
+- **Concept to understand:** Routes with more fixed path segments are more specific than routes dominated by placeholders. Calculate a simple specificity score.
 - Why is a placeholder less specific than a fixed path segment?
 
 #### Example Behavior
@@ -8349,7 +8509,7 @@ Assignment: [294-rate-limit-window](gauntlex/17-architecture/294-rate-limit-wind
 
 #### Description
 
-A sliding-window rate limit counts recent requests to decide whether another request is permitted. Boundary handling must be exact.
+Implement `rate_limit_allowed(timestamps, now, window, limit)` in `starter/solution.py`. Count timestamps in the interval `(now - window, now]`.
 
 #### Requirements
 
@@ -8366,6 +8526,7 @@ A request exactly at `now - window` is outside the window; a request exactly at 
 
 #### Tips
 
+- **Concept to understand:** A sliding-window rate limit counts recent requests to decide whether another request is permitted. Boundary handling must be exact.
 - Why is the lower boundary excluded but the upper included?
 
 #### Example Behavior
@@ -8378,7 +8539,7 @@ Assignment: [295-circuit-state](gauntlex/17-architecture/295-circuit-state/READM
 
 #### Description
 
-A circuit breaker tracks consecutive failures and may allow a recovery probe. Classify the state from the failure threshold and probe result.
+Implement `circuit_state(failures, threshold, probe_success)` in `starter/solution.py`. Return `'closed'` when failures are below the threshold.
 
 #### Requirements
 
@@ -8394,6 +8555,7 @@ When failures are below threshold, the state remains closed regardless of probe 
 
 #### Tips
 
+- **Concept to understand:** A circuit breaker tracks consecutive failures and may allow a recovery probe. Classify the state from the failure threshold and probe result.
 - Why must the failure threshold be checked before the probe outcome?
 
 #### Example Behavior
@@ -8406,7 +8568,7 @@ Assignment: [296-cache-expiry](gauntlex/17-architecture/296-cache-expiry/README.
 
 #### Description
 
-Cached data has a limited lifetime. Determine whether an entry remains usable at a given moment, including the exact expiry boundary.
+Implement `cache_valid(created_at, ttl, now)` in `starter/solution.py`. Return `True` only while `now` is strictly earlier than `created_at + ttl`.
 
 #### Requirements
 
@@ -8422,6 +8584,7 @@ At the precise expiry instant the entry is no longer valid; no grace period is i
 
 #### Tips
 
+- **Concept to understand:** Cached data has a limited lifetime. Determine whether an entry remains usable at a given moment, including the exact expiry boundary.
 - Why should an entry expire exactly when its lifetime is exhausted?
 
 #### Example Behavior
@@ -8434,7 +8597,7 @@ Assignment: [297-cache-eviction](gauntlex/17-architecture/297-cache-eviction/REA
 
 #### Description
 
-A bounded cache must discard entries when its capacity is exceeded. Prefer the least recently accessed entries and break ties consistently.
+Implement `eviction_candidates(accesses, max_items)` in `starter/solution.py`. Return only enough keys to reduce the cache to that maximum.
 
 #### Requirements
 
@@ -8451,6 +8614,7 @@ The number of returned keys is the excess over capacity, not the capacity itself
 
 #### Tips
 
+- **Concept to understand:** A bounded cache must discard entries when its capacity is exceeded. Prefer the least recently accessed entries and break ties consistently.
 - Why must tied access times use a secondary sort order?
 
 #### Example Behavior
@@ -8463,7 +8627,7 @@ Assignment: [298-health-rollup](gauntlex/17-architecture/298-health-rollup/READM
 
 #### Description
 
-A system-wide health summary should reflect its most severe service condition. Combine individual statuses into one result.
+Implement `health_rollup(statuses)` in `starter/solution.py`. Return `'down'` if any service is down.
 
 #### Requirements
 
@@ -8480,6 +8644,7 @@ The summary reflects the most severe status, not the most common one. An empty s
 
 #### Tips
 
+- **Concept to understand:** A system-wide health summary should reflect its most severe service condition. Combine individual statuses into one result.
 - Why should one down service dominate the overall status?
 
 #### Example Behavior
@@ -8492,7 +8657,7 @@ Assignment: [299-retry-budget](gauntlex/17-architecture/299-retry-budget/README.
 
 #### Description
 
-Retries consume resources and should remain proportional to normal request traffic. Calculate how many attempts are still permitted.
+Implement `retry_budget(requests, ratio, retries_used)` in `starter/solution.py`. Compute the allowed retry count as the floor of `requests * ratio`.
 
 #### Requirements
 
@@ -8509,6 +8674,7 @@ The retry allowance is rounded down before subtracting used attempts; exhausted 
 
 #### Tips
 
+- **Concept to understand:** Retries consume resources and should remain proportional to normal request traffic. Calculate how many attempts are still permitted.
 - Why should a retry budget never become negative?
 
 #### Example Behavior
@@ -8521,7 +8687,7 @@ Assignment: [300-idempotency-key](gauntlex/17-architecture/300-idempotency-key/R
 
 #### Description
 
-Logically identical requests need a stable identifier even when their method capitalization differs. Canonicalize request data before hashing.
+Implement `idempotency_key(method, url, body)` in `starter/solution.py`. Uppercase the method.
 
 #### Requirements
 
@@ -8539,6 +8705,7 @@ The JSON array field order matters. Method case is normalized, but URL and body 
 
 #### Tips
 
+- **Concept to understand:** Logically identical requests need a stable identifier even when their method capitalization differs. Canonicalize request data before hashing.
 - Why is structured serialization safer than concatenating fields?
 
 #### Example Behavior
@@ -8551,7 +8718,7 @@ Assignment: [301-partition-key](gauntlex/17-architecture/301-partition-key/READM
 
 #### Description
 
-Distributed storage often assigns records to partitions using a repeatable hash. The same identifier must map to the same partition across processes.
+Implement `partition_key(identifier, partition_count)` in `starter/solution.py`. Hash the identifier's UTF-8 bytes with SHA-256.
 
 #### Requirements
 
@@ -8569,6 +8736,7 @@ Use a deterministic byte representation and digest interpretation; the partition
 
 #### Tips
 
+- **Concept to understand:** Distributed storage often assigns records to partitions using a repeatable hash. The same identifier must map to the same partition across processes.
 - Why is Python's built-in hash unsuitable for stable cross-process partitioning?
 
 #### Example Behavior
@@ -8581,7 +8749,7 @@ Assignment: [302-event-dedup](gauntlex/17-architecture/302-event-dedup/README.md
 
 #### Description
 
-An event stream may contain duplicate deliveries. Keep the first occurrence of each event ID and preserve event order.
+Implement `deduplicate_events(events)` in `starter/solution.py`. Return the first event for each distinct ID in original order.
 
 #### Requirements
 
@@ -8598,6 +8766,7 @@ Retain the first dictionary for each ID as a shallow copy. Changing the returned
 
 #### Tips
 
+- **Concept to understand:** An event stream may contain duplicate deliveries. Keep the first occurrence of each event ID and preserve event order.
 - Why should the first occurrence win rather than the last?
 
 #### Example Behavior
@@ -8610,7 +8779,7 @@ Assignment: [303-event-projection](gauntlex/17-architecture/303-event-projection
 
 #### Description
 
-Event-sourced state can be rebuilt by applying recorded changes. Derive each account's current balance from its event deltas.
+Implement `project_balances(events)` in `starter/solution.py`. Accumulate deltas for each account in event order, beginning from zero.
 
 #### Requirements
 
@@ -8627,6 +8796,7 @@ A zero net balance is still a meaningful account result. Events are applied in t
 
 #### Tips
 
+- **Concept to understand:** Event-sourced state can be rebuilt by applying recorded changes. Derive each account's current balance from its event deltas.
 - Why should an account remain present when its total returns to zero?
 
 #### Example Behavior
@@ -8639,7 +8809,7 @@ Assignment: [304-replay-dedup](gauntlex/17-architecture/304-replay-dedup/README.
 
 #### Description
 
-Repeated delivery must not apply the same account event more than once. Rebuild balances while treating each event ID as unique.
+Implement `replay_unique(events)` in `starter/solution.py`. Apply only the first occurrence of each event ID.
 
 #### Requirements
 
@@ -8656,6 +8826,7 @@ Duplicate event IDs are ignored even if later deliveries contain different accou
 
 #### Tips
 
+- **Concept to understand:** Repeated delivery must not apply the same account event more than once. Rebuild balances while treating each event ID as unique.
 - Why must deduplication happen before updating balances?
 
 #### Example Behavior
@@ -8668,7 +8839,7 @@ Assignment: [305-config-diff](gauntlex/17-architecture/305-config-diff/README.md
 
 #### Description
 
-Configuration drift can come from changed values, added settings, or removed settings. Report every key that differs between two snapshots.
+Implement `config_diff(old, new)` in `starter/solution.py`. Return sorted keys whose values differ or whose presence differs.
 
 #### Requirements
 
@@ -8685,6 +8856,7 @@ A missing key is not equivalent to a present key whose value is `None`; report t
 
 #### Tips
 
+- **Concept to understand:** Configuration drift can come from changed values, added settings, or removed settings. Report every key that differs between two snapshots.
 - Why is missing different from explicitly configured `None`?
 
 #### Example Behavior
@@ -8697,7 +8869,7 @@ Assignment: [306-permission-check](gauntlex/17-architecture/306-permission-check
 
 #### Description
 
-Role-based access control grants actions through assigned roles. Determine whether any known role explicitly authorizes a requested permission.
+Implement `has_permission(role_permissions, user_roles, permission)` in `starter/solution.py`. Return `True` if at least one assigned role includes that permission.
 
 #### Requirements
 
@@ -8714,6 +8886,7 @@ Permission checks use direct grants from assigned roles only. Unknown roles gran
 
 #### Tips
 
+- **Concept to understand:** Role-based access control grants actions through assigned roles. Determine whether any known role explicitly authorizes a requested permission.
 - Why must an unknown role never grant permissions by default?
 
 #### Example Behavior
@@ -8726,7 +8899,7 @@ Assignment: [307-permission-inherit](gauntlex/17-architecture/307-permission-inh
 
 #### Description
 
-Roles can inherit permissions from parent roles. Collect all permissions granted directly or transitively through the hierarchy.
+Implement `effective_permissions(role_permissions, parents, assigned)` in `starter/solution.py`. Include permissions of every assigned role and all transitive ancestor roles.
 
 #### Requirements
 
@@ -8743,6 +8916,7 @@ Permissions flow through every ancestor role, not only direct parents. Multiple 
 
 #### Tips
 
+- **Concept to understand:** Roles can inherit permissions from parent roles. Collect all permissions granted directly or transitively through the hierarchy.
 - Why can one role inherit permissions through several levels?
 
 #### Example Behavior
@@ -8755,7 +8929,7 @@ Assignment: [308-audit-record](gauntlex/17-architecture/308-audit-record/README.
 
 #### Description
 
-Audit records should capture who performed an action, what they did, which resource was involved, and when it occurred. Use caller-supplied facts without inventing new ones.
+Implement `audit_record(actor, action, resource, timestamp)` in `starter/solution.py`. Return a dictionary with exactly those four keys and their supplied values.
 
 #### Requirements
 
@@ -8772,6 +8946,7 @@ The record contains exactly the supplied four facts. Do not generate a timestamp
 
 #### Tips
 
+- **Concept to understand:** Audit records should capture who performed an action, what they did, which resource was involved, and when it occurred. Use caller-supplied facts without inventing new ones.
 - Why should the audit function not substitute its own timestamp?
 
 #### Example Behavior
@@ -8784,7 +8959,7 @@ Assignment: [309-error-envelope](gauntlex/17-architecture/309-error-envelope/REA
 
 #### Description
 
-A consistent error response lets callers inspect an error code, message, and optional details without guessing the shape of the result.
+Implement `error_envelope(code, message, details)` in `starter/solution.py`. Return `{'error': {'code': code, 'message': message, 'details': details}}`.
 
 #### Requirements
 
@@ -8801,6 +8976,7 @@ The nested `details` mapping must be a new dictionary, even when the caller supp
 
 #### Tips
 
+- **Concept to understand:** A consistent error response lets callers inspect an error code, message, and optional details without guessing the shape of the result.
 - Why is sharing a mutable details dictionary risky?
 
 #### Example Behavior
@@ -8813,7 +8989,7 @@ Assignment: [310-pagination-token](gauntlex/17-architecture/310-pagination-token
 
 #### Description
 
-Pagination APIs can encode a numeric offset into a URL-safe cursor. The token is a representation, not a security boundary.
+Implement `encode_cursor(offset)` in `starter/solution.py`. Raise `ValueError` for a negative offset.
 
 #### Requirements
 
@@ -8830,12 +9006,15 @@ The cursor is URL-safe Base64 of decimal text with padding removed. It is an enc
 
 #### Tips
 
+- **Concept to understand:** Pagination APIs can encode a numeric offset into a URL-safe cursor. The token is a representation, not a security boundary.
 - Why is URL-safe encoding useful for pagination links?
 - Why should the cursor not be treated as encrypted?
 
 #### Example Behavior
 
 `encode_cursor(0)` → `'MA'`; `encode_cursor(12)` → `'MTI'`.
+
+---
 
 ---
 
@@ -9630,7 +9809,7 @@ Assignment: [335-wsgi-health](gauntlex/20-wsgi-web/335-wsgi-health/README.md)
 
 #### Description
 
-WSGI applications receive request metadata and a callback for response headers. Create a health response that works regardless of the requested path.
+Implement `application(environ, start_response)` in `starter/solution.py`. Call `start_response` exactly once with HTTP 200 and `Content-Type: application/json`.
 
 #### Requirements
 
@@ -9646,6 +9825,7 @@ A WSGI application reports status and headers through `start_response`, then ret
 
 #### Tips
 
+- **Concept to understand:** WSGI applications receive request metadata and a callback for response headers. Create a health response that works regardless of the requested path.
 - Why must the response body contain bytes rather than a Python string?
 
 #### Example Behavior
@@ -9658,7 +9838,7 @@ Assignment: [336-wsgi-routing](gauntlex/20-wsgi-web/336-wsgi-routing/README.md)
 
 #### Description
 
-A web service chooses responses using the request path. Distinguish a known health route from all other locations.
+Implement `application(environ, start_response)` in `starter/solution.py`. Read `PATH_INFO` from the WSGI environment.
 
 #### Requirements
 
@@ -9675,6 +9855,7 @@ Choose status and body from `PATH_INFO` before starting the response. Keep the h
 
 #### Tips
 
+- **Concept to understand:** A web service chooses responses using the request path. Distinguish a known health route from all other locations.
 - Why should an unknown route not share the health route's success status?
 
 #### Example Behavior
@@ -9687,7 +9868,7 @@ Assignment: [337-wsgi-method](gauntlex/20-wsgi-web/337-wsgi-method/README.md)
 
 #### Description
 
-The same URL can support one HTTP method while rejecting another. Distinguish a missing route from a disallowed method.
+Implement `application(environ, start_response)` in `starter/solution.py`. Return HTTP 405 with body `method not allowed` for other methods at `/resource`.
 
 #### Requirements
 
@@ -9704,6 +9885,7 @@ Check route existence and request method separately: a known resource with an un
 
 #### Tips
 
+- **Concept to understand:** The same URL can support one HTTP method while rejecting another. Distinguish a missing route from a disallowed method.
 - What information does 405 convey that 404 does not?
 
 #### Example Behavior
@@ -9716,7 +9898,7 @@ Assignment: [338-wsgi-query](gauntlex/20-wsgi-web/338-wsgi-query/README.md)
 
 #### Description
 
-Query parameters are encoded separately from the URL path. Decode the first `message` value on an echo route.
+Implement `application(environ, start_response)` in `starter/solution.py`. Decode percent escapes and plus-as-space form encoding.
 
 #### Requirements
 
@@ -9734,6 +9916,7 @@ Parse `QUERY_STRING` independently of `PATH_INFO`, preserving the first value fo
 
 #### Tips
 
+- **Concept to understand:** Query parameters are encoded separately from the URL path. Decode the first `message` value on an echo route.
 - Why is splitting a raw query string on every equals sign unreliable?
 
 #### Example Behavior
@@ -9746,7 +9929,7 @@ Assignment: [339-wsgi-json](gauntlex/20-wsgi-web/339-wsgi-json/README.md)
 
 #### Description
 
-A JSON API must serialize Python data into valid compact JSON and label its response correctly.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/data`, return HTTP 200 and `Content-Type: application/json`.
 
 #### Requirements
 
@@ -9764,6 +9947,7 @@ Construct a JSON representation rather than Python's string representation of a 
 
 #### Tips
 
+- **Concept to understand:** A JSON API must serialize Python data into valid compact JSON and label its response correctly.
 - Why is Python's `True` not the same literal as JSON's `true`?
 
 #### Example Behavior
@@ -9776,7 +9960,7 @@ Assignment: [340-wsgi-post-body](gauntlex/20-wsgi-web/340-wsgi-post-body/README.
 
 #### Description
 
-WSGI exposes request bodies as a byte stream. Read only the declared bytes before transforming their decoded text.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/uppercase`, read exactly `CONTENT_LENGTH` bytes from `wsgi.input`.
 
 #### Requirements
 
@@ -9793,6 +9977,7 @@ Respect the declared request-body byte count when reading `wsgi.input`. Decode o
 
 #### Tips
 
+- **Concept to understand:** WSGI exposes request bodies as a byte stream. Read only the declared bytes before transforming their decoded text.
 - What could go wrong if the application reads beyond the advertised length?
 
 #### Example Behavior
@@ -9805,7 +9990,7 @@ Assignment: [341-wsgi-json-post](gauntlex/20-wsgi-web/341-wsgi-json-post/README.
 
 #### Description
 
-A JSON endpoint must validate structure and field types before computing a result. Invalid input should produce a stable client error.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/sum`, accept JSON containing integer `a` and integer `b`.
 
 #### Requirements
 
@@ -9822,6 +10007,7 @@ Validate the JSON document's shape and both field types before calculating a sum
 
 #### Tips
 
+- **Concept to understand:** A JSON endpoint must validate structure and field types before computing a result. Invalid input should produce a stable client error.
 - Why must Boolean values be considered separately when validating Python integers?
 
 #### Example Behavior
@@ -9834,7 +10020,7 @@ Assignment: [342-wsgi-headers](gauntlex/20-wsgi-web/342-wsgi-headers/README.md)
 
 #### Description
 
-WSGI represents HTTP request headers through environment keys. Expose a selected header without assuming it exists.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/agent`, read `HTTP_USER_AGENT` from `environ`.
 
 #### Requirements
 
@@ -9851,6 +10037,7 @@ WSGI request headers appear as environment variables, commonly with an `HTTP_` p
 
 #### Tips
 
+- **Concept to understand:** WSGI represents HTTP request headers through environment keys. Expose a selected header without assuming it exists.
 - How do HTTP header names become WSGI environment keys?
 
 #### Example Behavior
@@ -9863,7 +10050,7 @@ Assignment: [343-wsgi-head](gauntlex/20-wsgi-web/343-wsgi-head/README.md)
 
 #### Description
 
-GET retrieves a resource body, while HEAD requests only response metadata. Support both on one route.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/status`, return HTTP 200 and body `ready`.
 
 #### Requirements
 
@@ -9880,6 +10067,7 @@ Preserve the route's successful status and response metadata for HEAD while omit
 
 #### Tips
 
+- **Concept to understand:** GET retrieves a resource body, while HEAD requests only response metadata. Support both on one route.
 - Why does HEAD omit a body even when the resource exists?
 
 #### Example Behavior
@@ -9892,7 +10080,7 @@ Assignment: [344-wsgi-redirect](gauntlex/20-wsgi-web/344-wsgi-redirect/README.md
 
 #### Description
 
-When a resource moves, a redirect tells clients where to request it next. Preserve distinct behavior for old and new paths.
+Implement `application(environ, start_response)` in `starter/solution.py`. GET `/old` returns HTTP 302 Found with `Location: /new` and an empty body.
 
 #### Requirements
 
@@ -9909,6 +10097,7 @@ A redirect requires both the redirect status and a `Location` header naming the 
 
 #### Tips
 
+- **Concept to understand:** When a resource moves, a redirect tells clients where to request it next. Preserve distinct behavior for old and new paths.
 - Why is a Location header needed in addition to a 302 status?
 
 #### Example Behavior
@@ -9921,7 +10110,7 @@ Assignment: [345-wsgi-cookie](gauntlex/20-wsgi-web/345-wsgi-cookie/README.md)
 
 #### Description
 
-Cookies arrive in a request header containing multiple name-value pairs. Determine whether a meaningful session cookie exists.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/cookie`, inspect `HTTP_COOKIE`.
 
 #### Requirements
 
@@ -9939,6 +10128,7 @@ Parse cookie name-value pairs without mistaking the mere presence of `session` f
 
 #### Tips
 
+- **Concept to understand:** Cookies arrive in a request header containing multiple name-value pairs. Determine whether a meaningful session cookie exists.
 - Why is the presence of a cookie name insufficient when its value is empty?
 
 #### Example Behavior
@@ -9951,7 +10141,7 @@ Assignment: [346-wsgi-auth](gauntlex/20-wsgi-web/346-wsgi-auth/README.md)
 
 #### Description
 
-A private endpoint must verify a bearer credential before releasing its content. Validate the authorization scheme and compare the secret safely.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/private`, require Authorization `Bearer secret-token`.
 
 #### Requirements
 
@@ -9969,6 +10159,7 @@ Validate the authorization scheme separately from the credential and accept case
 
 #### Tips
 
+- **Concept to understand:** A private endpoint must verify a bearer credential before releasing its content. Validate the authorization scheme and compare the secret safely.
 - Why should token comparison avoid leaking information through timing differences?
 
 #### Example Behavior
@@ -9981,7 +10172,7 @@ Assignment: [347-wsgi-cors](gauntlex/20-wsgi-web/347-wsgi-cors/README.md)
 
 #### Description
 
-Cross-origin headers must not trust origins merely because they resemble an approved domain. Allow only one exact origin.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/public`, return HTTP 200 and body `ok`.
 
 #### Requirements
 
@@ -9999,6 +10190,7 @@ Treat the approved origin as an exact string, not a suffix or substring pattern.
 
 #### Tips
 
+- **Concept to understand:** Cross-origin headers must not trust origins merely because they resemble an approved domain. Allow only one exact origin.
 - Why is a suffix or substring match unsafe for origin allowlists?
 
 #### Example Behavior
@@ -10011,7 +10203,7 @@ Assignment: [348-wsgi-conditional](gauntlex/20-wsgi-web/348-wsgi-conditional/REA
 
 #### Description
 
-Entity tags allow a client to ask whether cached content is still current. Return a body only when the tag does not match.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/version`, set `ETag` to the exact value `"v1"`.
 
 #### Requirements
 
@@ -10029,6 +10221,7 @@ Return the same exact quoted ETag in both cache-hit and cache-miss responses. On
 
 #### Tips
 
+- **Concept to understand:** Entity tags allow a client to ask whether cached content is still current. Return a body only when the tag does not match.
 - Why should a 304 response omit the representation body?
 
 #### Example Behavior
@@ -10041,7 +10234,7 @@ Assignment: [349-wsgi-error-handler](gauntlex/20-wsgi-web/349-wsgi-error-handler
 
 #### Description
 
-An internal exception should not expose implementation details to API clients. Provide a predictable failure response while preserving normal behavior.
+Implement `application(environ, start_response)` in `starter/solution.py`. GET `/safe` returns HTTP 200 with body `ok`.
 
 #### Requirements
 
@@ -10059,6 +10252,7 @@ Convert the expected internal failure into a stable HTTP 500 response without ex
 
 #### Tips
 
+- **Concept to understand:** An internal exception should not expose implementation details to API clients. Provide a predictable failure response while preserving normal behavior.
 - Why is a developer-facing exception message unsafe to return directly?
 
 #### Example Behavior
@@ -10071,7 +10265,7 @@ Assignment: [350-wsgi-request-id](gauntlex/20-wsgi-web/350-wsgi-request-id/READM
 
 #### Description
 
-Request identifiers can help correlate logs, but arbitrary client-supplied header values should not be reflected without validation.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/request`, return HTTP 200 with body `ok`.
 
 #### Requirements
 
@@ -10088,6 +10282,7 @@ Validate both ASCII-only alphanumeric characters and the maximum length before r
 
 #### Tips
 
+- **Concept to understand:** Request identifiers can help correlate logs, but arbitrary client-supplied header values should not be reflected without validation.
 - Why must length and character restrictions be checked before reflecting a header?
 
 #### Example Behavior
@@ -10100,7 +10295,7 @@ Assignment: [351-wsgi-content-length](gauntlex/20-wsgi-web/351-wsgi-content-leng
 
 #### Description
 
-HTTP Content-Length measures bytes rather than Unicode characters. Build a response containing a non-ASCII character and report its encoded size.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/payload`, return UTF-8 bytes for `café` with HTTP 200.
 
 #### Requirements
 
@@ -10117,6 +10312,7 @@ Encode the response body to UTF-8 before measuring its size. `Content-Length` de
 
 #### Tips
 
+- **Concept to understand:** HTTP Content-Length measures bytes rather than Unicode characters. Build a response containing a non-ASCII character and report its encoded size.
 - Why is the length of a Unicode string not always its UTF-8 byte length?
 
 #### Example Behavior
@@ -10129,7 +10325,7 @@ Assignment: [352-wsgi-form](gauntlex/20-wsgi-web/352-wsgi-form/README.md)
 
 #### Description
 
-HTML forms commonly submit URL-encoded data in a POST body. Decode it and extract the first matching field.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/form`, read the `application/x-www-form-urlencoded` body.
 
 #### Requirements
 
@@ -10146,6 +10342,7 @@ Read and decode the URL-encoded POST body using form semantics, including plus-a
 
 #### Tips
 
+- **Concept to understand:** HTML forms commonly submit URL-encoded data in a POST body. Decode it and extract the first matching field.
 - Why should repeated form fields use the first value for this contract?
 
 #### Example Behavior
@@ -10158,7 +10355,7 @@ Assignment: [353-wsgi-not-found-json](gauntlex/20-wsgi-web/353-wsgi-not-found-js
 
 #### Description
 
-Even an error-only service should provide predictable JSON and HTTP metadata. Include the requested path in a structured not-found response.
+Implement `application(environ, start_response)` in `starter/solution.py`. Return HTTP 404 Not Found for every request.
 
 #### Requirements
 
@@ -10175,6 +10372,7 @@ Serialize the error and requested path as a compact JSON object and encode it to
 
 #### Tips
 
+- **Concept to understand:** Even an error-only service should provide predictable JSON and HTTP metadata. Include the requested path in a structured not-found response.
 - Why does a structured error need the same encoding discipline as a successful response?
 
 #### Example Behavior
@@ -10187,7 +10385,7 @@ Assignment: [354-wsgi-middleware](gauntlex/20-wsgi-web/354-wsgi-middleware/READM
 
 #### Description
 
-WSGI middleware surrounds an existing application without replacing its business logic. Add response metadata while forwarding the original body untouched.
+Implement `wrap_app(app)` in `starter/solution.py`. Return a WSGI callable wrapping the supplied `app`.
 
 #### Requirements
 
@@ -10204,11 +10402,14 @@ Wrap `start_response` to append the required header once while preserving the wr
 
 #### Tips
 
+- **Concept to understand:** WSGI middleware surrounds an existing application without replacing its business logic. Add response metadata while forwarding the original body untouched.
 - Why should middleware return the original iterable rather than reading it eagerly?
 
 #### Example Behavior
 
 A wrapped app's original response body remains unchanged, while headers include exactly one `X-Powered-By: Gauntlex`.
+
+---
 
 ---
 
@@ -10220,7 +10421,7 @@ Assignment: [355-min-max-scale](gauntlex/21-data-science/355-min-max-scale/READM
 
 #### Description
 
-Different numeric ranges make features difficult to compare. Rescale observations using the dataset minimum and maximum while preserving their order.
+Implement `min_max_scale(values)` in `starter/solution.py`. Map each value to `(value - minimum) / (maximum - minimum)`.
 
 #### Requirements
 
@@ -10238,6 +10439,7 @@ Calculate the minimum and maximum across the entire supplied sequence before tra
 
 #### Tips
 
+- **Concept to understand:** Different numeric ranges make features difficult to compare. Rescale observations using the dataset minimum and maximum while preserving their order.
 - Why does a constant dataset need special handling?
 
 #### Example Behavior
@@ -10250,7 +10452,7 @@ Assignment: [356-z-score-scale](gauntlex/21-data-science/356-z-score-scale/READM
 
 #### Description
 
-Express each observation relative to the population's center and spread, rather than its original units.
+Implement `z_score_scale(values)` in `starter/solution.py`. Calculate the population mean and population standard deviation (variance divided by `n`).
 
 #### Requirements
 
@@ -10267,6 +10469,7 @@ Use population variance with divisor `n`, not sample variance with `n-1`. If eve
 
 #### Tips
 
+- **Concept to understand:** Express each observation relative to the population's center and spread, rather than its original units.
 - How does population variance differ from sample variance?
 
 #### Example Behavior
@@ -10279,7 +10482,7 @@ Assignment: [357-moving-average](gauntlex/21-data-science/357-moving-average/REA
 
 #### Description
 
-A moving average summarizes adjacent observations and smooths short-term fluctuations without changing their sequence.
+Implement `moving_average(values, k)` in `starter/solution.py`. Return floating-point averages for each consecutive window of exactly `k` observations.
 
 #### Requirements
 
@@ -10297,6 +10500,7 @@ Generate a result only for each complete window of length `k`; preserve observat
 
 #### Tips
 
+- **Concept to understand:** A moving average summarizes adjacent observations and smooths short-term fluctuations without changing their sequence.
 - How does the next window differ from the previous window?
 
 #### Example Behavior
@@ -10309,7 +10513,7 @@ Assignment: [358-exponential-smoothing](gauntlex/21-data-science/358-exponential
 
 #### Description
 
-Exponential smoothing balances a new observation with the previous smoothed estimate, producing a history-aware series.
+Implement `exponential_smoothing(values, alpha)` in `starter/solution.py`. Require smoothing factor `alpha` to satisfy `0 < alpha <= 1`; otherwise raise `ValueError`.
 
 #### Requirements
 
@@ -10327,6 +10531,7 @@ Initialize the smoothed sequence from the first observation, then combine each l
 
 #### Tips
 
+- **Concept to understand:** Exponential smoothing balances a new observation with the previous smoothed estimate, producing a history-aware series.
 - Why must the recurrence use the previous smoothed value rather than the previous raw observation?
 
 #### Example Behavior
@@ -10339,7 +10544,7 @@ Assignment: [359-weighted-mean](gauntlex/21-data-science/359-weighted-mean/READM
 
 #### Description
 
-Some observations contribute more to a summary than others. Compute a mean that respects their supplied nonnegative weights.
+Implement `weighted_mean(values, weights)` in `starter/solution.py`. Require equal-length nonempty value and weight sequences; otherwise raise `ValueError`.
 
 #### Requirements
 
@@ -10356,6 +10561,7 @@ Validate that values and weights align and that the total weight is positive. Ze
 
 #### Tips
 
+- **Concept to understand:** Some observations contribute more to a summary than others. Compute a mean that respects their supplied nonnegative weights.
 - What happens if every weight is zero?
 
 #### Example Behavior
@@ -10368,7 +10574,7 @@ Assignment: [360-covariance](gauntlex/21-data-science/360-covariance/README.md)
 
 #### Description
 
-Covariance describes whether two series tend to rise and fall together relative to their own means.
+Implement `population_covariance(xs, ys)` in `starter/solution.py`. Require equal-length, nonempty numeric sequences.
 
 #### Requirements
 
@@ -10386,6 +10592,7 @@ Pair observations by index, measure both deviations from their respective means,
 
 #### Tips
 
+- **Concept to understand:** Covariance describes whether two series tend to rise and fall together relative to their own means.
 - Why is the population divisor `n` instead of `n-1`?
 
 #### Example Behavior
@@ -10398,7 +10605,7 @@ Assignment: [361-quantile-linear](gauntlex/21-data-science/361-quantile-linear/R
 
 #### Description
 
-Quantiles locate positions in sorted observations, including positions that fall between two neighboring values.
+Implement `quantile(values, q)` in `starter/solution.py`. Require nonempty values and `q` between 0 and 1 inclusive.
 
 #### Requirements
 
@@ -10416,6 +10623,7 @@ Sort a copy of the data before locating the fractional index `(n - 1) * q`. When
 
 #### Tips
 
+- **Concept to understand:** Quantiles locate positions in sorted observations, including positions that fall between two neighboring values.
 - How does an interpolated quantile differ from selecting the nearest observation?
 
 #### Example Behavior
@@ -10428,7 +10636,7 @@ Assignment: [362-confusion-matrix](gauntlex/21-data-science/362-confusion-matrix
 
 #### Description
 
-Binary classifiers can be evaluated by counting correct and incorrect predictions for positive and negative cases.
+Implement `confusion_matrix(actual, predicted)` in `starter/solution.py`. Require actual and predicted Boolean sequences of equal length.
 
 #### Requirements
 
@@ -10446,6 +10654,7 @@ Assign each actual/predicted Boolean pair to exactly one of the four outcome cat
 
 #### Tips
 
+- **Concept to understand:** Binary classifiers can be evaluated by counting correct and incorrect predictions for positive and negative cases.
 - What distinguishes a false positive from a false negative?
 
 #### Example Behavior
@@ -10458,7 +10667,7 @@ Assignment: [363-classification-metrics](gauntlex/21-data-science/363-classifica
 
 #### Description
 
-Different evaluation metrics capture different kinds of classification performance. Derive four measures from outcome counts.
+Implement `classification_metrics(tp, tn, fp, fn)` in `starter/solution.py`. Return a dictionary containing floating-point `precision`, `recall`, `accuracy`, and `f1`.
 
 #### Requirements
 
@@ -10475,6 +10684,7 @@ Derive each measure from the relevant counts rather than assuming all metrics sh
 
 #### Tips
 
+- **Concept to understand:** Different evaluation metrics capture different kinds of classification performance. Derive four measures from outcome counts.
 - Why can precision and recall disagree for the same classifier?
 
 #### Example Behavior
@@ -10487,7 +10697,7 @@ Assignment: [364-mean-absolute-error](gauntlex/21-data-science/364-mean-absolute
 
 #### Description
 
-Prediction errors above and below the target should not cancel. Measure the average magnitude of deviations.
+Implement `mean_absolute_error(actual, predicted)` in `starter/solution.py`. Require equal-length, nonempty actual and predicted sequences.
 
 #### Requirements
 
@@ -10505,6 +10715,7 @@ Take the absolute magnitude of each paired residual before averaging, so overpre
 
 #### Tips
 
+- **Concept to understand:** Prediction errors above and below the target should not cancel. Measure the average magnitude of deviations.
 - Why is taking absolute values necessary before averaging?
 
 #### Example Behavior
@@ -10517,7 +10728,7 @@ Assignment: [365-root-mean-square-error](gauntlex/21-data-science/365-root-mean-
 
 #### Description
 
-Squaring prediction errors makes larger deviations contribute more strongly to the overall error score.
+Implement `root_mean_square_error(actual, predicted)` in `starter/solution.py`. Require nonempty actual and predicted numeric sequences of equal length.
 
 #### Requirements
 
@@ -10534,6 +10745,7 @@ Square each paired prediction residual before averaging and taking the square ro
 
 #### Tips
 
+- **Concept to understand:** Squaring prediction errors makes larger deviations contribute more strongly to the overall error score.
 - Why does squaring make large errors more influential?
 
 #### Example Behavior
@@ -10546,7 +10758,7 @@ Assignment: [366-r-squared](gauntlex/21-data-science/366-r-squared/README.md)
 
 #### Description
 
-The coefficient of determination compares prediction residuals against the natural variation in the observed targets.
+Implement `r_squared(actual, predicted)` in `starter/solution.py`. Require equal-length, nonempty actual and predicted sequences.
 
 #### Requirements
 
@@ -10564,6 +10776,7 @@ Compare residual error against variation around the actual mean. A constant targ
 
 #### Tips
 
+- **Concept to understand:** The coefficient of determination compares prediction residuals against the natural variation in the observed targets.
 - Why does a constant target sequence require a special rule?
 
 #### Example Behavior
@@ -10576,7 +10789,7 @@ Assignment: [367-euclidean-distance](gauntlex/21-data-science/367-euclidean-dist
 
 #### Description
 
-Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
+Implement `euclidean_distance(a, b)` in `starter/solution.py`. Require vectors of equal length, or raise `ValueError`.
 
 #### Requirements
 
@@ -10593,6 +10806,7 @@ Match coordinates by position and require equal dimensionality. The square root 
 
 #### Tips
 
+- **Concept to understand:** Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
 - Why can vectors of different dimensions not be compared directly?
 
 #### Example Behavior
@@ -10605,7 +10819,7 @@ Assignment: [368-cosine-similarity](gauntlex/21-data-science/368-cosine-similari
 
 #### Description
 
-Cosine similarity compares vector orientation rather than raw distance, making direction the focus of the measure.
+Implement `cosine_similarity(a, b)` in `starter/solution.py`. Require equal-length vectors, or raise `ValueError`.
 
 #### Requirements
 
@@ -10622,6 +10836,7 @@ Calculate directional similarity from a dot product and the two vector magnitude
 
 #### Tips
 
+- **Concept to understand:** Cosine similarity compares vector orientation rather than raw distance, making direction the focus of the measure.
 - Why is a zero vector a special case for directional similarity?
 
 #### Example Behavior
@@ -10634,7 +10849,7 @@ Assignment: [369-manhattan-distance](gauntlex/21-data-science/369-manhattan-dist
 
 #### Description
 
-Some distances are measured by adding coordinate-wise travel rather than following a straight line.
+Implement `manhattan_distance(a, b)` in `starter/solution.py`. Require equal-length numeric vectors; raise `ValueError` on mismatch.
 
 #### Requirements
 
@@ -10651,6 +10866,7 @@ Add absolute coordinate differences rather than squaring them. The result repres
 
 #### Tips
 
+- **Concept to understand:** Some distances are measured by adding coordinate-wise travel rather than following a straight line.
 - How does this distance differ from Euclidean distance on a two-dimensional grid?
 
 #### Example Behavior
@@ -10663,7 +10879,7 @@ Assignment: [370-k-nearest-neighbors](gauntlex/21-data-science/370-k-nearest-nei
 
 #### Description
 
-Nearest-neighbor search ranks examples by their distance from a query, with deterministic tie-breaking.
+Implement `nearest_indices(vectors, query, k)` in `starter/solution.py`. Compare each vector using squared Euclidean distance to the query.
 
 #### Requirements
 
@@ -10681,6 +10897,7 @@ Rank each candidate by squared Euclidean distance, using its original index as a
 
 #### Tips
 
+- **Concept to understand:** Nearest-neighbor search ranks examples by their distance from a query, with deterministic tie-breaking.
 - Why is the square root unnecessary when ranking distances?
 
 #### Example Behavior
@@ -10693,7 +10910,7 @@ Assignment: [371-train-test-split](gauntlex/21-data-science/371-train-test-split
 
 #### Description
 
-Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
+Implement `train_test_split(items, test_fraction)` in `starter/solution.py`. Require `test_fraction` between `0` and `1` inclusive; otherwise raise `ValueError`.
 
 #### Requirements
 
@@ -10711,6 +10928,7 @@ Compute the held-out count using the specified floor rule and select that many i
 
 #### Tips
 
+- **Concept to understand:** Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
 - Why does choosing the final observations matter for reproducibility?
 
 #### Example Behavior
@@ -10723,7 +10941,7 @@ Assignment: [372-minibatches](gauntlex/21-data-science/372-minibatches/README.md
 
 #### Description
 
-Large datasets are often processed in smaller consecutive groups. Preserve all observations, including a final incomplete group.
+Implement `mini_batches(items, batch_size)` in `starter/solution.py`. Require positive integer `batch_size`; raise `ValueError` otherwise.
 
 #### Requirements
 
@@ -10741,6 +10959,7 @@ Partition consecutive observations without overlap or omission. Keep the last sm
 
 #### Tips
 
+- **Concept to understand:** Large datasets are often processed in smaller consecutive groups. Preserve all observations, including a final incomplete group.
 - Why should a partially filled final batch not be discarded?
 
 #### Example Behavior
@@ -10753,7 +10972,7 @@ Assignment: [373-one-hot-encode](gauntlex/21-data-science/373-one-hot-encode/REA
 
 #### Description
 
-Categorical labels can be represented as binary vectors with one active position. The supplied class order defines that position.
+Implement `one_hot_encode(labels, classes)` in `starter/solution.py`. Return one row per label, with `1` at its class position and `0` elsewhere.
 
 #### Requirements
 
@@ -10770,6 +10989,7 @@ Use the supplied class sequence as the fixed coordinate order. Reject duplicate 
 
 #### Tips
 
+- **Concept to understand:** Categorical labels can be represented as binary vectors with one active position. The supplied class order defines that position.
 - Why must the class order be fixed before encoding?
 
 #### Example Behavior
@@ -10782,7 +11002,7 @@ Assignment: [374-standardize-columns](gauntlex/21-data-science/374-standardize-c
 
 #### Description
 
-Different features can have different scales. Standardize each matrix column independently using population statistics.
+Implement `standardize_columns(matrix)` in `starter/solution.py`. Compute each column's population mean and standard deviation.
 
 #### Requirements
 
@@ -10800,11 +11020,14 @@ Compute population statistics separately for each feature column, not across the
 
 #### Tips
 
+- **Concept to understand:** Different features can have different scales. Standardize each matrix column independently using population statistics.
 - Why would computing one mean for the entire matrix distort individual features?
 
 #### Example Behavior
 
 `standardize_columns([[1, 10], [3, 10]])` → `[[-1.0, 0.0], [1.0, 0.0]]`.
+
+---
 
 ---
 
@@ -11121,7 +11344,7 @@ Assignment: [385-caesar-cipher](gauntlex/23-security-crypto/385-caesar-cipher/RE
 
 #### Description
 
-Implement a classical substitution cipher for ASCII letters while preserving all other text.
+Implement `caesar_cipher(text, shift)` in `starter/solution.py`. Shift ASCII letters by integer shift, wrapping within A-Z and a-z; leave other characters unchanged. Negative shifts are allowed.
 
 #### Requirements
 
@@ -11148,7 +11371,7 @@ Assignment: [386-rot13](gauntlex/23-security-crypto/386-rot13/README.md)
 
 #### Description
 
-Apply a fixed alphabet rotation that reverses itself when applied twice.
+Implement `rot13(text)` in `starter/solution.py`. Apply ROT13 to ASCII letters only, preserving case and all other characters. Applying it twice restores the input.
 
 #### Requirements
 
@@ -11163,6 +11386,7 @@ Apply a fixed rotation of 13 positions to ASCII letters while preserving their c
 
 #### Tips
 
+- **Concept to understand:** Apply a fixed alphabet rotation that reverses itself when applied twice.
 Check that capitalization and punctuation survive unchanged.
 
 #### Example Behavior
@@ -11175,7 +11399,7 @@ Assignment: [387-hex-encode](gauntlex/23-security-crypto/387-hex-encode/README.m
 
 #### Description
 
-Encode UTF-8 text into a lowercase hexadecimal representation of its bytes.
+Implement `hex_encode(text)` in `starter/solution.py`. Return lowercase hexadecimal representation of UTF-8 bytes of the input string, without spaces or prefix.
 
 #### Requirements
 
@@ -11190,6 +11414,7 @@ Encode the input as UTF-8 bytes before converting each byte to hexadecimal. Unic
 
 #### Tips
 
+- **Concept to understand:** Encode UTF-8 text into a lowercase hexadecimal representation of its bytes.
 Unicode characters can occupy several bytes before hexadecimal encoding.
 
 #### Example Behavior
@@ -11202,7 +11427,7 @@ Assignment: [388-hex-decode](gauntlex/23-security-crypto/388-hex-decode/README.m
 
 #### Description
 
-Decode hexadecimal bytes into UTF-8 text with clear failures for invalid input.
+Implement `hex_decode(hex_text)` in `starter/solution.py`. Decode a hexadecimal string to UTF-8 text. Raise ValueError for odd-length or invalid hex, and UnicodeDecodeError for invalid UTF-8 bytes.
 
 #### Requirements
 
@@ -11217,6 +11442,7 @@ Validate hexadecimal syntax and decode bytes as UTF-8, distinguishing invalid he
 
 #### Tips
 
+- **Concept to understand:** Decode hexadecimal bytes into UTF-8 text with clear failures for invalid input.
 Invalid hexadecimal syntax and invalid UTF-8 are different error conditions.
 
 #### Example Behavior
@@ -11229,7 +11455,7 @@ Assignment: [389-base64-encode](gauntlex/23-security-crypto/389-base64-encode/RE
 
 #### Description
 
-Represent UTF-8 text as standard Base64, including required padding.
+Implement `base64_encode(text)` in `starter/solution.py`. Return standard Base64 encoding of the UTF-8 bytes of text, including padding.
 
 #### Requirements
 
@@ -11244,6 +11470,7 @@ Encode UTF-8 bytes using standard Base64, retaining any required `=` padding. Ba
 
 #### Tips
 
+- **Concept to understand:** Represent UTF-8 text as standard Base64, including required padding.
 Base64 encodes bytes and does not provide confidentiality.
 
 #### Example Behavior
@@ -11256,7 +11483,7 @@ Assignment: [390-base64-decode](gauntlex/23-security-crypto/390-base64-decode/RE
 
 #### Description
 
-Decode strictly validated Base64 text back into Unicode.
+Implement `base64_decode(encoded)` in `starter/solution.py`. Decode standard Base64 text to UTF-8. Reject invalid Base64 characters or padding with ValueError. Propagate UnicodeDecodeError for invalid UTF-8.
 
 #### Requirements
 
@@ -11271,6 +11498,7 @@ Reject malformed Base64 characters and padding instead of permissively discardin
 
 #### Tips
 
+- **Concept to understand:** Decode strictly validated Base64 text back into Unicode.
 Malformed padding and invalid decoded UTF-8 must not be silently accepted.
 
 #### Example Behavior
@@ -11283,7 +11511,7 @@ Assignment: [391-hmac-sign](gauntlex/23-security-crypto/391-hmac-sign/README.md)
 
 #### Description
 
-Create a keyed SHA-256 message authentication code using a shared secret.
+Implement `hmac_sign(secret, message)` in `starter/solution.py`. Return lowercase HMAC-SHA256 hex digest for UTF-8 message using UTF-8 secret key.
 
 #### Requirements
 
@@ -11310,7 +11538,7 @@ Assignment: [392-hmac-verify](gauntlex/23-security-crypto/392-hmac-verify/README
 
 #### Description
 
-Verify a message authentication code without leaking the first mismatching position.
+Implement `hmac_verify(secret, message, signature)` in `starter/solution.py`. Return True only if lowercase or uppercase hexadecimal signature equals the HMAC-SHA256 signature of UTF-8 message with UTF-8 secret. Reject malformed signatures by returning False. Use constant-time comparison.
 
 #### Requirements
 
@@ -11325,6 +11553,7 @@ Validate the supplied hexadecimal signature before comparison, accept upper- or 
 
 #### Tips
 
+- **Concept to understand:** Verify a message authentication code without leaking the first mismatching position.
 Reject malformed signatures before using a timing-resistant comparison.
 
 #### Example Behavior
@@ -11337,7 +11566,7 @@ Assignment: [393-pbkdf2-key](gauntlex/23-security-crypto/393-pbkdf2-key/README.m
 
 #### Description
 
-Derive fixed-length key material from a password, salt, and iteration count.
+Implement `derive_key(password, salt, iterations)` in `starter/solution.py`. Return lowercase hex of a 32-byte PBKDF2-HMAC-SHA256 derived key for UTF-8 password and salt with positive integer iterations. Raise ValueError for nonpositive iterations.
 
 #### Requirements
 
@@ -11352,6 +11581,7 @@ Use PBKDF2-HMAC-SHA256 from the standard library with the requested positive ite
 
 #### Tips
 
+- **Concept to understand:** Derive fixed-length key material from a password, salt, and iteration count.
 A key-derivation function deliberately repeats work; iterations must be positive.
 
 #### Example Behavior
@@ -11364,7 +11594,7 @@ Assignment: [394-random-token](gauntlex/23-security-crypto/394-random-token/READ
 
 #### Description
 
-Generate a URL-safe token from cryptographically secure random bytes.
+Implement `random_token(n)` in `starter/solution.py`. Return a URL-safe Base64 token representing exactly n cryptographically random bytes, without trailing padding. Require integer `n >= 1`; raise `ValueError` otherwise. Tests check format and decoded length, not a fixed random output.
 
 #### Requirements
 
@@ -11379,6 +11609,7 @@ Generate exactly the requested number of cryptographically secure random bytes b
 
 #### Tips
 
+- **Concept to understand:** Generate a URL-safe token from cryptographically secure random bytes.
 A security token needs a secure randomness source, not a predictable pseudo-random sequence.
 
 #### Example Behavior
@@ -11391,7 +11622,7 @@ Assignment: [395-password-strength](gauntlex/23-security-crypto/395-password-str
 
 #### Description
 
-Score a password against four explicit character and length criteria.
+Implement `password_strength(password)` in `starter/solution.py`. Return a score 0–4, adding one point each for length>=12, at least one ASCII lowercase, at least one ASCII uppercase, and at least one ASCII digit. No entropy claims.
 
 #### Requirements
 
@@ -11406,6 +11637,7 @@ Score only the four stated rules: minimum length, ASCII lowercase, ASCII upperca
 
 #### Tips
 
+- **Concept to understand:** Score a password against four explicit character and length criteria.
 This simple score is not an estimate of actual password entropy or a security guarantee.
 
 #### Example Behavior
@@ -11418,7 +11650,7 @@ Assignment: [396-mask-secret](gauntlex/23-security-crypto/396-mask-secret/README
 
 #### Description
 
-Hide a secret's leading characters while allowing a specified number of trailing characters to remain visible.
+Implement `mask_secret(secret, visible_count)` in `starter/solution.py`. Return the last visible_count characters of secret prefixed with asterisks for hidden characters. If visible_count is zero, mask all characters. Require integer `visible_count >= 0`; raise `ValueError` otherwise.
 
 #### Requirements
 
@@ -11433,6 +11665,7 @@ Preserve only the requested trailing characters and replace each hidden characte
 
 #### Tips
 
+- **Concept to understand:** Hide a secret's leading characters while allowing a specified number of trailing characters to remain visible.
 The visible count can be zero or larger than the secret length.
 
 #### Example Behavior
@@ -11445,7 +11678,7 @@ Assignment: [397-validate-ipv4](gauntlex/23-security-crypto/397-validate-ipv4/RE
 
 #### Description
 
-Check whether text is a correctly formed dotted-decimal IPv4 address.
+Implement `valid_ipv4(text)` in `starter/solution.py`. Return True only for a canonical dotted-decimal IPv4 address with exactly four components, each decimal 0–255 and no leading zeros unless the component is 0. Reject whitespace and signs.
 
 #### Requirements
 
@@ -11460,6 +11693,7 @@ Validate exactly four ASCII decimal components in canonical dotted notation. Rej
 
 #### Tips
 
+- **Concept to understand:** Check whether text is a correctly formed dotted-decimal IPv4 address.
 Leading zeros, signs, and whitespace can make an address noncanonical.
 
 #### Example Behavior
@@ -11472,7 +11706,7 @@ Assignment: [398-cidr-network](gauntlex/23-security-crypto/398-cidr-network/READ
 
 #### Description
 
-Turn an IPv4 CIDR expression into its canonical network address and prefix.
+Implement `cidr_network(text)` in `starter/solution.py`. Given an IPv4 CIDR string, return the canonical network address with prefix as `A.B.C.D/N`. Accept host bits in input. Raise ValueError on invalid addresses or prefix lengths.
 
 #### Requirements
 
@@ -11487,6 +11721,7 @@ Parse the IPv4 address and prefix with standard-library networking utilities, ac
 
 #### Tips
 
+- **Concept to understand:** Turn an IPv4 CIDR expression into its canonical network address and prefix.
 Host bits may be present in the input, but the result represents the network.
 
 #### Example Behavior
@@ -11499,7 +11734,7 @@ Assignment: [399-cidr-contains](gauntlex/23-security-crypto/399-cidr-contains/RE
 
 #### Description
 
-Determine whether an IPv4 address belongs to a specified CIDR network.
+Implement `cidr_contains(network, address)` in `starter/solution.py`. Return True if IPv4 address belongs to IPv4 CIDR network, otherwise False. Raise ValueError on malformed inputs.
 
 #### Requirements
 
@@ -11514,6 +11749,7 @@ Determine membership from the full IPv4 network prefix rather than textual addre
 
 #### Tips
 
+- **Concept to understand:** Determine whether an IPv4 address belongs to a specified CIDR network.
 Network membership depends on the prefix length, not just matching leading text.
 
 #### Example Behavior
@@ -11526,7 +11762,7 @@ Assignment: [400-safe-url-host](gauntlex/23-security-crypto/400-safe-url-host/RE
 
 #### Description
 
-Extract a valid HTTP or HTTPS hostname while rejecting malformed authorities and unsafe URL syntax.
+Implement `safe_url_host(url)` in `starter/solution.py`. Return lowercase hostname from an absolute HTTP or HTTPS URL, without port. Raise ValueError for missing hostname, non-HTTP schemes, username/password components, or control characters in the URL. This is syntax validation, not SSRF protection.
 
 #### Requirements
 
@@ -11541,6 +11777,7 @@ Validate URL scheme, authority, credentials, and control characters before retur
 
 #### Tips
 
+- **Concept to understand:** Extract a valid HTTP or HTTPS hostname while rejecting malformed authorities and unsafe URL syntax.
 Syntax validation alone does not make a URL safe to fetch; SSRF defenses require additional checks.
 
 #### Example Behavior
@@ -11553,7 +11790,7 @@ Assignment: [401-redact-headers](gauntlex/23-security-crypto/401-redact-headers/
 
 #### Description
 
-Create a copy of HTTP headers with credential-bearing values redacted.
+Implement `redact_headers(headers)` in `starter/solution.py`. Given a mapping of HTTP header names to strings, return a new mapping with values replaced by `[REDACTED]` for Authorization, Cookie, Set-Cookie and X-API-Key, case-insensitively. Preserve original key casing and other values.
 
 #### Requirements
 
@@ -11580,7 +11817,7 @@ Assignment: [402-query-param-filter](gauntlex/23-security-crypto/402-query-param
 
 #### Description
 
-Keep only permitted URL query parameters while preserving their original order and repeated keys.
+Implement `filter_query_params(query, allowed)` in `starter/solution.py`. Given a URL query string and an iterable of allowed parameter names, return a compact URL query string containing only allowed parameters in original order, preserving repeated keys. Decode and re-encode form URL encoding. Empty result is empty string.
 
 #### Requirements
 
@@ -11595,6 +11832,7 @@ Treat query parameters as an ordered sequence of key-value pairs so repeated nam
 
 #### Tips
 
+- **Concept to understand:** Keep only permitted URL query parameters while preserving their original order and repeated keys.
 A mapping may discard repeated query keys; the input is an ordered sequence of pairs.
 
 #### Example Behavior
@@ -11607,7 +11845,7 @@ Assignment: [403-security-event-counts](gauntlex/23-security-crypto/403-security
 
 #### Description
 
-Group security events by severity and type without assuming a fixed list of categories.
+Implement `security_event_counts(events)` in `starter/solution.py`. Given a list of event dictionaries containing `type` and `severity` strings, return counts grouped by severity: mapping severity to mapping type to integer count. Preserve all categories, including unknown strings.
 
 #### Requirements
 
@@ -11622,6 +11860,7 @@ Count every severity/type combination without relying on a fixed vocabulary. Unk
 
 #### Tips
 
+- **Concept to understand:** Group security events by severity and type without assuming a fixed list of categories.
 Unknown categories are still valid data and should be counted.
 
 #### Example Behavior
@@ -11634,7 +11873,7 @@ Assignment: [404-constant-time-match](gauntlex/23-security-crypto/404-constant-t
 
 #### Description
 
-Compare two UTF-8 strings using a standard-library primitive suitable for sensitive comparisons.
+Implement `constant_time_match(a, b)` in `starter/solution.py`. Given two UTF-8 strings, return whether they are equal using a constant-time comparison primitive from the standard library. Do not implement a manual early-exit loop.
 
 #### Requirements
 
@@ -11649,11 +11888,14 @@ Compare UTF-8 encoded strings with a standard-library timing-resistant equality 
 
 #### Tips
 
+- **Concept to understand:** Compare two UTF-8 strings using a standard-library primitive suitable for sensitive comparisons.
 A manual early-exit comparison can reveal information through timing differences.
 
 #### Example Behavior
 
 `constant_time_match('café', 'café')` → `True`; `constant_time_match('abc', 'abd')` → `False`.
+
+---
 
 ---
 
