@@ -9227,7 +9227,7 @@ Assignment: [315-safe-relative-path](gauntlex/19-file-automation/315-safe-relati
 
 #### Description
 
-Paths supplied by users must not escape an intended working directory. Normalize harmless separators while rejecting traversal and absolute locations.
+Implement `safe_relative_path(text)` in `starter/solution.py`. Reject empty paths, absolute paths, any `..` component, and any backslash with `ValueError`.
 
 #### Requirements
 
@@ -9243,6 +9243,7 @@ Validate path components before simplifying them: normalizing away `..` first wo
 
 #### Tips
 
+- **Concept to understand:** Paths supplied by users must not escape an intended working directory. Normalize harmless separators while rejecting traversal and absolute locations.
 - Why must traversal be checked before normalization?
 
 #### Example Behavior
@@ -9255,7 +9256,7 @@ Assignment: [316-file-extension](gauntlex/19-file-automation/316-file-extension/
 
 #### Description
 
-A file's final suffix can identify its type, but hidden files beginning with a dot need careful treatment.
+Implement `file_extension(filename)` in `starter/solution.py`. Return the lowercase final extension, including its leading dot.
 
 #### Requirements
 
@@ -9271,6 +9272,7 @@ Distinguish the leading dot used to hide a file from the separator introducing i
 
 #### Tips
 
+- **Concept to understand:** A file's final suffix can identify its type, but hidden files beginning with a dot need careful treatment.
 - How does `.env` differ from `.env.local`?
 
 #### Example Behavior
@@ -9283,7 +9285,7 @@ Assignment: [317-line-ending-normalize](gauntlex/19-file-automation/317-line-end
 
 #### Description
 
-Text copied between operating systems may contain CRLF, CR, or LF line endings. Standardize line boundaries without modifying other content.
+Implement `normalize_line_endings(text)` in `starter/solution.py`. Replace every CRLF and standalone CR line ending with LF.
 
 #### Requirements
 
@@ -9299,6 +9301,7 @@ Treat CRLF as one boundary before processing lone CR characters; otherwise a sin
 
 #### Tips
 
+- **Concept to understand:** Text copied between operating systems may contain CRLF, CR, or LF line endings. Standardize line boundaries without modifying other content.
 - Why does handling two-character line endings require care?
 
 #### Example Behavior
@@ -9311,7 +9314,7 @@ Assignment: [318-parse-ini-section](gauntlex/19-file-automation/318-parse-ini-se
 
 #### Description
 
-Configuration files group assignments under named sections. Read only one section while respecting whitespace and comments.
+Implement `parse_ini_section(text, section)` in `starter/solution.py`. Recognize section headers `[name]` and assignments `key=value` in well-formed text.
 
 #### Requirements
 
@@ -9328,6 +9331,7 @@ Track the active section as lines are read, and apply assignments only while the
 
 #### Tips
 
+- **Concept to understand:** Configuration files group assignments under named sections. Read only one section while respecting whitespace and comments.
 - How can the current section be tracked while reading line by line?
 
 #### Example Behavior
@@ -9340,7 +9344,7 @@ Assignment: [319-json-path-get](gauntlex/19-file-automation/319-json-path-get/RE
 
 #### Description
 
-Structured data often contains nested mappings. Navigate a dot-separated key path without assuming list indices are supported.
+Implement `json_path_get(data, path)` in `starter/solution.py`. An empty path returns the original object.
 
 #### Requirements
 
@@ -9357,6 +9361,7 @@ At each path component, verify that the current value is a dictionary before att
 
 #### Tips
 
+- **Concept to understand:** Structured data often contains nested mappings. Navigate a dot-separated key path without assuming list indices are supported.
 - Why should a missing intermediate key stop traversal?
 
 #### Example Behavior
@@ -9369,7 +9374,7 @@ Assignment: [320-flatten-json](gauntlex/19-file-automation/320-flatten-json/READ
 
 #### Description
 
-Nested dictionaries can be represented by dotted paths to their leaf values. Flatten the structure without treating lists as subtrees.
+Implement `flatten_json(data)` in `starter/solution.py`. Return a dictionary mapping dotted key paths to leaf values.
 
 #### Requirements
 
@@ -9386,6 +9391,7 @@ Differentiate an empty mapping from a nonempty mapping: an empty dictionary is a
 
 #### Tips
 
+- **Concept to understand:** Nested dictionaries can be represented by dotted paths to their leaf values. Flatten the structure without treating lists as subtrees.
 - Why should an empty dictionary remain visible in the flattened result?
 
 #### Example Behavior
@@ -9398,7 +9404,7 @@ Assignment: [321-unflatten-json](gauntlex/19-file-automation/321-unflatten-json/
 
 #### Description
 
-Reverse a flat mapping of dotted paths into nested dictionaries, creating intermediate containers only where needed.
+Implement `unflatten_json(data)` in `starter/solution.py`. Construct nested dictionaries for intermediate path components.
 
 #### Requirements
 
@@ -9415,6 +9421,7 @@ Build intermediate dictionaries only for nonfinal path components, then place th
 
 #### Tips
 
+- **Concept to understand:** Reverse a flat mapping of dotted paths into nested dictionaries, creating intermediate containers only where needed.
 - What intermediate structure is needed for a key with three components?
 
 #### Example Behavior
@@ -9427,7 +9434,7 @@ Assignment: [322-file-checksum](gauntlex/19-file-automation/322-file-checksum/RE
 
 #### Description
 
-Large files should be hashed without loading all bytes into memory. Compute a content fingerprint from the exact raw byte stream.
+Implement `file_checksum(path)` in `starter/solution.py`. Read the file at `path` in bounded chunks.
 
 #### Requirements
 
@@ -9444,6 +9451,7 @@ Process binary data in bounded chunks and update one ongoing hash state. A check
 
 #### Tips
 
+- **Concept to understand:** Large files should be hashed without loading all bytes into memory. Compute a content fingerprint from the exact raw byte stream.
 - Why must binary file bytes be hashed without text conversion?
 
 #### Example Behavior
@@ -9456,7 +9464,7 @@ Assignment: [323-count-file-lines](gauntlex/19-file-automation/323-count-file-li
 
 #### Description
 
-A logical line may end with a newline or at end-of-file. Count both forms correctly when reading UTF-8 text.
+Implement `count_file_lines(path)` in `starter/solution.py`. Read a UTF-8 text file.
 
 #### Requirements
 
@@ -9473,6 +9481,7 @@ Count logical records rather than raw newline characters: a final nonempty segme
 
 #### Tips
 
+- **Concept to understand:** A logical line may end with a newline or at end-of-file. Count both forms correctly when reading UTF-8 text.
 - Why does counting newline characters alone miss some final lines?
 
 #### Example Behavior
@@ -9485,7 +9494,7 @@ Assignment: [324-append-jsonl](gauntlex/19-file-automation/324-append-jsonl/READ
 
 #### Description
 
-JSON Lines stores independent JSON values on separate lines. Append a new value without destroying existing records.
+Implement `append_jsonl(path, value)` in `starter/solution.py`. Open or create the UTF-8 file at `path` for appending.
 
 #### Requirements
 
@@ -9502,6 +9511,7 @@ Preserve existing file content and append one complete UTF-8 JSON record per cal
 
 #### Tips
 
+- **Concept to understand:** JSON Lines stores independent JSON values on separate lines. Append a new value without destroying existing records.
 - Why must each appended value end with a newline?
 
 #### Example Behavior
@@ -9514,7 +9524,7 @@ Assignment: [325-read-jsonl](gauntlex/19-file-automation/325-read-jsonl/README.m
 
 #### Description
 
-JSON Lines files contain one independent JSON document per nonblank line. Read the stream in order while allowing malformed JSON to surface as an error.
+Implement `read_jsonl(path)` in `starter/solution.py`. Read the file as UTF-8 text.
 
 #### Requirements
 
@@ -9531,6 +9541,7 @@ Treat each nonblank line as its own JSON document, preserving stream order and s
 
 #### Tips
 
+- **Concept to understand:** JSON Lines files contain one independent JSON document per nonblank line. Read the stream in order while allowing malformed JSON to surface as an error.
 - Why must each line be decoded independently?
 
 #### Example Behavior
@@ -9543,7 +9554,7 @@ Assignment: [326-write-atomic](gauntlex/19-file-automation/326-write-atomic/READ
 
 #### Description
 
-Writing directly to a destination risks leaving partial content if a write is interrupted. Prepare replacement content in the same directory before switching files.
+Implement `write_text_atomic(path, text)` in `starter/solution.py`. Write the supplied string as UTF-8.
 
 #### Requirements
 
@@ -9560,6 +9571,7 @@ Create the temporary file in the destination's existing parent directory to keep
 
 #### Tips
 
+- **Concept to understand:** Writing directly to a destination risks leaving partial content if a write is interrupted. Prepare replacement content in the same directory before switching files.
 - Why should the temporary file be created on the same filesystem as the destination?
 
 #### Example Behavior
@@ -9572,7 +9584,7 @@ Assignment: [327-find-duplicates](gauntlex/19-file-automation/327-find-duplicate
 
 #### Description
 
-Files with different names can contain identical bytes. Group duplicate content by SHA-256 fingerprints rather than comparing filenames.
+Implement `duplicate_hashes(paths)` in `starter/solution.py`. Hash each file's raw bytes with SHA-256.
 
 #### Requirements
 
@@ -9589,6 +9601,7 @@ Group files by digest of raw bytes, then omit groups containing only one supplie
 
 #### Tips
 
+- **Concept to understand:** Files with different names can contain identical bytes. Group duplicate content by SHA-256 fingerprints rather than comparing filenames.
 - Why is file size or filename alone insufficient to identify duplicates?
 
 #### Example Behavior
@@ -9601,7 +9614,7 @@ Assignment: [328-csv-group-sum](gauntlex/19-file-automation/328-csv-group-sum/RE
 
 #### Description
 
-Tabular data often needs totals by category. Use CSV column names rather than fixed positions to group and sum numeric records.
+Implement `csv_group_sum(path, category_column, amount_column)` in `starter/solution.py`. Read the CSV file with its header row.
 
 #### Requirements
 
@@ -9618,6 +9631,7 @@ Read the header to locate columns by name, rather than assuming their positions.
 
 #### Tips
 
+- **Concept to understand:** Tabular data often needs totals by category. Use CSV column names rather than fixed positions to group and sum numeric records.
 - What happens when the columns appear in a different order?
 
 #### Example Behavior
@@ -9630,7 +9644,7 @@ Assignment: [329-csv-dedupe](gauntlex/19-file-automation/329-csv-dedupe/README.m
 
 #### Description
 
-A CSV file may repeat complete data rows. Count distinct parsed records while excluding the header from the data.
+Implement `csv_unique_rows(path)` in `starter/solution.py`. Read a valid CSV file with a header.
 
 #### Requirements
 
@@ -9647,6 +9661,7 @@ Compare the entire parsed row, not the original CSV text or one selected field. 
 
 #### Tips
 
+- **Concept to understand:** A CSV file may repeat complete data rows. Count distinct parsed records while excluding the header from the data.
 - Why is comparing only one field insufficient for full-row deduplication?
 
 #### Example Behavior
@@ -9659,7 +9674,7 @@ Assignment: [330-directory-manifest](gauntlex/19-file-automation/330-directory-m
 
 #### Description
 
-A directory manifest describes all regular files below a root using portable relative paths. Traverse subdirectories without following directory symlinks.
+Implement `directory_manifest(root)` in `starter/solution.py`. Recursively find regular files beneath the supplied root directory.
 
 #### Requirements
 
@@ -9676,6 +9691,7 @@ Traverse directories recursively but do not descend into symlinked directories. 
 
 #### Tips
 
+- **Concept to understand:** A directory manifest describes all regular files below a root using portable relative paths. Traverse subdirectories without following directory symlinks.
 - Why is a relative POSIX path more portable than an absolute local path?
 
 #### Example Behavior
@@ -9688,7 +9704,7 @@ Assignment: [331-filter-by-suffix](gauntlex/19-file-automation/331-filter-by-suf
 
 #### Description
 
-Filter a sequence of filenames by final extension without changing the filenames or their order.
+Implement `filter_suffix(names, suffix)` in `starter/solution.py`. Match the final suffix case-insensitively.
 
 #### Requirements
 
@@ -9705,6 +9721,7 @@ Match the complete final suffix without treating a similar substring in the midd
 
 #### Tips
 
+- **Concept to understand:** Filter a sequence of filenames by final extension without changing the filenames or their order.
 - Why should `report.csv.bak` not match a `.csv` filter?
 
 #### Example Behavior
@@ -9717,7 +9734,7 @@ Assignment: [332-safe-archive-name](gauntlex/19-file-automation/332-safe-archive
 
 #### Description
 
-Archive member names can contain traversal or platform-specific absolute paths. Validate the name before it could be used for extraction.
+Implement `archive_member_safe(name)` in `starter/solution.py`. Return `True` only for nonempty relative POSIX member names.
 
 #### Requirements
 
@@ -9734,6 +9751,7 @@ Check every member path component rather than trusting normalization to remove d
 
 #### Tips
 
+- **Concept to understand:** Archive member names can contain traversal or platform-specific absolute paths. Validate the name before it could be used for extraction.
 - Why must Windows-style paths be rejected even on a POSIX system?
 
 #### Example Behavior
@@ -9746,7 +9764,7 @@ Assignment: [333-rotate-logs](gauntlex/19-file-automation/333-rotate-logs/README
 
 #### Description
 
-Log rotation can be planned as a deterministic sequence of backup names. This exercise generates names without performing filesystem operations.
+Implement `rotation_names(base, backups)` in `starter/solution.py`. Return filenames formed by appending `.1` through `.N` to the base.
 
 #### Requirements
 
@@ -9764,6 +9782,7 @@ Generate a predictable ordered plan without touching the filesystem. The numeric
 
 #### Tips
 
+- **Concept to understand:** Log rotation can be planned as a deterministic sequence of backup names. This exercise generates names without performing filesystem operations.
 - Why is separating a rotation plan from actual file operations useful?
 
 #### Example Behavior
@@ -9776,7 +9795,7 @@ Assignment: [334-config-fingerprint](gauntlex/19-file-automation/334-config-fing
 
 #### Description
 
-Configuration fingerprints should remain identical when dictionaries contain the same data in different insertion orders. Canonicalize structured content before hashing.
+Implement `config_fingerprint(config)` in `starter/solution.py`. Serialize it as compact JSON with dictionary keys sorted.
 
 #### Requirements
 
@@ -9793,11 +9812,14 @@ Canonicalize JSON by sorting object keys and using compact separators before UTF
 
 #### Tips
 
+- **Concept to understand:** Configuration fingerprints should remain identical when dictionaries contain the same data in different insertion orders. Canonicalize structured content before hashing.
 - Why does sorting dictionary keys matter for reproducible hashes?
 
 #### Example Behavior
 
 `config_fingerprint({'a': 1, 'b': 2})` and `config_fingerprint({'b': 2, 'a': 1})` return the same digest.
+
+---
 
 ---
 
@@ -11039,7 +11061,7 @@ Assignment: [375-binary-search-bound](gauntlex/22-advanced-algorithms/375-binary
 
 #### Description
 
-Search a sorted collection for the first position at which a target could be inserted without placing it after an equal value. The result is an insertion boundary, even when the target is absent.
+Implement `lower_bound(values, target)` in `starter/solution.py`. Return the index of the first element greater than or equal to `target`; return `len(values)` if there is none.
 
 #### Requirements
 
@@ -11055,6 +11077,7 @@ Maintain a half-open search interval whose left boundary is the earliest possibl
 
 #### Tips
 
+- **Concept to understand:** Search a sorted collection for the first position at which a target could be inserted without placing it after an equal value. The result is an insertion boundary, even when the target is absent.
 - What does the boundary mean when all elements are smaller than the target?
 - Which half can be discarded when a middle value equals the target?
 
@@ -11068,7 +11091,7 @@ Assignment: [376-upper-bound](gauntlex/22-advanced-algorithms/376-upper-bound/RE
 
 #### Description
 
-Locate the insertion boundary immediately after all values equal to a target in an ascending sequence. Unlike a lower bound, equality must remain on the left of the answer.
+Implement `upper_bound(values, target)` in `starter/solution.py`. Return the first index whose value is strictly greater than `target`; return `len(values)` when no such element exists.
 
 #### Requirements
 
@@ -11084,6 +11107,7 @@ Locate the first element strictly greater than the target; equality belongs on t
 
 #### Tips
 
+- **Concept to understand:** Locate the insertion boundary immediately after all values equal to a target in an ascending sequence. Unlike a lower bound, equality must remain on the left of the answer.
 - How should an equality comparison affect the search interval?
 - What index should an empty sequence return?
 
@@ -11097,7 +11121,7 @@ Assignment: [377-merge-intervals](gauntlex/22-advanced-algorithms/377-merge-inte
 
 #### Description
 
-Combine a collection of inclusive integer ranges into a canonical, sorted set of nonoverlapping ranges. Adjacent integer ranges must be combined as well as overlapping ones.
+Implement `merge_intervals(intervals)` in `starter/solution.py`. Each input interval is `[start, end]` with `start <= end`; inputs need not be sorted.
 
 #### Requirements
 
@@ -11114,6 +11138,7 @@ Sort by interval start before combining overlaps, and preserve the intended trea
 
 #### Tips
 
+- **Concept to understand:** Combine a collection of inclusive integer ranges into a canonical, sorted set of nonoverlapping ranges. Adjacent integer ranges must be combined as well as overlapping ones.
 - Why is sorting useful before merging?
 - Why do `[1, 2]` and `[3, 4]` merge under this contract?
 
@@ -11127,7 +11152,7 @@ Assignment: [378-interval-intersection](gauntlex/22-advanced-algorithms/378-inte
 
 #### Description
 
-Find every region shared by two ordered interval collections. Each collection already contains disjoint inclusive ranges, so compare their boundaries without combining unrelated regions.
+Implement `interval_intersection(a, b)` in `starter/solution.py`. Both inputs are sorted lists of pairwise-disjoint inclusive integer intervals.
 
 #### Requirements
 
@@ -11144,6 +11169,7 @@ Use the overlap between the later start and earlier end of two candidate interva
 
 #### Tips
 
+- **Concept to understand:** Find every region shared by two ordered interval collections. Each collection already contains disjoint inclusive ranges, so compare their boundaries without combining unrelated regions.
 - Which of two current intervals can no longer overlap later intervals?
 - When is the overlap a single point rather than an empty interval?
 
@@ -11157,7 +11183,7 @@ Assignment: [379-longest-unique-substring](gauntlex/22-advanced-algorithms/379-l
 
 #### Description
 
-Measure the longest contiguous stretch of Unicode text in which no character repeats. A substring must stay contiguous; skipping repeated characters would change the problem.
+Implement `longest_unique_substring(text)` in `starter/solution.py`. Return the maximum number of characters in a contiguous substring with no repeated Unicode characters.
 
 #### Requirements
 
@@ -11174,6 +11200,7 @@ Track a contiguous window containing no repeated characters. When a repeated cha
 
 #### Tips
 
+- **Concept to understand:** Measure the longest contiguous stretch of Unicode text in which no character repeats. A substring must stay contiguous; skipping repeated characters would change the problem.
 - How can the left edge of a valid window move when a repeated character appears?
 - What information about earlier occurrences would avoid rescanning?
 
@@ -11187,7 +11214,7 @@ Assignment: [380-minimum-window](gauntlex/22-advanced-algorithms/380-minimum-win
 
 #### Description
 
-Find the shortest contiguous part of a string that covers every required character, including repeated requirements. If several shortest windows qualify, choose the earliest.
+Implement `minimum_window(text, pattern)` in `starter/solution.py`. The selected substring must contain every character of `pattern` at least as many times as it occurs there.
 
 #### Requirements
 
@@ -11204,6 +11231,7 @@ A valid window must cover every required character with its required multiplicit
 
 #### Tips
 
+- **Concept to understand:** Find the shortest contiguous part of a string that covers every required character, including repeated requirements. If several shortest windows qualify, choose the earliest.
 - Why is a set of required characters insufficient for repeated letters?
 - When can the left edge of a valid window be advanced safely?
 
@@ -11217,7 +11245,7 @@ Assignment: [381-top-k-frequent](gauntlex/22-advanced-algorithms/381-top-k-frequ
 
 #### Description
 
-Rank distinct values by how often they occur, retaining first-seen order when frequencies match. This makes results reproducible without relying on sorting the values themselves.
+Implement `top_k_frequent(values, k)` in `starter/solution.py`. Input values are hashable; `k` is an integer.
 
 #### Requirements
 
@@ -11235,6 +11263,7 @@ Frequency ties require a deterministic ordering policy. Keep the count and tie-b
 
 #### Tips
 
+- **Concept to understand:** Rank distinct values by how often they occur, retaining first-seen order when frequencies match. This makes results reproducible without relying on sorting the values themselves.
 - What two pieces of information must be retained for each distinct value?
 - What happens when `k` exceeds the number of distinct values?
 
@@ -11248,7 +11277,7 @@ Assignment: [382-shortest-path-grid](gauntlex/22-advanced-algorithms/382-shortes
 
 #### Description
 
-Navigate a rectangular grid from its upper-left corner to its lower-right corner while avoiding blocked cells. Return the fewest orthogonal moves, not the number of visited cells.
+Implement `shortest_path_grid(grid)` in `starter/solution.py`. Cells are `0` for open and `1` for blocked; assume equal row lengths.
 
 #### Requirements
 
@@ -11266,6 +11295,7 @@ Treat passable grid cells as vertices with moves between adjacent cells. Breadth
 
 #### Tips
 
+- **Concept to understand:** Navigate a rectangular grid from its upper-left corner to its lower-right corner while avoiding blocked cells. Return the fewest orthogonal moves, not the number of visited cells.
 - Why does exploring reachable cells by distance layers find a shortest route?
 - How many moves does a single open cell require?
 
@@ -11279,7 +11309,7 @@ Assignment: [383-dijkstra-distances](gauntlex/22-advanced-algorithms/383-dijkstr
 
 #### Description
 
-Determine the least total cost from a starting node to every reachable node in a directed weighted graph. A path discovered first is not necessarily the cheapest.
+Implement `dijkstra_distances(graph, start)` in `starter/solution.py`. `graph` maps hashable nodes to lists of `[neighbor, weight]` edges; all valid weights are nonnegative.
 
 #### Requirements
 
@@ -11297,6 +11327,7 @@ Relax candidate distances only when a shorter route is found. Nonnegative edge w
 
 #### Tips
 
+- **Concept to understand:** Determine the least total cost from a starting node to every reachable node in a directed weighted graph. A path discovered first is not necessarily the cheapest.
 - Why can a later route improve an earlier tentative distance?
 - What should happen to a reachable neighbor absent from the graph's keys?
 
@@ -11310,7 +11341,7 @@ Assignment: [384-longest-increasing-subsequence](gauntlex/22-advanced-algorithms
 
 #### Description
 
-Find the maximum length of a strictly increasing subsequence while preserving the original relative order. Elements in a subsequence need not be adjacent.
+Implement `lis_length(values)` in `starter/solution.py`. Return the length of the longest strictly increasing subsequence of integer values.
 
 #### Requirements
 
@@ -11327,12 +11358,15 @@ Increasing means strictly greater, so equal values cannot extend a subsequence. 
 
 #### Tips
 
+- **Concept to understand:** Find the maximum length of a strictly increasing subsequence while preserving the original relative order. Elements in a subsequence need not be adjacent.
 - How is a subsequence different from a contiguous substring?
 - What compact information could represent promising subsequences without storing them all?
 
 #### Example Behavior
 
 `lis_length([10, 9, 2, 5, 3, 7, 101, 18])` → `4`; `lis_length([])` → `0`.
+
+---
 
 ---
 
