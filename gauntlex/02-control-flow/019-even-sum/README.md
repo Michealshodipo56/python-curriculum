@@ -2,7 +2,7 @@
 
 ## Description
 
-A running total does not always include every value. Build a program that considers the integers in a range but adds only those that are even. This challenge combines repetition, selection, and accumulation.
+Write a program that reads a whole number `N` and prints the sum of all even numbers between `1` and `N`, including `N` if it is even. For example, `6` produces `12` because `2 + 4 + 6 = 12`.
 
 ## Requirements
 
