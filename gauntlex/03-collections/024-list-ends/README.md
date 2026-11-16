@@ -2,7 +2,7 @@
 
 ## Description
 
-An ordered collection has a first element and a last element. Build a program that retrieves both boundaries while preserving the values exactly as supplied.
+Write a program that reads a line of words and prints the first word and last word on separate lines. If there is only one word, print it twice.
 
 ## Requirements
 
