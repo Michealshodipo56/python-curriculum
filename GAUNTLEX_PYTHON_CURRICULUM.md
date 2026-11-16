@@ -20,7 +20,7 @@ Assignment: [001-hello](gauntlex/01-foundations/001-hello/README.md)
 
 #### Description
 
-Your task is to edit `main.py` and write a Python program that prints exactly `Hello, world!` in the terminal. The output must appear once, with the same capitalization, comma, exclamation mark, and final newline shown below.
+Write a Python program in `main.py` that prints `Hello, world!` exactly once. When you run the program, the terminal should show only that message.
 
 #### Requirements
 
@@ -47,7 +47,7 @@ Assignment: [002-displaynumber](gauntlex/01-foundations/002-displaynumber/README
 
 #### Description
 
-Programs can represent information as numbers as well as words. In this challenge, display a specific whole number and explore why the value a program works with is not necessarily the same thing as the characters a person sees on screen.
+Write a Python program in `main.py` that prints the number `42` on its own line. Do not print any words, labels, or other numbers.
 
 #### Requirements
 
@@ -74,7 +74,7 @@ Assignment: [003-two-lines](gauntlex/01-foundations/003-two-lines/README.md)
 
 #### Description
 
-A terminal program can communicate a sequence of messages, not just one. Build a script that displays two separate lines in the correct order. This challenge focuses on line boundaries and precise output formatting.
+Write a Python program in `main.py` that prints `Python` on the first line and `Gauntlex` on the second line. The words must appear in that order, with no extra text.
 
 #### Requirements
 
@@ -103,7 +103,7 @@ Assignment: [004-addition](gauntlex/01-foundations/004-addition/README.md)
 
 #### Description
 
-A program can transform information instead of simply displaying it. Create a program that receives two whole numbers and produces their sum. This challenge introduces the distinction between text received from standard input and numeric values used in arithmetic.
+Write a program that reads two whole numbers, one per line, adds them together, and prints the result. For example, if the input numbers are `7` and `5`, print `12`.
 
 #### Requirements
 
@@ -137,7 +137,7 @@ Assignment: [005-greeting](gauntlex/01-foundations/005-greeting/README.md)
 
 #### Description
 
-A useful program can respond to information it receives instead of producing the same message every time. Build a greeting that incorporates a person's name exactly as entered. The challenge introduces input-driven output and combining fixed text with changing information.
+Write a program that reads a person's name and prints a greeting using that name. For example, if the input is `Ada`, the output must be `Hello, Ada!`.
 
 #### Requirements
 
@@ -170,7 +170,7 @@ Assignment: [006-name-card](gauntlex/01-foundations/006-name-card/README.md)
 
 #### Description
 
-Programs often collect several pieces of information and present them in a consistent format. Build a small identity card from a name and a city. This challenge practices reading inputs in sequence and matching each value to the correct output label.
+Write a program that reads a person's name and city on separate lines. Print `Name: ` followed by their name, then `City: ` followed by their city on the next line.
 
 #### Requirements
 
@@ -206,7 +206,7 @@ Assignment: [007-rectangle](gauntlex/01-foundations/007-rectangle/README.md)
 
 #### Description
 
-A rectangle has an interior and a boundary, and each is measured differently. Build a calculator that uses its width and height to report both its area and its perimeter. This challenge develops arithmetic reasoning and precise formatting.
+Write a program that reads a rectangle's width and height as two positive whole numbers. Calculate its area and perimeter, then print them on separate lines using the labels `Area:` and `Perimeter:`.
 
 #### Requirements
 
@@ -242,7 +242,7 @@ Assignment: [008-remainder](gauntlex/01-foundations/008-remainder/README.md)
 
 #### Description
 
-Suppose a collection of items must be divided into groups of equal size. Some items may remain after forming every possible complete group. Build a program that reports both the number of complete groups and the leftover items.
+Write a program that reads the number of items and the number of items allowed in each group. Print how many complete groups you can make and how many items are left over.
 
 #### Requirements
 
@@ -278,7 +278,7 @@ Assignment: [009-initials](gauntlex/01-foundations/009-initials/README.md)
 
 #### Description
 
-Names can be represented in shorter forms while retaining identifying information. Read two names and transform their first letters into a compact set of initials. This challenge practices accessing characters in text and handling capitalization.
+Write a program that reads a first name and last name on separate lines. Print their first letters in uppercase, each followed by a period. For example, `ada` and `lovelace` should produce `A.L.`.
 
 #### Requirements
 
@@ -312,7 +312,7 @@ Assignment: [010-shout](gauntlex/01-foundations/010-shout/README.md)
 
 #### Description
 
-Messages received from users may contain unwanted whitespace at their boundaries and inconsistent capitalization. Prepare a message for announcement by normalizing its appearance without changing the spaces between its words.
+Write a program that reads one line of text, removes spaces at the beginning and end, converts the remaining letters to uppercase, and prints the result. Keep spaces between words unchanged.
 
 #### Requirements
 
@@ -346,7 +346,7 @@ Assignment: [011-next-year](gauntlex/01-foundations/011-next-year/README.md)
 
 #### Description
 
-Programs often combine descriptive information with calculations. Read a person's name and current age, then produce a sentence describing their age one year later. This challenge connects numeric input with formatted text.
+Write a program that reads a person's name and age on separate lines. Add one to the age and print a sentence in this exact format: `NAME will be AGE next year.`
 
 #### Requirements
 
@@ -380,7 +380,7 @@ Assignment: [012-even-or-odd](gauntlex/01-foundations/012-even-or-odd/README.md)
 
 #### Description
 
-An integer is even when it can be separated into pairs without a remainder; otherwise, it is odd. Build a program that classifies any integer, including zero and negative values. This challenge introduces decision-making based on a numeric property.
+Write a program that reads one whole number and prints `even` if the number is even or `odd` if it is odd. Print only that one word in lowercase.
 
 #### Requirements
 
@@ -413,7 +413,7 @@ Assignment: [013-larger](gauntlex/01-foundations/013-larger/README.md)
 
 #### Description
 
-When two numbers are supplied, a program can compare them and select one based on their relative values. Build a program that displays the greater integer. Equal values should produce that shared number rather than a special message.
+Write a program that reads two whole numbers and prints whichever is greater. If both numbers are equal, print that number.
 
 #### Requirements
 
