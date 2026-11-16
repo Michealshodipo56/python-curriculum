@@ -2,7 +2,7 @@
 
 ## Description
 
-A single line can represent a collection of several numbers or an empty collection. Build a program that counts the values supplied, rather than counting the characters used to write them. This challenge introduces working with sequences.
+Write a program that reads a line of space-separated integers and prints how many integers were entered. If the line is empty, print `0`.
 
 ## Requirements
 
