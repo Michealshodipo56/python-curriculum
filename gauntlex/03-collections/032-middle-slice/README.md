@@ -2,7 +2,7 @@
 
 ## Description
 
-Sometimes only the middle part of a sequence is needed. Build a program that excludes the first and last words and displays everything between them in the original order.
+Write a program that reads a line of words, removes the first and last words, and prints the words between them. If fewer than three words were entered, print an empty line.
 
 ## Requirements
 
