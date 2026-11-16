@@ -2,7 +2,7 @@
 
 ## Description
 
-A pinned dependency specifies one package and one exact version. Normalize the package name while retaining the version text.
+Implement `parse_requirement(text)` in `starter/solution.py`. Allow ASCII letters, digits, underscores, and hyphens in the name.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A pinned dependency specifies one package and one exact version. Normalize the p
 
 ## Tips
 
+- **Concept to understand:** A pinned dependency specifies one package and one exact version. Normalize the package name while retaining the version text.
 - Why should package-name normalization be distinct from version validation?
 
 ## Example Behavior

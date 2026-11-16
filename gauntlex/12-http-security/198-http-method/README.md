@@ -2,7 +2,7 @@
 
 ## Description
 
-Normalize a request method to a standard uppercase spelling, then reject names outside a fixed set of supported HTTP methods.
+Implement `normalize_method(text)` in `starter/solution.py`. Trim surrounding whitespace and ignore the input's letter case.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Normalize a request method to a standard uppercase spelling, then reject names o
 
 ## Tips
 
+- **Concept to understand:** Normalize a request method to a standard uppercase spelling, then reject names outside a fixed set of supported HTTP methods.
 - Why is normalization useful before checking allowed methods?
 - Why should an unsupported method be rejected explicitly?
 

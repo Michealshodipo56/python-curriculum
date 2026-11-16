@@ -2,7 +2,7 @@
 
 ## Description
 
-A JSON endpoint must validate structure and field types before computing a result. Invalid input should produce a stable client error.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/sum`, accept JSON containing integer `a` and integer `b`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Validate the JSON document's shape and both field types before calculating a sum
 
 ## Tips
 
+- **Concept to understand:** A JSON endpoint must validate structure and field types before computing a result. Invalid input should produce a stable client error.
 - Why must Boolean values be considered separately when validating Python integers?
 
 ## Example Behavior

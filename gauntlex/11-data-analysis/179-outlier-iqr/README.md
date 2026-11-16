@@ -2,7 +2,7 @@
 
 ## Description
 
-The interquartile range describes the spread of the middle half of a dataset. Use it to identify observations beyond the standard lower and upper fences.
+Implement `iqr_outliers(values)` in `starter/solution.py`. Return `[]` for fewer than four values.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ The interquartile range describes the spread of the middle half of a dataset. Us
 
 ## Tips
 
+- **Concept to understand:** The interquartile range describes the spread of the middle half of a dataset. Use it to identify observations beyond the standard lower and upper fences.
 - Why does the quartile definition matter for odd-sized datasets?
 - Why are values exactly on a fence not outliers?
 

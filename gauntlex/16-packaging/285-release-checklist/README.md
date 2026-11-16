@@ -2,7 +2,7 @@
 
 ## Description
 
-A release should proceed only when its required checks are complete. Report missing steps in a consistent order.
+Implement `release_checklist(tests_passed, docs_updated, version_bumped)` in `starter/solution.py`. For each false condition, include its corresponding action: `run tests`, `update docs`, or `bump version`.
 
 ## Requirements
 
@@ -15,8 +15,11 @@ A release should proceed only when its required checks are complete. Report miss
 
 ## Tips
 
+- **Concept to understand:** A release should proceed only when its required checks are complete. Report missing steps in a consistent order.
 - Why is a fixed checklist order useful for repeatable release reviews?
 
 ## Example Behavior
 
 `release_checklist(False, True, False)` → `['run tests', 'bump version']`; all true → `[]`.
+
+---

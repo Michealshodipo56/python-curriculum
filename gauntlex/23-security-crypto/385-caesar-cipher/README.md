@@ -2,7 +2,7 @@
 
 ## Description
 
-Implement a classical substitution cipher for ASCII letters while preserving all other text.
+Implement `caesar_cipher(text, shift)` in `starter/solution.py`. Shift ASCII letters by integer shift, wrapping within A-Z and a-z; leave other characters unchanged. Negative shifts are allowed.
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Prediction errors above and below the target should not cancel. Measure the average magnitude of deviations.
+Implement `mean_absolute_error(actual, predicted)` in `starter/solution.py`. Require equal-length, nonempty actual and predicted sequences.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Take the absolute magnitude of each paired residual before averaging, so overpre
 
 ## Tips
 
+- **Concept to understand:** Prediction errors above and below the target should not cancel. Measure the average magnitude of deviations.
 - Why is taking absolute values necessary before averaging?
 
 ## Example Behavior

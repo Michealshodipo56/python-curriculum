@@ -2,7 +2,7 @@
 
 ## Description
 
-Binary classifiers can be evaluated by counting correct and incorrect predictions for positive and negative cases.
+Implement `confusion_matrix(actual, predicted)` in `starter/solution.py`. Require actual and predicted Boolean sequences of equal length.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Assign each actual/predicted Boolean pair to exactly one of the four outcome cat
 
 ## Tips
 
+- **Concept to understand:** Binary classifiers can be evaluated by counting correct and incorrect predictions for positive and negative cases.
 - What distinguishes a false positive from a false negative?
 
 ## Example Behavior

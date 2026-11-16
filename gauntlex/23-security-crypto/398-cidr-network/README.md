@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn an IPv4 CIDR expression into its canonical network address and prefix.
+Implement `cidr_network(text)` in `starter/solution.py`. Given an IPv4 CIDR string, return the canonical network address with prefix as `A.B.C.D/N`. Accept host bits in input. Raise ValueError on invalid addresses or prefix lengths.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Parse the IPv4 address and prefix with standard-library networking utilities, ac
 
 ## Tips
 
+- **Concept to understand:** Turn an IPv4 CIDR expression into its canonical network address and prefix.
 Host bits may be present in the input, but the result represents the network.
 
 ## Example Behavior

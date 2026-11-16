@@ -2,7 +2,7 @@
 
 ## Description
 
-Report three different measurements of an input stream: logical lines, whitespace-separated words, and Unicode characters.
+Implement the program in `starter/main.py` using standard input and standard output. Read all text from standard input.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Report three different measurements of an input stream: logical lines, whitespac
 
 ## Tips
 
+- **Concept to understand:** Report three different measurements of an input stream: logical lines, whitespace-separated words, and Unicode characters.
 - Why do spaces and line breaks contribute to the character count?
 - How does the number of words differ from the number of lines?
 

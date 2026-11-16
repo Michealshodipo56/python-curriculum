@@ -2,7 +2,7 @@
 
 ## Description
 
-Recover text from percent-escaped UTF-8 bytes while preserving literal plus signs, which are not spaces in URL path components.
+Implement `decode_component(text)` in `starter/solution.py`. Percent-decode the input and interpret the resulting bytes as UTF-8.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Recover text from percent-escaped UTF-8 bytes while preserving literal plus sign
 
 ## Tips
 
+- **Concept to understand:** Recover text from percent-escaped UTF-8 bytes while preserving literal plus signs, which are not spaces in URL path components.
 - Why does form-style query decoding handle plus signs differently?
 - What happens to `%2F` during decoding?
 

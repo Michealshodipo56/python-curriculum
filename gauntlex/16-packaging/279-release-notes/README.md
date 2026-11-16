@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn a version identifier and change descriptions into a short, predictable Markdown announcement.
+Implement `release_notes(version, changes)` in `starter/solution.py`. Begin with the exact heading `# Release VERSION`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Turn a version identifier and change descriptions into a short, predictable Mark
 
 ## Tips
 
+- **Concept to understand:** Turn a version identifier and change descriptions into a short, predictable Markdown announcement.
 - Why is the empty-change case formatted differently from a release with entries?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the least-squares straight line that best describes paired numeric observations, expressed as a slope and intercept.
+Implement `linear_regression(xs, ys)` in `starter/solution.py`. Return `[slope, intercept]` for the ordinary least-squares line `y = slope * x + intercept`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Find the least-squares straight line that best describes paired numeric observat
 
 ## Tips
 
+- **Concept to understand:** Find the least-squares straight line that best describes paired numeric observations, expressed as a slope and intercept.
 - What does the slope describe about changes in `x` and `y`?
 - Why can a vertical set of observations not be represented by this form?
 
@@ -23,3 +24,5 @@ Find the least-squares straight line that best describes paired numeric observat
 `linear_regression([1, 2, 3], [2, 4, 6])` → `[2, 0]`
 
 `linear_regression([1, 1], [2, 3])` → `None`
+
+---

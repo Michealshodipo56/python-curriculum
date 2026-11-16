@@ -2,7 +2,7 @@
 
 ## Description
 
-Distributed storage often assigns records to partitions using a repeatable hash. The same identifier must map to the same partition across processes.
+Implement `partition_key(identifier, partition_count)` in `starter/solution.py`. Hash the identifier's UTF-8 bytes with SHA-256.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Use a deterministic byte representation and digest interpretation; the partition
 
 ## Tips
 
+- **Concept to understand:** Distributed storage often assigns records to partitions using a repeatable hash. The same identifier must map to the same partition across processes.
 - Why is Python's built-in hash unsuitable for stable cross-process partitioning?
 
 ## Example Behavior

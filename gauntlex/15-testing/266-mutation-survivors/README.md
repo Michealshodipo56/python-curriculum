@@ -2,7 +2,7 @@
 
 ## Description
 
-Mutation testing changes a program deliberately to see whether tests detect the change. A mutant survives when every supplied test still passes.
+Implement `surviving_mutants(results)` in `starter/solution.py`. Return sorted mutant IDs whose entire outcome list contains only `True`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Mutation testing changes a program deliberately to see whether tests detect the 
 
 ## Tips
 
+- **Concept to understand:** Mutation testing changes a program deliberately to see whether tests detect the change. A mutant survives when every supplied test still passes.
 - Why does a mutant with no test outcomes count as undetected?
 
 ## Example Behavior

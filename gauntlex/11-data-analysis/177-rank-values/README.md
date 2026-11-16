@@ -2,7 +2,7 @@
 
 ## Description
 
-Assign ranks to integer observations by their numeric value. Equal values share a rank, and consecutive distinct values receive consecutive ranks without gaps.
+Implement `dense_ranks(values)` in `starter/solution.py`. Return a list of ranks in the original input order.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Assign ranks to integer observations by their numeric value. Equal values share 
 
 ## Tips
 
+- **Concept to understand:** Assign ranks to integer observations by their numeric value. Equal values share a rank, and consecutive distinct values receive consecutive ranks without gaps.
 - Why must ranking order differ from output order?
 - What makes dense ranking different from ranking with skipped positions?
 

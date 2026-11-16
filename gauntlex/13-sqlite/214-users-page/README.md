@@ -2,7 +2,7 @@
 
 ## Description
 
-A large directory is easier to consume in pages. Select a consistent slice of users by their IDs.
+Implement `users_page(conn, page, page_size)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Raise `ValueError` for nonpositive page or page size.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A large directory is easier to consume in pages. Select a consistent slice of us
 
 ## Tips
 
+- **Concept to understand:** A large directory is easier to consume in pages. Select a consistent slice of users by their IDs.
 - Why is an explicit ordering necessary for stable pagination?
 - What is the offset of the first page?
 

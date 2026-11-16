@@ -2,7 +2,7 @@
 
 ## Description
 
-A test suite may run on several platforms. Identify any test that failed on at least one platform, regardless of its results elsewhere.
+Implement `test_matrix(results)` in `starter/solution.py`. Include a test name if any platform records `False` for that test.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A test suite may run on several platforms. Identify any test that failed on at l
 
 ## Tips
 
+- **Concept to understand:** A test suite may run on several platforms. Identify any test that failed on at least one platform, regardless of its results elsewhere.
 - Why does one failure matter even if other platforms pass?
 
 ## Example Behavior

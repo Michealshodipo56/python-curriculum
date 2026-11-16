@@ -2,7 +2,7 @@
 
 ## Description
 
-Exponential smoothing balances a new observation with the previous smoothed estimate, producing a history-aware series.
+Implement `exponential_smoothing(values, alpha)` in `starter/solution.py`. Require smoothing factor `alpha` to satisfy `0 < alpha <= 1`; otherwise raise `ValueError`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Initialize the smoothed sequence from the first observation, then combine each l
 
 ## Tips
 
+- **Concept to understand:** Exponential smoothing balances a new observation with the previous smoothed estimate, producing a history-aware series.
 - Why must the recurrence use the previous smoothed value rather than the previous raw observation?
 
 ## Example Behavior

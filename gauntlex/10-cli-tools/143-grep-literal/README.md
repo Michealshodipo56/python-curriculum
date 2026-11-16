@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a simple literal search tool that filters a stream of text lines by a case-sensitive substring.
+Implement the program in `starter/main.py` using standard input and standard output. Treat the first input line as the literal search string.
 
 ## Requirements
 

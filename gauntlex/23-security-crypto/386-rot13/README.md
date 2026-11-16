@@ -2,7 +2,7 @@
 
 ## Description
 
-Apply a fixed alphabet rotation that reverses itself when applied twice.
+Implement `rot13(text)` in `starter/solution.py`. Apply ROT13 to ASCII letters only, preserving case and all other characters. Applying it twice restores the input.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Apply a fixed rotation of 13 positions to ASCII letters while preserving their c
 
 ## Tips
 
+- **Concept to understand:** Apply a fixed alphabet rotation that reverses itself when applied twice.
 Check that capitalization and punctuation survive unchanged.
 
 ## Example Behavior

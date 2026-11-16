@@ -2,7 +2,7 @@
 
 ## Description
 
-A dependency list may mention the same normalized package multiple times. Keep the final declaration for each package while preserving surviving declaration order.
+Implement `dedupe_requirements(lines)` in `starter/solution.py`. Treat names as equivalent after lowercase conversion and replacing underscores with hyphens.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A dependency list may mention the same normalized package multiple times. Keep t
 
 ## Tips
 
+- **Concept to understand:** A dependency list may mention the same normalized package multiple times. Keep the final declaration for each package while preserving surviving declaration order.
 - Why would keeping the first occurrence violate the intended override behavior?
 
 ## Example Behavior

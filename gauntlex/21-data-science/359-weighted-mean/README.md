@@ -2,7 +2,7 @@
 
 ## Description
 
-Some observations contribute more to a summary than others. Compute a mean that respects their supplied nonnegative weights.
+Implement `weighted_mean(values, weights)` in `starter/solution.py`. Require equal-length nonempty value and weight sequences; otherwise raise `ValueError`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Validate that values and weights align and that the total weight is positive. Ze
 
 ## Tips
 
+- **Concept to understand:** Some observations contribute more to a summary than others. Compute a mean that respects their supplied nonnegative weights.
 - What happens if every weight is zero?
 
 ## Example Behavior

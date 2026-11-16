@@ -2,7 +2,7 @@
 
 ## Description
 
-WSGI middleware surrounds an existing application without replacing its business logic. Add response metadata while forwarding the original body untouched.
+Implement `wrap_app(app)` in `starter/solution.py`. Return a WSGI callable wrapping the supplied `app`.
 
 ## Requirements
 
@@ -19,8 +19,11 @@ Wrap `start_response` to append the required header once while preserving the wr
 
 ## Tips
 
+- **Concept to understand:** WSGI middleware surrounds an existing application without replacing its business logic. Add response metadata while forwarding the original body untouched.
 - Why should middleware return the original iterable rather than reading it eagerly?
 
 ## Example Behavior
 
 A wrapped app's original response body remains unchanged, while headers include exactly one `X-Powered-By: Gauntlex`.
+
+---

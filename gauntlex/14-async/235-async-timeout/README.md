@@ -2,7 +2,7 @@
 
 ## Description
 
-An asynchronous operation should not be allowed to wait indefinitely when a caller sets a deadline.
+Implement `async def with_timeout(awaitable, seconds)` in `starter/solution.py`. Return the awaited result if it finishes before the deadline.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ An asynchronous operation should not be allowed to wait indefinitely when a call
 
 ## Tips
 
+- **Concept to understand:** An asynchronous operation should not be allowed to wait indefinitely when a caller sets a deadline.
 - What distinguishes a timeout from a normal return value?
 
 ## Example Behavior

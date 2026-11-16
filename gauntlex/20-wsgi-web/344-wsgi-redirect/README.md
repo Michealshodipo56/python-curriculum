@@ -2,7 +2,7 @@
 
 ## Description
 
-When a resource moves, a redirect tells clients where to request it next. Preserve distinct behavior for old and new paths.
+Implement `application(environ, start_response)` in `starter/solution.py`. GET `/old` returns HTTP 302 Found with `Location: /new` and an empty body.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A redirect requires both the redirect status and a `Location` header naming the 
 
 ## Tips
 
+- **Concept to understand:** When a resource moves, a redirect tells clients where to request it next. Preserve distinct behavior for old and new paths.
 - Why is a Location header needed in addition to a 302 status?
 
 ## Example Behavior

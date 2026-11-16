@@ -2,7 +2,7 @@
 
 ## Description
 
-Build a tool that selects the earliest requested lines from a text stream and discards the remainder.
+Implement the program in `starter/main.py` using standard input and standard output. Read a nonnegative integer `N` from the first line.
 
 ## Requirements
 

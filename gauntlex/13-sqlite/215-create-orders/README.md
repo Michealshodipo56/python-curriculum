@@ -2,7 +2,7 @@
 
 ## Description
 
-Store orders with nonnegative amounts and require the database to enforce that rule, regardless of which caller inserts the record.
+Implement `create_orders(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Create `orders` if absent, with `id INTEGER PRIMARY KEY`, `user_id INTEGER NOT NULL`, and `amount INTEGER NOT NULL CHECK(amount>=0)`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Store orders with nonnegative amounts and require the database to enforce that r
 
 ## Tips
 
+- **Concept to understand:** Store orders with nonnegative amounts and require the database to enforce that rule, regardless of which caller inserts the record.
 - Why should the amount constraint live in the database schema?
 - What should happen if the setup function runs twice?
 

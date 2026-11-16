@@ -2,7 +2,7 @@
 
 ## Description
 
-Evaluate an asynchronous predicate for every value, then keep only those values whose predicate results are truthy.
+Implement `async def async_filter(predicate, values)` in `starter/solution.py`. Evaluate the predicate for each value concurrently.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Evaluate an asynchronous predicate for every value, then keep only those values 
 
 ## Tips
 
+- **Concept to understand:** Evaluate an asynchronous predicate for every value, then keep only those values whose predicate results are truthy.
 - Why should filtering retain the original values rather than predicate results?
 
 ## Example Behavior

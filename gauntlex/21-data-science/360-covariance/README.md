@@ -2,7 +2,7 @@
 
 ## Description
 
-Covariance describes whether two series tend to rise and fall together relative to their own means.
+Implement `population_covariance(xs, ys)` in `starter/solution.py`. Require equal-length, nonempty numeric sequences.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Pair observations by index, measure both deviations from their respective means,
 
 ## Tips
 
+- **Concept to understand:** Covariance describes whether two series tend to rise and fall together relative to their own means.
 - Why is the population divisor `n` instead of `n-1`?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-A dependency file can be made easier to review by sorting package entries consistently, while preserving their original spelling and version text.
+Implement `sort_requirements(lines)` in `starter/solution.py`. Sort requirements by their normalized package names.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A dependency file can be made easier to review by sorting package entries consis
 
 ## Tips
 
+- **Concept to understand:** A dependency file can be made easier to review by sorting package entries consistently, while preserving their original spelling and version text.
 - Why should the comparison key differ from the text returned to the caller?
 
 ## Example Behavior

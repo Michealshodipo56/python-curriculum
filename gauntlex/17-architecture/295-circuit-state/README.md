@@ -2,7 +2,7 @@
 
 ## Description
 
-A circuit breaker tracks consecutive failures and may allow a recovery probe. Classify the state from the failure threshold and probe result.
+Implement `circuit_state(failures, threshold, probe_success)` in `starter/solution.py`. Return `'closed'` when failures are below the threshold.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ When failures are below threshold, the state remains closed regardless of probe 
 
 ## Tips
 
+- **Concept to understand:** A circuit breaker tracks consecutive failures and may allow a recovery probe. Classify the state from the failure threshold and probe result.
 - Why must the failure threshold be checked before the probe outcome?
 
 ## Example Behavior

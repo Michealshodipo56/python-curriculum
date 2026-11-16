@@ -2,7 +2,7 @@
 
 ## Description
 
-The median describes the center of a dataset after its observations are arranged in numeric order. The rule differs depending on whether the dataset has an odd or even number of values.
+Implement `median(values)` in `starter/solution.py`. Return the middle value for an odd number of observations.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ The median describes the center of a dataset after its observations are arranged
 
 ## Tips
 
+- **Concept to understand:** The median describes the center of a dataset after its observations are arranged in numeric order. The rule differs depending on whether the dataset has an odd or even number of values.
 - Why is the original order irrelevant to the median?
 - What happens when there are two central observations?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Serialize cookie pairs into a predictable header string.
+Implement `build_cookie(cookies)` in `starter/solution.py`. Sort names alphabetically and join `name=value` entries with `; `.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Serialize cookie pairs into a predictable header string.
 
 ## Tips
 
+- **Concept to understand:** Serialize cookie pairs into a predictable header string.
 - Why does a stable ordering help reproducibility?
 
 ## Example Behavior

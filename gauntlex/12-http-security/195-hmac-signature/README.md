@@ -2,7 +2,7 @@
 
 ## Description
 
-A keyed message authentication code helps verify that a message came from someone holding a shared secret. Produce an HMAC using SHA-256 without exposing the key.
+Implement `hmac_signature(secret, message)` in `starter/solution.py`. Encode the secret and message separately as UTF-8.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A keyed message authentication code helps verify that a message came from someon
 
 ## Tips
 
+- **Concept to understand:** A keyed message authentication code helps verify that a message came from someone holding a shared secret. Produce an HMAC using SHA-256 without exposing the key.
 - Why does a keyed MAC provide different guarantees from an unkeyed hash?
 - How would changing the secret affect the result?
 

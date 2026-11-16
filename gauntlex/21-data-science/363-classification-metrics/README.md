@@ -2,7 +2,7 @@
 
 ## Description
 
-Different evaluation metrics capture different kinds of classification performance. Derive four measures from outcome counts.
+Implement `classification_metrics(tp, tn, fp, fn)` in `starter/solution.py`. Return a dictionary containing floating-point `precision`, `recall`, `accuracy`, and `f1`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Derive each measure from the relevant counts rather than assuming all metrics sh
 
 ## Tips
 
+- **Concept to understand:** Different evaluation metrics capture different kinds of classification performance. Derive four measures from outcome counts.
 - Why can precision and recall disagree for the same classifier?
 
 ## Example Behavior

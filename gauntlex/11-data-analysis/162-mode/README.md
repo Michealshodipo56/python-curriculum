@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the most frequently observed integer in a dataset. When multiple integers are equally common, choose a deterministic answer.
+Implement `mode(values)` in `starter/solution.py`. Return the value with the highest occurrence count.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Find the most frequently observed integer in a dataset. When multiple integers a
 
 ## Tips
 
+- **Concept to understand:** Find the most frequently observed integer in a dataset. When multiple integers are equally common, choose a deterministic answer.
 - Why is the most frequent value not necessarily the largest?
 - What should happen when all observations are distinct?
 

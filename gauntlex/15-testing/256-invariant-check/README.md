@@ -2,7 +2,7 @@
 
 ## Description
 
-An invariant is a condition that must remain true for a collection of values. Detect the earliest violation and report its location.
+Implement `check_nonnegative(values)` in `starter/solution.py`. Return `True` if every value is nonnegative.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ An invariant is a condition that must remain true for a collection of values. De
 
 ## Tips
 
+- **Concept to understand:** An invariant is a condition that must remain true for a collection of values. Detect the earliest violation and report its location.
 - Why should the first violation be reported instead of every violation?
 
 ## Example Behavior

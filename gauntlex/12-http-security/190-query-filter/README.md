@@ -2,7 +2,7 @@
 
 ## Description
 
-Select dictionary records that match every exact field requirement.
+Implement `filter_records(records, filters)` in `starter/solution.py`. Return only records matching all key-value pairs in `filters`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Select dictionary records that match every exact field requirement.
 
 ## Tips
 
+- **Concept to understand:** Select dictionary records that match every exact field requirement.
 - Why does a single mismatched field disqualify a record?
 
 ## Example Behavior

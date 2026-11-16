@@ -2,7 +2,7 @@
 
 ## Description
 
-A good assertion does more than say a check failed. Compare actual and expected values and report an unambiguous failure message.
+Implement `assert_equal(actual, expected)` in `starter/solution.py`. Return `None` when `actual == expected`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A good assertion does more than say a check failed. Compare actual and expected 
 
 ## Tips
 
+- **Concept to understand:** A good assertion does more than say a check failed. Compare actual and expected values and report an unambiguous failure message.
 - Why is `repr()` more informative than a plain string conversion?
 
 ## Example Behavior

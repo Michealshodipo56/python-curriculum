@@ -2,7 +2,7 @@
 
 ## Description
 
-Filter CSV data records using an exact field comparison and emit each match as a compact JSON object.
+Implement the program in `starter/main.py` using standard input and standard output. Read the column name and exact target value from the first two input lines.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Filter CSV data records using an exact field comparison and emit each match as a
 
 ## Tips
 
+- **Concept to understand:** Filter CSV data records using an exact field comparison and emit each match as a compact JSON object.
 - Why should capitalization and whitespace matter for an exact match?
 - How can the header provide JSON field names?
 

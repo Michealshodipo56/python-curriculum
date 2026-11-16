@@ -2,7 +2,7 @@
 
 ## Description
 
-Database queries do not guarantee insertion order. Retrieve the complete user directory in a stable order suitable for display or further processing.
+Implement `list_users(conn)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Database queries do not guarantee insertion order. Retrieve the complete user di
 
 ## Tips
 
+- **Concept to understand:** Database queries do not guarantee insertion order. Retrieve the complete user directory in a stable order suitable for display or further processing.
 - Why should sorting be requested explicitly?
 - What is the expected result for an empty directory?
 

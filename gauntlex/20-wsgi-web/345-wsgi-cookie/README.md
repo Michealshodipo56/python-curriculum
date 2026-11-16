@@ -2,7 +2,7 @@
 
 ## Description
 
-Cookies arrive in a request header containing multiple name-value pairs. Determine whether a meaningful session cookie exists.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/cookie`, inspect `HTTP_COOKIE`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Parse cookie name-value pairs without mistaking the mere presence of `session` f
 
 ## Tips
 
+- **Concept to understand:** Cookies arrive in a request header containing multiple name-value pairs. Determine whether a meaningful session cookie exists.
 - Why is the presence of a cookie name insufficient when its value is empty?
 
 ## Example Behavior

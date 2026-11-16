@@ -2,7 +2,7 @@
 
 ## Description
 
-Combine related order and user tables so each order is presented alongside the name of its owner.
+Implement `orders_with_users(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Use `users(id,name,email)` and `orders(id,user_id,amount)`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Combine related order and user tables so each order is presented alongside the n
 
 ## Tips
 
+- **Concept to understand:** Combine related order and user tables so each order is presented alongside the name of its owner.
 - What makes an order an orphan?
 - Why is a matching key needed when joining tables?
 

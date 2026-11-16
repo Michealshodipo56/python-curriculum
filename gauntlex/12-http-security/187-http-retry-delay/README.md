@@ -2,7 +2,7 @@
 
 ## Description
 
-When a request fails, successive retries can wait progressively longer. Calculate an exponential delay without exceeding a maximum permitted interval.
+Implement `retry_delay(attempt, base, cap)` in `starter/solution.py`. Return the smaller of `cap` and `base * 2**attempt`, measured in seconds.
 
 ## Requirements
 
@@ -13,6 +13,7 @@ When a request fails, successive retries can wait progressively longer. Calculat
 
 ## Tips
 
+- **Concept to understand:** When a request fails, successive retries can wait progressively longer. Calculate an exponential delay without exceeding a maximum permitted interval.
 - The first attempt uses the base delay; each successive attempt doubles the uncapped delay.
 - Consider when the cap prevents further growth.
 

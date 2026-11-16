@@ -2,7 +2,7 @@
 
 ## Description
 
-An index can speed up lookups by a frequently searched column. Create a named email index without failing when setup is repeated.
+Implement `ensure_email_index(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Ensure an index named `idx_users_email` exists on the `email` column.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ An index can speed up lookups by a frequently searched column. Create a named em
 
 ## Tips
 
+- **Concept to understand:** An index can speed up lookups by a frequently searched column. Create a named email index without failing when setup is repeated.
 - Why should database setup be idempotent?
 - How does an index differ from a table?
 

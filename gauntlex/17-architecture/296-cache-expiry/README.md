@@ -2,7 +2,7 @@
 
 ## Description
 
-Cached data has a limited lifetime. Determine whether an entry remains usable at a given moment, including the exact expiry boundary.
+Implement `cache_valid(created_at, ttl, now)` in `starter/solution.py`. Return `True` only while `now` is strictly earlier than `created_at + ttl`.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ At the precise expiry instant the entry is no longer valid; no grace period is i
 
 ## Tips
 
+- **Concept to understand:** Cached data has a limited lifetime. Determine whether an entry remains usable at a given moment, including the exact expiry boundary.
 - Why should an entry expire exactly when its lifetime is exhausted?
 
 ## Example Behavior

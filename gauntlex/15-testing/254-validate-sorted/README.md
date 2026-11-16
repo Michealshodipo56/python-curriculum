@@ -2,7 +2,7 @@
 
 ## Description
 
-Validation checks a property of existing data; it must not silently repair the data by sorting it.
+Implement `validate_sorted(values)` in `starter/solution.py`. Return the original list unchanged when values are nondecreasing.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Validation checks a property of existing data; it must not silently repair the d
 
 ## Tips
 
+- **Concept to understand:** Validation checks a property of existing data; it must not silently repair the data by sorting it.
 - Why should validation reject rather than repair unordered data?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Large datasets are often processed in smaller consecutive groups. Preserve all observations, including a final incomplete group.
+Implement `mini_batches(items, batch_size)` in `starter/solution.py`. Require positive integer `batch_size`; raise `ValueError` otherwise.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Partition consecutive observations without overlap or omission. Keep the last sm
 
 ## Tips
 
+- **Concept to understand:** Large datasets are often processed in smaller consecutive groups. Preserve all observations, including a final incomplete group.
 - Why should a partially filled final batch not be discarded?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Retrieve a stored JSON document and restore its structured Python representation rather than returning raw serialized text.
+Implement `load_json(conn, doc_id)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read the `body` field from `documents(id,body TEXT)` for the requested ID.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Retrieve a stored JSON document and restore its structured Python representation
 
 ## Tips
 
+- **Concept to understand:** Retrieve a stored JSON document and restore its structured Python representation rather than returning raw serialized text.
 - Why is a stored JSON string different from its decoded Python value?
 - What does a missing record mean?
 

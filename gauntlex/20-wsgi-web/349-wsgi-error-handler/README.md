@@ -2,7 +2,7 @@
 
 ## Description
 
-An internal exception should not expose implementation details to API clients. Provide a predictable failure response while preserving normal behavior.
+Implement `application(environ, start_response)` in `starter/solution.py`. GET `/safe` returns HTTP 200 with body `ok`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Convert the expected internal failure into a stable HTTP 500 response without ex
 
 ## Tips
 
+- **Concept to understand:** An internal exception should not expose implementation details to API clients. Provide a predictable failure response while preserving normal behavior.
 - Why is a developer-facing exception message unsafe to return directly?
 
 ## Example Behavior

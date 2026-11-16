@@ -2,7 +2,7 @@
 
 ## Description
 
-Calculate a customer's total order value using the database, even when that customer has no orders.
+Implement `order_total(conn, user_id)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read amounts from `orders(id,user_id,amount)` for the supplied user ID.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Calculate a customer's total order value using the database, even when that cust
 
 ## Tips
 
+- **Concept to understand:** Calculate a customer's total order value using the database, even when that customer has no orders.
 - Why might a SQL aggregate over zero matching rows need special handling?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Request identifiers can help correlate logs, but arbitrary client-supplied header values should not be reflected without validation.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/request`, return HTTP 200 with body `ok`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Validate both ASCII-only alphanumeric characters and the maximum length before r
 
 ## Tips
 
+- **Concept to understand:** Request identifiers can help correlate logs, but arbitrary client-supplied header values should not be reflected without validation.
 - Why must length and character restrictions be checked before reflecting a header?
 
 ## Example Behavior

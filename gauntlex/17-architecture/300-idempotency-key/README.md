@@ -2,7 +2,7 @@
 
 ## Description
 
-Logically identical requests need a stable identifier even when their method capitalization differs. Canonicalize request data before hashing.
+Implement `idempotency_key(method, url, body)` in `starter/solution.py`. Uppercase the method.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ The JSON array field order matters. Method case is normalized, but URL and body 
 
 ## Tips
 
+- **Concept to understand:** Logically identical requests need a stable identifier even when their method capitalization differs. Canonicalize request data before hashing.
 - Why is structured serialization safer than concatenating fields?
 
 ## Example Behavior

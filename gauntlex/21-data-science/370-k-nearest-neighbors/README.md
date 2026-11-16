@@ -2,7 +2,7 @@
 
 ## Description
 
-Nearest-neighbor search ranks examples by their distance from a query, with deterministic tie-breaking.
+Implement `nearest_indices(vectors, query, k)` in `starter/solution.py`. Compare each vector using squared Euclidean distance to the query.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Rank each candidate by squared Euclidean distance, using its original index as a
 
 ## Tips
 
+- **Concept to understand:** Nearest-neighbor search ranks examples by their distance from a query, with deterministic tie-breaking.
 - Why is the square root unnecessary when ranking distances?
 
 ## Example Behavior

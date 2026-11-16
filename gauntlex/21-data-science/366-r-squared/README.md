@@ -2,7 +2,7 @@
 
 ## Description
 
-The coefficient of determination compares prediction residuals against the natural variation in the observed targets.
+Implement `r_squared(actual, predicted)` in `starter/solution.py`. Require equal-length, nonempty actual and predicted sequences.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Compare residual error against variation around the actual mean. A constant targ
 
 ## Tips
 
+- **Concept to understand:** The coefficient of determination compares prediction residuals against the natural variation in the observed targets.
 - Why does a constant target sequence require a special rule?
 
 ## Example Behavior

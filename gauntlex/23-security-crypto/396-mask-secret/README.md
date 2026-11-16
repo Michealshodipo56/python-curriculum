@@ -2,7 +2,7 @@
 
 ## Description
 
-Hide a secret's leading characters while allowing a specified number of trailing characters to remain visible.
+Implement `mask_secret(secret, visible_count)` in `starter/solution.py`. Return the last visible_count characters of secret prefixed with asterisks for hidden characters. If visible_count is zero, mask all characters. Require integer `visible_count >= 0`; raise `ValueError` otherwise.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Preserve only the requested trailing characters and replace each hidden characte
 
 ## Tips
 
+- **Concept to understand:** Hide a secret's leading characters while allowing a specified number of trailing characters to remain visible.
 The visible count can be zero or larger than the secret length.
 
 ## Example Behavior

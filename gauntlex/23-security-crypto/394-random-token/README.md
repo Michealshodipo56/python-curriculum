@@ -2,7 +2,7 @@
 
 ## Description
 
-Generate a URL-safe token from cryptographically secure random bytes.
+Implement `random_token(n)` in `starter/solution.py`. Return a URL-safe Base64 token representing exactly n cryptographically random bytes, without trailing padding. Require integer `n >= 1`; raise `ValueError` otherwise. Tests check format and decoded length, not a fixed random output.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Generate exactly the requested number of cryptographically secure random bytes b
 
 ## Tips
 
+- **Concept to understand:** Generate a URL-safe token from cryptographically secure random bytes.
 A security token needs a secure randomness source, not a predictable pseudo-random sequence.
 
 ## Example Behavior

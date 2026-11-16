@@ -2,7 +2,7 @@
 
 ## Description
 
-Build a small package metadata record that does not unexpectedly change when the caller later edits its dependency list.
+Implement `build_metadata(name, version, minimum_python, dependencies)` in `starter/solution.py`. Return a dictionary with keys `name`, `version`, `requires_python`, and `dependencies`.
 
 ## Requirements
 

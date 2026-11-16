@@ -2,7 +2,7 @@
 
 ## Description
 
-A sliding-window rate limit counts recent requests to decide whether another request is permitted. Boundary handling must be exact.
+Implement `rate_limit_allowed(timestamps, now, window, limit)` in `starter/solution.py`. Count timestamps in the interval `(now - window, now]`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A request exactly at `now - window` is outside the window; a request exactly at 
 
 ## Tips
 
+- **Concept to understand:** A sliding-window rate limit counts recent requests to decide whether another request is permitted. Boundary handling must be exact.
 - Why is the lower boundary excluded but the upper included?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Event-sourced state can be rebuilt by applying recorded changes. Derive each account's current balance from its event deltas.
+Implement `project_balances(events)` in `starter/solution.py`. Accumulate deltas for each account in event order, beginning from zero.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A zero net balance is still a meaningful account result. Events are applied in t
 
 ## Tips
 
+- **Concept to understand:** Event-sourced state can be rebuilt by applying recorded changes. Derive each account's current balance from its event deltas.
 - Why should an account remain present when its total returns to zero?
 
 ## Example Behavior

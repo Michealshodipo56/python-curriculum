@@ -2,7 +2,7 @@
 
 ## Description
 
-Categorical labels can be represented as binary vectors with one active position. The supplied class order defines that position.
+Implement `one_hot_encode(labels, classes)` in `starter/solution.py`. Return one row per label, with `1` at its class position and `0` elsewhere.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Use the supplied class sequence as the fixed coordinate order. Reject duplicate 
 
 ## Tips
 
+- **Concept to understand:** Categorical labels can be represented as binary vectors with one active position. The supplied class order defines that position.
 - Why must the class order be fixed before encoding?
 
 ## Example Behavior

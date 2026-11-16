@@ -2,7 +2,7 @@
 
 ## Description
 
-Repeated test names need distinct identifiers so reports can refer to each occurrence without ambiguity.
+Implement `case_ids(cases)` in `starter/solution.py`. Assign each name its own one-based occurrence counter.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Repeated test names need distinct identifiers so reports can refer to each occur
 
 ## Tips
 
+- **Concept to understand:** Repeated test names need distinct identifiers so reports can refer to each occurrence without ambiguity.
 - Why must different names have independent counters?
 
 ## Example Behavior

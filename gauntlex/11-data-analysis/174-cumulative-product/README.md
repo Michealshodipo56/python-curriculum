@@ -2,7 +2,7 @@
 
 ## Description
 
-Track how the product of a sequence changes as each additional integer is included. Return one product for every prefix.
+Implement `cumulative_product(values)` in `starter/solution.py`. Return a new list of running products in input order.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Track how the product of a sequence changes as each additional integer is includ
 
 ## Tips
 
+- **Concept to understand:** Track how the product of a sequence changes as each additional integer is included. Return one product for every prefix.
 - What effect does a zero have on all later running products?
 - How is this different from multiplying every value only once for a single result?
 

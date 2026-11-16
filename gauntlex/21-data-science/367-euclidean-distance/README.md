@@ -2,7 +2,7 @@
 
 ## Description
 
-Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
+Implement `euclidean_distance(a, b)` in `starter/solution.py`. Require vectors of equal length, or raise `ValueError`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Match coordinates by position and require equal dimensionality. The square root 
 
 ## Tips
 
+- **Concept to understand:** Numeric vectors represent points in a coordinate space. Measure their straight-line separation across all dimensions.
 - Why can vectors of different dimensions not be compared directly?
 
 ## Example Behavior

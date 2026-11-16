@@ -2,7 +2,7 @@
 
 ## Description
 
-Interpret an HTTP/1.1 response status line as a numeric status and a potentially multiword reason.
+Implement `parse_status_line(line)` in `starter/solution.py`. Return a dictionary with integer `status` and string `reason` for valid HTTP/1.1 status lines.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Interpret an HTTP/1.1 response status line as a numeric status and a potentially
 
 ## Tips
 
+- **Concept to understand:** Interpret an HTTP/1.1 response status line as a numeric status and a potentially multiword reason.
 - Why is splitting every word insufficient for a reason such as `Not Found`?
 
 ## Example Behavior

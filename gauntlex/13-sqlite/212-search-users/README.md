@@ -2,7 +2,7 @@
 
 ## Description
 
-A name search should treat the search term as text, even when it contains characters that SQL ordinarily uses as wildcards.
+Implement `search_users(conn, term)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Search names case-insensitively for the supplied substring.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A name search should treat the search term as text, even when it contains charac
 
 ## Tips
 
+- **Concept to understand:** A name search should treat the search term as text, even when it contains characters that SQL ordinarily uses as wildcards.
 - Why does binding a LIKE pattern not automatically make its wildcard characters literal?
 - How can a search be case-insensitive without losing the input text?
 

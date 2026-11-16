@@ -2,7 +2,7 @@
 
 ## Description
 
-A build system must complete prerequisites before their dependents. Produce a deterministic sequence even when several tasks are ready simultaneously.
+Implement `dependency_order(graph)` in `starter/solution.py`. Include tasks mentioned only as prerequisites.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ A task mentioned only as a prerequisite must still appear in the final order; di
 
 ## Tips
 
+- **Concept to understand:** A build system must complete prerequisites before their dependents. Produce a deterministic sequence even when several tasks are ready simultaneously.
 - Why does choosing among ready tasks require a consistent rule?
 
 ## Example Behavior

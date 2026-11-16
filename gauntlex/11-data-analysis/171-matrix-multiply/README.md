@@ -2,7 +2,7 @@
 
 ## Description
 
-Matrix multiplication combines rows from one matrix with columns from another. The resulting grid has dimensions determined by the outer dimensions of the inputs.
+Implement `matrix_multiply(a, b)` in `starter/solution.py`. Return a new matrix representing the product `a * b`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Matrix multiplication combines rows from one matrix with columns from another. T
 
 ## Tips
 
+- **Concept to understand:** Matrix multiplication combines rows from one matrix with columns from another. The resulting grid has dimensions determined by the outer dimensions of the inputs.
 - Why must the number of columns in the first matrix match the number of rows in the second?
 - How is multiplication different from elementwise addition?
 

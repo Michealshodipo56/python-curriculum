@@ -2,7 +2,7 @@
 
 ## Description
 
-Quantization maps numeric observations to the nearest multiple of a positive step. The rounding rule must follow Python's built-in semantics.
+Implement `quantize(values, step)` in `starter/solution.py`. Return a new list with every value rounded to the nearest multiple of `step`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Quantization maps numeric observations to the nearest multiple of a positive ste
 
 ## Tips
 
+- **Concept to understand:** Quantization maps numeric observations to the nearest multiple of a positive step. The rounding rule must follow Python's built-in semantics.
 - Why can midpoint values behave differently from always rounding upward?
 - How does changing the step alter the available results?
 

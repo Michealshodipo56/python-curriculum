@@ -2,7 +2,7 @@
 
 ## Description
 
-Rearrange complete text lines using case-sensitive lexical order while preserving repeated entries.
+Implement the program in `starter/main.py` using standard input and standard output. Read all lines from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Rearrange complete text lines using case-sensitive lexical order while preservin
 
 ## Tips
 
+- **Concept to understand:** Rearrange complete text lines using case-sensitive lexical order while preserving repeated entries.
 - Why can uppercase and lowercase letters sort differently?
 - Why should duplicate lines remain in the output?
 

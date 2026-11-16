@@ -2,7 +2,7 @@
 
 ## Description
 
-Canonical ISO dates can be compared lexically when their format is consistent. Select events from a cutoff date onward.
+Implement `events_on_or_after(conn, cutoff)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Include events on or after the cutoff date.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Canonical ISO dates can be compared lexically when their format is consistent. S
 
 ## Tips
 
+- **Concept to understand:** Canonical ISO dates can be compared lexically when their format is consistent. Select events from a cutoff date onward.
 - Why do zero-padded ISO dates have useful lexical ordering?
 - Why is the cutoff inclusive?
 

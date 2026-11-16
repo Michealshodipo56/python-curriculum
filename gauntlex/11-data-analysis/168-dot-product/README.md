@@ -2,7 +2,7 @@
 
 ## Description
 
-The dot product combines two numeric vectors by pairing corresponding positions and adding their products.
+Implement `dot_product(a, b)` in `starter/solution.py`. Multiply the elements at matching indices and sum those products.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ The dot product combines two numeric vectors by pairing corresponding positions 
 
 ## Tips
 
+- **Concept to understand:** The dot product combines two numeric vectors by pairing corresponding positions and adding their products.
 - Why must vector elements be paired by position?
 - How does the empty case affect the total?
 

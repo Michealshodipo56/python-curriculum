@@ -2,7 +2,7 @@
 
 ## Description
 
-Import multiple users as one unit of work. If any record violates a database constraint, none of the records from that batch may remain.
+Implement `insert_batch_atomic(conn, records)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Insert each `[name,email]` pair into `users(id,name,email UNIQUE)`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Import multiple users as one unit of work. If any record violates a database con
 
 ## Tips
 
+- **Concept to understand:** Import multiple users as one unit of work. If any record violates a database constraint, none of the records from that batch may remain.
 - Why is a sequence of independent inserts insufficient?
 - What should happen to earlier successful inserts when a later one fails?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize an integer stream using its count, total, minimum, and maximum. Empty input has a deliberately shorter report.
+Implement the program in `starter/main.py` using standard input and standard output. Read whitespace-separated integers from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Summarize an integer stream using its count, total, minimum, and maximum. Empty 
 
 ## Tips
 
+- **Concept to understand:** Summarize an integer stream using its count, total, minimum, and maximum. Empty input has a deliberately shorter report.
 - Why are minimum and maximum undefined for an empty stream?
 - How should negative and repeated values affect each statistic?
 
@@ -28,3 +29,5 @@ Expected output: "count=3\nsum=6\nmin=1\nmax=3\n"
 Input: ""
 
 Expected output: "count=0\nsum=0\n"
+
+---

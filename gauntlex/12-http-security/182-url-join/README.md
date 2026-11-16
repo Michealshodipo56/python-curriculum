@@ -2,7 +2,7 @@
 
 ## Description
 
-Resolve a relative link against an absolute base URL using standard URL path rules.
+Implement `resolve_url(base, relative)` in `starter/solution.py`. Return the resolved absolute URL.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Resolve a relative link against an absolute base URL using standard URL path rul
 
 ## Tips
 
+- **Concept to understand:** Resolve a relative link against an absolute base URL using standard URL path rules.
 - Why does a root-relative link behave differently from a parent-relative link?
 
 ## Example Behavior

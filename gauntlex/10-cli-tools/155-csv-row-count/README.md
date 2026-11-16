@@ -2,7 +2,7 @@
 
 ## Description
 
-Count data records in a CSV stream while excluding the header row. The result should reflect CSV records, not merely arbitrary text lines.
+Implement the program in `starter/main.py` using standard input and standard output. Read CSV input with a header and zero or more data records.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Count data records in a CSV stream while excluding the header row. The result sh
 
 ## Tips
 
+- **Concept to understand:** Count data records in a CSV stream while excluding the header row. The result should reflect CSV records, not merely arbitrary text lines.
 - Why does a header not count as a data record?
 - What happens when no data rows follow the header?
 

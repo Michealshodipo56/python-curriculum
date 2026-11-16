@@ -2,7 +2,7 @@
 
 ## Description
 
-Repeated delivery must not apply the same account event more than once. Rebuild balances while treating each event ID as unique.
+Implement `replay_unique(events)` in `starter/solution.py`. Apply only the first occurrence of each event ID.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Duplicate event IDs are ignored even if later deliveries contain different accou
 
 ## Tips
 
+- **Concept to understand:** Repeated delivery must not apply the same account event more than once. Rebuild balances while treating each event ID as unique.
 - Why must deduplication happen before updating balances?
 
 ## Example Behavior

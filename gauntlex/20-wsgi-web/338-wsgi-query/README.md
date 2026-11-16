@@ -2,7 +2,7 @@
 
 ## Description
 
-Query parameters are encoded separately from the URL path. Decode the first `message` value on an echo route.
+Implement `application(environ, start_response)` in `starter/solution.py`. Decode percent escapes and plus-as-space form encoding.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Parse `QUERY_STRING` independently of `PATH_INFO`, preserving the first value fo
 
 ## Tips
 
+- **Concept to understand:** Query parameters are encoded separately from the URL path. Decode the first `message` value on an echo route.
 - Why is splitting a raw query string on every equals sign unreliable?
 
 ## Example Behavior

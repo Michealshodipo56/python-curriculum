@@ -2,7 +2,7 @@
 
 ## Description
 
-Cosine similarity compares vector orientation rather than raw distance, making direction the focus of the measure.
+Implement `cosine_similarity(a, b)` in `starter/solution.py`. Require equal-length vectors, or raise `ValueError`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Calculate directional similarity from a dot product and the two vector magnitude
 
 ## Tips
 
+- **Concept to understand:** Cosine similarity compares vector orientation rather than raw distance, making direction the focus of the measure.
 - Why is a zero vector a special case for directional similarity?
 
 ## Example Behavior

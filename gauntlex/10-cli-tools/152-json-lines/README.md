@@ -2,7 +2,7 @@
 
 ## Description
 
-Process a stream of independent JSON values and output one canonical compact representation for each nonblank record.
+Implement the program in `starter/main.py` using standard input and standard output. Read one valid JSON value per nonempty input line.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Process a stream of independent JSON values and output one canonical compact rep
 
 ## Tips
 
+- **Concept to understand:** Process a stream of independent JSON values and output one canonical compact representation for each nonblank record.
 - Why must each line be parsed independently?
 - What distinguishes an empty line from a JSON string containing empty text?
 

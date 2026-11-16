@@ -2,7 +2,7 @@
 
 ## Description
 
-Encode UTF-8 text into a lowercase hexadecimal representation of its bytes.
+Implement `hex_encode(text)` in `starter/solution.py`. Return lowercase hexadecimal representation of UTF-8 bytes of the input string, without spaces or prefix.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Encode the input as UTF-8 bytes before converting each byte to hexadecimal. Unic
 
 ## Tips
 
+- **Concept to understand:** Encode UTF-8 text into a lowercase hexadecimal representation of its bytes.
 Unicode characters can occupy several bytes before hexadecimal encoding.
 
 ## Example Behavior

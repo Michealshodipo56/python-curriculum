@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn compact JSON into a human-readable representation while preserving its data. The output must use predictable indentation and key ordering.
+Implement the program in `starter/main.py` using standard input and standard output. Read one valid JSON value from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Turn compact JSON into a human-readable representation while preserving its data
 
 ## Tips
 
+- **Concept to understand:** Turn compact JSON into a human-readable representation while preserving its data. The output must use predictable indentation and key ordering.
 - Why can two differently formatted JSON strings represent the same value?
 - What makes output formatting predictable?
 

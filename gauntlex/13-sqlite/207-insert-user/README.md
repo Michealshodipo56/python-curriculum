@@ -2,7 +2,7 @@
 
 ## Description
 
-Register one new person in the existing users table and return the database-generated identity of that record.
+Implement `insert_user(conn, name, email)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Register one new person in the existing users table and return the database-gene
 
 ## Tips
 
+- **Concept to understand:** Register one new person in the existing users table and return the database-generated identity of that record.
 - Why should user-supplied text be bound as a parameter?
 - How can you identify the row that was just created?
 

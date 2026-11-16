@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn a human-readable ASCII title into a predictable pytest-style function name, avoiding repeated or trailing separators.
+Implement `normalize_test_name(title)` in `starter/solution.py`. Lowercase the ASCII title.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Turn a human-readable ASCII title into a predictable pytest-style function name,
 
 ## Tips
 
+- **Concept to understand:** Turn a human-readable ASCII title into a predictable pytest-style function name, avoiding repeated or trailing separators.
 - Why should consecutive punctuation marks become a single separator?
 
 ## Example Behavior

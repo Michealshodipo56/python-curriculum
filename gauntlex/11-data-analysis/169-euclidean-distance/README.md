@@ -2,7 +2,7 @@
 
 ## Description
 
-Generalize the familiar straight-line distance between two points to vectors of any matching dimension.
+Implement `euclidean_distance(a, b)` in `starter/solution.py`. Return the square root of the sum of squared coordinate differences.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Generalize the familiar straight-line distance between two points to vectors of 
 
 ## Tips
 
+- **Concept to understand:** Generalize the familiar straight-line distance between two points to vectors of any matching dimension.
 - How does two-dimensional distance extend to more coordinates?
 - Why does changing the order of the vectors not change the distance?
 

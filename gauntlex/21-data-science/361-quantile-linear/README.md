@@ -2,7 +2,7 @@
 
 ## Description
 
-Quantiles locate positions in sorted observations, including positions that fall between two neighboring values.
+Implement `quantile(values, q)` in `starter/solution.py`. Require nonempty values and `q` between 0 and 1 inclusive.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Sort a copy of the data before locating the fractional index `(n - 1) * q`. When
 
 ## Tips
 
+- **Concept to understand:** Quantiles locate positions in sorted observations, including positions that fall between two neighboring values.
 - How does an interpolated quantile differ from selecting the nearest observation?
 
 ## Example Behavior

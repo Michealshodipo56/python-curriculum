@@ -2,7 +2,7 @@
 
 ## Description
 
-Retries consume resources and should remain proportional to normal request traffic. Calculate how many attempts are still permitted.
+Implement `retry_budget(requests, ratio, retries_used)` in `starter/solution.py`. Compute the allowed retry count as the floor of `requests * ratio`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ The retry allowance is rounded down before subtracting used attempts; exhausted 
 
 ## Tips
 
+- **Concept to understand:** Retries consume resources and should remain proportional to normal request traffic. Calculate how many attempts are still permitted.
 - Why should a retry budget never become negative?
 
 ## Example Behavior

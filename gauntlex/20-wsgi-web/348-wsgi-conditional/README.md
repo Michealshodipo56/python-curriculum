@@ -2,7 +2,7 @@
 
 ## Description
 
-Entity tags allow a client to ask whether cached content is still current. Return a body only when the tag does not match.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/version`, set `ETag` to the exact value `"v1"`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Return the same exact quoted ETag in both cache-hit and cache-miss responses. On
 
 ## Tips
 
+- **Concept to understand:** Entity tags allow a client to ask whether cached content is still current. Return a body only when the tag does not match.
 - Why should a 304 response omit the representation body?
 
 ## Example Behavior

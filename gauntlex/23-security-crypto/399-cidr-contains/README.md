@@ -2,7 +2,7 @@
 
 ## Description
 
-Determine whether an IPv4 address belongs to a specified CIDR network.
+Implement `cidr_contains(network, address)` in `starter/solution.py`. Return True if IPv4 address belongs to IPv4 CIDR network, otherwise False. Raise ValueError on malformed inputs.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Determine membership from the full IPv4 network prefix rather than textual addre
 
 ## Tips
 
+- **Concept to understand:** Determine whether an IPv4 address belongs to a specified CIDR network.
 Network membership depends on the prefix length, not just matching leading text.
 
 ## Example Behavior

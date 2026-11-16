@@ -2,7 +2,7 @@
 
 ## Description
 
-HTTP headers may repeat, and header names are case-insensitive. Retrieve the last matching value without changing the original list.
+Implement `header_get(headers, name)` in `starter/solution.py`. Compare names without regard to letter case.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ HTTP headers may repeat, and header names are case-insensitive. Retrieve the las
 
 ## Tips
 
+- **Concept to understand:** HTTP headers may repeat, and header names are case-insensitive. Retrieve the last matching value without changing the original list.
 - Why must the last matching value win?
 - How does case-insensitive comparison affect repeated names?
 
@@ -24,3 +25,5 @@ HTTP headers may repeat, and header names are case-insensitive. Retrieve the las
 `header_get([["X-ID", "1"], ["x-id", "2"]], "X-Id")` → `"2"`
 
 `header_get([["A", "b"]], "X")` → `None`
+
+---

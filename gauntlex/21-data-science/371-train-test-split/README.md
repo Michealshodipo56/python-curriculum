@@ -2,7 +2,7 @@
 
 ## Description
 
-Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
+Implement `train_test_split(items, test_fraction)` in `starter/solution.py`. Require `test_fraction` between `0` and `1` inclusive; otherwise raise `ValueError`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Compute the held-out count using the specified floor rule and select that many i
 
 ## Tips
 
+- **Concept to understand:** Model evaluation requires separating training and held-out observations. Preserve the original order instead of shuffling.
 - Why does choosing the final observations matter for reproducibility?
 
 ## Example Behavior

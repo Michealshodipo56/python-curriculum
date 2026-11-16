@@ -2,7 +2,7 @@
 
 ## Description
 
-Check whether text is a correctly formed dotted-decimal IPv4 address.
+Implement `valid_ipv4(text)` in `starter/solution.py`. Return True only for a canonical dotted-decimal IPv4 address with exactly four components, each decimal 0–255 and no leading zeros unless the component is 0. Reject whitespace and signs.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Validate exactly four ASCII decimal components in canonical dotted notation. Rej
 
 ## Tips
 
+- **Concept to understand:** Check whether text is a correctly formed dotted-decimal IPv4 address.
 Leading zeros, signs, and whitespace can make an address noncanonical.
 
 ## Example Behavior

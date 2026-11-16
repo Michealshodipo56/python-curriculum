@@ -2,7 +2,7 @@
 
 ## Description
 
-A Python module's dotted import path corresponds to directories and a source filename. Convert the module name into a relative POSIX file path.
+Implement `module_to_path(module_name)` in `starter/solution.py`. Require every component to be a valid Python identifier.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A Python module's dotted import path corresponds to directories and a source fil
 
 ## Tips
 
+- **Concept to understand:** A Python module's dotted import path corresponds to directories and a source filename. Convert the module name into a relative POSIX file path.
 - Why must dots become path separators rather than remain in the filename?
 
 ## Example Behavior

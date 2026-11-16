@@ -2,7 +2,7 @@
 
 ## Description
 
-An event stream may contain duplicate deliveries. Keep the first occurrence of each event ID and preserve event order.
+Implement `deduplicate_events(events)` in `starter/solution.py`. Return the first event for each distinct ID in original order.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Retain the first dictionary for each ID as a shallow copy. Changing the returned
 
 ## Tips
 
+- **Concept to understand:** An event stream may contain duplicate deliveries. Keep the first occurrence of each event ID and preserve event order.
 - Why should the first occurrence win rather than the last?
 
 ## Example Behavior

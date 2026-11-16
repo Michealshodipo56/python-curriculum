@@ -2,7 +2,7 @@
 
 ## Description
 
-HTTP header names are case-insensitive. Normalize them while retaining the latest supplied value.
+Implement `normalize_headers(pairs)` in `starter/solution.py`. Return a dictionary with trimmed lowercase names and trimmed values.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ HTTP header names are case-insensitive. Normalize them while retaining the lates
 
 ## Tips
 
+- **Concept to understand:** HTTP header names are case-insensitive. Normalize them while retaining the latest supplied value.
 - Why are header names and header values normalized differently?
 
 ## Example Behavior

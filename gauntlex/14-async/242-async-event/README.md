@@ -2,7 +2,7 @@
 
 ## Description
 
-An event coordinates coroutines by letting one wait until another announces that a condition is ready.
+Implement `async def wait_for_event(event)` in `starter/solution.py`. Suspend until the event is set.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ An event coordinates coroutines by letting one wait until another announces that
 
 ## Tips
 
+- **Concept to understand:** An event coordinates coroutines by letting one wait until another announces that a condition is ready.
 - Why is awaiting a signal preferable to repeatedly polling a flag?
 
 ## Example Behavior

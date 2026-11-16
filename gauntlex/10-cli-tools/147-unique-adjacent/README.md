@@ -2,7 +2,7 @@
 
 ## Description
 
-Remove duplicates only when they appear consecutively. A value that returns after a different line must appear again.
+Implement the program in `starter/main.py` using standard input and standard output. Read all lines from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Remove duplicates only when they appear consecutively. A value that returns afte
 
 ## Tips
 
+- **Concept to understand:** Remove duplicates only when they appear consecutively. A value that returns after a different line must appear again.
 - Why is this different from removing every duplicate globally?
 - What happens when an earlier line reappears after another line?
 

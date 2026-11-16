@@ -2,7 +2,7 @@
 
 ## Description
 
-Count how often each nonnegative integer occurs in a stream, then display a frequency report sorted by value.
+Implement the program in `starter/main.py` using standard input and standard output. Read whitespace-separated nonnegative integers from standard input.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Count how often each nonnegative integer occurs in a stream, then display a freq
 
 ## Tips
 
+- **Concept to understand:** Count how often each nonnegative integer occurs in a stream, then display a frequency report sorted by value.
 - Why does sorting by value differ from sorting by frequency?
 - How should repeated values affect the count?
 

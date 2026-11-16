@@ -2,7 +2,7 @@
 
 ## Description
 
-Launching all work simultaneously can overload a resource. Bound the number of operations running at once while preserving output order.
+Implement `async def limited_map(fn, values, limit)` in `starter/solution.py`. Never allow more than `limit` calls to run simultaneously.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Launching all work simultaneously can overload a resource. Bound the number of o
 
 ## Tips
 
+- **Concept to understand:** Launching all work simultaneously can overload a resource. Bound the number of operations running at once while preserving output order.
 - How is the number of active operations different from the number of total inputs?
 
 ## Example Behavior

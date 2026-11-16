@@ -2,7 +2,7 @@
 
 ## Description
 
-WSGI represents HTTP request headers through environment keys. Expose a selected header without assuming it exists.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/agent`, read `HTTP_USER_AGENT` from `environ`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ WSGI request headers appear as environment variables, commonly with an `HTTP_` p
 
 ## Tips
 
+- **Concept to understand:** WSGI represents HTTP request headers through environment keys. Expose a selected header without assuming it exists.
 - How do HTTP header names become WSGI environment keys?
 
 ## Example Behavior

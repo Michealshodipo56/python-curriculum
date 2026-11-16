@@ -2,7 +2,7 @@
 
 ## Description
 
-Derive fixed-length key material from a password, salt, and iteration count.
+Implement `derive_key(password, salt, iterations)` in `starter/solution.py`. Return lowercase hex of a 32-byte PBKDF2-HMAC-SHA256 derived key for UTF-8 password and salt with positive integer iterations. Raise ValueError for nonpositive iterations.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Use PBKDF2-HMAC-SHA256 from the standard library with the requested positive ite
 
 ## Tips
 
+- **Concept to understand:** Derive fixed-length key material from a password, salt, and iteration count.
 A key-derivation function deliberately repeats work; iterations must be positive.
 
 ## Example Behavior

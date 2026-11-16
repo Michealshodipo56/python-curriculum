@@ -2,7 +2,7 @@
 
 ## Description
 
-A regression occurs when a previously passing test now fails. Compare two test runs while excluding tests that were not present in both.
+Implement `regressions(baseline, current)` in `starter/solution.py`. Include only names present in both mappings that changed from `True` to `False`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A regression occurs when a previously passing test now fails. Compare two test r
 
 ## Tips
 
+- **Concept to understand:** A regression occurs when a previously passing test now fails. Compare two test runs while excluding tests that were not present in both.
 - Why is a new failing test not necessarily a regression relative to the baseline?
 
 ## Example Behavior

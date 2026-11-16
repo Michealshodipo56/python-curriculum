@@ -2,7 +2,7 @@
 
 ## Description
 
-Build a tool that selects the final requested lines of a stream without reversing their order.
+Implement the program in `starter/main.py` using standard input and standard output. Read a nonnegative integer `N` from the first line.
 
 ## Requirements
 

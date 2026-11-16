@@ -2,7 +2,7 @@
 
 ## Description
 
-Convert comma-separated records into tab-separated records without mistaking commas inside quoted fields for separators.
+Implement the program in `starter/main.py` using standard input and standard output. Read CSV records from standard input.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Convert comma-separated records into tab-separated records without mistaking com
 
 ## Tips
 
+- **Concept to understand:** Convert comma-separated records into tab-separated records without mistaking commas inside quoted fields for separators.
 - Why is replacing every comma directly unsafe?
 - How are quotation marks inside quoted CSV fields represented?
 

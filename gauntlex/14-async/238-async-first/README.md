@@ -2,7 +2,7 @@
 
 ## Description
 
-When several independent operations can provide the same answer, the earliest completed one may be sufficient. Unfinished operations still require cleanup.
+Implement `async def first_completed(awaitables)` in `starter/solution.py`. Return the result of the first completed awaitable.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ When several independent operations can provide the same answer, the earliest co
 
 ## Tips
 
+- **Concept to understand:** When several independent operations can provide the same answer, the earliest completed one may be sufficient. Unfinished operations still require cleanup.
 - Why is cancellation part of correctness rather than just an optimization?
 
 ## Example Behavior

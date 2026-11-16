@@ -2,7 +2,7 @@
 
 ## Description
 
-Line coverage reports the fraction of measurable lines exercised by tests. Validate the counts and define what an empty project means.
+Implement `coverage_percent(covered, total)` in `starter/solution.py`. Return the covered percentage as a float between `0.0` and `100.0`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Line coverage reports the fraction of measurable lines exercised by tests. Valid
 
 ## Tips
 
+- **Concept to understand:** Line coverage reports the fraction of measurable lines exercised by tests. Validate the counts and define what an empty project means.
 - Why does an empty denominator need an explicit convention?
 
 ## Example Behavior

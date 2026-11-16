@@ -2,7 +2,7 @@
 
 ## Description
 
-WSGI exposes request bodies as a byte stream. Read only the declared bytes before transforming their decoded text.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/uppercase`, read exactly `CONTENT_LENGTH` bytes from `wsgi.input`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Respect the declared request-body byte count when reading `wsgi.input`. Decode o
 
 ## Tips
 
+- **Concept to understand:** WSGI exposes request bodies as a byte stream. Read only the declared bytes before transforming their decoded text.
 - What could go wrong if the application reads beyond the advertised length?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Represent UTF-8 text as standard Base64, including required padding.
+Implement `base64_encode(text)` in `starter/solution.py`. Return standard Base64 encoding of the UTF-8 bytes of text, including padding.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Encode UTF-8 bytes using standard Base64, retaining any required `=` padding. Ba
 
 ## Tips
 
+- **Concept to understand:** Represent UTF-8 text as standard Base64, including required padding.
 Base64 encodes bytes and does not provide confidentiality.
 
 ## Example Behavior

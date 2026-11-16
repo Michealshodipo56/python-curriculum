@@ -2,7 +2,7 @@
 
 ## Description
 
-Large test suites often need a focused subset. Match a search term within test names without changing their original spelling or order.
+Implement `select_tests(names, pattern)` in `starter/solution.py`. Match the pattern case-insensitively anywhere in each name.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Large test suites often need a focused subset. Match a search term within test n
 
 ## Tips
 
+- **Concept to understand:** Large test suites often need a focused subset. Match a search term within test names without changing their original spelling or order.
 - Why should the output preserve the original capitalization?
 
 ## Example Behavior

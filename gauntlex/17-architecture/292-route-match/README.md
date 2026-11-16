@@ -2,7 +2,7 @@
 
 ## Description
 
-HTTP route templates combine fixed path segments with named placeholders. Match a request path and extract the placeholder values.
+Implement `match_route(template, path)` in `starter/solution.py`. Require the same number of path segments.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ A literal path segment cannot match a different spelling. Capture parameters as 
 
 ## Tips
 
+- **Concept to understand:** HTTP route templates combine fixed path segments with named placeholders. Match a request path and extract the placeholder values.
 - Why must a literal route segment match exactly?
 
 ## Example Behavior

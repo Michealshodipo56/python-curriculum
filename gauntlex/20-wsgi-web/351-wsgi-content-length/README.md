@@ -2,7 +2,7 @@
 
 ## Description
 
-HTTP Content-Length measures bytes rather than Unicode characters. Build a response containing a non-ASCII character and report its encoded size.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/payload`, return UTF-8 bytes for `café` with HTTP 200.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Encode the response body to UTF-8 before measuring its size. `Content-Length` de
 
 ## Tips
 
+- **Concept to understand:** HTTP Content-Length measures bytes rather than Unicode characters. Build a response containing a non-ASCII character and report its encoded size.
 - Why is the length of a Unicode string not always its UTF-8 byte length?
 
 ## Example Behavior

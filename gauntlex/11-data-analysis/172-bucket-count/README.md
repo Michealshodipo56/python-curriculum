@@ -2,7 +2,7 @@
 
 ## Description
 
-A fixed-width histogram groups observations into adjacent numeric intervals. Count values that fall into each interval and ignore those outside the supported range.
+Implement `bucket_count(values, width, bucket_count)` in `starter/solution.py`. Create `bucket_count` half-open buckets beginning at zero, each of width `width`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A fixed-width histogram groups observations into adjacent numeric intervals. Cou
 
 ## Tips
 
+- **Concept to understand:** A fixed-width histogram groups observations into adjacent numeric intervals. Count values that fall into each interval and ignore those outside the supported range.
 - Why does a value exactly on a boundary belong to the bucket on its right?
 - What should happen when no buckets are requested?
 

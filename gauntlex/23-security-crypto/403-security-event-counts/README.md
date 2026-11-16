@@ -2,7 +2,7 @@
 
 ## Description
 
-Group security events by severity and type without assuming a fixed list of categories.
+Implement `security_event_counts(events)` in `starter/solution.py`. Given a list of event dictionaries containing `type` and `severity` strings, return counts grouped by severity: mapping severity to mapping type to integer count. Preserve all categories, including unknown strings.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Count every severity/type combination without relying on a fixed vocabulary. Unk
 
 ## Tips
 
+- **Concept to understand:** Group security events by severity and type without assuming a fixed list of categories.
 Unknown categories are still valid data and should be counted.
 
 ## Example Behavior

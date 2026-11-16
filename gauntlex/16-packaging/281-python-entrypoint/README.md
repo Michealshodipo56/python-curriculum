@@ -2,7 +2,7 @@
 
 ## Description
 
-A command-line entry point refers to a Python module and the function to execute. Validate a dotted module path before adding the function reference.
+Implement `entrypoint_name(module_name)` in `starter/solution.py`. Require every dot-separated component to be a valid Python identifier.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A command-line entry point refers to a Python module and the function to execute
 
 ## Tips
 
+- **Concept to understand:** A command-line entry point refers to a Python module and the function to execute. Validate a dotted module path before adding the function reference.
 - Why is validating each component more reliable than checking only the full string?
 
 ## Example Behavior

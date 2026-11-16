@@ -2,7 +2,7 @@
 
 ## Description
 
-Textual test reports often mix structured results with unrelated lines. Count only records that match a strict pass-or-fail format.
+Implement `parse_test_report(lines)` in `starter/solution.py`. Count only lines matching `PASS name` or `FAIL name` with exactly one space and a nonempty name.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Textual test reports often mix structured results with unrelated lines. Count on
 
 ## Tips
 
+- **Concept to understand:** Textual test reports often mix structured results with unrelated lines. Count only records that match a strict pass-or-fail format.
 - Why is checking only the start of a line insufficient?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Decode strictly validated Base64 text back into Unicode.
+Implement `base64_decode(encoded)` in `starter/solution.py`. Decode standard Base64 text to UTF-8. Reject invalid Base64 characters or padding with ValueError. Propagate UnicodeDecodeError for invalid UTF-8.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Reject malformed Base64 characters and padding instead of permissively discardin
 
 ## Tips
 
+- **Concept to understand:** Decode strictly validated Base64 text back into Unicode.
 Malformed padding and invalid decoded UTF-8 must not be silently accepted.
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a keyed SHA-256 message authentication code using a shared secret.
+Implement `hmac_sign(secret, message)` in `starter/solution.py`. Return lowercase HMAC-SHA256 hex digest for UTF-8 message using UTF-8 secret key.
 
 ## Requirements
 

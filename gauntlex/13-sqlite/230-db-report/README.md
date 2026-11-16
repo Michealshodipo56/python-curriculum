@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize sales performance by grouping amounts into categories, then rank the categories by total revenue.
+Implement `revenue_report(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read `sales(id,category,amount INTEGER)`.
 
 ## Requirements
 
@@ -16,9 +16,12 @@ Summarize sales performance by grouping amounts into categories, then rank the c
 
 ## Tips
 
+- **Concept to understand:** Summarize sales performance by grouping amounts into categories, then rank the categories by total revenue.
 - Why is the category name needed as a secondary sort key?
 - How can aggregation reduce many sales rows to one row per category?
 
 ## Example Behavior
 
 Two categories with equal revenue are returned in alphabetical category order.
+
+---

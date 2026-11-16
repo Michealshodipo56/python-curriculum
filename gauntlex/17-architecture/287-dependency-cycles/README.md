@@ -2,7 +2,7 @@
 
 ## Description
 
-Circular prerequisites prevent any valid build order. Detect a cycle even when some nodes appear only in other tasks' dependency lists.
+Implement `has_dependency_cycle(graph)` in `starter/solution.py`. Return `True` if any directed cycle exists; otherwise `False`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A self-dependency is a cycle, while two separate branches that converge on the s
 
 ## Tips
 
+- **Concept to understand:** Circular prerequisites prevent any valid build order. Detect a cycle even when some nodes appear only in other tasks' dependency lists.
 - Why is revisiting a fully explored node different from revisiting an active path?
 
 ## Example Behavior

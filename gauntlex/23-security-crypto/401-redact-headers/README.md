@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a copy of HTTP headers with credential-bearing values redacted.
+Implement `redact_headers(headers)` in `starter/solution.py`. Given a mapping of HTTP header names to strings, return a new mapping with values replaced by `[REDACTED]` for Authorization, Cookie, Set-Cookie and X-API-Key, case-insensitively. Preserve original key casing and other values.
 
 ## Requirements
 

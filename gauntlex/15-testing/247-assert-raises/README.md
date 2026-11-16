@@ -2,7 +2,7 @@
 
 ## Description
 
-Some tests succeed only when a callable raises a particular exception. Validate the exception type and preserve the caught instance.
+Implement `assert_raises(expected_exception, fn)` in `starter/solution.py`. Call the zero-argument function `fn`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Some tests succeed only when a callable raises a particular exception. Validate 
 
 ## Tips
 
+- **Concept to understand:** Some tests succeed only when a callable raises a particular exception. Validate the exception type and preserve the caught instance.
 - Why is a normal return a failure for this test?
 - What distinguishes an exception instance from its class?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Default configuration defines which settings an application recognizes. Apply only permitted overrides and keep both source mappings intact.
+Implement `merge_config(defaults, overrides)` in `starter/solution.py`. Return a new dictionary containing the defaults with recognized overrides applied.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Default configuration defines which settings an application recognizes. Apply on
 
 ## Tips
 
+- **Concept to understand:** Default configuration defines which settings an application recognizes. Apply only permitted overrides and keep both source mappings intact.
 - Why might allowing unknown keys unexpectedly change application behavior?
 
 ## Example Behavior

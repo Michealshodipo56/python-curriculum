@@ -2,7 +2,7 @@
 
 ## Description
 
-Roles can inherit permissions from parent roles. Collect all permissions granted directly or transitively through the hierarchy.
+Implement `effective_permissions(role_permissions, parents, assigned)` in `starter/solution.py`. Include permissions of every assigned role and all transitive ancestor roles.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Permissions flow through every ancestor role, not only direct parents. Multiple 
 
 ## Tips
 
+- **Concept to understand:** Roles can inherit permissions from parent roles. Collect all permissions granted directly or transitively through the hierarchy.
 - Why can one role inherit permissions through several levels?
 
 ## Example Behavior

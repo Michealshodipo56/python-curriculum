@@ -2,7 +2,7 @@
 
 ## Description
 
-Different features can have different scales. Standardize each matrix column independently using population statistics.
+Implement `standardize_columns(matrix)` in `starter/solution.py`. Compute each column's population mean and standard deviation.
 
 ## Requirements
 
@@ -20,8 +20,11 @@ Compute population statistics separately for each feature column, not across the
 
 ## Tips
 
+- **Concept to understand:** Different features can have different scales. Standardize each matrix column independently using population statistics.
 - Why would computing one mean for the entire matrix distort individual features?
 
 ## Example Behavior
 
 `standardize_columns([[1, 10], [3, 10]])` → `[[-1.0, 0.0], [1.0, 0.0]]`.
+
+---

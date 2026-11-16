@@ -2,7 +2,7 @@
 
 ## Description
 
-Configuration drift can come from changed values, added settings, or removed settings. Report every key that differs between two snapshots.
+Implement `config_diff(old, new)` in `starter/solution.py`. Return sorted keys whose values differ or whose presence differs.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A missing key is not equivalent to a present key whose value is `None`; report t
 
 ## Tips
 
+- **Concept to understand:** Configuration drift can come from changed values, added settings, or removed settings. Report every key that differs between two snapshots.
 - Why is missing different from explicitly configured `None`?
 
 ## Example Behavior

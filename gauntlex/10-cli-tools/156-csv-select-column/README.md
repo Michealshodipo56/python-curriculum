@@ -2,7 +2,7 @@
 
 ## Description
 
-Select a CSV column by its header name rather than by a fixed numeric position. Preserve the order of data rows.
+Implement the program in `starter/main.py` using standard input and standard output. Read the target column name from the first input line.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Select a CSV column by its header name rather than by a fixed numeric position. 
 
 ## Tips
 
+- **Concept to understand:** Select a CSV column by its header name rather than by a fixed numeric position. Preserve the order of data rows.
 - Why should the header determine which field is selected?
 - How does an empty field affect the output?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Cross-origin headers must not trust origins merely because they resemble an approved domain. Allow only one exact origin.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/public`, return HTTP 200 and body `ok`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Treat the approved origin as an exact string, not a suffix or substring pattern.
 
 ## Tips
 
+- **Concept to understand:** Cross-origin headers must not trust origins merely because they resemble an approved domain. Allow only one exact origin.
 - Why is a suffix or substring match unsafe for origin allowlists?
 
 ## Example Behavior

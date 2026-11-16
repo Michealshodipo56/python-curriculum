@@ -2,7 +2,7 @@
 
 ## Description
 
-Express each observation relative to the population's center and spread, rather than its original units.
+Implement `z_score_scale(values)` in `starter/solution.py`. Calculate the population mean and population standard deviation (variance divided by `n`).
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Use population variance with divisor `n`, not sample variance with `n-1`. If eve
 
 ## Tips
 
+- **Concept to understand:** Express each observation relative to the population's center and spread, rather than its original units.
 - How does population variance differ from sample variance?
 
 ## Example Behavior

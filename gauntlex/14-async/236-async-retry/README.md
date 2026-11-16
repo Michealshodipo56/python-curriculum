@@ -2,7 +2,7 @@
 
 ## Description
 
-Transient failures sometimes justify another attempt. Each retry must call the operation again rather than reuse a coroutine that has already failed.
+Implement `async def retry_async(fn, attempts)` in `starter/solution.py`. Raise `ValueError` if attempts is less than one.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Transient failures sometimes justify another attempt. Each retry must call the o
 
 ## Tips
 
+- **Concept to understand:** Transient failures sometimes justify another attempt. Each retry must call the operation again rather than reuse a coroutine that has already failed.
 - Why must a fresh coroutine be created for each attempt?
 - Why should the final error remain visible?
 

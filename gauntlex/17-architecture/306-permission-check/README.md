@@ -2,7 +2,7 @@
 
 ## Description
 
-Role-based access control grants actions through assigned roles. Determine whether any known role explicitly authorizes a requested permission.
+Implement `has_permission(role_permissions, user_roles, permission)` in `starter/solution.py`. Return `True` if at least one assigned role includes that permission.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Permission checks use direct grants from assigned roles only. Unknown roles gran
 
 ## Tips
 
+- **Concept to understand:** Role-based access control grants actions through assigned roles. Determine whether any known role explicitly authorizes a requested permission.
 - Why must an unknown role never grant permissions by default?
 
 ## Example Behavior

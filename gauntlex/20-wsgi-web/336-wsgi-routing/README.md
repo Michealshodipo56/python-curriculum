@@ -2,7 +2,7 @@
 
 ## Description
 
-A web service chooses responses using the request path. Distinguish a known health route from all other locations.
+Implement `application(environ, start_response)` in `starter/solution.py`. Read `PATH_INFO` from the WSGI environment.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Choose status and body from `PATH_INFO` before starting the response. Keep the h
 
 ## Tips
 
+- **Concept to understand:** A web service chooses responses using the request path. Distinguish a known health route from all other locations.
 - Why should an unknown route not share the health route's success status?
 
 ## Example Behavior

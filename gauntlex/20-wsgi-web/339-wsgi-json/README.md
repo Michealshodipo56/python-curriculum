@@ -2,7 +2,7 @@
 
 ## Description
 
-A JSON API must serialize Python data into valid compact JSON and label its response correctly.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/data`, return HTTP 200 and `Content-Type: application/json`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Construct a JSON representation rather than Python's string representation of a 
 
 ## Tips
 
+- **Concept to understand:** A JSON API must serialize Python data into valid compact JSON and label its response correctly.
 - Why is Python's `True` not the same literal as JSON's `true`?
 
 ## Example Behavior

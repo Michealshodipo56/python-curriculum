@@ -2,7 +2,7 @@
 
 ## Description
 
-A weighted mean lets some observations contribute more than others. Each observation has a corresponding nonnegative weight.
+Implement `weighted_mean(values, weights)` in `starter/solution.py`. Return the weighted average, with each observation contributing in proportion to its weight.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A weighted mean lets some observations contribute more than others. Each observa
 
 ## Tips
 
+- **Concept to understand:** A weighted mean lets some observations contribute more than others. Each observation has a corresponding nonnegative weight.
 - Why is a simple arithmetic mean insufficient when weights differ?
 - What does a zero weight contribute?
 

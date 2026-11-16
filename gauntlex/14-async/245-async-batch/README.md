@@ -2,7 +2,7 @@
 
 ## Description
 
-Divide asynchronous work into consecutive batches. Work within a batch may overlap, but later batches must not begin until earlier batches finish.
+Implement `async def async_batches(fn, values, batch_size)` in `starter/solution.py`. Process consecutive groups of at most `batch_size` items.
 
 ## Requirements
 
@@ -18,8 +18,11 @@ Divide asynchronous work into consecutive batches. Work within a batch may overl
 
 ## Tips
 
+- **Concept to understand:** Divide asynchronous work into consecutive batches. Work within a batch may overlap, but later batches must not begin until earlier batches finish.
 - How do batch boundaries differ from a simple concurrency limit?
 
 ## Example Behavior
 
 With five inputs and a batch size of two, batches have sizes 2, 2, and 1, executed in sequence.
+
+---

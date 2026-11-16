@@ -2,7 +2,7 @@
 
 ## Description
 
-A function's return value and printed output are different observable effects. Capture both while ensuring the global output stream is restored.
+Implement `capture_output(fn)` in `starter/solution.py`. Call the supplied zero-argument function once.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A function's return value and printed output are different observable effects. C
 
 ## Tips
 
+- **Concept to understand:** A function's return value and printed output are different observable effects. Capture both while ensuring the global output stream is restored.
 - Why is cleanup necessary even when the callable fails?
 
 ## Example Behavior

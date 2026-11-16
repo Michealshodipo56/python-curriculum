@@ -2,7 +2,7 @@
 
 ## Description
 
-Squaring prediction errors makes larger deviations contribute more strongly to the overall error score.
+Implement `root_mean_square_error(actual, predicted)` in `starter/solution.py`. Require nonempty actual and predicted numeric sequences of equal length.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Square each paired prediction residual before averaging and taking the square ro
 
 ## Tips
 
+- **Concept to understand:** Squaring prediction errors makes larger deviations contribute more strongly to the overall error score.
 - Why does squaring make large errors more influential?
 
 ## Example Behavior

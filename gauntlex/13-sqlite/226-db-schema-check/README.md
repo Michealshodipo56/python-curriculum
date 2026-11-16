@@ -2,7 +2,7 @@
 
 ## Description
 
-A database can contain tables, views, and indexes. Determine whether a named object is specifically a table, not merely any schema entry.
+Implement `table_exists(conn, table_name)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Check the SQLite schema for the supplied table name.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A database can contain tables, views, and indexes. Determine whether a named obj
 
 ## Tips
 
+- **Concept to understand:** A database can contain tables, views, and indexes. Determine whether a named object is specifically a table, not merely any schema entry.
 - Why does the presence of a schema name not guarantee a table exists?
 - Which object type must be checked?
 

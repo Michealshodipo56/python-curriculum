@@ -2,7 +2,7 @@
 
 ## Description
 
-A queue holds work in first-in, first-out order. Collect what is currently waiting without suspending until future items arrive.
+Implement `async def queue_drain(queue)` in `starter/solution.py`. Remove and return all currently queued items in FIFO order.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A queue holds work in first-in, first-out order. Collect what is currently waiti
 
 ## Tips
 
+- **Concept to understand:** A queue holds work in first-in, first-out order. Collect what is currently waiting without suspending until future items arrive.
 - Why is draining a queue different from waiting for a producer?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Population variance measures how widely observations differ from their average. It uses squared deviations and divides by the number of observations.
+Implement `population_variance(values)` in `starter/solution.py`. Calculate the arithmetic mean and the average squared deviation from it.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Population variance measures how widely observations differ from their average. 
 
 ## Tips
 
+- **Concept to understand:** Population variance measures how widely observations differ from their average. It uses squared deviations and divides by the number of observations.
 - Why are deviations squared rather than simply added?
 - What happens when every value equals the mean?
 

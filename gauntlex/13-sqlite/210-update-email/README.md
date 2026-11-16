@@ -2,7 +2,7 @@
 
 ## Description
 
-Changing a stored email should affect only the intended user. Report whether the target record existed so callers can distinguish success from a missing ID.
+Implement `update_email(conn, user_id, email)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Changing a stored email should affect only the intended user. Report whether the
 
 ## Tips
 
+- **Concept to understand:** Changing a stored email should affect only the intended user. Report whether the target record existed so callers can distinguish success from a missing ID.
 - How can the number of affected rows tell you whether the user existed?
 - Why should the identifier be parameterized?
 

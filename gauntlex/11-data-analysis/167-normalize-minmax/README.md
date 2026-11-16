@@ -2,7 +2,7 @@
 
 ## Description
 
-Min-max normalization rescales numeric observations relative to their smallest and largest values, preserving their order.
+Implement `minmax_normalize(values)` in `starter/solution.py`. Return a new list with each value scaled into the inclusive range `[0, 1]`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Min-max normalization rescales numeric observations relative to their smallest a
 
 ## Tips
 
+- **Concept to understand:** Min-max normalization rescales numeric observations relative to their smallest and largest values, preserving their order.
 - Why does a constant dataset need a special case?
 - What happens to values between the minimum and maximum?
 

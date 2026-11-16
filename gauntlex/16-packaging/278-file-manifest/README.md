@@ -2,7 +2,7 @@
 
 ## Description
 
-A build manifest records the files included in an artifact and their byte counts. Reject paths that could escape the intended relative directory.
+Implement `file_manifest(entries)` in `starter/solution.py`. Reject absolute paths and paths containing a complete `..` segment with `ValueError`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A build manifest records the files included in an artifact and their byte counts
 
 ## Tips
 
+- **Concept to understand:** A build manifest records the files included in an artifact and their byte counts. Reject paths that could escape the intended relative directory.
 - Why is a `..` path component different from two dots inside a filename?
 
 ## Example Behavior

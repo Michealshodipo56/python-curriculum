@@ -2,7 +2,7 @@
 
 ## Description
 
-Extract one named field from a stream of JSON objects. Missing fields are skipped, but explicitly null fields must remain in the output.
+Implement the program in `starter/main.py` using standard input and standard output. Read the desired key name from the first input line.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Extract one named field from a stream of JSON objects. Missing fields are skippe
 
 ## Tips
 
+- **Concept to understand:** Extract one named field from a stream of JSON objects. Missing fields are skipped, but explicitly null fields must remain in the output.
 - Why is a missing key different from a key containing null?
 - Why should strings be printed as JSON strings rather than raw text?
 

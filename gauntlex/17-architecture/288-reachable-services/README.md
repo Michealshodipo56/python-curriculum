@@ -2,7 +2,7 @@
 
 ## Description
 
-A service dependency graph can show which components may be reached from one starting point. Explore transitively without looping forever.
+Implement `reachable_services(graph, start)` in `starter/solution.py`. Include the start itself, even if it is not a graph key.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ A start node absent from the graph still produces a one-item result containing t
 
 ## Tips
 
+- **Concept to understand:** A service dependency graph can show which components may be reached from one starting point. Explore transitively without looping forever.
 - Why must visited services be tracked?
 
 ## Example Behavior

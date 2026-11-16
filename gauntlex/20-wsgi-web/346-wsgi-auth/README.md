@@ -2,7 +2,7 @@
 
 ## Description
 
-A private endpoint must verify a bearer credential before releasing its content. Validate the authorization scheme and compare the secret safely.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/private`, require Authorization `Bearer secret-token`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Validate the authorization scheme separately from the credential and accept case
 
 ## Tips
 
+- **Concept to understand:** A private endpoint must verify a bearer credential before releasing its content. Validate the authorization scheme and compare the secret safely.
 - Why should token comparison avoid leaking information through timing differences?
 
 ## Example Behavior

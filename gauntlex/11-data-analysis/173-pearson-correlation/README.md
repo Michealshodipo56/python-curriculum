@@ -2,7 +2,7 @@
 
 ## Description
 
-Pearson correlation measures the direction and strength of a linear relationship between two paired numeric datasets.
+Implement `pearson_correlation(a, b)` in `starter/solution.py`. Return the Pearson correlation coefficient of the paired observations.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Pearson correlation measures the direction and strength of a linear relationship
 
 ## Tips
 
+- **Concept to understand:** Pearson correlation measures the direction and strength of a linear relationship between two paired numeric datasets.
 - Why does a constant dataset prevent correlation from being calculated?
 - What do positive and negative correlation indicate?
 

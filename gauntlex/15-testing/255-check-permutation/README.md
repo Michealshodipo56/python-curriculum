@@ -2,7 +2,7 @@
 
 ## Description
 
-Two sequences are permutations when they contain the same elements with identical occurrence counts, regardless of position.
+Implement `is_permutation(a, b)` in `starter/solution.py`. Return `True` only if both lists contain the same values with the same multiplicities.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Two sequences are permutations when they contain the same elements with identica
 
 ## Tips
 
+- **Concept to understand:** Two sequences are permutations when they contain the same elements with identical occurrence counts, regardless of position.
 - Why is comparing sets alone insufficient when values repeat?
 
 ## Example Behavior

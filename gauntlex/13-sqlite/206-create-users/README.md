@@ -2,7 +2,7 @@
 
 ## Description
 
-A reliable directory starts with a schema that prevents incomplete records and duplicate email addresses. Define the database constraints before any user records are inserted.
+Implement `create_users(conn)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ A reliable directory starts with a schema that prevents incomplete records and d
 
 ## Tips
 
+- **Concept to understand:** A reliable directory starts with a schema that prevents incomplete records and duplicate email addresses. Define the database constraints before any user records are inserted.
 - Which integrity rules belong in the database rather than only in application code?
 - What should a second call do when the table already exists?
 

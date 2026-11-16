@@ -2,7 +2,7 @@
 
 ## Description
 
-Distributed systems use request identifiers to connect logs and trace related work. Generate a fresh identifier in canonical UUID version-four form.
+Implement `request_id()` in `starter/solution.py`. Return a lowercase UUID version 4 string with hyphens in canonical positions.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Distributed systems use request identifiers to connect logs and trace related wo
 
 ## Tips
 
+- **Concept to understand:** Distributed systems use request identifiers to connect logs and trace related work. Generate a fresh identifier in canonical UUID version-four form.
 - Why should the identifier include both a recognizable version and a consistent format?
 - Why is a hard-coded identifier unsuitable?
 

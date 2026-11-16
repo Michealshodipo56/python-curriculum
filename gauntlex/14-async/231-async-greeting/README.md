@@ -2,7 +2,7 @@
 
 ## Description
 
-A coroutine is a function whose result can be awaited by an asynchronous caller. Begin with a greeting that returns text rather than printing it.
+Implement `async def greet_async(name)` in `starter/solution.py`. Return the exact string `Hello, NAME!`, substituting the supplied name.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A coroutine is a function whose result can be awaited by an asynchronous caller.
 
 ## Tips
 
+- **Concept to understand:** A coroutine is a function whose result can be awaited by an asynchronous caller. Begin with a greeting that returns text rather than printing it.
 - What is the difference between calling a coroutine function and awaiting it?
 
 ## Example Behavior

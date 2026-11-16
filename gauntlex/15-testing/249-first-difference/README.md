@@ -2,7 +2,7 @@
 
 ## Description
 
-When comparing two sequences, identify the earliest point where their contents or lengths diverge.
+Implement `first_difference(a, b)` in `starter/solution.py`. Return the zero-based index of the first unequal pair.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ When comparing two sequences, identify the earliest point where their contents o
 
 ## Tips
 
+- **Concept to understand:** When comparing two sequences, identify the earliest point where their contents or lengths diverge.
 - What happens if every overlapping element matches but one sequence continues?
 
 ## Example Behavior

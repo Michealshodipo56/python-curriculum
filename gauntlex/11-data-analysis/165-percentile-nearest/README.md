@@ -2,7 +2,7 @@
 
 ## Description
 
-A percentile selects an observation at a specified position in sorted data. Use the nearest-rank definition rather than interpolation.
+Implement `nearest_rank_percentile(values, p)` in `starter/solution.py`. Sort the values conceptually in ascending order without mutating the input.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A percentile selects an observation at a specified position in sorted data. Use 
 
 ## Tips
 
+- **Concept to understand:** A percentile selects an observation at a specified position in sorted data. Use the nearest-rank definition rather than interpolation.
 - Why does the percentile rank start at one rather than zero?
 - What does the 100th percentile select?
 

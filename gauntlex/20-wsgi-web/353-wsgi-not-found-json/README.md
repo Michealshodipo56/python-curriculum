@@ -2,7 +2,7 @@
 
 ## Description
 
-Even an error-only service should provide predictable JSON and HTTP metadata. Include the requested path in a structured not-found response.
+Implement `application(environ, start_response)` in `starter/solution.py`. Return HTTP 404 Not Found for every request.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Serialize the error and requested path as a compact JSON object and encode it to
 
 ## Tips
 
+- **Concept to understand:** Even an error-only service should provide predictable JSON and HTTP metadata. Include the requested path in a structured not-found response.
 - Why does a structured error need the same encoding discipline as a successful response?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Independent services can be built in parallel once all their prerequisites are complete. Group services by the earliest layer in which they become ready.
+Implement `service_layers(graph)` in `starter/solution.py`. Include names that occur only as prerequisites.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Independent services are grouped in the same layer; a service may enter only aft
 
 ## Tips
 
+- **Concept to understand:** Independent services can be built in parallel once all their prerequisites are complete. Group services by the earliest layer in which they become ready.
 - Why should all currently ready services share a layer?
 
 ## Example Behavior

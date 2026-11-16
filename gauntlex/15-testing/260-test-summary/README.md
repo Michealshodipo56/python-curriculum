@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize a test run that can pass, fail, or skip individual cases. A complete report includes zero counts for absent outcomes.
+Implement `test_summary(records)` in `starter/solution.py`. Count records for each status and the total number of records.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Summarize a test run that can pass, fail, or skip individual cases. A complete r
 
 ## Tips
 
+- **Concept to understand:** Summarize a test run that can pass, fail, or skip individual cases. A complete report includes zero counts for absent outcomes.
 - Why are explicit zero counts useful for reporting?
 
 ## Example Behavior

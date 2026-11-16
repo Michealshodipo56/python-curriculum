@@ -2,7 +2,7 @@
 
 ## Description
 
-Different numeric ranges make features difficult to compare. Rescale observations using the dataset minimum and maximum while preserving their order.
+Implement `min_max_scale(values)` in `starter/solution.py`. Map each value to `(value - minimum) / (maximum - minimum)`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Calculate the minimum and maximum across the entire supplied sequence before tra
 
 ## Tips
 
+- **Concept to understand:** Different numeric ranges make features difficult to compare. Rescale observations using the dataset minimum and maximum while preserving their order.
 - Why does a constant dataset need special handling?
 
 ## Example Behavior

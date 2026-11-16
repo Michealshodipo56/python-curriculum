@@ -2,7 +2,7 @@
 
 ## Description
 
-Apply an asynchronous operation to each item without waiting for one item to finish before beginning the next.
+Implement `async def async_map(fn, values)` in `starter/solution.py`. Invoke `fn(value)` for every value concurrently.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Apply an asynchronous operation to each item without waiting for one item to fin
 
 ## Tips
 
+- **Concept to understand:** Apply an asynchronous operation to each item without waiting for one item to finish before beginning the next.
 - What is the difference between creating concurrent work and ordering its results?
 
 ## Example Behavior

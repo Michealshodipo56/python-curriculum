@@ -2,7 +2,7 @@
 
 ## Description
 
-A received message may be accompanied by a claimed HMAC. Determine whether the signature matches the shared secret and message, using a timing-resistant comparison.
+Implement `verify_hmac(secret, message, signature)` in `starter/solution.py`. Recompute HMAC-SHA256 for the supplied UTF-8 secret and message.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A received message may be accompanied by a claimed HMAC. Determine whether the s
 
 ## Tips
 
+- **Concept to understand:** A received message may be accompanied by a claimed HMAC. Determine whether the signature matches the shared secret and message, using a timing-resistant comparison.
 - Why should malformed signatures be treated as invalid?
 - Why can comparison timing matter for authentication?
 

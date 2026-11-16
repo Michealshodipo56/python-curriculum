@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize event frequencies by category and produce a deterministic ranking even when multiple categories have equal counts.
+Implement `group_counts(conn)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Read from `events(id,category)`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Summarize event frequencies by category and produce a deterministic ranking even
 
 ## Tips
 
+- **Concept to understand:** Summarize event frequencies by category and produce a deterministic ranking even when multiple categories have equal counts.
 - Why should a frequency report specify tie-breaking?
 - How does grouping combine multiple rows into one result?
 

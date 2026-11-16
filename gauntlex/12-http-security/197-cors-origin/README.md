@@ -2,7 +2,7 @@
 
 ## Description
 
-Cross-origin access decisions depend on exact origins, not vaguely similar hostnames. Check whether a request origin is explicitly permitted.
+Implement `allowed_origin(origin, allowed)` in `starter/solution.py`. Return `True` only when `origin` exactly equals one of the allowed origins.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Cross-origin access decisions depend on exact origins, not vaguely similar hostn
 
 ## Tips
 
+- **Concept to understand:** Cross-origin access decisions depend on exact origins, not vaguely similar hostnames. Check whether a request origin is explicitly permitted.
 - Why is a lookalike domain not the same origin?
 - What changes when an HTTPS origin uses a different port?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Release changes can be grouped by category for easier reading without changing the order in which changes were supplied.
+Implement `group_changes(entries)` in `starter/solution.py`. Return a dictionary mapping each category to its list of descriptions.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Release changes can be grouped by category for easier reading without changing t
 
 ## Tips
 
+- **Concept to understand:** Release changes can be grouped by category for easier reading without changing the order in which changes were supplied.
 - Why does assigning a new list for every repeated category lose information?
 
 ## Example Behavior

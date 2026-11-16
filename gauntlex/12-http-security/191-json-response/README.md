@@ -2,7 +2,7 @@
 
 ## Description
 
-Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response object.
+Implement `json_response(value)` in `starter/solution.py`. Return a dictionary with `status`, `headers`, and `body`.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response o
 
 ## Tips
 
+- **Concept to understand:** Wrap an arbitrary JSON-serializable value in a predictable HTTP-style response object.
 - Why is a serialized JSON body different from a Python dictionary?
 
 ## Example Behavior

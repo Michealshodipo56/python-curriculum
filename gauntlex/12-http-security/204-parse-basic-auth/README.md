@@ -2,7 +2,7 @@
 
 ## Description
 
-HTTP Basic authorization carries a Base64-encoded username and password separated by a colon. Decode the credentials and reject malformed input without exposing secrets.
+Implement `parse_basic_auth(header)` in `starter/solution.py`. Decode valid Base64 data as UTF-8.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ HTTP Basic authorization carries a Base64-encoded username and password separate
 
 ## Tips
 
+- **Concept to understand:** HTTP Basic authorization carries a Base64-encoded username and password separated by a colon. Decode the credentials and reject malformed input without exposing secrets.
 - Why must the first colon be the separator?
 - Why does Base64 encoding not provide encryption?
 

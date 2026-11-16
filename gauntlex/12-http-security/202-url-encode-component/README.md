@@ -2,7 +2,7 @@
 
 ## Description
 
-A path component is a single part of a URL, so characters such as spaces and slashes must be encoded rather than interpreted as separators.
+Implement `encode_component(text)` in `starter/solution.py`. Encode the input as UTF-8 and percent-escape reserved or unsafe bytes.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A path component is a single part of a URL, so characters such as spaces and sla
 
 ## Tips
 
+- **Concept to understand:** A path component is a single part of a URL, so characters such as spaces and slashes must be encoded rather than interpreted as separators.
 - Why does a slash inside one component need escaping?
 - How does URL component encoding differ from form encoding?
 

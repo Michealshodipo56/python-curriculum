@@ -2,7 +2,7 @@
 
 ## Description
 
-A cache key should consistently identify the same request inputs. Combine the method, URL, and body into an unambiguous canonical representation before hashing.
+Implement `cache_key(method, url, body)` in `starter/solution.py`. Uppercase the request method before serialization.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A cache key should consistently identify the same request inputs. Combine the me
 
 ## Tips
 
+- **Concept to understand:** A cache key should consistently identify the same request inputs. Combine the method, URL, and body into an unambiguous canonical representation before hashing.
 - Why can directly concatenating fields be ambiguous?
 - Why should method capitalization not change the resulting key?
 

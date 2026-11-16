@@ -2,7 +2,7 @@
 
 ## Description
 
-A Python wheel filename encodes the distribution, version, and compatibility tags. Assemble the expected filename from trusted components.
+Implement `wheel_name(name, version, python_tag)` in `starter/solution.py`. Convert hyphens in the package name to underscores.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A Python wheel filename encodes the distribution, version, and compatibility tag
 
 ## Tips
 
+- **Concept to understand:** A Python wheel filename encodes the distribution, version, and compatibility tags. Assemble the expected filename from trusted components.
 - Why is the distribution name represented differently inside a wheel filename?
 
 ## Example Behavior

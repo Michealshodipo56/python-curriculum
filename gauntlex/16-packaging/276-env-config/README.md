@@ -2,7 +2,7 @@
 
 ## Description
 
-Application configuration often arrives as text from environment variables. Interpret the supported values while applying a safe default only when a setting is absent.
+Implement `read_config(env)` in `starter/solution.py`. Return a dictionary with boolean `debug` and integer `port`.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Application configuration often arrives as text from environment variables. Inte
 
 ## Tips
 
+- **Concept to understand:** Application configuration often arrives as text from environment variables. Interpret the supported values while applying a safe default only when a setting is absent.
 - Why should an invalid supplied port not silently fall back to the default?
 
 ## Example Behavior

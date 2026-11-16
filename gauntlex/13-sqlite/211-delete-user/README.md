@@ -2,7 +2,7 @@
 
 ## Description
 
-Delete a specific directory entry without disturbing other users, and report whether the target was actually present.
+Implement `delete_user(conn, user_id)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Delete only the row with the supplied integer ID.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Delete a specific directory entry without disturbing other users, and report whe
 
 ## Tips
 
+- **Concept to understand:** Delete a specific directory entry without disturbing other users, and report whether the target was actually present.
 - How can the affected-row count distinguish a missing user from a successful deletion?
 
 ## Example Behavior

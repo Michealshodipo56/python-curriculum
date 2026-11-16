@@ -2,7 +2,7 @@
 
 ## Description
 
-A producer adds values to a shared asynchronous queue. When the queue has limited capacity, insertion may need to wait for space.
+Implement `async def produce_items(queue, values)` in `starter/solution.py`. Enqueue every value in its original order.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A producer adds values to a shared asynchronous queue. When the queue has limite
 
 ## Tips
 
+- **Concept to understand:** A producer adds values to a shared asynchronous queue. When the queue has limited capacity, insertion may need to wait for space.
 - Why can putting an item into a bounded queue require waiting?
 
 ## Example Behavior

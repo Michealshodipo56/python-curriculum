@@ -2,7 +2,7 @@
 
 ## Description
 
-Convert a one-based page number into the zero-based position of its first record.
+Implement `pagination_offset(page, page_size)` in `starter/solution.py`. Return the offset for positive `page` and `page_size`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Convert a one-based page number into the zero-based position of its first record
 
 ## Tips
 
+- **Concept to understand:** Convert a one-based page number into the zero-based position of its first record.
 - Why do two pages precede page three?
 
 ## Example Behavior

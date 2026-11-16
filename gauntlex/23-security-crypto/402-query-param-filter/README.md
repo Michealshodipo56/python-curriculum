@@ -2,7 +2,7 @@
 
 ## Description
 
-Keep only permitted URL query parameters while preserving their original order and repeated keys.
+Implement `filter_query_params(query, allowed)` in `starter/solution.py`. Given a URL query string and an iterable of allowed parameter names, return a compact URL query string containing only allowed parameters in original order, preserving repeated keys. Decode and re-encode form URL encoding. Empty result is empty string.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Treat query parameters as an ordered sequence of key-value pairs so repeated nam
 
 ## Tips
 
+- **Concept to understand:** Keep only permitted URL query parameters while preserving their original order and repeated keys.
 A mapping may discard repeated query keys; the input is an ordered sequence of pairs.
 
 ## Example Behavior

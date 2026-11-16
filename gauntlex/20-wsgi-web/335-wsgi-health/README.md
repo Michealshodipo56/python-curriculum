@@ -2,7 +2,7 @@
 
 ## Description
 
-WSGI applications receive request metadata and a callback for response headers. Create a health response that works regardless of the requested path.
+Implement `application(environ, start_response)` in `starter/solution.py`. Call `start_response` exactly once with HTTP 200 and `Content-Type: application/json`.
 
 ## Requirements
 
@@ -18,6 +18,7 @@ A WSGI application reports status and headers through `start_response`, then ret
 
 ## Tips
 
+- **Concept to understand:** WSGI applications receive request metadata and a callback for response headers. Create a health response that works regardless of the requested path.
 - Why must the response body contain bytes rather than a Python string?
 
 ## Example Behavior

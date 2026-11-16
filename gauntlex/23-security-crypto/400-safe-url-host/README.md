@@ -2,7 +2,7 @@
 
 ## Description
 
-Extract a valid HTTP or HTTPS hostname while rejecting malformed authorities and unsafe URL syntax.
+Implement `safe_url_host(url)` in `starter/solution.py`. Return lowercase hostname from an absolute HTTP or HTTPS URL, without port. Raise ValueError for missing hostname, non-HTTP schemes, username/password components, or control characters in the URL. This is syntax validation, not SSRF protection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Validate URL scheme, authority, credentials, and control characters before retur
 
 ## Tips
 
+- **Concept to understand:** Extract a valid HTTP or HTTPS hostname while rejecting malformed authorities and unsafe URL syntax.
 Syntax validation alone does not make a URL safe to fetch; SSRF defenses require additional checks.
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-A consistent error response lets callers inspect an error code, message, and optional details without guessing the shape of the result.
+Implement `error_envelope(code, message, details)` in `starter/solution.py`. Return `{'error': {'code': code, 'message': message, 'details': details}}`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ The nested `details` mapping must be a new dictionary, even when the caller supp
 
 ## Tips
 
+- **Concept to understand:** A consistent error response lets callers inspect an error code, message, and optional details without guessing the shape of the result.
 - Why is sharing a mutable details dictionary risky?
 
 ## Example Behavior

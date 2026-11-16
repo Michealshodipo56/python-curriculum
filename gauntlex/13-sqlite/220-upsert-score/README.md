@@ -2,7 +2,7 @@
 
 ## Description
 
-Maintain exactly one score per student, creating a record on first use and updating it on later submissions.
+Implement `upsert_score(conn, student, score)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Insert a new student and score when the student is absent.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Maintain exactly one score per student, creating a record on first use and updat
 
 ## Tips
 
+- **Concept to understand:** Maintain exactly one score per student, creating a record on first use and updating it on later submissions.
 - What determines whether the operation is an insert or an update?
 - Why is the student key central to the behavior?
 

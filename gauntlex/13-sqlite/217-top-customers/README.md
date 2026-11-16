@@ -2,7 +2,7 @@
 
 ## Description
 
-Build a leaderboard by combining each customer's orders and ranking the resulting totals.
+Implement `top_customers(conn, k)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Aggregate `orders(id,user_id,amount)` by user ID.
 
 ## Requirements
 

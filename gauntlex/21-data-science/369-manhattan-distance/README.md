@@ -2,7 +2,7 @@
 
 ## Description
 
-Some distances are measured by adding coordinate-wise travel rather than following a straight line.
+Implement `manhattan_distance(a, b)` in `starter/solution.py`. Require equal-length numeric vectors; raise `ValueError` on mismatch.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Add absolute coordinate differences rather than squaring them. The result repres
 
 ## Tips
 
+- **Concept to understand:** Some distances are measured by adding coordinate-wise travel rather than following a straight line.
 - How does this distance differ from Euclidean distance on a two-dimensional grid?
 
 ## Example Behavior

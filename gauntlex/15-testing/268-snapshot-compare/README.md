@@ -2,7 +2,7 @@
 
 ## Description
 
-Structured snapshots should be compared using a canonical JSON representation so irrelevant object-key ordering does not cause false mismatches.
+Implement `snapshot_matches(actual, expected)` in `starter/solution.py`. Compare their compact JSON representations with object keys sorted.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Structured snapshots should be compared using a canonical JSON representation so
 
 ## Tips
 
+- **Concept to understand:** Structured snapshots should be compared using a canonical JSON representation so irrelevant object-key ordering does not cause false mismatches.
 - Why should object keys and array elements be treated differently?
 
 ## Example Behavior

@@ -2,7 +2,7 @@
 
 ## Description
 
-Select a page of records from a collection without changing the original.
+Implement `paginate(items, page, page_size)` in `starter/solution.py`. Raise `ValueError` for invalid page or size.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Select a page of records from a collection without changing the original.
 
 ## Tips
 
+- **Concept to understand:** Select a page of records from a collection without changing the original.
 - How should a partially filled final page behave?
 
 ## Example Behavior

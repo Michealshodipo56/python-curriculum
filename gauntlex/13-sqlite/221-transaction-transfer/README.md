@@ -2,7 +2,7 @@
 
 ## Description
 
-A transfer changes two balances that must stay consistent. Treat the debit and credit as one indivisible operation.
+Implement `transfer(conn, source_id, target_id, amount)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Transfer a positive integer amount from source to target.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A transfer changes two balances that must stay consistent. Treat the debit and c
 
 ## Tips
 
+- **Concept to understand:** A transfer changes two balances that must stay consistent. Treat the debit and credit as one indivisible operation.
 - Why must a debit and credit succeed or fail together?
 - What should happen if validation fails after a tentative change?
 

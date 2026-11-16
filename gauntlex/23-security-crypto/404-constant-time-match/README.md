@@ -2,7 +2,7 @@
 
 ## Description
 
-Compare two UTF-8 strings using a standard-library primitive suitable for sensitive comparisons.
+Implement `constant_time_match(a, b)` in `starter/solution.py`. Given two UTF-8 strings, return whether they are equal using a constant-time comparison primitive from the standard library. Do not implement a manual early-exit loop.
 
 ## Requirements
 
@@ -17,8 +17,11 @@ Compare UTF-8 encoded strings with a standard-library timing-resistant equality 
 
 ## Tips
 
+- **Concept to understand:** Compare two UTF-8 strings using a standard-library primitive suitable for sensitive comparisons.
 A manual early-exit comparison can reveal information through timing differences.
 
 ## Example Behavior
 
 `constant_time_match('café', 'café')` → `True`; `constant_time_match('abc', 'abd')` → `False`.
+
+---

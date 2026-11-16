@@ -2,7 +2,7 @@
 
 ## Description
 
-Score a password against four explicit character and length criteria.
+Implement `password_strength(password)` in `starter/solution.py`. Return a score 0–4, adding one point each for length>=12, at least one ASCII lowercase, at least one ASCII uppercase, and at least one ASCII digit. No entropy claims.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Score only the four stated rules: minimum length, ASCII lowercase, ASCII upperca
 
 ## Tips
 
+- **Concept to understand:** Score a password against four explicit character and length criteria.
 This simple score is not an estimate of actual password entropy or a security guarantee.
 
 ## Example Behavior

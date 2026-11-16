@@ -2,7 +2,7 @@
 
 ## Description
 
-Package releases often use three numeric components: major, minor, and patch. Parse this precise version form without silently accepting ambiguous formatting.
+Implement `parse_version(text)` in `starter/solution.py`. Reject leading zeros in multi-digit components; `0` itself is valid.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Package releases often use three numeric components: major, minor, and patch. Pa
 
 ## Tips
 
+- **Concept to understand:** Package releases often use three numeric components: major, minor, and patch. Parse this precise version form without silently accepting ambiguous formatting.
 - Why is strict validation preferable to guessing what a malformed version means?
 
 ## Example Behavior

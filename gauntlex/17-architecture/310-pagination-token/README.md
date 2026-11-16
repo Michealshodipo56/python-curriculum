@@ -2,7 +2,7 @@
 
 ## Description
 
-Pagination APIs can encode a numeric offset into a URL-safe cursor. The token is a representation, not a security boundary.
+Implement `encode_cursor(offset)` in `starter/solution.py`. Raise `ValueError` for a negative offset.
 
 ## Requirements
 
@@ -19,9 +19,12 @@ The cursor is URL-safe Base64 of decimal text with padding removed. It is an enc
 
 ## Tips
 
+- **Concept to understand:** Pagination APIs can encode a numeric offset into a URL-safe cursor. The token is a representation, not a security boundary.
 - Why is URL-safe encoding useful for pagination links?
 - Why should the cursor not be treated as encrypted?
 
 ## Example Behavior
 
 `encode_cursor(0)` → `'MA'`; `encode_cursor(12)` → `'MTI'`.
+
+---

@@ -2,7 +2,7 @@
 
 ## Description
 
-A moving average smooths a sequence by averaging every consecutive group of a fixed size. Each neighboring group overlaps the previous one.
+Implement `moving_average(values, k)` in `starter/solution.py`. Return one arithmetic average for each contiguous window of `k` values.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ A moving average smooths a sequence by averaging every consecutive group of a fi
 
 ## Tips
 
+- **Concept to understand:** A moving average smooths a sequence by averaging every consecutive group of a fixed size. Each neighboring group overlaps the previous one.
 - How many windows fit in a list of length `N`?
 - What changes when the window moves one position?
 

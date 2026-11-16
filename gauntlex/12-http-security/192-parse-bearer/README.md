@@ -2,7 +2,7 @@
 
 ## Description
 
-Extract one token from an Authorization header while checking its authentication scheme.
+Implement `parse_bearer(header)` in `starter/solution.py`. Recognize `Bearer TOKEN` without regard to scheme capitalization.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Extract one token from an Authorization header while checking its authentication
 
 ## Tips
 
+- **Concept to understand:** Extract one token from an Authorization header while checking its authentication scheme.
 - Why must the scheme be validated before accepting the token?
 
 ## Example Behavior

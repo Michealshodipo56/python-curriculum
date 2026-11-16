@@ -2,7 +2,7 @@
 
 ## Description
 
-HTML forms commonly submit URL-encoded data in a POST body. Decode it and extract the first matching field.
+Implement `application(environ, start_response)` in `starter/solution.py`. For POST `/form`, read the `application/x-www-form-urlencoded` body.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Read and decode the URL-encoded POST body using form semantics, including plus-a
 
 ## Tips
 
+- **Concept to understand:** HTML forms commonly submit URL-encoded data in a POST body. Decode it and extract the first matching field.
 - Why should repeated form fields use the first value for this contract?
 
 ## Example Behavior

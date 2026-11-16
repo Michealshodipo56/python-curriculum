@@ -2,7 +2,7 @@
 
 ## Description
 
-Decode hexadecimal bytes into UTF-8 text with clear failures for invalid input.
+Implement `hex_decode(hex_text)` in `starter/solution.py`. Decode a hexadecimal string to UTF-8 text. Raise ValueError for odd-length or invalid hex, and UnicodeDecodeError for invalid UTF-8 bytes.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Validate hexadecimal syntax and decode bytes as UTF-8, distinguishing invalid he
 
 ## Tips
 
+- **Concept to understand:** Decode hexadecimal bytes into UTF-8 text with clear failures for invalid input.
 Invalid hexadecimal syntax and invalid UTF-8 are different error conditions.
 
 ## Example Behavior

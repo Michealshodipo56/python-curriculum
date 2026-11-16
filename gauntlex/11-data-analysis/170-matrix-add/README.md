@@ -2,7 +2,7 @@
 
 ## Description
 
-Matrix addition combines two grids of identical shape by adding entries at matching positions.
+Implement `matrix_add(a, b)` in `starter/solution.py`. Return a new matrix whose entries are sums of corresponding input entries.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Matrix addition combines two grids of identical shape by adding entries at match
 
 ## Tips
 
+- **Concept to understand:** Matrix addition combines two grids of identical shape by adding entries at matching positions.
 - Why must the two shapes match?
 - What should happen to an empty matrix?
 

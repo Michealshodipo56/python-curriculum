@@ -2,7 +2,7 @@
 
 ## Description
 
-A moving average summarizes adjacent observations and smooths short-term fluctuations without changing their sequence.
+Implement `moving_average(values, k)` in `starter/solution.py`. Return floating-point averages for each consecutive window of exactly `k` observations.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ Generate a result only for each complete window of length `k`; preserve observat
 
 ## Tips
 
+- **Concept to understand:** A moving average summarizes adjacent observations and smooths short-term fluctuations without changing their sequence.
 - How does the next window differ from the previous window?
 
 ## Example Behavior

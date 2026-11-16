@@ -2,7 +2,7 @@
 
 ## Description
 
-A system-wide health summary should reflect its most severe service condition. Combine individual statuses into one result.
+Implement `health_rollup(statuses)` in `starter/solution.py`. Return `'down'` if any service is down.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ The summary reflects the most severe status, not the most common one. An empty s
 
 ## Tips
 
+- **Concept to understand:** A system-wide health summary should reflect its most severe service condition. Combine individual statuses into one result.
 - Why should one down service dominate the overall status?
 
 ## Example Behavior

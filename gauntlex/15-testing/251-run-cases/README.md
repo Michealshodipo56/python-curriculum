@@ -2,7 +2,7 @@
 
 ## Description
 
-Turn a collection of expected input-output pairs into a simple test report. Each case should produce one boolean result.
+Implement `run_cases(fn, cases)` in `starter/solution.py`. Call `fn` with each case's positional arguments.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Turn a collection of expected input-output pairs into a simple test report. Each
 
 ## Tips
 
+- **Concept to understand:** Turn a collection of expected input-output pairs into a simple test report. Each case should produce one boolean result.
 - Why should the result list preserve the order of the cases?
 
 ## Example Behavior

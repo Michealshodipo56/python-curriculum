@@ -2,7 +2,7 @@
 
 ## Description
 
-A bounded cache must discard entries when its capacity is exceeded. Prefer the least recently accessed entries and break ties consistently.
+Implement `eviction_candidates(accesses, max_items)` in `starter/solution.py`. Return only enough keys to reduce the cache to that maximum.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ The number of returned keys is the excess over capacity, not the capacity itself
 
 ## Tips
 
+- **Concept to understand:** A bounded cache must discard entries when its capacity is exceeded. Prefer the least recently accessed entries and break ties consistently.
 - Why must tied access times use a secondary sort order?
 
 ## Example Behavior

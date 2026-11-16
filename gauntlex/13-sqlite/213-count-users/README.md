@@ -2,7 +2,7 @@
 
 ## Description
 
-A directory count should return one number, without loading every user record into Python.
+Implement `count_users(conn)` in `starter/solution.py` using the caller's live `sqlite3.Connection`. Return the number of rows in `users(id,name,email)` as an integer.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A directory count should return one number, without loading every user record in
 
 ## Tips
 
+- **Concept to understand:** A directory count should return one number, without loading every user record into Python.
 - What does a SQL aggregate return when no records exist?
 
 ## Example Behavior

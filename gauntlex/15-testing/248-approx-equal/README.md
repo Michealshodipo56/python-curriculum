@@ -2,7 +2,7 @@
 
 ## Description
 
-Floating-point results may differ slightly because of representation and rounding. Compare numbers using an explicit absolute tolerance.
+Implement `approx_equal(a, b, tolerance)` in `starter/solution.py`. Return `True` when their absolute difference is at most the tolerance; otherwise return `False`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ Floating-point results may differ slightly because of representation and roundin
 
 ## Tips
 
+- **Concept to understand:** Floating-point results may differ slightly because of representation and rounding. Compare numbers using an explicit absolute tolerance.
 - Why is exact equality sometimes inappropriate for floating-point calculations?
 
 ## Example Behavior

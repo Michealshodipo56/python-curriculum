@@ -2,7 +2,7 @@
 
 ## Description
 
-Structured Python data can be persisted as JSON text. Use a stable representation so equivalent dictionaries serialize consistently.
+Implement `store_json(conn, value)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Serialize the supplied JSON-compatible value with sorted object keys and compact separators.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Structured Python data can be persisted as JSON text. Use a stable representatio
 
 ## Tips
 
+- **Concept to understand:** Structured Python data can be persisted as JSON text. Use a stable representation so equivalent dictionaries serialize consistently.
 - Why is Python's display representation not a substitute for JSON?
 - How does stable key ordering help reproducibility?
 

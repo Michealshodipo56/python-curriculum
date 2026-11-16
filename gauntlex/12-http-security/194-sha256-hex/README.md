@@ -2,7 +2,7 @@
 
 ## Description
 
-A cryptographic digest turns a message into a fixed-length fingerprint. In this challenge, generate the SHA-256 fingerprint of text encoded as UTF-8 and present the digest in a consistent hexadecimal form.
+Implement `sha256_hex(text)` in `starter/solution.py`. Encode the input string as UTF-8 before hashing.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A cryptographic digest turns a message into a fixed-length fingerprint. In this 
 
 ## Tips
 
+- **Concept to understand:** A cryptographic digest turns a message into a fixed-length fingerprint. In
 - Hash functions operate on bytes, not directly on Python characters.
 - The hexadecimal digest represents the hash output, not the original message.
 - Even an empty string has a well-defined digest.

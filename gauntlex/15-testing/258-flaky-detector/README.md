@@ -2,7 +2,7 @@
 
 ## Description
 
-Repeated test runs can reveal instability. Summarize the proportion of unsuccessful runs rather than the count alone.
+Implement `failure_rate(results)` in `starter/solution.py`. Return the number of failures divided by the number of runs.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Repeated test runs can reveal instability. Summarize the proportion of unsuccess
 
 ## Tips
 
+- **Concept to understand:** Repeated test runs can reveal instability. Summarize the proportion of unsuccessful runs rather than the count alone.
 - Why does a fraction make results comparable across different run counts?
 
 ## Example Behavior

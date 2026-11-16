@@ -2,7 +2,7 @@
 
 ## Description
 
-GET retrieves a resource body, while HEAD requests only response metadata. Support both on one route.
+Implement `application(environ, start_response)` in `starter/solution.py`. For GET `/status`, return HTTP 200 and body `ready`.
 
 ## Requirements
 
@@ -19,6 +19,7 @@ Preserve the route's successful status and response metadata for HEAD while omit
 
 ## Tips
 
+- **Concept to understand:** GET retrieves a resource body, while HEAD requests only response metadata. Support both on one route.
 - Why does HEAD omit a body even when the resource exists?
 
 ## Example Behavior

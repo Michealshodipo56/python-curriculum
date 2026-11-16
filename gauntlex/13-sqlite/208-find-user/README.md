@@ -2,7 +2,7 @@
 
 ## Description
 
-A user ID identifies at most one directory entry. Retrieve that record in a predictable Python representation, or clearly indicate that it does not exist.
+Implement `find_user(conn, user_id)` in `starter/solution.py`. Use the supplied live `sqlite3.Connection`; do not open a new connection.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ A user ID identifies at most one directory entry. Retrieve that record in a pred
 
 ## Tips
 
+- **Concept to understand:** A user ID identifies at most one directory entry. Retrieve that record in a predictable Python representation, or clearly indicate that it does not exist.
 - Why is a missing record different from a record with an empty field?
 - How should a SQLite row be represented in the return value?
 

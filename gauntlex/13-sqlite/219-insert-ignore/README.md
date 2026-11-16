@@ -2,7 +2,7 @@
 
 ## Description
 
-Add a user only when the email is not already registered. A duplicate must leave the existing record intact.
+Implement `insert_email_once(conn, name, email)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Return `True` only if a new row is inserted.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Add a user only when the email is not already registered. A duplicate must leave
 
 ## Tips
 
+- **Concept to understand:** Add a user only when the email is not already registered. A duplicate must leave the existing record intact.
 - How can uniqueness be enforced by the database?
 - Why is ignoring a duplicate different from replacing a record?
 

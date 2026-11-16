@@ -2,7 +2,7 @@
 
 ## Description
 
-Read integer values spread across multiple lines and produce one total for the entire input stream.
+Implement the program in `starter/main.py` using standard input and standard output. Read zero or more lines containing whitespace-separated integers.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Read integer values spread across multiple lines and produce one total for the e
 
 ## Tips
 
+- **Concept to understand:** Read integer values spread across multiple lines and produce one total for the entire input stream.
 - Why should the number of lines not affect the calculation?
 - What is the sum of no values?
 

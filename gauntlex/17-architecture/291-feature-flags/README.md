@@ -2,7 +2,7 @@
 
 ## Description
 
-A feature may be enabled by its own flag yet unavailable because a required feature is disabled. Resolve every prerequisite before reporting usable features.
+Implement `enabled_features(flags, dependencies)` in `starter/solution.py`. Include a feature only if its own flag and every transitive dependency flag are `True`.
 
 ## Requirements
 
@@ -20,6 +20,7 @@ A feature's own flag is not sufficient: every dependency in its chain must also 
 
 ## Tips
 
+- **Concept to understand:** A feature may be enabled by its own flag yet unavailable because a required feature is disabled. Resolve every prerequisite before reporting usable features.
 - Why does checking only a feature's own flag miss disabled prerequisites?
 
 ## Example Behavior

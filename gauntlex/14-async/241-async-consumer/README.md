@@ -2,7 +2,7 @@
 
 ## Description
 
-Unlike draining a queue, consuming a fixed number of items may require waiting for items that have not arrived yet.
+Implement `async def consume_n(queue, n)` in `starter/solution.py`. Raise `ValueError` when `n` is negative.
 
 ## Requirements
 
@@ -17,6 +17,7 @@ Unlike draining a queue, consuming a fixed number of items may require waiting f
 
 ## Tips
 
+- **Concept to understand:** Unlike draining a queue, consuming a fixed number of items may require waiting for items that have not arrived yet.
 - Why can a consumer need to wait even when a queue is initially empty?
 
 ## Example Behavior

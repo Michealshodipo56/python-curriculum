@@ -2,7 +2,7 @@
 
 ## Description
 
-Two records can differ because a field was added, removed, or changed. Report every difference without losing which side contained which value.
+Implement `diff_dicts(old, new)` in `starter/solution.py`. Include every key appearing in either mapping whose values differ or whose key is missing on one side.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Two records can differ because a field was added, removed, or changed. Report ev
 
 ## Tips
 
+- **Concept to understand:** Two records can differ because a field was added, removed, or changed. Report every difference without losing which side contained which value.
 - Why is it important to distinguish a missing key from an equal value?
 
 ## Example Behavior

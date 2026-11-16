@@ -2,7 +2,7 @@
 
 ## Description
 
-Determine whether a sequence is already in nondecreasing order. Equal neighbors are permitted.
+Implement `is_sorted(values)` in `starter/solution.py`. Return `True` if each element is no smaller than the preceding one.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Determine whether a sequence is already in nondecreasing order. Equal neighbors 
 
 ## Tips
 
+- **Concept to understand:** Determine whether a sequence is already in nondecreasing order. Equal neighbors are permitted.
 - Why does an empty sequence count as sorted?
 
 ## Example Behavior

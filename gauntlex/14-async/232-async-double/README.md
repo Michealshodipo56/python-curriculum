@@ -2,7 +2,7 @@
 
 ## Description
 
-An asynchronous function can return an ordinary calculated value even when it has no waiting to perform.
+Implement `async def double_async(value)` in `starter/solution.py`. Return twice the input integer.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ An asynchronous function can return an ordinary calculated value even when it ha
 
 ## Tips
 
+- **Concept to understand:** An asynchronous function can return an ordinary calculated value even when it has no waiting to perform.
 - Does an `async def` function need to await something before it can return a value?
 
 ## Example Behavior

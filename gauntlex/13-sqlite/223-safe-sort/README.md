@@ -2,7 +2,7 @@
 
 ## Description
 
-Caller-selected sorting can be dangerous when SQL identifiers are constructed from untrusted input. Permit only known columns and directions.
+Implement `sorted_users(conn, field, direction)` in `starter/solution.py` using the supplied live `sqlite3.Connection`. Raise `ValueError` for unsupported fields or directions.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Caller-selected sorting can be dangerous when SQL identifiers are constructed fr
 
 ## Tips
 
+- **Concept to understand:** Caller-selected sorting can be dangerous when SQL identifiers are constructed from untrusted input. Permit only known columns and directions.
 - Why do SQL value parameters not safely substitute for column identifiers?
 - What role does an explicit allowlist play?
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Count JSON records that explicitly declare themselves active. Numeric values that resemble Boolean values must not be mistaken for true.
+Implement the program in `starter/main.py` using standard input and standard output. Read valid JSON objects, one per nonempty line.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Count JSON records that explicitly declare themselves active. Numeric values tha
 
 ## Tips
 
+- **Concept to understand:** Count JSON records that explicitly declare themselves active. Numeric values that resemble Boolean values must not be mistaken for true.
 - Why is equality alone potentially misleading when comparing Booleans and integers in Python?
 - What happens when a record lacks the key?
 

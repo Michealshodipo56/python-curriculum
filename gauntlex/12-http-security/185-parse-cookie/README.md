@@ -2,7 +2,7 @@
 
 ## Description
 
-Parse semicolon-separated cookie assignments without decoding their contents.
+Implement `parse_cookie(text)` in `starter/solution.py`. Ignore empty segments and trim spaces around names and values.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Parse semicolon-separated cookie assignments without decoding their contents.
 
 ## Tips
 
+- **Concept to understand:** Parse semicolon-separated cookie assignments without decoding their contents.
 - Why might a cookie value contain an equals sign?
 
 ## Example Behavior

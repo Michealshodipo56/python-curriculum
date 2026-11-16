@@ -2,7 +2,7 @@
 
 ## Description
 
-Summarize a collection of integers by recording how many times each distinct value appears.
+Implement `frequency_table(values)` in `starter/solution.py`. Return a dictionary mapping each distinct integer to its number of occurrences.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Summarize a collection of integers by recording how many times each distinct val
 
 ## Tips
 
+- **Concept to understand:** Summarize a collection of integers by recording how many times each distinct value appears.
 - How does a repeated value change a frequency count?
 - What is the natural representation of an empty dataset?
 

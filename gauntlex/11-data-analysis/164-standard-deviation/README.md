@@ -2,7 +2,7 @@
 
 ## Description
 
-Population standard deviation describes the spread of values in the original units of the dataset rather than squared units.
+Implement `population_stddev(values)` in `starter/solution.py`. Return the square root of the population variance.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Population standard deviation describes the spread of values in the original uni
 
 ## Tips
 
+- **Concept to understand:** Population standard deviation describes the spread of values in the original units of the dataset rather than squared units.
 - How is standard deviation related to variance?
 - Why does taking a square root change the units?
 

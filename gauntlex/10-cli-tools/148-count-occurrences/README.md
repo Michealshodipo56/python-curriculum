@@ -2,7 +2,7 @@
 
 ## Description
 
-Count the number of input lines containing a literal search string, rather than the total number of occurrences.
+Implement the program in `starter/main.py` using standard input and standard output. Treat the first input line as the case-sensitive search string.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Count the number of input lines containing a literal search string, rather than 
 
 ## Tips
 
+- **Concept to understand:** Count the number of input lines containing a literal search string, rather than the total number of occurrences.
 - Why must a line with several matches count only once?
 - How does literal matching differ from regular-expression matching?
 

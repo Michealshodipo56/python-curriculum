@@ -2,7 +2,7 @@
 
 ## Description
 
-Multiple coroutines may share mutable state. Protect a read-modify-write operation so concurrent updates cannot interfere with one another.
+Implement `async def locked_increment(state, lock)` in `starter/solution.py`. Acquire the lock while reading and incrementing the count by one.
 
 ## Requirements
 
@@ -16,6 +16,7 @@ Multiple coroutines may share mutable state. Protect a read-modify-write operati
 
 ## Tips
 
+- **Concept to understand:** Multiple coroutines may share mutable state. Protect a read-modify-write operation so concurrent updates cannot interfere with one another.
 - Why must the read and write occur inside the same protected section?
 
 ## Example Behavior

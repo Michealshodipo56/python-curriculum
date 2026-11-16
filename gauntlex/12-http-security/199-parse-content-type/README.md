@@ -2,7 +2,7 @@
 
 ## Description
 
-A Content-Type header identifies a representation and may also include parameters such as character encoding. Extract only its media type.
+Implement `media_type(header)` in `starter/solution.py`. Return the portion of the header before the first semicolon.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ A Content-Type header identifies a representation and may also include parameter
 
 ## Tips
 
+- **Concept to understand:** A Content-Type header identifies a representation and may also include parameters such as character encoding. Extract only its media type.
 - Why should a charset parameter not be part of the media type?
 - What if no semicolon appears?
 

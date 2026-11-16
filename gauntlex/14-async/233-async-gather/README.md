@@ -2,7 +2,7 @@
 
 ## Description
 
-Several awaitables may finish in an unpredictable order. Collect their results in the original input order, regardless of completion timing.
+Implement `async def gather_results(awaitables)` in `starter/solution.py`. Run the awaitables concurrently and return a list of results in input order.
 
 ## Requirements
 
@@ -15,6 +15,7 @@ Several awaitables may finish in an unpredictable order. Collect their results i
 
 ## Tips
 
+- **Concept to understand:** Several awaitables may finish in an unpredictable order. Collect their results in the original input order, regardless of completion timing.
 - How can concurrent tasks finish out of order while their results remain ordered?
 
 ## Example Behavior

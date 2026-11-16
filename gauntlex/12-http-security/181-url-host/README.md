@@ -2,7 +2,7 @@
 
 ## Description
 
-An absolute web URL contains a scheme, a network location, and an optional path. Extract the hostname without confusing it with the port or the complete address.
+Implement `url_host(url)` in `starter/solution.py`. Return its hostname in lowercase, excluding the port and path.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ An absolute web URL contains a scheme, a network location, and an optional path.
 
 ## Tips
 
+- **Concept to understand:** An absolute web URL contains a scheme, a network location, and an optional path. Extract the hostname without confusing it with the port or the complete address.
 - Consider how a hostname differs from a network location containing a port.
 - A URL may have a path without changing its hostname.
 

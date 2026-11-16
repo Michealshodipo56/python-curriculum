@@ -2,7 +2,7 @@
 
 ## Description
 
-A test identifier combines the file location and test function name. Validate both parts before building the identifier.
+Implement `pytest_nodeid(path, test_name)` in `starter/solution.py`. Strip surrounding whitespace from `path` and `test_name`.
 
 ## Requirements
 
@@ -14,6 +14,7 @@ A test identifier combines the file location and test function name. Validate bo
 
 ## Tips
 
+- **Concept to understand:** A test identifier combines the file location and test function name. Validate both parts before building the identifier.
 - Why must both parts be validated before joining them?
 
 ## Example Behavior
