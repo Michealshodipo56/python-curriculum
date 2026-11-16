@@ -2,7 +2,7 @@
 
 ## Description
 
-Filtering a collection means keeping only elements that satisfy a condition. Build a program that selects even integers without changing their relative order.
+Write a program that reads space-separated integers and prints only the even numbers, keeping their original order. If there are no even numbers, print an empty line.
 
 ## Requirements
 
