@@ -2,7 +2,7 @@
 
 ## Description
 
-A collection of numbers can be reduced to one result by combining its elements. Build a program that finds the arithmetic sum of a sequence of integers, including when the sequence is empty.
+Write a program that reads space-separated integers on one line, adds them together, and prints their total. If the line is empty, print `0`.
 
 ## Requirements
 
