@@ -2,7 +2,7 @@
 
 ## Description
 
-Find the greatest nonnegative integer that divides two integers without a remainder. The function must handle negative inputs and zero correctly.
+In `starter/solution.py`, write `gcd(a, b)` to return the greatest nonnegative whole number that divides both input integers without a remainder. For example, `gcd(12, 18)` returns `6`. Return `0` if both inputs are zero.
 
 ## Requirements
 
