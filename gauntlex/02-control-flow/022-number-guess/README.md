@@ -2,7 +2,7 @@
 
 ## Description
 
-Some programs continue interacting with a user until a particular condition is met. Build a guessing process with a fixed secret number. After each guess, provide feedback and stop immediately when the secret is found. This challenge combines repeated input with conditional decisions.
+Write a program that reads guesses, one number per line, until the user guesses the secret number `7`. After each guess, print `low` if it is below `7`, `high` if it is above `7`, or `correct` if it equals `7`. Stop immediately after printing `correct`.
 
 ## Requirements
 
