@@ -2,7 +2,7 @@
 
 ## Description
 
-Two collections may contain some of the same words. Build a program that finds the distinct words shared by both collections and reports them in alphabetical order.
+Write a program that reads two lines of words and prints the words that appear in both lines. Print each shared word once, sorted alphabetically, with single spaces between words.
 
 ## Requirements
 
