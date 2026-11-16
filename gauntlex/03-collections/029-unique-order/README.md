@@ -2,7 +2,7 @@
 
 ## Description
 
-A collection can contain the same word more than once. Build a program that removes repeated words while keeping the order in which each distinct word first appeared.
+Write a program that reads a line of words and prints each different word once, in the order it first appeared. Treat words with different capitalization as different.
 
 ## Requirements
 
