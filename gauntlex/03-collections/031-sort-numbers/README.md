@@ -2,7 +2,7 @@
 
 ## Description
 
-A collection of integers may arrive in any order. Build a program that arranges them from smallest to largest. Numeric order is different from the alphabetical order of the characters used to write numbers.
+Write a program that reads a line of space-separated integers and prints them from smallest to largest. Keep duplicate numbers and separate the output numbers with single spaces.
 
 ## Requirements
 
