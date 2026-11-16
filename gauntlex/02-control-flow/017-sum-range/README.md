@@ -2,7 +2,7 @@
 
 ## Description
 
-A running total changes as new values are considered. Build a program that adds the consecutive integers from one through a supplied limit. The number of values to include depends on the input.
+Write a program that reads a whole number `N`, adds every number from `1` through `N`, and prints the total. For example, an input of `5` produces `15`.
 
 ## Requirements
 
