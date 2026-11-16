@@ -2,7 +2,7 @@
 
 ## Description
 
-Repeated values can form pairs of matching positions. Build a program that counts every pair of distinct positions containing the same integer. A value appearing several times can contribute multiple pairs.
+Write a program that reads a line of integers and counts how many pairs of different positions contain the same number. Print the total number of matching pairs; print `0` if there are none.
 
 ## Requirements
 
