@@ -2,7 +2,7 @@
 
 ## Description
 
-The number of digits in an integer depends on its size, not on whether it is positive or negative. Build a program that counts the decimal digits in an input value. This challenge encourages careful handling of zero and sign characters.
+Write a program that reads one integer and prints how many decimal digits it contains. Do not count a minus sign. For example, `-1204` has `4` digits, and `0` has `1` digit.
 
 ## Requirements
 
