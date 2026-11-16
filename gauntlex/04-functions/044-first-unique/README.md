@@ -2,7 +2,7 @@
 
 ## Description
 
-A character that appears once may be useful as a unique marker. Find the earliest character whose total frequency in the complete string is exactly one.
+In `starter/solution.py`, write `first_unique(text)` to return the first character that occurs **only once** in the entire string. If every character repeats, return `None`. Treat uppercase and lowercase letters as different.
 
 ## Requirements
 
