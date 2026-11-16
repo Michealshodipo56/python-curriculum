@@ -2,7 +2,7 @@
 
 ## Description
 
-A frequency report records how often each distinct word appears in a collection. Build a report that preserves the order in which words first appeared while counting all occurrences.
+Write a program that reads a line of words and counts how many times each word appears. Print each word and its count as `WORD: COUNT`, in the order that word first appeared.
 
 ## Requirements
 
